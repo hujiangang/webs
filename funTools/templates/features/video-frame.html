@@ -1,0 +1,30 @@
+<div class="video-frame-capture-shell">
+  <div class="video-frame-stage">
+    <label class="video-drop-panel" id="videoFrameDrop" for="videoFrameInput" title="{{ active_feature.description }}">
+      <span class="video-drop-icon">⤒</span>
+      <span class="video-drop-title">点击或拖入视频文件</span>
+      <span class="video-drop-subtitle">支持浏览器可播放的 MP4 / WebM / MOV 等格式</span>
+      <input id="videoFrameInput" type="file" accept="video/*" />
+    </label>
+
+    <div class="video-player-panel" id="videoFramePlayerPanel" hidden>
+      <div class="video-frame-toolbar">
+        <button class="video-secondary-btn" id="videoFrameReplace" type="button">更换视频</button>
+        <span class="video-frame-info" id="videoFrameInfo">等待视频载入</span>
+      </div>
+      <video class="video-frame-player" id="videoFramePlayer" controls preload="metadata"></video>
+    </div>
+  </div>
+
+  <aside class="video-frame-side">
+    <div class="video-frame-actions">
+      <button class="video-primary-btn" id="videoFrameCapture" type="button" disabled>截取当前帧</button>
+      <button class="video-secondary-btn" id="videoFrameDownload" type="button" disabled>下载截图</button>
+    </div>
+    <div class="video-frame-preview" id="videoFramePreviewBox">
+      <canvas id="videoFrameCanvas"></canvas>
+      <div class="video-frame-empty" id="videoFrameEmpty">截图会显示在这里</div>
+    </div>
+    <p class="video-frame-hint">播放、暂停或拖动进度条到目标画面后点击截取。截图使用视频原始分辨率导出为 PNG。</p>
+  </aside>
+</div>

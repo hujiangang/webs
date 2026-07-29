@@ -1,0 +1,13 @@
+<aside class="sidebar">
+  <div class="sidebar-head">
+    <div class="brand">funTools</div>
+  </div>
+  <nav class="nav">
+    {% for feature in features %}
+    <a class="nav-item{% if feature.path == active_feature.path %} active{% endif %}" href="{{ feature.path }}">
+      <span class="nav-icon">{{ feature.index }}</span>
+      <span class="nav-label">{{ feature.title }}</span>
+    </a>
+    {% endfor %}
+  </nav>
+</aside>

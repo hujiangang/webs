@@ -8,94 +8,14 @@
 </head>
 <body>
   <div class="shell">
-    <header class="topbar">
-      <div class="topbar-left">
-        <button class="menu-btn" id="toggleSidebar" type="button" aria-label="隐藏侧栏" aria-expanded="true">☰</button>
-        <div class="title">{{ active_feature.title }}</div>
-      </div>
-      <div class="status" id="appStatus">
-        {% if active_feature.view == 'watermark_mask' %}
-        上传图片后拖动擦除区域，释放鼠标开始处理
-        {% else %}
-        处理逻辑暂未接入，结构已预留
-        {% endif %}
-      </div>
-    </header>
+    {% include "partials/topbar.html" %}
 
     <div class="body-area">
-      <aside class="sidebar">
-        <div class="sidebar-head">
-          <div class="brand">funTools</div>
-        </div>
-        <nav class="nav">
-          {% for feature in features %}
-          <a class="nav-item{% if feature.path == active_feature.path %} active{% endif %}" href="{{ feature.path }}">
-            <span class="nav-icon">{{ feature.index }}</span>
-            <span class="nav-label">{{ feature.title }}</span>
-          </a>
-          {% endfor %}
-        </nav>
-      </aside>
-
-      <main class="main{% if active_feature.view == 'watermark_mask' %} canvas-main{% endif %}">
-        <section class="workspace{% if active_feature.view == 'watermark_mask' %} watermark-workspace{% endif %}">
-          {% if active_feature.view == 'watermark_mask' %}
-          <div class="watermark-stage">
-            <div class="watermark-toolbar">
-              <button class="watermark-upload-icon" id="watermarkUploadIcon" type="button" aria-label="上传图片" title="{{ active_feature.description }}">⤒</button>
-              <div class="watermark-toolbar-spacer"></div>
-            </div>
-            <label class="upload-panel" for="watermarkImage" title="{{ active_feature.description }}">
-              <span class="upload-panel-text">Click here or drag an image file</span>
-              <input id="watermarkImage" type="file" accept="image/*" />
-            </label>
-            <div class="watermark-image-view" id="watermarkImageView" hidden>
-              <div class="image-size-badge" id="watermarkImageSize"></div>
-              <div class="preview-viewport" id="watermarkPreviewViewport">
-                <div class="preview-canvas-wrap" id="watermarkPreviewWrap">
-                  <img id="watermarkPreview" alt="图片预览" draggable="false" />
-                  <canvas id="watermarkMaskCanvas"></canvas>
-                  <div class="brush-cursor" id="watermarkBrushCursor"></div>
-                </div>
-              </div>
-              <div class="watermark-bottombar">
-                <div class="watermark-bottombar-left">
-                  <input class="brush-slider" id="watermarkBrushSize" type="range" min="12" max="180" value="72" />
-                  <span class="brush-label" id="watermarkBrushSizeLabel">72px</span>
-                </div>
-                <div class="watermark-bottombar-right">
-                  <button class="bottom-icon" id="watermarkReset" type="button" aria-label="重置视图" title="重置视图">↺</button>
-                  <button class="bottom-icon" id="watermarkDownload" type="button" aria-label="下载图片" title="下载图片">↓</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          {% else %}
-          <div class="workspace-head">
-            <h2>{{ active_feature.title }}</h2>
-            <p>{{ active_feature.description }}</p>
-          </div>
-
-          <div class="placeholder-grid">
-            <div class="placeholder-block">
-              <div class="placeholder-title">输入区</div>
-              {% for item in active_feature.input_items %}
-              <div class="placeholder-row">{{ item }}</div>
-              {% endfor %}
-            </div>
-            <div class="placeholder-block">
-              <div class="placeholder-title">输出区</div>
-              {% for item in active_feature.output_items %}
-              <div class="placeholder-row">{{ item }}</div>
-              {% endfor %}
-            </div>
-          </div>
-          {% endif %}
-        </section>
-      </main>
+      {% include "partials/sidebar.html" %}
+      {% include "partials/main.html" %}
     </div>
   </div>
 
-  <script src="{{ url_for('static', path='js/app.js') }}?v={{ asset_version }}"></script>
+  <script type="module" src="{{ url_for('static', path='js/app.js') }}?v={{ asset_version }}"></script>
 </body>
 </html>

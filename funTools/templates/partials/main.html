@@ -1,0 +1,5 @@
+<main class="main{% if active_feature.main_class %} {{ active_feature.main_class }}{% endif %}">
+  <section class="workspace{% if active_feature.workspace_class %} {{ active_feature.workspace_class }}{% endif %}">
+    {% include active_feature.template %}
+  </section>
+</main>

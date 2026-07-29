@@ -1,0 +1,19 @@
+<div class="workspace-head">
+  <h2>{{ active_feature.title }}</h2>
+  <p>{{ active_feature.description }}</p>
+</div>
+
+<div class="placeholder-grid">
+  <div class="placeholder-block">
+    <div class="placeholder-title">输入区</div>
+    {% for item in active_feature.input_items %}
+    <div class="placeholder-row">{{ item }}</div>
+    {% endfor %}
+  </div>
+  <div class="placeholder-block">
+    <div class="placeholder-title">输出区</div>
+    {% for item in active_feature.output_items %}
+    <div class="placeholder-row">{{ item }}</div>
+    {% endfor %}
+  </div>
+</div>

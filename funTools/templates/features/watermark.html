@@ -1,0 +1,30 @@
+<div class="watermark-stage">
+  <div class="watermark-toolbar">
+    <button class="watermark-upload-icon" id="watermarkUploadIcon" type="button" aria-label="上传图片" title="{{ active_feature.description }}">⤒</button>
+    <div class="watermark-toolbar-spacer"></div>
+  </div>
+  <label class="upload-panel" for="watermarkImage" title="{{ active_feature.description }}">
+    <span class="upload-panel-text">Click here or drag an image file</span>
+    <input id="watermarkImage" type="file" accept="image/*" />
+  </label>
+  <div class="watermark-image-view" id="watermarkImageView" hidden>
+    <div class="image-size-badge" id="watermarkImageSize"></div>
+    <div class="preview-viewport" id="watermarkPreviewViewport">
+      <div class="preview-canvas-wrap" id="watermarkPreviewWrap">
+        <img id="watermarkPreview" alt="图片预览" draggable="false" />
+        <canvas id="watermarkMaskCanvas"></canvas>
+        <div class="brush-cursor" id="watermarkBrushCursor"></div>
+      </div>
+    </div>
+    <div class="watermark-bottombar">
+      <div class="watermark-bottombar-left">
+        <input class="brush-slider" id="watermarkBrushSize" type="range" min="12" max="180" value="72" />
+        <span class="brush-label" id="watermarkBrushSizeLabel">72px</span>
+      </div>
+      <div class="watermark-bottombar-right">
+        <button class="bottom-icon" id="watermarkReset" type="button" aria-label="重置视图" title="重置视图">↺</button>
+        <button class="bottom-icon" id="watermarkDownload" type="button" aria-label="下载图片" title="下载图片">↓</button>
+      </div>
+    </div>
+  </div>
+</div>

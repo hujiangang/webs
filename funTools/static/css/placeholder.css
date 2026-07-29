@@ -1,0 +1,50 @@
+.workspace-head h2 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.workspace-head p {
+  margin: 8px 0 0;
+  color: var(--subtle);
+  line-height: 1.6;
+}
+
+.placeholder-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.placeholder-block {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 16px;
+  background: #f8fafc;
+}
+
+.placeholder-title {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.placeholder-row {
+  min-height: 42px;
+  border: 1px dashed var(--line-strong);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+  color: var(--subtle);
+  background: #fff;
+}
+
+.placeholder-row + .placeholder-row {
+  margin-top: 10px;
+}
+
+@media (max-width: 900px) {
+  .placeholder-grid {
+    grid-template-columns: 1fr;
+  }
+}
