@@ -1,0 +1,75 @@
+<div class="image-rename-shell">
+  <div class="image-rename-head">
+    <div>
+      <h2>图片相似参考命名</h2>
+      <p>选择源文件夹和参考文件夹，先根据图片相似度生成建议，再勾选确认重命名源文件夹中的图片。</p>
+    </div>
+    <div class="image-rename-score-card">
+      <span id="imageRenameMatchedCount">0</span>
+      <small>匹配建议</small>
+    </div>
+  </div>
+
+  <div class="image-rename-controls">
+    <div class="image-rename-field">
+      <span>源文件夹</span>
+      <div class="image-rename-folder-input">
+        <input id="imageRenameSourceDir" type="text" placeholder="请选择源文件夹" autocomplete="off" readonly />
+        <button id="imageRenamePickSource" type="button">选择</button>
+      </div>
+    </div>
+    <div class="image-rename-field">
+      <span>参考文件夹</span>
+      <div class="image-rename-folder-input">
+        <input id="imageRenameReferenceDir" type="text" placeholder="请选择参考文件夹" autocomplete="off" readonly />
+        <button id="imageRenamePickReference" type="button">选择</button>
+      </div>
+    </div>
+    <div class="image-rename-options">
+      <label class="image-rename-check">
+        <input id="imageRenameRecursive" type="checkbox" />
+        <span>包含子文件夹</span>
+      </label>
+      <label class="image-rename-check">
+        <input id="imageRenameKeepExtension" type="checkbox" checked />
+        <span>保留源图片扩展名</span>
+      </label>
+      <label class="image-rename-threshold">
+        <span>最低相似度</span>
+        <input id="imageRenameThreshold" type="range" min="0.25" max="0.95" step="0.01" value="0.45" />
+        <strong id="imageRenameThresholdValue">0.45</strong>
+      </label>
+    </div>
+    <div class="image-rename-actions">
+      <button class="image-rename-primary" id="imageRenamePreview" type="button">分析匹配</button>
+      <button class="image-rename-secondary" id="imageRenameApply" type="button" disabled>确认重命名</button>
+    </div>
+  </div>
+
+  <div class="image-rename-summary" id="imageRenameSummary">
+    源文件夹中的图片不会立即改名；点击“分析匹配”后先检查表格结果。
+  </div>
+
+  <div class="image-rename-table-wrap">
+    <table class="image-rename-table">
+      <thead>
+        <tr>
+          <th class="image-rename-select-col">选择</th>
+          <th>源图片</th>
+          <th>参考图片</th>
+          <th>目标文件名</th>
+          <th>相似度</th>
+          <th>置信</th>
+          <th class="image-rename-action-col">操作</th>
+        </tr>
+      </thead>
+      <tbody id="imageRenameRows">
+        <tr>
+          <td colspan="7" class="image-rename-empty">等待分析结果</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="image-rename-log" id="imageRenameLog" hidden></div>
+</div>

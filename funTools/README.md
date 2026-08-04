@@ -12,18 +12,21 @@
 
 - 图片去水印：已接入本地 LaMa 模型
 - 视频帧截取：浏览器本地截取当前视频帧并下载 PNG
+- 图片相似命名：根据参考文件夹中的相似图片名称，批量重命名源文件夹图片
 - PDF 转 Word：功能入口已预留，处理逻辑暂未接入
-
 ## 目录结构
 
 - `main.py`：应用组装、静态目录挂载、启动入口
 - `app/features.py`：功能清单、导航元数据、页面模板路径和静态资源版本号
 - `app/routers/pages.py`：页面路由，只负责把指定功能渲染到模板
 - `app/routers/api/`：接口路由包，按业务大类拆分
-  - `image.py`：图片类接口
+  - `image.py`：图片类接口，例如去水印、图片相似命名
+  - `filesystem.py`：文件系统接口，例如列出本机磁盘和文件夹供页面选择
   - `__init__.py`：接口总入口
 - `app/services/`：后端业务服务
   - `watermark.py`：图片去水印模型加载和处理逻辑
+  - `image_similarity_rename.py`：图片相似度计算、匹配预览和重命名执行
+  - `filesystem.py`：本机文件夹列表读取
 - `templates/index.html`：页面壳，只负责引入布局片段和静态资源
 - `templates/partials/`：通用页面片段
   - `topbar.html`：顶部栏
@@ -32,16 +35,17 @@
 - `templates/features/`：按功能拆分的页面片段
   - `watermark.html`：图片去水印页面
   - `video-frame.html`：视频帧截取页面
+  - `image-rename.html`：图片相似命名页面
   - `placeholder.html`：暂未接入处理逻辑的占位页面
 - `static/css/app.css`：样式入口，只通过 `@import` 聚合样式模块
 - `static/css/base.css`：全局变量和基础样式
 - `static/css/layout.css`：顶栏、侧栏、主内容区等通用布局
 - `static/css/placeholder.css`：占位功能页面样式
-- `static/css/features/`：按功能拆分的样式文件，例如 `watermark.css`、`video-frame.css`
+- `static/css/features/`：按功能拆分的样式文件，例如 `watermark.css`、`video-frame.css`、`image-rename.css`
 - `static/js/app.js`：前端入口，只负责初始化各模块
 - `static/js/layout/`：布局交互模块，例如侧栏显示隐藏
 - `static/js/shared/`：跨功能共享的小工具，例如状态栏、文件读取
-- `static/js/features/`：按功能拆分的交互模块，例如 `watermark.js`、`video-frame.js`
+- `static/js/features/`：按功能拆分的交互模块，例如 `watermark.js`、`video-frame.js`、`image-rename.js`
 - `models/remove_watermark/lama/`：图片去水印模型目录
 - `scripts/download_remove_watermark_model.bat`：Windows 双击下载图片去水印模型
 - `scripts/download_remove_watermark_model.py`：图片去水印模型下载脚本

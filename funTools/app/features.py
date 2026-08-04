@@ -1,4 +1,4 @@
-ASSET_VERSION = "20260729_template_modules"
+ASSET_VERSION = "20260804_native_folder_picker"
 
 
 FEATURES = {
@@ -40,5 +40,18 @@ FEATURES = {
         "status_text": "上传视频，停在目标画面后截取当前帧",
         "input_items": ["视频上传位", "播放定位位"],
         "output_items": ["截图预览位", "下载位"],
+    },
+    "image_similarity_rename": {
+        "path": "/image-similarity-rename",
+        "index": "4",
+        "title": "图片相似命名",
+        "description": "按图片内容相似度，把源文件夹中的图片重命名为参考文件夹中最相似图片的名称。",
+        "view": "image_similarity_rename",
+        "template": "features/image-rename.html",
+        "main_class": "",
+        "workspace_class": "image-rename-workspace",
+        "status_text": "先分析匹配结果，确认后再批量重命名",
+        "input_items": ["源文件夹", "参考文件夹"],
+        "output_items": ["匹配预览", "确认重命名"],
     },
 }

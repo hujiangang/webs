@@ -35,3 +35,8 @@ async def pdf_to_word(request: Request):
 @router.get("/video-frame-capture", response_class=HTMLResponse)
 async def video_frame_capture(request: Request):
     return render_feature(request, "video_frame_capture")
+
+
+@router.get("/image-similarity-rename", response_class=HTMLResponse)
+async def image_similarity_rename(request: Request):
+    return render_feature(request, "image_similarity_rename")

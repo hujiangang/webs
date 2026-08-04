@@ -1,0 +1,402 @@
+.image-rename-workspace {
+  align-content: stretch;
+  overflow: hidden;
+}
+
+.image-rename-shell {
+  display: grid;
+  grid-template-rows: auto auto auto minmax(0, 1fr) auto;
+  gap: 14px;
+  min-height: 0;
+}
+
+.image-rename-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.image-rename-head h2 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.image-rename-head p {
+  margin: 8px 0 0;
+  color: var(--subtle);
+  line-height: 1.6;
+}
+
+.image-rename-score-card {
+  width: 96px;
+  height: 64px;
+  display: grid;
+  place-items: center;
+  align-content: center;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #f8fafc;
+}
+
+.image-rename-score-card span {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.image-rename-score-card small {
+  color: var(--subtle);
+  font-size: 12px;
+}
+
+.image-rename-controls {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #f8fafc;
+}
+
+.image-rename-field {
+  display: grid;
+  gap: 6px;
+}
+
+.image-rename-field span,
+.image-rename-threshold span {
+  color: var(--subtle);
+  font-size: 13px;
+}
+
+.image-rename-folder-input {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 8px;
+}
+
+.image-rename-field input {
+  width: 100%;
+  height: 34px;
+  padding: 0 10px;
+  border: 1px solid var(--line-strong);
+  border-radius: 8px;
+  background: #fff;
+  color: var(--text);
+  font-size: 13px;
+}
+
+.image-rename-field input[readonly] {
+  cursor: default;
+}
+
+.image-rename-folder-input button {
+  height: 34px;
+  padding: 0 14px;
+  border: 1px solid var(--line-strong);
+  border-radius: 8px;
+  background: #fff;
+  color: var(--text);
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.image-rename-folder-input button:hover:not(:disabled) {
+  border-color: var(--watermark-hover);
+}
+
+.image-rename-folder-input button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.image-rename-options {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.image-rename-check {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--text);
+  font-size: 13px;
+}
+
+.image-rename-check input {
+  width: 16px;
+  height: 16px;
+  accent-color: var(--accent);
+}
+
+.image-rename-threshold {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 280px;
+}
+
+.image-rename-threshold input {
+  width: 150px;
+  accent-color: var(--accent);
+}
+
+.image-rename-threshold strong {
+  min-width: 36px;
+  font-size: 13px;
+}
+
+.image-rename-actions {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.image-rename-primary,
+.image-rename-secondary {
+  height: 34px;
+  padding: 0 16px;
+  border: 1px solid var(--line-strong);
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.image-rename-primary {
+  border-color: #1d4ed8;
+  background: var(--accent);
+  color: #fff;
+}
+
+.image-rename-secondary {
+  background: #fff;
+  color: var(--text);
+}
+
+.image-rename-primary:hover:not(:disabled),
+.image-rename-secondary:hover:not(:disabled) {
+  border-color: var(--watermark-hover);
+}
+
+.image-rename-primary:disabled,
+.image-rename-secondary:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.image-rename-summary {
+  min-height: 38px;
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+  color: var(--subtle);
+  font-size: 13px;
+}
+
+.image-rename-table-wrap {
+  min-height: 0;
+  overflow: auto;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+}
+
+.image-rename-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.image-rename-table th,
+.image-rename-table td {
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--line);
+  text-align: left;
+  vertical-align: middle;
+}
+
+.image-rename-table th {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background: #f8fafc;
+  color: #475467;
+  font-weight: 600;
+}
+
+.image-rename-table td strong,
+.image-rename-table td small {
+  display: block;
+}
+
+.image-rename-table td small {
+  margin-top: 4px;
+  color: var(--subtle);
+}
+
+.image-rename-table code {
+  color: #0f172a;
+  font-family: Consolas, "Courier New", monospace;
+  font-size: 12px;
+}
+
+
+.image-rename-image-cell {
+  min-width: 180px;
+  display: grid;
+  grid-template-columns: 44px minmax(0, 1fr);
+  align-items: center;
+  gap: 8px;
+}
+
+.image-rename-thumb {
+  width: 44px;
+  height: 44px;
+  display: block;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #f8fafc;
+  object-fit: cover;
+}
+
+.image-rename-image-meta {
+  min-width: 0;
+}
+
+.image-rename-image-meta strong,
+.image-rename-image-meta small {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.image-rename-select-col {
+  width: 64px;
+  text-align: center !important;
+}
+
+
+.image-rename-action-col {
+  width: 96px;
+  text-align: center !important;
+}
+.image-rename-row-check {
+  width: 16px;
+  height: 16px;
+  accent-color: var(--accent);
+}
+
+
+.image-rename-row-action {
+  height: 28px;
+  padding: 0 9px;
+  border: 1px solid var(--line-strong);
+  border-radius: 8px;
+  background: #fff;
+  color: var(--text);
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.image-rename-row-action:hover:not(:disabled) {
+  border-color: var(--watermark-hover);
+  background: #fff;
+}
+
+.image-rename-row-action:disabled {
+  cursor: not-allowed;
+  opacity: 0.56;
+}
+
+.image-rename-table tr.is-renamed {
+  background: #f0fdf4;
+}
+
+.image-rename-table tr.is-renamed code,
+.image-rename-table tr.is-renamed .image-rename-image-meta {
+  opacity: 0.68;
+}
+.image-rename-confidence {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 34px;
+  height: 22px;
+  padding: 0 8px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.image-rename-confidence.is-high {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.image-rename-confidence.is-medium {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.image-rename-confidence.is-low {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.image-rename-empty {
+  height: 160px;
+  color: var(--subtle);
+  text-align: center !important;
+}
+
+.image-rename-log {
+  max-height: 120px;
+  overflow: auto;
+  padding: 10px 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+  color: var(--subtle);
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.image-rename-busy .image-rename-table-wrap {
+  cursor: wait;
+}
+
+@media (max-width: 900px) {
+  .image-rename-workspace {
+    overflow: visible;
+  }
+
+  .image-rename-shell {
+    min-height: 720px;
+  }
+
+  .image-rename-head {
+    align-items: flex-start;
+  }
+
+  .image-rename-controls {
+    grid-template-columns: 1fr;
+  }
+
+  .image-rename-threshold {
+    width: 100%;
+    min-width: 0;
+  }
+}
+
