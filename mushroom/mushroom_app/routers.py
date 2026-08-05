@@ -1,12 +1,18 @@
 from typing import Any
 
 from fastapi import APIRouter, Depends, HTTPException, Request
-from fastapi.responses import HTMLResponse
+from fastapi.responses import FileResponse, HTMLResponse
 from fastapi.templating import Jinja2Templates
 
 from mushroom_app.config import TEMPLATES_DIR
 from mushroom_app.models import GalleryQuery
-from mushroom_app.services import get_banner_items, get_mushroom_detail, get_mushroom_page
+from mushroom_app.services import (
+    get_banner_items,
+    get_mushroom_detail,
+    get_mushroom_page,
+    get_site_icon_path,
+    get_site_icon_url,
+)
 
 
 router = APIRouter()
@@ -14,9 +20,21 @@ templates = Jinja2Templates(directory=str(TEMPLATES_DIR))
 
 
 def build_template_context(request: Request, active: str, **kwargs: Any) -> dict[str, Any]:
-    context: dict[str, Any] = {"request": request, "active": active}
+    context: dict[str, Any] = {
+        "request": request,
+        "active": active,
+        "site_icon_url": get_site_icon_url(),
+    }
     context.update(kwargs)
     return context
+
+
+@router.get("/site-icon", response_class=FileResponse, summary="网站头像")
+def site_icon() -> FileResponse:
+    icon_path = get_site_icon_path()
+    if icon_path is None:
+        raise HTTPException(status_code=404, detail="网站头像不存在")
+    return FileResponse(icon_path)
 
 
 @router.get("/", response_class=HTMLResponse, summary="首页")
@@ -40,6 +58,7 @@ def mushroom_gallery_page(
             "gallery",
             mushroom_page=mushroom_page,
             mushroom_count=mushroom_page.total_count,
+            search_keyword=mushroom_page.keyword,
         ),
     )
 

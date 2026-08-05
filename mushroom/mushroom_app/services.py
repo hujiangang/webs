@@ -3,11 +3,26 @@ from pathlib import Path
 
 from mushroom_app.config import PAGE_SIZE
 from mushroom_app.models import BannerItem, GalleryQuery, MushroomItem, MushroomPage
-from mushroom_app.repositories import find_mushroom_image_name, read_banner_rows, read_mushroom_rows
+from mushroom_app.repositories import (
+    find_mushroom_image_name,
+    find_site_icon_path,
+    read_banner_rows,
+    read_mushroom_rows,
+)
 
 
 def get_banner_items() -> list[BannerItem]:
     return [build_banner_item(row) for row in read_banner_rows()]
+
+
+def get_site_icon_path() -> Path | None:
+    return find_site_icon_path()
+
+
+def get_site_icon_url() -> str | None:
+    if get_site_icon_path() is None:
+        return None
+    return "/site-icon"
 
 
 def build_banner_item(row: dict[str, str]) -> BannerItem:
@@ -20,6 +35,7 @@ def build_banner_item(row: dict[str, str]) -> BannerItem:
 def get_mushroom_page(query: GalleryQuery) -> MushroomPage:
     mushrooms = [build_mushroom_item(row) for row in read_mushroom_rows()]
     filtered = [item for item in mushrooms if match_category(item, query.category)]
+    filtered = [item for item in filtered if match_keyword(item, query.keyword)]
     total_pages = max(1, math.ceil(len(filtered) / PAGE_SIZE))
     page = min(query.page, total_pages)
     start = (page - 1) * PAGE_SIZE
@@ -29,6 +45,7 @@ def get_mushroom_page(query: GalleryQuery) -> MushroomPage:
         total_pages=total_pages,
         total_count=len(filtered),
         category=query.category,
+        keyword=query.keyword.strip(),
     )
 
 
@@ -65,3 +82,10 @@ def match_category(item: MushroomItem, category: str) -> bool:
     if category == "toxic":
         return bool(item.toxicity and "无毒" not in item.toxicity)
     return True
+
+
+def match_keyword(item: MushroomItem, keyword: str) -> bool:
+    word = keyword.strip()
+    if not word:
+        return True
+    return word in item.name

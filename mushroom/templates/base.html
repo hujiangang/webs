@@ -4,19 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}菌子网站{% endblock %}</title>
-    <link rel="stylesheet" href="/static/site.css?v=20260805b">
+    {% if site_icon_url %}
+        <link rel="icon" href="{{ site_icon_url }}">
+    {% endif %}
+    <link rel="stylesheet" href="/static/site.css?v=20260805e">
 </head>
 <body>
     <header class="site-header">
         <a class="logo" href="/" aria-label="首页">
-            <span class="logo-icon" aria-hidden="true"></span>
+            {% if site_icon_url %}
+                <img class="logo-image" src="{{ site_icon_url }}" alt="网站头像">
+            {% else %}
+                <span class="logo-icon" aria-hidden="true"></span>
+            {% endif %}
         </a>
-        <nav class="nav">
-            <a class="nav-link {% if active == 'home' %}active{% endif %}" href="/">首页</a>
-            <a class="nav-link {% if active == 'gallery' %}active{% endif %}" href="/mushrooms">菌子图鉴</a>
-            <a class="nav-link" href="#">菌子小游戏</a>
-            <a class="nav-link" href="#">野生菌安全科普</a>
-        </nav>
+        <div class="header-content">
+            <nav class="nav">
+                <a class="nav-link {% if active == 'home' %}active{% endif %}" href="/">首页</a>
+                <a class="nav-link {% if active == 'gallery' %}active{% endif %}" href="/mushrooms">菌子图鉴</a>
+                <a class="nav-link" href="#">菌子小游戏</a>
+                <a class="nav-link" href="#">野生菌安全科普</a>
+            </nav>
+            <form class="site-search" action="/mushrooms" method="get" role="search">
+                <input type="hidden" name="category" value="all">
+                <input type="hidden" name="page" value="1">
+                <span class="search-icon" aria-hidden="true"></span>
+                <input class="search-input" type="search" name="keyword" value="{{ search_keyword or '' }}" placeholder="搜索菌子名称" aria-label="搜索菌子名称">
+            </form>
+        </div>
     </header>
 
     <main class="page-main {% block main_class %}{% endblock %}">
@@ -34,6 +49,6 @@
             </nav>
         </div>
     </footer>
-    <script src="/static/site.js?v=20260805b"></script>
+    <script src="/static/site.js?v=20260805e"></script>
 </body>
 </html>

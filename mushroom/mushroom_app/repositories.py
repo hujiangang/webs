@@ -28,6 +28,13 @@ def find_mushroom_image_name(mushroom_name: str) -> str | None:
     return None
 
 
+def find_site_icon_path() -> Path | None:
+    for path in sorted(DATA_DIR.iterdir()):
+        if path.is_file() and path.stem == "icon":
+            return path
+    return None
+
+
 def read_xlsx_rows(path: Path) -> list[dict[str, str]]:
     with zipfile.ZipFile(path) as workbook:
         shared_strings = read_shared_strings(workbook)

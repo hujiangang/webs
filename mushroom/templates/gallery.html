@@ -6,10 +6,10 @@
 {% block content %}
     <section class="gallery-shell" aria-label="菌子图鉴">
         <div class="filter-bar">
-            <a class="filter-btn {% if mushroom_page.category == 'all' %}active{% endif %}" href="/mushrooms?category=all&page=1">全部</a>
-            <a class="filter-btn {% if mushroom_page.category == 'edible' %}active{% endif %}" href="/mushrooms?category=edible&page=1">可食用</a>
-            <a class="filter-btn {% if mushroom_page.category == 'inedible' %}active{% endif %}" href="/mushrooms?category=inedible&page=1">不可食用</a>
-            <a class="filter-btn {% if mushroom_page.category == 'toxic' %}active{% endif %}" href="/mushrooms?category=toxic&page=1">有毒的</a>
+            <a class="filter-btn {% if mushroom_page.category == 'all' %}active{% endif %}" href="/mushrooms?category=all&page=1&keyword={{ mushroom_page.keyword|urlencode }}">全部</a>
+            <a class="filter-btn {% if mushroom_page.category == 'edible' %}active{% endif %}" href="/mushrooms?category=edible&page=1&keyword={{ mushroom_page.keyword|urlencode }}">可食用</a>
+            <a class="filter-btn {% if mushroom_page.category == 'inedible' %}active{% endif %}" href="/mushrooms?category=inedible&page=1&keyword={{ mushroom_page.keyword|urlencode }}">不可食用</a>
+            <a class="filter-btn {% if mushroom_page.category == 'toxic' %}active{% endif %}" href="/mushrooms?category=toxic&page=1&keyword={{ mushroom_page.keyword|urlencode }}">有毒的</a>
         </div>
         <p class="gallery-count">总共 {{ mushroom_count }} 种菌子</p>
 
@@ -30,9 +30,9 @@
         {% endif %}
 
         <div class="pagination">
-            <a class="page-btn {% if mushroom_page.page <= 1 %}disabled{% endif %}" href="/mushrooms?category={{ mushroom_page.category }}&page={{ mushroom_page.page - 1 }}">上一页</a>
+            <a class="page-btn {% if mushroom_page.page <= 1 %}disabled{% endif %}" href="/mushrooms?category={{ mushroom_page.category }}&page={{ mushroom_page.page - 1 }}&keyword={{ mushroom_page.keyword|urlencode }}">上一页</a>
             <span class="page-state">{{ mushroom_page.page }}/{{ mushroom_page.total_pages }}</span>
-            <a class="page-btn {% if mushroom_page.page >= mushroom_page.total_pages %}disabled{% endif %}" href="/mushrooms?category={{ mushroom_page.category }}&page={{ mushroom_page.page + 1 }}">下一页</a>
+            <a class="page-btn {% if mushroom_page.page >= mushroom_page.total_pages %}disabled{% endif %}" href="/mushrooms?category={{ mushroom_page.category }}&page={{ mushroom_page.page + 1 }}&keyword={{ mushroom_page.keyword|urlencode }}">下一页</a>
         </div>
     </section>
 {% endblock %}

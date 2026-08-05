@@ -19,6 +19,7 @@ class MushroomItem(BaseModel):
 class GalleryQuery(BaseModel):
     category: str = "all"
     page: int = Field(default=1, ge=1)
+    keyword: str = ""
 
 
 class MushroomPage(BaseModel):
@@ -27,3 +28,4 @@ class MushroomPage(BaseModel):
     total_pages: int
     total_count: int
     category: str
+    keyword: str
