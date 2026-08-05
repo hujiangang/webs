@@ -238,6 +238,8 @@ export function initImageBatchResize({ status }) {
   updateQualityLabel();
   modeInput.addEventListener('change', updateModeFields);
   qualityInput?.addEventListener('input', updateQualityLabel);
+  sourceDirInput.addEventListener('input', clearResults);
+  outputDirInput.addEventListener('input', clearResults);
   pickSourceButton?.addEventListener('click', () => openSystemDirectoryPicker('source'));
   pickOutputButton?.addEventListener('click', () => openSystemDirectoryPicker('output'));
   runButton.addEventListener('click', runResize);

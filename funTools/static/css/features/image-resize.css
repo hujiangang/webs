@@ -89,8 +89,8 @@
   font-size: 13px;
 }
 
-.image-resize-field input[readonly] {
-  cursor: default;
+.image-resize-folder-input input {
+  font-family: Consolas, "Courier New", monospace;
 }
 
 .image-resize-field input:disabled {
