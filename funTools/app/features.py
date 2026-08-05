@@ -1,4 +1,4 @@
-ASSET_VERSION = "20260804_native_folder_picker"
+ASSET_VERSION = "20260805_image_resize"
 
 
 FEATURES = {
@@ -53,5 +53,18 @@ FEATURES = {
         "status_text": "先分析匹配结果，确认后再批量重命名",
         "input_items": ["源文件夹", "参考文件夹"],
         "output_items": ["匹配预览", "确认重命名"],
+    },
+    "image_batch_resize": {
+        "path": "/image-batch-resize",
+        "index": "5",
+        "title": "批量修改图片尺寸",
+        "description": "批量调整源文件夹图片尺寸，按选定格式保存到另一个输出文件夹。",
+        "view": "image_batch_resize",
+        "template": "features/image-resize.html",
+        "main_class": "",
+        "workspace_class": "image-resize-workspace",
+        "status_text": "选择源文件夹和输出文件夹，设置尺寸后开始处理",
+        "input_items": ["源文件夹", "尺寸参数", "输出格式"],
+        "output_items": ["输出文件夹", "处理日志"],
     },
 }

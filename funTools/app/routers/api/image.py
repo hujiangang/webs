@@ -2,6 +2,7 @@ from fastapi import APIRouter, HTTPException, Response
 from pydantic import BaseModel
 from starlette.concurrency import run_in_threadpool
 
+from app.services.image_resize import ResizeOptions, batch_resize_images
 from app.services.image_similarity_rename import apply_rename_operations, build_similarity_preview
 from app.services.watermark import normalize_base64, remove_watermark_image
 
@@ -62,5 +63,37 @@ async def image_rename_apply(payload: ImageRenameApplyRequest):
     operations = [operation.dict() for operation in payload.operations]
     try:
         return await run_in_threadpool(apply_rename_operations, payload.source_dir, operations)
+    except ValueError as exc:
+        raise HTTPException(status_code=400, detail=str(exc)) from exc
+
+class ImageResizeRequest(BaseModel):
+    source_dir: str
+    output_dir: str
+    mode: str = "fit_width"
+    width: int | None = None
+    height: int | None = None
+    output_format: str = "original"
+    quality: int = 92
+    recursive: bool = False
+    preserve_subfolders: bool = True
+    overwrite: bool = False
+
+
+@router.post("/image-resize/batch")
+async def image_resize_batch(payload: ImageResizeRequest):
+    try:
+        options = ResizeOptions(
+            source_dir=payload.source_dir,
+            output_dir=payload.output_dir,
+            mode=payload.mode,
+            width=payload.width,
+            height=payload.height,
+            output_format=payload.output_format,
+            quality=payload.quality,
+            recursive=payload.recursive,
+            preserve_subfolders=payload.preserve_subfolders,
+            overwrite=payload.overwrite,
+        )
+        return await run_in_threadpool(batch_resize_images, options)
     except ValueError as exc:
         raise HTTPException(status_code=400, detail=str(exc)) from exc

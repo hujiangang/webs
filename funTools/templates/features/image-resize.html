@@ -1,0 +1,113 @@
+<div class="image-resize-shell">
+  <div class="image-resize-head">
+    <div>
+      <h2>批量修改图片尺寸</h2>
+      <p>选择源文件夹和输出文件夹，按比例或指定尺寸批量生成新图片，源文件不会被修改。</p>
+    </div>
+    <div class="image-resize-count-card">
+      <span id="imageResizeProcessedCount">0</span>
+      <small>已处理</small>
+    </div>
+  </div>
+
+  <div class="image-resize-controls">
+    <div class="image-resize-field">
+      <span>源文件夹</span>
+      <div class="image-resize-folder-input">
+        <input id="imageResizeSourceDir" type="text" placeholder="请选择源文件夹" autocomplete="off" readonly />
+        <button id="imageResizePickSource" type="button">选择</button>
+      </div>
+    </div>
+
+    <div class="image-resize-field">
+      <span>输出文件夹</span>
+      <div class="image-resize-folder-input">
+        <input id="imageResizeOutputDir" type="text" placeholder="请选择输出文件夹" autocomplete="off" readonly />
+        <button id="imageResizePickOutput" type="button">选择</button>
+      </div>
+    </div>
+
+    <div class="image-resize-field">
+      <span>尺寸模式</span>
+      <select id="imageResizeMode">
+        <option value="fit_width">输入宽度，高度按原图比例计算</option>
+        <option value="fit_height">输入高度，宽度按原图比例计算</option>
+        <option value="fit_box">输入宽高，等比适配到范围内</option>
+        <option value="exact">输入宽高，强制调整到指定尺寸</option>
+      </select>
+    </div>
+
+    <div class="image-resize-size-grid">
+      <div class="image-resize-field">
+        <span>宽度</span>
+        <input id="imageResizeWidth" type="number" min="1" max="20000" step="1" value="1024" />
+      </div>
+      <div class="image-resize-field">
+        <span>高度</span>
+        <input id="imageResizeHeight" type="number" min="1" max="20000" step="1" placeholder="按模式需要填写" />
+      </div>
+    </div>
+
+    <div class="image-resize-field">
+      <span>保存格式</span>
+      <select id="imageResizeFormat">
+        <option value="original">保持原格式</option>
+        <option value="jpg">JPG</option>
+        <option value="png">PNG</option>
+        <option value="webp">WEBP</option>
+        <option value="bmp">BMP</option>
+        <option value="tiff">TIFF</option>
+      </select>
+    </div>
+
+    <label class="image-resize-quality">
+      <span>质量</span>
+      <input id="imageResizeQuality" type="range" min="1" max="100" step="1" value="92" />
+      <strong id="imageResizeQualityValue">92</strong>
+    </label>
+
+    <div class="image-resize-options">
+      <label class="image-resize-check">
+        <input id="imageResizeRecursive" type="checkbox" />
+        <span>包含子文件夹</span>
+      </label>
+      <label class="image-resize-check">
+        <input id="imageResizePreserveSubfolders" type="checkbox" checked />
+        <span>保留子文件夹结构</span>
+      </label>
+      <label class="image-resize-check">
+        <input id="imageResizeOverwrite" type="checkbox" />
+        <span>覆盖输出文件夹同名文件</span>
+      </label>
+    </div>
+
+    <div class="image-resize-actions">
+      <button class="image-resize-primary" id="imageResizeRun" type="button">开始处理</button>
+    </div>
+  </div>
+
+  <div class="image-resize-summary" id="imageResizeSummary">
+    输出文件会保存到选定的输出文件夹；源文件夹中的图片不会被修改。
+  </div>
+
+  <div class="image-resize-table-wrap">
+    <table class="image-resize-table">
+      <thead>
+        <tr>
+          <th>源图片</th>
+          <th>原尺寸</th>
+          <th>新尺寸</th>
+          <th>输出文件</th>
+          <th>格式</th>
+        </tr>
+      </thead>
+      <tbody id="imageResizeRows">
+        <tr>
+          <td colspan="5" class="image-resize-empty">等待处理结果</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="image-resize-log" id="imageResizeLog" hidden></div>
+</div>

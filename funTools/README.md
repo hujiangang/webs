@@ -20,8 +20,8 @@
 - `app/features.py`：功能清单、导航元数据、页面模板路径和静态资源版本号
 - `app/routers/pages.py`：页面路由，只负责把指定功能渲染到模板
 - `app/routers/api/`：接口路由包，按业务大类拆分
-  - `image.py`：图片类接口，例如去水印、图片相似命名
-  - `filesystem.py`：文件系统接口，例如列出本机磁盘和文件夹供页面选择
+  - `image.py`：图片类接口，例如去水印、图片相似命名、批量修改图片尺寸
+  - `filesystem.py`：文件系统接口，例如系统文件夹选择框、缩略图读取
   - `__init__.py`：接口总入口
 - `app/services/`：后端业务服务
   - `watermark.py`：图片去水印模型加载和处理逻辑
@@ -41,11 +41,11 @@
 - `static/css/base.css`：全局变量和基础样式
 - `static/css/layout.css`：顶栏、侧栏、主内容区等通用布局
 - `static/css/placeholder.css`：占位功能页面样式
-- `static/css/features/`：按功能拆分的样式文件，例如 `watermark.css`、`video-frame.css`、`image-rename.css`
+- `static/css/features/`：按功能拆分的样式文件，例如 `watermark.css`、`video-frame.css`、`image-rename.css`、`image-resize.css`
 - `static/js/app.js`：前端入口，只负责初始化各模块
 - `static/js/layout/`：布局交互模块，例如侧栏显示隐藏
 - `static/js/shared/`：跨功能共享的小工具，例如状态栏、文件读取
-- `static/js/features/`：按功能拆分的交互模块，例如 `watermark.js`、`video-frame.js`、`image-rename.js`
+- `static/js/features/`：按功能拆分的交互模块，例如 `watermark.js`、`video-frame.js`、`image-rename.js`、`image-resize.js`
 - `models/remove_watermark/lama/`：图片去水印模型目录
 - `scripts/download_remove_watermark_model.bat`：Windows 双击下载图片去水印模型
 - `scripts/download_remove_watermark_model.py`：图片去水印模型下载脚本

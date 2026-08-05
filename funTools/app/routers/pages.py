@@ -40,3 +40,7 @@ async def video_frame_capture(request: Request):
 @router.get("/image-similarity-rename", response_class=HTMLResponse)
 async def image_similarity_rename(request: Request):
     return render_feature(request, "image_similarity_rename")
+
+@router.get("/image-batch-resize", response_class=HTMLResponse)
+async def image_batch_resize(request: Request):
+    return render_feature(request, "image_batch_resize")
