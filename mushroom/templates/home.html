@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block title %}首页 - 菌子网站{% endblock %}
+{% block main_class %}home-main{% endblock %}
+
+{% block content %}
+    <section class="banner-shell" aria-label="首页轮播">
+        <button class="carousel-btn carousel-btn-prev is-hidden" type="button" data-carousel-prev aria-label="上一张"></button>
+        <div class="banner-track" data-carousel>
+            {% for banner in banners %}
+                <div class="banner-slide {% if loop.first %}active{% endif %}" data-carousel-slide>
+                    {% if banner.media_type == 'video' %}
+                        <video class="banner-media" src="{{ banner.url }}" controls controlsList="nodownload noremoteplayback" disablePictureInPicture muted playsinline oncontextmenu="return false"></video>
+                    {% else %}
+                        <img class="banner-media" src="{{ banner.url }}" alt="{{ banner.name }}" draggable="false">
+                    {% endif %}
+                </div>
+            {% endfor %}
+            {% if not banners %}
+                <div class="empty-media"></div>
+            {% endif %}
+        </div>
+        <button class="carousel-btn carousel-btn-next {% if banners|length <= 1 %}is-hidden{% endif %}" type="button" data-carousel-next aria-label="下一张"></button>
+    </section>
+{% endblock %}

@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+
+{% block title %}{{ mushroom.name }} - 菌子图鉴{% endblock %}
+{% block main_class %}detail-main{% endblock %}
+
+{% block content %}
+    <section class="detail-shell">
+        <a class="back-link" href="/mushrooms">返回图鉴</a>
+        <div class="detail-hero">
+            <div class="detail-image-card">
+                <img class="detail-image" src="{{ mushroom.image_url }}" alt="{{ mushroom.name }}">
+            </div>
+            <div class="detail-summary">
+                <p class="detail-eyebrow">菌子图鉴</p>
+                <h1 class="detail-title">{{ mushroom.name }}</h1>
+                <div class="detail-tags">
+                    {% if mushroom.edible %}
+                        <span class="detail-tag">{{ mushroom.edible }}</span>
+                    {% endif %}
+                    {% if mushroom.toxicity %}
+                        <span class="detail-tag">{{ mushroom.toxicity }}</span>
+                    {% endif %}
+                </div>
+                <p class="detail-warning">野生菌食用风险高，采食前需由专业人员确认，页面信息仅作科普展示。</p>
+            </div>
+        </div>
+
+        <div class="detail-content">
+            <section class="detail-section">
+                <h2>基础信息</h2>
+                <dl class="detail-list">
+                    <div>
+                        <dt>编号</dt>
+                        <dd>{{ mushroom.id }}</dd>
+                    </div>
+                    <div>
+                        <dt>可食用性</dt>
+                        <dd>{{ mushroom.edible or '暂无数据' }}</dd>
+                    </div>
+                    <div>
+                        <dt>毒性说明</dt>
+                        <dd>{{ mushroom.toxicity or '暂无数据' }}</dd>
+                    </div>
+                </dl>
+            </section>
+
+            <section class="detail-section">
+                <h2>产地与生长环境</h2>
+                <p class="detail-description">{{ mushroom.description or '暂无详细描述' }}</p>
+            </section>
+
+            <section class="detail-section">
+                <h2>安全提示</h2>
+                <p class="detail-description">不认识、不熟悉、来源不明确的野生菌不要采摘和食用；烹饪时应充分加热，身体不适应及时就医。</p>
+            </section>
+        </div>
+    </section>
+{% endblock %}
