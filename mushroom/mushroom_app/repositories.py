@@ -3,7 +3,7 @@ import zipfile
 import xml.etree.ElementTree as ET
 from pathlib import Path
 
-from mushroom_app.config import DATA_DIR, IMAGE_DIR
+from mushroom_app.config import DATA_DIR, IMAGE_DIR, IMAGE_EX_DIR
 
 
 def read_banner_rows() -> list[dict[str, str]]:
@@ -26,6 +26,25 @@ def find_mushroom_image_name(mushroom_name: str) -> str | None:
         if path.is_file() and path.stem == mushroom_name:
             return path.name
     return None
+
+
+def find_mushroom_gallery_names(mushroom_name: str) -> list[str]:
+    # 详情页图片列表：第一张为主图，其余为 image_ex 目录下按 菌子名_序号 命名的附加图，按序号升序。
+    names: list[str] = []
+    main_name = find_mushroom_image_name(mushroom_name)
+    if main_name is not None:
+        names.append(f"image/{main_name}")
+    if IMAGE_EX_DIR.is_dir():
+        extras = [
+            path
+            for path in IMAGE_EX_DIR.iterdir()
+            if path.is_file()
+            and path.stem.startswith(f"{mushroom_name}_")
+            and path.stem.rsplit("_", 1)[-1].isdigit()
+        ]
+        extras.sort(key=lambda path: int(path.stem.rsplit("_", 1)[-1]))
+        names.extend(f"image_ex/{path.name}" for path in extras)
+    return names
 
 
 def find_site_icon_path() -> Path | None:

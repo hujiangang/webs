@@ -5,7 +5,7 @@ import sys
 from fastapi import FastAPI
 from fastapi.staticfiles import StaticFiles
 
-from mushroom_app.config import BANNER_DIR, IMAGE_DIR, STATIC_DIR
+from mushroom_app.config import BANNER_DIR, IMAGE_DIR, IMAGE_EX_DIR, STATIC_DIR
 from mushroom_app.routers import router
 
 
@@ -14,6 +14,7 @@ def create_app() -> FastAPI:
     app.mount("/static", StaticFiles(directory=str(STATIC_DIR)), name="static")
     app.mount("/banner", StaticFiles(directory=str(BANNER_DIR)), name="banner")
     app.mount("/image", StaticFiles(directory=str(IMAGE_DIR)), name="image")
+    app.mount("/image_ex", StaticFiles(directory=str(IMAGE_EX_DIR)), name="image_ex")
     app.include_router(router)
     return app
 

@@ -4,6 +4,7 @@ from pathlib import Path
 from mushroom_app.config import PAGE_SIZE
 from mushroom_app.models import BannerItem, GalleryQuery, MushroomItem, MushroomPage
 from mushroom_app.repositories import (
+    find_mushroom_gallery_names,
     find_mushroom_image_name,
     find_site_icon_path,
     read_banner_rows,
@@ -65,11 +66,13 @@ def build_mushroom_item(row: dict[str, str]) -> MushroomItem:
         name=name,
         toxicity=row.get("是否有毒性", "").strip(),
         edible=row.get("是否可食用", "").strip(),
-        description=(
-            row.get("描述(产地+生长环境)", "")
-            or row.get("描述(产地+生长环境+如果可食用，增加适宜做法、口感等等)", "")
-        ).strip(),
         image_url=f"/image/{image_name}",
+        # 拼接为 /image、/image_ex 静态路由的访问 URL，第一张为主图
+        gallery_images=[f"/{item}" for item in find_mushroom_gallery_names(name)],
+        habitat=row.get("生长环境", "").strip(),
+        features=row.get("识别特征", "").strip(),
+        food_value=row.get("食用价值", "").strip(),
+        price=row.get("参考价格", "").strip(),
     )
 
 

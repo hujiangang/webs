@@ -12,8 +12,14 @@ class MushroomItem(BaseModel):
     name: str
     toxicity: str
     edible: str
-    description: str
     image_url: str
+    # 详情页图片列表（主图 + 素材图）
+    gallery_images: list[str] = []
+    # 详情页导航区块对应的四个内容字段
+    habitat: str = ""
+    features: str = ""
+    food_value: str = ""
+    price: str = ""
 
 
 class GalleryQuery(BaseModel):
