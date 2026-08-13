@@ -17,37 +17,12 @@
         </div>
 
         <nav class="detail-nav" aria-label="详情导航">
-            <a class="detail-nav-link" href="#section-habitat">
-                <svg class="detail-nav-icon" viewBox="0 0 24 24" fill="none" stroke="#24c56a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                    <path d="M12 22V8"/>
-                    <path d="M12 8c0-4 3-6 7-6 0 4-3 6-7 6"/>
-                    <path d="M12 13c0-3-2.5-5-6-5 0 3.5 2.5 5 6 5"/>
-                </svg>
-                生长环境
-            </a>
-            <a class="detail-nav-link" href="#section-features">
-                <svg class="detail-nav-icon" viewBox="0 0 24 24" fill="none" stroke="#2b8cff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                    <circle cx="10.5" cy="10.5" r="6.5"/>
-                    <path d="M15.5 15.5 21 21"/>
-                </svg>
-                识别特征
-            </a>
-            <a class="detail-nav-link" href="#section-food">
-                <svg class="detail-nav-icon" viewBox="0 0 24 24" fill="none" stroke="#f28c28" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                    <path d="M7 2v20"/>
-                    <path d="M4 2v5a3 3 0 0 0 6 0V2"/>
-                    <path d="M17 2c-2 3-2 7 0 9v11"/>
-                </svg>
-                食用价值
-            </a>
-            <a class="detail-nav-link" href="#section-price">
-                <svg class="detail-nav-icon" viewBox="0 0 24 24" fill="none" stroke="#d4a017" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                    <circle cx="12" cy="12" r="9"/>
-                    <path d="M12 7v10"/>
-                    <path d="M9.5 9.5c0-1 1.1-1.8 2.5-1.8s2.5.8 2.5 1.8-1.1 1.6-2.5 2c-1.4.4-2.5.9-2.5 2 0 1 1.1 1.8 2.5 1.8s2.5-.8 2.5-1.8"/>
-                </svg>
-                参考价格
-            </a>
+            {% for field in mushroom.detail_fields %}
+                <a class="detail-nav-link" href="#section-field-{{ loop.index }}">
+                    <span class="detail-nav-dot" aria-hidden="true"></span>
+                    {{ field.label }}
+                </a>
+            {% endfor %}
         </nav>
 
         <div class="detail-gallery">
@@ -59,25 +34,12 @@
         </div>
 
         <div class="detail-content">
-            <section class="detail-section detail-anchor" id="section-habitat">
-                <h2>生长环境</h2>
-                <p class="detail-description">{{ mushroom.habitat or '暂无数据' }}</p>
-            </section>
-
-            <section class="detail-section detail-anchor" id="section-features">
-                <h2>识别特征</h2>
-                <p class="detail-description">{{ mushroom.features or '暂无数据' }}</p>
-            </section>
-
-            <section class="detail-section detail-anchor" id="section-food">
-                <h2>食用价值</h2>
-                <p class="detail-description">{{ mushroom.food_value or '暂无数据' }}</p>
-            </section>
-
-            <section class="detail-section detail-anchor" id="section-price">
-                <h2>参考价格</h2>
-                <p class="detail-description">{{ mushroom.price or '暂无数据' }}</p>
-            </section>
+            {% for field in mushroom.detail_fields %}
+                <section class="detail-section detail-anchor" id="section-field-{{ loop.index }}">
+                    <h2>{{ field.label }}</h2>
+                    <p class="detail-description">{{ field.value or '暂无数据' }}</p>
+                </section>
+            {% endfor %}
 
             <section class="detail-section">
                 <h2>安全提示</h2>

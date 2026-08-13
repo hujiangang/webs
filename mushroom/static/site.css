@@ -455,6 +455,13 @@ a {
     height: 18px;
 }
 
+.detail-nav-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #24c56a;
+}
+
 /* 导航条下方的四格图片列表 */
 .detail-gallery {
     display: grid;

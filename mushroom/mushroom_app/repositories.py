@@ -21,6 +21,17 @@ def read_mushroom_rows() -> list[dict[str, str]]:
         return list(csv.DictReader(file))
 
 
+def read_mushroom_headers() -> list[str]:
+    path = DATA_DIR / "mushroom.csv"
+    if zipfile.is_zipfile(path):
+        rows = read_xlsx_rows(path)
+        return list(rows[0].keys()) if rows else []
+
+    with path.open("r", encoding="utf-8-sig", newline="") as file:
+        reader = csv.reader(file)
+        return next(reader, [])
+
+
 def find_mushroom_image_name(mushroom_name: str) -> str | None:
     for path in sorted(IMAGE_DIR.iterdir()):
         if path.is_file() and path.stem == mushroom_name:

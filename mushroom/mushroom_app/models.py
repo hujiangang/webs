@@ -15,11 +15,8 @@ class MushroomItem(BaseModel):
     image_url: str
     # 详情页图片列表（主图 + 素材图）
     gallery_images: list[str] = []
-    # 详情页导航区块对应的四个内容字段
-    habitat: str = ""
-    features: str = ""
-    food_value: str = ""
-    price: str = ""
+    # 详情页按数据表表头动态展示，避免列名变化后页面缺字段。
+    detail_fields: list[dict[str, str]] = []
 
 
 class GalleryQuery(BaseModel):

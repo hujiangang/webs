@@ -8,6 +8,7 @@ from mushroom_app.repositories import (
     find_mushroom_image_name,
     find_site_icon_path,
     read_banner_rows,
+    read_mushroom_headers,
     read_mushroom_rows,
 )
 
@@ -59,20 +60,24 @@ def get_mushroom_detail(mushroom_id: str) -> MushroomItem | None:
 
 
 def build_mushroom_item(row: dict[str, str]) -> MushroomItem:
-    name = row.get("名称", "").strip()
+    headers = read_mushroom_headers()
+    id_key = headers[0] if headers else "编号"
+    name_key = headers[1] if len(headers) > 1 else "名称"
+    name = row.get(name_key, "").strip()
     image_name = find_mushroom_image_name(name) or f"{name}.png"
     return MushroomItem(
-        id=row.get("编号", "").strip(),
+        id=row.get(id_key, "").strip(),
         name=name,
-        toxicity=row.get("是否有毒性", "").strip(),
-        edible=row.get("是否可食用", "").strip(),
+        toxicity=get_row_value(row, ("是否有毒性", "毒性", "毒性说明")),
+        edible=get_row_value(row, ("是否可食用", "可食用性", "食用性")),
         image_url=f"/image/{image_name}",
         # 拼接为 /image、/image_ex 静态路由的访问 URL，第一张为主图
         gallery_images=[f"/{item}" for item in find_mushroom_gallery_names(name)],
-        habitat=row.get("生长环境", "").strip(),
-        features=row.get("识别特征", "").strip(),
-        food_value=row.get("食用价值", "").strip(),
-        price=row.get("参考价格", "").strip(),
+        detail_fields=[
+            {"label": key, "value": row.get(key, "").strip()}
+            for key in headers
+            if key not in {id_key, name_key}
+        ],
     )
 
 
@@ -92,3 +97,10 @@ def match_keyword(item: MushroomItem, keyword: str) -> bool:
     if not word:
         return True
     return word in item.name
+
+
+def get_row_value(row: dict[str, str], aliases: tuple[str, ...]) -> str:
+    for key in aliases:
+        if key in row:
+            return row.get(key, "").strip()
+    return ""

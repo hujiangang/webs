@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>菌子管理</title>
+    <link rel="stylesheet" href="/static/admin.css?v=20260813c">
+</head>
+<body>
+    <div class="admin-shell">
+        <aside class="admin-sidebar">
+            <div class="admin-brand">
+                <h1>菌子管理</h1>
+                <p>{{ mushroom_list.items|length }} 条记录</p>
+            </div>
+            <form class="admin-search" action="/admin/mushrooms" method="get">
+                <input type="search" name="keyword" value="{{ mushroom_list.keyword }}" placeholder="搜索名称或拉丁名">
+                <button type="submit">搜索</button>
+            </form>
+            <nav class="admin-list" aria-label="菌子列表">
+                {% for item in mushroom_list.items %}
+                    <a class="admin-list-item {% if mushroom and item.id == mushroom.id %}active{% endif %}" href="/admin/mushrooms/{{ item.id }}?keyword={{ mushroom_list.keyword|urlencode }}">
+                        <span class="admin-list-name">{{ item.name }}</span>
+                    </a>
+                {% endfor %}
+            </nav>
+        </aside>
+
+        <main class="admin-main">
+            {% if message %}
+                <p class="admin-message">{{ message }}</p>
+            {% endif %}
+            {% if error %}
+                <p class="admin-error">{{ error }}</p>
+            {% endif %}
+
+            {% if mushroom %}
+                <header class="edit-header">
+                    <div>
+                        <p class="edit-eyebrow">编号 {{ mushroom.id }}</p>
+                        <h2>{{ mushroom.name }}</h2>
+                    </div>
+                    <a class="preview-link" href="/mushrooms/{{ mushroom.id }}" target="_blank" rel="noreferrer">前台预览</a>
+                </header>
+
+                <section class="image-section">
+                    <div class="main-image-panel">
+                        {% if mushroom.main_image_url %}
+                            <button class="image-preview-button" type="button" data-preview-src="{{ mushroom.main_image_url }}" aria-label="查看主图大图">
+                                <img src="{{ mushroom.main_image_url }}" alt="{{ mushroom.name }}主图">
+                            </button>
+                        {% else %}
+                            <div class="empty-image">暂无主图</div>
+                        {% endif %}
+                        <form class="upload-form" action="/admin/mushrooms/{{ mushroom.id }}/main-image" method="post" enctype="multipart/form-data" data-auto-upload-form>
+                            <label>
+                                上传主图
+                                <input type="file" name="image" accept="image/*" required data-main-upload>
+                            </label>
+                        </form>
+                    </div>
+
+                    <div class="extra-image-panel">
+                        <div class="section-title">
+                            <h3>扩展图片</h3>
+                            {% if mushroom.extra_images|length < 3 %}
+                                <form class="upload-form inline" action="/admin/mushrooms/{{ mushroom.id }}/extra-images" method="post" enctype="multipart/form-data" data-auto-upload-form>
+                                    <label>
+                                        上传扩展图
+                                        <input type="file" name="image" accept="image/*" required data-extra-upload>
+                                    </label>
+                                </form>
+                            {% else %}
+                                <span class="extra-limit">最多 3 张</span>
+                            {% endif %}
+                        </div>
+                        <div class="extra-grid">
+                            {% for image in mushroom.extra_images %}
+                                <div class="extra-card-wrap">
+                                    <button class="extra-card" type="button" data-preview-src="{{ image.url }}" aria-label="查看扩展图{{ image.index }}">
+                                        <img src="{{ image.url }}" alt="{{ mushroom.name }}扩展图{{ image.index }}">
+                                        <span>_{{ image.index }}</span>
+                                    </button>
+                                    <form class="delete-extra-form" action="/admin/mushrooms/{{ mushroom.id }}/extra-images/{{ image.index }}/delete" method="post">
+                                        <button type="submit" aria-label="删除扩展图{{ image.index }}">×</button>
+                                    </form>
+                                </div>
+                            {% endfor %}
+                            {% if not mushroom.extra_images %}
+                                <p class="empty-extra">暂无扩展图片</p>
+                            {% endif %}
+                        </div>
+                    </div>
+                </section>
+
+                <form class="edit-form" action="/admin/mushrooms/{{ mushroom.id }}" method="post">
+                    <section class="form-section">
+                        <h3>信息字段</h3>
+                        <div class="form-grid">
+                            {% for field in mushroom.fields %}
+                                <label class="{% if field.multiline %}wide-field{% endif %}">
+                                    {{ field.label }}
+                                    {% if field.multiline %}
+                                        <textarea name="{{ field.key }}" rows="4">{{ field.value }}</textarea>
+                                    {% else %}
+                                        <input name="{{ field.key }}" value="{{ field.value }}" {% if loop.first %}required{% endif %}>
+                                    {% endif %}
+                                </label>
+                            {% endfor %}
+                        </div>
+                    </section>
+
+                    <div class="action-bar">
+                        <button type="submit">保存信息</button>
+                    </div>
+                </form>
+            {% else %}
+                <div class="empty-state">暂无可编辑菌子</div>
+            {% endif %}
+        </main>
+    </div>
+
+    <div class="admin-viewer" data-admin-viewer hidden>
+        <button type="button" class="admin-viewer-close" data-admin-viewer-close aria-label="关闭">×</button>
+        <img data-admin-viewer-image alt="图片预览">
+    </div>
+    <script src="/static/admin.js?v=20260813c"></script>
+</body>
+</html>
