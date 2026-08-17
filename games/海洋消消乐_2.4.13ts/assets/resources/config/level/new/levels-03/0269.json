@@ -1,0 +1,288 @@
+{
+    "grid": [
+        {
+            "collect": null,
+            "map": [
+                [
+                    null,
+                    {
+                        "type": 7,
+                        "born": true
+                    },
+                    {
+                        "born": true
+                    },
+                    {
+                        "born": true
+                    },
+                    null,
+                    {
+                        "born": true
+                    },
+                    {
+                        "born": true
+                    },
+                    {
+                        "type": 7,
+                        "born": true
+                    },
+                    null
+                ],
+                [
+                    {
+                        "type": 7,
+                        "born": true
+                    },
+                    {
+                        "water": true
+                    },
+                    {
+                        "type": 0,
+                        "ice": 1
+                    },
+                    {},
+                    {},
+                    {},
+                    {
+                        "type": 0,
+                        "ice": 1
+                    },
+                    {
+                        "water": true
+                    },
+                    {
+                        "type": 7,
+                        "born": true
+                    }
+                ],
+                [
+                    null,
+                    {
+                        "type": 0,
+                        "ice": 1
+                    },
+                    {
+                        "type": 1,
+                        "locks": 2
+                    },
+                    {},
+                    {},
+                    {},
+                    {
+                        "type": 1,
+                        "locks": 2
+                    },
+                    {
+                        "type": 0,
+                        "ice": 1
+                    },
+                    null
+                ],
+                [
+                    {
+                        "type": 0,
+                        "ice": 1
+                    },
+                    {
+                        "type": 1,
+                        "locks": 2
+                    },
+                    {
+                        "type": 2,
+                        "ice": 1
+                    },
+                    {},
+                    {},
+                    {},
+                    {
+                        "type": 2,
+                        "ice": 1
+                    },
+                    {
+                        "type": 1,
+                        "locks": 2
+                    },
+                    {
+                        "type": 0,
+                        "ice": 1
+                    }
+                ],
+                [
+                    {
+                        "type": 1,
+                        "locks": 2
+                    },
+                    {
+                        "type": 2,
+                        "ice": 1
+                    },
+                    {
+                        "type": 3,
+                        "locks": 2
+                    },
+                    {},
+                    {},
+                    {},
+                    {
+                        "type": 3,
+                        "locks": 2
+                    },
+                    {
+                        "type": 2,
+                        "ice": 1
+                    },
+                    {
+                        "type": 1,
+                        "locks": 2
+                    }
+                ],
+                [
+                    {
+                        "type": 2,
+                        "ice": 1
+                    },
+                    {
+                        "type": 3,
+                        "locks": 2
+                    },
+                    {
+                        "type": 4,
+                        "ice": 1
+                    },
+                    {},
+                    {},
+                    {},
+                    {
+                        "type": 4,
+                        "ice": 1
+                    },
+                    {
+                        "type": 3,
+                        "locks": 2
+                    },
+                    {
+                        "type": 2,
+                        "ice": 1
+                    }
+                ],
+                [
+                    {
+                        "type": 3,
+                        "locks": 2
+                    },
+                    {
+                        "type": 4,
+                        "ice": 1
+                    },
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {
+                        "type": 4,
+                        "ice": 1
+                    },
+                    {
+                        "type": 3,
+                        "locks": 2
+                    }
+                ],
+                [
+                    {
+                        "type": 4,
+                        "exit": true,
+                        "ice": 1
+                    },
+                    {},
+                    {},
+                    {},
+                    {
+                        "exit": true
+                    },
+                    {},
+                    {},
+                    {},
+                    {
+                        "type": 4,
+                        "exit": true,
+                        "ice": 1
+                    }
+                ],
+                [
+                    null,
+                    {
+                        "exit": true
+                    },
+                    {
+                        "exit": true
+                    },
+                    {
+                        "exit": true
+                    },
+                    null,
+                    {
+                        "exit": true
+                    },
+                    {
+                        "exit": true
+                    },
+                    {
+                        "exit": true
+                    },
+                    null
+                ]
+            ]
+        }
+    ],
+    "collect": [
+        {
+            "type": 7,
+            "count": 4
+        }
+    ],
+    "carryChips": {
+        "max": 1,
+        "chance": 60
+    },
+    "moveCnt": 25,
+    "chipset": [
+        {
+            "type": 0,
+            "percent": 100
+        },
+        {
+            "type": 1,
+            "percent": 100
+        },
+        {
+            "type": 2,
+            "percent": 90
+        },
+        {
+            "type": 3,
+            "percent": 90
+        },
+        {
+            "type": 4,
+            "percent": 100
+        }
+    ],
+    "levelInfo": {
+        "TO_LIGHTNING_ENOUGH": 17,
+        "background": 1,
+        "cellColorSeed": 0,
+        "levelReward": 100,
+        "movesLimit": 28,
+        "version": "0",
+        "timeLimit": 0,
+        "entry": false,
+        "hardness": 2,
+        "forceUpdate": false,
+        "score": [
+            15000,
+            30000,
+            50000
+        ]
+    }
+}

@@ -1,0 +1,109 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "wee",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 2.6,
+  "sample": 5,
+  "speed": 1,
+  "wrapMode": 2,
+  "curveData": {
+    "props": {
+      "color": [
+        {
+          "frame": 0,
+          "value": {
+            "__type__": "cc.Color",
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 255
+          }
+        },
+        {
+          "frame": 0.4,
+          "value": {
+            "__type__": "cc.Color",
+            "r": 243,
+            "g": 187,
+            "b": 187,
+            "a": 255
+          }
+        },
+        {
+          "frame": 0.8,
+          "value": {
+            "__type__": "cc.Color",
+            "r": 232,
+            "g": 119,
+            "b": 119,
+            "a": 255
+          }
+        },
+        {
+          "frame": 1,
+          "value": {
+            "__type__": "cc.Color",
+            "r": 237,
+            "g": 153,
+            "b": 153,
+            "a": 255
+          }
+        },
+        {
+          "frame": 1.6,
+          "value": {
+            "__type__": "cc.Color",
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 255
+          }
+        },
+        {
+          "frame": 1.8,
+          "value": {
+            "__type__": "cc.Color",
+            "r": 251,
+            "g": 227,
+            "b": 227,
+            "a": 255
+          }
+        },
+        {
+          "frame": 2.6,
+          "value": {
+            "__type__": "cc.Color",
+            "r": 239,
+            "g": 116,
+            "b": 116,
+            "a": 255
+          }
+        }
+      ],
+      "opacity": [
+        {
+          "frame": 0,
+          "value": 255
+        },
+        {
+          "frame": 0.4,
+          "value": 188
+        },
+        {
+          "frame": 1,
+          "value": 255
+        },
+        {
+          "frame": 1.8,
+          "value": 188
+        },
+        {
+          "frame": 2.6,
+          "value": 255
+        }
+      ]
+    }
+  },
+  "events": []
+}

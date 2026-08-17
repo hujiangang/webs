@@ -1,0 +1,278 @@
+{
+    "grid": [
+        {
+            "collect": null,
+            "map": [
+                [
+                    {
+                        "born": true
+                    },
+                    {
+                        "born": true
+                    },
+                    {
+                        "born": true
+                    },
+                    {
+                        "born": true
+                    },
+                    {
+                        "born": true
+                    },
+                    {
+                        "born": true
+                    },
+                    {
+                        "born": true
+                    },
+                    {
+                        "born": true
+                    },
+                    {
+                        "born": true
+                    }
+                ],
+                [
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {}
+                ],
+                [
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {}
+                ],
+                [
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {}
+                ],
+                [
+                    {
+                        "ground": 1
+                    },
+                    {
+                        "ground": 1
+                    },
+                    {
+                        "ground": 1
+                    },
+                    {
+                        "ground": 1
+                    },
+                    {
+                        "ground": 1
+                    },
+                    {
+                        "ground": 1
+                    },
+                    {
+                        "ground": 1
+                    },
+                    {
+                        "ground": 1
+                    },
+                    {
+                        "ground": 1
+                    }
+                ],
+                [
+                    {
+                        "empty": true,
+                        "stone": 1
+                    },
+                    {
+                        "empty": true,
+                        "stone": 2
+                    },
+                    {
+                        "empty": true,
+                        "stone": 1
+                    },
+                    {
+                        "empty": true,
+                        "stone": 1
+                    },
+                    {
+                        "empty": true,
+                        "stone": 2
+                    },
+                    {
+                        "empty": true,
+                        "stone": 2
+                    },
+                    {
+                        "empty": true,
+                        "stone": 1
+                    },
+                    {
+                        "empty": true,
+                        "stone": 2
+                    },
+                    {
+                        "empty": true,
+                        "stone": 1
+                    }
+                ],
+                [
+                    {
+                        "empty": true
+                    },
+                    {
+                        "empty": true
+                    },
+                    {
+                        "empty": true
+                    },
+                    {
+                        "empty": true
+                    },
+                    {
+                        "empty": true
+                    },
+                    {
+                        "empty": true
+                    },
+                    {
+                        "empty": true
+                    },
+                    {
+                        "empty": true
+                    },
+                    {
+                        "empty": true
+                    }
+                ],
+                [
+                    {
+                        "empty": true
+                    },
+                    {
+                        "empty": true
+                    },
+                    {
+                        "empty": true
+                    },
+                    {
+                        "empty": true
+                    },
+                    {
+                        "empty": true
+                    },
+                    {
+                        "empty": true
+                    },
+                    {
+                        "empty": true
+                    },
+                    {
+                        "empty": true
+                    },
+                    {
+                        "empty": true
+                    }
+                ],
+                [
+                    {
+                        "empty": true
+                    },
+                    {
+                        "empty": true
+                    },
+                    {
+                        "empty": true
+                    },
+                    {
+                        "empty": true
+                    },
+                    {
+                        "empty": true
+                    },
+                    {
+                        "empty": true
+                    },
+                    {
+                        "empty": true
+                    },
+                    {
+                        "empty": true
+                    },
+                    {
+                        "empty": true
+                    }
+                ]
+            ]
+        }
+    ],
+    "collect": [
+        {
+            "type": "8",
+            "count": 11
+        }
+    ],
+    "moveCnt": 27,
+    "chipset": [
+        {
+            "type": 0,
+            "percent": 80
+        },
+        {
+            "type": 1,
+            "percent": 100
+        },
+        {
+            "type": 2,
+            "percent": 100
+        },
+        {
+            "type": 3,
+            "percent": 100
+        },
+        {
+            "type": 6,
+            "percent": 100
+        }
+    ],
+    "levelInfo": {
+        "TO_LIGHTNING_ENOUGH": 15,
+        "background": 3,
+        "cellColorSeed": 0,
+        "levelReward": 100,
+        "movesLimit": 30,
+        "version": "0",
+        "timeLimit": 0,
+        "entry": false,
+        "hardness": 2,
+        "forceUpdate": false,
+        "score": [
+            15000,
+            30000,
+            50000
+        ]
+    },
+    "monkeyTree": [
+        {
+            "index": 0,
+            "x": 7,
+            "y": 8
+        }
+    ]
+}

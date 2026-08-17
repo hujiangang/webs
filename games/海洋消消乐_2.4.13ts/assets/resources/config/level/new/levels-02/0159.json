@@ -1,0 +1,383 @@
+{
+    "grid": [
+        {
+            "collect": null,
+            "map": [
+                [
+                    {
+                        "born": true
+                    },
+                    {
+                        "born": true
+                    },
+                    {
+                        "born": true
+                    },
+                    {
+                        "born": true
+                    },
+                    null,
+                    {
+                        "portal_idx": 1,
+                        "empty": true
+                    },
+                    {
+                        "portal_idx": 2,
+                        "empty": true
+                    },
+                    {
+                        "portal_idx": 4,
+                        "empty": true
+                    },
+                    {
+                        "portal_idx": 6,
+                        "empty": true
+                    }
+                ],
+                [
+                    {},
+                    {},
+                    {
+                        "type": 0
+                    },
+                    {},
+                    null,
+                    {
+                        "ground": 1
+                    },
+                    {
+                        "ground": 1,
+                        "gem": 1
+                    },
+                    {
+                        "ground": 1
+                    },
+                    {
+                        "ground": 1,
+                        "gem": 1
+                    }
+                ],
+                [
+                    {
+                        "box_level": 1,
+                        "empty": true
+                    },
+                    {
+                        "box_level": 1,
+                        "empty": true
+                    },
+                    {
+                        "type": 104
+                    },
+                    {
+                        "box_level": 1,
+                        "empty": true
+                    },
+                    null,
+                    {
+                        "ground": 1,
+                        "gem": 1
+                    },
+                    {
+                        "ground": 1
+                    },
+                    {
+                        "ground": 1,
+                        "gem": 1
+                    },
+                    {
+                        "ground": 1
+                    }
+                ],
+                [
+                    {
+                        "box_level": 1,
+                        "empty": true
+                    },
+                    {
+                        "type": 0
+                    },
+                    {
+                        "box_level": 1,
+                        "empty": true
+                    },
+                    {
+                        "type": 0
+                    },
+                    null,
+                    {
+                        "box_level": 1,
+                        "type": 103
+                    },
+                    {
+                        "type": 0
+                    },
+                    {
+                        "box_level": 1,
+                        "type": 103
+                    },
+                    {
+                        "type": 0
+                    }
+                ],
+                [
+                    {
+                        "ground": 1
+                    },
+                    {
+                        "ground": 1,
+                        "gem": 1
+                    },
+                    {
+                        "ground": 1
+                    },
+                    {
+                        "ground": 1,
+                        "gem": 1
+                    },
+                    null,
+                    {
+                        "type": 0
+                    },
+                    {
+                        "box_level": 1,
+                        "type": 103
+                    },
+                    {
+                        "type": 0
+                    },
+                    {
+                        "box_level": 1,
+                        "type": 103
+                    }
+                ],
+                [
+                    {
+                        "box_level": 1,
+                        "empty": true
+                    },
+                    {
+                        "type": 0
+                    },
+                    {
+                        "box_level": 1,
+                        "empty": true
+                    },
+                    {
+                        "type": 0
+                    },
+                    null,
+                    {
+                        "box_level": 1,
+                        "type": 103
+                    },
+                    {
+                        "type": 0
+                    },
+                    {
+                        "box_level": 1,
+                        "type": 103
+                    },
+                    {
+                        "type": 0
+                    }
+                ],
+                [
+                    {
+                        "ground": 1
+                    },
+                    {
+                        "ground": 1,
+                        "gem": 1
+                    },
+                    {
+                        "ground": 1
+                    },
+                    {
+                        "ground": 1,
+                        "gem": 1
+                    },
+                    null,
+                    {
+                        "ground": 1
+                    },
+                    {
+                        "ground": 1,
+                        "gem": 1
+                    },
+                    {
+                        "ground": 1
+                    },
+                    {
+                        "ground": 1,
+                        "gem": 1
+                    }
+                ],
+                [
+                    {
+                        "box_level": 1,
+                        "empty": true
+                    },
+                    {
+                        "box_level": 1,
+                        "empty": true
+                    },
+                    {
+                        "box_level": 1,
+                        "empty": true
+                    },
+                    {
+                        "box_level": 1,
+                        "empty": true
+                    },
+                    null,
+                    {
+                        "ground": 1,
+                        "gem": 1
+                    },
+                    {
+                        "ground": 1
+                    },
+                    {
+                        "ground": 1,
+                        "gem": 1
+                    },
+                    {
+                        "ground": 1
+                    }
+                ],
+                [
+                    {
+                        "portal_idx": -1,
+                        "empty": true
+                    },
+                    {
+                        "portal_idx": -2,
+                        "empty": true
+                    },
+                    {
+                        "portal_idx": -4,
+                        "empty": true
+                    },
+                    {
+                        "portal_idx": -6,
+                        "empty": true
+                    },
+                    null,
+                    {
+                        "ground": 1
+                    },
+                    {
+                        "ground": 1,
+                        "gem": 1
+                    },
+                    {
+                        "ground": 1
+                    },
+                    {
+                        "ground": 1,
+                        "gem": 1
+                    }
+                ]
+            ]
+        }
+    ],
+    "portal": [
+        {
+            "in": [
+                0,
+                8
+            ],
+            "out": [
+                7,
+                0
+            ]
+        },
+        {
+            "in": [
+                1,
+                8
+            ],
+            "out": [
+                8,
+                0
+            ]
+        },
+        {
+            "in": [
+                2,
+                8
+            ],
+            "out": [
+                9,
+                0
+            ]
+        },
+        {
+            "in": [
+                3,
+                8
+            ],
+            "out": [
+                10,
+                0
+            ]
+        },
+        {
+            "in": [
+                4,
+                8
+            ],
+            "out": [
+                11,
+                0
+            ]
+        }
+    ],
+    "collect": [
+        {
+            "type": "gem",
+            "count": 14
+        }
+    ],
+    "moveCnt": 28,
+    "chipset": [
+        {
+            "type": 0,
+            "percent": 100
+        },
+        {
+            "type": 1,
+            "percent": 100
+        },
+        {
+            "type": 2,
+            "percent": 100
+        },
+        {
+            "type": 3,
+            "percent": 100
+        },
+        {
+            "type": 4,
+            "percent": 100
+        }
+    ],
+    "levelInfo": {
+        "TO_LIGHTNING_ENOUGH": 16,
+        "background": 1,
+        "cellColorSeed": 0,
+        "levelReward": 50,
+        "movesLimit": 28,
+        "version": "0",
+        "timeLimit": 0,
+        "entry": false,
+        "hardness": false,
+        "forceUpdate": false,
+        "score": [
+            15000,
+            30000,
+            50000
+        ]
+    }
+}

@@ -1,0 +1,41 @@
+
+tongyong_posui.png
+size: 289,137
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+dd
+  rotate: false
+  xy: 132, 45
+  size: 89, 90
+  orig: 89, 90
+  offset: 0, 0
+  index: -1
+guangci01
+  rotate: false
+  xy: 2, 7
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+light01b_01
+  rotate: false
+  xy: 223, 71
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+smoke03
+  rotate: false
+  xy: 223, 5
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+suibian1
+  rotate: true
+  xy: 132, 2
+  size: 41, 47
+  orig: 41, 47
+  offset: 0, 0
+  index: -1

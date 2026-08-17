@@ -1,0 +1,62 @@
+
+caihong_2.png
+size: 535,264
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+caihong_new
+  rotate: false
+  xy: 351, 54
+  size: 82, 78
+  orig: 82, 78
+  offset: 0, 0
+  index: -1
+caihongdai
+  rotate: false
+  xy: 260, 134
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+dd
+  rotate: false
+  xy: 260, 42
+  size: 89, 90
+  orig: 89, 90
+  offset: 0, 0
+  index: -1
+guangci04
+  rotate: false
+  xy: 2, 6
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+hongxing
+  rotate: false
+  xy: 501, 100
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+light01b
+  rotate: false
+  xy: 390, 134
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+lizi02
+  rotate: false
+  xy: 435, 68
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+luoxuan01
+  rotate: false
+  xy: 435, 2
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1

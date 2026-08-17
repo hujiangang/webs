@@ -1,0 +1,135 @@
+{
+    "grid": [
+        {
+            "collect": null,
+            "map": [
+                [
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {}
+                ],
+                [
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {}
+                ],
+                [
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {}
+                ],
+                [
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {}
+                ],
+                [
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {}
+                ],
+                [
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {}
+                ],
+                [
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {}
+                ],
+                [
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {}
+                ],
+                [
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {}
+                ]
+            ]
+        }
+    ],
+    "turtles": [],
+    "gnome": [],
+    "crab": [],
+    "monkeyTree": [],
+    "collect": [
+        {
+            "type": 1,
+            "count": 10
+        }
+    ],
+    "chipset": [
+        {
+            "type": 3,
+            "percent": 30
+        },
+        {
+            "type": 0,
+            "percent": 30
+        },
+        {
+            "type": 1,
+            "percent": 40
+        },
+        {
+            "type": 2,
+            "percent": 30
+        }
+    ],
+    "levelInfo": {
+        "TO_LIGHTNING_ENOUGH": 0,
+        "background": 2,
+        "cellColorSeed": 921,
+        "levelReward": 50,
+        "movesLimit": 22,
+        "version": "0",
+        "timeLimit": 0,
+        "entry": true,
+        "hardness": false,
+        "forceUpdate": false,
+        "score": [
+            10000,
+            20000,
+            30000
+        ]
+    }
+}

@@ -1,0 +1,48 @@
+{
+    "top": 0,
+    "texture": [
+        {
+            "path": "sky",
+            "parent": "bbg"
+        }
+    ],
+    "sub": [
+        {
+            "path": "sea/sea",
+            "pos": [
+                0,
+                0
+            ],
+            "parent": "bg",
+            "type": "prefab"
+        },
+        {
+            "path": "ship/ship",
+            "pos": [
+                -360,
+                -1192
+            ],
+            "parent": "ui/top/Auto_record/collectNode/role",
+            "type": "prefab"
+        },
+        {
+            "path": "yun",
+            "pos": [
+                0,
+                100
+            ],
+            "parent": "bbg",
+            "type": "prefab"
+        },
+        {
+            "path": "island",
+            "top": 87,
+            "anchor": [
+                0,
+                0.5
+            ],
+            "parent": "bg",
+            "type": "sprite"
+        }
+    ]
+}

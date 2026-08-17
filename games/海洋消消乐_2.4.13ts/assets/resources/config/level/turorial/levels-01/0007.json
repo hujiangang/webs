@@ -1,0 +1,80 @@
+{
+    "stages": [
+        {
+            "name": "first_move",
+            "moves": 0,
+            "bubble": {
+                "text": {
+                    "zh": "任意5个同色 元素可以合成强大的 <color=#C3543C>闪星</color> 喔！<img src='obj5' width=50 height=50 align=center /><img src='obj5' width=50 height=50 align=center /><img src='obj5' width=50 height=50 align=center /><img src='obj5' width=50 height=50 align=center /><img src='obj5' width=50 height=50 align=center /> = <img src='obj104' width=56 height=56 align=center />"
+                },
+                "x": 0,
+                "y": 0
+            },
+            "hand": {
+                "x": 3,
+                "y": 1,
+                "type": "up"
+            },
+            "cells": [
+                {
+                    "x": 1,
+                    "y": 1,
+                    "hint": "static"
+                },
+                {
+                    "x": 2,
+                    "y": 1,
+                    "hint": "static"
+                },
+                {
+                    "x": 4,
+                    "y": 1,
+                    "hint": "static"
+                },
+                {
+                    "x": 5,
+                    "y": 1,
+                    "hint": "static"
+                },
+                {
+                    "x": 3,
+                    "y": 0,
+                    "removable": true
+                },
+                {
+                    "x": 3,
+                    "y": 1,
+                    "removable": true
+                }
+            ]
+        },
+        {
+            "name": "chips_orders",
+            "moves": 1,
+            "bubble": {
+                "text": {
+                    "zh": "<img src='obj104' width=56 height=56 align=center /> <color=#C3543C>闪星</color>！它与任何动物交换，能消除 <color=#C3543C>所有同色元素</color>！"
+                },
+                "x": 0,
+                "y": -100
+            },
+            "hand": {
+                "x": 3,
+                "y": 2,
+                "type": "down"
+            },
+            "cells": [
+                {
+                    "x": 3,
+                    "y": 2,
+                    "removable": true
+                },
+                {
+                    "x": 3,
+                    "y": 3,
+                    "removable": true
+                }
+            ]
+        }
+    ]
+}

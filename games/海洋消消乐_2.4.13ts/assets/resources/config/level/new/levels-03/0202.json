@@ -1,0 +1,216 @@
+{
+    "grid": [
+        {
+            "collect": null,
+            "map": [
+                [
+                    null,
+                    null,
+                    null,
+                    null,
+                    {
+                        "born": true
+                    },
+                    null,
+                    null,
+                    null,
+                    null
+                ],
+                [
+                    null,
+                    null,
+                    null,
+                    {
+                        "born": true
+                    },
+                    {},
+                    {
+                        "born": true
+                    },
+                    null,
+                    null,
+                    null
+                ],
+                [
+                    null,
+                    null,
+                    {
+                        "born": true
+                    },
+                    {},
+                    {},
+                    {},
+                    {
+                        "born": true
+                    },
+                    null,
+                    null
+                ],
+                [
+                    null,
+                    {
+                        "born": true
+                    },
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {
+                        "born": true
+                    },
+                    null
+                ],
+                [
+                    {
+                        "born": true
+                    },
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {
+                        "born": true
+                    }
+                ],
+                [
+                    {
+                        "flowers": 3
+                    },
+                    {
+                        "ground": 2
+                    },
+                    {
+                        "ground": 2
+                    },
+                    {
+                        "ground": 2
+                    },
+                    {
+                        "ground": 2
+                    },
+                    {
+                        "ground": 2
+                    },
+                    {
+                        "ground": 2
+                    },
+                    {
+                        "ground": 2
+                    },
+                    {
+                        "flowers": 3
+                    }
+                ],
+                [
+                    null,
+                    {
+                        "ground": 2
+                    },
+                    {
+                        "ground": 2
+                    },
+                    {
+                        "ground": 2
+                    },
+                    {
+                        "ground": 2
+                    },
+                    {
+                        "ground": 2
+                    },
+                    {
+                        "ground": 2
+                    },
+                    {
+                        "ground": 2
+                    },
+                    null
+                ],
+                [
+                    null,
+                    null,
+                    {
+                        "ground": 2
+                    },
+                    {
+                        "ground": 2
+                    },
+                    {
+                        "ground": 2
+                    },
+                    {
+                        "ground": 2
+                    },
+                    {
+                        "ground": 2
+                    },
+                    null,
+                    null
+                ],
+                [
+                    null,
+                    {
+                        "flowers": 3
+                    },
+                    null,
+                    null,
+                    {
+                        "flowers": 3
+                    },
+                    null,
+                    null,
+                    {
+                        "flowers": 3
+                    },
+                    null
+                ]
+            ]
+        }
+    ],
+    "collect": [
+        {
+            "type": "5",
+            "count": 17
+        }
+    ],
+    "moveCnt": 30,
+    "chipset": [
+        {
+            "type": 0,
+            "percent": 100
+        },
+        {
+            "type": 1,
+            "percent": 100
+        },
+        {
+            "type": 2,
+            "percent": 100
+        },
+        {
+            "type": 3,
+            "percent": 100
+        }
+    ],
+    "levelInfo": {
+        "TO_LIGHTNING_ENOUGH": 15,
+        "background": 1,
+        "cellColorSeed": 0,
+        "levelReward": 50,
+        "movesLimit": 30,
+        "version": "0",
+        "timeLimit": 0,
+        "entry": false,
+        "hardness": false,
+        "forceUpdate": false,
+        "score": [
+            15000,
+            30000,
+            50000
+        ]
+    }
+}

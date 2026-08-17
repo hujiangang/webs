@@ -1,0 +1,379 @@
+{
+    "grid": [
+        {
+            "collect": null,
+            "map": [
+                [
+                    null,
+                    {
+                        "born": true,
+                        "leaves": 2
+                    },
+                    {
+                        "born": true,
+                        "leaves": 2
+                    },
+                    {
+                        "born": true,
+                        "leaves": 2
+                    },
+                    {
+                        "born": true,
+                        "leaves": 2
+                    },
+                    {
+                        "born": true,
+                        "leaves": 2
+                    },
+                    {
+                        "born": true,
+                        "leaves": 2
+                    },
+                    {
+                        "born": true,
+                        "leaves": 2
+                    },
+                    null
+                ],
+                [
+                    null,
+                    {
+                        "leaves": 2
+                    },
+                    {
+                        "leaves": 2
+                    },
+                    {
+                        "leaves": 2
+                    },
+                    {
+                        "leaves": 2
+                    },
+                    {
+                        "leaves": 2
+                    },
+                    {
+                        "leaves": 2
+                    },
+                    {
+                        "leaves": 2
+                    },
+                    null
+                ],
+                [
+                    {
+                        "empty": true,
+                        "box_level": 2,
+                        "leaves": 2
+                    },
+                    {
+                        "empty": true,
+                        "box_level": 2,
+                        "leaves": 2
+                    },
+                    {
+                        "empty": true,
+                        "box_level": 2,
+                        "leaves": 2
+                    },
+                    {
+                        "leaves": 2
+                    },
+                    {
+                        "leaves": 2
+                    },
+                    {
+                        "leaves": 2
+                    },
+                    {
+                        "empty": true,
+                        "box_level": 2,
+                        "leaves": 2
+                    },
+                    {
+                        "empty": true,
+                        "box_level": 2,
+                        "leaves": 2
+                    },
+                    {
+                        "empty": true,
+                        "box_level": 2,
+                        "leaves": 2
+                    }
+                ],
+                [
+                    {
+                        "locks": 1
+                    },
+                    {
+                        "locks": 1
+                    },
+                    {
+                        "empty": true,
+                        "box_level": 1,
+                        "leaves": 2
+                    },
+                    {
+                        "leaves": 2
+                    },
+                    {
+                        "leaves": 2
+                    },
+                    {
+                        "leaves": 2
+                    },
+                    {
+                        "empty": true,
+                        "box_level": 1,
+                        "leaves": 2
+                    },
+                    {
+                        "locks": 1
+                    },
+                    {
+                        "locks": 1
+                    }
+                ],
+                [
+                    {
+                        "flowers": 3
+                    },
+                    {
+                        "locks": 1
+                    },
+                    {
+                        "water": true
+                    },
+                    {},
+                    {
+                        "flowers": 3
+                    },
+                    {},
+                    {
+                        "water": true
+                    },
+                    {
+                        "locks": 1
+                    },
+                    {
+                        "flowers": 3
+                    }
+                ],
+                [
+                    {
+                        "locks": 1
+                    },
+                    {
+                        "locks": 1
+                    },
+                    {
+                        "empty": true,
+                        "box_level": 1,
+                        "leaves": 2
+                    },
+                    {
+                        "leaves": 2
+                    },
+                    {
+                        "leaves": 2
+                    },
+                    {
+                        "leaves": 2
+                    },
+                    {
+                        "empty": true,
+                        "box_level": 1,
+                        "leaves": 2
+                    },
+                    {
+                        "locks": 1
+                    },
+                    {
+                        "locks": 1
+                    }
+                ],
+                [
+                    {
+                        "empty": true,
+                        "box_level": 2,
+                        "leaves": 2
+                    },
+                    {
+                        "empty": true,
+                        "box_level": 2,
+                        "leaves": 2
+                    },
+                    {
+                        "empty": true,
+                        "box_level": 2,
+                        "leaves": 2
+                    },
+                    {
+                        "leaves": 2
+                    },
+                    {
+                        "empty": true,
+                        "box_level": 1,
+                        "leaves": 2
+                    },
+                    {
+                        "leaves": 2
+                    },
+                    {
+                        "empty": true,
+                        "box_level": 2,
+                        "leaves": 2
+                    },
+                    {
+                        "empty": true,
+                        "box_level": 2,
+                        "leaves": 2
+                    },
+                    {
+                        "empty": true,
+                        "box_level": 2,
+                        "leaves": 2
+                    }
+                ],
+                [
+                    null,
+                    {
+                        "leaves": 2
+                    },
+                    {
+                        "leaves": 2
+                    },
+                    {
+                        "empty": true,
+                        "leaves": 2,
+                        "box_level": 1
+                    },
+                    {
+                        "empty": true,
+                        "box_level": 1,
+                        "leaves": 2
+                    },
+                    {
+                        "empty": true,
+                        "leaves": 2,
+                        "box_level": 1
+                    },
+                    {
+                        "leaves": 2
+                    },
+                    {
+                        "leaves": 2
+                    },
+                    null
+                ],
+                [
+                    null,
+                    {
+                        "leaves": 2
+                    },
+                    {
+                        "empty": true,
+                        "leaves": 2,
+                        "box_level": 1
+                    },
+                    {
+                        "empty": true,
+                        "leaves": 2,
+                        "box_level": 1
+                    },
+                    {
+                        "empty": true,
+                        "leaves": 2,
+                        "box_level": 1
+                    },
+                    {
+                        "empty": true,
+                        "leaves": 2,
+                        "box_level": 1
+                    },
+                    {
+                        "empty": true,
+                        "leaves": 2,
+                        "box_level": 1
+                    },
+                    {
+                        "leaves": 2
+                    },
+                    null
+                ]
+            ]
+        }
+    ],
+    "gnome": [
+        {
+            "index": 0,
+            "x": 2,
+            "y": 0,
+            "type": 3
+        },
+        {
+            "index": 0,
+            "x": 5,
+            "y": 0,
+            "type": 3
+        },
+        {
+            "index": 0,
+            "x": 2,
+            "y": 5,
+            "type": 3
+        },
+        {
+            "index": 0,
+            "x": 5,
+            "y": 5,
+            "type": 3
+        }
+    ],
+    "collect": [
+        {
+            "type": "gnome",
+            "count": 4
+        },
+        {
+            "type": "5",
+            "count": 30
+        }
+    ],
+    "moveCnt": 28,
+    "chipset": [
+        {
+            "type": 0,
+            "percent": 100
+        },
+        {
+            "type": 1,
+            "percent": 100
+        },
+        {
+            "type": 2,
+            "percent": 100
+        },
+        {
+            "type": 3,
+            "percent": 100
+        }
+    ],
+    "levelInfo": {
+        "TO_LIGHTNING_ENOUGH": 14,
+        "background": 1,
+        "cellColorSeed": 0,
+        "levelReward": 100,
+        "movesLimit": 28,
+        "version": "0",
+        "timeLimit": 0,
+        "entry": false,
+        "hardness": 1,
+        "forceUpdate": false,
+        "score": [
+            20000,
+            30000,
+            50000
+        ]
+    }
+}

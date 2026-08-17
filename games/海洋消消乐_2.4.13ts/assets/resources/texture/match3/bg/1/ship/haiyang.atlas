@@ -1,0 +1,20 @@
+
+haiyang.png
+size: 459,238
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+xiaochuan
+  rotate: false
+  xy: 2, 2
+  size: 339, 234
+  orig: 339, 234
+  offset: 0, 0
+  index: -1
+yezishu
+  rotate: false
+  xy: 343, 75
+  size: 114, 161
+  orig: 114, 161
+  offset: 0, 0
+  index: -1

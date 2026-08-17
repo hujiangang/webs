@@ -1,0 +1,82 @@
+{
+    "stages": [
+        {
+            "name": "first_move",
+            "moves": 0,
+            "bubble": {
+                "text": {
+                    "zh": "5个相同动物形成：<br/>   <img src='obj2_0' width=50 height=50 align=center />                   <img src='obj2_0' width=50 height=50 align=center /> <img src='obj2_0' width=50 height=50 align=center /> <img src='obj2_0' width=50 height=50 align=center /> <br/>   <img src='obj2_0' width=50 height=50 align=center />          <size =40> 或 </size>         <img src='obj2_0' width=50 height=50 align=center /> <br/>   <img src='obj2_0' width=50 height=50 align=center /><img src='obj2_0' width=50 height=50 align=center /><img src='obj2_0' width=50 height=50 align=center />               <img src='obj2_0' width=50 height=50 align=center /><br/>就能合成 <color=#C3543C>爆炸特效</color>！"
+                },
+                "x": 0,
+                "y": -200
+            },
+            "hand": {
+                "x": 3,
+                "y": 2,
+                "type": "left"
+            },
+            "cells": [
+                {
+                    "x": 0,
+                    "y": 2,
+                    "hint": "static"
+                },
+                {
+                    "x": 1,
+                    "y": 2,
+                    "hint": "static"
+                },
+                {
+                    "x": 2,
+                    "y": 2,
+                    "removable": true
+                },
+                {
+                    "x": 3,
+                    "y": 2,
+                    "hint": "left",
+                    "removable": true
+                },
+                {
+                    "x": 2,
+                    "y": 0,
+                    "hint": "static"
+                },
+                {
+                    "x": 2,
+                    "y": 1,
+                    "hint": "static"
+                }
+            ]
+        },
+        {
+            "name": "chips_orders",
+            "moves": 1,
+            "bubble": {
+                "text": {
+                    "zh": "<img src='obj100' width=50 height=50 align=center /> <color=#C3543C>爆炸特效</color> ！能消除周围的元素，试试看吧~"
+                },
+                "x": 0,
+                "y": -200
+            },
+            "hand": {
+                "x": 2,
+                "y": 2,
+                "type": "right"
+            },
+            "cells": [
+                {
+                    "x": 3,
+                    "y": 2,
+                    "removable": true
+                },
+                {
+                    "x": 2,
+                    "y": 2,
+                    "hint": "right",
+                    "removable": true
+                }
+            ]
+        }
+    ]
+}

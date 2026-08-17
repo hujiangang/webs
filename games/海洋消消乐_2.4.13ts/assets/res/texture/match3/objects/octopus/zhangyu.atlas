@@ -1,0 +1,132 @@
+
+zhangyu.png
+size: 480,264
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+L_eye
+  rotate: false
+  xy: 436, 156
+  size: 25, 21
+  orig: 27, 23
+  offset: 1, 1
+  index: -1
+L_eyebrow
+  rotate: true
+  xy: 455, 17
+  size: 40, 23
+  orig: 42, 25
+  offset: 1, 1
+  index: -1
+R_eye
+  rotate: false
+  xy: 183, 2
+  size: 24, 21
+  orig: 26, 23
+  offset: 1, 1
+  index: -1
+R_eyebrow
+  rotate: true
+  xy: 131, 76
+  size: 40, 23
+  orig: 42, 25
+  offset: 1, 1
+  index: -1
+eye
+  rotate: false
+  xy: 183, 25
+  size: 96, 28
+  orig: 98, 30
+  offset: 1, 1
+  index: -1
+eyelid
+  rotate: true
+  xy: 436, 179
+  size: 34, 27
+  orig: 34, 27
+  offset: 0, 0
+  index: -1
+feet1
+  rotate: true
+  xy: 401, 9
+  size: 48, 52
+  orig: 48, 52
+  offset: 0, 0
+  index: -1
+feet2
+  rotate: true
+  xy: 288, 3
+  size: 54, 55
+  orig: 54, 55
+  offset: 0, 0
+  index: -1
+feet3
+  rotate: false
+  xy: 345, 3
+  size: 54, 54
+  orig: 54, 54
+  offset: 0, 0
+  index: -1
+feet4
+  rotate: false
+  xy: 131, 8
+  size: 50, 45
+  orig: 50, 45
+  offset: 0, 0
+  index: -1
+flush
+  rotate: true
+  xy: 415, 153
+  size: 109, 19
+  orig: 112, 23
+  offset: 1, 2
+  index: -1
+hat
+  rotate: false
+  xy: 299, 59
+  size: 162, 86
+  orig: 164, 88
+  offset: 1, 1
+  index: -1
+head
+  rotate: false
+  xy: 2, 3
+  size: 127, 113
+  orig: 129, 115
+  offset: 1, 1
+  index: -1
+headShadow
+  rotate: false
+  xy: 157, 128
+  size: 140, 134
+  orig: 150, 141
+  offset: 5, 3
+  index: -1
+hetun
+  rotate: true
+  xy: 299, 147
+  size: 115, 114
+  orig: 129, 115
+  offset: 6, 1
+  index: -1
+jianyu
+  rotate: false
+  xy: 157, 55
+  size: 129, 71
+  orig: 129, 115
+  offset: 0, 22
+  index: -1
+mouth
+  rotate: false
+  xy: 436, 215
+  size: 41, 47
+  orig: 43, 49
+  offset: 1, 1
+  index: -1
+shadow
+  rotate: true
+  xy: 2, 118
+  size: 144, 153
+  orig: 150, 157
+  offset: 3, 2
+  index: -1

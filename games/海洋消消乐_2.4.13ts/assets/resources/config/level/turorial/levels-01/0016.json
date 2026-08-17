@@ -1,0 +1,109 @@
+{
+    "stages": [
+        {
+            "name": "first_move",
+            "moves": 0,
+            "bubble": {
+                "text": {
+                    "zh": "看！<size=40> <color=#C3543C> 宠物蛋!</color> </size>"
+                },
+                "x": 0,
+                "y": -50
+            },
+            "cells": [
+                {
+                    "x": 3,
+                    "y": 2,
+                    "hint": "static"
+                }
+            ],
+            "closeByTouch": true
+        },
+        {
+            "name": "chips_orders",
+            "moves": 1,
+            "bubble": {
+                "text": {
+                    "zh": "<color=#C3543C>消除宠物蛋下方的元素， </color> <br/>让它掉落到底部，即可收集！"
+                },
+                "x": 0,
+                "y": 320
+            },
+            "cells": [
+                {
+                    "x": 3,
+                    "y": 2,
+                    "hint": "static"
+                },
+                {
+                    "x": 3,
+                    "y": 3,
+                    "hint": "static"
+                },
+                {
+                    "x": 3,
+                    "y": 4,
+                    "removable": true
+                },
+                {
+                    "x": 3,
+                    "y": 5,
+                    "hint": "static"
+                },
+                {
+                    "x": 4,
+                    "y": 4,
+                    "hint": "left",
+                    "removable": true
+                }
+            ],"hand": {
+                "x": 4,
+                "y": 4,
+                "type": "left"
+            }
+        },
+        {
+            "name": "chips_orders",
+            "moves": 1,
+            "bubble": {
+                "text": {
+                    "zh": "消除宠物蛋下方的元素就可以收集到它啦！"
+                },
+                "x": 0,
+                "y": 100
+            },
+            "cells": [
+                {
+                    "x": 3,
+                    "y": 5,
+                    "hint": "static"
+                },
+                {
+                    "x": 3,
+                    "y": 6,
+                    "hint": "static"
+                },
+                {
+                    "x": 3,
+                    "y": 7,
+                    "removable": true
+                },
+                {
+                    "x": 3,
+                    "y": 8,
+                    "hint": "static"
+                },
+                {
+                    "x": 2,
+                    "y": 7,
+                    "hint": "right",
+                    "removable": true
+                }
+            ],"hand": {
+                "x": 2,
+                "y": 7,
+                "type": "right"
+            }
+        }
+    ]
+}

@@ -1,0 +1,27 @@
+
+zhangyuHaima.png
+size: 558,203
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+hetunHaima0
+  rotate: false
+  xy: 2, 2
+  size: 194, 199
+  orig: 200, 199
+  offset: 0, 0
+  index: -1
+zhangyu0
+  rotate: false
+  xy: 198, 3
+  size: 185, 198
+  orig: 200, 199
+  offset: 7, 1
+  index: -1
+zhangyuHaima
+  rotate: false
+  xy: 385, 4
+  size: 171, 197
+  orig: 200, 199
+  offset: 14, 1
+  index: -1

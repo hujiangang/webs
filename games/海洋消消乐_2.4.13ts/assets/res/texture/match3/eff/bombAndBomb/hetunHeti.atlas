@@ -1,0 +1,13 @@
+
+hetunHeti.png
+size: 201,201
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+hetun
+  rotate: false
+  xy: 2, 2
+  size: 197, 197
+  orig: 200, 199
+  offset: 1, 2
+  index: -1

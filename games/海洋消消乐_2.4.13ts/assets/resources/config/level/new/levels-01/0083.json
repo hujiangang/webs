@@ -1,0 +1,292 @@
+{
+    "grid": [
+        {
+            "collect": null,
+            "map": [
+                [
+                    {
+                        "born": true
+                    },
+                    {
+                        "born": true
+                    },
+                    null,
+                    {
+                        "born": true,
+                        "type": 7
+                    },
+                    {
+                        "born": true,
+                        "type": 7
+                    },
+                    {
+                        "born": true,
+                        "type": 7
+                    },
+                    null,
+                    {
+                        "born": true
+                    },
+                    {
+                        "born": true
+                    }
+                ],
+                [
+                    -1,
+                    -1,
+                    {
+                        "box_level": 1
+                    },
+                    {
+                        "type": 0,
+                        "ice": 1
+                    },
+                    {
+                        "type": 0,
+                        "ice": 1
+                    },
+                    {
+                        "type": 2,
+                        "ice": 1
+                    },
+                    {
+                        "box_level": 1
+                    },
+                    -1,
+                    -1
+                ],
+                [
+                    -1,
+                    {},
+                    {
+                        "box_level": 1
+                    },
+                    {
+                        "type": 1,
+                        "ice": 1
+                    },
+                    {
+                        "type": 1,
+                        "ice": 1
+                    },
+                    {
+                        "type": 2,
+                        "ice": 1
+                    },
+                    {
+                        "box_level": 1
+                    },
+                    -1,
+                    -1
+                ],
+                [
+                    -1,
+                    -1,
+                    {
+                        "box_level": 1
+                    },
+                    {
+                        "type": 2,
+                        "ice": 1
+                    },
+                    {
+                        "type": 0,
+                        "ice": 1
+                    },
+                    {
+                        "type": 0,
+                        "ice": 1
+                    },
+                    {
+                        "box_level": 1
+                    },
+                    {},
+                    -1
+                ],
+                [
+                    -1,
+                    {},
+                    {
+                        "box_level": 1
+                    },
+                    {
+                        "type": 2,
+                        "ice": 1
+                    },
+                    {
+                        "type": 1,
+                        "ice": 1
+                    },
+                    {
+                        "type": 1,
+                        "ice": 1
+                    },
+                    {
+                        "box_level": 1
+                    },
+                    -1,
+                    -1
+                ],
+                [
+                    -1,
+                    {},
+                    {
+                        "box_level": 2
+                    },
+                    {
+                        "type": 0,
+                        "ice": 2
+                    },
+                    {
+                        "type": 0,
+                        "ice": 1
+                    },
+                    {
+                        "type": 2,
+                        "ice": 2
+                    },
+                    {
+                        "box_level": 2
+                    },
+                    {},
+                    -1
+                ],
+                [
+                    -1,
+                    -1,
+                    {
+                        "box_level": 2
+                    },
+                    {
+                        "type": 1,
+                        "ice": 2
+                    },
+                    {
+                        "type": 1,
+                        "ice": 1
+                    },
+                    {
+                        "type": 2,
+                        "ice": 2
+                    },
+                    {
+                        "box_level": 2
+                    },
+                    {},
+                    -1
+                ],
+                [
+                    -1,
+                    -1,
+                    {
+                        "box_level": 2
+                    },
+                    {
+                        "type": 2,
+                        "ice": 2
+                    },
+                    {
+                        "type": 0,
+                        "ice": 1
+                    },
+                    {
+                        "type": 0,
+                        "ice": 2
+                    },
+                    {
+                        "box_level": 2
+                    },
+                    -1,
+                    -1
+                ],
+                [
+                    {
+                        "exit": true
+                    },
+                    {
+                        "exit": true
+                    },
+                    {
+                        "exit": true,
+                        "box_level": 2
+                    },
+                    {
+                        "exit": true,
+                        "type": 2,
+                        "ice": 2
+                    },
+                    {
+                        "exit": true,
+                        "type": 1,
+                        "ice": 1
+                    },
+                    {
+                        "exit": true,
+                        "type": 1,
+                        "ice": 2
+                    },
+                    {
+                        "exit": true,
+                        "box_level": 2
+                    },
+                    {
+                        "exit": true
+                    },
+                    {
+                        "exit": true
+                    }
+                ]
+            ]
+        }
+    ],
+    "collect": [
+        {
+            "type": 7,
+            "count": 3
+        }
+    ],
+    "carryChips": {
+        "max": 1,
+        "chance": 10
+    },
+    "moveCnt": 31,
+    "chipset": [
+        {
+            "type": 0,
+            "percent": 100
+        },
+        {
+            "type": 1,
+            "percent": 100
+        },
+        {
+            "type": 2,
+            "percent": 100
+        },
+        {
+            "type": 3,
+            "percent": 100
+        },
+        {
+            "type": 4,
+            "percent": 100
+        }
+    ],
+    "levelInfo": {
+        "TO_LIGHTNING_ENOUGH": 11,
+        "background": 3,
+        "cellColorSeed": 0,
+        "levelReward": 100,
+        "movesLimit": 31,
+        "version": "0",
+        "timeLimit": 0,
+        "entry": false,
+        "hardness": 1,
+        "forceUpdate": false,
+        "score": [
+            20000,
+            30000,
+            70000
+        ]
+    }
+}

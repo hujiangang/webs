@@ -1,0 +1,257 @@
+{
+    "grid": [
+        {
+            "collect": null,
+            "map": [
+                [
+                    {
+                        "born": true,
+                        "type": 7
+                    },
+                    {
+                        "locks": 1,
+                        "born": true
+                    },
+                    {
+                        "born": true
+                    },
+                    {
+                        "born": true
+                    },
+                    {
+                        "born": true,
+                        "type": 7
+                    },
+                    {
+                        "born": true
+                    },
+                    {
+                        "born": true
+                    },
+                    {
+                        "locks": 1,
+                        "born": true
+                    },
+                    {
+                        "born": true,
+                        "type": 7
+                    }
+                ],
+                [
+                    {
+                        "box_level": 1
+                    },
+                    {
+                        "locks": 1
+                    },
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {
+                        "locks": 1
+                    },
+                    {
+                        "box_level": 1
+                    }
+                ],
+                [
+                    {
+                        "box_level": 1
+                    },
+                    {
+                        "locks": 1
+                    },
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {
+                        "locks": 1
+                    },
+                    {
+                        "box_level": 1
+                    }
+                ],
+                [
+                    {
+                        "box_level": 1
+                    },
+                    {
+                        "locks": 1
+                    },
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {
+                        "locks": 1
+                    },
+                    {
+                        "box_level": 1
+                    }
+                ],
+                [
+                    {
+                        "box_level": 1
+                    },
+                    {
+                        "locks": 1
+                    },
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {
+                        "locks": 1
+                    },
+                    {
+                        "box_level": 1
+                    }
+                ],
+                [
+                    {
+                        "box_level": 1
+                    },
+                    {
+                        "locks": 1
+                    },
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {
+                        "locks": 1
+                    },
+                    {
+                        "box_level": 1
+                    }
+                ],
+                [
+                    {
+                        "box_level": 1
+                    },
+                    {
+                        "locks": 1
+                    },
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {
+                        "locks": 1
+                    },
+                    {
+                        "box_level": 1
+                    }
+                ],
+                [
+                    {
+                        "box_level": 1
+                    },
+                    {
+                        "locks": 1
+                    },
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {
+                        "locks": 1
+                    },
+                    {
+                        "box_level": 1
+                    }
+                ],
+                [
+                    {
+                        "box_level": 1,
+                        "exit": true
+                    },
+                    {
+                        "locks": 1,
+                        "exit": true
+                    },
+                    {
+                        "exit": true
+                    },
+                    {
+                        "exit": true
+                    },
+                    {
+                        "exit": true
+                    },
+                    {
+                        "exit": true
+                    },
+                    {
+                        "exit": true
+                    },
+                    {
+                        "locks": 1,
+                        "exit": true
+                    },
+                    {
+                        "box_level": 1,
+                        "exit": true
+                    }
+                ]
+            ]
+        }
+    ],
+    "collect": [
+        {
+            "type": "7",
+            "count": 3
+        }
+    ],
+    "moveCnt": 23,
+    "chipset": [
+        {
+            "type": 0,
+            "percent": 80
+        },
+        {
+            "type": 4,
+            "percent": 80
+        },
+        {
+            "type": 2,
+            "percent": 80
+        },
+        {
+            "type": 3,
+            "percent": 80
+        },
+        {
+            "type": 1,
+            "percent": 80
+        }
+    ],
+    "levelInfo": {
+        "TO_LIGHTNING_ENOUGH": 0,
+        "background": 1,
+        "cellColorSeed": 221,
+        "levelReward": 51,
+        "movesLimit": 28,
+        "version": "0",
+        "timeLimit": 0,
+        "entry": true,
+        "hardness": false,
+        "forceUpdate": false,
+        "score": [
+            20000,
+            30000,
+            60000
+        ]
+    },
+    "conveyerList": [],
+    "gnome": []
+}

@@ -1,0 +1,95 @@
+{
+    "stages": [
+        {
+            "name": "first_move",
+            "moves": 0,
+            "bubble": {
+                "text": {
+                    "zh": "交换 <img src='obj2_0' width=50 height=50 align=center /> 和 <img src='obj4' align=center />，<br/>相同3个 <img src='obj2_0' align=center /><img src='obj2_0' align=center /><img src='obj2_0' align=center /> 相连即可消除！"
+                },
+                "x": 0,
+                "y": -150
+            },
+            "hand": {
+                "x": 1,
+                "y": 1,
+                "type": "down"
+            },
+            "cells": [
+                {
+                    "x": 0,
+                    "y": 2,
+                    "hint": "static"
+                },
+                {
+                    "x": 1,
+                    "y": 2,
+                    "removable": true
+                },
+                {
+                    "x": 2,
+                    "y": 2,
+                    "hint": "static"
+                },
+                {
+                    "x": 1,
+                    "y": 1,
+                    "hint": "down",
+                    "removable": true
+                }
+            ]
+        },
+        {
+            "name": "second_move",
+            "moves": 0,
+            "bubble": {
+                "text": {
+                    "zh": "试试左右交换吧~"
+                },
+                "x": 0,
+                "y": -150
+            },
+            "hand": {
+                "x": 3,
+                "y": 2,
+                "type": "right"
+            },
+            "cells": [
+                {
+                    "x": 3,
+                    "y": 1,
+                    "hint": "static"
+                },
+                {
+                    "x": 3,
+                    "y": 2,
+                    "removable": true
+                },
+                {
+                    "x": 3,
+                    "y": 3,
+                    "hint": "static"
+                },
+                {
+                    "x": 4,
+                    "y": 2,
+                    "hint": "right",
+                    "removable": true
+                }
+            ]
+        },
+        {
+            "name": "chips_orders",
+            "moves": 1,
+            "bubble": {
+                "text": {
+                    "zh": "再消除4只 <img src='obj2_0' align=center /> 就可以过关啦！"
+                },
+                "x": 0,
+                "y": 500
+            },
+            "closeByTouch": true,
+            "highLightGoal": true
+        }
+    ]
+}

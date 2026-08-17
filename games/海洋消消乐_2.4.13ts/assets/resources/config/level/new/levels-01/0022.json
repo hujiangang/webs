@@ -1,0 +1,388 @@
+{
+    "grid": [
+        {
+            "collect": null,
+            "map": [
+                [
+                    {
+                        "type": 101,
+                        "born": true
+                    },
+                    null,
+                    {
+                        "born": true,
+                        "type": 102,
+                        "box_level": 1
+                    },
+                    {
+                        "type": 100,
+                        "born": true,
+                        "box_level": 1
+                    },
+                    {
+                        "born": true,
+                        "empty": true,
+                        "box_level": 2
+                    },
+                    null,
+                    {
+                        "empty": true,
+                        "portal_idx": 6,
+                        "leaves": 1
+                    },
+                    {
+                        "empty": true,
+                        "portal_idx": 8,
+                        "leaves": 1
+                    },
+                    {
+                        "empty": true,
+                        "portal_idx": 10,
+                        "leaves": 1
+                    }
+                ],
+                [
+                    {
+                        "type": 100
+                    },
+                    null,
+                    {
+                        "type": 102,
+                        "box_level": 1
+                    },
+                    {
+                        "type": 100,
+                        "box_level": 1
+                    },
+                    {
+                        "empty": true,
+                        "box_level": 2
+                    },
+                    null,
+                    {
+                        "empty": true,
+                        "leaves": 1
+                    },
+                    {
+                        "empty": true,
+                        "leaves": 1
+                    },
+                    {
+                        "empty": true,
+                        "leaves": 1
+                    }
+                ],
+                [
+                    null,
+                    null,
+                    {
+                        "empty": true,
+                        "box_level": 2,
+                        "portal_idx": -1
+                    },
+                    {
+                        "empty": true,
+                        "box_level": 2,
+                        "portal_idx": -2
+                    },
+                    {
+                        "empty": true,
+                        "box_level": 2,
+                        "portal_idx": -4
+                    },
+                    null,
+                    {
+                        "empty": true,
+                        "leaves": 1
+                    },
+                    {
+                        "empty": true,
+                        "leaves": 1
+                    },
+                    {
+                        "empty": true,
+                        "leaves": 1
+                    }
+                ],
+                [
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    {
+                        "empty": true,
+                        "leaves": 1
+                    },
+                    {
+                        "empty": true,
+                        "leaves": 1
+                    },
+                    {
+                        "empty": true,
+                        "leaves": 1
+                    }
+                ],
+                [
+                    null,
+                    null,
+                    {
+                        "empty": true,
+                        "box_level": 1,
+                        "portal_idx": 1,
+                        "leaves": 1
+                    },
+                    {
+                        "empty": true,
+                        "box_level": 1,
+                        "portal_idx": 2,
+                        "leaves": 1
+                    },
+                    {
+                        "empty": true,
+                        "box_level": 1,
+                        "portal_idx": 4,
+                        "leaves": 1
+                    },
+                    null,
+                    {
+                        "empty": true,
+                        "leaves": 1
+                    },
+                    {
+                        "empty": true,
+                        "leaves": 1
+                    },
+                    {
+                        "empty": true,
+                        "leaves": 1
+                    }
+                ],
+                [
+                    null,
+                    null,
+                    {
+                        "empty": true,
+                        "box_level": 1,
+                        "leaves": 1
+                    },
+                    {
+                        "empty": true,
+                        "box_level": 1,
+                        "leaves": 1
+                    },
+                    {
+                        "empty": true,
+                        "box_level": 1,
+                        "leaves": 1
+                    },
+                    null,
+                    {
+                        "empty": true,
+                        "leaves": 1
+                    },
+                    {
+                        "empty": true,
+                        "leaves": 1
+                    },
+                    {
+                        "empty": true,
+                        "leaves": 1
+                    }
+                ],
+                [
+                    null,
+                    null,
+                    {
+                        "empty": true,
+                        "box_level": 1,
+                        "leaves": 1
+                    },
+                    {
+                        "empty": true,
+                        "box_level": 1,
+                        "leaves": 1
+                    },
+                    {
+                        "empty": true,
+                        "box_level": 1,
+                        "leaves": 1
+                    },
+                    null,
+                    {
+                        "empty": true,
+                        "leaves": 1
+                    },
+                    {
+                        "empty": true,
+                        "leaves": 1
+                    },
+                    {
+                        "empty": true,
+                        "leaves": 1
+                    }
+                ],
+                [
+                    null,
+                    null,
+                    {
+                        "empty": true,
+                        "box_level": 1,
+                        "leaves": 1
+                    },
+                    {
+                        "empty": true,
+                        "box_level": 1,
+                        "leaves": 1
+                    },
+                    {
+                        "empty": true,
+                        "box_level": 1,
+                        "leaves": 1
+                    },
+                    null,
+                    {
+                        "empty": true,
+                        "leaves": 1
+                    },
+                    {
+                        "empty": true,
+                        "leaves": 1
+                    },
+                    {
+                        "empty": true,
+                        "leaves": 1
+                    }
+                ],
+                [
+                    null,
+                    null,
+                    {
+                        "empty": true,
+                        "box_level": 1,
+                        "portal_idx": -6,
+                        "leaves": 1
+                    },
+                    {
+                        "empty": true,
+                        "box_level": 1,
+                        "portal_idx": -8,
+                        "leaves": 1
+                    },
+                    {
+                        "empty": true,
+                        "box_level": 1,
+                        "portal_idx": -10,
+                        "leaves": 1
+                    },
+                    null,
+                    {
+                        "empty": true,
+                        "leaves": 1
+                    },
+                    {
+                        "empty": true,
+                        "leaves": 1
+                    },
+                    {
+                        "empty": true,
+                        "leaves": 1
+                    }
+                ]
+            ]
+        }
+    ],
+    "collect": [
+        {
+            "type": "gnome",
+            "count": 8
+        }
+    ],
+    "moveCnt": 31,
+    "chipset": [
+        {
+            "type": 1,
+            "percent": 100
+        },
+        {
+            "type": 3,
+            "percent": 100
+        },
+        {
+            "type": 4,
+            "percent": 100
+        },
+        {
+            "type": 0,
+            "percent": 100
+        }
+    ],
+    "levelInfo": {
+        "TO_LIGHTNING_ENOUGH": 0,
+        "background": 2,
+        "cellColorSeed": 0,
+        "levelReward": 50,
+        "movesLimit": 27,
+        "version": "0",
+        "timeLimit": 0,
+        "entry": false,
+        "hardness": false,
+        "forceUpdate": false,
+        "score": [
+            25000,
+            50000,
+            80000
+        ]
+    },
+    "gnome": [
+        {
+            "index": 0,
+            "x": 2,
+            "y": 5,
+            "type": 1
+        },
+        {
+            "index": 0,
+            "x": 3,
+            "y": 6,
+            "type": 1
+        },
+        {
+            "index": 0,
+            "x": 4,
+            "y": 5,
+            "type": 1
+        },
+        {
+            "index": 0,
+            "x": 6,
+            "y": 5,
+            "type": 3
+        },
+        {
+            "index": 0,
+            "x": 7,
+            "y": 4,
+            "type": 0
+        },
+        {
+            "index": 0,
+            "x": 6,
+            "y": 3,
+            "type": 0
+        },
+        {
+            "index": 0,
+            "x": 7,
+            "y": 2,
+            "type": 0
+        },
+        {
+            "index": 0,
+            "x": 8,
+            "y": 6,
+            "type": 1
+        }
+    ]
+}

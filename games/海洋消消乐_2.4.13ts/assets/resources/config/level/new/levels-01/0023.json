@@ -1,0 +1,227 @@
+{
+    "grid": [
+        {
+            "collect": null,
+            "map": [
+                [
+                    null,
+                    null,
+                    {
+                        "born": true
+                    },
+                    {
+                        "type": 7,
+                        "born": true
+                    },
+                    {
+                        "born": true
+                    },
+                    {
+                        "type": 7,
+                        "born": true
+                    },
+                    {
+                        "born": true
+                    },
+                    null,
+                    null
+                ],
+                [
+                    null,
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    null
+                ],
+                [
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {}
+                ],
+                [
+                    {},
+                    {},
+                    {
+                        "portal_idx": -4
+                    },
+                    {
+                        "portal_idx": -6
+                    },
+                    {},
+                    {
+                        "portal_idx": -8
+                    },
+                    {
+                        "portal_idx": -10
+                    },
+                    {},
+                    {}
+                ],
+                [
+                    {},
+                    {},
+                    null,
+                    null,
+                    {},
+                    null,
+                    null,
+                    {},
+                    {}
+                ],
+                [
+                    {},
+                    {},
+                    {
+                        "portal_idx": 4
+                    },
+                    {
+                        "portal_idx": 6
+                    },
+                    {},
+                    {
+                        "portal_idx": 8
+                    },
+                    {
+                        "portal_idx": 10
+                    },
+                    {},
+                    {}
+                ],
+                [
+                    {
+                        "empty": true,
+                        "exit": true,
+                        "box_level": 1
+                    },
+                    {
+                        "empty": true,
+                        "box_level": 1
+                    },
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {
+                        "empty": true,
+                        "box_level": 1
+                    },
+                    {
+                        "empty": true,
+                        "exit": true,
+                        "box_level": 1
+                    }
+                ],
+                [
+                    null,
+                    {
+                        "empty": true,
+                        "box_level": 1
+                    },
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {
+                        "empty": true,
+                        "box_level": 1
+                    },
+                    null
+                ],
+                [
+                    null,
+                    {
+                        "empty": true,
+                        "exit": true,
+                        "box_level": 1
+                    },
+                    {
+                        "empty": true,
+                        "exit": true,
+                        "box_level": 1
+                    },
+                    {
+                        "empty": true,
+                        "exit": true,
+                        "box_level": 1
+                    },
+                    {
+                        "empty": true,
+                        "exit": true,
+                        "box_level": 1
+                    },
+                    {
+                        "empty": true,
+                        "exit": true,
+                        "box_level": 1
+                    },
+                    {
+                        "empty": true,
+                        "exit": true,
+                        "box_level": 1
+                    },
+                    {
+                        "empty": true,
+                        "exit": true,
+                        "box_level": 1
+                    },
+                    null
+                ]
+            ]
+        }
+    ],
+    "collect": [
+        {
+            "type": "7",
+            "count": 2
+        }
+    ],
+    "gnome": [],
+    "moveCnt": 28,
+    "chipset": [
+        {
+            "type": 0,
+            "percent": 75
+        },
+        {
+            "type": 1,
+            "percent": 80
+        },
+        {
+            "type": 2,
+            "percent": 100
+        },
+        {
+            "type": 5,
+            "percent": 90
+        }
+    ],
+    "levelInfo": {
+        "TO_LIGHTNING_ENOUGH": 13,
+        "background": 2,
+        "cellColorSeed": 0,
+        "levelReward": 50,
+        "movesLimit": 28,
+        "version": "0",
+        "timeLimit": 0,
+        "entry": false,
+        "hardness": false,
+        "forceUpdate": false,
+        "score": [
+            10000,
+            20000,
+            40000
+        ]
+    }
+}

@@ -1,0 +1,48 @@
+
+caihong3.png
+size: 109,170
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+dian1
+  rotate: true
+  xy: 2, 2
+  size: 45, 50
+  orig: 50, 50
+  offset: 3, 0
+  index: -1
+dian2
+  rotate: false
+  xy: 62, 52
+  size: 45, 50
+  orig: 50, 50
+  offset: 3, 0
+  index: -1
+dian3
+  rotate: true
+  xy: 54, 2
+  size: 45, 50
+  orig: 50, 50
+  offset: 2, 0
+  index: -1
+dian4
+  rotate: false
+  xy: 68, 118
+  size: 34, 50
+  orig: 50, 50
+  offset: 11, 0
+  index: -1
+kuosan06
+  rotate: false
+  xy: 2, 49
+  size: 58, 53
+  orig: 64, 64
+  offset: 6, 5
+  index: -1
+luoxuan01
+  rotate: false
+  xy: 2, 104
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1

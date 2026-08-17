@@ -1,0 +1,230 @@
+
+haimaHaima.png
+size: 396,687
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1_00
+  rotate: true
+  xy: 2, 271
+  size: 156, 167
+  orig: 156, 169
+  offset: 0, 2
+  index: -1
+Heart
+  rotate: true
+  xy: 171, 327
+  size: 100, 83
+  orig: 100, 83
+  offset: 0, 0
+  index: -1
+Heart1
+  rotate: true
+  xy: 170, 147
+  size: 56, 57
+  orig: 60, 62
+  offset: 2, 1
+  index: -1
+blush
+  rotate: true
+  xy: 239, 235
+  size: 27, 15
+  orig: 29, 17
+  offset: 1, 1
+  index: -1
+body
+  rotate: true
+  xy: 260, 556
+  size: 129, 130
+  orig: 129, 130
+  offset: 0, 0
+  index: -1
+bubble1
+  rotate: false
+  xy: 172, 45
+  size: 40, 40
+  orig: 40, 40
+  offset: 0, 0
+  index: -1
+circle
+  rotate: false
+  xy: 2, 49
+  size: 90, 90
+  orig: 90, 90
+  offset: 0, 0
+  index: -1
+comb1
+  rotate: false
+  xy: 132, 106
+  size: 93, 39
+  orig: 96, 41
+  offset: 1, 1
+  index: -1
+comb2
+  rotate: true
+  xy: 132, 198
+  size: 50, 36
+  orig: 52, 38
+  offset: 1, 1
+  index: -1
+comb3
+  rotate: false
+  xy: 227, 94
+  size: 27, 43
+  orig: 29, 46
+  offset: 1, 1
+  index: -1
+effect12
+  rotate: false
+  xy: 260, 426
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+electric_bubble1
+  rotate: true
+  xy: 214, 23
+  size: 38, 40
+  orig: 40, 40
+  offset: 0, 0
+  index: -1
+eye-right
+  rotate: false
+  xy: 129, 64
+  size: 41, 40
+  orig: 43, 42
+  offset: 1, 1
+  index: -1
+eyeL02
+  rotate: false
+  xy: 163, 24
+  size: 26, 19
+  orig: 27, 20
+  offset: 1, 1
+  index: -1
+eyeR02
+  rotate: true
+  xy: 132, 148
+  size: 48, 29
+  orig: 48, 30
+  offset: 0, 1
+  index: -1
+eye_left
+  rotate: true
+  xy: 129, 41
+  size: 21, 32
+  orig: 23, 34
+  offset: 1, 1
+  index: -1
+eyeball_left
+  rotate: true
+  xy: 239, 221
+  size: 12, 15
+  orig: 14, 17
+  offset: 1, 1
+  index: -1
+eyeball_right
+  rotate: false
+  xy: 191, 7
+  size: 18, 18
+  orig: 20, 20
+  offset: 1, 1
+  index: -1
+eyebrow_left
+  rotate: false
+  xy: 191, 27
+  size: 19, 16
+  orig: 21, 18
+  offset: 1, 1
+  index: -1
+eyebrow_right
+  rotate: false
+  xy: 229, 139
+  size: 24, 18
+  orig: 26, 20
+  offset: 1, 1
+  index: -1
+eyelid_Right1
+  rotate: true
+  xy: 94, 96
+  size: 43, 33
+  orig: 43, 33
+  offset: 0, 0
+  index: -1
+eyelid_left
+  rotate: false
+  xy: 132, 250
+  size: 37, 19
+  orig: 38, 19
+  offset: 1, 0
+  index: -1
+eyelid_left1
+  rotate: false
+  xy: 215, 63
+  size: 39, 29
+  orig: 39, 29
+  offset: 0, 0
+  index: -1
+eyelid_right
+  rotate: false
+  xy: 172, 87
+  size: 41, 17
+  orig: 42, 17
+  offset: 1, 0
+  index: -1
+glow_00141
+  rotate: false
+  xy: 2, 429
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+highlight
+  rotate: true
+  xy: 229, 159
+  size: 44, 25
+  orig: 46, 28
+  offset: 1, 1
+  index: -1
+jpg_caihong
+  rotate: false
+  xy: 2, 141
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+lip
+  rotate: true
+  xy: 94, 63
+  size: 31, 33
+  orig: 31, 33
+  offset: 0, 0
+  index: -1
+shadow
+  rotate: true
+  xy: 94, 35
+  size: 26, 31
+  orig: 28, 33
+  offset: 1, 1
+  index: -1
+streak01
+  rotate: false
+  xy: 256, 2
+  size: 138, 422
+  orig: 139, 422
+  offset: 1, 0
+  index: -1
+tail
+  rotate: false
+  xy: 171, 205
+  size: 66, 57
+  orig: 66, 58
+  offset: 0, 0
+  index: -1
+wing
+  rotate: true
+  xy: 171, 264
+  size: 61, 75
+  orig: 63, 77
+  offset: 1, 1
+  index: -1

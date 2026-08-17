@@ -1,0 +1,434 @@
+[
+  {
+    "id": 1,
+    "starlv": 9,
+    "buildId": 15,
+    "buildName": "chuan1",
+    "desc": "游艇",
+    "choose": 1,
+    "iconId": 11,
+    "price": [
+      {
+        "itemId": 0,
+        "num": 300
+      }
+    ],
+    "isShare": 1
+  },
+  {
+    "id": 2,
+    "starlv": 9,
+    "buildId": 16,
+    "buildName": "matou2",
+    "desc": "码头",
+    "choose": 1,
+    "iconId": 2,
+    "price": [
+      {
+        "itemId": 0,
+        "num": 1470
+      }
+    ],
+    "isShare": 0
+  },
+  {
+    "id": 3,
+    "starlv": 9,
+    "buildId": 13,
+    "buildName": "canting",
+    "desc": "餐厅",
+    "choose": 1,
+    "iconId": 4,
+    "price": [
+      {
+        "itemId": 0,
+        "num": 950
+      }
+    ],
+    "isShare": 1
+  },
+  {
+    "id": 4,
+    "starlv": 9,
+    "buildId": 17,
+    "buildName": "fangwu3",
+    "desc": "花店",
+    "choose": 0,
+    "iconId": 0,
+    "price": [
+      {
+        "itemId": 0,
+        "num": 560
+      }
+    ],
+    "isShare": 0
+  },
+  {
+    "id": 5,
+    "starlv": 35,
+    "buildId": 8,
+    "buildName": "guanggaopai1",
+    "desc": "广告牌",
+    "choose": 0,
+    "iconId": 0,
+    "price": [
+      {
+        "itemId": 0,
+        "num": 2120
+      }
+    ],
+    "isShare": 0
+  },
+  {
+    "id": 6,
+    "starlv": 35,
+    "buildId": 7,
+    "buildName": "chuhaishangdian",
+    "desc": "出海商店",
+    "choose": 1,
+    "iconId": 3,
+    "price": [
+      {
+        "itemId": 0,
+        "num": 2900
+      }
+    ],
+    "isShare": 0
+  },
+  {
+    "id": 7,
+    "starlv": 74,
+    "buildId": 18,
+    "buildName": "lipindian",
+    "desc": "礼品店",
+    "choose": 1,
+    "iconId": 5,
+    "price": [
+      {
+        "itemId": 0,
+        "num": 6020
+      }
+    ],
+    "isShare": 0
+  },
+  {
+    "id": 8,
+    "starlv": 74,
+    "buildId": 19,
+    "buildName": "jingshipai",
+    "desc": "警示牌",
+    "choose": 0,
+    "iconId": 0,
+    "price": [
+      {
+        "itemId": 0,
+        "num": 4850
+      }
+    ],
+    "isShare": 0
+  },
+  {
+    "id": 9,
+    "starlv": 74,
+    "buildId": 21,
+    "buildName": "guanggaopai2",
+    "desc": "广告牌",
+    "choose": 0,
+    "iconId": 0,
+    "price": [
+      {
+        "itemId": 0,
+        "num": 3810
+      }
+    ],
+    "isShare": 0
+  },
+  {
+    "id": 10,
+    "starlv": 126,
+    "buildId": 4,
+    "buildName": "dianhuating",
+    "desc": "电话亭",
+    "choose": 0,
+    "iconId": 0,
+    "price": [
+      {
+        "itemId": 0,
+        "num": 7320
+      }
+    ],
+    "isShare": 0
+  },
+  {
+    "id": 11,
+    "starlv": 126,
+    "buildId": 5,
+    "buildName": "fangwu2",
+    "desc": "商店",
+    "choose": 0,
+    "iconId": 0,
+    "price": [
+      {
+        "itemId": 0,
+        "num": 10310
+      }
+    ],
+    "isShare": 0
+  },
+  {
+    "id": 12,
+    "starlv": 126,
+    "buildId": 6,
+    "buildName": "sanbudao",
+    "desc": "散步道",
+    "choose": 1,
+    "iconId": 8,
+    "price": [
+      {
+        "itemId": 0,
+        "num": 8750
+      }
+    ],
+    "isShare": 0
+  },
+  {
+    "id": 13,
+    "starlv": 191,
+    "buildId": 20,
+    "buildName": "ludeng2",
+    "desc": "路灯",
+    "choose": 0,
+    "iconId": 0,
+    "price": [
+      {
+        "itemId": 0,
+        "num": 13820
+      }
+    ],
+    "isShare": 0
+  },
+  {
+    "id": 14,
+    "starlv": 191,
+    "buildId": 22,
+    "buildName": "yezishu",
+    "desc": "椰子树",
+    "choose": 1,
+    "iconId": 10,
+    "price": [
+      {
+        "itemId": 0,
+        "num": 12000
+      }
+    ],
+    "isShare": 0
+  },
+  {
+    "id": 15,
+    "starlv": 191,
+    "buildId": 23,
+    "buildName": "zuoyi",
+    "desc": "座椅",
+    "choose": 1,
+    "iconId": 7,
+    "price": [
+      {
+        "itemId": 0,
+        "num": 15770
+      }
+    ],
+    "isShare": 0
+  },
+  {
+    "id": 16,
+    "starlv": 269,
+    "buildId": 9,
+    "buildName": "ludeng1",
+    "desc": "路灯",
+    "choose": 0,
+    "iconId": 0,
+    "price": [
+      {
+        "itemId": 0,
+        "num": 22400
+      }
+    ],
+    "isShare": 0
+  },
+  {
+    "id": 17,
+    "starlv": 269,
+    "buildId": 11,
+    "buildName": "weilan",
+    "desc": "护栏",
+    "choose": 1,
+    "iconId": 9,
+    "price": [
+      {
+        "itemId": 0,
+        "num": 17850
+      }
+    ],
+    "isShare": 0
+  },
+  {
+    "id": 18,
+    "starlv": 269,
+    "buildId": 10,
+    "buildName": "muzhuang",
+    "desc": "船桩",
+    "choose": 1,
+    "iconId": 6,
+    "price": [
+      {
+        "itemId": 0,
+        "num": 20060
+      }
+    ],
+    "isShare": 0
+  },
+  {
+    "id": 19,
+    "starlv": 360,
+    "buildId": 24,
+    "buildName": "chuan2",
+    "desc": "救生船",
+    "choose": 0,
+    "iconId": 0,
+    "price": [
+      {
+        "itemId": 0,
+        "num": 24870
+      }
+    ],
+    "isShare": 1
+  },
+  {
+    "id": 20,
+    "starlv": 360,
+    "buildId": 27,
+    "buildName": "zhiwu",
+    "desc": "绿植",
+    "choose": 0,
+    "iconId": 0,
+    "price": [
+      {
+        "itemId": 0,
+        "num": 27470
+      }
+    ],
+    "isShare": 0
+  },
+  {
+    "id": 21,
+    "starlv": 360,
+    "buildId": 26,
+    "buildName": "dimian",
+    "desc": "地板",
+    "choose": 0,
+    "iconId": 0,
+    "price": [
+      {
+        "itemId": 0,
+        "num": 30200
+      }
+    ],
+    "isShare": 0
+  },
+  {
+    "id": 22,
+    "starlv": 464,
+    "buildId": 3,
+    "buildName": "fangwu1",
+    "desc": "宠物店",
+    "choose": 0,
+    "iconId": 0,
+    "price": [
+      {
+        "itemId": 0,
+        "num": 36050
+      }
+    ],
+    "isShare": 1
+  },
+  {
+    "id": 23,
+    "starlv": 464,
+    "buildId": 2,
+    "buildName": "matou1",
+    "desc": "大码头",
+    "choose": 1,
+    "iconId": 2,
+    "price": [
+      {
+        "itemId": 0,
+        "num": 39170
+      }
+    ],
+    "isShare": 0
+  },
+  {
+    "id": 24,
+    "starlv": 464,
+    "buildId": 1,
+    "buildName": "huowu",
+    "desc": "货物",
+    "choose": 1,
+    "iconId": 1,
+    "price": [
+      {
+        "itemId": 0,
+        "num": 33060
+      }
+    ],
+    "isShare": 0
+  },
+  {
+    "id": 25,
+    "starlv": 581,
+    "buildId": 12,
+    "buildName": "kantai",
+    "desc": "远望台",
+    "choose": 0,
+    "iconId": 0,
+    "price": [
+      {
+        "itemId": 0,
+        "num": 42420
+      }
+    ],
+    "isShare": 1
+  },
+  {
+    "id": 26,
+    "starlv": 581,
+    "buildId": 14,
+    "buildName": "qiang",
+    "desc": "墙壁",
+    "choose": 0,
+    "iconId": 0,
+    "price": [
+      {
+        "itemId": 0,
+        "num": 49310
+      }
+    ],
+    "isShare": 0
+  },
+  {
+    "id": 27,
+    "starlv": 581,
+    "buildId": 25,
+    "buildName": "louti",
+    "desc": "楼梯",
+    "choose": 0,
+    "iconId": 0,
+    "price": [
+      {
+        "itemId": 0,
+        "num": 45800
+      }
+    ],
+    "isShare": 0
+  }
+]

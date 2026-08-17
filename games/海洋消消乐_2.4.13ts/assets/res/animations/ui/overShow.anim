@@ -1,0 +1,435 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "overWordShow",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 1,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "font_bonus": {
+        "props": {
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "__type__": "cc.Vec2",
+                "x": 0,
+                "y": 0
+              }
+            },
+            {
+              "frame": 0.16666666666666666,
+              "value": {
+                "__type__": "cc.Vec2",
+                "x": 1.5,
+                "y": 1.5
+              }
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": {
+                "__type__": "cc.Vec2",
+                "x": 1,
+                "y": 1
+              }
+            },
+            {
+              "frame": 0.6666666666666666,
+              "value": {
+                "__type__": "cc.Vec2",
+                "x": 1,
+                "y": 1
+              }
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": {
+                "__type__": "cc.Vec2",
+                "x": 0.8,
+                "y": 0.8
+              }
+            },
+            {
+              "frame": 1,
+              "value": {
+                "__type__": "cc.Vec2",
+                "x": 2,
+                "y": 2
+              }
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.16666666666666666,
+              "value": 255
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": 255
+            },
+            {
+              "frame": 0.6666666666666666,
+              "value": 255
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": 255
+            },
+            {
+              "frame": 1,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "font_bonus2": {
+        "props": {
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "__type__": "cc.Vec2",
+                "x": 0,
+                "y": 0
+              }
+            },
+            {
+              "frame": 0.13333333333333333,
+              "value": {
+                "__type__": "cc.Vec2",
+                "x": 0.7,
+                "y": 0.7
+              }
+            },
+            {
+              "frame": 0.25,
+              "value": {
+                "__type__": "cc.Vec2",
+                "x": 0.7,
+                "y": 0.7
+              }
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": {
+                "__type__": "cc.Vec2",
+                "x": 0.7,
+                "y": 0.7
+              }
+            }
+          ],
+          "position": [
+            {
+              "frame": 0,
+              "value": [
+                -73,
+                172
+              ],
+              "motionPath": [
+                [
+                  -256,
+                  316,
+                  -134,
+                  395,
+                  -337,
+                  187
+                ]
+              ]
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": [
+                -353,
+                -269
+              ],
+              "motionPath": []
+            }
+          ],
+          "angle": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": 600
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0.25,
+              "value": 255
+            },
+            {
+              "frame": 0.6666666666666666,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "font_bonus5": {
+        "props": {
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "__type__": "cc.Vec2",
+                "x": 0,
+                "y": 0
+              }
+            },
+            {
+              "frame": 0.13333333333333333,
+              "value": {
+                "__type__": "cc.Vec2",
+                "x": 1,
+                "y": 1
+              }
+            },
+            {
+              "frame": 0.25,
+              "value": {
+                "__type__": "cc.Vec2",
+                "x": 1,
+                "y": 1
+              }
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": {
+                "__type__": "cc.Vec2",
+                "x": 1,
+                "y": 1
+              }
+            }
+          ],
+          "position": [
+            {
+              "frame": 0,
+              "value": [
+                43,
+                167
+              ],
+              "motionPath": [
+                [
+                  96,
+                  385,
+                  30,
+                  378,
+                  170,
+                  366
+                ]
+              ]
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": [
+                169,
+                -76
+              ],
+              "motionPath": []
+            }
+          ],
+          "angle": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": 500
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0.3333333333333333,
+              "value": 255
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "font_bonus4": {
+        "props": {
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "__type__": "cc.Vec2",
+                "x": 0,
+                "y": 0
+              }
+            },
+            {
+              "frame": 0.13333333333333333,
+              "value": {
+                "__type__": "cc.Vec2",
+                "x": 0.5,
+                "y": 0.5
+              }
+            },
+            {
+              "frame": 0.25,
+              "value": {
+                "__type__": "cc.Vec2",
+                "x": 0.5,
+                "y": 0.5
+              }
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": {
+                "__type__": "cc.Vec2",
+                "x": 0.5,
+                "y": 0.5
+              }
+            }
+          ],
+          "position": [
+            {
+              "frame": 0,
+              "value": [
+                93,
+                216
+              ],
+              "motionPath": [
+                [
+                  245,
+                  316,
+                  168,
+                  395,
+                  326,
+                  209
+                ]
+              ]
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": [
+                347,
+                -328
+              ],
+              "motionPath": []
+            }
+          ],
+          "angle": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": 720
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0.4166666666666667,
+              "value": 255
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "font_bonus3": {
+        "props": {
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "__type__": "cc.Vec2",
+                "x": 0,
+                "y": 0
+              }
+            },
+            {
+              "frame": 0.13333333333333333,
+              "value": {
+                "__type__": "cc.Vec2",
+                "x": 0.6,
+                "y": 0.6
+              }
+            },
+            {
+              "frame": 0.25,
+              "value": {
+                "__type__": "cc.Vec2",
+                "x": 0.6,
+                "y": 0.6
+              }
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": {
+                "__type__": "cc.Vec2",
+                "x": 0.7,
+                "y": 0.7
+              }
+            }
+          ],
+          "position": [
+            {
+              "frame": 0,
+              "value": [
+                -75,
+                159
+              ],
+              "motionPath": [
+                [
+                  -214,
+                  204,
+                  -177,
+                  242,
+                  -292,
+                  123
+                ]
+              ]
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": [
+                -336,
+                -114
+              ],
+              "motionPath": []
+            }
+          ],
+          "angle": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": 600
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            },
+            {
+              "frame": 0.5833333333333334,
+              "value": 0
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": []
+}

@@ -1,0 +1,62 @@
+
+hetiji.png
+size: 459,775
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Circle_soft_ball
+  rotate: false
+  xy: 201, 398
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+Circle_standard_01
+  rotate: false
+  xy: 216, 657
+  size: 116, 116
+  orig: 128, 128
+  offset: 6, 6
+  index: -1
+Circle_star_02
+  rotate: false
+  xy: 2, 740
+  size: 33, 33
+  orig: 33, 33
+  offset: 0, 0
+  index: -1
+energyBall01
+  rotate: false
+  xy: 334, 656
+  size: 117, 117
+  orig: 128, 128
+  offset: 5, 6
+  index: -1
+guanghuan1
+  rotate: false
+  xy: 2, 2
+  size: 452, 394
+  orig: 512, 512
+  offset: 29, 71
+  index: -1
+hetun
+  rotate: false
+  xy: 2, 485
+  size: 197, 197
+  orig: 200, 199
+  offset: 1, 2
+  index: -1
+jianyu
+  rotate: false
+  xy: 37, 728
+  size: 83, 45
+  orig: 83, 45
+  offset: 0, 0
+  index: -1
+star
+  rotate: false
+  xy: 122, 684
+  size: 92, 89
+  orig: 128, 128
+  offset: 18, 19
+  index: -1

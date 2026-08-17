@@ -1,0 +1,71 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "hotelUiWater",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 2,
+  "sample": 60,
+  "speed": 0.7,
+  "wrapMode": 2,
+  "curveData": {
+    "paths": {
+      "bg_wave1": {
+        "props": {
+          "x": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 2,
+              "value": 750
+            }
+          ]
+        }
+      },
+      "bg_wave2": {
+        "props": {
+          "x": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 2,
+              "value": 750
+            }
+          ]
+        }
+      },
+      "bg_wave3": {
+        "props": {
+          "x": [
+            {
+              "frame": 0,
+              "value": -750
+            },
+            {
+              "frame": 2,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "bg_wave4": {
+        "props": {
+          "x": [
+            {
+              "frame": 0,
+              "value": -750
+            },
+            {
+              "frame": 2,
+              "value": 0
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": []
+}

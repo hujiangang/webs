@@ -1,0 +1,69 @@
+
+shuicao.png
+size: 278,132
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+glow02
+  rotate: false
+  xy: 2, 2
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+quan
+  rotate: false
+  xy: 132, 66
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+shuicao/shizi
+  rotate: false
+  xy: 132, 9
+  size: 49, 17
+  orig: 49, 17
+  offset: 0, 0
+  index: -1
+shuicao/shuicao1
+  rotate: false
+  xy: 214, 5
+  size: 35, 83
+  orig: 35, 83
+  offset: 0, 0
+  index: -1
+shuicao/shuicao2
+  rotate: true
+  xy: 198, 90
+  size: 40, 65
+  orig: 40, 65
+  offset: 0, 0
+  index: -1
+shuicao/shuicao3
+  rotate: true
+  xy: 132, 28
+  size: 36, 80
+  orig: 36, 80
+  offset: 0, 0
+  index: -1
+shuicao/shuicao_sp1
+  rotate: false
+  xy: 183, 10
+  size: 23, 16
+  orig: 23, 16
+  offset: 0, 0
+  index: -1
+shuicao/shuicao_sp2
+  rotate: true
+  xy: 265, 115
+  size: 15, 11
+  orig: 15, 11
+  offset: 0, 0
+  index: -1
+shuicao/shuicao_sp3
+  rotate: true
+  xy: 198, 71
+  size: 17, 14
+  orig: 17, 14
+  offset: 0, 0
+  index: -1

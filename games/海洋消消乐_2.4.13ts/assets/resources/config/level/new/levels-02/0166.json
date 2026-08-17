@@ -1,0 +1,330 @@
+{
+    "grid": [
+        {
+            "collect": null,
+            "map": [
+                [
+                    {
+                        "ground": 2,
+                        "gem": 1,
+                        "born": true
+                    },
+                    null,
+                    {
+                        "born": true
+                    },
+                    {
+                        "born": true
+                    },
+                    null,
+                    null,
+                    null,
+                    {
+                        "born": true
+                    },
+                    {
+                        "born": true
+                    }
+                ],
+                [
+                    {
+                        "ground": 2,
+                        "gem": 1
+                    },
+                    null,
+                    {},
+                    {
+                        "leaves": 2
+                    },
+                    {
+                        "leaves": 2
+                    },
+                    {
+                        "box_level": 1,
+                        "empty": true,
+                        "portal_idx": 18,
+                        "leaves": 2
+                    },
+                    {
+                        "leaves": 2
+                    },
+                    {
+                        "leaves": 2
+                    },
+                    {}
+                ],
+                [
+                    {
+                        "ground": 2,
+                        "gem": 1
+                    },
+                    null,
+                    {},
+                    {
+                        "leaves": 2
+                    },
+                    {
+                        "leaves": 2
+                    },
+                    {
+                        "box_level": 1,
+                        "empty": true,
+                        "leaves": 2
+                    },
+                    {
+                        "leaves": 2
+                    },
+                    {
+                        "leaves": 2
+                    },
+                    {}
+                ],
+                [
+                    {
+                        "ground": 2,
+                        "gem": 1
+                    },
+                    null,
+                    {},
+                    {
+                        "leaves": 2
+                    },
+                    {
+                        "leaves": 2
+                    },
+                    {
+                        "box_level": 1,
+                        "empty": true,
+                        "leaves": 2
+                    },
+                    {
+                        "leaves": 2
+                    },
+                    {
+                        "leaves": 2
+                    },
+                    {}
+                ],
+                [
+                    {
+                        "ground": 2,
+                        "gem": 1
+                    },
+                    null,
+                    {},
+                    {
+                        "leaves": 2
+                    },
+                    {
+                        "leaves": 2
+                    },
+                    {
+                        "box_level": 1,
+                        "empty": true,
+                        "leaves": 2
+                    },
+                    {
+                        "leaves": 2
+                    },
+                    {
+                        "leaves": 2
+                    },
+                    {}
+                ],
+                [
+                    {
+                        "ground": 2,
+                        "gem": 1
+                    },
+                    null,
+                    {},
+                    {
+                        "leaves": 2
+                    },
+                    {
+                        "leaves": 2
+                    },
+                    {
+                        "box_level": 1,
+                        "empty": true,
+                        "leaves": 2
+                    },
+                    {
+                        "leaves": 2
+                    },
+                    {
+                        "leaves": 2
+                    },
+                    {}
+                ],
+                [
+                    {
+                        "ground": 2,
+                        "gem": 1
+                    },
+                    null,
+                    {},
+                    {
+                        "leaves": 2
+                    },
+                    {
+                        "leaves": 2
+                    },
+                    {
+                        "box_level": 1,
+                        "empty": true,
+                        "leaves": 2
+                    },
+                    {
+                        "leaves": 2
+                    },
+                    {
+                        "leaves": 2
+                    },
+                    {}
+                ],
+                [
+                    {
+                        "ground": 2,
+                        "gem": 1
+                    },
+                    null,
+                    {},
+                    {
+                        "leaves": 2
+                    },
+                    {
+                        "leaves": 2
+                    },
+                    {
+                        "box_level": 1,
+                        "empty": true,
+                        "leaves": 2
+                    },
+                    {
+                        "leaves": 2
+                    },
+                    {
+                        "leaves": 2
+                    },
+                    {}
+                ],
+                [
+                    {
+                        "ground": 2,
+                        "gem": 1,
+                        "portal_idx": -18
+                    },
+                    null,
+                    {},
+                    {
+                        "leaves": 2
+                    },
+                    {
+                        "leaves": 2
+                    },
+                    {
+                        "box_level": 1,
+                        "empty": true,
+                        "leaves": 2
+                    },
+                    {
+                        "leaves": 2
+                    },
+                    {
+                        "leaves": 2
+                    },
+                    {}
+                ]
+            ]
+        }
+    ],
+    "gnome": [
+        {
+            "index": 0,
+            "x": 3,
+            "y": 5,
+            "type": 3
+        },
+        {
+            "index": 0,
+            "x": 6,
+            "y": 5,
+            "type": 3
+        },
+        {
+            "index": 0,
+            "x": 3,
+            "y": 1,
+            "type": 3
+        },
+        {
+            "index": 0,
+            "x": 6,
+            "y": 1,
+            "type": 3
+        }
+    ],
+    "portal": [
+        {
+            "in": [
+                0,
+                8
+            ],
+            "out": [
+                7,
+                1
+            ]
+        }
+    ],
+    "collect": [
+        {
+            "type": "gnome",
+            "count": 4
+        },
+        {
+            "type": "gem",
+            "count": 9
+        }
+    ],
+    "moveCnt": 22,
+    "chipset": [
+        {
+            "type": 0,
+            "percent": 100
+        },
+        {
+            "type": 1,
+            "percent": 100
+        },
+        {
+            "type": 2,
+            "percent": 100
+        },
+        {
+            "type": 3,
+            "percent": 100
+        },
+        {
+            "type": 4,
+            "percent": 100
+        }
+    ],
+    "levelInfo": {
+        "TO_LIGHTNING_ENOUGH": 12,
+        "background": 1,
+        "cellColorSeed": 0,
+        "levelReward": 50,
+        "movesLimit": 25,
+        "version": "0",
+        "timeLimit": 0,
+        "entry": false,
+        "hardness": false,
+        "forceUpdate": false,
+        "score": [
+            15000,
+            30000,
+            50000
+        ]
+    }
+}

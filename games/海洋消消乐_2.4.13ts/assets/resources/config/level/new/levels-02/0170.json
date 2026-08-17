@@ -1,0 +1,262 @@
+{
+    "grid": [
+        {
+            "collect": null,
+            "map": [
+                [
+                    null,
+                    null,
+                    {
+                        "born": true
+                    },
+                    {
+                        "born": true
+                    },
+                    {
+                        "born": true
+                    },
+                    {
+                        "born": true
+                    },
+                    {
+                        "born": true
+                    },
+                    null,
+                    null
+                ],
+                [
+                    null,
+                    {
+                        "born": true
+                    },
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {
+                        "born": true
+                    },
+                    null
+                ],
+                [
+                    null,
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    null
+                ],
+                [
+                    null,
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    null
+                ],
+                [
+                    null,
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    null
+                ],
+                [
+                    {
+                        "ground": 2
+                    },
+                    {
+                        "ground": 2,
+                        "gem": 1
+                    },
+                    {
+                        "ground": 2,
+                        "gem": 1
+                    },
+                    {
+                        "ground": 2
+                    },
+                    {
+                        "stone": 1
+                    },
+                    {
+                        "ground": 2
+                    },
+                    {
+                        "ground": 2,
+                        "gem": 1
+                    },
+                    {
+                        "ground": 2,
+                        "gem": 1
+                    },
+                    {
+                        "ground": 2
+                    }
+                ],
+                [
+                    {
+                        "ground": 2,
+                        "gem": 1
+                    },
+                    {
+                        "ground": 2
+                    },
+                    {
+                        "ground": 2,
+                        "gem": 1
+                    },
+                    {
+                        "ground": 2,
+                        "gem": 1
+                    },
+                    {
+                        "type": 6,
+                        "locks": 1
+                    },
+                    {
+                        "ground": 2,
+                        "gem": 1
+                    },
+                    {
+                        "ground": 2,
+                        "gem": 1
+                    },
+                    {
+                        "ground": 2
+                    },
+                    {
+                        "ground": 2,
+                        "gem": 1
+                    }
+                ],
+                [
+                    {
+                        "ground": 2,
+                        "gem": 1
+                    },
+                    {
+                        "ground": 2,
+                        "gem": 1
+                    },
+                    {
+                        "ground": 2
+                    },
+                    {
+                        "ground": 2,
+                        "gem": 1
+                    },
+                    {
+                        "stone": 1
+                    },
+                    {
+                        "ground": 2,
+                        "gem": 1
+                    },
+                    {
+                        "ground": 2
+                    },
+                    {
+                        "ground": 2,
+                        "gem": 1
+                    },
+                    {
+                        "ground": 2,
+                        "gem": 1
+                    }
+                ],
+                [
+                    null,
+                    {
+                        "ground": 2,
+                        "gem": 1
+                    },
+                    {
+                        "ground": 2,
+                        "gem": 1
+                    },
+                    {
+                        "ground": 2
+                    },
+                    {
+                        "type": 6,
+                        "locks": 1
+                    },
+                    {
+                        "ground": 2
+                    },
+                    {
+                        "ground": 2,
+                        "gem": 1
+                    },
+                    {
+                        "ground": 2,
+                        "gem": 1
+                    },
+                    null
+                ]
+            ]
+        }
+    ],
+    "collect": [
+        {
+            "type": "gem",
+            "count": 20
+        },
+        {
+            "type": "6",
+            "count": 2
+        }
+    ],
+    "moveCnt": 30,
+    "chipset": [
+        {
+            "type": 0,
+            "percent": 100
+        },
+        {
+            "type": 1,
+            "percent": 100
+        },
+        {
+            "type": 2,
+            "percent": 100
+        },
+        {
+            "type": 3,
+            "percent": 100
+        },
+        {
+            "type": 4,
+            "percent": 100
+        }
+    ],
+    "levelInfo": {
+        "TO_LIGHTNING_ENOUGH": 14,
+        "background": 1,
+        "cellColorSeed": 0,
+        "levelReward": 50,
+        "movesLimit": 30,
+        "version": "0",
+        "timeLimit": 0,
+        "entry": false,
+        "hardness": false,
+        "forceUpdate": false,
+        "score": [
+            15000,
+            30000,
+            50000
+        ]
+    }
+}

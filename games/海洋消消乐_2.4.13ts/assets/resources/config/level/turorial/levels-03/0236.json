@@ -1,0 +1,42 @@
+{
+    "stages": [
+        {
+            "name": "first_move",
+            "moves": 0,
+            "bubble": {
+                "text": {
+                    "zh": "匹配<color=#C3543C>同色</color> <br/>元素就可以把<color=#C3543C> 章鱼弟弟 </color> <br/>激活！"
+                },
+                "x": 0,
+                "y": 320
+            },
+            "hand": {
+                "x": 5,
+                "y": 2,
+                "type": "left"
+            },
+            "cells": [
+                {
+                    "x": 4,
+                    "y": 1,
+                    "hint": "static"
+                },
+                {
+                    "x": 4,
+                    "y": 3,
+                    "hint": "static"
+                },
+                {
+                    "x": 5,
+                    "y": 2,
+                    "removable": true
+                },
+                {
+                    "x": 4,
+                    "y": 2,
+                    "removable": true
+                }
+            ]
+        }
+    ]
+}

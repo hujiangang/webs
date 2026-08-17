@@ -1,0 +1,112 @@
+{
+    "stages": [
+        {
+            "name": "first_move",
+            "moves": 0,
+            "bubble": {
+                "text": {
+                    "zh": "消除旁边的元素就可以把<color=#C3543C> 珊瑚 </color> <br/>摘下来！"
+                },
+                "x": 0,
+                "y": 320
+            },
+            "hand": {
+                "x": 3,
+                "y": 3,
+                "type": "down"
+            },
+            "cells": [
+                {
+                    "x": 2,
+                    "y": 4,
+                    "hint": "static"
+                },
+                {
+                    "x": 4,
+                    "y": 4,
+                    "hint": "static"
+                },
+                {
+                    "x": 3,
+                    "y": 3,
+                    "removable": true
+                },
+                {
+                    "x": 3,
+                    "y": 4,
+                    "hint": "left",
+                    "removable": true
+                },
+                {
+                    "x": 2,
+                    "y": 5,
+                    "hint": "static"
+                },
+                {
+                    "x": 3,
+                    "y": 5,
+                    "hint": "static"
+                },
+                {
+                    "x": 4,
+                    "y": 5,
+                    "hint": "static"
+                }
+            ]
+        },
+        {
+            "name": "chips_orders",
+            "moves": 1,
+            "bubble": {
+                "text": {
+                    "zh": "摘掉所有<size=40> <color=#C3543C> 珊瑚 </color> </size>就可以把它们全部带走！"
+                },
+                "x": 0,
+                "y": -50
+            },
+            "cells": [
+                {
+                    "x": 0,
+                    "y": 5,
+                    "hint": "static"
+                },
+                {
+                    "x": 1,
+                    "y": 5,
+                    "hint": "static"
+                },
+                {
+                    "x": 2,
+                    "y": 5,
+                    "hint": "static"
+                },
+                {
+                    "x": 3,
+                    "y": 5,
+                    "hint": "static"
+                },
+                {
+                    "x": 4,
+                    "y": 5,
+                    "hint": "static"
+                },
+                {
+                    "x": 5,
+                    "y": 5,
+                    "hint": "static"
+                },
+                {
+                    "x": 6,
+                    "y": 5,
+                    "hint": "static"
+                },
+                {
+                    "x": 7,
+                    "y": 5,
+                    "hint": "static"
+                }
+            ],
+            "closeByTouch": true
+        }
+    ]
+}

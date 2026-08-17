@@ -1,0 +1,198 @@
+{
+    "grid": [
+        {
+            "collect": null,
+            "map": [
+                [
+                    {},
+                    {
+                        "type": 7
+                    },
+                    {},
+                    {},
+                    {},
+                    {},
+                    {}
+                ],
+                [
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {}
+                ],
+                [
+                    {},
+                    {},
+                    {},
+                    {
+                        "type": 6
+                    },
+                    {
+                        "type": 4
+                    },
+                    {
+                        "type": 104
+                    },
+                    {
+                        "type": 6
+                    }
+                ],
+                [
+                    {},
+                    {
+                        "rocket_type": 5
+                    },
+                    {},
+                    {},
+                    {
+                        "type": 104
+                    },
+                    {
+                        "type": 6
+                    },
+                    {
+                        "type": 5
+                    }
+                ],
+                [
+                    {
+                        "type": 8
+                    },
+                    {
+                        "type": 5
+                    },
+                    {
+                        "type": 6
+                    },
+                    {
+                        "type": 6
+                    },
+                    {},
+                    {},
+                    {}
+                ],
+                [
+                    {},
+                    {},
+                    {
+                        "type": 5
+                    },
+                    {
+                        "type": 6
+                    },
+                    {
+                        "type": 5
+                    },
+                    {
+                        "type": 104
+                    },
+                    {}
+                ],
+                [
+                    {},
+                    {},
+                    {
+                        "type": 8
+                    },
+                    {
+                        "type": 8
+                    },
+                    {
+                        "type": 0
+                    },
+                    {
+                        "type": 6
+                    },
+                    {
+                        "type": 6
+                    }
+                ],
+                [
+                    {},
+                    {},
+                    {},
+                    {
+                        "type": 3
+                    },
+                    {
+                        "type": 3
+                    },
+                    {
+                        "type": 0
+                    },
+                    {
+                        "type": 104
+                    }
+                ],
+                [
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {
+                        "type": 104
+                    }
+                ]
+            ]
+        }
+    ],
+    "turtles": [],
+    "gnome": [],
+    "crab": [],
+    "monkeyTree": [],
+    "collect": [
+        {
+            "type": 6,
+            "count": 6
+        }
+    ],
+    "chipset": [
+        {
+            "type": 3,
+            "percent": 30
+        },
+        {
+            "type": 0,
+            "percent": 30
+        },
+        {
+            "type": 1,
+            "percent": 40
+        },
+        {
+            "type": 2,
+            "percent": 30
+        }
+    ],
+    "levelInfo": {
+        "TO_LIGHTNING_ENOUGH": 0,
+        "background": 3,
+        "cellColorSeed": 921,
+        "levelReward": 50,
+        "movesLimit": 22,
+        "version": "0",
+        "timeLimit": 0,
+        "entry": true,
+        "hardness": false,
+        "forceUpdate": false,
+        "score": [
+            10000,
+            20000,
+            30000
+        ]
+    },
+    "lawnmower": [
+        {
+            "degree": 0,
+            "type": 0,
+            "x": 0,
+            "y": 8,
+            "count": 3
+        }
+    ]
+}

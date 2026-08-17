@@ -1,0 +1,270 @@
+{
+    "grid": [
+        {
+            "collect": null,
+            "map": [
+                [
+                    {
+                        "born": true,
+                        "type": 4,
+                        "ice": 2
+                    },
+                    null,
+                    {
+                        "born": true,
+                        "type": 4,
+                        "ice": 2
+                    },
+                    null,
+                    {
+                        "portal_idx": 1,
+                        "type": 4
+                    },
+                    {
+                        "born": true
+                    },
+                    {
+                        "born": true
+                    },
+                    {
+                        "born": true
+                    },
+                    {
+                        "portal_idx": 2,
+                        "type": 4
+                    }
+                ],
+                [
+                    null,
+                    {
+                        "type": 0,
+                        "ice": 2
+                    },
+                    null,
+                    null,
+                    {
+                        "box_level": 2
+                    },
+                    {},
+                    {},
+                    {},
+                    {
+                        "box_level": 2
+                    }
+                ],
+                [
+                    {
+                        "type": 4,
+                        "ice": 2
+                    },
+                    null,
+                    {
+                        "type": 4,
+                        "ice": 2
+                    },
+                    null,
+                    {
+                        "box_level": 2
+                    },
+                    {},
+                    {},
+                    {},
+                    {
+                        "box_level": 2
+                    }
+                ],
+                [
+                    null,
+                    {
+                        "type": 0,
+                        "ice": 2
+                    },
+                    null,
+                    null,
+                    {
+                        "box_level": 2
+                    },
+                    {},
+                    {},
+                    {},
+                    {
+                        "box_level": 2
+                    }
+                ],
+                [
+                    {
+                        "type": 4,
+                        "ice": 2
+                    },
+                    null,
+                    {
+                        "type": 4,
+                        "ice": 2
+                    },
+                    null,
+                    {
+                        "box_level": 2
+                    },
+                    {},
+                    {},
+                    {},
+                    {
+                        "box_level": 2
+                    }
+                ],
+                [
+                    null,
+                    {
+                        "type": 0,
+                        "ice": 2
+                    },
+                    null,
+                    null,
+                    {
+                        "box_level": 2
+                    },
+                    {},
+                    {},
+                    {},
+                    {
+                        "box_level": 2
+                    }
+                ],
+                [
+                    {
+                        "type": 4,
+                        "ice": 2
+                    },
+                    null,
+                    {
+                        "type": 4,
+                        "ice": 2
+                    },
+                    null,
+                    {
+                        "box_level": 2
+                    },
+                    {},
+                    {},
+                    {},
+                    {
+                        "box_level": 2
+                    }
+                ],
+                [
+                    null,
+                    {
+                        "type": 0,
+                        "ice": 2
+                    },
+                    null,
+                    null,
+                    {
+                        "box_level": 2
+                    },
+                    {},
+                    {},
+                    {},
+                    {
+                        "box_level": 2
+                    }
+                ],
+                [
+                    {
+                        "portal_idx": -1,
+                        "type": 4,
+                        "ice": 2
+                    },
+                    null,
+                    {
+                        "portal_idx": -2,
+                        "type": 4,
+                        "ice": 2
+                    },
+                    null,
+                    {
+                        "box_level": 2
+                    },
+                    {},
+                    {},
+                    {},
+                    {
+                        "box_level": 2
+                    }
+                ]
+            ]
+        }
+    ],
+    "portal": [
+        {
+            "in": [
+                7,
+                8
+            ],
+            "out": [
+                0,
+                0
+            ]
+        },
+        {
+            "in": [
+                9,
+                8
+            ],
+            "out": [
+                5,
+                0
+            ]
+        }
+    ],
+    "collect": [
+        {
+            "type": 0,
+            "count": 30
+        },
+        {
+            "type": "4",
+            "count": 30
+        }
+    ],
+    "moveCnt": 25,
+    "chipset": [
+        {
+            "type": 0,
+            "percent": 100
+        },
+        {
+            "type": 1,
+            "percent": 100
+        },
+        {
+            "type": 2,
+            "percent": 100
+        },
+        {
+            "type": 3,
+            "percent": 100
+        },
+        {
+            "type": 4,
+            "percent": 100
+        }
+    ],
+    "levelInfo": {
+        "TO_LIGHTNING_ENOUGH": 20,
+        "background": 1,
+        "cellColorSeed": 0,
+        "levelReward": 50,
+        "movesLimit": 26,
+        "version": "0",
+        "timeLimit": 0,
+        "entry": false,
+        "hardness": false,
+        "forceUpdate": false,
+        "score": [
+            15000,
+            30000,
+            50000
+        ]
+    }
+}

@@ -1,0 +1,76 @@
+
+haigui.png
+size: 478,131
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+haigui/duzi
+  rotate: false
+  xy: 153, 78
+  size: 138, 51
+  orig: 138, 51
+  offset: 0, 0
+  index: -1
+haigui/head
+  rotate: false
+  xy: 153, 2
+  size: 96, 74
+  orig: 96, 74
+  offset: 0, 0
+  index: -1
+haigui/ke
+  rotate: false
+  xy: 2, 20
+  size: 149, 109
+  orig: 149, 109
+  offset: 0, 0
+  index: -1
+haigui/leg1
+  rotate: true
+  xy: 293, 74
+  size: 55, 67
+  orig: 55, 67
+  offset: 0, 0
+  index: -1
+haigui/leg2
+  rotate: true
+  xy: 362, 72
+  size: 57, 65
+  orig: 57, 65
+  offset: 0, 0
+  index: -1
+haigui/leg3
+  rotate: true
+  xy: 429, 64
+  size: 65, 47
+  orig: 65, 47
+  offset: 0, 0
+  index: -1
+haigui/leg4
+  rotate: false
+  xy: 414, 16
+  size: 58, 46
+  orig: 58, 46
+  offset: 0, 0
+  index: -1
+haigui/weiba
+  rotate: true
+  xy: 251, 12
+  size: 64, 29
+  orig: 64, 29
+  offset: 0, 0
+  index: -1
+light01b_01a
+  rotate: false
+  xy: 282, 8
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+qipao1
+  rotate: false
+  xy: 348, 6
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1

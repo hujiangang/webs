@@ -1,0 +1,42 @@
+{
+    "stages": [
+        {
+            "name": "first_move",
+            "moves": 0,
+            "bubble": {
+                "text": {
+                    "zh": "消除相邻元素能从 <color=#C3543C>海里</color> 掉上鱼来！"
+                },
+                "x": 0,
+                "y": -100
+            },
+            "hand": {
+                "x": 1,
+                "y": 3,
+                "type": "down"
+            },
+            "cells": [
+                {
+                    "x": 1,
+                    "y": 3,
+                    "removable": true
+                },
+                {
+                    "x": 2,
+                    "y": 4,
+                    "hint": "static"
+                },
+                {
+                    "x": 1,
+                    "y": 4,
+                    "removable": true
+                },
+                {
+                    "x": 2,
+                    "y": 4,
+                    "hint": "static"
+                }
+            ]
+        }
+    ]
+}

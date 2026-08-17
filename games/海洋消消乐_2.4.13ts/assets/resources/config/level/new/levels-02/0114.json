@@ -1,0 +1,403 @@
+{
+    "grid": [
+        {
+            "collect": null,
+            "map": [
+                [
+                    {
+                        "born": true,
+                        "leaves": 1
+                    },
+                    {
+                        "born": true,
+                        "leaves": 2
+                    },
+                    {
+                        "born": true,
+                        "leaves": 2
+                    },
+                    {
+                        "born": true,
+                        "leaves": 2
+                    },
+                    {
+                        "born": true,
+                        "leaves": 2
+                    },
+                    {
+                        "born": true,
+                        "leaves": 2
+                    },
+                    {
+                        "born": true,
+                        "leaves": 2
+                    },
+                    {
+                        "born": true,
+                        "leaves": 1
+                    }
+                ],
+                [
+                    {
+                        "type": 0,
+                        "leaves": 1
+                    },
+                    {
+                        "type": 0,
+                        "leaves": 2
+                    },
+                    {
+                        "type": 2,
+                        "leaves": 2
+                    },
+                    {
+                        "type": 0,
+                        "leaves": 2
+                    },
+                    {
+                        "type": 0,
+                        "leaves": 2
+                    },
+                    {
+                        "leaves": 2
+                    },
+                    {
+                        "leaves": 2
+                    },
+                    {
+                        "leaves": 1
+                    }
+                ],
+                [
+                    {
+                        "type": 2,
+                        "leaves": 1
+                    },
+                    {
+                        "type": 2,
+                        "leaves": 2
+                    },
+                    {
+                        "type": 0,
+                        "leaves": 2
+                    },
+                    {
+                        "type": 2,
+                        "leaves": 2
+                    },
+                    {
+                        "type": 2,
+                        "leaves": 2
+                    },
+                    {
+                        "leaves": 2
+                    },
+                    {
+                        "leaves": 2
+                    },
+                    {
+                        "leaves": 1
+                    }
+                ],
+                [
+                    {
+                        "type": 1,
+                        "ice": 1,
+                        "leaves": 1
+                    },
+                    {
+                        "type": 1,
+                        "ice": 1,
+                        "leaves": 2
+                    },
+                    {
+                        "type": 3,
+                        "ice": 2,
+                        "leaves": 2
+                    },
+                    {
+                        "type": 3,
+                        "ice": 2,
+                        "leaves": 2
+                    },
+                    {
+                        "type": 4,
+                        "ice": 2,
+                        "leaves": 2
+                    },
+                    {
+                        "type": 4,
+                        "ice": 2,
+                        "leaves": 2
+                    },
+                    {
+                        "type": 2,
+                        "ice": 1,
+                        "leaves": 2
+                    },
+                    {
+                        "type": 2,
+                        "ice": 1,
+                        "leaves": 1
+                    }
+                ],
+                [
+                    {
+                        "type": 0,
+                        "leaves": 1
+                    },
+                    {
+                        "type": 0,
+                        "leaves": 2
+                    },
+                    {
+                        "type": 1,
+                        "leaves": 2
+                    },
+                    {
+                        "type": 1,
+                        "ice": 1,
+                        "leaves": 2
+                    },
+                    {
+                        "type": 2,
+                        "ice": 1,
+                        "leaves": 2
+                    },
+                    {
+                        "type": 2,
+                        "leaves": 2
+                    },
+                    {
+                        "type": 0,
+                        "leaves": 2
+                    },
+                    {
+                        "type": 0,
+                        "leaves": 1
+                    }
+                ],
+                [
+                    {
+                        "type": 1,
+                        "ice": 1,
+                        "leaves": 1
+                    },
+                    {
+                        "type": 1,
+                        "ice": 1,
+                        "leaves": 2
+                    },
+                    {
+                        "type": 3,
+                        "ice": 2,
+                        "leaves": 2
+                    },
+                    {
+                        "type": 3,
+                        "ice": 2,
+                        "leaves": 2
+                    },
+                    {
+                        "type": 4,
+                        "ice": 2,
+                        "leaves": 2
+                    },
+                    {
+                        "type": 4,
+                        "ice": 2,
+                        "leaves": 2
+                    },
+                    {
+                        "type": 2,
+                        "ice": 1,
+                        "leaves": 2
+                    },
+                    {
+                        "type": 2,
+                        "ice": 1,
+                        "leaves": 1
+                    }
+                ],
+                [
+                    {
+                        "type": 0,
+                        "leaves": 1
+                    },
+                    {
+                        "type": 0,
+                        "leaves": 2
+                    },
+                    {
+                        "type": 1,
+                        "leaves": 2
+                    },
+                    {
+                        "type": 1,
+                        "ice": 1,
+                        "leaves": 2
+                    },
+                    {
+                        "type": 2,
+                        "ice": 1,
+                        "leaves": 2
+                    },
+                    {
+                        "type": 2,
+                        "leaves": 2
+                    },
+                    {
+                        "type": 0,
+                        "leaves": 2
+                    },
+                    {
+                        "type": 0,
+                        "leaves": 1
+                    }
+                ],
+                [
+                    {
+                        "type": 1,
+                        "ice": 1,
+                        "leaves": 1
+                    },
+                    {
+                        "type": 1,
+                        "ice": 1,
+                        "leaves": 2
+                    },
+                    {
+                        "type": 3,
+                        "ice": 2,
+                        "leaves": 2
+                    },
+                    {
+                        "type": 3,
+                        "ice": 2,
+                        "leaves": 2
+                    },
+                    {
+                        "type": 4,
+                        "ice": 2,
+                        "leaves": 2
+                    },
+                    {
+                        "type": 4,
+                        "ice": 2,
+                        "leaves": 2
+                    },
+                    {
+                        "type": 2,
+                        "ice": 1,
+                        "leaves": 2
+                    },
+                    {
+                        "type": 2,
+                        "ice": 1,
+                        "leaves": 1
+                    }
+                ],
+                [
+                    {
+                        "type": 0,
+                        "leaves": 1
+                    },
+                    {
+                        "type": 0,
+                        "leaves": 2
+                    },
+                    {
+                        "type": 1,
+                        "leaves": 2
+                    },
+                    {
+                        "type": 1,
+                        "leaves": 2
+                    },
+                    {
+                        "type": 2,
+                        "leaves": 2
+                    },
+                    {
+                        "type": 2,
+                        "leaves": 2
+                    },
+                    {
+                        "type": 0,
+                        "leaves": 2
+                    },
+                    {
+                        "type": 0,
+                        "leaves": 1
+                    }
+                ]
+            ]
+        }
+    ],
+    "gnome": [
+        {
+            "index": 0,
+            "x": 1,
+            "y": 3,
+            "type": 3
+        },
+        {
+            "index": 0,
+            "x": 3,
+            "y": 3,
+            "type": 3
+        },
+        {
+            "index": 0,
+            "x": 5,
+            "y": 3,
+            "type": 3
+        }
+    ],
+    "collect": [
+        {
+            "type": "gnome",
+            "count": 3
+        }
+    ],
+    "moveCnt": 40,
+    "chipset": [
+        {
+            "type": 0,
+            "percent": 100
+        },
+        {
+            "type": 1,
+            "percent": 100
+        },
+        {
+            "type": 2,
+            "percent": 100
+        },
+        {
+            "type": 3,
+            "percent": 100
+        },
+        {
+            "type": 4,
+            "percent": 100
+        }
+    ],
+    "levelInfo": {
+        "TO_LIGHTNING_ENOUGH": 13,
+        "background": 3,
+        "cellColorSeed": 0,
+        "levelReward": 50,
+        "movesLimit": 24,
+        "version": "0",
+        "timeLimit": 0,
+        "entry": false,
+        "hardness": false,
+        "forceUpdate": false,
+        "score": [
+            20000,
+            30000,
+            60000
+        ]
+    }
+}

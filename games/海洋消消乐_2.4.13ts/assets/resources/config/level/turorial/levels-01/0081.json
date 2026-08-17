@@ -1,0 +1,23 @@
+{
+    "stages": [
+        {
+            "name": "first_move",
+            "moves": 0,
+            "bubble": {
+                "text": {
+                    "zh": "在<size=40> <color=#C3543C> 贝壳 </color> </size>旁边消除来获取它，并增加额外步数。"
+                },
+                "x": 0,
+                "y": 320
+            },
+            "cells": [
+                {
+                    "x": 0,
+                    "y": 5,
+                    "hint": "static"
+                }
+            ],
+            "closeByTouch": true
+        }
+    ]
+}

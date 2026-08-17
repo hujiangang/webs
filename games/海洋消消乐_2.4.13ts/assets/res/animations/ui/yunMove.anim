@@ -1,0 +1,65 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "yunMove",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 24,
+  "sample": 10,
+  "speed": 0.1,
+  "wrapMode": 2,
+  "curveData": {
+    "paths": {
+      "yun1": {
+        "props": {
+          "x": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 12,
+              "value": -750
+            },
+            {
+              "frame": 12.1,
+              "value": 743.412
+            },
+            {
+              "frame": 24,
+              "value": 0
+            }
+          ],
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 11.9,
+              "value": false
+            },
+            {
+              "frame": 12.1,
+              "value": true
+            }
+          ]
+        }
+      },
+      "yun2": {
+        "props": {
+          "x": [
+            {
+              "frame": 0,
+              "value": 750
+            },
+            {
+              "frame": 24,
+              "value": -750
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": []
+}

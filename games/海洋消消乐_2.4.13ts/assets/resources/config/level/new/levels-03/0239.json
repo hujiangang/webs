@@ -1,0 +1,260 @@
+{
+    "grid": [
+        {
+            "collect": null,
+            "map": [
+                [
+                    null,
+                    null,
+                    {
+                        "born": true,
+                        "type": 0
+                    },
+                    {
+                        "born": true,
+                        "box_level": 2
+                    },
+                    {
+                        "flowers": 3
+                    },
+                    {
+                        "born": true,
+                        "box_level": 2
+                    },
+                    {
+                        "born": true,
+                        "type": 2
+                    },
+                    null,
+                    null
+                ],
+                [
+                    null,
+                    {},
+                    {
+                        "type": 0
+                    },
+                    {},
+                    {
+                        "box_level": 2
+                    },
+                    {},
+                    {
+                        "type": 2
+                    },
+                    {},
+                    null
+                ],
+                [
+                    {
+                        "box_level": 2
+                    },
+                    {
+                        "type": 0
+                    },
+                    {},
+                    {
+                        "type": 0
+                    },
+                    {
+                        "box_level": 2
+                    },
+                    {
+                        "type": 2
+                    },
+                    {},
+                    {
+                        "type": 2
+                    },
+                    {
+                        "box_level": 2
+                    }
+                ],
+                [
+                    {
+                        "flowers": 3
+                    },
+                    {
+                        "box_level": 2
+                    },
+                    {
+                        "type": 0
+                    },
+                    {},
+                    {
+                        "box_level": 2
+                    },
+                    {},
+                    {
+                        "type": 2
+                    },
+                    {
+                        "box_level": 2
+                    },
+                    {
+                        "flowers": 3
+                    }
+                ],
+                [
+                    null,
+                    {
+                        "box_level": 2
+                    },
+                    {
+                        "type": 2
+                    },
+                    {
+                        "box_level": 2
+                    },
+                    {
+                        "flowers": 3
+                    },
+                    {
+                        "box_level": 2
+                    },
+                    {
+                        "type": 0
+                    },
+                    {
+                        "box_level": 2
+                    },
+                    null
+                ],
+                [
+                    {
+                        "flowers": 3
+                    },
+                    {
+                        "box_level": 2
+                    },
+                    {
+                        "type": 1
+                    },
+                    {},
+                    {
+                        "box_level": 2
+                    },
+                    {},
+                    {
+                        "type": 3
+                    },
+                    {
+                        "box_level": 2
+                    },
+                    {
+                        "flowers": 3
+                    }
+                ],
+                [
+                    {
+                        "box_level": 2
+                    },
+                    {
+                        "type": 1
+                    },
+                    {},
+                    {
+                        "type": 1
+                    },
+                    {
+                        "box_level": 2
+                    },
+                    {
+                        "type": 3
+                    },
+                    {},
+                    {
+                        "type": 3
+                    },
+                    {
+                        "box_level": 2
+                    }
+                ],
+                [
+                    null,
+                    {},
+                    {
+                        "type": 1
+                    },
+                    {},
+                    {
+                        "box_level": 2
+                    },
+                    {},
+                    {
+                        "type": 3
+                    },
+                    {},
+                    null
+                ],
+                [
+                    null,
+                    null,
+                    {
+                        "type": 1
+                    },
+                    {
+                        "box_level": 2
+                    },
+                    {
+                        "flowers": 3
+                    },
+                    {
+                        "box_level": 2
+                    },
+                    {
+                        "type": 3
+                    },
+                    null,
+                    null
+                ]
+            ]
+        }
+    ],
+    "collect": [
+        {
+            "type": "5",
+            "count": 35
+        }
+    ],
+    "moveCnt": 32,
+    "chipset": [
+        {
+            "type": 0,
+            "percent": 100
+        },
+        {
+            "type": 1,
+            "percent": 100
+        },
+        {
+            "type": 2,
+            "percent": 100
+        },
+        {
+            "type": 3,
+            "percent": 100
+        },
+        {
+            "type": 4,
+            "percent": 40
+        }
+    ],
+    "levelInfo": {
+        "TO_LIGHTNING_ENOUGH": 10,
+        "background": 1,
+        "cellColorSeed": 0,
+        "levelReward": 100,
+        "movesLimit": 32,
+        "version": "0",
+        "timeLimit": 0,
+        "entry": false,
+        "hardness": 1,
+        "forceUpdate": false,
+        "score": [
+            15000,
+            30000,
+            50000
+        ]
+    }
+}

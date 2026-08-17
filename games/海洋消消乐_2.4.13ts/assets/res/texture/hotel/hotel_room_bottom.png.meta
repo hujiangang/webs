@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "3ded4f24-54a4-449c-9c8f-faebf95124f4",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 750,
+  "height": 797,
+  "platformSettings": {},
+  "subMetas": {
+    "hotel_room_bottom": {
+      "ver": "1.0.6",
+      "uuid": "59bd595b-e134-4304-bef5-2568664bfc27",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "3ded4f24-54a4-449c-9c8f-faebf95124f4",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 1,
+      "offsetY": -6.5,
+      "trimX": 8,
+      "trimY": 14,
+      "width": 736,
+      "height": 782,
+      "rawWidth": 750,
+      "rawHeight": 797,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

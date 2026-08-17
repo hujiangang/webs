@@ -1,0 +1,41 @@
+{
+    "top": 66,
+    "texture": [
+        {
+            "path": "sky",
+            "parent": "bbg"
+        }
+    ],
+    "sub": [
+        {
+            "path": "senlin/senlin",
+            "top": -66,
+            "parent": "bg",
+            "type": "prefab"
+        },
+        {
+            "path": "role",
+            "pos": [
+                36,
+                -10
+            ],
+            "parent": "ui/top/Auto_record/collectNode/role",
+            "type": "sprite"
+        },
+        {
+            "path": "sea",
+            "top": 0,
+            "parent": "bbg",
+            "type": "sprite",
+            "z": 0
+        },
+        {
+            "path": "stone",
+            "top": 0,
+            "left": 0,
+            "parent": "bbg",
+            "type": "sprite",
+            "z": 1
+        }
+    ]
+}

@@ -1,0 +1,29 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "kko",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 2.0166666666666666,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 2,
+  "curveData": {
+    "props": {
+      "y": [
+        {
+          "frame": 0,
+          "value": 408.3210144042969
+        },
+        {
+          "frame": 1,
+          "value": 424.2569885253906
+        },
+        {
+          "frame": 2.0166666666666666,
+          "value": 408.3210144042969
+        }
+      ]
+    }
+  },
+  "events": []
+}

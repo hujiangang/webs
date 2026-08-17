@@ -1,0 +1,371 @@
+{
+    "grid": [
+        {
+            "collect": null,
+            "map": [
+                [
+                    {
+                        "born": true,
+                        "box_level": 3,
+                        "type": 6
+                    },
+                    {
+                        "born": true,
+                        "box_level": 3,
+                        "type": 6
+                    },
+                    {
+                        "born": true,
+                        "box_level": 3,
+                        "type": 6
+                    },
+                    {
+                        "born": true,
+                        "box_level": 3,
+                        "type": 6
+                    },
+                    {
+                        "born": true,
+                        "box_level": 3,
+                        "type": 6
+                    },
+                    {
+                        "born": true,
+                        "box_level": 3,
+                        "type": 6
+                    },
+                    {
+                        "born": true,
+                        "box_level": 3,
+                        "type": 6
+                    },
+                    {
+                        "born": true,
+                        "box_level": 3,
+                        "type": 6
+                    }
+                ],
+                [
+                    {
+                        "box_level": 3,
+                        "type": 6
+                    },
+                    {
+                        "box_level": 3
+                    },
+                    {
+                        "box_level": 3,
+                        "type": 6
+                    },
+                    {
+                        "box_level": 3,
+                        "type": 6
+                    },
+                    {
+                        "box_level": 3,
+                        "type": 6
+                    },
+                    {
+                        "box_level": 3,
+                        "type": 6
+                    },
+                    {
+                        "box_level": 3,
+                        "type": 6
+                    },
+                    {
+                        "box_level": 3,
+                        "type": 6
+                    }
+                ],
+                [
+                    {
+                        "box_level": 3,
+                        "type": 6
+                    },
+                    {
+                        "box_level": 3,
+                        "type": 6
+                    },
+                    {
+                        "box_level": 3,
+                        "type": 6
+                    },
+                    {
+                        "box_level": 3,
+                        "type": 6
+                    },
+                    {
+                        "box_level": 3,
+                        "type": 6
+                    },
+                    {
+                        "box_level": 3,
+                        "type": 6
+                    },
+                    {
+                        "box_level": 3,
+                        "type": 6
+                    },
+                    {
+                        "box_level": 3,
+                        "type": 6
+                    }
+                ],
+                [
+                    {
+                        "box_level": 3,
+                        "type": 6
+                    },
+                    {
+                        "box_level": 3,
+                        "type": 6
+                    },
+                    {
+                        "box_level": 3,
+                        "type": 6
+                    },
+                    {
+                        "box_level": 3,
+                        "type": 6
+                    },
+                    {
+                        "box_level": 3,
+                        "type": 6
+                    },
+                    {
+                        "box_level": 3,
+                        "type": 6
+                    },
+                    {
+                        "box_level": 3,
+                        "type": 6
+                    },
+                    {
+                        "box_level": 3,
+                        "type": 6
+                    }
+                ],
+                [
+                    {
+                        "box_level": 3,
+                        "type": 6
+                    },
+                    {
+                        "box_level": 3,
+                        "type": 6
+                    },
+                    {
+                        "box_level": 3,
+                        "type": 6
+                    },
+                    {
+                        "box_level": 3,
+                        "type": 104
+                    },
+                    {
+                        "box_level": 3,
+                        "type": 104
+                    },
+                    {
+                        "box_level": 3,
+                        "type": 6
+                    },
+                    {
+                        "box_level": 3,
+                        "type": 6
+                    },
+                    {
+                        "box_level": 3,
+                        "type": 6
+                    }
+                ],
+                [
+                    {
+                        "box_level": 3,
+                        "type": 6
+                    },
+                    {
+                        "box_level": 3,
+                        "type": 6
+                    },
+                    {
+                        "box_level": 3,
+                        "type": 6
+                    },
+                    {
+                        "type": 104
+                    },
+                    {
+                        "type": 104
+                    },
+                    {
+                        "box_level": 3,
+                        "type": 6
+                    },
+                    {
+                        "box_level": 3,
+                        "type": 6
+                    },
+                    {
+                        "box_level": 3,
+                        "type": 6
+                    }
+                ],
+                [
+                    {
+                        "box_level": 3,
+                        "type": 6
+                    },
+                    {
+                        "box_level": 1,
+                        "type": 104
+                    },
+                    {
+                        "box_level": 3,
+                        "type": 6
+                    },
+                    {
+                        "empty": true
+                    },
+                    {
+                        "empty": true
+                    },
+                    {
+                        "box_level": 3,
+                        "type": 6
+                    },
+                    {
+                        "box_level": 2,
+                        "type": 104
+                    },
+                    {
+                        "box_level": 3,
+                        "type": 6
+                    }
+                ],
+                [
+                    {
+                        "box_level": 3,
+                        "type": 6
+                    },
+                    {
+                        "box_level": 1,
+                        "type": 104
+                    },
+                    {
+                        "box_level": 3,
+                        "type": 6
+                    },
+                    {
+                        "empty": true
+                    },
+                    {
+                        "empty": true
+                    },
+                    {
+                        "box_level": 3,
+                        "type": 6
+                    },
+                    {
+                        "box_level": 2,
+                        "type": 104
+                    },
+                    {
+                        "box_level": 3,
+                        "type": 6
+                    }
+                ],
+                [
+                    {
+                        "box_level": 3,
+                        "type": 6
+                    },
+                    {
+                        "box_level": 3,
+                        "type": 6
+                    },
+                    {
+                        "box_level": 3,
+                        "type": 6
+                    },
+                    {
+                        "empty": true
+                    },
+                    {
+                        "empty": true
+                    },
+                    {
+                        "box_level": 3,
+                        "type": 6
+                    },
+                    {
+                        "box_level": 3,
+                        "type": 6
+                    },
+                    {
+                        "box_level": 3,
+                        "type": 6
+                    }
+                ]
+            ]
+        }
+    ],
+    "collect": [
+        {
+            "type": "8",
+            "count": 20
+        },
+        {
+            "type": "box",
+            "count": 64
+        }
+    ],
+    "moveCnt": 30,
+    "chipset": [
+        {
+            "type": 0,
+            "percent": 80
+        },
+        {
+            "type": 1,
+            "percent": 80
+        },
+        {
+            "type": 2,
+            "percent": 100
+        },
+        {
+            "type": 3,
+            "percent": 100
+        },
+        {
+            "type": 6,
+            "percent": 100
+        }
+    ],
+    "levelInfo": {
+        "TO_LIGHTNING_ENOUGH": 15,
+        "background": 3,
+        "cellColorSeed": 0,
+        "levelReward": 50,
+        "movesLimit": 34,
+        "version": "0",
+        "timeLimit": 0,
+        "entry": false,
+        "hardness": false,
+        "forceUpdate": false,
+        "score": [
+            15000,
+            30000,
+            60000
+        ]
+    },
+    "monkeyTree": [
+        {
+            "index": 0,
+            "x": 3,
+            "y": 8
+        }
+    ]
+}

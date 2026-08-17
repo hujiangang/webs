@@ -1,0 +1,286 @@
+{
+    "grid": [
+        {
+            "collect": null,
+            "map": [
+                [
+                    null,
+                    null,
+                    {
+                        "born": true,
+                        "type": 7
+                    },
+                    null,
+                    {
+                        "born": true,
+                        "type": 7
+                    },
+                    null,
+                    {
+                        "born": true,
+                        "type": 7
+                    },
+                    null,
+                    null
+                ],
+                [
+                    null,
+                    null,
+                    {
+                        "type": 7
+                    },
+                    null,
+                    {
+                        "type": 7
+                    },
+                    null,
+                    {
+                        "type": 7
+                    },
+                    null,
+                    null
+                ],
+                [
+                    null,
+                    {
+                        "type": 5
+                    },
+                    {
+                        "empty": true,
+                        "box_level": 1
+                    },
+                    {
+                        "type": 2
+                    },
+                    {
+                        "empty": true,
+                        "box_level": 1
+                    },
+                    {
+                        "type": 5
+                    },
+                    {
+                        "empty": true,
+                        "box_level": 1
+                    },
+                    {
+                        "type": 2
+                    },
+                    null
+                ],
+                [
+                    null,
+                    {
+                        "type": 0
+                    },
+                    {
+                        "empty": true,
+                        "box_level": 1
+                    },
+                    {
+                        "type": 0
+                    },
+                    {
+                        "empty": true,
+                        "box_level": 1
+                    },
+                    {
+                        "type": 1
+                    },
+                    {
+                        "empty": true,
+                        "box_level": 1
+                    },
+                    {
+                        "type": 5
+                    },
+                    null
+                ],
+                [
+                    null,
+                    {
+                        "type": 2
+                    },
+                    {
+                        "empty": true,
+                        "box_level": 1
+                    },
+                    {
+                        "type": 5
+                    },
+                    {
+                        "empty": true,
+                        "box_level": 1
+                    },
+                    {
+                        "type": 2
+                    },
+                    {
+                        "empty": true,
+                        "box_level": 1
+                    },
+                    {
+                        "type": 0
+                    },
+                    null
+                ],
+                [
+                    null,
+                    {
+                        "exit": true,
+                        "type": 2
+                    },
+                    {
+                        "exit": true,
+                        "empty": true,
+                        "box_level": 1
+                    },
+                    {
+                        "exit": true,
+                        "type": 5
+                    },
+                    {
+                        "exit": true,
+                        "empty": true,
+                        "box_level": 1
+                    },
+                    {
+                        "exit": true,
+                        "type": 5
+                    },
+                    {
+                        "exit": true,
+                        "empty": true,
+                        "box_level": 1
+                    },
+                    {
+                        "exit": true,
+                        "type": 2
+                    },
+                    null
+                ],
+                [
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null
+                ],
+                [
+                    {
+                        "type": 0,
+                        "born": true
+                    },
+                    {
+                        "type": 0,
+                        "born": true
+                    },
+                    {
+                        "type": 102,
+                        "born": true
+                    },
+                    {
+                        "type": 0,
+                        "born": true
+                    },
+                    {
+                        "type": 102,
+                        "born": true
+                    },
+                    {
+                        "type": 0,
+                        "born": true
+                    },
+                    {
+                        "type": 102,
+                        "born": true
+                    },
+                    {
+                        "type": 0,
+                        "born": true
+                    },
+                    {
+                        "type": 0,
+                        "born": true
+                    }
+                ],
+                [
+                    null,
+                    {
+                        "type": 5
+                    },
+                    {
+                        "type": 0
+                    },
+                    {
+                        "type": 5
+                    },
+                    {
+                        "type": 0
+                    },
+                    {
+                        "type": 5
+                    },
+                    {
+                        "type": 0
+                    },
+                    {
+                        "type": 5
+                    },
+                    null
+                ]
+            ]
+        }
+    ],
+    "collect": [
+        {
+            "type": "7",
+            "count": 6
+        }
+    ],
+    "carryChips": {
+        "max": 2,
+        "type": 7,
+        "chance": 10
+    },
+    "moveCnt": 33,
+    "chipset": [
+        {
+            "type": 0,
+            "percent": 80
+        },
+        {
+            "type": 1,
+            "percent": 100
+        },
+        {
+            "type": 2,
+            "percent": 100
+        },
+        {
+            "type": 5,
+            "percent": 100
+        }
+    ],
+    "levelInfo": {
+        "TO_LIGHTNING_ENOUGH": 12,
+        "background": 2,
+        "cellColorSeed": 0,
+        "levelReward": 50,
+        "movesLimit": 25,
+        "version": "0",
+        "timeLimit": 0,
+        "entry": false,
+        "hardness": false,
+        "forceUpdate": false,
+        "score": [
+            10000,
+            20000,
+            40000
+        ]
+    }
+}

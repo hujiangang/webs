@@ -1,0 +1,295 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "white_zhangyuDDIdle",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.016666666666666666,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "body1": {
+        "props": {
+          "position": [
+            {
+              "frame": 0,
+              "value": [
+                -33.94,
+                -23.204,
+                0
+              ]
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "__type__": "cc.Vec2",
+                "x": 1,
+                "y": 1
+              }
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            }
+          ],
+          "color": [
+            {
+              "frame": 0,
+              "value": {
+                "__type__": "cc.Color",
+                "r": 149,
+                "g": 153,
+                "b": 213,
+                "a": 255
+              }
+            }
+          ]
+        }
+      },
+      "body2": {
+        "props": {
+          "position": [],
+          "scale": [],
+          "opacity": [],
+          "color": [
+            {
+              "frame": 0,
+              "value": {
+                "__type__": "cc.Color",
+                "r": 149,
+                "g": 153,
+                "b": 213,
+                "a": 255
+              }
+            }
+          ]
+        }
+      },
+      "feet": {
+        "props": {
+          "position": [
+            {
+              "frame": 0,
+              "value": [
+                -7.781,
+                -70.031,
+                0
+              ]
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "__type__": "cc.Vec2",
+                "x": 1,
+                "y": 1
+              }
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "feet/head/mouth": {
+        "props": {
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "__type__": "cc.Vec2",
+                "x": 1,
+                "y": 1
+              }
+            }
+          ],
+          "color": [
+            {
+              "frame": 0,
+              "value": {
+                "__type__": "cc.Color",
+                "r": 255,
+                "g": 255,
+                "b": 255,
+                "a": 255
+              }
+            }
+          ]
+        },
+        "comps": {
+          "cc.Sprite": {
+            "spriteFrame": []
+          }
+        }
+      },
+      "feet/head/highlight3": {
+        "props": {
+          "color": [
+            {
+              "frame": 0,
+              "value": {
+                "__type__": "cc.Color",
+                "r": 240,
+                "g": 246,
+                "b": 252,
+                "a": 255
+              }
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "feet/head/highlight2": {
+        "props": {
+          "color": [
+            {
+              "frame": 0,
+              "value": {
+                "__type__": "cc.Color",
+                "r": 235,
+                "g": 252,
+                "b": 201,
+                "a": 255
+              }
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 71
+            }
+          ]
+        }
+      },
+      "feet/head": {
+        "props": {
+          "color": [
+            {
+              "frame": 0,
+              "value": {
+                "__type__": "cc.Color",
+                "r": 255,
+                "g": 255,
+                "b": 255,
+                "a": 255
+              }
+            }
+          ]
+        },
+        "comps": {
+          "cc.Sprite": {
+            "spriteFrame": [
+              {
+                "frame": 0,
+                "value": {
+                  "__uuid__": "686d414f-8bc6-4cb9-89be-51266f3d9e05"
+                }
+              }
+            ]
+          }
+        }
+      },
+      "feet/head/mouth/highlight1": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 122
+            }
+          ],
+          "color": [
+            {
+              "frame": 0,
+              "value": {
+                "__type__": "cc.Color",
+                "r": 253,
+                "g": 220,
+                "b": 255,
+                "a": 255
+              }
+            }
+          ]
+        }
+      },
+      "feet/feet1": {
+        "props": {
+          "color": [
+            {
+              "frame": 0,
+              "value": {
+                "__type__": "cc.Color",
+                "r": 255,
+                "g": 255,
+                "b": 255,
+                "a": 255
+              }
+            }
+          ]
+        }
+      },
+      "feet/feet2": {
+        "props": {
+          "color": [
+            {
+              "frame": 0,
+              "value": {
+                "__type__": "cc.Color",
+                "r": 255,
+                "g": 255,
+                "b": 255,
+                "a": 255
+              }
+            }
+          ]
+        }
+      },
+      "feet/feet3": {
+        "props": {
+          "color": [
+            {
+              "frame": 0,
+              "value": {
+                "__type__": "cc.Color",
+                "r": 255,
+                "g": 255,
+                "b": 255,
+                "a": 255
+              }
+            }
+          ]
+        }
+      },
+      "feet/feet4": {
+        "props": {
+          "color": [
+            {
+              "frame": 0,
+              "value": {
+                "__type__": "cc.Color",
+                "r": 255,
+                "g": 255,
+                "b": 255,
+                "a": 255
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": []
+}

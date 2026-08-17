@@ -1,0 +1,426 @@
+{
+    "grid": [
+        {
+            "collect": null,
+            "map": [
+                [
+                    {
+                        "born": true,
+                        "type": 7
+                    },
+                    {
+                        "water": true,
+                        "born": true
+                    },
+                    {
+                        "portal_idx": 1
+                    },
+                    {
+                        "born": true
+                    },
+                    {
+                        "born": true
+                    },
+                    {
+                        "born": true
+                    },
+                    {
+                        "portal_idx": 2
+                    },
+                    {
+                        "water": true,
+                        "born": true
+                    },
+                    {
+                        "type": 7,
+                        "born": true
+                    }
+                ],
+                [
+                    {
+                        "ice": 1
+                    },
+                    {
+                        "water": true
+                    },
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {
+                        "water": true
+                    },
+                    {
+                        "ice": 1
+                    }
+                ],
+                [
+                    {
+                        "ice": 1
+                    },
+                    {
+                        "water": true
+                    },
+                    {
+                        "box_level": 2
+                    },
+                    {},
+                    {},
+                    {},
+                    {
+                        "box_level": 2
+                    },
+                    {
+                        "water": true
+                    },
+                    {
+                        "ice": 1
+                    }
+                ],
+                [
+                    {
+                        "ice": 1
+                    },
+                    {
+                        "water": true
+                    },
+                    {},
+                    {
+                        "water": true
+                    },
+                    {
+                        "water": true
+                    },
+                    {
+                        "water": true
+                    },
+                    {},
+                    {
+                        "water": true
+                    },
+                    {
+                        "ice": 1
+                    }
+                ],
+                [
+                    {
+                        "ice": 1
+                    },
+                    {
+                        "water": true
+                    },
+                    {
+                        "box_level": 2
+                    },
+                    {
+                        "water": true
+                    },
+                    {
+                        "flowers": 3
+                    },
+                    {
+                        "water": true
+                    },
+                    {
+                        "box_level": 2
+                    },
+                    {
+                        "water": true
+                    },
+                    {
+                        "ice": 1
+                    }
+                ],
+                [
+                    {
+                        "ice": 1
+                    },
+                    {
+                        "water": true
+                    },
+                    {},
+                    {
+                        "water": true
+                    },
+                    {
+                        "water": true
+                    },
+                    {
+                        "water": true
+                    },
+                    {},
+                    {
+                        "water": true
+                    },
+                    {
+                        "ice": 1
+                    }
+                ],
+                [
+                    {
+                        "ice": 1
+                    },
+                    {
+                        "water": true
+                    },
+                    {
+                        "box_level": 2
+                    },
+                    {},
+                    {},
+                    {},
+                    {
+                        "box_level": 2
+                    },
+                    {
+                        "water": true
+                    },
+                    {
+                        "ice": 1
+                    }
+                ],
+                [
+                    {
+                        "ice": 1
+                    },
+                    {
+                        "water": true
+                    },
+                    {},
+                    {},
+                    {
+                        "exit": true
+                    },
+                    {},
+                    {},
+                    {
+                        "water": true
+                    },
+                    {
+                        "ice": 1
+                    }
+                ],
+                [
+                    {
+                        "ice": 1,
+                        "portal_idx": -1
+                    },
+                    {
+                        "water": true,
+                        "exit": true
+                    },
+                    {
+                        "exit": true
+                    },
+                    {
+                        "exit": true
+                    },
+                    null,
+                    {
+                        "exit": true
+                    },
+                    {
+                        "exit": true
+                    },
+                    {
+                        "water": true,
+                        "exit": true
+                    },
+                    {
+                        "ice": 1,
+                        "portal_idx": -2
+                    }
+                ]
+            ]
+        }
+    ],
+    "collect": [
+        {
+            "type": "7",
+            "count": 2
+        },
+        {
+            "type": "5",
+            "count": 20
+        }
+    ],
+    "moveCnt": 23,
+    "chipset": [
+        {
+            "type": 0,
+            "percent": 80
+        },
+        {
+            "type": 4,
+            "percent": 80
+        },
+        {
+            "type": 2,
+            "percent": 80
+        },
+        {
+            "type": 3,
+            "percent": 80
+        },
+        {
+            "type": 1,
+            "percent": 80
+        }
+    ],
+    "levelInfo": {
+        "TO_LIGHTNING_ENOUGH": 0,
+        "background": 1,
+        "cellColorSeed": 221,
+        "levelReward": 51,
+        "movesLimit": 30,
+        "version": "0",
+        "timeLimit": 0,
+        "entry": true,
+        "hardness": false,
+        "forceUpdate": false,
+        "score": [
+            20000,
+            30000,
+            60000
+        ]
+    },
+    "conveyerList": [
+        [
+            {
+                "x": 1,
+                "y": 0,
+                "exist": true
+            },
+            {
+                "x": 1,
+                "y": 1,
+                "exist": true
+            },
+            {
+                "x": 1,
+                "y": 2,
+                "exist": true
+            },
+            {
+                "x": 1,
+                "y": 3,
+                "exist": true
+            },
+            {
+                "x": 1,
+                "y": 4,
+                "exist": true
+            },
+            {
+                "x": 1,
+                "y": 5,
+                "exist": true
+            },
+            {
+                "x": 1,
+                "y": 6,
+                "exist": true
+            },
+            {
+                "x": 1,
+                "y": 7,
+                "exist": true
+            },
+            {
+                "x": 1,
+                "y": 8,
+                "exist": true
+            }
+        ],
+        [
+            {
+                "x": 3,
+                "y": 3,
+                "exist": true
+            },
+            {
+                "x": 3,
+                "y": 4,
+                "exist": true
+            },
+            {
+                "x": 3,
+                "y": 5,
+                "exist": true
+            },
+            {
+                "x": 4,
+                "y": 5,
+                "exist": true
+            },
+            {
+                "x": 5,
+                "y": 5,
+                "exist": true
+            },
+            {
+                "x": 5,
+                "y": 4,
+                "exist": true
+            },
+            {
+                "x": 5,
+                "y": 3,
+                "exist": true
+            },
+            {
+                "x": 4,
+                "y": 3,
+                "exist": true
+            }
+        ],
+        [
+            {
+                "x": 7,
+                "y": 8,
+                "exist": true
+            },
+            {
+                "x": 7,
+                "y": 7,
+                "exist": true
+            },
+            {
+                "x": 7,
+                "y": 6,
+                "exist": true
+            },
+            {
+                "x": 7,
+                "y": 5,
+                "exist": true
+            },
+            {
+                "x": 7,
+                "y": 4,
+                "exist": true
+            },
+            {
+                "x": 7,
+                "y": 3,
+                "exist": true
+            },
+            {
+                "x": 7,
+                "y": 2,
+                "exist": true
+            },
+            {
+                "x": 7,
+                "y": 1,
+                "exist": true
+            },
+            {
+                "x": 7,
+                "y": 0,
+                "exist": true
+            }
+        ]
+    ]
+}

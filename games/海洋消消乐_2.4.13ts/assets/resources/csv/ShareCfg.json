@@ -1,0 +1,380 @@
+[
+  {
+    "id": 1,
+    "shareType": 1,
+    "shareImg": "level_share_5",
+    "shareText": "箱子好重啊，来帮我搬搬吧",
+    "reward": [
+      {
+        "itemId": 0,
+        "num": 800
+      }
+    ],
+    "level": 5,
+    "buildId": 0
+  },
+  {
+    "id": 2,
+    "shareType": 2,
+    "shareImg": "level_share_15",
+    "shareText": "雨后的蘑菇好多啊，一起来采吧",
+    "reward": [
+      {
+        "itemId": 0,
+        "num": 800
+      }
+    ],
+    "level": 15,
+    "buildId": 0
+  },
+  {
+    "id": 3,
+    "shareType": 3,
+    "shareImg": "level_share_25",
+    "shareText": "甜甜的冰淇淋，来一口吧",
+    "reward": [
+      {
+        "itemId": 0,
+        "num": 800
+      }
+    ],
+    "level": 25,
+    "buildId": 0
+  },
+  {
+    "id": 4,
+    "shareType": 4,
+    "shareImg": "level_share_35",
+    "shareText": "贝壳里有海浪的声音吗",
+    "reward": [
+      {
+        "itemId": 0,
+        "num": 800
+      }
+    ],
+    "level": 35,
+    "buildId": 0
+  },
+  {
+    "id": 5,
+    "shareType": 5,
+    "shareImg": "level_share_45",
+    "shareText": "小野邀你看浪花一朵朵",
+    "reward": [
+      {
+        "itemId": 0,
+        "num": 800
+      }
+    ],
+    "level": 45,
+    "buildId": 0
+  },
+  {
+    "id": 6,
+    "shareType": 6,
+    "shareImg": "level_share_55",
+    "shareText": "小野牌椰子汁，物美价廉，见者有份",
+    "reward": [
+      {
+        "itemId": 0,
+        "num": 800
+      }
+    ],
+    "level": 55,
+    "buildId": 0
+  },
+  {
+    "id": 7,
+    "shareType": 7,
+    "shareImg": "level_share_65",
+    "shareText": "快来和小野一起挖海底的宝石吧",
+    "reward": [
+      {
+        "itemId": 0,
+        "num": 800
+      }
+    ],
+    "level": 65,
+    "buildId": 0
+  },
+  {
+    "id": 8,
+    "shareType": 8,
+    "shareImg": "level_share_65",
+    "shareText": "听说海底的宝石价值8个亿？",
+    "reward": [
+      {
+        "itemId": 0,
+        "num": 800
+      }
+    ],
+    "level": 75,
+    "buildId": 0
+  },
+  {
+    "id": 9,
+    "shareType": 9,
+    "shareImg": "level_share_85",
+    "shareText": "快来加入小野的豪华游艇之旅",
+    "reward": [
+      {
+        "itemId": 0,
+        "num": 800
+      }
+    ],
+    "level": 85,
+    "buildId": 0
+  },
+  {
+    "id": 10,
+    "shareType": 10,
+    "shareImg": "level_share_95",
+    "shareText": "小野和猴子打起来了，快来康康",
+    "reward": [
+      {
+        "itemId": 0,
+        "num": 800
+      }
+    ],
+    "level": 95,
+    "buildId": 0
+  },
+  {
+    "id": 11,
+    "shareType": 11,
+    "shareImg": "level_share_105",
+    "shareText": "听说小野遇见了心动的小男孩",
+    "reward": [
+      {
+        "itemId": 0,
+        "num": 800
+      }
+    ],
+    "level": 105,
+    "buildId": 0
+  },
+  {
+    "id": 12,
+    "shareType": 12,
+    "shareImg": "level_share_115",
+    "shareText": "梦幻海岛的旅行，一定要和最爱的人去",
+    "reward": [
+      {
+        "itemId": 0,
+        "num": 800
+      }
+    ],
+    "level": 115,
+    "buildId": 0
+  },
+  {
+    "id": 13,
+    "shareType": 13,
+    "shareImg": "level_share_5",
+    "shareText": "箱子好重啊，来帮我搬搬吧",
+    "reward": [
+      {
+        "itemId": 0,
+        "num": 800
+      }
+    ],
+    "level": 125,
+    "buildId": 0
+  },
+  {
+    "id": 14,
+    "shareType": 14,
+    "shareImg": "level_share_15",
+    "shareText": "雨后的蘑菇好多啊，一起来采吧",
+    "reward": [
+      {
+        "itemId": 0,
+        "num": 800
+      }
+    ],
+    "level": 135,
+    "buildId": 0
+  },
+  {
+    "id": 15,
+    "shareType": 15,
+    "shareImg": "level_share_25",
+    "shareText": "甜甜的冰淇淋，来一口吧",
+    "reward": [
+      {
+        "itemId": 0,
+        "num": 800
+      }
+    ],
+    "level": 145,
+    "buildId": 0
+  },
+  {
+    "id": 16,
+    "shareType": 16,
+    "shareImg": "level_share_35",
+    "shareText": "贝壳里有海浪的声音吗",
+    "reward": [
+      {
+        "itemId": 0,
+        "num": 800
+      }
+    ],
+    "level": 155,
+    "buildId": 0
+  },
+  {
+    "id": 17,
+    "shareType": 17,
+    "shareImg": "level_share_45",
+    "shareText": "小野邀你看浪花一朵朵",
+    "reward": [
+      {
+        "itemId": 0,
+        "num": 800
+      }
+    ],
+    "level": 165,
+    "buildId": 0
+  },
+  {
+    "id": 18,
+    "shareType": 18,
+    "shareImg": "level_share_55",
+    "shareText": "小野牌椰子汁，物美价廉，见者有份",
+    "reward": [
+      {
+        "itemId": 0,
+        "num": 800
+      }
+    ],
+    "level": 175,
+    "buildId": 0
+  },
+  {
+    "id": 19,
+    "shareType": 19,
+    "shareImg": "level_share_65",
+    "shareText": "快来和小野一起挖海底的宝石吧",
+    "reward": [
+      {
+        "itemId": 0,
+        "num": 800
+      }
+    ],
+    "level": 185,
+    "buildId": 0
+  },
+  {
+    "id": 20,
+    "shareType": 20,
+    "shareImg": "level_share_65",
+    "shareText": "听说海底的宝石价值8个亿？",
+    "reward": [
+      {
+        "itemId": 0,
+        "num": 800
+      }
+    ],
+    "level": 195,
+    "buildId": 0
+  },
+  {
+    "id": 21,
+    "shareType": 21,
+    "shareImg": "build_share_15",
+    "shareText": "刚升级的豪华游艇，一起航向星辰大海",
+    "reward": [
+      {
+        "itemId": 0,
+        "num": 800
+      }
+    ],
+    "level": 0,
+    "buildId": 15
+  },
+  {
+    "id": 22,
+    "shareType": 22,
+    "shareImg": "build_share_13",
+    "shareText": "豪华海边旋转餐厅，体验一下上流社会",
+    "reward": [
+      {
+        "itemId": 0,
+        "num": 800
+      }
+    ],
+    "level": 0,
+    "buildId": 13
+  },
+  {
+    "id": 23,
+    "shareType": 23,
+    "shareImg": "build_share_24",
+    "shareText": "扬起我的船帆，驶向你的星海",
+    "reward": [
+      {
+        "itemId": 0,
+        "num": 800
+      }
+    ],
+    "level": 0,
+    "buildId": 24
+  },
+  {
+    "id": 24,
+    "shareType": 24,
+    "shareImg": "build_share_12",
+    "shareText": "新建的望远台，远远就看见了你",
+    "reward": [
+      {
+        "itemId": 0,
+        "num": 800
+      }
+    ],
+    "level": 0,
+    "buildId": 12
+  },
+  {
+    "id": 25,
+    "shareType": 25,
+    "shareImg": "build_share_3",
+    "shareText": "海岛宠物店开张，里面有蘑菇鱼？",
+    "reward": [
+      {
+        "itemId": 0,
+        "num": 800
+      }
+    ],
+    "level": 0,
+    "buildId": 3
+  },
+  {
+    "id": 26,
+    "shareType": 26,
+    "shareImg": "build_share_12",
+    "shareText": "新建的望远台，远远就看见了你",
+    "reward": [
+      {
+        "itemId": 0,
+        "num": 800
+      }
+    ],
+    "level": 0,
+    "buildId": 1
+  },
+  {
+    "id": 27,
+    "shareType": 27,
+    "shareImg": "build_share_3",
+    "shareText": "海岛宠物店开张，里面有蘑菇鱼？",
+    "reward": [
+      {
+        "itemId": 0,
+        "num": 800
+      }
+    ],
+    "level": 0,
+    "buildId": 2
+  }
+]

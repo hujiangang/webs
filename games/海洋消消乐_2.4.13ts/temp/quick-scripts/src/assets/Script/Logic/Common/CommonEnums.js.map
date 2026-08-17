@@ -1,0 +1,1 @@
+{"version":3,"sources":["assets\\Script\\Logic\\Common\\CommonEnums.ts"],"names":[],"mappings":";;;;AACA,MAAM;AACN,UAAU;AACV,MAAM;AACN,yBAAyB;AACzB,gBAAgB;AAChB,gBAAgB;AAChB,aAAa;AACb,IAAI","file":"","sourceRoot":"/","sourcesContent":["\n// /**\n//  * 道具类型\n//  */\n// export enum EItemType{\n//     /** 钻石 */\n//     Gold = 1,\n//     //todo\n// }"]}

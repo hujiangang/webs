@@ -1,0 +1,288 @@
+{
+    "grid": [
+        {
+            "collect": null,
+            "map": [
+                [
+                    {
+                        "born": true
+                    },
+                    {
+                        "born": true
+                    },
+                    {
+                        "born": true
+                    },
+                    {
+                        "firefly": 4,
+                        "born": true
+                    },
+                    {
+                        "firefly": 4,
+                        "born": true
+                    },
+                    {
+                        "born": true
+                    },
+                    {
+                        "born": true
+                    },
+                    {
+                        "born": true
+                    }
+                ],
+                [
+                    {},
+                    -1,
+                    -1,
+                    -1,
+                    -1,
+                    -1,
+                    -1,
+                    -1
+                ],
+                [
+                    {},
+                    {
+                        "box_level": 1
+                    },
+                    {
+                        "box_level": 1
+                    },
+                    -1,
+                    -1,
+                    {
+                        "box_level": 1
+                    },
+                    {
+                        "box_level": 1
+                    },
+                    -1
+                ],
+                [
+                    {
+                        "box_level": 1
+                    },
+                    {
+                        "firefly": 3
+                    },
+                    {
+                        "firefly": 3
+                    },
+                    {
+                        "box_level": 1
+                    },
+                    {
+                        "box_level": 1
+                    },
+                    {
+                        "firefly": 6
+                    },
+                    {
+                        "firefly": 6
+                    },
+                    {
+                        "box_level": 1
+                    }
+                ],
+                [
+                    {},
+                    {
+                        "box_level": 1
+                    },
+                    {
+                        "box_level": 1
+                    },
+                    -1,
+                    -1,
+                    {
+                        "box_level": 1
+                    },
+                    {
+                        "box_level": 1
+                    },
+                    -1
+                ],
+                [
+                    {},
+                    -1,
+                    -1,
+                    -1,
+                    -1,
+                    -1,
+                    -1,
+                    -1
+                ],
+                [
+                    {},
+                    -1,
+                    -1,
+                    {
+                        "firefly": 4
+                    },
+                    {
+                        "firefly": 4
+                    },
+                    -1,
+                    -1,
+                    -1
+                ],
+                [
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null
+                ],
+                [
+                    {
+                        "ground": 1,
+                        "gem": 2
+                    },
+                    {
+                        "ground": 1,
+                        "gem": 1
+                    },
+                    {
+                        "ground": 1,
+                        "gem": 2
+                    },
+                    {
+                        "ground": 1,
+                        "gem": 2
+                    },
+                    {
+                        "ground": 1,
+                        "gem": 1
+                    },
+                    {
+                        "ground": 1,
+                        "gem": 1
+                    },
+                    {
+                        "ground": 1,
+                        "gem": 2
+                    },
+                    {
+                        "ground": 1,
+                        "gem": 2
+                    }
+                ],
+                [
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null
+                ],
+                [
+                    {
+                        "ground": 1,
+                        "gem": 1
+                    },
+                    {
+                        "ground": 1,
+                        "gem": 1
+                    },
+                    {
+                        "ground": 1,
+                        "gem": 1
+                    },
+                    {
+                        "ground": 1,
+                        "gem": 2
+                    },
+                    {
+                        "ground": 1,
+                        "gem": 1
+                    },
+                    {
+                        "ground": 1,
+                        "gem": 2
+                    },
+                    {
+                        "ground": 1,
+                        "gem": 2
+                    },
+                    {
+                        "ground": 1,
+                        "gem": 1
+                    }
+                ]
+            ]
+        }
+    ],
+    "portal": [
+        {
+            "in": [
+                8,
+                7
+            ],
+            "out": [
+                3,
+                0
+            ]
+        },
+        {
+            "in": [
+                10,
+                7
+            ],
+            "out": [
+                8,
+                0
+            ]
+        }
+    ],
+    "collect": [
+        {
+            "count": 16,
+            "type": "gem"
+        },
+        {
+            "count": 34,
+            "type": "firefly"
+        }
+    ],
+    "moveCnt": 27,
+    "chipset": [
+        {
+            "type": 0,
+            "percent": 100
+        },
+        {
+            "type": 1,
+            "percent": 100
+        },
+        {
+            "type": 2,
+            "percent": 100
+        },
+        {
+            "type": 3,
+            "percent": 100
+        },
+        {
+            "type": 4,
+            "percent": 100
+        }
+    ],
+    "levelInfo": {
+        "TO_LIGHTNING_ENOUGH": 14,
+        "background": 1,
+        "cellColorSeed": 78,
+        "levelReward": 50,
+        "movesLimit": 27,
+        "version": "0",
+        "timeLimit": 0,
+        "entry": false,
+        "hardness": false,
+        "forceUpdate": false
+    }
+}

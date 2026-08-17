@@ -1,0 +1,489 @@
+{
+    "grid": [
+        {
+            "collect": null,
+            "map": [
+                [
+                    {
+                        "born": true,
+                        "leaves": 1,
+                        "box_level": 1,
+                        "box_type": 2,
+                        "empty": true
+                    },
+                    {
+                        "born": true,
+                        "leaves": 2,
+                        "box_level": 1,
+                        "box_type": 2,
+                        "empty": true
+                    },
+                    {
+                        "born": true,
+                        "leaves": 2,
+                        "box_level": 1,
+                        "box_type": 2,
+                        "empty": true
+                    },
+                    {
+                        "born": true,
+                        "leaves": 1
+                    },
+                    {
+                        "born": true,
+                        "leaves": 1
+                    },
+                    {
+                        "born": true,
+                        "leaves": 1,
+                        "type": 0
+                    },
+                    {
+                        "born": true,
+                        "leaves": 1
+                    },
+                    null,
+                    null
+                ],
+                [
+                    {
+                        "leaves": 1,
+                        "box_level": 1,
+                        "box_type": 2,
+                        "empty": true
+                    },
+                    {
+                        "leaves": 2,
+                        "box_level": 1,
+                        "box_type": 1,
+                        "empty": true
+                    },
+                    {
+                        "leaves": 1,
+                        "box_level": 1,
+                        "box_type": 1,
+                        "empty": true
+                    },
+                    {
+                        "leaves": 1,
+                        "box_level": 1,
+                        "box_type": 1,
+                        "empty": true
+                    },
+                    {
+                        "leaves": 1
+                    },
+                    {
+                        "leaves": 1,
+                        "type": 0
+                    },
+                    {
+                        "leaves": 1,
+                        "type": 2
+                    },
+                    {
+                        "leaves": 1
+                    },
+                    null
+                ],
+                [
+                    {
+                        "leaves": 1,
+                        "box_level": 1,
+                        "box_type": 2,
+                        "empty": true
+                    },
+                    {
+                        "leaves": 2,
+                        "box_level": 1,
+                        "box_type": 1,
+                        "empty": true
+                    },
+                    {
+                        "leaves": 1,
+                        "box_level": 1,
+                        "box_type": 2,
+                        "empty": true
+                    },
+                    {
+                        "leaves": 1,
+                        "box_level": 1,
+                        "box_type": 2,
+                        "empty": true
+                    },
+                    {
+                        "leaves": 1,
+                        "box_level": 1,
+                        "box_type": 2,
+                        "empty": true
+                    },
+                    {
+                        "leaves": 1,
+                        "type": 2
+                    },
+                    {
+                        "leaves": 1,
+                        "type": 0
+                    },
+                    {
+                        "leaves": 1
+                    },
+                    {
+                        "leaves": 1
+                    }
+                ],
+                [
+                    {
+                        "leaves": 1,
+                        "empty": true
+                    },
+                    {
+                        "leaves": 1,
+                        "box_level": 1,
+                        "box_type": 1,
+                        "empty": true
+                    },
+                    {
+                        "leaves": 1,
+                        "box_level": 1,
+                        "box_type": 2,
+                        "empty": true
+                    },
+                    {
+                        "leaves": 2,
+                        "box_level": 1,
+                        "box_type": 0,
+                        "empty": true
+                    },
+                    {
+                        "leaves": 2,
+                        "box_level": 1,
+                        "box_type": 0,
+                        "empty": true
+                    },
+                    {
+                        "leaves": 2,
+                        "box_level": 1,
+                        "box_type": 0,
+                        "empty": true
+                    },
+                    {
+                        "leaves": 1,
+                        "type": 2
+                    },
+                    {
+                        "leaves": 1
+                    },
+                    {
+                        "leaves": 1
+                    }
+                ],
+                [
+                    {
+                        "leaves": 1,
+                        "empty": true
+                    },
+                    {
+                        "leaves": 1,
+                        "empty": true
+                    },
+                    {
+                        "leaves": 1,
+                        "box_level": 1,
+                        "box_type": 2,
+                        "empty": true
+                    },
+                    {
+                        "leaves": 2,
+                        "box_level": 1,
+                        "box_type": 0,
+                        "empty": true
+                    },
+                    {
+                        "leaves": 2,
+                        "box_level": 1,
+                        "box_type": 3
+                    },
+                    {
+                        "leaves": 2,
+                        "box_level": 1,
+                        "box_type": 0,
+                        "empty": true
+                    },
+                    {
+                        "leaves": 2,
+                        "box_level": 1,
+                        "box_type": 2,
+                        "empty": true
+                    },
+                    {
+                        "leaves": 1
+                    },
+                    {
+                        "leaves": 1
+                    }
+                ],
+                [
+                    {
+                        "leaves": 1,
+                        "empty": true
+                    },
+                    {
+                        "leaves": 1,
+                        "empty": true
+                    },
+                    {
+                        "leaves": 1,
+                        "empty": true
+                    },
+                    {
+                        "leaves": 2,
+                        "box_level": 1,
+                        "box_type": 0,
+                        "empty": true
+                    },
+                    {
+                        "leaves": 2,
+                        "box_level": 1,
+                        "box_type": 0,
+                        "empty": true
+                    },
+                    {
+                        "leaves": 2,
+                        "box_level": 1,
+                        "box_type": 0,
+                        "empty": true
+                    },
+                    {
+                        "leaves": 2,
+                        "box_level": 1,
+                        "box_type": 2,
+                        "empty": true
+                    },
+                    {
+                        "leaves": 2,
+                        "box_level": 1,
+                        "box_type": 1,
+                        "empty": true
+                    },
+                    {
+                        "leaves": 1
+                    }
+                ],
+                [
+                    {
+                        "leaves": 1,
+                        "empty": true
+                    },
+                    {
+                        "leaves": 1,
+                        "empty": true
+                    },
+                    {
+                        "leaves": 1,
+                        "empty": true
+                    },
+                    {
+                        "leaves": 1,
+                        "empty": true
+                    },
+                    {
+                        "leaves": 2,
+                        "box_level": 1,
+                        "box_type": 2,
+                        "empty": true
+                    },
+                    {
+                        "leaves": 2,
+                        "box_level": 1,
+                        "box_type": 2,
+                        "empty": true
+                    },
+                    {
+                        "leaves": 2,
+                        "box_level": 1,
+                        "box_type": 2,
+                        "empty": true
+                    },
+                    {
+                        "leaves": 2,
+                        "box_level": 1,
+                        "box_type": 1,
+                        "empty": true
+                    },
+                    {
+                        "leaves": 2,
+                        "box_level": 1,
+                        "box_type": 2,
+                        "empty": true
+                    }
+                ],
+                [
+                    null,
+                    {
+                        "leaves": 1,
+                        "empty": true
+                    },
+                    {
+                        "leaves": 1,
+                        "empty": true
+                    },
+                    {
+                        "leaves": 1,
+                        "empty": true
+                    },
+                    {
+                        "leaves": 1,
+                        "empty": true
+                    },
+                    {
+                        "leaves": 2,
+                        "box_level": 1,
+                        "box_type": 1,
+                        "empty": true
+                    },
+                    {
+                        "leaves": 2,
+                        "box_level": 1,
+                        "box_type": 1,
+                        "empty": true
+                    },
+                    {
+                        "leaves": 2,
+                        "box_level": 1,
+                        "box_type": 1,
+                        "empty": true
+                    },
+                    {
+                        "leaves": 2,
+                        "box_level": 1,
+                        "box_type": 2,
+                        "empty": true
+                    }
+                ],
+                [
+                    null,
+                    null,
+                    {
+                        "leaves": 1,
+                        "empty": true
+                    },
+                    {
+                        "leaves": 1,
+                        "empty": true
+                    },
+                    {
+                        "leaves": 1,
+                        "empty": true
+                    },
+                    {
+                        "leaves": 1,
+                        "empty": true
+                    },
+                    {
+                        "leaves": 2,
+                        "box_level": 1,
+                        "box_type": 2,
+                        "empty": true
+                    },
+                    {
+                        "leaves": 2,
+                        "box_level": 1,
+                        "box_type": 2,
+                        "empty": true
+                    },
+                    {
+                        "leaves": 2,
+                        "box_level": 1,
+                        "box_type": 2,
+                        "empty": true
+                    }
+                ]
+            ]
+        }
+    ],
+    "gnome": [
+        {
+            "x": 3,
+            "y": 5,
+            "type": 0
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "type": 1
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "type": 0
+        },
+        {
+            "x": 4,
+            "y": 3,
+            "type": 0
+        },
+        {
+            "x": 6,
+            "y": 5,
+            "type": 1
+        },
+        {
+            "x": 6,
+            "y": 3,
+            "type": 0
+        },
+        {
+            "x": 1,
+            "y": 5,
+            "type": 0
+        },
+        {
+            "x": 3,
+            "y": 7,
+            "type": 0
+        },
+        {
+            "x": 4,
+            "y": 1,
+            "type": 0
+        }
+    ],
+    "collect": [
+        {
+            "count": 9,
+            "type": "colorbox"
+        }
+    ],
+    "moveCnt": 23,
+    "chipset": [
+        {
+            "type": 0,
+            "percent": 100
+        },
+        {
+            "type": 1,
+            "percent": 100
+        },
+        {
+            "type": 2,
+            "percent": 100
+        },
+        {
+            "type": 3,
+            "percent": 100
+        }
+    ],
+    "levelInfo": {
+        "TO_LIGHTNING_ENOUGH": 18,
+        "background": 1,
+        "cellColorSeed": 0,
+        "levelReward": 50,
+        "movesLimit": 23,
+        "version": "0",
+        "timeLimit": 0,
+        "entry": false,
+        "hardness": false,
+        "forceUpdate": true
+    }
+}

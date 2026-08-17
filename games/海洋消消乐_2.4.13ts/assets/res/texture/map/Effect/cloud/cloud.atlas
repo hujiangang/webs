@@ -1,0 +1,20 @@
+
+cloud.png
+size: 1021,754
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+BG_matou_spine/qwer/cloud1
+  rotate: true
+  xy: 2, 2
+  size: 750, 592
+  orig: 750, 592
+  offset: 0, 0
+  index: -1
+BG_matou_spine/qwer/cloud2
+  rotate: true
+  xy: 596, 2
+  size: 750, 423
+  orig: 750, 423
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,331 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "gameWin",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 1.3333333333333333,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 0,
+  "curveData": {
+    "paths": {
+      "result_title_win": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0.25,
+              "value": 0
+            },
+            {
+              "frame": 0.38333333333333336,
+              "value": 255
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0.8333333333333334,
+              "value": {
+                "__type__": "cc.Vec2",
+                "x": 0.016,
+                "y": 1
+              }
+            },
+            {
+              "frame": 0.9166666666666666,
+              "value": {
+                "__type__": "cc.Vec2",
+                "x": 1.12,
+                "y": 1
+              }
+            },
+            {
+              "frame": 1,
+              "value": {
+                "__type__": "cc.Vec2",
+                "x": 1,
+                "y": 1
+              }
+            }
+          ]
+        }
+      },
+      "lab_lv": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0.8333333333333334,
+              "value": 0
+            },
+            {
+              "frame": 0.9166666666666666,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "lab_score_title": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0.8333333333333334,
+              "value": 0
+            },
+            {
+              "frame": 0.9166666666666666,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "lab_best_title": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0.8333333333333334,
+              "value": 0
+            },
+            {
+              "frame": 0.9166666666666666,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "lab_score": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0.8333333333333334,
+              "value": 0
+            },
+            {
+              "frame": 0.9166666666666666,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "lab_best": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0.8333333333333334,
+              "value": 0
+            },
+            {
+              "frame": 0.9166666666666666,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "panel_result": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0.5,
+              "value": 0
+            },
+            {
+              "frame": 0.5833333333333334,
+              "value": 255
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0.5,
+              "value": {
+                "__type__": "cc.Vec2",
+                "x": 0.7,
+                "y": 0.7
+              }
+            },
+            {
+              "frame": 0.6666666666666666,
+              "value": {
+                "__type__": "cc.Vec2",
+                "x": 1.1,
+                "y": 1.1
+              }
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": {
+                "__type__": "cc.Vec2",
+                "x": 1,
+                "y": 1
+              }
+            }
+          ]
+        }
+      },
+      "stars/s2": {
+        "props": {
+          "position": [
+            {
+              "frame": 0,
+              "value": [
+                0,
+                554.85,
+                0
+              ]
+            }
+          ]
+        }
+      },
+      "stars/b2": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": 255
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0.5,
+              "value": {
+                "__type__": "cc.Vec2",
+                "x": 0,
+                "y": 0
+              }
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": {
+                "__type__": "cc.Vec2",
+                "x": 1,
+                "y": 1
+              }
+            }
+          ]
+        }
+      },
+      "stars/b3": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": 255
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0.5,
+              "value": {
+                "__type__": "cc.Vec2",
+                "x": 0,
+                "y": 0
+              }
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": {
+                "__type__": "cc.Vec2",
+                "x": 0.8,
+                "y": 0.8
+              }
+            }
+          ]
+        }
+      },
+      "stars/s1": {
+        "props": {
+          "position": [
+            {
+              "frame": 0,
+              "value": [
+                -289.275,
+                534.137,
+                0
+              ]
+            }
+          ]
+        }
+      },
+      "stars/s3": {
+        "props": {
+          "position": [
+            {
+              "frame": 0,
+              "value": [
+                268.811,
+                525.055,
+                0
+              ]
+            }
+          ]
+        }
+      },
+      "stars/b1": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": 255
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0.5,
+              "value": {
+                "__type__": "cc.Vec2",
+                "x": 0,
+                "y": 0
+              }
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": {
+                "__type__": "cc.Vec2",
+                "x": 0.8,
+                "y": 0.8
+              }
+            }
+          ]
+        }
+      },
+      "bottom": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 1.1666666666666667,
+              "value": 0
+            },
+            {
+              "frame": 1.3333333333333333,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "content": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 1.1666666666666667,
+              "value": 0
+            },
+            {
+              "frame": 1.3333333333333333,
+              "value": 255
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": []
+}

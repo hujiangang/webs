@@ -1,0 +1,311 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "star3",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.5,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "stars/b1": {
+        "props": {
+          "scale": [],
+          "position": [
+            {
+              "frame": 0.5,
+              "value": [
+                -163.803,
+                -15.121,
+                0
+              ]
+            }
+          ],
+          "angle": [],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "stars/b2": {
+        "props": {
+          "scale": [],
+          "position": [
+            {
+              "frame": 0.5,
+              "value": [
+                2.911,
+                -19.645,
+                0
+              ]
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "stars/b3": {
+        "props": {
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "__type__": "cc.Vec2",
+                "x": 0.8,
+                "y": 0.8
+              }
+            }
+          ],
+          "position": [],
+          "angle": [],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "stars/s1": {
+        "props": {
+          "position": [
+            {
+              "frame": 0.16666666666666666,
+              "value": [
+                0,
+                0
+              ],
+              "motionPath": []
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": [
+                -218.9,
+                -15,
+                0
+              ]
+            },
+            {
+              "frame": 0.5,
+              "value": [
+                -164.476,
+                -14.819,
+                0
+              ]
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0.15,
+              "value": {
+                "__type__": "cc.Vec2",
+                "x": 0,
+                "y": 0
+              }
+            },
+            {
+              "frame": 0.16666666666666666,
+              "value": {
+                "__type__": "cc.Vec2",
+                "x": 0.5,
+                "y": 0.5
+              }
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": {
+                "__type__": "cc.Vec2",
+                "x": 1.2,
+                "y": 1.2
+              }
+            },
+            {
+              "frame": 0.5,
+              "value": {
+                "__type__": "cc.Vec2",
+                "x": 0.8,
+                "y": 0.8
+              }
+            }
+          ],
+          "angle": [
+            {
+              "frame": 0.16666666666666666,
+              "value": 0
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": 42.052
+            },
+            {
+              "frame": 0.5,
+              "value": 13.663
+            }
+          ]
+        }
+      },
+      "stars/s2": {
+        "props": {
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "__type__": "cc.Vec2",
+                "x": 2,
+                "y": 2
+              }
+            },
+            {
+              "frame": 0.16666666666666666,
+              "value": {
+                "__type__": "cc.Vec2",
+                "x": 1.2,
+                "y": 1.2
+              }
+            },
+            {
+              "frame": 0.25,
+              "value": {
+                "__type__": "cc.Vec2",
+                "x": 1.5,
+                "y": 1.5
+              }
+            },
+            {
+              "frame": 0.4166666666666667,
+              "value": {
+                "__type__": "cc.Vec2",
+                "x": 1,
+                "y": 1
+              }
+            }
+          ],
+          "position": [
+            {
+              "frame": 0,
+              "value": [
+                0,
+                506.486,
+                0
+              ]
+            },
+            {
+              "frame": 0.16666666666666666,
+              "value": [
+                3.125,
+                -10.209,
+                0
+              ]
+            },
+            {
+              "frame": 0.5,
+              "value": [
+                2.948,
+                -19.916,
+                0
+              ]
+            }
+          ]
+        }
+      },
+      "stars/s3": {
+        "props": {
+          "scale": [
+            {
+              "frame": 0.15,
+              "value": {
+                "__type__": "cc.Vec2",
+                "x": 0,
+                "y": 0
+              }
+            },
+            {
+              "frame": 0.16666666666666666,
+              "value": {
+                "__type__": "cc.Vec2",
+                "x": 0.5,
+                "y": 0.5
+              }
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": {
+                "__type__": "cc.Vec2",
+                "x": 1.2,
+                "y": 1.2
+              }
+            },
+            {
+              "frame": 0.5,
+              "value": {
+                "__type__": "cc.Vec2",
+                "x": 0.8,
+                "y": 0.8
+              }
+            }
+          ],
+          "position": [
+            {
+              "frame": 0.16666666666666666,
+              "value": [
+                0,
+                0
+              ],
+              "motionPath": []
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": [
+                180,
+                -21,
+                0
+              ]
+            },
+            {
+              "frame": 0.5,
+              "value": [
+                170,
+                -13,
+                0
+              ]
+            }
+          ],
+          "angle": [
+            {
+              "frame": 0.16666666666666666,
+              "value": -13.663
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": -30.154000000000003
+            },
+            {
+              "frame": 0.5,
+              "value": -13.663
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": [
+    {
+      "frame": 0.16666666666666666,
+      "func": "onAnimationFrameEvent",
+      "params": []
+    },
+    {
+      "frame": 0.5,
+      "func": "onAnimationFrameEvent",
+      "params": []
+    }
+  ]
+}

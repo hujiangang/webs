@@ -1,0 +1,416 @@
+{
+    "grid": [
+        {
+            "collect": null,
+            "map": [
+                [
+                    null,
+                    {
+                        "empty": true,
+                        "portal_idx": 2
+                    },
+                    {
+                        "empty": true,
+                        "portal_idx": 4
+                    },
+                    null,
+                    null,
+                    null,
+                    {
+                        "born": true,
+                        "type": 7
+                    },
+                    {
+                        "born": true,
+                        "type": 7
+                    },
+                    null
+                ],
+                [
+                    {
+                        "empty": true,
+                        "portal_idx": 1
+                    },
+                    {
+                        "empty": true
+                    },
+                    {
+                        "empty": true
+                    },
+                    {
+                        "empty": true,
+                        "portal_idx": 6
+                    },
+                    null,
+                    {
+                        "water": true
+                    },
+                    {
+                        "water": true
+                    },
+                    {
+                        "water": true
+                    },
+                    {
+                        "water": true
+                    }
+                ],
+                [
+                    {
+                        "empty": true
+                    },
+                    {
+                        "empty": true
+                    },
+                    {
+                        "empty": true
+                    },
+                    {
+                        "empty": true
+                    },
+                    null,
+                    {
+                        "water": true
+                    },
+                    {},
+                    {},
+                    {
+                        "water": true
+                    }
+                ],
+                [
+                    {
+                        "empty": true
+                    },
+                    {
+                        "empty": true
+                    },
+                    {
+                        "empty": true
+                    },
+                    {
+                        "empty": true
+                    },
+                    null,
+                    {
+                        "water": true
+                    },
+                    {},
+                    {},
+                    {
+                        "water": true
+                    }
+                ],
+                [
+                    {
+                        "empty": true
+                    },
+                    {
+                        "empty": true
+                    },
+                    {
+                        "empty": true
+                    },
+                    {
+                        "empty": true
+                    },
+                    null,
+                    {
+                        "water": true
+                    },
+                    {},
+                    {},
+                    {
+                        "water": true
+                    }
+                ],
+                [
+                    {
+                        "empty": true,
+                        "stone": 3
+                    },
+                    {
+                        "box_level": 3,
+                        "empty": true
+                    },
+                    {
+                        "box_level": 3,
+                        "empty": true
+                    },
+                    {
+                        "empty": true,
+                        "stone": 3
+                    },
+                    null,
+                    {
+                        "water": true
+                    },
+                    {
+                        "water": true
+                    },
+                    {
+                        "water": true
+                    },
+                    {
+                        "water": true
+                    }
+                ],
+                [
+                    {
+                        "box_level": 2,
+                        "empty": true
+                    },
+                    {
+                        "empty": true
+                    },
+                    {
+                        "empty": true
+                    },
+                    {
+                        "box_level": 2,
+                        "empty": true
+                    },
+                    null,
+                    {
+                        "box_level": 1,
+                        "empty": true
+                    },
+                    {
+                        "type": 100,
+                        "box_level": 1
+                    },
+                    {
+                        "box_level": 1,
+                        "empty": true
+                    },
+                    {
+                        "box_level": 1,
+                        "empty": true
+                    }
+                ],
+                [
+                    {
+                        "box_level": 1,
+                        "empty": true,
+                        "exit": true
+                    },
+                    {
+                        "empty": true
+                    },
+                    {
+                        "empty": true
+                    },
+                    {
+                        "box_level": 1,
+                        "empty": true,
+                        "exit": true
+                    },
+                    null,
+                    {
+                        "empty": true,
+                        "stone": 1,
+                        "portal_idx": -1
+                    },
+                    {
+                        "empty": true,
+                        "stone": 1
+                    },
+                    {
+                        "empty": true,
+                        "stone": 1
+                    },
+                    {
+                        "empty": true,
+                        "stone": 1,
+                        "portal_idx": -6
+                    }
+                ],
+                [
+                    null,
+                    {
+                        "box_level": 1,
+                        "empty": true,
+                        "exit": true
+                    },
+                    {
+                        "box_level": 1,
+                        "empty": true,
+                        "exit": true
+                    },
+                    null,
+                    null,
+                    null,
+                    {
+                        "empty": true,
+                        "portal_idx": -2
+                    },
+                    {
+                        "empty": true,
+                        "portal_idx": -4
+                    },
+                    null
+                ]
+            ]
+        }
+    ],
+    "portal": [
+        {
+            "in": [
+                7,
+                8
+            ],
+            "out": [
+                1,
+                0
+            ]
+        },
+        {
+            "in": [
+                8,
+                8
+            ],
+            "out": [
+                2,
+                0
+            ]
+        },
+        {
+            "in": [
+                9,
+                8
+            ],
+            "out": [
+                3,
+                0
+            ]
+        }
+    ],
+    "conveyerList": [
+        [
+            {
+                "x": 5,
+                "y": 2,
+                "exist": true
+            },
+            {
+                "x": 5,
+                "y": 1,
+                "exist": true
+            },
+            {
+                "x": 6,
+                "y": 1,
+                "exist": true
+            },
+            {
+                "x": 7,
+                "y": 1,
+                "exist": true
+            },
+            {
+                "x": 8,
+                "y": 1,
+                "exist": true
+            },
+            {
+                "x": 8,
+                "y": 2,
+                "exist": true
+            },
+            {
+                "x": 8,
+                "y": 3,
+                "exist": true
+            },
+            {
+                "x": 8,
+                "y": 4,
+                "exist": true
+            },
+            {
+                "x": 8,
+                "y": 5,
+                "exist": true
+            },
+            {
+                "x": 7,
+                "y": 5,
+                "exist": true
+            },
+            {
+                "x": 6,
+                "y": 5,
+                "exist": true
+            },
+            {
+                "x": 5,
+                "y": 5,
+                "exist": true
+            },
+            {
+                "x": 5,
+                "y": 4,
+                "exist": true
+            },
+            {
+                "x": 5,
+                "y": 3,
+                "exist": true
+            }
+        ]
+    ],
+    "collect": [
+        {
+            "type": 7,
+            "count": 2
+        }
+    ],
+    "carryChips": {
+        "max": 2,
+        "chance": 6
+    },
+    "trashChips": {
+        "max": 10,
+        "chance": 3
+    },
+    "moveCnt": 34,
+    "chipset": [
+        {
+            "type": 0,
+            "percent": 85
+        },
+        {
+            "type": 1,
+            "percent": 100
+        },
+        {
+            "type": 2,
+            "percent": 100
+        },
+        {
+            "type": 3,
+            "percent": 80
+        },
+        {
+            "type": 4,
+            "percent": 100
+        }
+    ],
+    "levelInfo": {
+        "TO_LIGHTNING_ENOUGH": 10,
+        "background": 1,
+        "cellColorSeed": 0,
+        "levelReward": 50,
+        "movesLimit": 34,
+        "version": "0",
+        "timeLimit": 0,
+        "entry": false,
+        "hardness": false,
+        "forceUpdate": false,
+        "score": [
+            10000,
+            30000,
+            50000
+        ]
+    }
+}

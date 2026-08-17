@@ -1,0 +1,377 @@
+
+beiek_baozha.png
+size: 1661,1033
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+L_eye1
+  rotate: false
+  xy: 1549, 12
+  size: 106, 106
+  orig: 108, 108
+  offset: 1, 1
+  index: -1
+R_eye1
+  rotate: false
+  xy: 1549, 12
+  size: 106, 106
+  orig: 108, 108
+  offset: 1, 1
+  index: -1
+L_eyebrow0
+  rotate: true
+  xy: 781, 489
+  size: 74, 105
+  orig: 84, 109
+  offset: 9, 1
+  index: -1
+L_eyeclose1
+  rotate: false
+  xy: 1549, 120
+  size: 109, 87
+  orig: 111, 88
+  offset: 1, 1
+  index: -1
+L_eyeclose2
+  rotate: true
+  xy: 1606, 929
+  size: 102, 49
+  orig: 104, 51
+  offset: 1, 1
+  index: -1
+R_Face
+  rotate: false
+  xy: 1448, 465
+  size: 150, 141
+  orig: 152, 144
+  offset: 1, 2
+  index: -1
+R_eye0
+  rotate: false
+  xy: 484, 482
+  size: 80, 80
+  orig: 82, 82
+  offset: 1, 1
+  index: -1
+R_eyeSocket
+  rotate: true
+  xy: 1549, 209
+  size: 133, 109
+  orig: 138, 115
+  offset: 2, 5
+  index: -1
+R_eyebrow
+  rotate: true
+  xy: 1448, 357
+  size: 106, 98
+  orig: 106, 99
+  offset: 0, 1
+  index: -1
+R_eyebrow0
+  rotate: false
+  xy: 344, 129
+  size: 74, 111
+  orig: 84, 114
+  offset: 1, 1
+  index: -1
+R_highlight
+  rotate: false
+  xy: 323, 221
+  size: 19, 19
+  orig: 21, 21
+  offset: 1, 1
+  index: -1
+R_wing
+  rotate: true
+  xy: 249, 2
+  size: 124, 146
+  orig: 126, 149
+  offset: 1, 1
+  index: -1
+body
+  rotate: true
+  xy: 2, 478
+  size: 553, 480
+  orig: 553, 481
+  offset: 0, 1
+  index: -1
+bom/bom_000
+  rotate: true
+  xy: 1189, 527
+  size: 42, 40
+  orig: 85, 85
+  offset: 20, 25
+  index: -1
+bom/bom_001
+  rotate: true
+  xy: 1016, 497
+  size: 68, 60
+  orig: 85, 85
+  offset: 7, 9
+  index: -1
+bom/bom_002
+  rotate: true
+  xy: 888, 491
+  size: 72, 64
+  orig: 85, 85
+  offset: 6, 9
+  index: -1
+bom/bom_003
+  rotate: true
+  xy: 645, 486
+  size: 76, 68
+  orig: 85, 85
+  offset: 4, 6
+  index: -1
+bom/bom_004
+  rotate: true
+  xy: 715, 487
+  size: 76, 64
+  orig: 85, 85
+  offset: 3, 6
+  index: -1
+bom/bom_005
+  rotate: true
+  xy: 954, 494
+  size: 71, 60
+  orig: 85, 85
+  offset: 6, 6
+  index: -1
+bom/bom_006
+  rotate: true
+  xy: 1078, 503
+  size: 62, 52
+  orig: 85, 85
+  offset: 12, 13
+  index: -1
+bom/bom_007
+  rotate: true
+  xy: 1606, 882
+  size: 45, 47
+  orig: 85, 85
+  offset: 12, 16
+  index: -1
+dd
+  rotate: false
+  xy: 566, 485
+  size: 77, 77
+  orig: 89, 90
+  offset: 6, 6
+  index: -1
+flush
+  rotate: true
+  xy: 2, 122
+  size: 354, 61
+  orig: 360, 72
+  offset: 1, 5
+  index: -1
+guangci01
+  rotate: false
+  xy: 126, 2
+  size: 121, 119
+  orig: 128, 128
+  offset: 5, 4
+  index: -1
+guangci03
+  rotate: false
+  xy: 65, 123
+  size: 97, 95
+  orig: 98, 104
+  offset: 1, 1
+  index: -1
+kuosan08
+  rotate: false
+  xy: 65, 220
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+light01
+  rotate: false
+  xy: 1549, 344
+  size: 110, 119
+  orig: 128, 128
+  offset: 10, 5
+  index: -1
+light01b_01
+  rotate: false
+  xy: 1132, 506
+  size: 55, 59
+  orig: 64, 64
+  offset: 5, 3
+  index: -1
+lizi01_2
+  rotate: false
+  xy: 1096, 3
+  size: 26, 30
+  orig: 32, 32
+  offset: 2, 2
+  index: -1
+mouth
+  rotate: false
+  xy: 2, 9
+  size: 122, 111
+  orig: 135, 113
+  offset: 13, 0
+  index: -1
+outline/bombfish_10_1
+  rotate: true
+  xy: 1222, 299
+  size: 226, 224
+  orig: 250, 250
+  offset: 10, 3
+  index: -1
+outline/bombfish_11
+  rotate: true
+  xy: 1324, 71
+  size: 226, 223
+  orig: 250, 250
+  offset: 10, 5
+  index: -1
+outline/bombfish_12
+  rotate: true
+  xy: 1163, 571
+  size: 228, 223
+  orig: 250, 250
+  offset: 9, 6
+  index: -1
+outline/bombfish_13
+  rotate: true
+  xy: 872, 23
+  size: 230, 222
+  orig: 250, 250
+  offset: 8, 8
+  index: -1
+outline/bombfish_14
+  rotate: true
+  xy: 933, 799
+  size: 232, 221
+  orig: 250, 250
+  offset: 7, 10
+  index: -1
+outline/bombfish_15
+  rotate: true
+  xy: 484, 798
+  size: 233, 221
+  orig: 250, 250
+  offset: 7, 11
+  index: -1
+outline/bombfish_16
+  rotate: true
+  xy: 420, 7
+  size: 233, 222
+  orig: 250, 250
+  offset: 7, 10
+  index: -1
+outline/bombfish_17
+  rotate: true
+  xy: 546, 248
+  size: 232, 223
+  orig: 250, 250
+  offset: 7, 8
+  index: -1
+outline/bombfish_18
+  rotate: true
+  xy: 771, 255
+  size: 230, 225
+  orig: 250, 250
+  offset: 8, 6
+  index: -1
+outline/bombfish_19
+  rotate: true
+  xy: 644, 16
+  size: 230, 226
+  orig: 250, 250
+  offset: 8, 4
+  index: -1
+outline/bombfish_20
+  rotate: true
+  xy: 936, 567
+  size: 230, 225
+  orig: 250, 250
+  offset: 8, 5
+  index: -1
+outline/bombfish_21
+  rotate: true
+  xy: 707, 799
+  size: 232, 224
+  orig: 250, 250
+  offset: 7, 7
+  index: -1
+outline/bombfish_22
+  rotate: true
+  xy: 711, 565
+  size: 232, 223
+  orig: 250, 250
+  offset: 7, 9
+  index: -1
+outline/bombfish_23
+  rotate: true
+  xy: 323, 242
+  size: 234, 221
+  orig: 250, 250
+  offset: 6, 11
+  index: -1
+outline/bombfish_24
+  rotate: true
+  xy: 998, 263
+  size: 229, 222
+  orig: 250, 250
+  offset: 9, 10
+  index: -1
+outline/bombfish_25
+  rotate: true
+  xy: 1382, 804
+  size: 227, 222
+  orig: 250, 250
+  offset: 9, 8
+  index: -1
+outline/bombfish_26
+  rotate: false
+  xy: 1096, 35
+  size: 226, 226
+  orig: 250, 250
+  offset: 8, 6
+  index: -1
+outline/bombfish_27
+  rotate: false
+  xy: 1156, 801
+  size: 224, 230
+  orig: 250, 250
+  offset: 8, 4
+  index: -1
+outline/bombfish_28
+  rotate: false
+  xy: 484, 564
+  size: 225, 232
+  orig: 250, 250
+  offset: 7, 3
+  index: -1
+quan03
+  rotate: false
+  xy: 1388, 608
+  size: 194, 194
+  orig: 256, 256
+  offset: 31, 31
+  index: -1
+suibian
+  rotate: true
+  xy: 1606, 839
+  size: 41, 47
+  orig: 64, 64
+  offset: 11, 8
+  index: -1
+suibian2
+  rotate: true
+  xy: 1606, 796
+  size: 41, 47
+  orig: 64, 64
+  offset: 11, 8
+  index: -1
+tail
+  rotate: false
+  xy: 164, 128
+  size: 178, 90
+  orig: 180, 92
+  offset: 1, 1
+  index: -1

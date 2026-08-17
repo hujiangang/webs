@@ -1,0 +1,422 @@
+{
+    "grid": [
+        {
+            "collect": null,
+            "map": [
+                [
+                    {
+                        "leaves": 1,
+                        "box_level": 1,
+                        "born": true
+                    },
+                    {
+                        "leaves": 2,
+                        "empty": true,
+                        "born": true
+                    },
+                    {
+                        "leaves": 1,
+                        "box_level": 1,
+                        "born": true
+                    },
+                    {
+                        "leaves": 1,
+                        "stone": 2,
+                        "born": true
+                    },
+                    {
+                        "leaves": 2,
+                        "box_level": 2,
+                        "type": 102,
+                        "born": true
+                    },
+                    {
+                        "leaves": 1,
+                        "stone": 2,
+                        "born": true
+                    },
+                    {
+                        "leaves": 1,
+                        "box_level": 1,
+                        "born": true
+                    },
+                    {
+                        "leaves": 2,
+                        "empty": true,
+                        "born": true
+                    },
+                    {
+                        "leaves": 1,
+                        "box_level": 1,
+                        "born": true
+                    }
+                ],
+                [
+                    {
+                        "stone": 2
+                    },
+                    {
+                        "stone": 2
+                    },
+                    {
+                        "stone": 2
+                    },
+                    {
+                        "stone": 2
+                    },
+                    {
+                        "stone": 2
+                    },
+                    {
+                        "stone": 2
+                    },
+                    {
+                        "stone": 2
+                    },
+                    {
+                        "stone": 2
+                    },
+                    -1
+                ],
+                [
+                    {},
+                    -1,
+                    {
+                        "stone": 2
+                    },
+                    -1,
+                    {
+                        "stone": 2
+                    },
+                    -1,
+                    {
+                        "stone": 2
+                    },
+                    -1,
+                    -1
+                ],
+                [
+                    {},
+                    -1,
+                    -1,
+                    -1,
+                    -1,
+                    -1,
+                    -1,
+                    -1,
+                    -1
+                ],
+                [
+                    null,
+                    -1,
+                    -1,
+                    -1,
+                    -1,
+                    -1,
+                    -1,
+                    -1,
+                    null
+                ],
+                [
+                    null,
+                    null,
+                    {
+                        "leaves": 1,
+                        "box_level": 1,
+                        "type": 100
+                    },
+                    {
+                        "leaves": 2,
+                        "stone": 2
+                    },
+                    {
+                        "leaves": 2,
+                        "stone": 2
+                    },
+                    {
+                        "leaves": 2,
+                        "box_level": 1,
+                        "type": 100
+                    },
+                    {
+                        "leaves": 2,
+                        "stone": 2
+                    },
+                    {
+                        "leaves": 2,
+                        "box_level": 1,
+                        "type": 100
+                    },
+                    {
+                        "leaves": 1,
+                        "stone": 2
+                    }
+                ],
+                [
+                    null,
+                    null,
+                    {
+                        "leaves": 1,
+                        "box_level": 1,
+                        "type": 100
+                    },
+                    {
+                        "leaves": 2,
+                        "stone": 2
+                    },
+                    {
+                        "leaves": 2,
+                        "stone": 2
+                    },
+                    {
+                        "leaves": 2,
+                        "box_level": 1,
+                        "type": 100
+                    },
+                    {
+                        "leaves": 2,
+                        "stone": 2
+                    },
+                    {
+                        "leaves": 2,
+                        "box_level": 1,
+                        "type": 100
+                    },
+                    {
+                        "leaves": 1,
+                        "stone": 2
+                    }
+                ],
+                [
+                    null,
+                    -1,
+                    -1,
+                    -1,
+                    -1,
+                    -1,
+                    -1,
+                    -1,
+                    null
+                ],
+                [
+                    {},
+                    -1,
+                    -1,
+                    -1,
+                    -1,
+                    -1,
+                    -1,
+                    -1,
+                    -1
+                ],
+                [
+                    {},
+                    -1,
+                    {
+                        "stone": 2
+                    },
+                    -1,
+                    {
+                        "stone": 2
+                    },
+                    -1,
+                    {
+                        "stone": 2
+                    },
+                    -1,
+                    -1
+                ],
+                [
+                    {
+                        "stone": 2
+                    },
+                    {
+                        "stone": 2
+                    },
+                    {
+                        "stone": 2
+                    },
+                    {
+                        "stone": 2
+                    },
+                    {
+                        "stone": 2
+                    },
+                    {
+                        "stone": 2
+                    },
+                    {
+                        "stone": 2
+                    },
+                    {
+                        "stone": 2
+                    },
+                    -1
+                ],
+                [
+                    {
+                        "leaves": 1,
+                        "box_level": 1
+                    },
+                    {
+                        "leaves": 2,
+                        "empty": true
+                    },
+                    {
+                        "leaves": 1,
+                        "box_level": 1
+                    },
+                    {
+                        "leaves": 1,
+                        "stone": 2
+                    },
+                    {
+                        "leaves": 2,
+                        "box_level": 2,
+                        "type": 102
+                    },
+                    {
+                        "leaves": 1,
+                        "stone": 2
+                    },
+                    {
+                        "leaves": 1,
+                        "box_level": 1
+                    },
+                    {
+                        "leaves": 2,
+                        "empty": true
+                    },
+                    {
+                        "leaves": 1,
+                        "box_level": 1
+                    }
+                ]
+            ]
+        }
+    ],
+    "lawnmower": [
+        {
+            "x": 8,
+            "y": 1,
+            "type": 2,
+            "count": 16,
+            "degree": 180
+        },
+        {
+            "x": 8,
+            "y": 10,
+            "type": 3,
+            "count": 16,
+            "degree": 180
+        }
+    ],
+    "gnome": [
+        {
+            "x": 2,
+            "y": 5,
+            "type": 0
+        },
+        {
+            "x": 2,
+            "y": 6,
+            "type": 0
+        },
+        {
+            "x": 4,
+            "y": 5,
+            "type": 0
+        },
+        {
+            "x": 4,
+            "y": 6,
+            "type": 0
+        },
+        {
+            "x": 7,
+            "y": 5,
+            "type": 0
+        },
+        {
+            "x": 7,
+            "y": 6,
+            "type": 0
+        },
+        {
+            "x": 6,
+            "y": 5,
+            "type": 1
+        },
+        {
+            "x": 7,
+            "y": 0,
+            "type": 0
+        },
+        {
+            "x": 4,
+            "y": 0,
+            "type": 0
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "type": 0
+        },
+        {
+            "x": 7,
+            "y": 11,
+            "type": 0
+        },
+        {
+            "x": 4,
+            "y": 11,
+            "type": 0
+        },
+        {
+            "x": 1,
+            "y": 11,
+            "type": 0
+        }
+    ],
+    "collect": [
+        {
+            "count": 13,
+            "type": "gnome"
+        }
+    ],
+    "moveCnt": 37,
+    "chipset": [
+        {
+            "type": 0,
+            "percent": 100
+        },
+        {
+            "type": 1,
+            "percent": 100
+        },
+        {
+            "type": 2,
+            "percent": 95
+        },
+        {
+            "type": 3,
+            "percent": 90
+        },
+        {
+            "type": 4,
+            "percent": 70
+        }
+    ],
+    "levelInfo": {
+        "TO_LIGHTNING_ENOUGH": 16,
+        "background": 1,
+        "cellColorSeed": 0,
+        "levelReward": 50,
+        "movesLimit": 37,
+        "version": "0",
+        "timeLimit": 0,
+        "entry": false,
+        "hardness": false,
+        "forceUpdate": true
+    }
+}

@@ -1,0 +1,324 @@
+{
+    "grid": [
+        {
+            "collect": null,
+            "map": [
+                [
+                    {
+                        "born": true,
+                        "type": 7
+                    },
+                    {
+                        "born": true,
+                        "type": 7
+                    },
+                    {
+                        "born": true,
+                        "type": 7
+                    },
+                    {
+                        "born": true,
+                        "type": 7
+                    },
+                    null,
+                    {
+                        "portal_idx": 1,
+                        "empty": true
+                    },
+                    {
+                        "portal_idx": 2,
+                        "empty": true
+                    },
+                    {
+                        "portal_idx": 4,
+                        "empty": true
+                    },
+                    {
+                        "portal_idx": 6,
+                        "empty": true
+                    }
+                ],
+                [
+                    -1,
+                    -1,
+                    -1,
+                    -1,
+                    null,
+                    {
+                        "empty": true
+                    },
+                    {
+                        "empty": true
+                    },
+                    {
+                        "empty": true
+                    },
+                    {
+                        "empty": true
+                    }
+                ],
+                [
+                    -1,
+                    -1,
+                    -1,
+                    -1,
+                    null,
+                    {
+                        "empty": true
+                    },
+                    {
+                        "empty": true
+                    },
+                    {
+                        "empty": true
+                    },
+                    {
+                        "empty": true
+                    }
+                ],
+                [
+                    -1,
+                    -1,
+                    -1,
+                    -1,
+                    null,
+                    {
+                        "empty": true
+                    },
+                    {
+                        "empty": true
+                    },
+                    {
+                        "empty": true
+                    },
+                    {
+                        "empty": true
+                    }
+                ],
+                [
+                    -1,
+                    -1,
+                    -1,
+                    -1,
+                    null,
+                    {
+                        "empty": true
+                    },
+                    {
+                        "empty": true
+                    },
+                    {
+                        "empty": true
+                    },
+                    {
+                        "empty": true
+                    }
+                ],
+                [
+                    -1,
+                    -1,
+                    -1,
+                    -1,
+                    null,
+                    {
+                        "empty": true
+                    },
+                    {
+                        "empty": true
+                    },
+                    {
+                        "empty": true
+                    },
+                    {
+                        "empty": true
+                    }
+                ],
+                [
+                    -1,
+                    -1,
+                    {
+                        "type": 0
+                    },
+                    -1,
+                    null,
+                    {
+                        "empty": true,
+                        "box_level": 1
+                    },
+                    {
+                        "empty": true,
+                        "box_level": 1
+                    },
+                    {
+                        "empty": true,
+                        "box_level": 1
+                    },
+                    {
+                        "empty": true,
+                        "box_level": 1
+                    }
+                ],
+                [
+                    {
+                        "type": 0
+                    },
+                    {
+                        "type": 0
+                    },
+                    -1,
+                    {
+                        "type": 0
+                    },
+                    null,
+                    {
+                        "empty": true,
+                        "box_level": 1
+                    },
+                    {
+                        "empty": true,
+                        "box_level": 1
+                    },
+                    {
+                        "empty": true,
+                        "box_level": 1
+                    },
+                    {
+                        "empty": true,
+                        "box_level": 1
+                    }
+                ],
+                [
+                    {
+                        "portal_idx": -1,
+                        "box_level": 1
+                    },
+                    {
+                        "portal_idx": -2,
+                        "box_level": 1
+                    },
+                    {
+                        "portal_idx": -4,
+                        "box_level": 1
+                    },
+                    {
+                        "portal_idx": -6,
+                        "box_level": 1
+                    },
+                    null,
+                    {
+                        "exit": true,
+                        "empty": true,
+                        "box_level": 1
+                    },
+                    {
+                        "exit": true,
+                        "empty": true,
+                        "box_level": 1
+                    },
+                    {
+                        "exit": true,
+                        "empty": true,
+                        "box_level": 1
+                    },
+                    {
+                        "exit": true,
+                        "empty": true,
+                        "box_level": 1
+                    }
+                ]
+            ]
+        }
+    ],
+    "portal": [
+        {
+            "in": [
+                0,
+                8
+            ],
+            "out": [
+                5,
+                0
+            ]
+        },
+        {
+            "in": [
+                1,
+                8
+            ],
+            "out": [
+                6,
+                0
+            ]
+        },
+        {
+            "in": [
+                2,
+                8
+            ],
+            "out": [
+                7,
+                0
+            ]
+        },
+        {
+            "in": [
+                3,
+                8
+            ],
+            "out": [
+                8,
+                0
+            ]
+        }
+    ],
+    "collect": [
+        {
+            "type": 7,
+            "count": 4
+        }
+    ],
+    "carryChips": {
+        "max": 1,
+        "chance": 20
+    },
+    "moveCnt": 36,
+    "chipset": [
+        {
+            "type": 0,
+            "percent": 100
+        },
+        {
+            "type": 1,
+            "percent": 100
+        },
+        {
+            "type": 2,
+            "percent": 100
+        },
+        {
+            "type": 3,
+            "percent": 100
+        },
+        {
+            "type": 4,
+            "percent": 100
+        }
+    ],
+    "levelInfo": {
+        "TO_LIGHTNING_ENOUGH": 10,
+        "background": 3,
+        "cellColorSeed": 0,
+        "levelReward": 50,
+        "movesLimit": 25,
+        "version": "0",
+        "timeLimit": 0,
+        "entry": false,
+        "hardness": false,
+        "forceUpdate": false,
+        "score": [
+            10000,
+            30000,
+            60000
+        ]
+    }
+}

@@ -1,0 +1,48 @@
+
+hengsudan_xiuxian.png
+size: 266,89
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: false
+  xy: 2, 2
+  size: 152, 85
+  orig: 152, 85
+  offset: 0, 0
+  index: -1
+eye
+  rotate: false
+  xy: 203, 5
+  size: 26, 26
+  orig: 28, 28
+  offset: 1, 1
+  index: -1
+highlight
+  rotate: false
+  xy: 231, 10
+  size: 17, 21
+  orig: 17, 31
+  offset: 0, 9
+  index: -1
+pupil
+  rotate: false
+  xy: 249, 72
+  size: 15, 15
+  orig: 17, 17
+  offset: 1, 1
+  index: -1
+shadow
+  rotate: false
+  xy: 156, 33
+  size: 91, 54
+  orig: 91, 54
+  offset: 0, 0
+  index: -1
+wing
+  rotate: false
+  xy: 156, 10
+  size: 45, 21
+  orig: 47, 23
+  offset: 1, 1
+  index: -1

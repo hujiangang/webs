@@ -1,0 +1,111 @@
+
+animation_girl_2.png
+size: 652,524
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Eyelid01
+  rotate: true
+  xy: 582, 239
+  size: 139, 37
+  orig: 139, 54
+  offset: 0, 16
+  index: -1
+Eyelid02
+  rotate: true
+  xy: 582, 380
+  size: 142, 62
+  orig: 144, 65
+  offset: 1, 3
+  index: -1
+Larm
+  rotate: false
+  xy: 338, 3
+  size: 139, 107
+  orig: 139, 107
+  offset: 0, 0
+  index: -1
+Rarm
+  rotate: false
+  xy: 417, 210
+  size: 163, 312
+  orig: 163, 330
+  offset: 0, 18
+  index: -1
+body
+  rotate: false
+  xy: 227, 234
+  size: 188, 288
+  orig: 188, 289
+  offset: 0, 1
+  index: -1
+eyeball
+  rotate: true
+  xy: 605, 114
+  size: 123, 45
+  orig: 123, 45
+  offset: 0, 0
+  index: -1
+hand
+  rotate: false
+  xy: 479, 23
+  size: 91, 78
+  orig: 91, 78
+  offset: 0, 0
+  index: -1
+head
+  rotate: false
+  xy: 2, 214
+  size: 223, 308
+  orig: 223, 308
+  offset: 0, 0
+  index: -1
+hear
+  rotate: false
+  xy: 505, 103
+  size: 98, 105
+  orig: 98, 105
+  offset: 0, 0
+  index: -1
+legL
+  rotate: true
+  xy: 2, 35
+  size: 84, 334
+  orig: 84, 334
+  offset: 0, 0
+  index: -1
+legR
+  rotate: true
+  xy: 2, 121
+  size: 91, 358
+  orig: 91, 358
+  offset: 0, 0
+  index: -1
+mouse-sad
+  rotate: true
+  xy: 572, 54
+  size: 47, 19
+  orig: 47, 20
+  offset: 0, 0
+  index: -1
+mouse-smile
+  rotate: false
+  xy: 2, 2
+  size: 78, 31
+  orig: 78, 33
+  offset: 0, 1
+  index: -1
+pupil
+  rotate: true
+  xy: 605, 2
+  size: 110, 37
+  orig: 110, 37
+  offset: 0, 0
+  index: -1
+shorts
+  rotate: false
+  xy: 362, 112
+  size: 141, 96
+  orig: 141, 97
+  offset: 0, 0
+  index: -1

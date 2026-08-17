@@ -1,0 +1,246 @@
+{
+    "grid": [
+        {
+            "collect": null,
+            "map": [
+                [
+                    null,
+                    {
+                        "born": true
+                    },
+                    {
+                        "born": true
+                    },
+                    {
+                        "born": true
+                    },
+                    {
+                        "born": true
+                    },
+                    {
+                        "born": true
+                    },
+                    {
+                        "born": true
+                    },
+                    {
+                        "born": true
+                    },
+                    null
+                ],
+                [
+                    null,
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    null
+                ],
+                [
+                    {
+                        "born": true
+                    },
+                    {},
+                    {},
+                    {
+                        "ground": 2,
+                        "gem": 1
+                    },
+                    {
+                        "ground": 2,
+                        "gem": 1
+                    },
+                    {
+                        "water": true
+                    },
+                    {},
+                    {},
+                    {
+                        "born": true
+                    }
+                ],
+                [
+                    {},
+                    {},
+                    {
+                        "ground": 2,
+                        "gem": 1
+                    },
+                    {
+                        "ground": 2,
+                        "gem": 1
+                    },
+                    {
+                        "water": true
+                    },
+                    {
+                        "flowers": 3
+                    },
+                    {
+                        "type": 6
+                    },
+                    {},
+                    {}
+                ],
+                [
+                    {},
+                    {
+                        "ground": 2,
+                        "gem": 1
+                    },
+                    {
+                        "ground": 2,
+                        "gem": 1
+                    },
+                    {
+                        "water": true
+                    },
+                    {
+                        "flowers": 3
+                    },
+                    {
+                        "type": 6
+                    },
+                    {
+                        "type": 6
+                    },
+                    {},
+                    {}
+                ],
+                [
+                    {
+                        "ground": 2
+                    },
+                    {
+                        "ground": 2,
+                        "gem": 1
+                    },
+                    {
+                        "water": true
+                    },
+                    {
+                        "flowers": 3
+                    },
+                    {
+                        "type": 6
+                    },
+                    {
+                        "type": 6
+                    },
+                    {},
+                    {},
+                    {}
+                ],
+                [
+                    {
+                        "ground": 2
+                    },
+                    {
+                        "ground": 2,
+                        "gem": 1
+                    },
+                    {
+                        "flowers": 3
+                    },
+                    {
+                        "type": 6
+                    },
+                    {
+                        "type": 6
+                    },
+                    {},
+                    {},
+                    {},
+                    {}
+                ],
+                [
+                    null,
+                    {
+                        "ground": 2,
+                        "gem": 1
+                    },
+                    {
+                        "type": 6
+                    },
+                    {
+                        "type": 6
+                    },
+                    {},
+                    {},
+                    {},
+                    {},
+                    null
+                ],
+                [
+                    null,
+                    {
+                        "ground": 2,
+                        "gem": 1
+                    },
+                    {
+                        "type": 6
+                    },
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    null
+                ]
+            ]
+        }
+    ],
+    "collect": [
+        {
+            "type": "gem",
+            "count": 10
+        },
+        {
+            "type": "5",
+            "count": 25
+        }
+    ],
+    "trashChips": {
+        "max": 8,
+        "chance": 17
+    },
+    "moveCnt": 30,
+    "chipset": [
+        {
+            "type": 0,
+            "percent": 100
+        },
+        {
+            "type": 1,
+            "percent": 100
+        },
+        {
+            "type": 2,
+            "percent": 80
+        },
+        {
+            "type": 3,
+            "percent": 100
+        }
+    ],
+    "levelInfo": {
+        "TO_LIGHTNING_ENOUGH": 12,
+        "background": 1,
+        "cellColorSeed": 0,
+        "levelReward": 50,
+        "movesLimit": 30,
+        "version": "0",
+        "timeLimit": 0,
+        "entry": false,
+        "hardness": false,
+        "forceUpdate": false,
+        "score": [
+            20000,
+            30000,
+            50000
+        ]
+    }
+}

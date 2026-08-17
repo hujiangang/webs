@@ -1,0 +1,41 @@
+
+hecheng01.png
+size: 419,134
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+dd
+  rotate: false
+  xy: 262, 42
+  size: 89, 90
+  orig: 89, 90
+  offset: 0, 0
+  index: -1
+glow02
+  rotate: false
+  xy: 2, 4
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+kuosan01
+  rotate: false
+  xy: 353, 68
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+light01
+  rotate: false
+  xy: 132, 4
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+quan04
+  rotate: false
+  xy: 353, 2
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1

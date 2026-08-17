@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "roomId": 1,
+    "openLevel": 4,
+    "roomName": "海景公寓",
+    "finishReward": [
+      {
+        "itemId": 0,
+        "num": 300
+      }
+    ]
+  }
+]

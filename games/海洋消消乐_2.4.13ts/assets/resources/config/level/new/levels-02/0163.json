@@ -1,0 +1,310 @@
+{
+    "grid": [
+        {
+            "collect": null,
+            "map": [
+                [
+                    null,
+                    {
+                        "born": true
+                    },
+                    {
+                        "born": true
+                    },
+                    {
+                        "born": true
+                    },
+                    {
+                        "born": true
+                    },
+                    {
+                        "born": true
+                    },
+                    {
+                        "born": true
+                    },
+                    {
+                        "born": true
+                    },
+                    null
+                ],
+                [
+                    {
+                        "born": true,
+                        "leaves": 2
+                    },
+                    {
+                        "ground": 2
+                    },
+                    {
+                        "ground": 2,
+                        "gem": 1
+                    },
+                    {},
+                    {},
+                    {},
+                    {
+                        "ground": 2,
+                        "gem": 1
+                    },
+                    {
+                        "ground": 2
+                    },
+                    {
+                        "born": true,
+                        "leaves": 2
+                    }
+                ],
+                [
+                    {
+                        "leaves": 2
+                    },
+                    {
+                        "ground": 2
+                    },
+                    {
+                        "ground": 2,
+                        "gem": 1
+                    },
+                    {},
+                    {},
+                    {},
+                    {
+                        "ground": 2,
+                        "gem": 1
+                    },
+                    {
+                        "ground": 2
+                    },
+                    {
+                        "leaves": 2
+                    }
+                ],
+                [
+                    {
+                        "leaves": 2
+                    },
+                    {
+                        "ground": 2
+                    },
+                    {
+                        "ground": 2
+                    },
+                    {
+                        "ground": 2,
+                        "gem": 1
+                    },
+                    {},
+                    {
+                        "ground": 2,
+                        "gem": 1
+                    },
+                    {
+                        "ground": 2
+                    },
+                    {
+                        "ground": 2
+                    },
+                    {
+                        "leaves": 2
+                    }
+                ],
+                [
+                    {
+                        "leaves": 2
+                    },
+                    {
+                        "ground": 2
+                    },
+                    {
+                        "ground": 2
+                    },
+                    {
+                        "ground": 2,
+                        "gem": 1
+                    },
+                    {},
+                    {
+                        "ground": 2,
+                        "gem": 1
+                    },
+                    {
+                        "ground": 2
+                    },
+                    {
+                        "ground": 2
+                    },
+                    {
+                        "leaves": 2
+                    }
+                ],
+                [
+                    {
+                        "leaves": 2
+                    },
+                    {
+                        "ground": 2
+                    },
+                    {
+                        "ground": 2
+                    },
+                    {
+                        "ground": 2,
+                        "gem": 1
+                    },
+                    {},
+                    {
+                        "ground": 2,
+                        "gem": 1
+                    },
+                    {
+                        "ground": 2
+                    },
+                    {
+                        "ground": 2
+                    },
+                    {
+                        "leaves": 2
+                    }
+                ],
+                [
+                    {
+                        "leaves": 2
+                    },
+                    {
+                        "ground": 2
+                    },
+                    {
+                        "ground": 2,
+                        "gem": 1
+                    },
+                    {},
+                    {},
+                    {},
+                    {
+                        "ground": 2,
+                        "gem": 1
+                    },
+                    {
+                        "ground": 2
+                    },
+                    {
+                        "leaves": 2
+                    }
+                ],
+                [
+                    {
+                        "leaves": 2
+                    },
+                    {
+                        "ground": 2
+                    },
+                    {
+                        "ground": 2,
+                        "gem": 1
+                    },
+                    {},
+                    {},
+                    {},
+                    {
+                        "ground": 2,
+                        "gem": 1
+                    },
+                    {
+                        "ground": 2
+                    },
+                    {
+                        "leaves": 2
+                    }
+                ],
+                [
+                    null,
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    null
+                ]
+            ]
+        }
+    ],
+    "collect": [
+        {
+            "type": "gnome",
+            "count": 4
+        },
+        {
+            "type": "gem",
+            "count": 14
+        }
+    ],
+    "gnome": [
+        {
+            "index": 0,
+            "x": 0,
+            "y": 1,
+            "type": 1
+        },
+        {
+            "index": 0,
+            "x": 0,
+            "y": 6,
+            "type": 1
+        },
+        {
+            "index": 0,
+            "x": 8,
+            "y": 6,
+            "type": 1
+        },
+        {
+            "index": 0,
+            "x": 8,
+            "y": 1,
+            "type": 1
+        }
+    ],
+    "moveCnt": 34,
+    "chipset": [
+        {
+            "type": 0,
+            "percent": 100
+        },
+        {
+            "type": 1,
+            "percent": 100
+        },
+        {
+            "type": 2,
+            "percent": 100
+        },
+        {
+            "type": 3,
+            "percent": 100
+        },
+        {
+            "type": 4,
+            "percent": 100
+        }
+    ],
+    "levelInfo": {
+        "TO_LIGHTNING_ENOUGH": 14,
+        "background": 1,
+        "cellColorSeed": 0,
+        "levelReward": 50,
+        "movesLimit": 34,
+        "version": "0",
+        "timeLimit": 0,
+        "entry": false,
+        "hardness": false,
+        "forceUpdate": false,
+        "score": [
+            20000,
+            30000,
+            50000
+        ]
+    }
+}

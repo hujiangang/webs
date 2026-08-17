@@ -1,0 +1,264 @@
+{
+    "grid": [
+        {
+            "collect": null,
+            "map": [
+                [
+                    null,
+                    null,
+                    {
+                        "born": true
+                    },
+                    null,
+                    {
+                        "type": 7,
+                        "born": true
+                    },
+                    null,
+                    {
+                        "born": true
+                    },
+                    null,
+                    null
+                ],
+                [
+                    {
+                        "type": 7,
+                        "born": true
+                    },
+                    null,
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    null,
+                    {
+                        "type": 7,
+                        "born": true
+                    }
+                ],
+                [
+                    {
+                        "ground": 2
+                    },
+                    {
+                        "ground": 2
+                    },
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {
+                        "ground": 2
+                    },
+                    {
+                        "ground": 2
+                    }
+                ],
+                [
+                    {
+                        "ground": 2
+                    },
+                    {
+                        "ground": 2
+                    },
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {
+                        "ground": 2
+                    },
+                    {
+                        "ground": 2
+                    }
+                ],
+                [
+                    {
+                        "ground": 2
+                    },
+                    {
+                        "ground": 2
+                    },
+                    {
+                        "ground": 2
+                    },
+                    {},
+                    {},
+                    {},
+                    {
+                        "ground": 2
+                    },
+                    {
+                        "ground": 2
+                    },
+                    {
+                        "ground": 2
+                    }
+                ],
+                [
+                    {
+                        "ground": 2
+                    },
+                    {
+                        "ground": 2
+                    },
+                    {
+                        "ground": 2
+                    },
+                    {},
+                    {},
+                    {},
+                    {
+                        "ground": 2
+                    },
+                    {
+                        "ground": 2
+                    },
+                    {
+                        "ground": 2
+                    }
+                ],
+                [
+                    {
+                        "ground": 2
+                    },
+                    {
+                        "ground": 2
+                    },
+                    {
+                        "ground": 2
+                    },
+                    {
+                        "ground": 2
+                    },
+                    {
+                        "ground": 2
+                    },
+                    {
+                        "ground": 2
+                    },
+                    {
+                        "ground": 2
+                    },
+                    {
+                        "ground": 2
+                    },
+                    {
+                        "ground": 2
+                    }
+                ],
+                [
+                    {
+                        "ground": 2
+                    },
+                    {
+                        "ground": 2
+                    },
+                    {
+                        "ground": 2
+                    },
+                    {
+                        "ground": 2,
+                        "exit": true
+                    },
+                    {
+                        "ground": 2,
+                        "exit": true
+                    },
+                    {
+                        "ground": 2,
+                        "exit": true
+                    },
+                    {
+                        "ground": 2
+                    },
+                    {
+                        "ground": 2
+                    },
+                    {
+                        "ground": 2
+                    }
+                ],
+                [
+                    {
+                        "ground": 2,
+                        "exit": true
+                    },
+                    {
+                        "ground": 2,
+                        "exit": true
+                    },
+                    {
+                        "ground": 2,
+                        "exit": true
+                    },
+                    null,
+                    null,
+                    null,
+                    {
+                        "ground": 2,
+                        "exit": true
+                    },
+                    {
+                        "ground": 2,
+                        "exit": true
+                    },
+                    {
+                        "ground": 2,
+                        "exit": true
+                    }
+                ]
+            ]
+        }
+    ],
+    "collect": [
+        {
+            "type": 7,
+            "count": 3
+        }
+    ],
+    "carryChips": {
+        "max": 3,
+        "chance": 25
+    },
+    "moveCnt": 26,
+    "chipset": [
+        {
+            "type": 0,
+            "percent": 100
+        },
+        {
+            "type": 2,
+            "percent": 100
+        },
+        {
+            "type": 3,
+            "percent": 100
+        },
+        {
+            "type": 5,
+            "percent": 100
+        }
+    ],
+    "levelInfo": {
+        "TO_LIGHTNING_ENOUGH": 16,
+        "background": 1,
+        "cellColorSeed": 0,
+        "levelReward": 50,
+        "movesLimit": 26,
+        "version": "0",
+        "timeLimit": 0,
+        "entry": false,
+        "hardness": false,
+        "forceUpdate": false,
+        "score": [
+            15000,
+            30000,
+            50000
+        ]
+    }
+}

@@ -1,0 +1,47 @@
+{
+    "stages": [
+        {
+            "name": "first_move",
+            "moves": 0,
+            "bubble": {
+                "text": {
+                    "zh": "消除小草上的元素就可把 <color=#C3543C> 漂流瓶 </color> 挖出来！"
+                },
+                "x": 0,
+                "y": -100
+            },
+            "hand": {
+                "x": 2,
+                "y": 3,
+                "type": "up"
+            },
+            "cells": [
+                {
+                    "x": 2,
+                    "y": 3,
+                    "removable": true
+                },
+                {
+                    "x": 1,
+                    "y": 1,
+                    "hint": "static"
+                },
+                {
+                    "x": 2,
+                    "y": 2,
+                    "removable": true
+                },
+                {
+                    "x": 2,
+                    "y": 1,
+                    "hint": "static"
+                },
+                {
+                    "x": 1,
+                    "y": 2,
+                    "hint": "static"
+                }
+            ]
+        }
+    ]
+}

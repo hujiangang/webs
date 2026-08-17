@@ -1,0 +1,28 @@
+{
+    "stages": [
+        {
+            "name": "first_move",
+            "moves": 0,
+            "bubble": {
+                "text": {
+                    "zh": "元素被<size=40> <color=#C3543C>隔板</color> </size>挡住了！不能左右交换了。"
+                },
+                "x": 0,
+                "y": -50
+            },
+            "cells": [
+                {
+                    "x": 1,
+                    "y": 2,
+                    "hint": "static"
+                },
+                {
+                    "x": 2,
+                    "y": 2,
+                    "hint": "static"
+                }
+            ],
+            "closeByTouch": true
+        }
+    ]
+}

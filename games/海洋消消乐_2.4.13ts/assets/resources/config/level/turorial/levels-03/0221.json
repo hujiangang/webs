@@ -1,0 +1,42 @@
+{
+    "stages": [
+        {
+            "name": "first_move",
+            "moves": 0,
+            "bubble": {
+                "text": {
+                    "zh": "消除旁边的<color=#C3543C>同色</color> <br/>元素就可以把<color=#C3543C> 彩色箱子 </color> <br/>消除！"
+                },
+                "x": 0,
+                "y": 320
+            },
+            "hand": {
+                "x": 5,
+                "y": 2,
+                "type": "right"
+            },
+            "cells": [
+                {
+                    "x": 6,
+                    "y": 1,
+                    "hint": "static"
+                },
+                {
+                    "x": 6,
+                    "y": 3,
+                    "hint": "static"
+                },
+                {
+                    "x": 5,
+                    "y": 2,
+                    "removable": true
+                },
+                {
+                    "x": 6,
+                    "y": 2,
+                    "removable": true
+                }
+            ]
+        }
+    ]
+}

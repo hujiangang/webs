@@ -1,0 +1,310 @@
+{
+    "grid": [
+        {
+            "collect": null,
+            "map": [
+                [
+                    null,
+                    {
+                        "born": true
+                    },
+                    {
+                        "type": 2,
+                        "born": true
+                    },
+                    {
+                        "type": 1,
+                        "born": true
+                    },
+                    {
+                        "type": 3,
+                        "born": true
+                    },
+                    null,
+                    null,
+                    null,
+                    null
+                ],
+                [
+                    {},
+                    -1,
+                    {
+                        "type": 3
+                    },
+                    {
+                        "type": 0
+                    },
+                    {
+                        "type": 4
+                    },
+                    {
+                        "leaves": 2,
+                        "mushroom": 1
+                    },
+                    null,
+                    null,
+                    null
+                ],
+                [
+                    {},
+                    -1,
+                    {
+                        "type": 3
+                    },
+                    {
+                        "type": 4
+                    },
+                    {
+                        "type": 100
+                    },
+                    {
+                        "leaves": 2,
+                        "mushroom": 1
+                    },
+                    {
+                        "leaves": 2,
+                        "empty": true
+                    },
+                    {
+                        "leaves": 2,
+                        "empty": true
+                    },
+                    {
+                        "leaves": 2,
+                        "empty": true
+                    }
+                ],
+                [
+                    {},
+                    -1,
+                    {
+                        "type": 0
+                    },
+                    {
+                        "type": 2
+                    },
+                    {
+                        "type": 3
+                    },
+                    {
+                        "leaves": 2,
+                        "mushroom": 1
+                    },
+                    {
+                        "leaves": 2,
+                        "empty": true
+                    },
+                    {
+                        "leaves": 2,
+                        "empty": true
+                    },
+                    {
+                        "leaves": 2,
+                        "empty": true
+                    }
+                ],
+                [
+                    {},
+                    -1,
+                    {
+                        "type": 1
+                    },
+                    {
+                        "type": 4
+                    },
+                    {
+                        "type": 3
+                    },
+                    {
+                        "leaves": 2,
+                        "mushroom": 1
+                    },
+                    {
+                        "leaves": 2,
+                        "empty": true
+                    },
+                    {
+                        "leaves": 2,
+                        "empty": true
+                    },
+                    {
+                        "leaves": 2,
+                        "empty": true
+                    }
+                ],
+                [
+                    {},
+                    -1,
+                    {
+                        "type": 2
+                    },
+                    {
+                        "type": 3
+                    },
+                    {
+                        "type": 100
+                    },
+                    {
+                        "leaves": 2,
+                        "mushroom": 1
+                    },
+                    {
+                        "leaves": 2,
+                        "empty": true
+                    },
+                    {
+                        "leaves": 2,
+                        "empty": true
+                    },
+                    {
+                        "leaves": 2,
+                        "empty": true
+                    }
+                ],
+                [
+                    {},
+                    -1,
+                    {
+                        "type": 4
+                    },
+                    {
+                        "type": 1
+                    },
+                    {
+                        "type": 3
+                    },
+                    {
+                        "leaves": 2,
+                        "mushroom": 1
+                    },
+                    {
+                        "leaves": 2,
+                        "empty": true
+                    },
+                    {
+                        "leaves": 2,
+                        "empty": true
+                    },
+                    {
+                        "leaves": 2,
+                        "empty": true
+                    }
+                ],
+                [
+                    {},
+                    -1,
+                    {
+                        "type": 3
+                    },
+                    {
+                        "type": 4
+                    },
+                    {
+                        "type": 0
+                    },
+                    {
+                        "leaves": 2,
+                        "mushroom": 1
+                    },
+                    {
+                        "leaves": 2,
+                        "empty": true
+                    },
+                    {
+                        "leaves": 2,
+                        "empty": true
+                    },
+                    {
+                        "leaves": 2,
+                        "empty": true
+                    }
+                ],
+                [
+                    {},
+                    -1,
+                    {
+                        "type": 3
+                    },
+                    {
+                        "type": 0
+                    },
+                    {
+                        "type": 1
+                    },
+                    {
+                        "leaves": 2,
+                        "mushroom": 1
+                    },
+                    null,
+                    null,
+                    null
+                ],
+                [
+                    null,
+                    -1,
+                    {
+                        "type": 4
+                    },
+                    {
+                        "type": 1
+                    },
+                    {
+                        "type": 0
+                    },
+                    null,
+                    null,
+                    null,
+                    null
+                ]
+            ]
+        }
+    ],
+    "gnome": [
+        {
+            "x": 6,
+            "y": 2,
+            "type": 5
+        }
+    ],
+    "collect": [
+        {
+            "count": 1,
+            "type": "gnome"
+        }
+    ],
+    "moveCnt": 20,
+    "chipset": [
+        {
+            "type": 0,
+            "percent": 100
+        },
+        {
+            "type": 1,
+            "percent": 100
+        },
+        {
+            "type": 2,
+            "percent": 100
+        },
+        {
+            "type": 3,
+            "percent": 100
+        },
+        {
+            "type": 4,
+            "percent": 100
+        }
+    ],
+    "levelInfo": {
+        "TO_LIGHTNING_ENOUGH": 14,
+        "background": 1,
+        "cellColorSeed": 0,
+        "levelReward": 50,
+        "movesLimit": 20,
+        "version": "0",
+        "timeLimit": 0,
+        "entry": "candles",
+        "hardness": false,
+        "forceUpdate": true
+    }
+}

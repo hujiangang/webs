@@ -1,0 +1,252 @@
+{
+    "grid": [
+        {
+            "collect": null,
+            "map": [
+                [
+                    {
+                        "type": 6,
+                        "born": true
+                    },
+                    {
+                        "type": 6,
+                        "born": true
+                    },
+                    {
+                        "box_level": 2,
+                        "born": true
+                    },
+                    {
+                        "born": true
+                    },
+                    {
+                        "born": true
+                    },
+                    {
+                        "born": true
+                    },
+                    {
+                        "box_level": 2,
+                        "born": true
+                    },
+                    {
+                        "type": 6,
+                        "born": true
+                    },
+                    {
+                        "type": 6,
+                        "born": true
+                    }
+                ],
+                [
+                    {
+                        "type": 6
+                    },
+                    {
+                        "box_level": 2
+                    },
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {
+                        "box_level": 2
+                    },
+                    {
+                        "type": 6
+                    }
+                ],
+                [
+                    {
+                        "box_level": 2
+                    },
+                    {},
+                    {},
+                    {
+                        "type": 6
+                    },
+                    {
+                        "type": 6
+                    },
+                    {
+                        "type": 6
+                    },
+                    {},
+                    {},
+                    {
+                        "box_level": 2
+                    }
+                ],
+                [
+                    {},
+                    {},
+                    {},
+                    {
+                        "type": 6
+                    },
+                    {
+                        "water": true
+                    },
+                    {
+                        "type": 6
+                    },
+                    {},
+                    {},
+                    {}
+                ],
+                [
+                    {},
+                    {},
+                    {},
+                    {
+                        "type": 6
+                    },
+                    {
+                        "water": true
+                    },
+                    {
+                        "type": 6
+                    },
+                    {},
+                    {},
+                    {}
+                ],
+                [
+                    {},
+                    {},
+                    {},
+                    {
+                        "type": 6
+                    },
+                    {
+                        "water": true
+                    },
+                    {
+                        "type": 6
+                    },
+                    {},
+                    {},
+                    {}
+                ],
+                [
+                    {
+                        "box_level": 2
+                    },
+                    {},
+                    {},
+                    {
+                        "type": 6
+                    },
+                    {
+                        "type": 6
+                    },
+                    {
+                        "type": 6
+                    },
+                    {},
+                    {},
+                    {
+                        "box_level": 2
+                    }
+                ],
+                [
+                    {
+                        "type": 6
+                    },
+                    {
+                        "box_level": 2
+                    },
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {
+                        "box_level": 2
+                    },
+                    {
+                        "type": 6
+                    }
+                ],
+                [
+                    {
+                        "type": 6
+                    },
+                    {
+                        "type": 6
+                    },
+                    {
+                        "box_level": 2
+                    },
+                    {},
+                    {},
+                    {},
+                    {
+                        "box_level": 2
+                    },
+                    {
+                        "type": 6
+                    },
+                    {
+                        "type": 6
+                    }
+                ]
+            ]
+        }
+    ],
+    "collect": [
+        {
+            "type": 6,
+            "count": 24
+        },
+        {
+            "type": "4",
+            "count": 20
+        }
+    ],
+    "trashChips": {
+        "max": 10,
+        "chance": 10
+    },
+    "moveCnt": 30,
+    "chipset": [
+        {
+            "type": 0,
+            "percent": 70
+        },
+        {
+            "type": 1,
+            "percent": 100
+        },
+        {
+            "type": 2,
+            "percent": 100
+        },
+        {
+            "type": 3,
+            "percent": 100
+        },
+        {
+            "type": 4,
+            "percent": 100
+        }
+    ],
+    "levelInfo": {
+        "TO_LIGHTNING_ENOUGH": 10,
+        "background": 1,
+        "cellColorSeed": 0,
+        "levelReward": 50,
+        "movesLimit": 30,
+        "version": "0",
+        "timeLimit": 0,
+        "entry": false,
+        "hardness": false,
+        "forceUpdate": false,
+        "score": [
+            15000,
+            30000,
+            50000
+        ]
+    }
+}

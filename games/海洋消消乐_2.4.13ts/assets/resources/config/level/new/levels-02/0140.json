@@ -1,0 +1,214 @@
+{
+    "grid": [
+        {
+            "collect": null,
+            "map": [
+                [
+                    {
+                        "type": 7,
+                        "born": true
+                    },
+                    null,
+                    {
+                        "born": true
+                    },
+                    {
+                        "portal_idx": 1
+                    },
+                    {
+                        "born": true
+                    },
+                    null,
+                    {
+                        "portal_idx": 2
+                    },
+                    {
+                        "portal_idx": 4
+                    },
+                    {
+                        "portal_idx": 6
+                    }
+                ],
+                [
+                    {},
+                    null,
+                    {},
+                    {},
+                    {},
+                    null,
+                    {},
+                    {},
+                    {}
+                ],
+                [
+                    {},
+                    null,
+                    {},
+                    {
+                        "type": 101
+                    },
+                    {},
+                    null,
+                    {},
+                    {
+                        "type": 101
+                    },
+                    {}
+                ],
+                [
+                    {},
+                    null,
+                    {},
+                    {},
+                    {},
+                    null,
+                    {},
+                    {},
+                    {}
+                ],
+                [
+                    {},
+                    null,
+                    {},
+                    {},
+                    {},
+                    null,
+                    {},
+                    {},
+                    {}
+                ],
+                [
+                    {},
+                    null,
+                    {},
+                    {},
+                    {},
+                    null,
+                    {},
+                    {},
+                    {}
+                ],
+                [
+                    {},
+                    null,
+                    {},
+                    {
+                        "type": 100
+                    },
+                    {},
+                    null,
+                    {},
+                    {
+                        "type": 100
+                    },
+                    {}
+                ],
+                [
+                    {},
+                    null,
+                    {},
+                    {},
+                    {},
+                    null,
+                    {},
+                    {},
+                    {}
+                ],
+                [
+                    {
+                        "portal_idx": -1,
+                        "locks": 1
+                    },
+                    null,
+                    {
+                        "portal_idx": -2
+                    },
+                    {
+                        "portal_idx": -4
+                    },
+                    {
+                        "portal_idx": -6
+                    },
+                    null,
+                    {
+                        "exit": true
+                    },
+                    {
+                        "exit": true
+                    },
+                    {
+                        "exit": true
+                    }
+                ]
+            ]
+        }
+    ],
+    "portal": [
+        {
+            "in": [
+                4,
+                8
+            ],
+            "out": [
+                1,
+                0
+            ]
+        },
+        {
+            "in": [
+                6,
+                8
+            ],
+            "out": [
+                9,
+                0
+            ]
+        }
+    ],
+    "collect": [
+        {
+            "type": 7,
+            "count": 1
+        }
+    ],
+    "carryChips": {
+        "max": 2,
+        "chance": 10
+    },
+    "moveCnt": 27,
+    "chipset": [
+        {
+            "type": 0,
+            "percent": 100
+        },
+        {
+            "type": 1,
+            "percent": 100
+        },
+        {
+            "type": 2,
+            "percent": 100
+        },
+        {
+            "type": 3,
+            "percent": 100
+        }
+    ],
+    "levelInfo": {
+        "TO_LIGHTNING_ENOUGH": 13,
+        "background": 1,
+        "cellColorSeed": 0,
+        "levelReward": 50,
+        "movesLimit": 27,
+        "version": "0",
+        "timeLimit": 0,
+        "entry": false,
+        "hardness": false,
+        "forceUpdate": false,
+        "score": [
+            10000,
+            30000,
+            40000
+        ]
+    }
+}

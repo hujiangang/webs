@@ -1,0 +1,146 @@
+
+skeleton.png
+size: 1712,534
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+halo01
+  rotate: false
+  xy: 1656, 478
+  size: 54, 54
+  orig: 64, 64
+  offset: 5, 5
+  index: -1
+taser0002
+  rotate: false
+  xy: 103, 2
+  size: 99, 530
+  orig: 99, 530
+  offset: 0, 0
+  index: -1
+taser0003
+  rotate: false
+  xy: 204, 2
+  size: 99, 530
+  orig: 99, 530
+  offset: 0, 0
+  index: -1
+taser0004
+  rotate: false
+  xy: 305, 2
+  size: 99, 530
+  orig: 99, 530
+  offset: 0, 0
+  index: -1
+taser0005
+  rotate: false
+  xy: 406, 2
+  size: 99, 530
+  orig: 99, 530
+  offset: 0, 0
+  index: -1
+taser0006
+  rotate: false
+  xy: 507, 2
+  size: 99, 530
+  orig: 99, 530
+  offset: 0, 0
+  index: -1
+taser0007
+  rotate: false
+  xy: 608, 2
+  size: 99, 530
+  orig: 99, 530
+  offset: 0, 0
+  index: -1
+taser0008
+  rotate: false
+  xy: 709, 2
+  size: 99, 530
+  orig: 99, 530
+  offset: 0, 0
+  index: -1
+taser0009
+  rotate: false
+  xy: 810, 2
+  size: 99, 530
+  orig: 99, 530
+  offset: 0, 0
+  index: -1
+taser0010
+  rotate: false
+  xy: 2, 2
+  size: 99, 530
+  orig: 99, 530
+  offset: 0, 0
+  index: -1
+thunder02
+  rotate: true
+  xy: 911, 482
+  size: 50, 743
+  orig: 50, 743
+  offset: 0, 0
+  index: -1
+thunder03
+  rotate: true
+  xy: 911, 430
+  size: 50, 743
+  orig: 50, 743
+  offset: 0, 0
+  index: -1
+thunder04
+  rotate: true
+  xy: 911, 378
+  size: 50, 743
+  orig: 50, 743
+  offset: 0, 0
+  index: -1
+thunder05
+  rotate: true
+  xy: 911, 326
+  size: 50, 743
+  orig: 50, 743
+  offset: 0, 0
+  index: -1
+thunder06
+  rotate: true
+  xy: 911, 274
+  size: 50, 743
+  orig: 50, 743
+  offset: 0, 0
+  index: -1
+thunder07
+  rotate: true
+  xy: 911, 222
+  size: 50, 743
+  orig: 50, 743
+  offset: 0, 0
+  index: -1
+thunder08
+  rotate: true
+  xy: 911, 170
+  size: 50, 743
+  orig: 50, 743
+  offset: 0, 0
+  index: -1
+thunder09
+  rotate: true
+  xy: 911, 118
+  size: 50, 743
+  orig: 50, 743
+  offset: 0, 0
+  index: -1
+thunder10
+  rotate: true
+  xy: 911, 66
+  size: 50, 743
+  orig: 50, 743
+  offset: 0, 0
+  index: -1
+thunder11
+  rotate: true
+  xy: 911, 14
+  size: 50, 743
+  orig: 50, 743
+  offset: 0, 0
+  index: -1

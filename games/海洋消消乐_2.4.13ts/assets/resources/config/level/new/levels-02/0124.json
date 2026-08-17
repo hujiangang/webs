@@ -1,0 +1,256 @@
+{
+    "grid": [
+        {
+            "collect": null,
+            "map": [
+                [
+                    {
+                        "born": true
+                    },
+                    {
+                        "born": true
+                    },
+                    {
+                        "born": true
+                    },
+                    {
+                        "born": true
+                    },
+                    {
+                        "born": true
+                    },
+                    {
+                        "born": true
+                    },
+                    {
+                        "born": true
+                    },
+                    {
+                        "born": true
+                    }
+                ],
+                [
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {}
+                ],
+                [
+                    {
+                        "type": 6
+                    },
+                    {
+                        "water": true
+                    },
+                    {},
+                    {},
+                    {},
+                    {},
+                    {
+                        "water": true
+                    },
+                    {
+                        "type": 6
+                    }
+                ],
+                [
+                    {
+                        "type": 6
+                    },
+                    {
+                        "empty": true,
+                        "stone": 3
+                    },
+                    {},
+                    {},
+                    {},
+                    {},
+                    {
+                        "empty": true,
+                        "stone": 3
+                    },
+                    {
+                        "type": 6
+                    }
+                ],
+                [
+                    {
+                        "type": 6
+                    },
+                    {
+                        "empty": true,
+                        "stone": 3
+                    },
+                    {},
+                    {},
+                    {},
+                    {},
+                    {
+                        "empty": true,
+                        "stone": 3
+                    },
+                    {
+                        "type": 6
+                    }
+                ],
+                [
+                    {
+                        "type": 6
+                    },
+                    {
+                        "empty": true,
+                        "stone": 3
+                    },
+                    {},
+                    {},
+                    {},
+                    {},
+                    {
+                        "empty": true,
+                        "stone": 3
+                    },
+                    {
+                        "type": 6
+                    }
+                ],
+                [
+                    {
+                        "type": 6
+                    },
+                    {
+                        "water": true
+                    },
+                    {
+                        "empty": true,
+                        "stone": 3
+                    },
+                    {
+                        "empty": true
+                    },
+                    {
+                        "empty": true
+                    },
+                    {
+                        "empty": true,
+                        "stone": 3
+                    },
+                    {
+                        "water": true
+                    },
+                    {
+                        "type": 6
+                    }
+                ],
+                [
+                    {
+                        "type": 6
+                    },
+                    {
+                        "type": 6
+                    },
+                    {
+                        "type": 6
+                    },
+                    {
+                        "empty": true
+                    },
+                    {
+                        "empty": true
+                    },
+                    {
+                        "type": 6
+                    },
+                    {
+                        "type": 6
+                    },
+                    {
+                        "type": 6
+                    }
+                ],
+                [
+                    {
+                        "type": 6
+                    },
+                    {
+                        "type": 6
+                    },
+                    {
+                        "type": 6
+                    },
+                    {
+                        "empty": true
+                    },
+                    {
+                        "empty": true
+                    },
+                    {
+                        "type": 6
+                    },
+                    {
+                        "type": 6
+                    },
+                    {
+                        "type": 6
+                    }
+                ]
+            ]
+        }
+    ],
+    "collect": [
+        {
+            "type": "8",
+            "count": 8
+        }
+    ],
+    "moveCnt": 24,
+    "chipset": [
+        {
+            "type": 0,
+            "percent": 100
+        },
+        {
+            "type": 1,
+            "percent": 100
+        },
+        {
+            "type": 2,
+            "percent": 85
+        },
+        {
+            "type": 3,
+            "percent": 100
+        },
+        {
+            "type": 6,
+            "percent": 100
+        }
+    ],
+    "levelInfo": {
+        "TO_LIGHTNING_ENOUGH": 16,
+        "background": 1,
+        "cellColorSeed": 0,
+        "levelReward": 100,
+        "movesLimit": 26,
+        "version": "0",
+        "timeLimit": 0,
+        "entry": false,
+        "hardness": 1,
+        "forceUpdate": false,
+        "score": [
+            10000,
+            30000,
+            40000
+        ]
+    },
+    "monkeyTree": [
+        {
+            "index": 0,
+            "x": 3,
+            "y": 8
+        }
+    ]
+}

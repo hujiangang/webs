@@ -1,0 +1,43 @@
+{
+    "stages": [
+        {
+            "name": "first_move",
+            "moves": 0,
+            "bubble": {
+                "text": {
+                    "zh": "消除 <img src='obj6' width=50 height=50 align=center /> 旁边的元素就可以消除他们"
+                },
+                "x": 0,
+                "y": -150
+            },
+            "hand": {
+                "x": 3,
+                "y": 2,
+                "type": "down"
+            },
+            "cells": [
+                {
+                    "x": 3,
+                    "y": 2,
+                    "hint": "down",
+                    "removable": true
+                },
+                {
+                    "x": 3,
+                    "y": 3,
+                   "removable": true
+                },
+                {
+                    "x": 4,
+                    "y": 3,
+                    "hint": "static"
+                },
+                {
+                    "x": 5,
+                    "y": 3,
+                    "hint": "static"
+                }
+            ]
+        }
+    ]
+}

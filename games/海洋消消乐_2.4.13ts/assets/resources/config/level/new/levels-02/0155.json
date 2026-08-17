@@ -1,0 +1,254 @@
+{
+    "grid": [
+        {
+            "collect": null,
+            "map": [
+                [
+                    null,
+                    {
+                        "born": true
+                    },
+                    {
+                        "born": true
+                    },
+                    {
+                        "born": true
+                    },
+                    {
+                        "born": true
+                    },
+                    {
+                        "born": true
+                    },
+                    {
+                        "born": true
+                    },
+                    {
+                        "born": true
+                    },
+                    null
+                ],
+                [
+                    {
+                        "flowers": 3
+                    },
+                    {
+                        "locks": 1
+                    },
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {
+                        "locks": 1
+                    },
+                    {
+                        "flowers": 3
+                    }
+                ],
+                [
+                    null,
+                    {
+                        "ground": 1
+                    },
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {
+                        "ground": 1
+                    },
+                    null
+                ],
+                [
+                    {
+                        "flowers": 3
+                    },
+                    {
+                        "locks": 1
+                    },
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {
+                        "locks": 1
+                    },
+                    {
+                        "flowers": 3
+                    }
+                ],
+                [
+                    null,
+                    {
+                        "ground": 1
+                    },
+                    {
+                        "ground": 1
+                    },
+                    {},
+                    {},
+                    {},
+                    {
+                        "ground": 1
+                    },
+                    {
+                        "ground": 1
+                    },
+                    null
+                ],
+                [
+                    {
+                        "flowers": 3
+                    },
+                    {
+                        "locks": 1
+                    },
+                    {
+                        "ground": 1
+                    },
+                    {
+                        "ground": 1
+                    },
+                    {},
+                    {
+                        "ground": 1
+                    },
+                    {
+                        "ground": 1
+                    },
+                    {
+                        "locks": 1
+                    },
+                    {
+                        "flowers": 3
+                    }
+                ],
+                [
+                    null,
+                    {
+                        "ground": 1
+                    },
+                    {
+                        "ground": 1
+                    },
+                    {
+                        "ground": 1
+                    },
+                    {
+                        "ground": 1
+                    },
+                    {
+                        "ground": 1
+                    },
+                    {
+                        "ground": 1
+                    },
+                    {
+                        "ground": 1
+                    },
+                    null
+                ],
+                [
+                    {
+                        "flowers": 3
+                    },
+                    {
+                        "locks": 1
+                    },
+                    {
+                        "ground": 1
+                    },
+                    {
+                        "ground": 1
+                    },
+                    {
+                        "ground": 1
+                    },
+                    {
+                        "ground": 1
+                    },
+                    {
+                        "ground": 1
+                    },
+                    {
+                        "locks": 1
+                    },
+                    {
+                        "flowers": 3
+                    }
+                ],
+                [
+                    null,
+                    {
+                        "ground": 1
+                    },
+                    {
+                        "ground": 1
+                    },
+                    {
+                        "ground": 1
+                    },
+                    {
+                        "ground": 1
+                    },
+                    {
+                        "ground": 1
+                    },
+                    {
+                        "ground": 1
+                    },
+                    {
+                        "ground": 1
+                    },
+                    null
+                ]
+            ]
+        }
+    ],
+    "collect": [
+        {
+            "type": "5",
+            "count": 24
+        }
+    ],
+    "moveCnt": 39,
+    "chipset": [
+        {
+            "type": 0,
+            "percent": 100
+        },
+        {
+            "type": 1,
+            "percent": 100
+        },
+        {
+            "type": 2,
+            "percent": 100
+        },
+        {
+            "type": 3,
+            "percent": 100
+        }
+    ],
+    "levelInfo": {
+        "TO_LIGHTNING_ENOUGH": 12,
+        "background": 1,
+        "cellColorSeed": 0,
+        "levelReward": 50,
+        "movesLimit": 30,
+        "version": "0",
+        "timeLimit": 0,
+        "entry": false,
+        "hardness": false,
+        "forceUpdate": false,
+        "score": [
+            15000,
+            30000,
+            50000
+        ]
+    }
+}

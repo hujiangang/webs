@@ -1,0 +1,367 @@
+{
+    "grid": [
+        {
+            "collect": null,
+            "map": [
+                [
+                    {
+                        "born": true,
+                        "ground": 1
+                    },
+                    {
+                        "born": true,
+                        "ground": 1
+                    },
+                    {
+                        "born": true,
+                        "ground": 1
+                    },
+                    {
+                        "born": true,
+                        "type": 0,
+                        "wall_left": true
+                    },
+                    {
+                        "born": true,
+                        "type": 1
+                    },
+                    {
+                        "born": true,
+                        "type": 0,
+                        "wall_right": true
+                    },
+                    {
+                        "born": true,
+                        "ground": 1
+                    },
+                    {
+                        "born": true,
+                        "ground": 1
+                    },
+                    {
+                        "born": true,
+                        "ground": 1
+                    }
+                ],
+                [
+                    {
+                        "ground": 1,
+                        "gem": 1
+                    },
+                    {
+                        "ground": 1
+                    },
+                    {
+                        "ground": 1
+                    },
+                    {
+                        "type": 1,
+                        "wall_left": true
+                    },
+                    {
+                        "type": 0
+                    },
+                    {
+                        "type": 1,
+                        "wall_right": true
+                    },
+                    {
+                        "ground": 1
+                    },
+                    {
+                        "ground": 1
+                    },
+                    {
+                        "ground": 1,
+                        "gem": 1
+                    }
+                ],
+                [
+                    {
+                        "ground": 1
+                    },
+                    {
+                        "ground": 1,
+                        "gem": 1
+                    },
+                    {
+                        "ground": 1,
+                        "gem": 1
+                    },
+                    {
+                        "ground": 1,
+                        "gem": 1,
+                        "wall_left": true
+                    },
+                    {
+                        "ground": 1
+                    },
+                    {
+                        "ground": 1,
+                        "gem": 1,
+                        "wall_right": true
+                    },
+                    {
+                        "ground": 1,
+                        "gem": 1
+                    },
+                    {
+                        "ground": 1,
+                        "gem": 1
+                    },
+                    {
+                        "ground": 1
+                    }
+                ],
+                [
+                    {
+                        "ground": 1,
+                        "gem": 1
+                    },
+                    {
+                        "ground": 1
+                    },
+                    {
+                        "ground": 1
+                    },
+                    {
+                        "ground": 1,
+                        "wall_left": true
+                    },
+                    {
+                        "ground": 1,
+                        "gem": 1
+                    },
+                    {
+                        "ground": 1,
+                        "wall_right": true
+                    },
+                    {
+                        "ground": 1
+                    },
+                    {
+                        "ground": 1
+                    },
+                    {
+                        "ground": 1,
+                        "gem": 1
+                    }
+                ],
+                [
+                    {
+                        "ground": 1
+                    },
+                    {
+                        "ground": 1
+                    },
+                    {
+                        "ground": 1
+                    },
+                    {
+                        "ground": 1,
+                        "gem": 1,
+                        "wall_left": true
+                    },
+                    {
+                        "ground": 1
+                    },
+                    {
+                        "ground": 1,
+                        "gem": 1,
+                        "wall_right": true
+                    },
+                    {
+                        "ground": 1
+                    },
+                    {
+                        "ground": 1
+                    },
+                    {
+                        "ground": 1
+                    }
+                ],
+                [
+                    {
+                        "ground": 2,
+                        "gem": 1
+                    },
+                    {
+                        "ground": 1
+                    },
+                    {
+                        "ground": 1
+                    },
+                    {
+                        "ground": 1,
+                        "wall_left": true
+                    },
+                    {
+                        "ground": 1
+                    },
+                    {
+                        "ground": 1,
+                        "wall_right": true
+                    },
+                    {
+                        "ground": 1
+                    },
+                    {
+                        "ground": 1
+                    },
+                    {
+                        "ground": 2,
+                        "gem": 1
+                    }
+                ],
+                [
+                    {
+                        "ground": 2
+                    },
+                    {
+                        "ground": 2
+                    },
+                    {
+                        "ground": 2
+                    },
+                    {
+                        "ground": 2,
+                        "wall_left": true
+                    },
+                    {
+                        "ground": 2
+                    },
+                    {
+                        "ground": 2,
+                        "wall_right": true
+                    },
+                    {
+                        "ground": 2
+                    },
+                    {
+                        "ground": 2
+                    },
+                    {
+                        "ground": 2
+                    }
+                ],
+                [
+                    {
+                        "ground": 1
+                    },
+                    {
+                        "ground": 1,
+                        "gem": 1
+                    },
+                    {
+                        "ground": 1
+                    },
+                    {
+                        "ground": 1,
+                        "gem": 1,
+                        "wall_left": true
+                    },
+                    {
+                        "ground": 1
+                    },
+                    {
+                        "ground": 1,
+                        "gem": 1,
+                        "wall_right": true
+                    },
+                    {
+                        "ground": 1
+                    },
+                    {
+                        "ground": 1,
+                        "gem": 1
+                    },
+                    {
+                        "ground": 1
+                    }
+                ],
+                [
+                    {
+                        "ground": 1,
+                        "gem": 1
+                    },
+                    {
+                        "ground": 1,
+                        "gem": 1
+                    },
+                    {
+                        "ground": 1,
+                        "gem": 1
+                    },
+                    {
+                        "ground": 1,
+                        "gem": 1,
+                        "wall_left": true
+                    },
+                    {
+                        "ground": 1,
+                        "gem": 1
+                    },
+                    {
+                        "ground": 1,
+                        "gem": 1,
+                        "wall_right": true
+                    },
+                    {
+                        "ground": 1,
+                        "gem": 1
+                    },
+                    {
+                        "ground": 1,
+                        "gem": 1
+                    },
+                    {
+                        "ground": 1,
+                        "gem": 1
+                    }
+                ]
+            ]
+        }
+    ],
+    "collect": [
+        {
+            "type": "gem",
+            "count": 28
+        }
+    ],
+    "moveCnt": 22,
+    "chipset": [
+        {
+            "type": 0,
+            "percent": 100
+        },
+        {
+            "type": 1,
+            "percent": 100
+        },
+        {
+            "type": 2,
+            "percent": 100
+        },
+        {
+            "type": 3,
+            "percent": 100
+        }
+    ],
+    "levelInfo": {
+        "TO_LIGHTNING_ENOUGH": 19,
+        "background": 1,
+        "cellColorSeed": 0,
+        "levelReward": 50,
+        "movesLimit": 24,
+        "version": "0",
+        "timeLimit": 0,
+        "entry": false,
+        "hardness": false,
+        "forceUpdate": false,
+        "score": [
+            20000,
+            30000,
+            50000
+        ]
+    }
+}

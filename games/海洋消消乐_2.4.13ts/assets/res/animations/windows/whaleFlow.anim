@@ -1,0 +1,325 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "whaleFlow",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 16,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "mask/seaGrass2_1": {
+        "props": {
+          "angle": [
+            {
+              "frame": 0,
+              "value": -16
+            },
+            {
+              "frame": 2.35,
+              "value": 0.8619999999999983
+            },
+            {
+              "frame": 4,
+              "value": -16
+            },
+            {
+              "frame": 6.35,
+              "value": 0.8619999999999983
+            },
+            {
+              "frame": 8,
+              "value": -16
+            },
+            {
+              "frame": 10.35,
+              "value": 0.8619999999999983
+            },
+            {
+              "frame": 12,
+              "value": -16
+            },
+            {
+              "frame": 14.35,
+              "value": 0.8619999999999983
+            },
+            {
+              "frame": 16,
+              "value": -16
+            }
+          ]
+        }
+      },
+      "mask/seaGrass1": {
+        "props": {
+          "angle": [
+            {
+              "frame": 0,
+              "value": -17
+            },
+            {
+              "frame": 1.75,
+              "value": -30.728
+            },
+            {
+              "frame": 4,
+              "value": -17
+            },
+            {
+              "frame": 5.75,
+              "value": -30.728
+            },
+            {
+              "frame": 8,
+              "value": -17
+            },
+            {
+              "frame": 9.75,
+              "value": -30.728
+            }
+          ]
+        }
+      },
+      "mask/seaGrass2": {
+        "props": {
+          "angle": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 1.25,
+              "value": 8
+            },
+            {
+              "frame": 4,
+              "value": 0
+            },
+            {
+              "frame": 5.25,
+              "value": 8
+            },
+            {
+              "frame": 8,
+              "value": 0
+            },
+            {
+              "frame": 9.25,
+              "value": 8
+            },
+            {
+              "frame": 12,
+              "value": 0
+            },
+            {
+              "frame": 13.25,
+              "value": 8
+            },
+            {
+              "frame": 16,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "mask/seaGrass1_1": {
+        "props": {
+          "angle": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 2.033333333333333,
+              "value": 11
+            },
+            {
+              "frame": 4,
+              "value": 0
+            },
+            {
+              "frame": 6.033333333333333,
+              "value": 11
+            },
+            {
+              "frame": 8,
+              "value": 0
+            },
+            {
+              "frame": 10.033333333333333,
+              "value": 11
+            },
+            {
+              "frame": 12,
+              "value": 0
+            },
+            {
+              "frame": 14.033333333333333,
+              "value": 11
+            },
+            {
+              "frame": 16,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "mask/FISHgroup1": {
+        "props": {
+          "position": [],
+          "scale": [],
+          "angle": []
+        }
+      },
+      "mask/yuqun": {
+        "props": {
+          "position": [
+            {
+              "frame": 0,
+              "value": [
+                -257.56,
+                89.581,
+                0
+              ]
+            }
+          ],
+          "angle": [],
+          "scale": []
+        }
+      },
+      "mask/seaGrass3_1": {
+        "props": {
+          "angle": [
+            {
+              "frame": 0,
+              "value": -12.033
+            },
+            {
+              "frame": 1.75,
+              "value": 15.695999999999998
+            },
+            {
+              "frame": 4,
+              "value": -12.033
+            },
+            {
+              "frame": 5.75,
+              "value": 15.695999999999998
+            },
+            {
+              "frame": 8,
+              "value": -12.033
+            },
+            {
+              "frame": 9.75,
+              "value": 15.695999999999998
+            },
+            {
+              "frame": 12,
+              "value": -12.033
+            }
+          ]
+        }
+      },
+      "mask/whale": {
+        "props": {
+          "position": [
+            {
+              "frame": 0,
+              "value": [
+                -32,
+                -20
+              ],
+              "motionPath": [
+                [
+                  -186,
+                  206,
+                  -125,
+                  91,
+                  -251,
+                  329
+                ]
+              ]
+            },
+            {
+              "frame": 6.683333333333334,
+              "value": [
+                -284,
+                458
+              ],
+              "motionPath": []
+            }
+          ],
+          "angle": [
+            {
+              "frame": 0,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "mask/whale/whale2": {
+        "props": {
+          "angle": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 2.5166666666666666,
+              "value": -23.063000000000002
+            },
+            {
+              "frame": 5.233333333333333,
+              "value": 20.319
+            },
+            {
+              "frame": 8,
+              "value": 0
+            }
+          ],
+          "color": [
+            {
+              "frame": 0,
+              "value": {
+                "__type__": "cc.Color",
+                "r": 174,
+                "g": 194,
+                "b": 227,
+                "a": 255
+              }
+            }
+          ]
+        }
+      },
+      "mask/whale/wahle1": {
+        "props": {
+          "color": [
+            {
+              "frame": 0,
+              "value": {
+                "__type__": "cc.Color",
+                "r": 174,
+                "g": 194,
+                "b": 227,
+                "a": 255
+              }
+            },
+            {
+              "frame": 2.5166666666666666,
+              "value": {
+                "__type__": "cc.Color",
+                "r": 212,
+                "g": 249,
+                "b": 255,
+                "a": 255
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": []
+}

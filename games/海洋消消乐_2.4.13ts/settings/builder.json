@@ -1,0 +1,44 @@
+{
+  "excludeScenes": [],
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.helloworld",
+  "startScene": "ac28e9be-f6bc-41ff-91b1-d95065be88f7",
+  "title": "sea",
+  "webOrientation": "portrait",
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "mergeStartScene": true,
+  "optimizeHotUpdate": false,
+  "md5Cache": true,
+  "encryptJs": true,
+  "xxteaKey": "ad217d62-25ed-4e",
+  "zipCompressJs": true,
+  "fb-instant-games": {},
+  "android-instant": {
+    "REMOTE_SERVER_ROOT": "",
+    "host": "",
+    "packageName": "org.cocos2d.helloworld",
+    "pathPattern": "",
+    "recordPath": "",
+    "scheme": "https",
+    "skipRecord": false
+  },
+  "appBundle": false,
+  "android": {
+    "packageName": "org.cocos2d.helloworld"
+  },
+  "ios": {
+    "packageName": "org.cocos2d.helloworld"
+  },
+  "mac": {
+    "packageName": "org.cocos2d.helloworld"
+  },
+  "includeAnySDK": null,
+  "win32": {}
+}

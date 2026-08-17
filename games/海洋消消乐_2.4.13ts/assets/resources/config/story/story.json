@@ -1,0 +1,697 @@
+{
+  "1_1": {
+    "id": "1_1",
+    "jump": [
+      "scene#MapScene"
+    ],
+    "content": [{
+        "bgID": 1,
+        "roleID": null,
+        "figureID": null,
+        "words": "我是一名即将毕业的大学生。我的梦想是成为一名建筑设计师。"
+      },
+      {
+        "bgID": 1,
+        "roleID": null,
+        "figureID": null,
+        "words": "正在各处投递实习简历的我，一时间对自己应该去哪里发展感到迷茫。"
+      },
+      {
+        "bgID": 2,
+        "roleID": 0,
+        "figureID": 0,
+        "words": "一天，我的祖父打电话来了。"
+      },
+      {
+        "bgID": 2,
+        "roleID": 2,
+        "figureID": 1,
+        "words": "嘿！我的宝贝孙女。你是不是最近要找实习了？"
+      },
+      {
+        "bgID": 2,
+        "roleID": 1,
+        "figureID": 1,
+        "words": "是的外公……你怎么知道？"
+      },
+      {
+        "bgID": 2,
+        "roleID": 1,
+        "figureID": 1,
+        "words": "我可是等你这天等了很久了！"
+      },
+      {
+        "bgID": 2,
+        "roleID": 2,
+        "figureID": 1,
+        "words": "外公以前做过很多投资，咳咳，其中有一处地产……一直希望有人帮我去管理一下。"
+      },
+      {
+        "bgID": 2,
+        "roleID": 1,
+        "figureID": 1,
+        "words": "管理？投资？"
+      },
+      {
+        "bgID": 2,
+        "roleID": 2,
+        "figureID": 1,
+        "words": "呃，算是对自己的梦想的投资吧！是一个……一个小岛！"
+      },
+      {
+        "bgID": 2,
+        "roleID": 1,
+        "figureID": 1,
+        "words": "小岛？"
+      },
+      {
+        "bgID": 2,
+        "roleID": 2,
+        "figureID": 1,
+        "words": "呃，当年没被你祖母念叨……说我不会投资，谁会跑到一个小破岛上去……但是，祖父一直都没把这个岛卖出去。"
+      },
+      {
+        "bgID": 2,
+        "roleID": 2,
+        "figureID": 1,
+        "words": "你既然现在正在找实习，不如就去帮祖父看看,怎么修复一下这个小岛，看看能不能变成一个美好的度假胜地吧！"
+      },
+      {
+        "bgID": 2,
+        "roleID": 2,
+        "figureID": 1,
+        "words": "当然，如果通过你的改造让别人有意买下它，你就可以获得所有的钱哦！这算是一个小奖励吧！"
+      },
+      {
+        "bgID": 2,
+        "roleID": 1,
+        "figureID": 1,
+        "words": "我……"
+      },
+      {
+        "bgID": 2,
+        "roleID": null,
+        "figureID": null,
+        "words": "于是，我在匆忙的准备行李后，乘船去往这个充满了未知的小岛……"
+      }
+    ]
+  },
+  "1_2": {
+    "id": "1_2",
+    "jump": [
+      "talk#1*1_3"
+    ],
+    "content": [{
+        "bgID": null,
+        "roleID": 1,
+        "figureID": 1,
+        "words": "哇！这座岛比我想象的大了好多！还有一间破败的庄园……"
+      },
+      {
+        "bgID": null,
+        "roleID": 3,
+        "figureID": 1,
+        "words": "您好。我已经恭候你多时了。"
+      },
+      {
+        "bgID": null,
+        "roleID": 1,
+        "figureID": 2,
+        "words": "额？"
+      },
+      {
+        "bgID": 2,
+        "roleID": null,
+        "figureID": null,
+        "words": "电话响起"
+      },
+      {
+        "bgID": 2,
+        "roleID": 2,
+        "figureID": 1,
+        "words": "你应该已经遇见了Joe！"
+      },
+      {
+        "bgID": 2,
+        "roleID": 1,
+        "figureID": 1,
+        "words": "Joe?"
+      },
+      {
+        "bgID": 2,
+        "roleID": 2,
+        "figureID": 1,
+        "words": "Joe是上一任管家推荐来的现任管家。他非常优秀。"
+      },
+      {
+        "bgID": 2,
+        "roleID": 2,
+        "figureID": 1,
+        "words": "有什么问题，他都能帮你解决。"
+      }
+    ]
+  },
+  "1_2_1": {
+    "id": "1_2_1",
+    "jump": [
+      "ui#name"
+    ],
+    "content": [{
+        "bgID": null,
+        "roleID": 3,
+        "figureID": 1,
+        "words": "能遇到这么温柔可爱的海岛主人，我也非常惊讶。"
+      },
+      {
+        "bgID": null,
+        "roleID": 3,
+        "figureID": 2,
+        "words": "我如何称呼你呢？"
+      }
+    ]
+  },
+  "1_3": {
+    "id": "1_3",
+    "jump": [
+      "talk#1*9_1"
+    ],
+    "content": [{
+        "bgID": null,
+        "roleID": 3,
+        "figureID": 1,
+        "words": "第一次见面，多多指教。在接下来的时间里，我会尽全力地照顾XX的生活起居，以及房屋修缮的工作。"
+      },
+      {
+        "bgID": null,
+        "roleID": 1,
+        "figureID": 1,
+        "words": "这座庄园的修缮，可是个大工程呢。"
+      }
+    ]
+  },
+  "1_4": {
+    "id": "1_4",
+    "jump": null,
+    "content": [{
+        "bgID": null,
+        "roleID": 3,
+        "figureID": 2,
+        "words": "XX真的是一个非常有才华的设计师啊。我很好奇，XX是从小就喜欢做设计吗？"
+      },
+      {
+        "bgID": null,
+        "roleID": 1,
+        "figureID": 1,
+        "words": "谢谢夸奖哈哈~我小时候就很喜欢玩积木，还有画画。"
+      },
+      {
+        "bgID": null,
+        "roleID": 3,
+        "figureID": 2,
+        "words": "看来XX把小时候的乐趣发展成为工作了呀。非常棒哦。"
+      },
+      {
+        "bgID": null,
+        "roleID": 1,
+        "figureID": 1,
+        "words": "Joe呢，为什么想要做庄园的管家？"
+      },
+      {
+        "bgID": null,
+        "roleID": 3,
+        "figureID": 1,
+        "words": "管理一座庄园是一件很有意思的事情。我也非常喜欢帮助别人打理事物。"
+      },
+      {
+        "bgID": null,
+        "roleID": 3,
+        "figureID": 1,
+        "words": "不过相对于说是从小的兴趣爱好，不如说是一种命运。"
+      },
+      {
+        "bgID": null,
+        "roleID": 1,
+        "figureID": 1,
+        "words": "命……命运么？"
+      },
+      {
+        "bgID": null,
+        "roleID": 3,
+        "figureID": 1,
+        "words": "这个小岛是我一直都很想守护的地方。"
+      },
+      {
+        "bgID": null,
+        "roleID": 3,
+        "figureID": 2,
+        "words": "这个可是我的一个小秘密哦。可能需要被灌醉了才会说出来吧。"
+      },
+      {
+        "bgID": null,
+        "roleID": 1,
+        "figureID": 1,
+        "words": "……感觉这个少年虽然谦和礼貌，但是也还是有些难打开心扉呢。"
+      }
+    ]
+  },
+  "1_5": {
+    "id": "1_5",
+    "jump": null,
+    "content": [{
+        "bgID": null,
+        "roleID": 3,
+        "figureID": 1,
+        "words": "哇。外观完全变成了一个现代庄园，XX，干得漂亮。"
+      },
+      {
+        "bgID": null,
+        "roleID": 1,
+        "figureID": 1,
+        "words": "感谢Joe的帮忙。"
+      },
+      {
+        "bgID": null,
+        "roleID": 3,
+        "figureID": 1,
+        "words": "只是尽我所能而已。能够成为XX的助手，我感觉很荣幸。"
+      },
+      {
+        "bgID": null,
+        "roleID": 3,
+        "figureID": 1,
+        "words": "希望以后还能够通过更多地了解你，而能够在各方面都提供帮助。"
+      },
+      {
+        "bgID": null,
+        "roleID": 2,
+        "figureID": 1,
+        "words": "乖孙女儿，我看到了现在岛屿的照片！现在的小岛已经明显地变了个样！"
+      },
+      {
+        "bgID": null,
+        "roleID": 1,
+        "figureID": 1,
+        "words": "很高兴你喜欢……"
+      },
+      {
+        "bgID": null,
+        "roleID": 2,
+        "figureID": 1,
+        "words": "祖父把这些照片传上网，立刻有买家有兴趣来参观一下了！"
+      },
+      {
+        "bgID": null,
+        "roleID": 1,
+        "figureID": 2,
+        "words": "可是……祖父，这么大的岛屿可没有那么快完工呀！"
+      },
+      {
+        "bgID": null,
+        "roleID": 2,
+        "figureID": 1,
+        "words": "哎哎，可是他们通过你现在的改造感受到了潜力。乖孙女，万一有人出高价买了这块地，这些钱可都是你的哦~"
+      },
+      {
+        "bgID": null,
+        "roleID": 1,
+        "figureID": 1,
+        "words": "嗯……"
+      },
+      {
+        "bgID": null,
+        "roleID": null,
+        "figureID": null,
+        "words": "挂了电话。"
+      },
+      {
+        "bgID": null,
+        "roleID": 3,
+        "figureID": 1,
+        "words": "我知道……XX此行的目的是来考察这个小岛，进行改造后然后出售。"
+      },
+      {
+        "bgID": null,
+        "roleID": 1,
+        "figureID": 1,
+        "words": "呃……"
+      },
+      {
+        "bgID": null,
+        "roleID": 3,
+        "figureID": 1,
+        "words": "虽然我认为你是这座小岛最完美的主人，但是如果你经过了慎重考虑决定卖出，我也会尊重你的决定。"
+      },
+      {
+        "bgID": null,
+        "roleID": 1,
+        "figureID": 1,
+        "words": "我……"
+      },
+      {
+        "bgID": null,
+        "roleID": 3,
+        "figureID": 1,
+        "words": "这栋房子还有许多部分未完成修建。"
+      },
+      {
+        "bgID": null,
+        "roleID": 3,
+        "figureID": 1,
+        "words": "但是，先让我们将内部也整理修复吧。你应该等不及装饰你的房间了。毕竟这段时间，还是住在岛上比较方便。"
+      }
+    ]
+  },
+  "1_6": {
+    "id": "1_6",
+    "jump": null,
+    "content": [{
+        "bgID": null,
+        "roleID": 3,
+        "figureID": 1,
+        "words": "XX，你喜欢兰花还是茉莉？"
+      },
+      {
+        "bgID": null,
+        "roleID": 1,
+        "figureID": 1,
+        "words": "茉莉！"
+      },
+      {
+        "bgID": null,
+        "roleID": 1,
+        "figureID": 1,
+        "words": "茉莉花香，而且生命力旺盛。"
+      },
+      {
+        "bgID": null,
+        "roleID": 3,
+        "figureID": 1,
+        "words": "我也觉得你会喜欢茉莉。所以……我准备了这个，你可以摆在房间里。"
+      },
+      {
+        "bgID": null,
+        "roleID": 1,
+        "figureID": 1,
+        "words": "啊！好漂亮！谢谢！而且，好香啊~！"
+      },
+      {
+        "bgID": null,
+        "roleID": 2,
+        "figureID": 1,
+        "words": "这是我第一次送礼物。希望你能喜欢。"
+      },
+      {
+        "bgID": null,
+        "roleID": 2,
+        "figureID": 1,
+        "words": "乖孙女儿，我看到了现在岛屿的照片！现在的小岛已经明显地变了个样！"
+      },
+      {
+        "bgID": null,
+        "roleID": 1,
+        "figureID": 1,
+        "words": "希望祖父喜欢……"
+      },
+      {
+        "bgID": null,
+        "roleID": 2,
+        "figureID": 1,
+        "words": "祖父把这些照片传上网，立刻有买家有兴趣来参观一下了！"
+      },
+      {
+        "bgID": null,
+        "roleID": 1,
+        "figureID": 1,
+        "words": "可是……祖父，这么大的岛屿可没有那么快完工呀！"
+      },
+      {
+        "bgID": null,
+        "roleID": 2,
+        "figureID": 1,
+        "words": "哎哎，可是他们通过你现在的改造感受到了潜力。乖孙女，万一有人出高价买了这块地，这些钱可都是你的哦~"
+      },
+      {
+        "bgID": null,
+        "roleID": 1,
+        "figureID": 1,
+        "words": "嗯……"
+      },
+      {
+        "bgID": null,
+        "roleID": null,
+        "figureID": null,
+        "words": "挂了电话。"
+      },
+      {
+        "bgID": null,
+        "roleID": 3,
+        "figureID": 1,
+        "words": "我去安排别的事情了。需要帮忙和我说一声。"
+      },
+      {
+        "bgID": null,
+        "roleID": 1,
+        "figureID": 1,
+        "words": "好的。"
+      },
+      {
+        "bgID": null,
+        "roleID": null,
+        "figureID": null,
+        "words": "你看着手里的这盆茉莉，非常细心地被裁剪过，看起来非常精致。"
+      }
+    ]
+  },
+  "1_7": {
+    "id": "1_7",
+    "jump": null,
+    "content": [{
+        "bgID": null,
+        "roleID": 1,
+        "figureID": 1,
+        "words": "终于完成了！"
+      },
+      {
+        "bgID": null,
+        "roleID": 3,
+        "figureID": 1,
+        "words": "辛苦了。"
+      },
+      {
+        "bgID": null,
+        "roleID": 1,
+        "figureID": 1,
+        "words": "Joe连高兴的样子都这么的含蓄。"
+      },
+      {
+        "bgID": null,
+        "roleID": 3,
+        "figureID": 1,
+        "words": "我可能还在学习如何表达自己的情感。"
+      },
+      {
+        "bgID": null,
+        "roleID": 1,
+        "figureID": 1,
+        "words": "不过看到小姐这么高兴，我的确比平日高兴了很多呢。"
+      },
+      {
+        "bgID": null,
+        "roleID": 1,
+        "figureID": 1,
+        "words": "别说这些！快陪我去喝啤酒庆祝一下！"
+      },
+      {
+        "bgID": null,
+        "roleID": 3,
+        "figureID": 1,
+        "words": "我……"
+      },
+      {
+        "bgID": null,
+        "roleID": 1,
+        "figureID": 1,
+        "words": "你的老板发令，不许请假！"
+      },
+      {
+        "bgID": null,
+        "roleID": 3,
+        "figureID": 1,
+        "words": "好吧。"
+      },
+      {
+        "bgID": 3,
+        "roleID": null,
+        "figureID": null,
+        "words": "晚上，我和Joe坐在庄园高层的塔楼上喝啤酒。"
+      },
+      {
+        "bgID": 3,
+        "roleID": 1,
+        "figureID": 1,
+        "words": "嘿。"
+      },
+      {
+        "bgID": 3,
+        "roleID": 3,
+        "figureID": 1,
+        "words": "嗯，小姐有什么事？"
+      },
+      {
+        "bgID": 3,
+        "roleID": 1,
+        "figureID": 1,
+        "words": "你有没有偶尔看到，一只白色狐狸出现在这只岛上？"
+      },
+      {
+        "bgID": 3,
+        "roleID": 3,
+        "figureID": 1,
+        "words": "哦。白狐吗。"
+      },
+      {
+        "bgID": 3,
+        "roleID": 1,
+        "figureID": 1,
+        "words": "对啊。这几天听到工人们讨论，说白狐是这座岛上传说中的守护神呢。"
+      },
+      {
+        "bgID": 3,
+        "roleID": 3,
+        "figureID": 1,
+        "words": "如果小姐有机会看到，看来是非常幸运的。"
+      },
+      {
+        "bgID": 3,
+        "roleID": 1,
+        "figureID": 1,
+        "words": "啊……好兴奋啊！这座岛感觉很有趣的样子！"
+      },
+      {
+        "bgID": 3,
+        "roleID": 3,
+        "figureID": 1,
+        "words": "的确。我家离这座岛不远，我经常能过来看看。"
+      },
+      {
+        "bgID": 3,
+        "roleID": 1,
+        "figureID": 1,
+        "words": "诶，Joe，许多年轻人都想去大城市闯荡。不知道我们两个，为什么会有缘在一座小岛上一起工作。"
+      },
+      {
+        "bgID": 3,
+        "roleID": 3,
+        "figureID": 1,
+        "words": "呵……大城市啊。"
+      },
+      {
+        "bgID": 3,
+        "roleID": 3,
+        "figureID": 1,
+        "words": "可能我是一个比较喜欢安静的人吧。自己的内心有的时候就是一个巨大的世界，已经很嘈杂了。"
+      },
+      {
+        "bgID": 3,
+        "roleID": 3,
+        "figureID": 2,
+        "words": "可以在这里遇到小姐你，我觉得很幸运。"
+      },
+      {
+        "bgID": 3,
+        "roleID": 1,
+        "figureID": 1,
+        "words": "我也觉得，很幸运！"
+      },
+      {
+        "bgID": 3,
+        "roleID": null,
+        "figureID": null,
+        "words": "说完后，我觉得自己脸红了。空气在那一刻凝滞了。"
+      },
+      {
+        "bgID": 3,
+        "roleID": 3,
+        "figureID": 1,
+        "words": "哦对了。明天，你的爷爷推荐的客人就会来视察小岛了。"
+      },
+      {
+        "bgID": 3,
+        "roleID": 1,
+        "figureID": 1,
+        "words": "啊……"
+      },
+      {
+        "bgID": 3,
+        "roleID": 3,
+        "figureID": 1,
+        "words": "准备好展示这间庄园了吗？"
+      },
+      {
+        "bgID": 3,
+        "roleID": 1,
+        "figureID": 1,
+        "words": "我不知道……"
+      },
+      {
+        "bgID": 3,
+        "roleID": 1,
+        "figureID": 1,
+        "words": "这么多天来……我已经爱上了这里。我挺舍不得的……"
+      }
+    ]
+  },
+  "9_1": {
+    "id": "9_1",
+    "jump": [
+      "guide#1"
+    ],
+    "content": [{
+      "bgID": null,
+      "roleID": 3,
+      "figureID": 1,
+      "words": "请点击庄园的台阶进行修复。"
+    }]
+  },
+  "9_2": {
+    "id": "9_2",
+    "jump": [
+      "guide#2"
+    ],
+    "content": [{
+        "bgID": null,
+        "roleID": 3,
+        "figureID": 1,
+        "words": "真是绝妙的设计。原先残破的台阶已经修复好了。"
+      },
+      {
+        "bgID": null,
+        "roleID": 3,
+        "figureID": 1,
+        "words": "修复更多的建筑，需要在关卡里进行挑战，收集钱币。"
+      }
+    ]
+  },
+  "9_3": {
+    "id": "9_3",
+    "jump": null,
+    "content": [{
+      "bgID": null,
+      "roleID": 3,
+      "figureID": 1,
+      "words": "点击这里，选择室内房间并进入。"
+    }]
+  },
+  "9_4": {
+    "id": "9_4",
+    "jump": null
+  },
+  "9_5": {
+    "id": "9_5",
+    "jump": null
+  },
+  "9_6": {
+    "id": "9_6",
+    "jump": null
+  }
+}

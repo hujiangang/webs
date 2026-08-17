@@ -1,0 +1,43 @@
+{
+    "stages": [
+        {
+            "name": "first_move",
+            "moves": 0,
+            "bubble": {
+                "text": {
+                    "zh": "匹配 <color=#C3543C>冰块</color> 里的元素来解锁它！"
+                },
+                "x": 0,
+                "y": -150
+            },
+            "hand": {
+                "x": 3,
+                "y": 1,
+                "type": "left"
+            },
+            "cells": [
+                {
+                    "x": 3,
+                    "y": 1,
+                    "hint": "left",
+                    "removable": true
+                },
+                {
+                    "x": 2,
+                    "y": 1,
+                   "removable": true
+                },
+                {
+                    "x": 2,
+                    "y": 0,
+                    "hint": "static"
+                },
+                {
+                    "x": 2,
+                    "y": 2,
+                    "hint": "static"
+                }
+            ]
+        }
+    ]
+}

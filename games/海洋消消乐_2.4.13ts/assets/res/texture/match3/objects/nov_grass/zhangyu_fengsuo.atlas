@@ -1,0 +1,27 @@
+
+zhangyu_fengsuo.png
+size: 263,132
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+shuipao01a
+  rotate: false
+  xy: 208, 37
+  size: 53, 93
+  orig: 53, 93
+  offset: 0, 0
+  index: -1
+shuipao01b
+  rotate: true
+  xy: 132, 2
+  size: 128, 74
+  orig: 128, 74
+  offset: 0, 0
+  index: -1
+smoke04
+  rotate: false
+  xy: 2, 2
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,403 @@
+{
+    "grid": [
+        {
+            "collect": null,
+            "map": [
+                [
+                    null,
+                    {
+                        "water": true,
+                        "born": true
+                    },
+                    {
+                        "born": true
+                    },
+                    {
+                        "born": true
+                    },
+                    {
+                        "born": true
+                    },
+                    {
+                        "born": true
+                    },
+                    {
+                        "born": true
+                    },
+                    {
+                        "water": true,
+                        "born": true
+                    },
+                    null
+                ],
+                [
+                    {
+                        "water": true
+                    },
+                    {
+                        "water": true
+                    },
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {
+                        "water": true
+                    },
+                    {
+                        "water": true
+                    }
+                ],
+                [
+                    {
+                        "water": true
+                    },
+                    {
+                        "water": true
+                    },
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {
+                        "water": true
+                    },
+                    {
+                        "water": true
+                    }
+                ],
+                [
+                    null,
+                    {
+                        "water": true
+                    },
+                    {
+                        "box_level": 1
+                    },
+                    {},
+                    {},
+                    {},
+                    {
+                        "box_level": 1
+                    },
+                    {
+                        "water": true
+                    },
+                    null
+                ],
+                [
+                    {
+                        "water": true
+                    },
+                    {
+                        "water": true
+                    },
+                    {
+                        "box_level": 1
+                    },
+                    {},
+                    {},
+                    {},
+                    {
+                        "box_level": 1
+                    },
+                    {
+                        "water": true
+                    },
+                    {
+                        "water": true
+                    }
+                ],
+                [
+                    {
+                        "water": true
+                    },
+                    null,
+                    {
+                        "box_level": 1
+                    },
+                    {
+                        "box_level": 1
+                    },
+                    {},
+                    {
+                        "box_level": 1
+                    },
+                    {
+                        "box_level": 1
+                    },
+                    null,
+                    {
+                        "water": true
+                    }
+                ],
+                [
+                    {
+                        "water": true
+                    },
+                    null,
+                    {
+                        "box_level": 1
+                    },
+                    {
+                        "box_level": 1
+                    },
+                    {},
+                    {
+                        "box_level": 1
+                    },
+                    {
+                        "box_level": 1
+                    },
+                    null,
+                    {
+                        "water": true
+                    }
+                ],
+                [
+                    {
+                        "water": true
+                    },
+                    {
+                        "water": true
+                    },
+                    {
+                        "box_level": 1
+                    },
+                    {
+                        "box_level": 1
+                    },
+                    {
+                        "box_level": 1
+                    },
+                    {
+                        "box_level": 1
+                    },
+                    {
+                        "box_level": 1
+                    },
+                    {
+                        "water": true
+                    },
+                    {
+                        "water": true
+                    }
+                ],
+                [
+                    null,
+                    {
+                        "water": true
+                    },
+                    {
+                        "box_level": 1
+                    },
+                    {
+                        "box_level": 1
+                    },
+                    {
+                        "box_level": 1
+                    },
+                    {
+                        "box_level": 1
+                    },
+                    {
+                        "box_level": 1
+                    },
+                    {
+                        "water": true
+                    },
+                    null
+                ]
+            ]
+        }
+    ],
+    "collect": [
+        {
+            "type": "box",
+            "count": 12
+        },
+        {
+            "type": "0",
+            "count": 30
+        }
+    ],
+    "gnome": [],
+    "moveCnt": 38,
+    "chipset": [
+        {
+            "type": 0,
+            "percent": 100
+        },
+        {
+            "type": 1,
+            "percent": 100
+        },
+        {
+            "type": 2,
+            "percent": 100
+        },
+        {
+            "type": 3,
+            "percent": 100
+        },
+        {
+            "type": 4,
+            "percent": 100
+        }
+    ],
+    "levelInfo": {
+        "TO_LIGHTNING_ENOUGH": 10,
+        "background": 3,
+        "cellColorSeed": 0,
+        "levelReward": 50,
+        "movesLimit": 26,
+        "version": "0",
+        "timeLimit": 0,
+        "entry": false,
+        "hardness": false,
+        "forceUpdate": false,
+        "score": [
+            10000,
+            30000,
+            70000
+        ]
+    },
+    "conveyerList": [
+        [
+            {
+                "x": 1,
+                "y": 8,
+                "exist": true
+            },
+            {
+                "x": 1,
+                "y": 7,
+                "exist": true
+            },
+            {
+                "x": 0,
+                "y": 7,
+                "exist": true
+            },
+            {
+                "x": 0,
+                "y": 6,
+                "exist": true
+            },
+            {
+                "x": 0,
+                "y": 5,
+                "exist": true
+            },
+            {
+                "x": 0,
+                "y": 4,
+                "exist": true
+            },
+            {
+                "x": 1,
+                "y": 4,
+                "exist": true
+            },
+            {
+                "x": 1,
+                "y": 3,
+                "exist": true
+            },
+            {
+                "x": 1,
+                "y": 2,
+                "exist": true
+            },
+            {
+                "x": 0,
+                "y": 2,
+                "exist": true
+            },
+            {
+                "x": 0,
+                "y": 1,
+                "exist": true
+            },
+            {
+                "x": 1,
+                "y": 1,
+                "exist": true
+            },
+            {
+                "x": 1,
+                "y": 0,
+                "exist": true
+            }
+        ],
+        [
+            {
+                "x": 7,
+                "y": 8,
+                "exist": true
+            },
+            {
+                "x": 7,
+                "y": 7,
+                "exist": true
+            },
+            {
+                "x": 8,
+                "y": 7,
+                "exist": true
+            },
+            {
+                "x": 8,
+                "y": 6,
+                "exist": true
+            },
+            {
+                "x": 8,
+                "y": 5,
+                "exist": true
+            },
+            {
+                "x": 8,
+                "y": 4,
+                "exist": true
+            },
+            {
+                "x": 7,
+                "y": 4,
+                "exist": true
+            },
+            {
+                "x": 7,
+                "y": 3,
+                "exist": true
+            },
+            {
+                "x": 7,
+                "y": 2,
+                "exist": true
+            },
+            {
+                "x": 8,
+                "y": 2,
+                "exist": true
+            },
+            {
+                "x": 8,
+                "y": 1,
+                "exist": true
+            },
+            {
+                "x": 7,
+                "y": 1,
+                "exist": true
+            },
+            {
+                "x": 7,
+                "y": 0,
+                "exist": true
+            }
+        ]
+    ]
+}

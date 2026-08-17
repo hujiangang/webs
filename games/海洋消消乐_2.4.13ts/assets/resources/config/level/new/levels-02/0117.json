@@ -1,0 +1,249 @@
+{
+    "grid": [
+        {
+            "collect": null,
+            "map": [
+                [
+                    {
+                        "ground": 1,
+                        "gem": 1,
+                        "born": true
+                    },
+                    {
+                        "locks": 1,
+                        "born": true
+                    },
+                    {
+                        "ground": 1,
+                        "gem": 1,
+                        "born": true
+                    },
+                    {
+                        "locks": 1,
+                        "born": true
+                    },
+                    {
+                        "ground": 1,
+                        "gem": 1,
+                        "born": true
+                    },
+                    {
+                        "locks": 1,
+                        "born": true
+                    },
+                    {
+                        "born": true
+                    },
+                    {
+                        "born": true
+                    },
+                    {
+                        "born": true
+                    }
+                ],
+                [
+                    {
+                        "locks": 1
+                    },
+                    {
+                        "ground": 1,
+                        "gem": 1
+                    },
+                    {
+                        "locks": 1
+                    },
+                    {
+                        "ground": 1,
+                        "gem": 1
+                    },
+                    {
+                        "locks": 1
+                    },
+                    {
+                        "ground": 1,
+                        "gem": 1
+                    },
+                    {},
+                    {},
+                    {}
+                ],
+                [
+                    {
+                        "ground": 1,
+                        "gem": 1
+                    },
+                    {
+                        "locks": 1
+                    },
+                    {
+                        "ground": 1,
+                        "gem": 1
+                    },
+                    {
+                        "locks": 1
+                    },
+                    {
+                        "ground": 1,
+                        "gem": 1
+                    },
+                    {
+                        "locks": 1
+                    },
+                    {},
+                    {},
+                    {}
+                ],
+                [
+                    {
+                        "locks": 1
+                    },
+                    {
+                        "ground": 1,
+                        "gem": 1
+                    },
+                    {
+                        "locks": 1
+                    },
+                    {
+                        "ground": 1,
+                        "gem": 1
+                    },
+                    {
+                        "locks": 1
+                    },
+                    {
+                        "ground": 1,
+                        "gem": 1
+                    },
+                    {},
+                    {},
+                    {}
+                ],
+                [
+                    {
+                        "ground": 1,
+                        "gem": 1
+                    },
+                    {
+                        "locks": 1
+                    },
+                    {
+                        "ground": 1,
+                        "gem": 1
+                    },
+                    {
+                        "locks": 1
+                    },
+                    {
+                        "ground": 1,
+                        "gem": 1
+                    },
+                    {
+                        "locks": 1
+                    },
+                    {},
+                    {},
+                    {}
+                ],
+                [
+                    {
+                        "locks": 1
+                    },
+                    {
+                        "ground": 1,
+                        "gem": 1
+                    },
+                    {
+                        "locks": 1
+                    },
+                    {
+                        "ground": 1,
+                        "gem": 1
+                    },
+                    {
+                        "locks": 1
+                    },
+                    {
+                        "ground": 1,
+                        "gem": 1
+                    },
+                    {},
+                    {},
+                    {}
+                ],
+                [
+                    {
+                        "ground": 1,
+                        "gem": 1
+                    },
+                    {
+                        "locks": 1
+                    },
+                    {
+                        "ground": 1,
+                        "gem": 1
+                    },
+                    {
+                        "locks": 1
+                    },
+                    {
+                        "ground": 1,
+                        "gem": 1
+                    },
+                    {
+                        "locks": 1
+                    },
+                    {},
+                    {},
+                    {}
+                ]
+            ]
+        }
+    ],
+    "collect": [
+        {
+            "type": 2,
+            "count": 30
+        },
+        {
+            "type": "gem",
+            "count": 21
+        }
+    ],
+    "moveCnt": 35,
+    "chipset": [
+        {
+            "type": 0,
+            "percent": 100
+        },
+        {
+            "type": 1,
+            "percent": 100
+        },
+        {
+            "type": 2,
+            "percent": 65
+        },
+        {
+            "type": 3,
+            "percent": 100
+        }
+    ],
+    "levelInfo": {
+        "TO_LIGHTNING_ENOUGH": 15,
+        "background": 3,
+        "cellColorSeed": 0,
+        "levelReward": 50,
+        "movesLimit": 32,
+        "version": "0",
+        "timeLimit": 0,
+        "entry": false,
+        "hardness": false,
+        "forceUpdate": false,
+        "score": [
+            15000,
+            30000,
+            50000
+        ]
+    }
+}

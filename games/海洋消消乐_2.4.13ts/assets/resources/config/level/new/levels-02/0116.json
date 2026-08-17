@@ -1,0 +1,245 @@
+{
+    "grid": [
+        {
+            "collect": null,
+            "map": [
+                [
+                    {
+                        "born": true
+                    },
+                    null,
+                    {
+                        "born": true,
+                        "type": 7
+                    },
+                    {
+                        "born": true
+                    },
+                    {
+                        "born": true
+                    },
+                    {
+                        "born": true
+                    },
+                    {
+                        "born": true,
+                        "type": 7
+                    },
+                    null,
+                    {
+                        "born": true
+                    }
+                ],
+                [
+                    {
+                        "ground": 2,
+                        "gem": 1
+                    },
+                    null,
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    null,
+                    {
+                        "ground": 2,
+                        "gem": 1
+                    }
+                ],
+                [
+                    {
+                        "ground": 2,
+                        "gem": 1
+                    },
+                    null,
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    null,
+                    {
+                        "ground": 2,
+                        "gem": 1
+                    }
+                ],
+                [
+                    {
+                        "ground": 2,
+                        "gem": 1
+                    },
+                    null,
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    null,
+                    {
+                        "ground": 2,
+                        "gem": 1
+                    }
+                ],
+                [
+                    {
+                        "ground": 2,
+                        "gem": 1
+                    },
+                    null,
+                    {
+                        "box_level": 1
+                    },
+                    {},
+                    {},
+                    {},
+                    {
+                        "box_level": 1
+                    },
+                    null,
+                    {
+                        "ground": 2,
+                        "gem": 1
+                    }
+                ],
+                [
+                    {
+                        "ground": 2,
+                        "gem": 1
+                    },
+                    null,
+                    {
+                        "box_level": 2
+                    },
+                    {
+                        "box_level": 1
+                    },
+                    {},
+                    {
+                        "box_level": 1
+                    },
+                    {
+                        "box_level": 2
+                    },
+                    null,
+                    {
+                        "ground": 2,
+                        "gem": 1
+                    }
+                ],
+                [
+                    {
+                        "ground": 2,
+                        "gem": 1
+                    },
+                    null,
+                    {
+                        "exit": true,
+                        "box_level": 1
+                    },
+                    {
+                        "box_level": 2
+                    },
+                    {
+                        "box_level": 1
+                    },
+                    {
+                        "box_level": 2
+                    },
+                    {
+                        "exit": true,
+                        "box_level": 1
+                    },
+                    null,
+                    {
+                        "ground": 2,
+                        "gem": 1
+                    }
+                ],
+                [
+                    null,
+                    null,
+                    null,
+                    {
+                        "exit": true,
+                        "box_level": 1
+                    },
+                    {
+                        "box_level": 2
+                    },
+                    {
+                        "exit": true,
+                        "box_level": 1
+                    },
+                    null,
+                    null,
+                    null
+                ],
+                [
+                    null,
+                    null,
+                    null,
+                    null,
+                    {
+                        "exit": true,
+                        "box_level": 1
+                    },
+                    null,
+                    null,
+                    null,
+                    null
+                ]
+            ]
+        }
+    ],
+    "collect": [
+        {
+            "type": 7,
+            "count": 2
+        },
+        {
+            "type": "gem",
+            "count": 12
+        }
+    ],
+    "carryChips": {
+        "max": 2,
+        "chance": 10
+    },
+    "moveCnt": 32,
+    "chipset": [
+        {
+            "type": 0,
+            "percent": 90
+        },
+        {
+            "type": 1,
+            "percent": 100
+        },
+        {
+            "type": 2,
+            "percent": 100
+        },
+        {
+            "type": 3,
+            "percent": 100
+        }
+    ],
+    "levelInfo": {
+        "TO_LIGHTNING_ENOUGH": 13,
+        "background": 3,
+        "cellColorSeed": 0,
+        "levelReward": 50,
+        "movesLimit": 32,
+        "version": "0",
+        "timeLimit": 0,
+        "entry": false,
+        "hardness": false,
+        "forceUpdate": false,
+        "score": [
+            15000,
+            30000,
+            50000
+        ]
+    }
+}

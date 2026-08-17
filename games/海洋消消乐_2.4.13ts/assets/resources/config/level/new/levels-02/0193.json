@@ -1,0 +1,364 @@
+{
+    "grid": [
+        {
+            "collect": null,
+            "map": [
+                [
+                    {
+                        "born": true
+                    },
+                    {
+                        "born": true
+                    },
+                    {
+                        "born": true
+                    },
+                    {
+                        "born": true
+                    },
+                    null,
+                    {
+                        "born": true
+                    },
+                    {
+                        "born": true
+                    },
+                    {
+                        "born": true
+                    },
+                    {
+                        "born": true
+                    }
+                ],
+                [
+                    {},
+                    {},
+                    {},
+                    {
+                        "leaves": 3
+                    },
+                    {
+                        "water": true
+                    },
+                    {
+                        "leaves": 3
+                    },
+                    {},
+                    {},
+                    {}
+                ],
+                [
+                    {},
+                    {},
+                    {
+                        "leaves": 3
+                    },
+                    {
+                        "leaves": 3
+                    },
+                    {
+                        "water": true
+                    },
+                    {
+                        "leaves": 3
+                    },
+                    {
+                        "leaves": 3
+                    },
+                    {},
+                    {}
+                ],
+                [
+                    null,
+                    {
+                        "leaves": 3
+                    },
+                    {
+                        "leaves": 3
+                    },
+                    {
+                        "leaves": 3
+                    },
+                    {
+                        "water": true
+                    },
+                    {
+                        "leaves": 3
+                    },
+                    {
+                        "leaves": 3
+                    },
+                    {
+                        "leaves": 3
+                    },
+                    null
+                ],
+                [
+                    null,
+                    null,
+                    {
+                        "box_level": 1
+                    },
+                    {
+                        "box_level": 1
+                    },
+                    {
+                        "water": true
+                    },
+                    {
+                        "box_level": 1
+                    },
+                    {
+                        "box_level": 1
+                    },
+                    null,
+                    null
+                ],
+                [
+                    null,
+                    {
+                        "box_level": 1
+                    },
+                    {
+                        "box_level": 1
+                    },
+                    {
+                        "box_level": 1
+                    },
+                    {
+                        "water": true
+                    },
+                    {
+                        "box_level": 1
+                    },
+                    {
+                        "box_level": 1
+                    },
+                    {
+                        "box_level": 1
+                    },
+                    null
+                ],
+                [
+                    {
+                        "leaves": 2
+                    },
+                    {
+                        "leaves": 2
+                    },
+                    {
+                        "leaves": 2
+                    },
+                    {
+                        "leaves": 2
+                    },
+                    {
+                        "water": true
+                    },
+                    {
+                        "leaves": 2
+                    },
+                    {
+                        "leaves": 2
+                    },
+                    {
+                        "leaves": 2
+                    },
+                    {
+                        "leaves": 2
+                    }
+                ],
+                [
+                    {
+                        "leaves": 2
+                    },
+                    {
+                        "leaves": 2
+                    },
+                    {
+                        "leaves": 2
+                    },
+                    {
+                        "leaves": 2
+                    },
+                    {
+                        "water": true
+                    },
+                    {
+                        "leaves": 2
+                    },
+                    {
+                        "leaves": 2
+                    },
+                    {
+                        "leaves": 2
+                    },
+                    {
+                        "leaves": 2
+                    }
+                ],
+                [
+                    {
+                        "leaves": 2
+                    },
+                    {
+                        "flowers": 3
+                    },
+                    {
+                        "leaves": 2
+                    },
+                    {
+                        "flowers": 3
+                    },
+                    {
+                        "water": true
+                    },
+                    {
+                        "flowers": 3
+                    },
+                    {
+                        "leaves": 2
+                    },
+                    {
+                        "flowers": 3
+                    },
+                    {
+                        "leaves": 2
+                    }
+                ]
+            ]
+        }
+    ],
+    "collect": [
+        {
+            "type": "gnome",
+            "count": 6
+        },
+        {
+            "type": "5",
+            "count": 30
+        }
+    ],
+    "moveCnt": 23,
+    "chipset": [
+        {
+            "type": 0,
+            "percent": 80
+        },
+        {
+            "type": 4,
+            "percent": 80
+        },
+        {
+            "type": 2,
+            "percent": 80
+        },
+        {
+            "type": 3,
+            "percent": 80
+        },
+        {
+            "type": 1,
+            "percent": 80
+        }
+    ],
+    "levelInfo": {
+        "TO_LIGHTNING_ENOUGH": 0,
+        "background": 1,
+        "cellColorSeed": 221,
+        "levelReward": 51,
+        "movesLimit": 28,
+        "version": "0",
+        "timeLimit": 0,
+        "entry": true,
+        "hardness": false,
+        "forceUpdate": false,
+        "score": [
+            20000,
+            30000,
+            60000
+        ]
+    },
+    "conveyerList": [
+        [
+            {
+                "x": 4,
+                "y": 1,
+                "exist": true
+            },
+            {
+                "x": 4,
+                "y": 2,
+                "exist": true
+            },
+            {
+                "x": 4,
+                "y": 3,
+                "exist": true
+            },
+            {
+                "x": 4,
+                "y": 4,
+                "exist": true
+            },
+            {
+                "x": 4,
+                "y": 5,
+                "exist": true
+            },
+            {
+                "x": 4,
+                "y": 6,
+                "exist": true
+            },
+            {
+                "x": 4,
+                "y": 7,
+                "exist": true
+            },
+            {
+                "x": 4,
+                "y": 8,
+                "exist": true
+            }
+        ]
+    ],
+    "gnome": [
+        {
+            "index": 0,
+            "x": 2,
+            "y": 3,
+            "type": 0
+        },
+        {
+            "index": 0,
+            "x": 2,
+            "y": 2,
+            "type": 0
+        },
+        {
+            "index": 0,
+            "x": 5,
+            "y": 2,
+            "type": 0
+        },
+        {
+            "index": 0,
+            "x": 5,
+            "y": 3,
+            "type": 0
+        },
+        {
+            "index": 0,
+            "x": 0,
+            "y": 6,
+            "type": 2
+        },
+        {
+            "index": 0,
+            "x": 5,
+            "y": 6,
+            "type": 2
+        }
+    ]
+}

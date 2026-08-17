@@ -1,0 +1,118 @@
+{
+    "stages": [
+        {
+            "name": "first_move",
+            "moves": 0,
+            "bubble": {
+                "text": {
+                    "zh": "每走完一步，<size=40> <color=#C3543C> 木筏 </color> </size>都会转动！"
+                },
+                "x": 0,
+                "y": 320
+            },
+            "cells": [
+                {
+                    "x": 0,
+                    "y": 3,
+                    "hint": "static"
+                },
+                {
+                    "x": 1,
+                    "y": 3,
+                    "hint": "static"
+                },
+                {
+                    "x": 2,
+                    "y": 3,
+                    "hint": "static"
+                },
+                {
+                    "x": 3,
+                    "y": 3,
+                    "hint": "static"
+                },
+                {
+                    "x": 4,
+                    "y": 3,
+                    "hint": "static"
+                },
+                {
+                    "x": 5,
+                    "y": 3,
+                    "hint": "static"
+                },
+                {
+                    "x": 6,
+                    "y": 3,
+                    "hint": "static"
+                },
+                {
+                    "x": 7,
+                    "y": 3,
+                    "hint": "static"
+                },
+                {
+                    "x": 8,
+                    "y": 3,
+                    "hint": "static"
+                },
+                {
+                    "x": 0,
+                    "y": 4,
+                    "hint": "static"
+                },
+                {
+                    "x": 8,
+                    "y": 4,
+                    "hint": "static"
+                },
+                {
+                    "x": 0,
+                    "y": 5,
+                    "hint": "static"
+                },
+                {
+                    "x": 1,
+                    "y": 5,
+                    "hint": "static"
+                },
+                {
+                    "x": 2,
+                    "y": 5,
+                    "hint": "static"
+                },
+                {
+                    "x": 3,
+                    "y": 5,
+                    "hint": "static"
+                },
+                {
+                    "x": 4,
+                    "y": 5,
+                    "hint": "static"
+                },
+                {
+                    "x": 5,
+                    "y": 5,
+                    "hint": "static"
+                },
+                {
+                    "x": 6,
+                    "y": 5,
+                    "hint": "static"
+                },
+                {
+                    "x": 7,
+                    "y": 5,
+                    "hint": "static"
+                },
+                {
+                    "x": 8,
+                    "y": 5,
+                    "hint": "static"
+                }
+            ],
+            "closeByTouch": true
+        }
+    ]
+}

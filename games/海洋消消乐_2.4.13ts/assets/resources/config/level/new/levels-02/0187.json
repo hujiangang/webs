@@ -1,0 +1,230 @@
+{
+    "grid": [
+        {
+            "collect": null,
+            "map": [
+                [
+                    null,
+                    {
+                        "born": true
+                    },
+                    {
+                        "born": true
+                    },
+                    {
+                        "born": true
+                    },
+                    {
+                        "born": true
+                    },
+                    {
+                        "born": true
+                    },
+                    {
+                        "born": true
+                    },
+                    {
+                        "born": true
+                    },
+                    null
+                ],
+                [
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {}
+                ],
+                [
+                    {},
+                    {
+                        "type": 0
+                    },
+                    {
+                        "stone": 2
+                    },
+                    {
+                        "stone": 2
+                    },
+                    {
+                        "stone": 2
+                    },
+                    {
+                        "stone": 2
+                    },
+                    {
+                        "stone": 2
+                    },
+                    {
+                        "type": 1
+                    },
+                    {}
+                ],
+                [
+                    {},
+                    {
+                        "type": 0
+                    },
+                    {
+                        "stone": 2
+                    },
+                    {
+                        "empty": true
+                    },
+                    {
+                        "empty": true
+                    },
+                    {
+                        "empty": true
+                    },
+                    {
+                        "stone": 2
+                    },
+                    {
+                        "type": 1
+                    },
+                    {}
+                ],
+                [
+                    {
+                        "type": 0
+                    },
+                    {},
+                    {
+                        "stone": 2
+                    },
+                    {
+                        "empty": true
+                    },
+                    {
+                        "flowers": 3
+                    },
+                    {
+                        "empty": true
+                    },
+                    {
+                        "stone": 2
+                    },
+                    {},
+                    {
+                        "type": 1
+                    }
+                ],
+                [
+                    {},
+                    {
+                        "type": 0
+                    },
+                    {
+                        "stone": 2
+                    },
+                    {
+                        "empty": true
+                    },
+                    {
+                        "empty": true
+                    },
+                    {
+                        "empty": true
+                    },
+                    {
+                        "stone": 2
+                    },
+                    {
+                        "type": 1
+                    },
+                    {}
+                ],
+                [
+                    {},
+                    {},
+                    {
+                        "stone": 2
+                    },
+                    {
+                        "stone": 2
+                    },
+                    {
+                        "stone": 2
+                    },
+                    {
+                        "stone": 2
+                    },
+                    {
+                        "stone": 2
+                    },
+                    {},
+                    {}
+                ],
+                [
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {}
+                ],
+                [
+                    null,
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    null
+                ]
+            ]
+        }
+    ],
+    "collect": [
+        {
+            "type": "5",
+            "count": 8
+        }
+    ],
+    "moveCnt": 31,
+    "chipset": [
+        {
+            "type": 0,
+            "percent": 100
+        },
+        {
+            "type": 1,
+            "percent": 100
+        },
+        {
+            "type": 2,
+            "percent": 100
+        },
+        {
+            "type": 3,
+            "percent": 100
+        }
+    ],
+    "levelInfo": {
+        "TO_LIGHTNING_ENOUGH": 16,
+        "background": 1,
+        "cellColorSeed": 0,
+        "levelReward": 50,
+        "movesLimit": 26,
+        "version": "0",
+        "timeLimit": 0,
+        "entry": false,
+        "hardness": false,
+        "forceUpdate": false,
+        "score": [
+            10000,
+            20000,
+            50000
+        ]
+    }
+}

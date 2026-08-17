@@ -1,0 +1,264 @@
+{
+    "grid": [
+        {
+            "collect": null,
+            "map": [
+                [
+                    {
+                        "born": true
+                    },
+                    {
+                        "born": true
+                    },
+                    {
+                        "born": true
+                    },
+                    {
+                        "born": true
+                    },
+                    {
+                        "born": true
+                    },
+                    {
+                        "born": true
+                    },
+                    {
+                        "born": true
+                    },
+                    {
+                        "born": true
+                    },
+                    {
+                        "born": true
+                    }
+                ],
+                [
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {}
+                ],
+                [
+                    {},
+                    {},
+                    {
+                        "water": true
+                    },
+                    {
+                        "water": true,
+                        "passable": true
+                    },
+                    {
+                        "water": true,
+                        "passable": true
+                    },
+                    {
+                        "water": true,
+                        "passable": true
+                    },
+                    {
+                        "water": true
+                    },
+                    {},
+                    {}
+                ],
+                [
+                    {},
+                    {},
+                    {
+                        "water": true
+                    },
+                    {
+                        "ice": 1,
+                        "leaves": 1
+                    },
+                    {
+                        "ice": 1,
+                        "leaves": 1
+                    },
+                    {
+                        "ice": 1,
+                        "leaves": 1
+                    },
+                    {
+                        "water": true
+                    },
+                    {},
+                    {}
+                ],
+                [
+                    {},
+                    {},
+                    {
+                        "water": true
+                    },
+                    {
+                        "ice": 1,
+                        "leaves": 1
+                    },
+                    {
+                        "ice": 1,
+                        "leaves": 1
+                    },
+                    {
+                        "ice": 1,
+                        "leaves": 1
+                    },
+                    {
+                        "water": true
+                    },
+                    {},
+                    {}
+                ],
+                [
+                    {},
+                    {},
+                    {
+                        "water": true
+                    },
+                    {
+                        "water": true,
+                        "passable": true
+                    },
+                    {
+                        "water": true,
+                        "passable": true
+                    },
+                    {
+                        "water": true,
+                        "passable": true
+                    },
+                    {
+                        "water": true
+                    },
+                    {},
+                    {}
+                ],
+                [
+                    {},
+                    {},
+                    {},
+                    {
+                        "box_level": 1
+                    },
+                    {
+                        "box_level": 1
+                    },
+                    {
+                        "box_level": 1
+                    },
+                    {},
+                    {},
+                    {}
+                ],
+                [
+                    {},
+                    {},
+                    {
+                        "box_level": 1
+                    },
+                    {},
+                    {
+                        "box_level": 1
+                    },
+                    {},
+                    {
+                        "box_level": 1
+                    },
+                    {},
+                    {}
+                ],
+                [
+                    {},
+                    {},
+                    {
+                        "box_level": 1
+                    },
+                    {
+                        "box_level": 1
+                    },
+                    {},
+                    {
+                        "box_level": 1
+                    },
+                    {
+                        "box_level": 1
+                    },
+                    {},
+                    {}
+                ]
+            ]
+        }
+    ],
+    "gnome": [
+        {
+            "index": 0,
+            "x": 3,
+            "y": 3,
+            "type": 1
+        },
+        {
+            "index": 0,
+            "x": 4,
+            "y": 3,
+            "type": 1
+        },
+        {
+            "index": 0,
+            "x": 5,
+            "y": 3,
+            "type": 1
+        }
+    ],
+    "collect": [
+        {
+            "type": "gnome",
+            "count": 3
+        },
+        {
+            "type": "5",
+            "count": 30
+        }
+    ],
+    "moveCnt": 25,
+    "chipset": [
+        {
+            "type": 0,
+            "percent": 100
+        },
+        {
+            "type": 2,
+            "percent": 100
+        },
+        {
+            "type": 3,
+            "percent": 100
+        },
+        {
+            "type": 5,
+            "percent": 100
+        }
+    ],
+    "levelInfo": {
+        "TO_LIGHTNING_ENOUGH": 13,
+        "background": 1,
+        "cellColorSeed": 0,
+        "levelReward": 50,
+        "movesLimit": 25,
+        "version": "0",
+        "timeLimit": 0,
+        "entry": false,
+        "hardness": false,
+        "forceUpdate": false,
+        "score": [
+            10000,
+            20000,
+            40000
+        ]
+    }
+}

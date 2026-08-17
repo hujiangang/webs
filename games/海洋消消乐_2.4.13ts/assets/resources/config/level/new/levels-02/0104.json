@@ -1,0 +1,300 @@
+{
+    "grid": [
+        {
+            "collect": null,
+            "map": [
+                [
+                    {
+                        "born": true
+                    },
+                    {
+                        "born": true
+                    },
+                    {
+                        "born": true
+                    },
+                    {
+                        "born": true
+                    },
+                    {
+                        "born": true
+                    },
+                    {
+                        "born": true
+                    },
+                    {
+                        "born": true
+                    },
+                    {
+                        "born": true
+                    },
+                    {
+                        "born": true
+                    }
+                ],
+                [
+                    {},
+                    {
+                        "empty": true,
+                        "stone": 2
+                    },
+                    {
+                        "empty": true,
+                        "stone": 2
+                    },
+                    {},
+                    {},
+                    {},
+                    {
+                        "empty": true,
+                        "stone": 2
+                    },
+                    {
+                        "empty": true,
+                        "stone": 2
+                    },
+                    {}
+                ],
+                [
+                    {},
+                    {
+                        "empty": true,
+                        "stone": 2
+                    },
+                    {
+                        "type": 4,
+                        "ice": 1,
+                        "leaves": 2
+                    },
+                    {
+                        "box_level": 3,
+                        "leaves": 2
+                    },
+                    {
+                        "box_level": 3,
+                        "leaves": 2
+                    },
+                    {
+                        "box_level": 3,
+                        "leaves": 2
+                    },
+                    {
+                        "type": 100,
+                        "ice": 1,
+                        "leaves": 2
+                    },
+                    {
+                        "empty": true,
+                        "stone": 2
+                    },
+                    {}
+                ],
+                [
+                    {},
+                    {},
+                    {
+                        "box_level": 3,
+                        "leaves": 2
+                    },
+                    {
+                        "leaves": 2
+                    },
+                    {
+                        "leaves": 2
+                    },
+                    {
+                        "leaves": 2
+                    },
+                    {
+                        "box_level": 3,
+                        "leaves": 2
+                    },
+                    {},
+                    {}
+                ],
+                [
+                    {},
+                    {},
+                    {
+                        "box_level": 3,
+                        "leaves": 2
+                    },
+                    {
+                        "leaves": 2
+                    },
+                    {
+                        "leaves": 2
+                    },
+                    {
+                        "leaves": 2
+                    },
+                    {
+                        "box_level": 3,
+                        "leaves": 2
+                    },
+                    {},
+                    {}
+                ],
+                [
+                    {
+                        "type": 3
+                    },
+                    {
+                        "empty": true,
+                        "stone": 2
+                    },
+                    {
+                        "type": 100,
+                        "ice": 1,
+                        "leaves": 2
+                    },
+                    {
+                        "box_level": 3,
+                        "leaves": 2
+                    },
+                    {
+                        "box_level": 3,
+                        "leaves": 2
+                    },
+                    {
+                        "box_level": 3,
+                        "leaves": 2
+                    },
+                    {
+                        "type": 3,
+                        "ice": 1,
+                        "leaves": 2
+                    },
+                    {
+                        "empty": true,
+                        "stone": 2
+                    },
+                    {
+                        "type": 4
+                    }
+                ],
+                [
+                    {
+                        "type": 3
+                    },
+                    {
+                        "empty": true,
+                        "stone": 2
+                    },
+                    {
+                        "empty": true,
+                        "stone": 2
+                    },
+                    {},
+                    {},
+                    {},
+                    {
+                        "empty": true,
+                        "stone": 2
+                    },
+                    {
+                        "empty": true,
+                        "stone": 2
+                    },
+                    {
+                        "type": 4
+                    }
+                ],
+                [
+                    {},
+                    {
+                        "type": 3
+                    },
+                    {
+                        "type": 3
+                    },
+                    {},
+                    {},
+                    {},
+                    {
+                        "type": 4
+                    },
+                    {
+                        "type": 4
+                    },
+                    {}
+                ],
+                [
+                    {
+                        "type": 3
+                    },
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {
+                        "type": 4
+                    }
+                ]
+            ]
+        }
+    ],
+    "gnome": [
+        {
+            "index": 0,
+            "x": 2,
+            "y": 2,
+            "type": 3
+        },
+        {
+            "index": 0,
+            "x": 5,
+            "y": 2,
+            "type": 3
+        }
+    ],
+    "collect": [
+        {
+            "type": "gnome",
+            "count": 2
+        }
+    ],
+    "moveCnt": 30,
+    "chipset": [
+        {
+            "type": 0,
+            "percent": 100
+        },
+        {
+            "type": 1,
+            "percent": 100
+        },
+        {
+            "type": 2,
+            "percent": 100
+        },
+        {
+            "type": 3,
+            "percent": 100
+        },
+        {
+            "type": 4,
+            "percent": 20
+        }
+    ],
+    "levelInfo": {
+        "TO_LIGHTNING_ENOUGH": 14,
+        "background": 3,
+        "cellColorSeed": 0,
+        "levelReward": 100,
+        "movesLimit": 30,
+        "version": "0",
+        "timeLimit": 0,
+        "entry": false,
+        "hardness": 2,
+        "forceUpdate": false,
+        "score": [
+            20000,
+            40000,
+            60000
+        ]
+    }
+}

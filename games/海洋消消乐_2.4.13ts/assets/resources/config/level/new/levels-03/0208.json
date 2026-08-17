@@ -1,0 +1,307 @@
+{
+    "grid": [
+        {
+            "collect": null,
+            "map": [
+                [
+                    null,
+                    {
+                        "born": true
+                    },
+                    {
+                        "born": true
+                    },
+                    {
+                        "born": true
+                    },
+                    null,
+                    {
+                        "born": true
+                    },
+                    {
+                        "born": true
+                    },
+                    {
+                        "born": true
+                    },
+                    null
+                ],
+                [
+                    {
+                        "locks": 1,
+                        "leaves": 1
+                    },
+                    {},
+                    {},
+                    {},
+                    {
+                        "leaves": 3,
+                        "box_level": 3
+                    },
+                    {
+                        "type": 0
+                    },
+                    {},
+                    {},
+                    {
+                        "type": 6,
+                        "leaves": 1,
+                        "ice": 1
+                    }
+                ],
+                [
+                    {
+                        "locks": 1,
+                        "leaves": 1
+                    },
+                    {},
+                    {
+                        "type": 0
+                    },
+                    {},
+                    {
+                        "leaves": 3,
+                        "box_level": 3
+                    },
+                    {
+                        "type": 0
+                    },
+                    {},
+                    {},
+                    {
+                        "type": 6,
+                        "leaves": 1,
+                        "ice": 1
+                    }
+                ],
+                [
+                    {
+                        "locks": 1,
+                        "leaves": 1
+                    },
+                    {},
+                    {
+                        "type": 0
+                    },
+                    {},
+                    {
+                        "type": 100,
+                        "leaves": 3,
+                        "box_level": 3
+                    },
+                    {
+                        "type": 1
+                    },
+                    {},
+                    {},
+                    {
+                        "type": 6,
+                        "leaves": 1,
+                        "ice": 1
+                    }
+                ],
+                [
+                    {
+                        "type": 0,
+                        "locks": 1,
+                        "leaves": 1
+                    },
+                    {
+                        "type": 0
+                    },
+                    {},
+                    {
+                        "type": 0
+                    },
+                    {
+                        "leaves": 3,
+                        "box_level": 3
+                    },
+                    {
+                        "type": 0
+                    },
+                    {},
+                    {},
+                    {
+                        "type": 6,
+                        "leaves": 1,
+                        "ice": 1
+                    }
+                ],
+                [
+                    {
+                        "locks": 1,
+                        "leaves": 1
+                    },
+                    {},
+                    {},
+                    {},
+                    {
+                        "leaves": 3,
+                        "box_level": 3
+                    },
+                    {
+                        "type": 1
+                    },
+                    {},
+                    {},
+                    {
+                        "type": 6,
+                        "leaves": 1,
+                        "ice": 1
+                    }
+                ],
+                [
+                    {
+                        "locks": 1,
+                        "leaves": 1
+                    },
+                    {},
+                    {},
+                    {},
+                    {
+                        "type": 100,
+                        "leaves": 3,
+                        "box_level": 3
+                    },
+                    {
+                        "type": 1
+                    },
+                    {},
+                    {},
+                    {
+                        "type": 6,
+                        "leaves": 1,
+                        "ice": 1
+                    }
+                ],
+                [
+                    {
+                        "locks": 1,
+                        "leaves": 1
+                    },
+                    {},
+                    {},
+                    {},
+                    {
+                        "leaves": 3,
+                        "box_level": 3
+                    },
+                    {},
+                    {},
+                    {},
+                    {
+                        "type": 6,
+                        "leaves": 1,
+                        "ice": 1
+                    }
+                ],
+                [
+                    {
+                        "locks": 1,
+                        "leaves": 1
+                    },
+                    null,
+                    null,
+                    null,
+                    {
+                        "leaves": 3,
+                        "box_level": 3
+                    },
+                    null,
+                    null,
+                    null,
+                    {
+                        "type": 6,
+                        "leaves": 1,
+                        "ice": 1
+                    }
+                ]
+            ]
+        }
+    ],
+    "gnome": [
+        {
+            "index": 0,
+            "x": 0,
+            "y": 7,
+            "type": 1
+        },
+        {
+            "index": 0,
+            "x": 4,
+            "y": 7,
+            "type": 1
+        },
+        {
+            "index": 0,
+            "x": 8,
+            "y": 7,
+            "type": 1
+        },
+        {
+            "index": 0,
+            "x": 8,
+            "y": 3,
+            "type": 1
+        },
+        {
+            "index": 0,
+            "x": 4,
+            "y": 3,
+            "type": 1
+        },
+        {
+            "index": 0,
+            "x": 0,
+            "y": 3,
+            "type": 1
+        }
+    ],
+    "collect": [
+        {
+            "type": "gnome",
+            "count": 6
+        }
+    ],
+    "moveCnt": 42,
+    "chipset": [
+        {
+            "type": 0,
+            "percent": 100
+        },
+        {
+            "type": 1,
+            "percent": 100
+        },
+        {
+            "type": 2,
+            "percent": 100
+        },
+        {
+            "type": 3,
+            "percent": 58
+        },
+        {
+            "type": 4,
+            "percent": 58
+        }
+    ],
+    "levelInfo": {
+        "TO_LIGHTNING_ENOUGH": 11,
+        "background": 1,
+        "cellColorSeed": 0,
+        "levelReward": 100,
+        "movesLimit": 34,
+        "version": "0",
+        "timeLimit": 0,
+        "entry": false,
+        "hardness": 1,
+        "forceUpdate": false,
+        "score": [
+            15000,
+            20000,
+            40000
+        ]
+    }
+}

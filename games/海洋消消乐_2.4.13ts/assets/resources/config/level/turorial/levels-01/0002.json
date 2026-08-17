@@ -1,0 +1,56 @@
+{
+    "stages": [
+        {
+            "name": "first_move",
+            "moves": 0,
+            "bubble": {
+                "text": {
+                    "zh": "消除相邻的元素就可把 <color=#C3543C>箱子</color> 搬走"
+                },
+                "x": 0,
+                "y": -100
+            },
+            "hand": {
+                "x": 2,
+                "y": 1,
+                "type": "up"
+            },
+            "cells": [
+                {
+                    "x": 2,
+                    "y": 0,
+                    "removable": true
+                },
+                {
+                    "x": 1,
+                    "y": 1,
+                    "hint": "static"
+                },
+                {
+                    "x": 2,
+                    "y": 1,
+                    "removable": true
+                },
+                {
+                    "x": 3,
+                    "y": 1,
+                    "hint": "left",
+                    "hint": "static"
+                }
+            ]
+        },
+        {
+            "name": "chips_orders",
+            "moves": 1,
+            "bubble": {
+                "text": {
+                    "zh": "搬走所有 <color=#C3543C>箱子</color> 就可以通关了~"
+                },
+                "x": 0,
+                "y": 500
+            },
+            "closeByTouch": true,
+            "highLightGoal": true
+        }
+    ]
+}

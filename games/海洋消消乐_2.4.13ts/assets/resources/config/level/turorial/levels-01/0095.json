@@ -1,0 +1,42 @@
+{
+    "stages": [
+        {
+            "name": "first_move",
+            "moves": 0,
+            "bubble": {
+                "text": {
+                    "zh": "消除相邻的元素就可把 <color=#C3543C>土堆</color> 挖走"
+                },
+                "x": 0,
+                "y": -100
+            },
+            "hand": {
+                "x": 4,
+                "y": 2,
+                "type": "down"
+            },
+            "cells": [
+                {
+                    "x": 4,
+                    "y": 2,
+                    "removable": true
+                },
+                {
+                    "x": 3,
+                    "y": 3,
+                    "hint": "static"
+                },
+                {
+                    "x": 4,
+                    "y": 3,
+                    "removable": true
+                },
+                {
+                    "x": 5,
+                    "y": 3,
+                    "hint": "static"
+                }
+            ]
+        }
+    ]
+}

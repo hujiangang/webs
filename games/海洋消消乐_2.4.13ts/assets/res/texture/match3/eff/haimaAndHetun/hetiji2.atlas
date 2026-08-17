@@ -1,0 +1,62 @@
+
+hetiji2.png
+size: 266,558
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+haimaHaima
+  rotate: true
+  xy: 136, 144
+  size: 130, 123
+  orig: 131, 125
+  offset: 1, 1
+  index: -1
+haimaJianyu1
+  rotate: true
+  xy: 142, 2
+  size: 140, 119
+  orig: 140, 139
+  offset: 0, 10
+  index: -1
+hetun
+  rotate: true
+  xy: 2, 417
+  size: 139, 138
+  orig: 140, 139
+  offset: 0, 1
+  index: -1
+hetunHaima0
+  rotate: false
+  xy: 2, 276
+  size: 136, 139
+  orig: 140, 139
+  offset: 0, 0
+  index: -1
+hetunHaima3
+  rotate: false
+  xy: 140, 276
+  size: 124, 139
+  orig: 140, 139
+  offset: 8, 0
+  index: -1
+jianyu2
+  rotate: false
+  xy: 2, 137
+  size: 132, 137
+  orig: 140, 139
+  offset: 5, 2
+  index: -1
+zhangyu0
+  rotate: true
+  xy: 2, 6
+  size: 129, 138
+  orig: 140, 139
+  offset: 5, 1
+  index: -1
+zhangyuHaima
+  rotate: false
+  xy: 142, 417
+  size: 121, 139
+  orig: 140, 139
+  offset: 9, 0
+  index: -1

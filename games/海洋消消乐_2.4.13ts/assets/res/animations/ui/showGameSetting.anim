@@ -1,0 +1,141 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "showGameSetting",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.6166666666666667,
+  "sample": 60,
+  "speed": 1.5,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "menu_bg": {
+        "props": {
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "__type__": "cc.Vec2",
+                "x": 0,
+                "y": 0
+              }
+            },
+            {
+              "frame": 0.25,
+              "value": {
+                "__type__": "cc.Vec2",
+                "x": 1.1,
+                "y": 1.1
+              }
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": {
+                "__type__": "cc.Vec2",
+                "x": 1,
+                "y": 1
+              }
+            }
+          ]
+        }
+      },
+      "menu_bg/img_close": {
+        "props": {
+          "angle": [
+            {
+              "frame": 0.16666666666666666,
+              "value": -40
+            },
+            {
+              "frame": 0.3,
+              "value": 20
+            },
+            {
+              "frame": 0.4,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "menu_bg/img_yy_off": {
+        "props": {
+          "angle": [
+            {
+              "frame": 0.25,
+              "value": -40
+            },
+            {
+              "frame": 0.36666666666666664,
+              "value": 20
+            },
+            {
+              "frame": 0.45,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "menu_bg/img_yx_off": {
+        "props": {
+          "angle": [
+            {
+              "frame": 0.3333333333333333,
+              "value": -40
+            },
+            {
+              "frame": 0.45,
+              "value": 20
+            },
+            {
+              "frame": 0.5333333333333333,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "menu_bg/img_refresh": {
+        "props": {
+          "angle": [
+            {
+              "frame": 0.4166666666666667,
+              "value": -40
+            },
+            {
+              "frame": 0.5333333333333333,
+              "value": 20
+            },
+            {
+              "frame": 0.6166666666666667,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "btn_menu_up": {
+        "props": {
+          "scaleY": [
+            {
+              "frame": 0,
+              "value": 1
+            },
+            {
+              "frame": 0.25,
+              "value": -1
+            }
+          ],
+          "y": [
+            {
+              "frame": 0,
+              "value": 7.149
+            },
+            {
+              "frame": 0.25,
+              "value": 1
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": []
+}

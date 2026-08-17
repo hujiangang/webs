@@ -1,0 +1,351 @@
+{
+    "grid": [
+        {
+            "collect": null,
+            "map": [
+                [
+                    null,
+                    {
+                        "type": 7,
+                        "born": true
+                    },
+                    {
+                        "type": 7,
+                        "born": true
+                    },
+                    null,
+                    null,
+                    {
+                        "portal_idx": 1,
+                        "empty": true,
+                        "box_level": 1
+                    },
+                    {
+                        "portal_idx": 2
+                    },
+                    {
+                        "portal_idx": 4,
+                        "empty": true,
+                        "box_level": 1
+                    },
+                    {
+                        "portal_idx": 6
+                    }
+                ],
+                [
+                    {
+                        "type": 0,
+                        "born": true
+                    },
+                    {
+                        "empty": true,
+                        "box_level": 1
+                    },
+                    {
+                        "empty": true,
+                        "box_level": 1
+                    },
+                    {
+                        "born": true
+                    },
+                    null,
+                    {},
+                    {
+                        "empty": true,
+                        "box_level": 1
+                    },
+                    {},
+                    {
+                        "empty": true,
+                        "box_level": 1
+                    }
+                ],
+                [
+                    {
+                        "type": 0
+                    },
+                    {
+                        "empty": true,
+                        "box_level": 1
+                    },
+                    {
+                        "empty": true,
+                        "box_level": 1
+                    },
+                    {},
+                    null,
+                    {
+                        "empty": true,
+                        "box_level": 1
+                    },
+                    {},
+                    {
+                        "empty": true,
+                        "box_level": 1
+                    },
+                    {}
+                ],
+                [
+                    {},
+                    {
+                        "type": 100,
+                        "box_level": 1
+                    },
+                    {
+                        "empty": true,
+                        "box_level": 1
+                    },
+                    {
+                        "type": 0
+                    },
+                    null,
+                    {},
+                    {
+                        "empty": true,
+                        "box_level": 1
+                    },
+                    {},
+                    {
+                        "empty": true,
+                        "box_level": 1
+                    }
+                ],
+                [
+                    {
+                        "type": 0
+                    },
+                    {
+                        "empty": true,
+                        "box_level": 1
+                    },
+                    {
+                        "empty": true,
+                        "box_level": 1
+                    },
+                    {
+                        "type": 0
+                    },
+                    null,
+                    {
+                        "empty": true,
+                        "box_level": 1
+                    },
+                    {},
+                    {
+                        "empty": true,
+                        "box_level": 1
+                    },
+                    {}
+                ],
+                [
+                    {},
+                    {
+                        "empty": true,
+                        "box_level": 1
+                    },
+                    {
+                        "type": 102,
+                        "box_level": 1
+                    },
+                    {},
+                    null,
+                    {},
+                    {
+                        "empty": true,
+                        "box_level": 1
+                    },
+                    {},
+                    {
+                        "empty": true,
+                        "box_level": 1
+                    }
+                ],
+                [
+                    {},
+                    {
+                        "empty": true,
+                        "box_level": 1
+                    },
+                    {
+                        "empty": true,
+                        "box_level": 1
+                    },
+                    {
+                        "type": 0
+                    },
+                    null,
+                    {
+                        "empty": true,
+                        "box_level": 1
+                    },
+                    {},
+                    {
+                        "empty": true,
+                        "box_level": 1
+                    },
+                    {}
+                ],
+                [
+                    {
+                        "portal_idx": -1
+                    },
+                    {
+                        "empty": true,
+                        "box_level": 1
+                    },
+                    {
+                        "empty": true,
+                        "box_level": 1
+                    },
+                    {
+                        "portal_idx": -6
+                    },
+                    null,
+                    {},
+                    {
+                        "empty": true,
+                        "box_level": 1
+                    },
+                    {},
+                    {
+                        "empty": true,
+                        "box_level": 1
+                    }
+                ],
+                [
+                    null,
+                    {
+                        "portal_idx": -2,
+                        "empty": true,
+                        "box_level": 1
+                    },
+                    {
+                        "portal_idx": -4,
+                        "empty": true,
+                        "box_level": 1
+                    },
+                    null,
+                    null,
+                    {
+                        "exit": true,
+                        "empty": true,
+                        "box_level": 1
+                    },
+                    {
+                        "exit": true
+                    },
+                    {
+                        "exit": true,
+                        "empty": true,
+                        "box_level": 1
+                    },
+                    {
+                        "exit": true
+                    }
+                ]
+            ]
+        }
+    ],
+    "portal": [
+        {
+            "in": [
+                6,
+                6
+            ],
+            "out": [
+                0,
+                0
+            ]
+        },
+        {
+            "in": [
+                7,
+                7
+            ],
+            "out": [
+                1,
+                0
+            ]
+        },
+        {
+            "in": [
+                8,
+                7
+            ],
+            "out": [
+                2,
+                0
+            ]
+        },
+        {
+            "in": [
+                9,
+                7
+            ],
+            "out": [
+                3,
+                0
+            ]
+        },
+        {
+            "in": [
+                10,
+                6
+            ],
+            "out": [
+                4,
+                0
+            ]
+        }
+    ],
+    "collect": [
+        {
+            "type": 7,
+            "count": 2
+        }
+    ],
+    "carryChips": {
+        "max": 2,
+        "chance": 10
+    },
+    "moveCnt": 29,
+    "chipset": [
+        {
+            "type": 0,
+            "percent": 100
+        },
+        {
+            "type": 1,
+            "percent": 100
+        },
+        {
+            "type": 2,
+            "percent": 100
+        },
+        {
+            "type": 3,
+            "percent": 100
+        },
+        {
+            "type": 4,
+            "percent": 100
+        }
+    ],
+    "levelInfo": {
+        "TO_LIGHTNING_ENOUGH": 10,
+        "background": 1,
+        "cellColorSeed": 0,
+        "levelReward": 50,
+        "movesLimit": 26,
+        "version": "0",
+        "timeLimit": 0,
+        "entry": false,
+        "hardness": false,
+        "forceUpdate": false,
+        "score": [
+            15000,
+            20000,
+            40000
+        ]
+    }
+}

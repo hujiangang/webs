@@ -1,0 +1,355 @@
+{
+    "grid": [
+        {
+            "collect": null,
+            "map": [
+                [
+                    {
+                        "born": true
+                    },
+                    {
+                        "born": true
+                    },
+                    {
+                        "born": true
+                    },
+                    {
+                        "born": true
+                    },
+                    {
+                        "born": true
+                    },
+                    {
+                        "born": true
+                    },
+                    {
+                        "born": true
+                    },
+                    {
+                        "born": true
+                    },
+                    {
+                        "born": true
+                    }
+                ],
+                [
+                    -1,
+                    {
+                        "water": true
+                    },
+                    -1,
+                    -1,
+                    {
+                        "water": true
+                    },
+                    -1,
+                    -1,
+                    {
+                        "water": true
+                    },
+                    -1
+                ],
+                [
+                    -1,
+                    {
+                        "water": true
+                    },
+                    -1,
+                    -1,
+                    {
+                        "water": true
+                    },
+                    -1,
+                    -1,
+                    {
+                        "water": true
+                    },
+                    -1
+                ],
+                [
+                    {
+                        "leaves": 2
+                    },
+                    {
+                        "leaves": 2
+                    },
+                    {
+                        "leaves": 2
+                    },
+                    {
+                        "leaves": 2
+                    },
+                    {
+                        "leaves": 2
+                    },
+                    {
+                        "leaves": 2
+                    },
+                    {
+                        "leaves": 2
+                    },
+                    {
+                        "leaves": 2
+                    },
+                    {
+                        "leaves": 2
+                    }
+                ],
+                [
+                    {
+                        "leaves": 2,
+                        "ice": 2
+                    },
+                    {
+                        "leaves": 2
+                    },
+                    {
+                        "leaves": 2
+                    },
+                    {
+                        "leaves": 2,
+                        "ice": 2
+                    },
+                    {
+                        "leaves": 2,
+                        "ice": 2
+                    },
+                    {
+                        "leaves": 2,
+                        "ice": 2
+                    },
+                    {
+                        "leaves": 2
+                    },
+                    {
+                        "leaves": 2
+                    },
+                    {
+                        "leaves": 2,
+                        "ice": 2
+                    }
+                ],
+                [
+                    {
+                        "coral": 1,
+                        "box_level": 2
+                    },
+                    {
+                        "coral": 1,
+                        "box_level": 2
+                    },
+                    {
+                        "coral": 1,
+                        "box_level": 2
+                    },
+                    {
+                        "coral": 1,
+                        "box_level": 2
+                    },
+                    {
+                        "coral": 1,
+                        "box_level": 2
+                    },
+                    {
+                        "coral": 1,
+                        "box_level": 2
+                    },
+                    {
+                        "coral": 1,
+                        "box_level": 2
+                    },
+                    {
+                        "coral": 1,
+                        "box_level": 2
+                    },
+                    {
+                        "coral": 1,
+                        "box_level": 2
+                    }
+                ],
+                [
+                    {
+                        "coral": 1,
+                        "box_level": 2
+                    },
+                    {
+                        "flowerPot": true,
+                        "flowers": 3
+                    },
+                    {
+                        "coral": 1,
+                        "box_level": 2
+                    },
+                    {
+                        "coral": 1,
+                        "box_level": 2
+                    },
+                    {
+                        "flowerPot": true,
+                        "flowers": 3
+                    },
+                    {
+                        "coral": 1,
+                        "box_level": 2
+                    },
+                    {
+                        "coral": 1,
+                        "box_level": 2
+                    },
+                    {
+                        "flowerPot": true,
+                        "flowers": 3
+                    },
+                    {
+                        "coral": 1,
+                        "box_level": 2
+                    }
+                ],
+                [
+                    {
+                        "coral": 1,
+                        "box_level": 2
+                    },
+                    {
+                        "coral": 1,
+                        "box_level": 2
+                    },
+                    {
+                        "coral": 1,
+                        "box_level": 2
+                    },
+                    {
+                        "coral": 1,
+                        "box_level": 2
+                    },
+                    {
+                        "coral": 1,
+                        "box_level": 2
+                    },
+                    {
+                        "coral": 1,
+                        "box_level": 2
+                    },
+                    {
+                        "coral": 1,
+                        "box_level": 2
+                    },
+                    {
+                        "coral": 1,
+                        "box_level": 2
+                    },
+                    {
+                        "coral": 1,
+                        "box_level": 2
+                    }
+                ],
+                [
+                    {
+                        "box_level": 2,
+                        "leaves": 2
+                    },
+                    {
+                        "box_level": 2,
+                        "leaves": 2
+                    },
+                    {
+                        "box_level": 2,
+                        "leaves": 2
+                    },
+                    {
+                        "box_level": 2,
+                        "leaves": 2
+                    },
+                    {
+                        "box_level": 2,
+                        "leaves": 2
+                    },
+                    {
+                        "box_level": 2,
+                        "leaves": 2
+                    },
+                    {
+                        "box_level": 2,
+                        "leaves": 2
+                    },
+                    {
+                        "box_level": 2,
+                        "leaves": 2
+                    },
+                    {
+                        "box_level": 2,
+                        "leaves": 2
+                    }
+                ]
+            ]
+        }
+    ],
+    "gnome": [
+        {
+            "x": 7,
+            "y": 8,
+            "type": 0
+        },
+        {
+            "x": 0,
+            "y": 8,
+            "type": 0
+        },
+        {
+            "x": 5,
+            "y": 3,
+            "type": 2
+        },
+        {
+            "x": 0,
+            "y": 3,
+            "type": 2
+        }
+    ],
+    "collect": [
+        {
+            "type": "gnome",
+            "count": 4
+        },
+        {
+            "type": "5",
+            "count": 30
+        }
+    ],
+    "moveCnt": 33,
+    "chipset": [
+        {
+            "type": 0,
+            "percent": 65
+        },
+        {
+            "type": 1,
+            "percent": 65
+        },
+        {
+            "type": 2,
+            "percent": 65
+        },
+        {
+            "type": 3,
+            "percent": 100
+        }
+    ],
+    "levelInfo": {
+        "TO_LIGHTNING_ENOUGH": 15,
+        "background": 1,
+        "cellColorSeed": 0,
+        "levelReward": 50,
+        "movesLimit": 33,
+        "version": "0",
+        "timeLimit": 0,
+        "entry": false,
+        "hardness": false,
+        "forceUpdate": false,
+        "score": [
+            20000,
+            30000,
+            50000
+        ]
+    }
+}

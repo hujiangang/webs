@@ -1,0 +1,220 @@
+{
+    "grid": [
+        {
+            "collect": null,
+            "map": [
+                [
+                    {
+                        "empty": true
+                    },
+                    {
+                        "empty": true
+                    },
+                    null,
+                    {
+                        "born": true
+                    },
+                    {
+                        "born": true
+                    },
+                    {
+                        "born": true
+                    },
+                    {
+                        "born": true
+                    },
+                    {
+                        "box_level": 2,
+                        "empty": true,
+                        "born": true
+                    },
+                    {
+                        "counter_level": 2,
+                        "born": true
+                    }
+                ],
+                [
+                    {
+                        "empty": true
+                    },
+                    {
+                        "empty": true
+                    },
+                    null,
+                    {},
+                    {},
+                    {},
+                    {},
+                    {
+                        "box_level": 2,
+                        "empty": true
+                    },
+                    null
+                ],
+                [
+                    {
+                        "empty": true
+                    },
+                    {
+                        "empty": true
+                    },
+                    null,
+                    {},
+                    {},
+                    {},
+                    {},
+                    {
+                        "box_level": 2,
+                        "empty": true
+                    },
+                    {
+                        "counter_level": 2
+                    }
+                ],
+                [
+                    null,
+                    null,
+                    null,
+                    {},
+                    {},
+                    {},
+                    {},
+                    {
+                        "box_level": 2,
+                        "empty": true
+                    },
+                    null
+                ],
+                [
+                    null,
+                    null,
+                    null,
+                    {},
+                    {},
+                    {},
+                    {},
+                    {
+                        "box_level": 2,
+                        "empty": true
+                    },
+                    {
+                        "counter_level": 2
+                    }
+                ],
+                [
+                    null,
+                    null,
+                    null,
+                    {},
+                    {},
+                    {},
+                    {},
+                    {
+                        "box_level": 2,
+                        "empty": true
+                    },
+                    null
+                ],
+                [
+                    null,
+                    null,
+                    null,
+                    {},
+                    {},
+                    {},
+                    {},
+                    {
+                        "box_level": 2,
+                        "empty": true
+                    },
+                    {
+                        "counter_level": 2
+                    }
+                ],
+                [
+                    null,
+                    null,
+                    null,
+                    {},
+                    {},
+                    {},
+                    {},
+                    {
+                        "box_level": 2,
+                        "empty": true
+                    },
+                    null
+                ],
+                [
+                    null,
+                    null,
+                    null,
+                    {},
+                    {},
+                    {},
+                    {},
+                    {
+                        "box_level": 2,
+                        "empty": true
+                    },
+                    {
+                        "counter_level": 2
+                    }
+                ]
+            ]
+        }
+    ],
+    "collect": [
+        {
+            "type": "8",
+            "count": 11
+        }
+    ],
+    "moveCnt": 33,
+    "chipset": [
+        {
+            "type": 0,
+            "percent": 100
+        },
+        {
+            "type": 1,
+            "percent": 100
+        },
+        {
+            "type": 2,
+            "percent": 100
+        },
+        {
+            "type": 3,
+            "percent": 100
+        },
+        {
+            "type": 6,
+            "percent": 100
+        }
+    ],
+    "levelInfo": {
+        "TO_LIGHTNING_ENOUGH": 17,
+        "background": 3,
+        "cellColorSeed": 0,
+        "levelReward": 50,
+        "movesLimit": 20,
+        "version": "0",
+        "timeLimit": 0,
+        "entry": false,
+        "hardness": false,
+        "forceUpdate": false,
+        "score": [
+            20000,
+            40000,
+            60000
+        ]
+    },
+    "monkeyTree": [
+        {
+            "index": 0,
+            "x": 0,
+            "y": 2
+        }
+    ]
+}

@@ -1,0 +1,41 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "awesome",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.5,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "comps": {
+      "cc.Sprite": {
+        "spriteFrame": [
+          {
+            "frame": 0,
+            "value": {
+              "__uuid__": "cd504a99-b2d3-496f-8db1-ccd0f4e64373"
+            }
+          }
+        ]
+      }
+    },
+    "props": {
+      "y": [
+        {
+          "frame": 0,
+          "value": 315.7770080566406
+        },
+        {
+          "frame": 0.25,
+          "value": 360.7770080566406
+        },
+        {
+          "frame": 0.5,
+          "value": 323.7770080566406
+        }
+      ]
+    }
+  },
+  "events": []
+}

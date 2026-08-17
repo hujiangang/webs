@@ -1,0 +1,278 @@
+{
+    "grid": [
+        {
+            "collect": null,
+            "map": [
+                [
+                    {
+                        "ground": 2,
+                        "gem": 1,
+                        "born": true
+                    },
+                    {
+                        "born": true
+                    },
+                    {
+                        "born": true
+                    },
+                    {
+                        "born": true,
+                        "box_level": 2
+                    },
+                    {
+                        "ground": 2,
+                        "gem": 1,
+                        "born": true
+                    },
+                    {
+                        "born": true,
+                        "box_level": 2
+                    },
+                    {
+                        "born": true
+                    },
+                    {
+                        "born": true
+                    },
+                    {
+                        "ground": 2,
+                        "gem": 1,
+                        "born": true
+                    }
+                ],
+                [
+                    {
+                        "ground": 2,
+                        "gem": 1
+                    },
+                    {},
+                    {},
+                    {
+                        "box_level": 2
+                    },
+                    {
+                        "ground": 2,
+                        "gem": 1
+                    },
+                    {
+                        "box_level": 2
+                    },
+                    {},
+                    {},
+                    {
+                        "ground": 2,
+                        "gem": 1
+                    }
+                ],
+                [
+                    {
+                        "flowers": 3
+                    },
+                    {},
+                    {},
+                    {
+                        "box_level": 2
+                    },
+                    {
+                        "flowers": 3
+                    },
+                    {
+                        "box_level": 2
+                    },
+                    {},
+                    {},
+                    {
+                        "flowers": 3
+                    }
+                ],
+                [
+                    {
+                        "ground": 2,
+                        "gem": 1
+                    },
+                    {},
+                    {},
+                    {
+                        "box_level": 2
+                    },
+                    {
+                        "ground": 2,
+                        "gem": 1
+                    },
+                    {
+                        "box_level": 2
+                    },
+                    {},
+                    {},
+                    {
+                        "ground": 2,
+                        "gem": 1
+                    }
+                ],
+                [
+                    {
+                        "ground": 2,
+                        "gem": 1
+                    },
+                    {},
+                    {},
+                    {
+                        "box_level": 2
+                    },
+                    {
+                        "ground": 2,
+                        "gem": 1
+                    },
+                    {
+                        "box_level": 2
+                    },
+                    {},
+                    {},
+                    {
+                        "ground": 2,
+                        "gem": 1
+                    }
+                ],
+                [
+                    {
+                        "ground": 2,
+                        "gem": 1
+                    },
+                    {},
+                    {},
+                    {
+                        "box_level": 2
+                    },
+                    {
+                        "ground": 2,
+                        "gem": 1
+                    },
+                    {
+                        "box_level": 2
+                    },
+                    {},
+                    {},
+                    {
+                        "ground": 2,
+                        "gem": 1
+                    }
+                ],
+                [
+                    {
+                        "flowers": 3
+                    },
+                    {},
+                    {},
+                    {
+                        "box_level": 2
+                    },
+                    {
+                        "flowers": 3
+                    },
+                    {
+                        "box_level": 2
+                    },
+                    {},
+                    {},
+                    {
+                        "flowers": 3
+                    }
+                ],
+                [
+                    {
+                        "ground": 2,
+                        "gem": 1
+                    },
+                    {},
+                    {},
+                    {
+                        "box_level": 2
+                    },
+                    {
+                        "ground": 2,
+                        "gem": 1
+                    },
+                    {
+                        "box_level": 2
+                    },
+                    {},
+                    {},
+                    {
+                        "ground": 2,
+                        "gem": 1
+                    }
+                ],
+                [
+                    {
+                        "ground": 2,
+                        "gem": 1
+                    },
+                    {},
+                    {},
+                    {
+                        "box_level": 2
+                    },
+                    {
+                        "ground": 2,
+                        "gem": 1
+                    },
+                    {
+                        "box_level": 2
+                    },
+                    {},
+                    {},
+                    {
+                        "ground": 2,
+                        "gem": 1
+                    }
+                ]
+            ]
+        }
+    ],
+    "collect": [
+        {
+            "type": "gem",
+            "count": 21
+        },
+        {
+            "type": "5",
+            "count": 20
+        }
+    ],
+    "moveCnt": 31,
+    "chipset": [
+        {
+            "type": 0,
+            "percent": 100
+        },
+        {
+            "type": 1,
+            "percent": 100
+        },
+        {
+            "type": 2,
+            "percent": 100
+        },
+        {
+            "type": 3,
+            "percent": 100
+        }
+    ],
+    "levelInfo": {
+        "TO_LIGHTNING_ENOUGH": 13,
+        "background": 1,
+        "cellColorSeed": 0,
+        "levelReward": 50,
+        "movesLimit": 31,
+        "version": "0",
+        "timeLimit": 0,
+        "entry": false,
+        "hardness": false,
+        "forceUpdate": false,
+        "score": [
+            20000,
+            40000,
+            60000
+        ]
+    }
+}

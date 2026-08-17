@@ -1,0 +1,323 @@
+{
+    "grid": [
+        {
+            "collect": null,
+            "map": [
+                [
+                    {
+                        "born": true
+                    },
+                    {
+                        "born": true,
+                        "type": 0
+                    },
+                    {
+                        "born": true,
+                        "type": 6
+                    },
+                    {
+                        "born": true,
+                        "type": 6
+                    },
+                    {
+                        "born": true,
+                        "type": 6
+                    },
+                    {
+                        "born": true,
+                        "type": 6
+                    },
+                    {
+                        "born": true,
+                        "type": 6
+                    },
+                    {
+                        "born": true,
+                        "type": 1
+                    },
+                    {
+                        "born": true
+                    }
+                ],
+                [
+                    {},
+                    {
+                        "type": 0
+                    },
+                    {
+                        "type": 6
+                    },
+                    {
+                        "type": 6
+                    },
+                    {
+                        "type": 6
+                    },
+                    {
+                        "type": 6
+                    },
+                    {
+                        "type": 6
+                    },
+                    {
+                        "type": 1
+                    },
+                    {}
+                ],
+                [
+                    {
+                        "type": 0
+                    },
+                    {},
+                    {
+                        "type": 6
+                    },
+                    {
+                        "water": true
+                    },
+                    {
+                        "type": 6
+                    },
+                    {
+                        "water": true
+                    },
+                    {
+                        "type": 6
+                    },
+                    {},
+                    {
+                        "type": 1
+                    }
+                ],
+                [
+                    null,
+                    {
+                        "type": 0
+                    },
+                    {
+                        "empty": true,
+                        "box_level": 2
+                    },
+                    {
+                        "type": 6
+                    },
+                    {
+                        "water": true
+                    },
+                    {
+                        "type": 6
+                    },
+                    {
+                        "empty": true,
+                        "box_level": 2,
+                        "type": 6
+                    },
+                    {
+                        "type": 1
+                    },
+                    null
+                ],
+                [
+                    null,
+                    {
+                        "type": 0
+                    },
+                    {
+                        "empty": true,
+                        "box_level": 2
+                    },
+                    {
+                        "water": true
+                    },
+                    {
+                        "type": 6
+                    },
+                    {
+                        "water": true
+                    },
+                    {
+                        "empty": true,
+                        "box_level": 2
+                    },
+                    {
+                        "type": 1
+                    },
+                    null
+                ],
+                [
+                    null,
+                    {
+                        "empty": true,
+                        "box_level": 1
+                    },
+                    {
+                        "empty": true,
+                        "box_level": 2
+                    },
+                    {
+                        "box_level": 2,
+                        "empty": true
+                    },
+                    {
+                        "water": true
+                    },
+                    {
+                        "box_level": 2,
+                        "empty": true
+                    },
+                    {
+                        "empty": true,
+                        "box_level": 2
+                    },
+                    {
+                        "empty": true,
+                        "box_level": 1
+                    },
+                    null
+                ],
+                [
+                    {
+                        "empty": true
+                    },
+                    {
+                        "empty": true
+                    },
+                    {
+                        "empty": true
+                    },
+                    {
+                        "water": true
+                    },
+                    {
+                        "born": true,
+                        "empty": true,
+                        "box_level": 1
+                    },
+                    {
+                        "water": true
+                    },
+                    {
+                        "empty": true
+                    },
+                    {
+                        "empty": true
+                    },
+                    {
+                        "empty": true
+                    }
+                ],
+                [
+                    {
+                        "empty": true
+                    },
+                    {
+                        "empty": true
+                    },
+                    {
+                        "empty": true
+                    },
+                    {
+                        "empty": true
+                    },
+                    {
+                        "empty": true
+                    },
+                    {
+                        "empty": true
+                    },
+                    {
+                        "empty": true
+                    },
+                    {
+                        "empty": true
+                    },
+                    {
+                        "empty": true
+                    }
+                ],
+                [
+                    {
+                        "empty": true
+                    },
+                    {
+                        "empty": true
+                    },
+                    {
+                        "empty": true
+                    },
+                    {
+                        "empty": true
+                    },
+                    {
+                        "empty": true
+                    },
+                    {
+                        "empty": true
+                    },
+                    {
+                        "empty": true
+                    },
+                    {
+                        "type": 103
+                    },
+                    {
+                        "type": 104
+                    }
+                ]
+            ]
+        }
+    ],
+    "collect": [
+        {
+            "type": "8",
+            "count": 8
+        }
+    ],
+    "moveCnt": 34,
+    "chipset": [
+        {
+            "type": 0,
+            "percent": 100
+        },
+        {
+            "type": 1,
+            "percent": 100
+        },
+        {
+            "type": 2,
+            "percent": 100
+        },
+        {
+            "type": 3,
+            "percent": 100
+        },
+        {
+            "type": 6,
+            "percent": 100
+        }
+    ],
+    "levelInfo": {
+        "TO_LIGHTNING_ENOUGH": 15,
+        "background": 3,
+        "cellColorSeed": 0,
+        "levelReward": 100,
+        "movesLimit": 34,
+        "version": "0",
+        "timeLimit": 0,
+        "entry": false,
+        "hardness": 2,
+        "forceUpdate": false,
+        "score": [
+            10000,
+            20000,
+            40000
+        ]
+    },
+    "monkeyTree": [
+        {
+            "index": 0,
+            "x": 7,
+            "y": 8
+        }
+    ]
+}

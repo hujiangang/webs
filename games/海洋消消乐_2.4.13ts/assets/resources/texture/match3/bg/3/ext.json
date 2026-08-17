@@ -1,0 +1,53 @@
+{
+    "top": 0,
+    "texture": [
+        {
+            "path": "sky",
+            "parent": "bbg"
+        }
+    ],
+    "sub": [
+        {
+            "path": "role",
+            "pos": [
+                36,
+                -10
+            ],
+            "parent": "ui/top/Auto_record/collectNode/role",
+            "type": "sprite"
+        },
+        {
+            "path": "sea",
+            "left": 0,
+            "right": 0,
+            "pos": [
+                0,
+                10
+            ],
+            "parent": "bbg",
+            "type": "sprite"
+        },
+        {
+            "path": "shu",
+            "left": 12,
+            "top": 700,
+            "z": 1,
+            "parent": "bbg",
+            "type": "prefab"
+        },
+        {
+            "path": "bolang",
+            "top": 692,
+            "parent": "bg",
+            "type": "prefab"
+        },
+        {
+            "path": "yizi",
+            "right": -6,
+            "top": 680,
+            "z": 1,
+            "parent": "bg",
+            "type": "prefab"
+        }
+    ]
+}

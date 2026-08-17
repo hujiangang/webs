@@ -1,0 +1,55 @@
+
+hengsudan_fashe.png
+size: 318,291
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+dd
+  rotate: false
+  xy: 132, 18
+  size: 77, 77
+  orig: 89, 90
+  offset: 6, 6
+  index: -1
+lizi02
+  rotate: false
+  xy: 260, 238
+  size: 46, 51
+  orig: 64, 64
+  offset: 8, 6
+  index: -1
+shuimu/shuimu-01
+  rotate: true
+  xy: 211, 43
+  size: 58, 105
+  orig: 58, 105
+  offset: 0, 0
+  index: -1
+shuipao01
+  rotate: false
+  xy: 2, 2
+  size: 128, 93
+  orig: 128, 93
+  offset: 0, 0
+  index: -1
+shuiwen
+  rotate: false
+  xy: 2, 97
+  size: 181, 132
+  orig: 200, 148
+  offset: 2, 4
+  index: -1
+shuiwen2
+  rotate: true
+  xy: 185, 103
+  size: 126, 125
+  orig: 128, 128
+  offset: 1, 2
+  index: -1
+tuowei4
+  rotate: false
+  xy: 2, 231
+  size: 256, 58
+  orig: 256, 68
+  offset: 0, 6
+  index: -1

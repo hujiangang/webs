@@ -1,0 +1,339 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "selectShowTarget",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 1.1666666666666667,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "props": {
+      "scale": [
+        {
+          "frame": 0,
+          "value": {
+            "__type__": "cc.Vec2",
+            "x": 0.344,
+            "y": 0.072
+          }
+        },
+        {
+          "frame": 0.16666666666666666,
+          "value": {
+            "__type__": "cc.Vec2",
+            "x": 1,
+            "y": 1.2
+          }
+        },
+        {
+          "frame": 0.3333333333333333,
+          "value": {
+            "__type__": "cc.Vec2",
+            "x": 1,
+            "y": 1
+          }
+        }
+      ]
+    },
+    "paths": {
+      "panel_gq_2/content/icon_lock": {
+        "props": {
+          "scale": [
+            {
+              "frame": 0.16666666666666666,
+              "value": {
+                "__type__": "cc.Vec2",
+                "x": 0,
+                "y": 0
+              }
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": {
+                "__type__": "cc.Vec2",
+                "x": 1,
+                "y": 1
+              }
+            }
+          ]
+        }
+      },
+      "panel_gq_2/content/icon_lock1": {
+        "props": {
+          "scale": [
+            {
+              "frame": 0.25,
+              "value": {
+                "__type__": "cc.Vec2",
+                "x": 0,
+                "y": 0
+              }
+            },
+            {
+              "frame": 0.4166666666666667,
+              "value": {
+                "__type__": "cc.Vec2",
+                "x": 1,
+                "y": 1.3
+              }
+            },
+            {
+              "frame": 0.6666666666666666,
+              "value": {
+                "__type__": "cc.Vec2",
+                "x": 1,
+                "y": 0.7
+              }
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": {
+                "__type__": "cc.Vec2",
+                "x": 1,
+                "y": 1
+              }
+            }
+          ],
+          "position": [
+            {
+              "frame": 0.25,
+              "value": [
+                -191.05,
+                -16,
+                0
+              ]
+            },
+            {
+              "frame": 0.4166666666666667,
+              "value": [
+                -191.05,
+                20.263,
+                0
+              ]
+            },
+            {
+              "frame": 0.6666666666666666,
+              "value": [
+                -191.05,
+                -16,
+                0
+              ]
+            }
+          ]
+        }
+      },
+      "panel_gq_2/content/icon_lock2": {
+        "props": {
+          "scale": [
+            {
+              "frame": 0.4166666666666667,
+              "value": {
+                "__type__": "cc.Vec2",
+                "x": 0,
+                "y": 0
+              }
+            },
+            {
+              "frame": 0.5833333333333334,
+              "value": {
+                "__type__": "cc.Vec2",
+                "x": 1,
+                "y": 1.3
+              }
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": {
+                "__type__": "cc.Vec2",
+                "x": 1,
+                "y": 0.7
+              }
+            },
+            {
+              "frame": 1,
+              "value": {
+                "__type__": "cc.Vec2",
+                "x": 1,
+                "y": 1
+              }
+            }
+          ],
+          "position": [
+            {
+              "frame": 0.4166666666666667,
+              "value": [
+                -191.05,
+                -16,
+                0
+              ]
+            },
+            {
+              "frame": 0.5833333333333334,
+              "value": [
+                -191.05,
+                20.263,
+                0
+              ]
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": [
+                -191.05,
+                -16,
+                0
+              ]
+            }
+          ]
+        }
+      },
+      "panel_gq_2/content/icon_lock3": {
+        "props": {
+          "scale": [
+            {
+              "frame": 0.5833333333333334,
+              "value": {
+                "__type__": "cc.Vec2",
+                "x": 0,
+                "y": 0
+              }
+            },
+            {
+              "frame": 0.75,
+              "value": {
+                "__type__": "cc.Vec2",
+                "x": 1,
+                "y": 1.3
+              }
+            },
+            {
+              "frame": 1,
+              "value": {
+                "__type__": "cc.Vec2",
+                "x": 1,
+                "y": 0.7
+              }
+            },
+            {
+              "frame": 1.1666666666666667,
+              "value": {
+                "__type__": "cc.Vec2",
+                "x": 1,
+                "y": 1
+              }
+            }
+          ],
+          "position": [
+            {
+              "frame": 0.5833333333333334,
+              "value": [
+                -191.05,
+                -16,
+                0
+              ]
+            },
+            {
+              "frame": 0.75,
+              "value": [
+                -191.05,
+                20.263,
+                0
+              ]
+            },
+            {
+              "frame": 1,
+              "value": [
+                -191.05,
+                -16,
+                0
+              ]
+            }
+          ]
+        }
+      },
+      "yz_1": {
+        "props": {
+          "angle": [
+            {
+              "frame": 0.16666666666666666,
+              "value": -16
+            },
+            {
+              "frame": 0.4166666666666667,
+              "value": 10
+            },
+            {
+              "frame": 0.7,
+              "value": -5
+            },
+            {
+              "frame": 1,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "yz_2": {
+        "props": {
+          "angle": [
+            {
+              "frame": 0.16666666666666666,
+              "value": 15
+            },
+            {
+              "frame": 0.45,
+              "value": -10
+            },
+            {
+              "frame": 0.75,
+              "value": 5
+            },
+            {
+              "frame": 1,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "btn_green": {
+        "props": {
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "__type__": "cc.Vec2",
+                "x": 0,
+                "y": 0
+              }
+            },
+            {
+              "frame": 0.16666666666666666,
+              "value": {
+                "__type__": "cc.Vec2",
+                "x": 1.2,
+                "y": 1.2
+              }
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": {
+                "__type__": "cc.Vec2",
+                "x": 0.8,
+                "y": 0.8
+              }
+            },
+            {
+              "frame": 0.5,
+              "value": {
+                "__type__": "cc.Vec2",
+                "x": 1,
+                "y": 1
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": []
+}

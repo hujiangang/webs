@@ -1,0 +1,273 @@
+{
+    "grid": [
+        {
+            "collect": null,
+            "map": [
+                [
+                    {
+                        "born": true,
+                        "type": 6
+                    },
+                    null,
+                    {
+                        "born": true,
+                        "type": 6
+                    },
+                    null,
+                    {
+                        "portal_idx": 1
+                    },
+                    {
+                        "portal_idx": 4
+                    },
+                    {
+                        "portal_idx": 2
+                    },
+                    {
+                        "portal_idx": 6
+                    }
+                ],
+                [
+                    {
+                        "type": 6
+                    },
+                    null,
+                    {
+                        "type": 6
+                    },
+                    null,
+                    {},
+                    {},
+                    {},
+                    {}
+                ],
+                [
+                    {
+                        "portal_idx": -1,
+                        "type": 6
+                    },
+                    null,
+                    {
+                        "portal_idx": -2,
+                        "type": 6
+                    },
+                    null,
+                    {},
+                    {},
+                    {},
+                    {}
+                ],
+                [
+                    null,
+                    null,
+                    null,
+                    null,
+                    {},
+                    {},
+                    {},
+                    {}
+                ],
+                [
+                    null,
+                    null,
+                    null,
+                    null,
+                    {},
+                    {},
+                    {},
+                    {}
+                ],
+                [
+                    {
+                        "type": 7,
+                        "born": true
+                    },
+                    null,
+                    {
+                        "type": 7,
+                        "born": true
+                    },
+                    null,
+                    {},
+                    {},
+                    {},
+                    {}
+                ],
+                [
+                    {},
+                    null,
+                    {},
+                    null,
+                    {
+                        "stone": 2
+                    },
+                    {},
+                    {},
+                    {
+                        "stone": 2
+                    }
+                ],
+                [
+                    {},
+                    null,
+                    {},
+                    null,
+                    {
+                        "stone": 2
+                    },
+                    {
+                        "stone": 2
+                    },
+                    {
+                        "stone": 2
+                    },
+                    {
+                        "stone": 2
+                    }
+                ],
+                [
+                    {
+                        "portal_idx": -4,
+                        "type": 3,
+                        "locks": 1
+                    },
+                    null,
+                    {
+                        "portal_idx": -6,
+                        "type": 3,
+                        "locks": 1
+                    },
+                    null,
+                    {
+                        "exit": true,
+                        "stone": 2
+                    },
+                    {
+                        "exit": true,
+                        "stone": 2
+                    },
+                    {
+                        "exit": true,
+                        "stone": 2
+                    },
+                    {
+                        "exit": true,
+                        "stone": 2
+                    }
+                ]
+            ]
+        }
+    ],
+    "portal": [
+        {
+            "in": [
+                0,
+                2
+            ],
+            "out": [
+                6,
+                0
+            ]
+        },
+        {
+            "in": [
+                2,
+                2
+            ],
+            "out": [
+                11,
+                0
+            ]
+        },
+        {
+            "in": [
+                4,
+                2
+            ],
+            "out": [
+                7,
+                0
+            ]
+        },
+        {
+            "in": [
+                0,
+                8
+            ],
+            "out": [
+                8,
+                0
+            ]
+        },
+        {
+            "in": [
+                2,
+                8
+            ],
+            "out": [
+                9,
+                0
+            ]
+        },
+        {
+            "in": [
+                4,
+                8
+            ],
+            "out": [
+                10,
+                0
+            ]
+        }
+    ],
+    "collect": [
+        {
+            "type": 7,
+            "count": 2
+        }
+    ],
+    "carryChips": {
+        "max": 1,
+        "chance": 50
+    },
+    "trashChips": {
+        "max": 5,
+        "chance": 30
+    },
+    "moveCnt": 25,
+    "chipset": [
+        {
+            "type": 0,
+            "percent": 100
+        },
+        {
+            "type": 1,
+            "percent": 100
+        },
+        {
+            "type": 2,
+            "percent": 100
+        },
+        {
+            "type": 3,
+            "percent": 100
+        }
+    ],
+    "levelInfo": {
+        "TO_LIGHTNING_ENOUGH": 18,
+        "background": 1,
+        "cellColorSeed": 0,
+        "levelReward": 50,
+        "movesLimit": 25,
+        "version": "0",
+        "timeLimit": 0,
+        "entry": false,
+        "hardness": false,
+        "forceUpdate": false,
+        "score": [
+            10000,
+            25000,
+            40000
+        ]
+    }
+}

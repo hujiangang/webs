@@ -1,0 +1,390 @@
+{
+    "grid": [
+        {
+            "collect": null,
+            "map": [
+                [
+                    null,
+                    {
+                        "born": true,
+                        "leaves": 2
+                    },
+                    {
+                        "born": true,
+                        "leaves": 2
+                    },
+                    {
+                        "type": 2,
+                        "born": true,
+                        "leaves": 2
+                    },
+                    {
+                        "type": 1,
+                        "born": true,
+                        "leaves": 2
+                    },
+                    {
+                        "born": true,
+                        "leaves": 2
+                    },
+                    {
+                        "born": true,
+                        "leaves": 2
+                    },
+                    null
+                ],
+                [
+                    {
+                        "leaves": 2
+                    },
+                    {
+                        "leaves": 2
+                    },
+                    {
+                        "leaves": 2
+                    },
+                    {
+                        "type": 2,
+                        "leaves": 2
+                    },
+                    {
+                        "type": 1,
+                        "leaves": 2
+                    },
+                    {
+                        "leaves": 2
+                    },
+                    {
+                        "leaves": 2
+                    },
+                    {
+                        "leaves": 2
+                    }
+                ],
+                [
+                    {
+                        "box_level": 2,
+                        "leaves": 2
+                    },
+                    {
+                        "box_level": 1,
+                        "leaves": 2
+                    },
+                    {
+                        "leaves": 2
+                    },
+                    {
+                        "type": 1,
+                        "leaves": 2
+                    },
+                    {
+                        "type": 2,
+                        "leaves": 2
+                    },
+                    {
+                        "leaves": 2
+                    },
+                    {
+                        "box_level": 1,
+                        "leaves": 2
+                    },
+                    {
+                        "box_level": 2,
+                        "leaves": 2
+                    }
+                ],
+                [
+                    {
+                        "box_level": 2,
+                        "leaves": 2
+                    },
+                    {
+                        "box_level": 1,
+                        "leaves": 2
+                    },
+                    {
+                        "leaves": 2
+                    },
+                    {
+                        "type": 2,
+                        "leaves": 2
+                    },
+                    {
+                        "type": 1,
+                        "leaves": 2
+                    },
+                    {
+                        "leaves": 2
+                    },
+                    {
+                        "box_level": 1,
+                        "leaves": 2
+                    },
+                    {
+                        "box_level": 2,
+                        "leaves": 2
+                    },
+                    {}
+                ],
+                [
+                    {
+                        "box_level": 2,
+                        "leaves": 2
+                    },
+                    {
+                        "box_level": 2,
+                        "leaves": 2
+                    },
+                    {
+                        "box_level": 1,
+                        "leaves": 2
+                    },
+                    {
+                        "type": 2,
+                        "leaves": 2
+                    },
+                    {
+                        "type": 1,
+                        "leaves": 2
+                    },
+                    {
+                        "box_level": 1,
+                        "leaves": 2
+                    },
+                    {
+                        "box_level": 2,
+                        "leaves": 2
+                    },
+                    {
+                        "box_level": 2,
+                        "leaves": 2
+                    },
+                    {}
+                ],
+                [
+                    {
+                        "box_level": 2,
+                        "leaves": 2
+                    },
+                    {
+                        "box_level": 2,
+                        "leaves": 2
+                    },
+                    {
+                        "box_level": 2,
+                        "leaves": 2
+                    },
+                    {
+                        "box_level": 1,
+                        "leaves": 2
+                    },
+                    {
+                        "box_level": 1,
+                        "leaves": 2
+                    },
+                    {
+                        "box_level": 2,
+                        "leaves": 2
+                    },
+                    {
+                        "box_level": 2,
+                        "leaves": 2
+                    },
+                    {
+                        "box_level": 2,
+                        "leaves": 2
+                    },
+                    {}
+                ],
+                [
+                    {
+                        "box_level": 2,
+                        "leaves": 2
+                    },
+                    {
+                        "box_level": 2,
+                        "leaves": 2
+                    },
+                    {
+                        "box_level": 2,
+                        "leaves": 2
+                    },
+                    {
+                        "box_level": 2,
+                        "leaves": 2
+                    },
+                    {
+                        "box_level": 2,
+                        "leaves": 2
+                    },
+                    {
+                        "box_level": 2,
+                        "leaves": 2
+                    },
+                    {
+                        "box_level": 2,
+                        "leaves": 2
+                    },
+                    {
+                        "box_level": 2,
+                        "leaves": 2
+                    }
+                ],
+                [
+                    {
+                        "box_level": 2,
+                        "leaves": 2
+                    },
+                    {
+                        "box_level": 2,
+                        "leaves": 2
+                    },
+                    {
+                        "box_level": 2,
+                        "leaves": 2
+                    },
+                    {
+                        "box_level": 2,
+                        "leaves": 2
+                    },
+                    {
+                        "box_level": 2,
+                        "leaves": 2
+                    },
+                    {
+                        "box_level": 2,
+                        "leaves": 2
+                    },
+                    {
+                        "box_level": 2,
+                        "leaves": 2
+                    },
+                    {
+                        "box_level": 2,
+                        "leaves": 2
+                    }
+                ],
+                [
+                    {
+                        "box_level": 2,
+                        "leaves": 2
+                    },
+                    {
+                        "box_level": 2,
+                        "leaves": 2
+                    },
+                    {
+                        "box_level": 2,
+                        "leaves": 2
+                    },
+                    {
+                        "box_level": 2,
+                        "leaves": 2
+                    },
+                    {
+                        "box_level": 2,
+                        "leaves": 2
+                    },
+                    {
+                        "box_level": 2,
+                        "leaves": 2
+                    },
+                    {
+                        "box_level": 2,
+                        "leaves": 2
+                    },
+                    {
+                        "box_level": 2,
+                        "leaves": 2
+                    }
+                ]
+            ]
+        }
+    ],
+    "collect": [
+        {
+            "type": "gnome",
+            "count": 7
+        }
+    ],
+    "moveCnt": 23,
+    "chipset": [
+        {
+            "type": 1,
+            "percent": 100
+        },
+        {
+            "type": 2,
+            "percent": 100
+        },
+        {
+            "type": 3,
+            "percent": 100
+        },
+        {
+            "type": 4,
+            "percent": 100
+        }
+    ],
+    "levelInfo": {
+        "TO_LIGHTNING_ENOUGH": 0,
+        "background": 3,
+        "cellColorSeed": 221,
+        "levelReward": 51,
+        "movesLimit": 23,
+        "version": "0",
+        "timeLimit": 0,
+        "entry": true,
+        "hardness": false,
+        "forceUpdate": false,
+        "score": [
+            40000,
+            60000,
+            90000
+        ]
+    },
+    "gnome": [
+        {
+            "index": 0,
+            "x": 6,
+            "y": 4,
+            "type": 3
+        },
+        {
+            "index": 0,
+            "x": 4,
+            "y": 2,
+            "type": 3
+        },
+        {
+            "index": 0,
+            "x": 2,
+            "y": 2,
+            "type": 3
+        },
+        {
+            "index": 0,
+            "x": 0,
+            "y": 4,
+            "type": 3
+        },
+        {
+            "index": 0,
+            "x": 2,
+            "y": 6,
+            "type": 2
+        },
+        {
+            "index": 0,
+            "x": 1,
+            "y": 8,
+            "type": 0
+        },
+        {
+            "index": 0,
+            "x": 5,
+            "y": 8,
+            "type": 0
+        }
+    ]
+}

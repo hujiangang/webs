@@ -1,0 +1,269 @@
+{
+    "grid": [
+        {
+            "collect": null,
+            "map": [
+                [
+                    null,
+                    {
+                        "born": true
+                    },
+                    {
+                        "born": true
+                    },
+                    null,
+                    null,
+                    null,
+                    {
+                        "born": true
+                    },
+                    {
+                        "born": true
+                    },
+                    null
+                ],
+                [
+                    {
+                        "born": true
+                    },
+                    {},
+                    {},
+                    {
+                        "portal_idx": 1
+                    },
+                    {
+                        "born": true
+                    },
+                    {
+                        "portal_idx": 2
+                    },
+                    {},
+                    {},
+                    {
+                        "born": true
+                    }
+                ],
+                [
+                    {},
+                    {},
+                    {
+                        "water": true
+                    },
+                    {},
+                    {},
+                    {},
+                    {
+                        "water": true
+                    },
+                    {},
+                    {}
+                ],
+                [
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {}
+                ],
+                [
+                    null,
+                    null,
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    null,
+                    null
+                ],
+                [
+                    {
+                        "type": 7,
+                        "born": true,
+                        "locks": 1
+                    },
+                    null,
+                    {
+                        "box_level": 1
+                    },
+                    {
+                        "box_level": 1
+                    },
+                    {
+                        "box_level": 1
+                    },
+                    {
+                        "box_level": 1
+                    },
+                    {
+                        "box_level": 1
+                    },
+                    null,
+                    {
+                        "type": 7,
+                        "born": true,
+                        "locks": 1
+                    }
+                ],
+                [
+                    {
+                        "type": 0,
+                        "portal_idx": -1,
+                        "locks": 1
+                    },
+                    null,
+                    {
+                        "box_level": 2
+                    },
+                    {
+                        "box_level": 2
+                    },
+                    {
+                        "box_level": 2
+                    },
+                    {
+                        "box_level": 2
+                    },
+                    {
+                        "box_level": 2
+                    },
+                    null,
+                    {
+                        "type": 0,
+                        "portal_idx": -2,
+                        "locks": 1
+                    }
+                ],
+                [
+                    null,
+                    null,
+                    null,
+                    {
+                        "box_level": 2
+                    },
+                    {
+                        "box_level": 2
+                    },
+                    {
+                        "box_level": 2
+                    },
+                    null,
+                    null,
+                    null
+                ],
+                [
+                    null,
+                    null,
+                    null,
+                    {
+                        "exit": true,
+                        "box_level": 2
+                    },
+                    {
+                        "exit": true,
+                        "box_level": 2
+                    },
+                    {
+                        "exit": true,
+                        "box_level": 2
+                    },
+                    null,
+                    null,
+                    null
+                ]
+            ]
+        }
+    ],
+    "portal": [
+        {
+            "in": [
+                0,
+                6
+            ],
+            "out": [
+                5,
+                1
+            ]
+        },
+        {
+            "in": [
+                11,
+                6
+            ],
+            "out": [
+                6,
+                1
+            ]
+        },
+        {
+            "in": [
+                2,
+                6
+            ],
+            "out": [
+                7,
+                4
+            ]
+        },
+        {
+            "in": [
+                9,
+                6
+            ],
+            "out": [
+                4,
+                4
+            ]
+        }
+    ],
+    "collect": [
+        {
+            "type": 7,
+            "count": 2
+        }
+    ],
+    "carryChips": {
+        "max": 1,
+        "chance": 60
+    },
+    "moveCnt": 28,
+    "chipset": [
+        {
+            "type": 0,
+            "percent": 90
+        },
+        {
+            "type": 1,
+            "percent": 100
+        },
+        {
+            "type": 2,
+            "percent": 90
+        },
+        {
+            "type": 3,
+            "percent": 100
+        }
+    ],
+    "levelInfo": {
+        "TO_LIGHTNING_ENOUGH": 13,
+        "background": 3,
+        "cellColorSeed": 0,
+        "levelReward": 50,
+        "movesLimit": 24,
+        "version": "0",
+        "timeLimit": 0,
+        "entry": false,
+        "hardness": false,
+        "forceUpdate": false,
+        "score": [
+            15000,
+            30000,
+            50000
+        ]
+    }
+}

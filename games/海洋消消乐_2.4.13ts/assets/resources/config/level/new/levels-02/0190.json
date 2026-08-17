@@ -1,0 +1,259 @@
+{
+    "grid": [
+        {
+            "collect": null,
+            "map": [
+                [
+                    null,
+                    {
+                        "born": true,
+                        "firefly": 3,
+                        "flowers": 3
+                    },
+                    {
+                        "born": true,
+                        "box_level": 1
+                    },
+                    {
+                        "born": true
+                    },
+                    {
+                        "born": true,
+                        "type": 1
+                    },
+                    {
+                        "born": true
+                    },
+                    {
+                        "born": true,
+                        "box_level": 1
+                    },
+                    {
+                        "born": true,
+                        "firefly": 3,
+                        "flowers": 3
+                    },
+                    null
+                ],
+                [
+                    {
+                        "born": true,
+                        "firefly": 3,
+                        "flowers": 3
+                    },
+                    {
+                        "box_level": 1
+                    },
+                    {
+                        "box_level": 1
+                    },
+                    {
+                        "type": 0
+                    },
+                    {
+                        "type": 2
+                    },
+                    {
+                        "type": 0
+                    },
+                    {
+                        "box_level": 1
+                    },
+                    {
+                        "box_level": 1
+                    },
+                    {
+                        "born": true,
+                        "firefly": 3,
+                        "flowers": 3
+                    }
+                ],
+                [
+                    {
+                        "box_level": 1
+                    },
+                    {
+                        "box_level": 1
+                    },
+                    -1,
+                    {
+                        "type": 1
+                    },
+                    {
+                        "type": 3
+                    },
+                    {
+                        "type": 2
+                    },
+                    -1,
+                    {
+                        "box_level": 1
+                    },
+                    {
+                        "box_level": 1
+                    }
+                ],
+                [
+                    {
+                        "type": 0
+                    },
+                    -1,
+                    -1,
+                    {
+                        "water": true
+                    },
+                    {
+                        "type": 0
+                    },
+                    {
+                        "water": true
+                    },
+                    -1,
+                    -1,
+                    {
+                        "type": 0
+                    }
+                ],
+                [
+                    -1,
+                    -1,
+                    -1,
+                    -1,
+                    {
+                        "firefly": 6
+                    },
+                    -1,
+                    -1,
+                    -1,
+                    -1
+                ],
+                [
+                    -1,
+                    -1,
+                    -1,
+                    {
+                        "water": true
+                    },
+                    -1,
+                    {
+                        "water": true
+                    },
+                    -1,
+                    -1,
+                    -1
+                ],
+                [
+                    {
+                        "box_level": 1
+                    },
+                    {
+                        "box_level": 1
+                    },
+                    -1,
+                    -1,
+                    -1,
+                    -1,
+                    -1,
+                    {
+                        "box_level": 1
+                    },
+                    {
+                        "box_level": 1
+                    }
+                ],
+                [
+                    {
+                        "firefly": 3,
+                        "flowers": 3
+                    },
+                    {
+                        "box_level": 1
+                    },
+                    {
+                        "box_level": 1
+                    },
+                    -1,
+                    -1,
+                    -1,
+                    {
+                        "box_level": 1
+                    },
+                    {
+                        "box_level": 1
+                    },
+                    {
+                        "firefly": 3,
+                        "flowers": 3
+                    }
+                ],
+                [
+                    null,
+                    {
+                        "firefly": 3,
+                        "flowers": 3
+                    },
+                    {
+                        "box_level": 1
+                    },
+                    -1,
+                    -1,
+                    -1,
+                    {
+                        "box_level": 1
+                    },
+                    {
+                        "firefly": 3,
+                        "flowers": 3
+                    },
+                    null
+                ]
+            ]
+        }
+    ],
+    "collect": [
+        {
+            "type": "5",
+            "count": 30
+        }
+    ],
+    "moveCnt": 29,
+    "chipset": [
+        {
+            "type": 0,
+            "percent": 100
+        },
+        {
+            "type": 1,
+            "percent": 60
+        },
+        {
+            "type": 2,
+            "percent": 100
+        },
+        {
+            "type": 3,
+            "percent": 100
+        },
+        {
+            "type": 3,
+            "percent": 60
+        }
+    ],
+    "levelInfo": {
+        "TO_LIGHTNING_ENOUGH": 15,
+        "background": 1,
+        "cellColorSeed": 0,
+        "levelReward": 50,
+        "movesLimit": 28,
+        "version": "0",
+        "timeLimit": 0,
+        "entry": "jars",
+        "hardness": false,
+        "forceUpdate": true,
+        "score": [
+            20000,
+            30000,
+            60000
+        ]
+    }
+}

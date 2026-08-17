@@ -1,0 +1,123 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "ChapterCloud",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.5,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "img_cloud_1": {
+        "props": {
+          "position": [
+            {
+              "frame": 0,
+              "value": [
+                -79.564,
+                15.33,
+                0
+              ]
+            },
+            {
+              "frame": 0.5,
+              "value": [
+                -206.154,
+                -63.771,
+                0
+              ]
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            },
+            {
+              "frame": 0.25,
+              "value": 255
+            },
+            {
+              "frame": 0.5,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "img_cloud_2": {
+        "props": {
+          "position": [
+            {
+              "frame": 0,
+              "value": [
+                188.753,
+                58.964,
+                0
+              ]
+            },
+            {
+              "frame": 0.5,
+              "value": [
+                296.073,
+                -27.715,
+                0
+              ]
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            },
+            {
+              "frame": 0.25,
+              "value": 255
+            },
+            {
+              "frame": 0.5,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "img_cloud_3": {
+        "props": {
+          "position": [
+            {
+              "frame": 0,
+              "value": [
+                12.972,
+                187.575,
+                0
+              ]
+            },
+            {
+              "frame": 0.5,
+              "value": [
+                12.972,
+                323.548,
+                0
+              ]
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            },
+            {
+              "frame": 0.25,
+              "value": 255
+            },
+            {
+              "frame": 0.5,
+              "value": 0
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": []
+}

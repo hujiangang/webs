@@ -1,0 +1,62 @@
+
+bg_senlin.png
+size: 930,525
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+cao
+  rotate: true
+  xy: 578, 328
+  size: 195, 260
+  orig: 195, 260
+  offset: 0, 0
+  index: -1
+dd
+  rotate: false
+  xy: 840, 436
+  size: 88, 87
+  orig: 88, 87
+  offset: 0, 0
+  index: -1
+guang
+  rotate: true
+  xy: 2, 28
+  size: 495, 574
+  orig: 495, 574
+  offset: 0, 0
+  index: -1
+shuye
+  rotate: false
+  xy: 578, 2
+  size: 134, 113
+  orig: 134, 113
+  offset: 0, 0
+  index: -1
+shuye1
+  rotate: true
+  xy: 766, 6
+  size: 130, 114
+  orig: 130, 114
+  offset: 0, 0
+  index: -1
+shuye2
+  rotate: true
+  xy: 766, 138
+  size: 188, 114
+  orig: 188, 114
+  offset: 0, 0
+  index: -1
+shuye3
+  rotate: true
+  xy: 840, 354
+  size: 80, 87
+  orig: 80, 87
+  offset: 0, 0
+  index: -1
+shuye4
+  rotate: true
+  xy: 578, 117
+  size: 209, 186
+  orig: 209, 186
+  offset: 0, 0
+  index: -1

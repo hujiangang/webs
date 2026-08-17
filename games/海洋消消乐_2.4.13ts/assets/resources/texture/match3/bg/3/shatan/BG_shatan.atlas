@@ -1,0 +1,41 @@
+
+BG_shatan.png
+size: 613,269
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+F_Glow_078_zx
+  rotate: false
+  xy: 531, 150
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+hailang
+  rotate: false
+  xy: 2, 184
+  size: 609, 83
+  orig: 609, 83
+  offset: 0, 0
+  index: -1
+san
+  rotate: false
+  xy: 227, 8
+  size: 150, 174
+  orig: 150, 174
+  offset: 0, 0
+  index: -1
+shu
+  rotate: false
+  xy: 2, 2
+  size: 223, 180
+  orig: 223, 180
+  offset: 0, 0
+  index: -1
+yizi
+  rotate: false
+  xy: 379, 19
+  size: 150, 163
+  orig: 150, 163
+  offset: 0, 0
+  index: -1

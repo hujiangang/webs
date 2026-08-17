@@ -1,0 +1,42 @@
+{
+    "stages": [
+        {
+            "name": "first_move",
+            "moves": 0,
+            "bubble": {
+                "text": {
+                    "zh": "消除相邻的元素三次就可让 <color=#C3543C>蚌</color> 长出珍珠"
+                },
+                "x": 0,
+                "y": -100
+            },
+            "hand": {
+                "x": 2,
+                "y": 2,
+                "type": "left"
+            },
+            "cells": [
+                {
+                    "x": 2,
+                    "y": 2,
+                    "removable": true
+                },
+                {
+                    "x": 1,
+                    "y": 1,
+                    "hint": "static"
+                },
+                {
+                    "x": 1,
+                    "y": 2,
+                    "removable": true
+                },
+                {
+                    "x": 1,
+                    "y": 3,
+                    "hint": "static"
+                }
+            ]
+        }
+    ]
+}

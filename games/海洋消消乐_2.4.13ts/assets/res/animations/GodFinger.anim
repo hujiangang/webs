@@ -1,0 +1,37 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "GodFinger",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 1.0166666666666666,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 2,
+  "curveData": {
+    "comps": {
+      "cc.Sprite": {
+        "spriteFrame": [
+          {
+            "frame": 0,
+            "value": {
+              "__uuid__": "0a8e8544-74a4-47fd-ad48-15d7819201d3"
+            }
+          },
+          {
+            "frame": 0.5,
+            "value": {
+              "__uuid__": "e60771af-f33f-4b7a-ba1c-ba2f9392f872"
+            }
+          },
+          {
+            "frame": 1,
+            "value": {
+              "__uuid__": "0a8e8544-74a4-47fd-ad48-15d7819201d3"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "events": []
+}

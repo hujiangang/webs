@@ -1,0 +1,360 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "yellow_zhangyuDDIdle",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.016666666666666666,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "body1": {
+        "props": {
+          "position": [
+            {
+              "frame": 0,
+              "value": [
+                -33.94,
+                -23.204,
+                0
+              ]
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "__type__": "cc.Vec2",
+                "x": 1,
+                "y": 1
+              }
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            }
+          ],
+          "color": [
+            {
+              "frame": 0,
+              "value": {
+                "__type__": "cc.Color",
+                "r": 255,
+                "g": 171,
+                "b": 56,
+                "a": 255
+              }
+            }
+          ]
+        }
+      },
+      "body2": {
+        "props": {
+          "position": [],
+          "scale": [],
+          "opacity": [],
+          "color": [
+            {
+              "frame": 0,
+              "value": {
+                "__type__": "cc.Color",
+                "r": 255,
+                "g": 171,
+                "b": 56,
+                "a": 255
+              }
+            }
+          ]
+        }
+      },
+      "feet": {
+        "props": {
+          "position": [
+            {
+              "frame": 0,
+              "value": [
+                -7.781,
+                -70.031,
+                0
+              ]
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "__type__": "cc.Vec2",
+                "x": 1,
+                "y": 1
+              }
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "feet/head/mouth": {
+        "props": {
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "__type__": "cc.Vec2",
+                "x": 1,
+                "y": 1
+              }
+            }
+          ],
+          "color": [
+            {
+              "frame": 0,
+              "value": {
+                "__type__": "cc.Color",
+                "r": 255,
+                "g": 255,
+                "b": 255,
+                "a": 255
+              }
+            }
+          ]
+        },
+        "comps": {
+          "cc.Sprite": {
+            "spriteFrame": [
+              {
+                "frame": 0,
+                "value": {
+                  "__uuid__": "61e5b2cb-4ae1-4d07-b9c3-659dda25baf0"
+                }
+              }
+            ]
+          }
+        }
+      },
+      "feet/head": {
+        "props": {
+          "color": [
+            {
+              "frame": 0,
+              "value": {
+                "__type__": "cc.Color",
+                "r": 255,
+                "g": 255,
+                "b": 255,
+                "a": 255
+              }
+            }
+          ]
+        },
+        "comps": {
+          "cc.Sprite": {
+            "spriteFrame": [
+              {
+                "frame": 0,
+                "value": {
+                  "__uuid__": "2746e933-5840-43c5-9aa2-1b20a9baa2f8"
+                }
+              }
+            ]
+          }
+        }
+      },
+      "feet/head/mouth/highlight1": {
+        "props": {
+          "color": [
+            {
+              "frame": 0,
+              "value": {
+                "__type__": "cc.Color",
+                "r": 255,
+                "g": 221,
+                "b": 141,
+                "a": 255
+              }
+            }
+          ]
+        }
+      },
+      "feet/head/highlight2": {
+        "props": {
+          "color": [
+            {
+              "frame": 0,
+              "value": {
+                "__type__": "cc.Color",
+                "r": 252,
+                "g": 248,
+                "b": 227,
+                "a": 255
+              }
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 79
+            }
+          ]
+        }
+      },
+      "feet/head/shadow3": {
+        "props": {
+          "color": [
+            {
+              "frame": 0,
+              "value": {
+                "__type__": "cc.Color",
+                "r": 242,
+                "g": 64,
+                "b": 64,
+                "a": 255
+              }
+            }
+          ]
+        }
+      },
+      "feet/feet1": {
+        "props": {
+          "color": [
+            {
+              "frame": 0,
+              "value": {
+                "__type__": "cc.Color",
+                "r": 255,
+                "g": 255,
+                "b": 255,
+                "a": 255
+              }
+            }
+          ]
+        },
+        "comps": {
+          "cc.Sprite": {
+            "spriteFrame": [
+              {
+                "frame": 0,
+                "value": {
+                  "__uuid__": "0d89a164-7542-4011-97fc-3f1a5a964740"
+                }
+              }
+            ]
+          }
+        }
+      },
+      "feet/feet2": {
+        "props": {
+          "color": [
+            {
+              "frame": 0,
+              "value": {
+                "__type__": "cc.Color",
+                "r": 255,
+                "g": 255,
+                "b": 255,
+                "a": 255
+              }
+            }
+          ]
+        },
+        "comps": {
+          "cc.Sprite": {
+            "spriteFrame": [
+              {
+                "frame": 0,
+                "value": {
+                  "__uuid__": "bdb96894-2169-47bf-ac4e-03d9ad5948c7"
+                }
+              }
+            ]
+          }
+        }
+      },
+      "feet/feet4": {
+        "props": {
+          "color": [
+            {
+              "frame": 0,
+              "value": {
+                "__type__": "cc.Color",
+                "r": 255,
+                "g": 255,
+                "b": 255,
+                "a": 255
+              }
+            }
+          ]
+        },
+        "comps": {
+          "cc.Sprite": {
+            "spriteFrame": [
+              {
+                "frame": 0,
+                "value": {
+                  "__uuid__": "0d89a164-7542-4011-97fc-3f1a5a964740"
+                }
+              }
+            ]
+          }
+        }
+      },
+      "feet/feet3": {
+        "props": {
+          "color": [
+            {
+              "frame": 0,
+              "value": {
+                "__type__": "cc.Color",
+                "r": 255,
+                "g": 255,
+                "b": 255,
+                "a": 255
+              }
+            }
+          ]
+        },
+        "comps": {
+          "cc.Sprite": {
+            "spriteFrame": [
+              {
+                "frame": 0,
+                "value": {
+                  "__uuid__": "bdb96894-2169-47bf-ac4e-03d9ad5948c7"
+                }
+              }
+            ]
+          }
+        }
+      },
+      "feet/head/highlight3": {
+        "props": {
+          "color": [
+            {
+              "frame": 0,
+              "value": {
+                "__type__": "cc.Color",
+                "r": 252,
+                "g": 244,
+                "b": 117,
+                "a": 255
+              }
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": []
+}

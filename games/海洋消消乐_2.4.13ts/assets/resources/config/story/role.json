@@ -1,0 +1,36 @@
+{
+  "1": {
+    "id": "1",
+    "name": "我",
+    "figure": [
+      {
+        "figureId": 1,
+        "url": "aa"
+      },
+      {
+        "figureId": 2,
+        "url": "bb"
+      }
+    ]
+  },
+  "2": {
+    "id": "2",
+    "name": "爷爷",
+    "figure": [
+      {
+        "figureId": 1,
+        "url": "bb"
+      }
+    ]
+  },
+  "3": {
+    "id": "3",
+    "name": "Joe",
+    "figure": [
+      {
+        "figureId": 1,
+        "url": "cc"
+      }
+    ]
+  }
+}

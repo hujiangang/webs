@@ -1,0 +1,48 @@
+{
+    "stages": [
+        {
+            "name": "first_move",
+            "moves": 0,
+            "bubble": {
+                "text": {
+                    "zh": "把<size=40> <color=#C3543C>香蕉</color> </size>摘下来给猴子，喂饱它会给我们摇下<size=40> <color=#C3543C>椰子</color> </size>！"
+                },
+                "x": 0,
+                "y": 100
+            },
+            "cells": [
+                {
+                    "x": 3,
+                    "y": 6,
+                    "hint": "static"
+                },
+                {
+                    "x": 4,
+                    "y": 6,
+                    "hint": "static"
+                },
+                {
+                    "x": 3,
+                    "y": 7,
+                    "hint": "static"
+                },
+                {
+                    "x": 4,
+                    "y": 7,
+                    "hint": "static"
+                },
+                {
+                    "x": 3,
+                    "y": 8,
+                    "hint": "static"
+                },
+                {
+                    "x": 4,
+                    "y": 8,
+                    "hint": "static"
+                }
+            ],
+            "closeByTouch": true
+        }
+    ]
+}
