@@ -10,6 +10,13 @@
             <a class="filter-btn {% if mushroom_page.category == 'edible' %}active{% endif %}" href="/mushrooms?category=edible&page=1&keyword={{ mushroom_page.keyword|urlencode }}">可食用</a>
             <a class="filter-btn {% if mushroom_page.category == 'inedible' %}active{% endif %}" href="/mushrooms?category=inedible&page=1&keyword={{ mushroom_page.keyword|urlencode }}">不可食用</a>
             <a class="filter-btn {% if mushroom_page.category == 'toxic' %}active{% endif %}" href="/mushrooms?category=toxic&page=1&keyword={{ mushroom_page.keyword|urlencode }}">有毒的</a>
+            {# 搜索框仅在图鉴页展示，与筛选按钮同行靠右 #}
+            <form class="site-search" action="/mushrooms" method="get" role="search">
+                <input type="hidden" name="category" value="{{ mushroom_page.category }}">
+                <input type="hidden" name="page" value="1">
+                <span class="search-icon" aria-hidden="true"></span>
+                <input class="search-input" type="search" name="keyword" value="{{ search_keyword or '' }}" placeholder="搜索菌子名称" aria-label="搜索菌子名称">
+            </form>
         </div>
         <p class="gallery-count">总共 {{ mushroom_count }} 种菌子</p>
 
@@ -21,6 +28,7 @@
                     </div>
                     <div class="mushroom-info">
                         <h2 class="mushroom-name">{{ mushroom.name }}</h2>
+                        <span class="mushroom-badge {{ 'is-danger' if '有毒' in mushroom.toxicity else 'is-safe' }}">{{ mushroom.toxicity or mushroom.edible }}</span>
                     </div>
                 </a>
             {% endfor %}

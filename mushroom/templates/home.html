@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 
-{% block title %}首页 - 菌子网站{% endblock %}
+{% block title %}首页 - 云南菌子网{% endblock %}
 {% block main_class %}home-main{% endblock %}
 
 {% block content %}
@@ -21,5 +21,58 @@
             {% endif %}
         </div>
         <button class="carousel-btn carousel-btn-next {% if banners|length <= 1 %}is-hidden{% endif %}" type="button" data-carousel-next aria-label="下一张"></button>
+    </section>
+
+    <section class="home-shell">
+        <section class="home-intro" id="intro">
+            <h1 class="home-slogan">🍄 雨季到了，菌子冒头了！</h1>
+            <p class="home-sub">收录 {{ mushroom_count }} 种云南野生菌：认菌子、玩游戏、学安全，一样都不耽误。</p>
+        </section>
+
+        <section class="home-entries" aria-label="栏目入口">
+            <a class="entry-card" href="/mushrooms">
+                <span class="entry-icon" aria-hidden="true">🧺</span>
+                <span class="entry-title">菌子图鉴</span>
+                <span class="entry-desc">{{ mushroom_count }} 种菌子的识别特征、生长环境与食用价值</span>
+            </a>
+            <a class="entry-card" href="/games">
+                <span class="entry-icon" aria-hidden="true">🎮</span>
+                <span class="entry-title">菌子小游戏</span>
+                <span class="entry-desc">毒菌挑战赛：看图判断能不能吃，练出火眼金睛</span>
+            </a>
+            <a class="entry-card" href="#safety-tip">
+                <span class="entry-icon" aria-hidden="true">⚠️</span>
+                <span class="entry-title">安全科普</span>
+                <span class="entry-desc">野生菌采食安全须知，先学会保命再谈美味</span>
+            </a>
+        </section>
+
+        <section class="home-picks" aria-label="雨季推荐">
+            <h2 class="home-section-title">🌧️ 雨季随机菌讯</h2>
+            <div class="picks-grid">
+                {% for pick in picks %}
+                    <a class="mushroom-card" href="/mushrooms/{{ pick.id }}" title="{{ pick.name }}">
+                        <div class="mushroom-image-panel">
+                            <img class="mushroom-image" src="{{ pick.image_url }}" alt="{{ pick.name }}">
+                        </div>
+                        <div class="mushroom-info">
+                            <h3 class="mushroom-name">{{ pick.name }}</h3>
+                            <span class="mushroom-badge {{ 'is-danger' if '有毒' in pick.toxicity else 'is-safe' }}">{{ pick.toxicity }}</span>
+                        </div>
+                    </a>
+                {% endfor %}
+            </div>
+        </section>
+
+        <section class="home-safety" id="safety-tip">
+            <h2 class="home-section-title">⚠️ 野生菌安全须知</h2>
+            <ul class="safety-list">
+                <li>不认识、不熟悉的菌子一律不采、不吃、不送人。</li>
+                <li>颜色鲜艳、有菌环菌托的菌子风险更高，见到绕着走。</li>
+                <li>民间"辨毒土方"（变色、银针、虫咬）全都不可靠。</li>
+                <li>食用野生菌务必充分加热熟透，切勿混食多种菌子。</li>
+                <li>出现恶心、呕吐、幻觉等症状，立即就医并保留样本。</li>
+            </ul>
+        </section>
     </section>
 {% endblock %}

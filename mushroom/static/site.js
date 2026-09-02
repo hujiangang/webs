@@ -184,3 +184,113 @@
         }
     });
 })();
+
+// 毒菌挑战赛：看图判断菌子能否食用，每局随机抽 10 题
+(function () {
+    const panel = document.querySelector("[data-game]");
+    if (!panel) {
+        return;
+    }
+
+    const dataNode = document.querySelector("[data-game-data]");
+    const allItems = JSON.parse(dataNode.textContent);
+    const questionCount = 10;
+    const progressText = panel.querySelector("[data-game-progress]");
+    const scoreText = panel.querySelector("[data-game-score]");
+    const gameImage = panel.querySelector("[data-game-image]");
+    const answerButtons = Array.from(panel.querySelectorAll("[data-game-answer]"));
+    const feedbackText = panel.querySelector("[data-game-feedback]");
+    const nextButton = panel.querySelector("[data-game-next]");
+    const resultPanel = document.querySelector("[data-game-result]");
+    const resultTitle = document.querySelector("[data-game-result-title]");
+    const restartButton = document.querySelector("[data-game-restart]");
+    let questions = [];
+    let currentIndex = 0;
+    let score = 0;
+
+    // 洗牌后取前 10 道作为本局题目
+    function startGame() {
+        questions = allItems
+            .slice()
+            .sort(function () {
+                return Math.random() - 0.5;
+            })
+            .slice(0, Math.min(questionCount, allItems.length));
+        currentIndex = 0;
+        score = 0;
+        scoreText.textContent = "得分：0";
+        panel.hidden = false;
+        resultPanel.hidden = true;
+        showQuestion();
+    }
+
+    function showQuestion() {
+        const item = questions[currentIndex];
+        progressText.textContent = "第 " + (currentIndex + 1) + " / " + questions.length + " 题";
+        gameImage.src = item.image_url;
+        gameImage.alt = "待判断的菌子图片";
+        feedbackText.hidden = true;
+        feedbackText.classList.remove("is-right", "is-wrong");
+        nextButton.hidden = true;
+        answerButtons.forEach(function (button) {
+            button.disabled = false;
+        });
+    }
+
+    // 作答后展示对错反馈，并揭晓菌子名称
+    function answer(choice) {
+        const item = questions[currentIndex];
+        const isRight = (choice === "edible") === item.is_edible;
+        if (isRight) {
+            score += 1;
+            scoreText.textContent = "得分：" + score;
+            feedbackText.textContent = "✅ 答对了！这是「" + item.name + "」，" + (item.is_edible ? "可以食用。" : "不能食用。");
+            feedbackText.classList.add("is-right");
+        } else {
+            feedbackText.textContent = "❌ 答错了！这是「" + item.name + "」，" + (item.is_edible ? "其实是可以食用的。" : "有毒，不能吃！");
+            feedbackText.classList.add("is-wrong");
+        }
+        feedbackText.hidden = false;
+        answerButtons.forEach(function (button) {
+            button.disabled = true;
+        });
+        nextButton.textContent = currentIndex === questions.length - 1 ? "查看成绩" : "下一题 →";
+        nextButton.hidden = false;
+    }
+
+    function showNext() {
+        if (currentIndex === questions.length - 1) {
+            finishGame();
+            return;
+        }
+        currentIndex += 1;
+        showQuestion();
+    }
+
+    // 根据得分给出不同评语
+    function finishGame() {
+        panel.hidden = true;
+        resultPanel.hidden = false;
+        const total = questions.length;
+        let comment;
+        if (score === total) {
+            comment = "全对！你就是老菌山来的识菌高手！";
+        } else if (score >= total * 0.6) {
+            comment = "不错不错，再练练就能上山了！";
+        } else {
+            comment = "还需多看看图鉴，安全第一！";
+        }
+        resultTitle.textContent = "本局得分：" + score + " / " + total + " · " + comment;
+    }
+
+    answerButtons.forEach(function (button) {
+        button.addEventListener("click", function () {
+            answer(button.dataset.gameAnswer);
+        });
+    });
+
+    nextButton.addEventListener("click", showNext);
+    restartButton.addEventListener("click", startGame);
+
+    startGame();
+})();

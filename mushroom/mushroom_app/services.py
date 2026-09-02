@@ -1,8 +1,9 @@
 import math
+import random
 from pathlib import Path
 
 from mushroom_app.config import PAGE_SIZE
-from mushroom_app.models import BannerItem, GalleryQuery, MushroomItem, MushroomPage
+from mushroom_app.models import BannerItem, GalleryQuery, GameItem, MushroomItem, MushroomPage
 from mushroom_app.repositories import (
     find_mushroom_gallery_names,
     find_mushroom_image_name,
@@ -25,6 +26,11 @@ def get_site_icon_url() -> str | None:
     if get_site_icon_path() is None:
         return None
     return "/site-icon"
+
+
+def get_mushroom_total() -> int:
+    # 全站页脚展示的菌子总数
+    return len(read_mushroom_rows())
 
 
 def build_banner_item(row: dict[str, str]) -> BannerItem:
@@ -59,6 +65,31 @@ def get_mushroom_detail(mushroom_id: str) -> MushroomItem | None:
     return None
 
 
+def get_home_picks(count: int = 6) -> list[MushroomItem]:
+    # 首页雨季推荐：随机抽取若干菌子展示
+    mushrooms = [build_mushroom_item(row) for row in read_mushroom_rows()]
+    if len(mushrooms) <= count:
+        return mushrooms
+    return random.sample(mushrooms, count)
+
+
+def get_game_items() -> list[GameItem]:
+    # 毒菌挑战赛题库：全部菌子的可食用判断数据
+    return [
+        GameItem(
+            id=mushroom.id,
+            name=mushroom.name,
+            is_edible=is_edible_mushroom(mushroom),
+            image_url=mushroom.image_url,
+        )
+        for mushroom in (build_mushroom_item(row) for row in read_mushroom_rows())
+    ]
+
+
+def is_edible_mushroom(mushroom: MushroomItem) -> bool:
+    return "可食用" in mushroom.edible and "不可食用" not in mushroom.edible
+
+
 def build_mushroom_item(row: dict[str, str]) -> MushroomItem:
     headers = read_mushroom_headers()
     id_key = headers[0] if headers else "编号"
@@ -84,7 +115,7 @@ def build_mushroom_item(row: dict[str, str]) -> MushroomItem:
 def match_category(item: MushroomItem, category: str) -> bool:
     # 分类按钮对应草图中的三类展示入口。
     if category == "edible":
-        return "可食用" in item.edible and "不可食用" not in item.edible
+        return is_edible_mushroom(item)
     if category == "inedible":
         return "不可食用" in item.edible
     if category == "toxic":

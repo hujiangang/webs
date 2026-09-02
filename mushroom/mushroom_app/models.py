@@ -32,3 +32,11 @@ class MushroomPage(BaseModel):
     total_count: int
     category: str
     keyword: str
+
+
+class GameItem(BaseModel):
+    # 毒菌挑战赛的题目数据：仅暴露判断所需字段
+    id: str
+    name: str
+    is_edible: bool
+    image_url: str

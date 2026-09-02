@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block title %}菌子小游戏 - 云南菌子网{% endblock %}
+{% block main_class %}games-main{% endblock %}
+
+{% block content %}
+    <section class="games-shell" aria-label="毒菌挑战赛">
+        <h1 class="games-title">🍄 毒菌挑战赛</h1>
+        <p class="games-sub">看图判断菌子能不能吃，每局随机 10 题，看看你能答对几道！</p>
+
+        <div class="game-panel" data-game>
+            <div class="game-progress">
+                <span data-game-progress>准备开始</span>
+                <span data-game-score>得分：0</span>
+            </div>
+            <img class="game-image" data-game-image alt="菌子图片" draggable="false">
+            <p class="game-question">这个菌子能吃吗？</p>
+            <div class="game-actions">
+                <button type="button" class="game-answer-btn is-edible" data-game-answer="edible">✅ 可以吃</button>
+                <button type="button" class="game-answer-btn is-poison" data-game-answer="poison">☠️ 不能吃</button>
+            </div>
+            <p class="game-feedback" data-game-feedback hidden></p>
+            <div class="game-next-row">
+                <button type="button" class="game-next-btn" data-game-next hidden>下一题 →</button>
+            </div>
+        </div>
+
+        <div class="game-result" data-game-result hidden>
+            <p class="game-result-title" data-game-result-title></p>
+            <p class="game-result-tip">野生菌采食风险高，本游戏仅供科普娱乐，实际辨识请以专业人员意见为准。</p>
+            <button type="button" class="game-restart-btn" data-game-restart>再挑战一次</button>
+        </div>
+
+        {# 题库数据由后端渲染为 JSON，前端 JS 读取后随机出题 #}
+        <script type="application/json" data-game-data>{{ game_items|tojson }}</script>
+    </section>
+{% endblock %}

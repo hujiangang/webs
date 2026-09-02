@@ -7,7 +7,7 @@
     {% if site_icon_url %}
         <link rel="icon" href="{{ site_icon_url }}">
     {% endif %}
-    <link rel="stylesheet" href="/static/site.css?v=20260813a">
+    <link rel="stylesheet" href="/static/site.css?v=20260817b">
 </head>
 <body>
     <header class="site-header">
@@ -22,15 +22,9 @@
             <nav class="nav">
                 <a class="nav-link {% if active == 'home' %}active{% endif %}" href="/">首页</a>
                 <a class="nav-link {% if active == 'gallery' %}active{% endif %}" href="/mushrooms">菌子图鉴</a>
-                <a class="nav-link" href="#">菌子小游戏</a>
-                <a class="nav-link" href="#">野生菌安全科普</a>
+                <a class="nav-link {% if active == 'games' %}active{% endif %}" href="/games">菌子小游戏</a>
+                <a class="nav-link" href="/#safety-tip">野生菌安全科普</a>
             </nav>
-            <form class="site-search" action="/mushrooms" method="get" role="search">
-                <input type="hidden" name="category" value="all">
-                <input type="hidden" name="page" value="1">
-                <span class="search-icon" aria-hidden="true"></span>
-                <input class="search-input" type="search" name="keyword" value="{{ search_keyword or '' }}" placeholder="搜索菌子名称" aria-label="搜索菌子名称">
-            </form>
         </div>
     </header>
 
@@ -40,15 +34,15 @@
 
     <footer class="site-footer">
         <div class="footer-inner">
-            <p class="footer-record">备案信息待完善</p>
+            <p class="footer-record">🍄 云南菌子网 · 收录 {{ mushroom_count or 56 }} 种菌子 · 仅供科普，采食请咨询专业人员</p>
             <nav class="footer-links" aria-label="底部链接">
-                <a href="#">关于我们</a>
-                <a href="#">数据来源</a>
-                <a href="#">野生菌安全提示</a>
-                <a href="#">联系方式</a>
+                <a href="/mushrooms">菌子图鉴</a>
+                <a href="/games">菌子小游戏</a>
+                <a href="/#safety-tip">安全提示</a>
+                <a href="/mushrooms?category=toxic&page=1&keyword=">毒菌警示</a>
             </nav>
         </div>
     </footer>
-    <script src="/static/site.js?v=20260813a"></script>
+    <script src="/static/site.js?v=20260817a"></script>
 </body>
 </html>

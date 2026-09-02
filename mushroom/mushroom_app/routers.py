@@ -8,8 +8,11 @@ from mushroom_app.config import TEMPLATES_DIR
 from mushroom_app.models import GalleryQuery
 from mushroom_app.services import (
     get_banner_items,
+    get_game_items,
+    get_home_picks,
     get_mushroom_detail,
     get_mushroom_page,
+    get_mushroom_total,
     get_site_icon_path,
     get_site_icon_url,
 )
@@ -24,6 +27,7 @@ def build_template_context(request: Request, active: str, **kwargs: Any) -> dict
         "request": request,
         "active": active,
         "site_icon_url": get_site_icon_url(),
+        "mushroom_count": get_mushroom_total(),
     }
     context.update(kwargs)
     return context
@@ -41,7 +45,21 @@ def site_icon() -> FileResponse:
 def home_page(request: Request) -> HTMLResponse:
     return templates.TemplateResponse(
         "home.html",
-        build_template_context(request, "home", banners=get_banner_items()),
+        build_template_context(
+            request,
+            "home",
+            banners=get_banner_items(),
+            picks=get_home_picks(),
+        ),
+    )
+
+
+@router.get("/games", response_class=HTMLResponse, summary="菌子小游戏")
+def games_page(request: Request) -> HTMLResponse:
+    game_items = [item.model_dump() for item in get_game_items()]
+    return templates.TemplateResponse(
+        "games.html",
+        build_template_context(request, "games", game_items=game_items),
     )
 
 
