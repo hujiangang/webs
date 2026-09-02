@@ -31,6 +31,8 @@ import ShaderHelper from '../../Base/Shader/ShaderHelper';
 import ShaderTime from '../../Base/Shader/ShaderTime';
 import { AudioID } from '../Common/AudioCtrl';
 import OverHightLightCtrl from '../Common/UI/OverHightLightCtrl';
+import Match3Skin from './Skin/Match3Skin';
+import ResCtrl from './ResCtrl';
 
 const { ccclass, property } = cc._decorator;
 
@@ -45,9 +47,6 @@ export default class MainCtrl extends cc.Component {
 
     @property(cc.Node)
     effNode: cc.Node = null;
-
-    @property(cc.Prefab)
-    gridBoard: cc.Prefab = null;
 
     @property(cc.Prefab)
     planePrefab: cc.Prefab = null;
@@ -125,6 +124,7 @@ export default class MainCtrl extends cc.Component {
         GameModel.destory();
         M.nodePool.destory();
         GroupAnimatCtrl.ins.destory();
+        ResCtrl.destory();
         Common.CurrentCtrlView = null;
         this.unscheduleAllCallbacks();
         clearTimeout(this.touchTimer);
@@ -190,10 +190,13 @@ export default class MainCtrl extends cc.Component {
         this.effCtrl = this.effNode.getComponent(EffLayerCtrl);
         this.gameModel = new GameModel(data);
 
+        await Match3Skin.load();
+        await ResCtrl.load();
+
+        this.uiCtrl.init(this, data);
 
         this.initBg();
         this.initMapGridView();
-        this.uiCtrl.init(this, data);
     }
 
     private setZorder(index: number = 0) {
@@ -373,10 +376,10 @@ export default class MainCtrl extends cc.Component {
     }
 
     private updateBgTopAlign(top: number) {
-        const lvLabPos = this.uiCtrl.getLevelLabelPos();
+        const lvLabPos = this.uiCtrl && this.uiCtrl.getLevelLabelPos ? this.uiCtrl.getLevelLabelPos() : null;
         //根据上部关卡节点来确认偏移量
         let topGap = 0;
-        if (this.currentBgIndex == 1) {
+        if (this.currentBgIndex == 1 && lvLabPos) {
             topGap = (cc.winSize.height - lvLabPos.y) - 307;
         }
         Common.setAlignment(this.bg.node, 'top', top + topGap);
@@ -458,8 +461,9 @@ export default class MainCtrl extends cc.Component {
         const maps = this.gameModel.getMaps();
         this.gridCtrlPool = new Map();
         this.gridViewPool = new Map();
+        const gridBoardPrefab = Match3Skin.requirePrefab("gridBoard");
         for (let i = 0; i < this.gameModel.mapCount; i++) {
-            const gridCtrlView = cc.instantiate(this.gridBoard);
+            const gridCtrlView = cc.instantiate(gridBoardPrefab);
             const gridData = maps[i];
             const gc = this.initGround(gridCtrlView, gridData);
             const mc = this.initMainLayer(gridCtrlView, gridData);

@@ -13,6 +13,7 @@ import SpinePlayerCtrl from "../../../Base/CustomComponent/SpinePlayerCtrl";
 import { GapTime } from "../../Data/Const/TimeConfig";
 import CrabModel from "../Model/multipleGridCol/CrabModel";
 import ActionCtrl from "../../Common/ActionCtrl";
+import Match3Skin from "../Skin/Match3Skin";
 
 const { ccclass, property } = cc._decorator;
 
@@ -23,15 +24,6 @@ const TrayOffset: cc.Vec2 = cc.v2(12, 45);
 
 @ccclass
 export default class GroundViewCtrl extends BaseView<GroundCellModel[][]> {
-
-    @property([cc.SpriteFrame])
-    borderFrames: cc.SpriteFrame[] = [];
-
-    @property([cc.SpriteFrame])
-    middleFrames: cc.SpriteFrame[] = [];
-
-    @property([cc.SpriteFrame])
-    waterFrames: cc.SpriteFrame[] = [];
 
     @property(cc.Node)
     borderParent: cc.Node = null;
@@ -44,31 +36,6 @@ export default class GroundViewCtrl extends BaseView<GroundCellModel[][]> {
 
     @property(cc.Node)
     gnomeParent: cc.Node = null;
-
-    @property(cc.Prefab)
-    gnomePrefab: cc.Prefab = null;
-
-    @property(cc.Prefab)
-    turtlesPrefab: cc.Prefab = null;
-
-    @property(cc.Prefab)
-    crabPrefab: cc.Prefab = null;
-
-    @property(cc.Prefab)
-    monkeyTreePrefab: cc.Prefab = null;
-
-    @property(cc.Prefab)
-    groundBasePrefab: cc.Prefab = null;
-
-    //用来做收集时动画使用!
-    @property(cc.Prefab)
-    gemPrefab: cc.Prefab = null;
-    //萤火虫用来做收集时动画使用!
-    @property(cc.Prefab)
-    firefly: cc.Prefab = null;
-
-    @property([cc.SpriteFrame])
-    baseFrames: cc.SpriteFrame[] = [];
 
     private _cfg: ILevel = null;
 
@@ -88,26 +55,42 @@ export default class GroundViewCtrl extends BaseView<GroundCellModel[][]> {
         super.initView(models);
         this.type = groundType;
         this._cfg = cfg;
-        M.nodePool.create(NodePoolKey.GroundCell, this.groundBasePrefab, 150);
-        if (GameModel.ins.isHaveGem) {
-            M.nodePool.create(NodePoolKey.GemNode, this.gemPrefab, 20);
+        const groundBasePrefab = Match3Skin.requirePrefab("groundBase");
+        const groundItemPrefab = Match3Skin.requirePrefab("groundItem");
+        const gnomePrefab = Match3Skin.requirePrefab("gnome");
+        const turtlesPrefab = Match3Skin.requirePrefab("turtles");
+        const crabPrefab = Match3Skin.requirePrefab("crab");
+        const monkeyTreePrefab = Match3Skin.requirePrefab("monkeyTree");
+        const gemPrefab = Match3Skin.requirePrefab("gem");
+
+        if (groundBasePrefab) {
+            M.nodePool.create(NodePoolKey.GroundCell, groundBasePrefab, 150);
+        }
+        if (GameModel.ins.isHaveGem && gemPrefab) {
+            M.nodePool.create(NodePoolKey.GemNode, gemPrefab, 20);
         }
 
-        // M.nodePool.create(NodePoolKey.GroundMulti, this.ItemPrefab, 130);
+        if (groundItemPrefab) {
+            M.nodePool.create(NodePoolKey.GroundMulti, groundItemPrefab, 130);
+        }
 
         this.initBaseView(models);
-        this.initGnome(data.mgModel.getConfig(CollectType.gnome));
-        this.initTurtles(data.mgModel.getConfig(CollectType.turtles));
-        this.initCrab(data.mgModel.getConfig(CollectType.crab));
-        this.initMonkeyTree(cfg.monkeyTree);
+        this.initGnome(data.mgModel.getConfig(CollectType.gnome), gnomePrefab);
+        this.initTurtles(data.mgModel.getConfig(CollectType.turtles), turtlesPrefab);
+        this.initCrab(data.mgModel.getConfig(CollectType.crab), crabPrefab);
+        this.initMonkeyTree(cfg.monkeyTree, monkeyTreePrefab);
         this.initLawnmower(cfg.lawnmower);
     }
 
-    private initCrab(crabCfg: Array<Gnome>) {
+    private initCrab(crabCfg: Array<Gnome>, crabPrefab: cc.Prefab) {
         if (!crabCfg) return;
+        if (!crabPrefab) {
+            console.error("[Match3Skin] missing crab prefab");
+            return;
+        }
         for (let i = 0; i < crabCfg.length; i++) {
             const cfg = crabCfg[i];
-            const node = M.nodePool.createItem(this.crabPrefab);
+            const node = M.nodePool.createItem(crabPrefab);
             const topPos = Common.getPos(cfg.x, cfg.y, cfg.index);
             const tmpScaleHeight = 20;
             node['cfg'] = cfg;
@@ -131,12 +114,16 @@ export default class GroundViewCtrl extends BaseView<GroundCellModel[][]> {
         }
     }
 
-    private initMonkeyTree(monkeyTreeCfg: Array<Gnome>) {
+    private initMonkeyTree(monkeyTreeCfg: Array<Gnome>, monkeyTreePrefab: cc.Prefab) {
         if (!monkeyTreeCfg) return;
+        if (!monkeyTreePrefab) {
+            console.error("[Match3Skin] missing monkeyTree prefab");
+            return;
+        }
         for (let i = 0; i < monkeyTreeCfg.length; i++) {
             const cfg = monkeyTreeCfg[i];
             const pos = cc.v2(cfg.x, cfg.y);
-            const data = this.createMonkeyTree(Common.getPos(pos.x, pos.y, cfg.index));
+            const data = this.createMonkeyTree(Common.getPos(pos.x, pos.y, cfg.index), monkeyTreePrefab);
             data.pos = pos;
             data.exp = 0;
             data.remainLabel = cc.find('qipao/count', data.tree.node).getComponent(cc.Label);
@@ -159,21 +146,29 @@ export default class GroundViewCtrl extends BaseView<GroundCellModel[][]> {
         }
     }
 
-    private initTurtles(turtlesCfg: Array<Gnome>) {
+    private initTurtles(turtlesCfg: Array<Gnome>, turtlesPrefab: cc.Prefab) {
         if (!turtlesCfg) return;
+        if (!turtlesPrefab) {
+            console.error("[Match3Skin] missing turtles prefab");
+            return;
+        }
         for (let i = 0; i < turtlesCfg.length; i++) {
             const cfg = turtlesCfg[i];
             const pos = Common.getPos(cfg.x, cfg.y, cfg.index);
-            const result = Common.createSpineNode(this.gnomeParent, this.turtlesPrefab, null, pos.add(cc.v2(Common.GRID_W / 2, -Common.GRID_H / 2)));
+            const result = Common.createSpineNode(this.gnomeParent, turtlesPrefab, null, pos.add(cc.v2(Common.GRID_W / 2, -Common.GRID_H / 2)));
             this.turtlesAry[i] = { ctrl: result.ctrl, pos: cc.v2(cfg.x, cfg.y) };
         }
     }
 
-    private initGnome(gnomeCfg: Array<Gnome>) {
+    private initGnome(gnomeCfg: Array<Gnome>, gnomePrefab: cc.Prefab) {
         if (!gnomeCfg) return;
+        if (!gnomePrefab) {
+            console.error("[Match3Skin] missing gnome prefab");
+            return;
+        }
         for (let i = 0; i < gnomeCfg.length; i++) {
             const cfg = gnomeCfg[i];
-            const node = M.nodePool.createItem(this.gnomePrefab);
+            const node = M.nodePool.createItem(gnomePrefab);
             const topPos = Common.getPos(cfg.x, cfg.y, cfg.index);
             const tmpScaleHeight = 20;
 
@@ -243,7 +238,11 @@ export default class GroundViewCtrl extends BaseView<GroundCellModel[][]> {
     }
 
     public playFireflyAni(parent: cc.Node, selfPos: cc.Vec2, targetPos: cc.Vec2) {
-        const node = M.nodePool.getItem(NodePoolKey.Firefly, this.firefly);
+        const prefab = Match3Skin.requirePrefab("firefly");
+        if (!prefab) {
+            return;
+        }
+        const node = M.nodePool.getItem(NodePoolKey.Firefly, prefab);
         node.parent = parent;
         node.setPosition(parent.convertToNodeSpaceAR(this.waterParent.convertToWorldSpaceAR(selfPos)));
 
@@ -254,7 +253,11 @@ export default class GroundViewCtrl extends BaseView<GroundCellModel[][]> {
     }
 
     public playGemAni(parent: cc.Node, selfPos: cc.Vec2, targetPos: cc.Vec2) {
-        const node = M.nodePool.getItem(NodePoolKey.GemNode, this.gemPrefab);
+        const prefab = Match3Skin.requirePrefab("gem");
+        if (!prefab) {
+            return;
+        }
+        const node = M.nodePool.getItem(NodePoolKey.GemNode, prefab);
         node.parent = parent;
         node.setPosition(parent.convertToNodeSpaceAR(this.waterParent.convertToWorldSpaceAR(selfPos)));
 
@@ -319,17 +322,35 @@ export default class GroundViewCtrl extends BaseView<GroundCellModel[][]> {
                     }
                     let baseSprite: cc.Sprite = null;
                     if (gItem.getType() != null) {
-                        const groundBase = M.nodePool.getItem(NodePoolKey.GroundCell, this.groundBasePrefab);
-                        groundBase.setPosition(gItem.getPosition());
-                        baseSprite = groundBase.getComponent(cc.Sprite);
-                        this.setGroundSprite(baseSprite, x, y);
-                        groundBase.parent = this.borderParent;
-                        groundBase.zIndex = 2;
+                        const groundBasePrefab = Match3Skin.requirePrefab("groundBase");
+                        if (groundBasePrefab) {
+                            const groundBase = M.nodePool.getItem(NodePoolKey.GroundCell, groundBasePrefab);
+                            groundBase.setPosition(gItem.getPosition());
+                            baseSprite = groundBase.getComponent(cc.Sprite);
+                            this.setGroundSprite(baseSprite, x, y);
+                            groundBase.parent = this.borderParent;
+                            groundBase.zIndex = 2;
+                        }
                     }
-                    const node = M.nodePool.getItem(NodePoolKey.GroundMulti, this.ItemPrefab);
+                    const groundItemPrefab = Match3Skin.requirePrefab("groundItem");
+                    if (!groundItemPrefab) {
+                        continue;
+                    }
+                    const node = M.nodePool.getItem(NodePoolKey.GroundMulti, groundItemPrefab);
+                    if (!node) {
+                        console.error("[Match3Skin] create groundItem node failed");
+                        continue;
+                    }
                     node['baseSprite'] = baseSprite;
                     node.parent = this.multFuncParent;
                     cmp = node.getComponent(ItemGroundCtrl);
+                    if (!cmp) {
+                        const skinConfig = Match3Skin.getConfig();
+                        const prefabPath = skinConfig && skinConfig.prefabs ? skinConfig.prefabs.groundItem : null;
+                        console.error("[Match3Skin] groundItem prefab missing ItemGroundCtrl:", node.name, prefabPath);
+                        node.destroy();
+                        continue;
+                    }
                     cmp.init(gItem, this.borderParent);
                     gItem.extData = node;
                     gItem.extCtrl = cmp;
@@ -376,26 +397,11 @@ export default class GroundViewCtrl extends BaseView<GroundCellModel[][]> {
 
     /**设置地面的格子颜色! */
     private setGroundSprite(sprite: cc.Sprite, x: number, y: number) {
-        let startIndex = 0;
-        switch (this.type) {
-            case 'water': startIndex = 0; break;
-            case 'grass': startIndex = 2; break;
-            case 'sand': startIndex = 4; break;
+        const frame = Match3Skin.getCellBaseFrame(this.type, (x + y) % 2);
+        if (!frame) {
+            console.error('[Match3Skin] missing cell base frame:', this.type, (x + y) % 2);
         }
-        sprite.spriteFrame = this.baseFrames[startIndex];
-        // if (y % 2 == 0) {
-        //     if (x % 2 == 0) {
-        //         sprite.spriteFrame = this.baseFrames[startIndex];
-        //     } else {
-        //         sprite.spriteFrame = this.baseFrames[startIndex + 1];
-        //     }
-        // } else {
-        //     if (x % 2 == 1) {
-        //         sprite.spriteFrame = this.baseFrames[startIndex];
-        //     } else {
-        //         sprite.spriteFrame = this.baseFrames[startIndex + 1];
-        //     }
-        // }
+        sprite.spriteFrame = frame;
     }
 
     private getBorderSpriteName(x: number, y: number): string {
@@ -456,9 +462,12 @@ export default class GroundViewCtrl extends BaseView<GroundCellModel[][]> {
     }
     */
 
-    private createMonkeyTree(pos: cc.Vec2): IMonkeyTree {
+    private createMonkeyTree(pos: cc.Vec2, monkeyTreePrefab: cc.Prefab): IMonkeyTree {
         let ctrls: IMonkeyTree = <any>{};
-        const result = Common.createSpineNode(this.gnomeParent, this.monkeyTreePrefab, null, pos.add(cc.v2(Common.GRID_W / 2, -Common.GRID_H / 2)))
+        if (!monkeyTreePrefab) {
+            return ctrls;
+        }
+        const result = Common.createSpineNode(this.gnomeParent, monkeyTreePrefab, null, pos.add(cc.v2(Common.GRID_W / 2, -Common.GRID_H / 2)))
         ctrls.tree = result.ctrl;
         result.ctrl._setMix('yezishu_yaoshu', 'yezishu_xiuxian');
         return ctrls;
@@ -516,7 +525,7 @@ export default class GroundViewCtrl extends BaseView<GroundCellModel[][]> {
             name = '1100';
         }
 
-        const frame = this.getBorderFrame(this.middleFrames, `m${name}`, 3);
+        const frame = Match3Skin.getMiddleBorderFrame(this.type, name);
         if (frame) {
             const borderNode = new cc.Node();
             const sprite = borderNode.addComponent(cc.Sprite);
@@ -541,6 +550,8 @@ export default class GroundViewCtrl extends BaseView<GroundCellModel[][]> {
                     break;
             }
             borderNode.setPosition(pos.add(offset));
+        } else {
+            console.error('[Match3Skin] missing middle border frame:', this.type, name);
         }
     }
 
@@ -552,34 +563,14 @@ export default class GroundViewCtrl extends BaseView<GroundCellModel[][]> {
         borderNode.parent = this.borderParent;
         borderNode.name = `${name}_${cfg[0]}`;
         borderNode.zIndex = 2;
-        sprite.spriteFrame = this.getBorderFrame(this.borderFrames, cfg[0], 5);
+        const frame = Match3Skin.getUpBorderFrame(this.type, cfg[0]);
+        if (!frame) {
+            console.error('[Match3Skin] missing up border frame:', this.type, cfg[0]);
+        }
+        sprite.spriteFrame = frame;
         borderNode.setPosition(pos);
         borderNode.setScale(cfg[1]);
         borderNode.setContentSize(Common.GRID_W, Common.GRID_H);
-    }
-
-    private getBorderFrame(container: Array<cc.SpriteFrame>, sid: string, gapIndex: number): cc.SpriteFrame {
-        let startIdx = 0;
-        switch (this.type) {
-            case 'water':
-                startIdx = 0;
-                break;
-            case 'grass':
-                startIdx = gapIndex;
-                break;
-            case 'sand':
-                startIdx = gapIndex * 2;
-                break;
-        }
-        let frame = null;
-        for (let i = 5; i--;) {
-            const f = container[startIdx + i];
-            if (f && f.name == `${this.type}_${sid}`) {
-                frame = f;
-                break;
-            }
-        }
-        return frame;
     }
 
     /**
@@ -619,19 +610,12 @@ export default class GroundViewCtrl extends BaseView<GroundCellModel[][]> {
     }
 
     private getFrameByType(coff: string, type: GroundType): cc.SpriteFrame {
-        let result: cc.SpriteFrame = null;
-        const frames = type == GroundType.Water ? this.waterFrames : [];
-        for (let i = frames.length; i--;) {
-            let water = frames[i];
-            if (water.name.indexOf(coff) != -1) {
-                result = water;
-                break;
-            }
+        const skinFrame = type == GroundType.Water ? Match3Skin.getComplexGroundFrame(this.type, coff) : null;
+        if (skinFrame) {
+            return skinFrame;
         }
-        if (!result) {
-            console.error('没找到资源:----->', coff);
-        }
-        return result;
+        console.error('[Match3Skin] missing complex ground frame:', this.type, coff);
+        return null;
     }
 
 

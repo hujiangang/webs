@@ -6,23 +6,23 @@
                 [
                     null,
                     {
-                        "type": 2,
-                        "born": true
-                    },
-                    {
                         "type": 0,
                         "born": true
                     },
                     {
-                        "type": 2,
-                        "born": true
-                    },
-                    {
-                        "type": 0,
+                        "type": 1,
                         "born": true
                     },
                     {
                         "type": 2,
+                        "born": true
+                    },
+                    {
+                        "type": 3,
+                        "born": true
+                    },
+                    {
+                        "type": 4,
                         "born": true
                     },
                     {

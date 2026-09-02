@@ -1,0 +1,146 @@
+
+pangxie.png
+size: 944,310
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+chongjibo03
+  rotate: false
+  xy: 572, 180
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+glow01
+  rotate: false
+  xy: 854, 38
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+light01
+  rotate: false
+  xy: 637, 50
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+pangxie/qianzi
+  rotate: false
+  xy: 517, 5
+  size: 118, 132
+  orig: 118, 132
+  offset: 0, 0
+  index: -1
+pangxie/qianzizhua1
+  rotate: false
+  xy: 767, 5
+  size: 85, 86
+  orig: 85, 86
+  offset: 0, 0
+  index: -1
+pangxie/qianzizhua2
+  rotate: false
+  xy: 767, 93
+  size: 54, 85
+  orig: 54, 85
+  offset: 0, 0
+  index: -1
+pangxie/shenti
+  rotate: false
+  xy: 132, 84
+  size: 341, 224
+  orig: 341, 224
+  offset: 0, 0
+  index: -1
+pangxie/shidui1
+  rotate: true
+  xy: 832, 208
+  size: 100, 110
+  orig: 100, 110
+  offset: 0, 0
+  index: -1
+pangxie/shidui2
+  rotate: true
+  xy: 475, 139
+  size: 169, 95
+  orig: 169, 95
+  offset: 0, 0
+  index: -1
+pangxie/shidui3
+  rotate: false
+  xy: 178, 2
+  size: 202, 80
+  orig: 202, 80
+  offset: 0, 0
+  index: -1
+pangxie/shitou01
+  rotate: false
+  xy: 126, 8
+  size: 50, 42
+  orig: 50, 42
+  offset: 0, 0
+  index: -1
+pangxie/shitou02
+  rotate: true
+  xy: 475, 87
+  size: 50, 37
+  orig: 50, 37
+  offset: 0, 0
+  index: -1
+pangxie/shitou03
+  rotate: false
+  xy: 2, 2
+  size: 50, 48
+  orig: 50, 48
+  offset: 0, 0
+  index: -1
+pangxie/shitou04
+  rotate: false
+  xy: 572, 146
+  size: 50, 32
+  orig: 50, 32
+  offset: 0, 0
+  index: -1
+pangxie/shoubi
+  rotate: false
+  xy: 54, 4
+  size: 70, 46
+  orig: 70, 46
+  offset: 0, 0
+  index: -1
+pangxie/tui
+  rotate: true
+  xy: 382, 4
+  size: 78, 67
+  orig: 78, 67
+  offset: 0, 0
+  index: -1
+pangxie/zhangzui1
+  rotate: true
+  xy: 832, 104
+  size: 102, 109
+  orig: 102, 109
+  offset: 0, 0
+  index: -1
+pangxie/zhengyan
+  rotate: false
+  xy: 451, 18
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+smoke04
+  rotate: false
+  xy: 702, 180
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+tuowei5
+  rotate: true
+  xy: 2, 52
+  size: 256, 128
+  orig: 256, 128
+  offset: 0, 0
+  index: -1

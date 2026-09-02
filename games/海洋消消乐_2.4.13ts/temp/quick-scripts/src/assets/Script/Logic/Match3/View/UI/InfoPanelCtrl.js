@@ -63,10 +63,13 @@ var InfoPanelCtrl = /** @class */ (function (_super) {
         EnergyModel_1.EnergyModel.ins.setCurLevel();
     };
     InfoPanelCtrl.prototype.onUpdateInfo = function () {
-        this.stepLable.string = "" + GameModel_1.default.ins.stepLimit;
-        if (Number(this.scoreLable.string) != RuntimeMgr_1.default.ins.currentScore) {
+        if (this.stepLable && GameModel_1.default.ins) {
+            this.stepLable.string = "" + GameModel_1.default.ins.stepLimit;
+        }
+        if (this.scoreLable && Number(this.scoreLable.string) != RuntimeMgr_1.default.ins.currentScore) {
             this.scoreLable.string = "" + RuntimeMgr_1.default.ins.currentScore;
-            this.scoreLable.getComponent(cc.Animation).play('scoreJump');
+            var animation = this.scoreLable.getComponent(cc.Animation);
+            animation && animation.play('scoreJump');
         }
     };
     InfoPanelCtrl.prototype.initCollectTarget = function () {
@@ -90,17 +93,16 @@ var InfoPanelCtrl = /** @class */ (function (_super) {
     };
     //获取关卡文字的世界坐标
     InfoPanelCtrl.prototype.getLevelLabPos = function () {
-        var pos = Common_1.default.getWorldPos(this.currentLvLable.node);
-        return pos;
+        return this.currentLvLable ? Common_1.default.getWorldPos(this.currentLvLable.node) : null;
     };
     //获得步数坐标
     InfoPanelCtrl.prototype.getStepPos = function () {
-        return Common_1.default.getWorldPos(this.stepLable.node);
+        return this.stepLable ? Common_1.default.getWorldPos(this.stepLable.node) : null;
     };
     //获取收集物的UI坐标
     InfoPanelCtrl.prototype.getCollectPos = function (type) {
         var pos = cc.v2(0, 0);
-        var cNode = this.colletctPool.get(type + '');
+        var cNode = this.colletctPool ? this.colletctPool.get(type + '') : null;
         if (cNode) {
             // const rect = cNode.getBoundingBoxToWorld()
             // pos = cc.v2(rect.x, rect.y);

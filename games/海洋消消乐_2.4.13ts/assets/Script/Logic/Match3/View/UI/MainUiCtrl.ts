@@ -90,10 +90,12 @@ export default class MainUiCtrl extends cc.Component {
         this._cfg = cfg;
         this._mainCtrl = mc;
         this.initStarProgress(cfg.levelInfo.score);
-        if (!this.infoPanelCtrl) {
-            this.infoPanelCtrl = this.topBar.getComponent(InfoPanelCtrl);
+        this.infoPanelCtrl = this.getInfoPanelCtrl();
+        if (this.infoPanelCtrl) {
+            this.infoPanelCtrl.init();
+        } else {
+            console.error("[MainUiCtrl] missing InfoPanelCtrl on topBar");
         }
-        this.infoPanelCtrl.init();
     }
 
     private initStarProgress(scoreCfg: Array<number>) {
@@ -194,15 +196,25 @@ export default class MainUiCtrl extends cc.Component {
     }
 
     public getLevelLabelPos(): cc.Vec2 {
-        return this.infoPanelCtrl.getLevelLabPos();
+        const ctrl = this.getInfoPanelCtrl();
+        return ctrl ? ctrl.getLevelLabPos() : null;
     }
 
     public getCollectPos(type: CellType | string): cc.Vec2 {
-        return this.infoPanelCtrl.getCollectPos(type);
+        const ctrl = this.getInfoPanelCtrl();
+        return ctrl ? ctrl.getCollectPos(type) : cc.v2(0, 0);
     }
 
     public getStepPos() {
-        return this.infoPanelCtrl.getStepPos();
+        const ctrl = this.getInfoPanelCtrl();
+        return ctrl ? ctrl.getStepPos() : null;
+    }
+
+    private getInfoPanelCtrl(): InfoPanelCtrl {
+        if (!this.infoPanelCtrl && this.topBar) {
+            this.infoPanelCtrl = this.topBar.getComponent(InfoPanelCtrl);
+        }
+        return this.infoPanelCtrl;
     }
 
     public onGoMapScene() {

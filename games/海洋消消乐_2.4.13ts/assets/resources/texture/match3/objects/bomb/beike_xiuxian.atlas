@@ -1,0 +1,132 @@
+
+beike_xiuxian.png
+size: 194,78
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+L_eye1
+  rotate: false
+  xy: 136, 23
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+R_eye1
+  rotate: false
+  xy: 136, 23
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+L_eyebrow0
+  rotate: false
+  xy: 160, 6
+  size: 11, 15
+  orig: 13, 16
+  offset: 2, 0
+  index: -1
+L_eyeclose1
+  rotate: true
+  xy: 98, 22
+  size: 17, 13
+  orig: 17, 13
+  offset: 0, 0
+  index: -1
+L_eyeclose2
+  rotate: true
+  xy: 154, 23
+  size: 16, 8
+  orig: 16, 8
+  offset: 0, 0
+  index: -1
+R_Face
+  rotate: true
+  xy: 170, 53
+  size: 23, 22
+  orig: 23, 22
+  offset: 0, 0
+  index: -1
+R_eye0
+  rotate: false
+  xy: 173, 11
+  size: 12, 12
+  orig: 12, 12
+  offset: 0, 0
+  index: -1
+R_eyeSocket
+  rotate: false
+  xy: 113, 23
+  size: 21, 16
+  orig: 21, 17
+  offset: 0, 1
+  index: -1
+R_eyebrow
+  rotate: true
+  xy: 143, 5
+  size: 16, 15
+  orig: 16, 15
+  offset: 0, 0
+  index: -1
+R_eyebrow0
+  rotate: false
+  xy: 106, 3
+  size: 11, 17
+  orig: 13, 17
+  offset: 0, 0
+  index: -1
+R_highlight
+  rotate: false
+  xy: 173, 6
+  size: 3, 3
+  orig: 3, 3
+  offset: 0, 0
+  index: -1
+R_wing
+  rotate: true
+  xy: 119, 2
+  size: 19, 22
+  orig: 19, 22
+  offset: 0, 0
+  index: -1
+body
+  rotate: false
+  xy: 2, 4
+  size: 83, 72
+  orig: 83, 72
+  offset: 0, 0
+  index: -1
+flush
+  rotate: true
+  xy: 87, 22
+  size: 54, 9
+  orig: 54, 11
+  offset: 0, 1
+  index: -1
+mouth
+  rotate: true
+  xy: 87, 2
+  size: 18, 17
+  orig: 20, 17
+  offset: 2, 0
+  index: -1
+outline
+  rotate: true
+  xy: 98, 41
+  size: 35, 34
+  orig: 35, 34
+  offset: 0, 0
+  index: -1
+shadow
+  rotate: true
+  xy: 134, 41
+  size: 35, 34
+  orig: 35, 34
+  offset: 0, 0
+  index: -1
+tail
+  rotate: false
+  xy: 164, 25
+  size: 27, 14
+  orig: 27, 14
+  offset: 0, 0
+  index: -1

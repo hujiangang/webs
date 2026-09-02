@@ -1,0 +1,62 @@
+
+baozhayu.png
+size: 213,108
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+baozhayu/yu
+  rotate: false
+  xy: 159, 52
+  size: 52, 54
+  orig: 52, 54
+  offset: 0, 0
+  index: -1
+baozhayu/yu_eye1
+  rotate: false
+  xy: 93, 2
+  size: 28, 16
+  orig: 28, 16
+  offset: 0, 0
+  index: -1
+baozhayu/yu_eye2
+  rotate: false
+  xy: 123, 2
+  size: 28, 16
+  orig: 28, 16
+  offset: 0, 0
+  index: -1
+baozhayu/yu_shou
+  rotate: true
+  xy: 146, 24
+  size: 16, 15
+  orig: 16, 15
+  offset: 0, 0
+  index: -1
+baozhayu/yu_shou2
+  rotate: false
+  xy: 125, 24
+  size: 19, 16
+  orig: 19, 16
+  offset: 0, 0
+  index: -1
+baozhayu/yu_wei
+  rotate: true
+  xy: 93, 20
+  size: 20, 30
+  orig: 20, 30
+  offset: 0, 0
+  index: -1
+dd
+  rotate: false
+  xy: 2, 16
+  size: 89, 90
+  orig: 89, 90
+  offset: 0, 0
+  index: -1
+qipao
+  rotate: false
+  xy: 93, 42
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1

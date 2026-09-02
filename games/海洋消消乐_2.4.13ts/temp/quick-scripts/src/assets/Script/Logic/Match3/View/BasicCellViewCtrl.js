@@ -30,7 +30,8 @@ var BaseView_1 = require("./BaseView");
 var Event_1 = require("../../Data/Const/Event");
 var ActionCtrl_1 = require("../../Common/ActionCtrl");
 var GameModel_1 = require("../Model/GameModel");
-var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
+var Match3Skin_1 = require("../Skin/Match3Skin");
+var ccclass = cc._decorator.ccclass;
 var BasicCellViewCtrl = /** @class */ (function (_super) {
     __extends(BasicCellViewCtrl, _super);
     function BasicCellViewCtrl() {
@@ -38,7 +39,8 @@ var BasicCellViewCtrl = /** @class */ (function (_super) {
     }
     BasicCellViewCtrl.prototype.initView = function (models) {
         _super.prototype.initView.call(this, models);
-        M_1.default.nodePool.create(Constant_1.NodePoolKey.Cell, this.ItemPrefab, 150);
+        var itemPrefab = Match3Skin_1.default.requirePrefab("cellItem");
+        M_1.default.nodePool.create(Constant_1.NodePoolKey.Cell, itemPrefab, 150);
         for (var y = models.length; y--;) {
             var yItem = models[y];
             for (var x = yItem.length; x--;) {
@@ -50,13 +52,13 @@ var BasicCellViewCtrl = /** @class */ (function (_super) {
         }
     };
     BasicCellViewCtrl.prototype.createNewCell = function (model, createType) {
-        var node = M_1.default.nodePool.getItem(Constant_1.NodePoolKey.Cell, this.ItemPrefab);
+        var node = M_1.default.nodePool.getItem(Constant_1.NodePoolKey.Cell, Match3Skin_1.default.requirePrefab("cellItem"));
         node.getComponent(ItemBasicCellCtrl_1.default).init(model, createType);
         model.extData = node;
         node.parent = this.node;
     };
     BasicCellViewCtrl.prototype.playCollectPower = function (parent, startCell, endCell) {
-        var node = M_1.default.nodePool.getItem(Constant_1.NodePoolKey.Cell, this.ItemPrefab);
+        var node = M_1.default.nodePool.getItem(Constant_1.NodePoolKey.Cell, Match3Skin_1.default.requirePrefab("cellItem"));
         node.parent = parent;
         var pos = parent.convertToNodeSpaceAR(this.node.convertToWorldSpaceAR(startCell.getPosition()));
         node.setPosition(pos);
@@ -67,7 +69,7 @@ var BasicCellViewCtrl = /** @class */ (function (_super) {
         });
     };
     BasicCellViewCtrl.prototype.playCollectAni = function (parent, type, pos, targetPos, elimateType, callback) {
-        var node = M_1.default.nodePool.getItem(Constant_1.NodePoolKey.Cell, this.ItemPrefab);
+        var node = M_1.default.nodePool.getItem(Constant_1.NodePoolKey.Cell, Match3Skin_1.default.requirePrefab("cellItem"));
         node.parent = parent;
         var wpos = this.node.convertToWorldSpaceAR(pos);
         node.setPosition(parent.convertToNodeSpaceAR(wpos));

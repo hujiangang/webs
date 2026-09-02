@@ -47,6 +47,7 @@ var EventMgr_1 = require("../../Base/Manager/EventMgr");
 var Event_1 = require("./Const/Event");
 var Constant_1 = require("./Const/Constant");
 var M_1 = require("../../Base/Manager/M");
+var Apps_1 = require("../../Base/Apps");
 var StorageMgr_1 = require("../../Base/Manager/StorageMgr");
 var ReportMgr_1 = require("../../Base/Manager/ReportMgr");
 var Common_1 = require("../Common/Common");
@@ -195,7 +196,7 @@ var RuntimeMgr = /** @class */ (function () {
     };
     Object.defineProperty(RuntimeMgr.prototype, "maxMatch3Level", {
         get: function () {
-            return 500;
+            return Apps_1.default.isDebug ? 9999 : 500;
         },
         enumerable: false,
         configurable: true

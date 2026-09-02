@@ -8,6 +8,7 @@ import { Scene } from "../Logic/Data/Const/Constant";
 import { StorageMgr } from "../Base/Manager/StorageMgr";
 import NetMgr from "../Base/Manager/NetMgr";
 import { Event } from "../Logic/Data/Const/Event";
+import Apps from "../Base/Apps";
 
 const { ccclass, property } = cc._decorator;
 
@@ -32,7 +33,7 @@ export class GMView extends UIBase {
     }
 
     start() {
-        this.editLevel.string = M.runtime.CurLevel.toString();
+        this.editLevel.string = Apps.isDebug ? "9999" : M.runtime.CurLevel.toString();
         this.editUserId.string = StorageMgr.Storage.getString("__userId");
     }
 
@@ -52,7 +53,7 @@ export class GMView extends UIBase {
 
     public onJumpLevel() {
         M.runtime.SelectLevel = 0;
-        const nextLv = Number(this.editLevel.string) || 1;
+        const nextLv = Number(this.editLevel.string) || (Apps.isDebug ? 9999 : 1);
         M.runtime.setMatch3Level(nextLv, true);
         Common.jumpScene(Scene.Match);
         UIMgr.ins.closeUI(UIHudDef.GMView);

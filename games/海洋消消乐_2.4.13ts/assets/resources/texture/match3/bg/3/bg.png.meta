@@ -9,7 +9,7 @@
   "genMipmaps": false,
   "packable": true,
   "width": 750,
-  "height": 1334,
+  "height": 1265,
   "platformSettings": {},
   "subMetas": {
     "bg": {
@@ -25,9 +25,9 @@
       "trimX": 0,
       "trimY": 0,
       "width": 750,
-      "height": 1334,
+      "height": 1265,
       "rawWidth": 750,
-      "rawHeight": 1334,
+      "rawHeight": 1265,
       "borderTop": 493,
       "borderBottom": 50,
       "borderLeft": 0,

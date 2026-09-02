@@ -32,6 +32,7 @@ var TimeConfig_1 = require("../../Data/Const/TimeConfig");
 var ResCtrl_1 = require("../ResCtrl");
 var Common_1 = require("../../Common/Common");
 var Tuituji_1 = require("./Comp/Tuituji");
+var Match3Skin_1 = require("../Skin/Match3Skin");
 var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
 var ShuiCaoIdleAniName = ['shuicao_2', 'shuicao'];
 var ShuiCaoHitAni = ['shuicao_hit2', 'shuicao_hit'];
@@ -41,13 +42,6 @@ var ItemGroundCtrl = /** @class */ (function (_super) {
         var _this = _super !== null && _super.apply(this, arguments) || this;
         _this.elementSprite = null;
         _this.buriedSprite = null;
-        _this.WallPrefab = null;
-        _this.tuitujiPrefab = null;
-        _this.LotusleafFrame = null;
-        _this.girlRoadFrame = null;
-        _this.Ivy = null;
-        _this.exitPrefab = null;
-        _this.shanhuAni = null;
         _this.ivyCtrl = null;
         _this.showLv = -1;
         _this._downLayer = null;
@@ -81,7 +75,7 @@ var ItemGroundCtrl = /** @class */ (function (_super) {
     ItemGroundCtrl.prototype.PlayShanhuAnim = function () {
         if ((this.model.getType() == Constant_1.GroundType.Mushroom)) {
             //cc.log("播放珊瑚动画");
-            var node_1 = M_1.default.nodePool.getItem(Constant_1.NodePoolKey.ShanhuAnim, this.shanhuAni);
+            var node_1 = M_1.default.nodePool.getItem(Constant_1.NodePoolKey.ShanhuAnim, Match3Skin_1.default.requirePrefab("shanhuAni"));
             var _animation = node_1.getComponent(cc.Animation);
             node_1.parent = this.elementSprite.node;
             //node.setPosition(0, 0);
@@ -125,13 +119,13 @@ var ItemGroundCtrl = /** @class */ (function (_super) {
     };
     ItemGroundCtrl.prototype.showExit = function () {
         if (this.model.isExit) {
-            var exitNode = M_1.default.nodePool.createItem(this.exitPrefab);
+            var exitNode = M_1.default.nodePool.createItem(Match3Skin_1.default.requirePrefab("exit"));
             exitNode.parent = this.node;
         }
     };
     ItemGroundCtrl.prototype.showPlug = function () {
         if (this.model.isGirlRoad) {
-            this.node['baseSprite'].spriteFrame = this.girlRoadFrame;
+            this.node['baseSprite'].spriteFrame = Match3Skin_1.default.getGirlRoadFrame();
         }
         else if (this.model.isConveyer) {
             this.addLotusleaf();
@@ -159,7 +153,7 @@ var ItemGroundCtrl = /** @class */ (function (_super) {
     };
     ItemGroundCtrl.prototype.showTuituji = function () {
         this.elementSprite.node.active = true;
-        var node = cc.instantiate(this.tuitujiPrefab);
+        var node = cc.instantiate(Match3Skin_1.default.requirePrefab("tuituji"));
         node.parent = this.elementSprite.node;
         this._tuitujiCtrl = node.getComponent(Tuituji_1.default);
         this._tuitujiCtrl.init(this.model.tuitujiCfg);
@@ -187,7 +181,7 @@ var ItemGroundCtrl = /** @class */ (function (_super) {
             for (var key in this.model.Wall) {
                 var angle = this.model.Wall[key];
                 if (angle != undefined) {
-                    var wn = cc.instantiate(this.WallPrefab);
+                    var wn = cc.instantiate(Match3Skin_1.default.requirePrefab("wall"));
                     wn.parent = this.node;
                     wn.angle = angle;
                     var gap = angle < 90 ? 7 : -7;
@@ -205,7 +199,7 @@ var ItemGroundCtrl = /** @class */ (function (_super) {
         var _this = this;
         if (!this.ivyCtrl) {
             this.elementSprite.node.active = true;
-            var node = M_1.default.nodePool.getItem(Constant_1.NodePoolKey.ShuiCao, this.Ivy);
+            var node = M_1.default.nodePool.getItem(Constant_1.NodePoolKey.ShuiCao, Match3Skin_1.default.requirePrefab("ivy"));
             this.ivyCtrl = node.getComponent(SpinePlayerCtrl_1.default);
             if (this.model.zIndex == -1) {
                 node.parent = this._downLayer;
@@ -244,7 +238,7 @@ var ItemGroundCtrl = /** @class */ (function (_super) {
         var node = cc.instantiate(this.elementSprite.node);
         node.name = 'Lotusleaf';
         node.parent = this.elementSprite.node;
-        node.getComponent(cc.Sprite).spriteFrame = this.LotusleafFrame;
+        node.getComponent(cc.Sprite).spriteFrame = Match3Skin_1.default.getLotusleafFrame();
     };
     /**有可能是性能热点.....待优化.. */
     ItemGroundCtrl.prototype.playAnimation = function () {
@@ -275,27 +269,6 @@ var ItemGroundCtrl = /** @class */ (function (_super) {
     __decorate([
         property(cc.Sprite)
     ], ItemGroundCtrl.prototype, "buriedSprite", void 0);
-    __decorate([
-        property(cc.Prefab)
-    ], ItemGroundCtrl.prototype, "WallPrefab", void 0);
-    __decorate([
-        property(cc.Prefab)
-    ], ItemGroundCtrl.prototype, "tuitujiPrefab", void 0);
-    __decorate([
-        property(cc.SpriteFrame)
-    ], ItemGroundCtrl.prototype, "LotusleafFrame", void 0);
-    __decorate([
-        property(cc.SpriteFrame)
-    ], ItemGroundCtrl.prototype, "girlRoadFrame", void 0);
-    __decorate([
-        property(cc.Prefab)
-    ], ItemGroundCtrl.prototype, "Ivy", void 0);
-    __decorate([
-        property(cc.Prefab)
-    ], ItemGroundCtrl.prototype, "exitPrefab", void 0);
-    __decorate([
-        property(cc.Prefab)
-    ], ItemGroundCtrl.prototype, "shanhuAni", void 0);
     ItemGroundCtrl = __decorate([
         ccclass
     ], ItemGroundCtrl);

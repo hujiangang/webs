@@ -88,6 +88,8 @@ var ShaderHelper_1 = require("../../Base/Shader/ShaderHelper");
 var ShaderTime_1 = require("../../Base/Shader/ShaderTime");
 var AudioCtrl_1 = require("../Common/AudioCtrl");
 var OverHightLightCtrl_1 = require("../Common/UI/OverHightLightCtrl");
+var Match3Skin_1 = require("./Skin/Match3Skin");
+var ResCtrl_1 = require("./ResCtrl");
 var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
 var MainCtrl = /** @class */ (function (_super) {
     __extends(MainCtrl, _super);
@@ -96,7 +98,6 @@ var MainCtrl = /** @class */ (function (_super) {
         _this.bg = null;
         _this.uiNode = null;
         _this.effNode = null;
-        _this.gridBoard = null;
         _this.planePrefab = null;
         _this.maskNode = null;
         // @property(cc.Node)
@@ -149,6 +150,7 @@ var MainCtrl = /** @class */ (function (_super) {
         GameModel_1.default.destory();
         M_1.default.nodePool.destory();
         GroupAnimatCtrl_1.default.ins.destory();
+        ResCtrl_1.default.destory();
         Common_1.default.CurrentCtrlView = null;
         this.unscheduleAllCallbacks();
         clearTimeout(this.touchTimer);
@@ -218,9 +220,15 @@ var MainCtrl = /** @class */ (function (_super) {
                         this.uiCtrl = this.uiNode.getComponent(MainUiCtrl_1.default);
                         this.effCtrl = this.effNode.getComponent(EffLayerCtrl_1.default);
                         this.gameModel = new GameModel_1.default(data);
+                        return [4 /*yield*/, Match3Skin_1.default.load()];
+                    case 4:
+                        _b.sent();
+                        return [4 /*yield*/, ResCtrl_1.default.load()];
+                    case 5:
+                        _b.sent();
+                        this.uiCtrl.init(this, data);
                         this.initBg();
                         this.initMapGridView();
-                        this.uiCtrl.init(this, data);
                         return [2 /*return*/];
                 }
             });
@@ -407,10 +415,10 @@ var MainCtrl = /** @class */ (function (_super) {
         M_1.default.event.send(Event_1.Event.UI.UpdateTmpLoadingProgress, zdtarget || Math.ceil((60 + (this._loadingProgre / this._loadingCount) * 60)));
     };
     MainCtrl.prototype.updateBgTopAlign = function (top) {
-        var lvLabPos = this.uiCtrl.getLevelLabelPos();
+        var lvLabPos = this.uiCtrl && this.uiCtrl.getLevelLabelPos ? this.uiCtrl.getLevelLabelPos() : null;
         //根据上部关卡节点来确认偏移量
         var topGap = 0;
-        if (this.currentBgIndex == 1) {
+        if (this.currentBgIndex == 1 && lvLabPos) {
             topGap = (cc.winSize.height - lvLabPos.y) - 307;
         }
         Common_1.default.setAlignment(this.bg.node, 'top', top + topGap);
@@ -490,8 +498,9 @@ var MainCtrl = /** @class */ (function (_super) {
         var maps = this.gameModel.getMaps();
         this.gridCtrlPool = new Map();
         this.gridViewPool = new Map();
+        var gridBoardPrefab = Match3Skin_1.default.requirePrefab("gridBoard");
         for (var i = 0; i < this.gameModel.mapCount; i++) {
-            var gridCtrlView = cc.instantiate(this.gridBoard);
+            var gridCtrlView = cc.instantiate(gridBoardPrefab);
             var gridData = maps[i];
             var gc = this.initGround(gridCtrlView, gridData);
             var mc = this.initMainLayer(gridCtrlView, gridData);
@@ -1411,9 +1420,6 @@ var MainCtrl = /** @class */ (function (_super) {
     __decorate([
         property(cc.Node)
     ], MainCtrl.prototype, "effNode", void 0);
-    __decorate([
-        property(cc.Prefab)
-    ], MainCtrl.prototype, "gridBoard", void 0);
     __decorate([
         property(cc.Prefab)
     ], MainCtrl.prototype, "planePrefab", void 0);

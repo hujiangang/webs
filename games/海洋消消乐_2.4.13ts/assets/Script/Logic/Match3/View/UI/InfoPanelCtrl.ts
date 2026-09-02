@@ -54,10 +54,13 @@ export default class InfoPanelCtrl extends cc.Component {
     }
 
     public onUpdateInfo() {
-        this.stepLable.string = `${GameModel.ins.stepLimit}`;
-        if (Number(this.scoreLable.string) != RuntimeMgr.ins.currentScore) {
+        if (this.stepLable && GameModel.ins) {
+            this.stepLable.string = `${GameModel.ins.stepLimit}`;
+        }
+        if (this.scoreLable && Number(this.scoreLable.string) != RuntimeMgr.ins.currentScore) {
             this.scoreLable.string = `${RuntimeMgr.ins.currentScore}`;
-            this.scoreLable.getComponent(cc.Animation).play('scoreJump');
+            const animation = this.scoreLable.getComponent(cc.Animation);
+            animation && animation.play('scoreJump');
         }
     }
 
@@ -82,19 +85,18 @@ export default class InfoPanelCtrl extends cc.Component {
 
     //获取关卡文字的世界坐标
     public getLevelLabPos() {
-        let pos = Common.getWorldPos(this.currentLvLable.node);
-        return pos;
+        return this.currentLvLable ? Common.getWorldPos(this.currentLvLable.node) : null;
     }
 
     //获得步数坐标
     public getStepPos() {
-        return Common.getWorldPos(this.stepLable.node)
+        return this.stepLable ? Common.getWorldPos(this.stepLable.node) : null;
     }
 
     //获取收集物的UI坐标
     public getCollectPos(type: CellType | string) {
         let pos = cc.v2(0, 0);
-        const cNode = this.colletctPool.get(type + '')
+        const cNode = this.colletctPool ? this.colletctPool.get(type + '') : null;
         if (cNode) {
             // const rect = cNode.getBoundingBoxToWorld()
             // pos = cc.v2(rect.x, rect.y);

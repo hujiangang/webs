@@ -8,6 +8,7 @@ import { GapTime } from "../../Data/Const/TimeConfig";
 import SpinePlayerCtrl from "../../../Base/CustomComponent/SpinePlayerCtrl";
 import { UpGroundType } from "../../Data/Const/Constant";
 import ResCtrl from "../ResCtrl";
+import Match3Skin from "../Skin/Match3Skin";
 
 const { ccclass, property } = cc._decorator;
 
@@ -22,15 +23,6 @@ export default class ItemUpgroundCtrl extends BaseItemView<UpGroundCellModel> {
 
     @property(cc.Sprite)
     box: cc.Sprite = null;
-
-    @property(cc.Node)
-    portal: cc.Node = null;
-
-    @property(cc.Prefab)
-    portalPrefab: cc.Prefab = null;
-
-    @property([cc.Prefab])
-    novicePrefab: cc.Prefab[] = [];
 
     private n_conchItem: { node: cc.Node, ctrl: SpinePlayerCtrl } = null;
     private n_grassItem: { node: cc.Node, ctrl: SpinePlayerCtrl } = null;
@@ -127,7 +119,7 @@ export default class ItemUpgroundCtrl extends BaseItemView<UpGroundCellModel> {
                 this.setStone(lv);
                 break;
             case UpGroundType.Nov_grass:
-                this.showCloseGrass(type);
+                this.showCloseGrass();
                 break;
             case UpGroundType.Nov_conch:
                 this.showConchNov(type);
@@ -145,13 +137,15 @@ export default class ItemUpgroundCtrl extends BaseItemView<UpGroundCellModel> {
         this.box.spriteFrame = null;
     }
 
-    private showCloseGrass(type) {
-        this.n_grassItem = Common.createSpineNode(this.box.node, this.novicePrefab[type - 100]);
+    private showCloseGrass() {
+        const novicePrefab = Match3Skin.getPrefabList("novice")[0];
+        if (novicePrefab) {
+            this.n_grassItem = Common.createSpineNode(this.box.node, novicePrefab);
+        }
     }
 
     private showConchNov(type) {
         // if (this.model.getLv() > 0) {
-        //     this.n_conchItem = Common.createSpineNode(this.box.node, this.novicePrefab[type - 100]);
         //     this.box.node.scale = 1.85;
         //     this.box.node.setAnchorPoint(cc.v2(0, 0));
         //     this.box.node.setPosition(this.box.node.position.add(cc.v3(Common.GRID_W / 2, Common.GRID_H / 2)));

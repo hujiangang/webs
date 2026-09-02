@@ -1,0 +1,34 @@
+
+beikebaobei.png
+size: 376,132
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+beikebaoshi2
+  rotate: false
+  xy: 223, 45
+  size: 85, 85
+  orig: 85, 85
+  offset: 0, 0
+  index: -1
+dd
+  rotate: false
+  xy: 132, 40
+  size: 89, 90
+  orig: 89, 90
+  offset: 0, 0
+  index: -1
+light01b_01a
+  rotate: false
+  xy: 310, 66
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+light06
+  rotate: false
+  xy: 2, 2
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1

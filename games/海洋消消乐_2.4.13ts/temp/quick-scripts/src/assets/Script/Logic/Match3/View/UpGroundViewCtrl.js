@@ -33,6 +33,7 @@ var ActionCtrl_1 = require("../../Common/ActionCtrl");
 var Event_1 = require("../../Data/Const/Event");
 var Common_1 = require("../../Common/Common");
 var SpinePlayerCtrl_1 = require("../../../Base/CustomComponent/SpinePlayerCtrl");
+var Match3Skin_1 = require("../Skin/Match3Skin");
 var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
 var UpGroundViewCtrl = /** @class */ (function (_super) {
     __extends(UpGroundViewCtrl, _super);
@@ -40,17 +41,17 @@ var UpGroundViewCtrl = /** @class */ (function (_super) {
         var _this = _super !== null && _super.apply(this, arguments) || this;
         _this.defaultNode = null;
         _this.portal = null;
-        _this.portalPrefab = null;
         return _this;
     }
     UpGroundViewCtrl.prototype.initView = function (models) {
         _super.prototype.initView.call(this, models);
-        M_1.default.nodePool.create(Constant_1.NodePoolKey.UpGroundCell, this.ItemPrefab, 150);
+        var itemPrefab = Match3Skin_1.default.requirePrefab("upGroundItem");
+        M_1.default.nodePool.create(Constant_1.NodePoolKey.UpGroundCell, itemPrefab, 150);
         for (var y = models.length; y--;) {
             var yItems = models[y];
             for (var x = yItems.length; x--;) {
                 var item = yItems[x];
-                var node = M_1.default.nodePool.getItem(Constant_1.NodePoolKey.UpGroundCell, this.ItemPrefab);
+                var node = M_1.default.nodePool.getItem(Constant_1.NodePoolKey.UpGroundCell, Match3Skin_1.default.requirePrefab("upGroundItem"));
                 node.getComponent(ItemUpgroundCtrl_1.default).init(item);
                 item.extData = node;
                 node.parent = this.defaultNode;
@@ -61,7 +62,7 @@ var UpGroundViewCtrl = /** @class */ (function (_super) {
     UpGroundViewCtrl.prototype.syncPortal = function (model) {
         this.portal.y = 0;
         if (model.portalIdx != 0) {
-            var node = M_1.default.nodePool.createItem(this.portalPrefab);
+            var node = M_1.default.nodePool.createItem(Match3Skin_1.default.requirePrefab("portal"));
             var ctrl_1 = node.getComponent(SpinePlayerCtrl_1.default);
             node.parent = this.portal;
             node.setPosition(model.getPosition());
@@ -92,7 +93,7 @@ var UpGroundViewCtrl = /** @class */ (function (_super) {
     UpGroundViewCtrl.prototype.createTempBoxNode = function (pos) {
         var item = new UpGroundCellModel_1.default();
         item.init({ box_level: 1 }, pos.x, pos.y, GameModel_1.default.ins.mapIndex);
-        var node = M_1.default.nodePool.getItem(Constant_1.NodePoolKey.UpGroundCell, this.ItemPrefab);
+        var node = M_1.default.nodePool.getItem(Constant_1.NodePoolKey.UpGroundCell, Match3Skin_1.default.requirePrefab("upGroundItem"));
         item.extData = node;
         node.getComponent(ItemUpgroundCtrl_1.default).init(item);
         return node;
@@ -103,9 +104,6 @@ var UpGroundViewCtrl = /** @class */ (function (_super) {
     __decorate([
         property(cc.Node)
     ], UpGroundViewCtrl.prototype, "portal", void 0);
-    __decorate([
-        property(cc.Prefab)
-    ], UpGroundViewCtrl.prototype, "portalPrefab", void 0);
     UpGroundViewCtrl = __decorate([
         ccclass
     ], UpGroundViewCtrl);

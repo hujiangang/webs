@@ -1,0 +1,83 @@
+
+meirenyu_01.png
+size: 432,449
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+biyan
+  rotate: false
+  xy: 302, 345
+  size: 108, 43
+  orig: 108, 43
+  offset: 0, 0
+  index: -1
+lian
+  rotate: true
+  xy: 166, 4
+  size: 190, 177
+  orig: 190, 177
+  offset: 0, 0
+  index: -1
+shenti
+  rotate: false
+  xy: 302, 196
+  size: 95, 147
+  orig: 95, 147
+  offset: 0, 0
+  index: -1
+toufa
+  rotate: true
+  xy: 2, 2
+  size: 245, 162
+  orig: 245, 162
+  offset: 0, 0
+  index: -1
+xiashen
+  rotate: false
+  xy: 2, 249
+  size: 298, 198
+  orig: 298, 198
+  offset: 0, 0
+  index: -1
+youdabi
+  rotate: true
+  xy: 345, 18
+  size: 94, 71
+  orig: 94, 71
+  offset: 0, 0
+  index: -1
+youxiaobi
+  rotate: true
+  xy: 302, 390
+  size: 57, 120
+  orig: 57, 120
+  offset: 0, 0
+  index: -1
+youxiong
+  rotate: true
+  xy: 218, 201
+  size: 46, 54
+  orig: 46, 54
+  offset: 0, 0
+  index: -1
+zuodabi
+  rotate: false
+  xy: 399, 268
+  size: 29, 75
+  orig: 29, 75
+  offset: 0, 0
+  index: -1
+zuoxiaobi
+  rotate: false
+  xy: 345, 114
+  size: 85, 80
+  orig: 85, 80
+  offset: 0, 0
+  index: -1
+zuoxiong
+  rotate: true
+  xy: 166, 196
+  size: 51, 50
+  orig: 51, 50
+  offset: 0, 0
+  index: -1

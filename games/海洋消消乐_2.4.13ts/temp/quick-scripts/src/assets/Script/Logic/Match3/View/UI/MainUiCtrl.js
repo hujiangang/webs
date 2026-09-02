@@ -84,10 +84,13 @@ var MainUiCtrl = /** @class */ (function (_super) {
         this._cfg = cfg;
         this._mainCtrl = mc;
         this.initStarProgress(cfg.levelInfo.score);
-        if (!this.infoPanelCtrl) {
-            this.infoPanelCtrl = this.topBar.getComponent(InfoPanelCtrl_1.default);
+        this.infoPanelCtrl = this.getInfoPanelCtrl();
+        if (this.infoPanelCtrl) {
+            this.infoPanelCtrl.init();
         }
-        this.infoPanelCtrl.init();
+        else {
+            console.error("[MainUiCtrl] missing InfoPanelCtrl on topBar");
+        }
     };
     MainUiCtrl.prototype.initStarProgress = function (scoreCfg) {
         if (scoreCfg) {
@@ -180,13 +183,22 @@ var MainUiCtrl = /** @class */ (function (_super) {
         this.tmpTestPropShowLable.active = false;
     };
     MainUiCtrl.prototype.getLevelLabelPos = function () {
-        return this.infoPanelCtrl.getLevelLabPos();
+        var ctrl = this.getInfoPanelCtrl();
+        return ctrl ? ctrl.getLevelLabPos() : null;
     };
     MainUiCtrl.prototype.getCollectPos = function (type) {
-        return this.infoPanelCtrl.getCollectPos(type);
+        var ctrl = this.getInfoPanelCtrl();
+        return ctrl ? ctrl.getCollectPos(type) : cc.v2(0, 0);
     };
     MainUiCtrl.prototype.getStepPos = function () {
-        return this.infoPanelCtrl.getStepPos();
+        var ctrl = this.getInfoPanelCtrl();
+        return ctrl ? ctrl.getStepPos() : null;
+    };
+    MainUiCtrl.prototype.getInfoPanelCtrl = function () {
+        if (!this.infoPanelCtrl && this.topBar) {
+            this.infoPanelCtrl = this.topBar.getComponent(InfoPanelCtrl_1.default);
+        }
+        return this.infoPanelCtrl;
     };
     MainUiCtrl.prototype.onGoMapScene = function () {
         // Common.jumpScene(Scene.Map)

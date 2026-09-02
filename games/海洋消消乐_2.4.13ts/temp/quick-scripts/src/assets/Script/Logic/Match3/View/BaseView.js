@@ -28,16 +28,12 @@ var BaseView = /** @class */ (function (_super) {
     __extends(BaseView, _super);
     function BaseView() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
-        _this.ItemPrefab = null;
         _this.models = null;
         return _this;
     }
     BaseView.prototype.initView = function (models) {
         this.models = models;
     };
-    __decorate([
-        property(cc.Prefab)
-    ], BaseView.prototype, "ItemPrefab", void 0);
     BaseView = __decorate([
         ccclass
     ], BaseView);

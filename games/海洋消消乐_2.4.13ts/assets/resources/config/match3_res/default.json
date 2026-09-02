@@ -1,0 +1,201 @@
+{
+  "_bases": {
+    "cells": "texture/match3/objects/cells",
+    "boxes": "texture/match3/objects/cells/box",
+    "groundTexture": "texture/match3/ground/border",
+    "cellPrefabs": "prefab/match3/Cells",
+    "moveGround": "prefab/match3/Cells/ground"
+  },
+  "BombFlashingBg": {
+    "_base": "cells",
+    "items": [
+      "ts2.png",
+      "ts1.png",
+      "ts1.png",
+      "ts4.png",
+      "ts3.png"
+    ]
+  },
+  "BombStaticFrame": {
+    "_base": "cells",
+    "items": [
+      "obj100.png",
+      "obj101.png",
+      "obj101.png",
+      "obj103.png",
+      "obj104.png"
+    ]
+  },
+  "NormalCellFrame": {
+    "_base": "cells",
+    "items": [
+      "obj0.png",
+      "obj1.png",
+      "obj2.png",
+      "obj3.png",
+      "obj4.png",
+      "obj5.png",
+      "obj6.png",
+      "obj7.png",
+      "obj8.png",
+      "obj9.png",
+      "obj10.png",
+      "obj11.png",
+      "obj12.png",
+      "obj13.png",
+      null
+    ]
+  },
+  "pearlFrame": {
+    "_base": "cells",
+    "path": "pearl.png"
+  },
+  "Map2NormalCellFrame": {
+    "_base": "cells",
+    "items": []
+  },
+  "CellPrefab": {
+    "_base": "cellPrefabs",
+    "items": [
+      "Bomb.prefab",
+      "Hengshu.prefab",
+      "Hengshu.prefab",
+      "Octopus.prefab",
+      "Caihong.prefab",
+      "FishBomb.prefab",
+      "Gril.prefab",
+      "Conch.prefab",
+      "banana.prefab",
+      "egg.prefab"
+    ]
+  },
+  "lockFrames": {
+    "_base": "cells",
+    "items": [
+      "chain1.png",
+      "chain2.png"
+    ]
+  },
+  "boxFrames": {
+    "_base": "boxes",
+    "items": [
+      "fullbox1.png",
+      "fullbox2.png",
+      "fullbox3.png",
+      "box0_1.png",
+      "box0_2.png",
+      "box0_3.png",
+      "box1_1.png",
+      "box1_2.png",
+      "box1_3.png",
+      "box2_1.png",
+      "box2_2.png",
+      "box2_3.png",
+      "box3_1.png",
+      "box3_2.png",
+      "box3_3.png",
+      "box4_1.png",
+      "box4_2.png",
+      "box4_3.png",
+      "box5_1.png",
+      "box5_2.png",
+      "box5_3.png"
+    ]
+  },
+  "iceFrames": {
+    "_base": "cells",
+    "items": [
+      "ice_lvl_1.png",
+      "ice_lvl_2.png"
+    ]
+  },
+  "stoneFrames": {
+    "_base": "cells",
+    "items": [
+      "stone2.png",
+      "stone3.png",
+      null
+    ]
+  },
+  "LeaveFrames": {
+    "_base": "cells",
+    "items": [
+      "leaves1.png",
+      "leaves2.png",
+      "leaves3.png"
+    ]
+  },
+  "GroundFrames": {
+    "_base": "cells",
+    "items": [
+      null,
+      "land_2.png",
+      "land_3.png"
+    ]
+  },
+  "GemFrames": {
+    "_base": "groundTexture",
+    "items": [
+      "gem_1.png",
+      "gem_2.png"
+    ]
+  },
+  "FlowerFrames": {
+    "_base": "cells",
+    "items": [
+      "flowers3.png",
+      "flowers2.png",
+      "flowers1.png"
+    ]
+  },
+  "FireflyFrames": {
+    "_base": "cells",
+    "items": [
+      "ct1_1.png",
+      "ct1_1.png",
+      "ct1_1.png",
+      "ct1_1.png",
+      "ct1_1.png",
+      "ct1_1.png"
+    ]
+  },
+  "CollectIcon": {
+    "_base": "cells",
+    "items": [
+      "box/fullbox1.png",
+      "objgnome.png",
+      "turtles.png",
+      "tree.png",
+      "objcrab.png",
+      "stone3.png",
+      "gem.png",
+      "ct1_2.png",
+      "box/colorbox.png"
+    ]
+  },
+  "groundPrefabs": {
+    "_base": "moveGround",
+    "items": [
+      "top.prefab",
+      "botom.prefab",
+      "left.prefab",
+      "right.prefab"
+    ]
+  },
+  "groundCenter": {
+    "_base": "moveGround",
+    "path": "center.png"
+  },
+  "rocketPrefab": {
+    "_base": "cellPrefabs",
+    "path": "zhangyuGG.prefab"
+  },
+  "mushroomFrames": {
+    "_base": "cells",
+    "items": [
+      "mushroom0.png",
+      "mushroom1.png",
+      "mushroom1.png"
+    ]
+  }
+}

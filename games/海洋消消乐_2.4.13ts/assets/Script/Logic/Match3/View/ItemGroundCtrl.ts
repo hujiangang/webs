@@ -9,6 +9,7 @@ import ResCtrl from "../ResCtrl";
 import Common from "../../Common/Common";
 import Tuituji from "./Comp/Tuituji";
 import GameModel from "../Model/GameModel";
+import Match3Skin from "../Skin/Match3Skin";
 
 
 const { ccclass, property } = cc._decorator;
@@ -23,27 +24,6 @@ export default class ItemGroundCtrl extends BaseItemView<GroundCellModel> {
 
     @property(cc.Sprite)
     buriedSprite: cc.Sprite = null;
-
-    @property(cc.Prefab)
-    WallPrefab: cc.Prefab = null;
-
-    @property(cc.Prefab)
-    tuitujiPrefab: cc.Prefab = null;
-
-    @property(cc.SpriteFrame)
-    LotusleafFrame: cc.SpriteFrame = null;
-
-    @property(cc.SpriteFrame)
-    girlRoadFrame: cc.SpriteFrame = null;
-
-    @property(cc.Prefab)
-    Ivy: cc.Prefab = null;
-
-    @property(cc.Prefab)
-    exitPrefab: cc.Prefab = null;
-
-    @property(cc.Prefab)
-    shanhuAni: cc.Prefab = null;
 
     private ivyCtrl: SpinePlayerCtrl = null;
 
@@ -91,7 +71,7 @@ export default class ItemGroundCtrl extends BaseItemView<GroundCellModel> {
         if ((this.model.getType() == GroundType.Mushroom)) {
             //cc.log("播放珊瑚动画");
 
-            const node = M.nodePool.getItem(NodePoolKey.ShanhuAnim, this.shanhuAni);
+            const node = M.nodePool.getItem(NodePoolKey.ShanhuAnim, Match3Skin.requirePrefab("shanhuAni"));
             var _animation = node.getComponent(cc.Animation);
             node.parent = this.elementSprite.node;
             //node.setPosition(0, 0);
@@ -140,14 +120,14 @@ export default class ItemGroundCtrl extends BaseItemView<GroundCellModel> {
 
     public showExit() {
         if (this.model.isExit) {
-            const exitNode = M.nodePool.createItem(this.exitPrefab);
+            const exitNode = M.nodePool.createItem(Match3Skin.requirePrefab("exit"));
             exitNode.parent = this.node;
         }
     }
 
     public showPlug() {
         if (this.model.isGirlRoad) {
-            this.node['baseSprite'].spriteFrame = this.girlRoadFrame;
+            this.node['baseSprite'].spriteFrame = Match3Skin.getGirlRoadFrame();
         } else if (this.model.isConveyer) {
             this.addLotusleaf();
         }
@@ -179,7 +159,7 @@ export default class ItemGroundCtrl extends BaseItemView<GroundCellModel> {
 
     private showTuituji() {
         this.elementSprite.node.active = true;
-        const node = cc.instantiate(this.tuitujiPrefab);
+        const node = cc.instantiate(Match3Skin.requirePrefab("tuituji"));
         node.parent = this.elementSprite.node;
         this._tuitujiCtrl = node.getComponent(Tuituji)
         this._tuitujiCtrl.init(this.model.tuitujiCfg);
@@ -210,7 +190,7 @@ export default class ItemGroundCtrl extends BaseItemView<GroundCellModel> {
             for (const key in this.model.Wall) {
                 const angle = this.model.Wall[key]
                 if (angle != undefined) {
-                    const wn = cc.instantiate(this.WallPrefab);
+                    const wn = cc.instantiate(Match3Skin.requirePrefab("wall"));
                     wn.parent = this.node;
                     wn.angle = angle;
                     let gap = angle < 90 ? 7 : -7;
@@ -227,7 +207,7 @@ export default class ItemGroundCtrl extends BaseItemView<GroundCellModel> {
     private showIvy() {
         if (!this.ivyCtrl) {
             this.elementSprite.node.active = true;
-            const node = M.nodePool.getItem(NodePoolKey.ShuiCao, this.Ivy);
+            const node = M.nodePool.getItem(NodePoolKey.ShuiCao, Match3Skin.requirePrefab("ivy"));
             this.ivyCtrl = node.getComponent(SpinePlayerCtrl);
             if (this.model.zIndex == -1) {
                 node.parent = this._downLayer
@@ -266,7 +246,7 @@ export default class ItemGroundCtrl extends BaseItemView<GroundCellModel> {
         const node = cc.instantiate(this.elementSprite.node);
         node.name = 'Lotusleaf';
         node.parent = this.elementSprite.node;
-        node.getComponent(cc.Sprite).spriteFrame = this.LotusleafFrame;
+        node.getComponent(cc.Sprite).spriteFrame = Match3Skin.getLotusleafFrame();
     }
 
     /**有可能是性能热点.....待优化.. */

@@ -53,7 +53,11 @@ var Level = /** @class */ (function () {
      * @param lv 当前关卡
      */
     Level.prototype.preLoadNextCfg = function (lv) {
-        this._request((lv || RuntimeMgr_1.default.ins.getMatch3Level()) + 1);
+        var curLv = lv || RuntimeMgr_1.default.ins.getMatch3Level();
+        if (curLv >= RuntimeMgr_1.default.ins.maxMatch3Level) {
+            return;
+        }
+        this._request(curLv + 1);
     };
     /**
      * 拿指定等级的配置文件,默认取当前关卡

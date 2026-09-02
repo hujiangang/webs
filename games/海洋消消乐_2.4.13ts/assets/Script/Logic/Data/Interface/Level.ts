@@ -16,7 +16,11 @@ export default class Level {
      * @param lv 当前关卡
      */
     public preLoadNextCfg(lv: number) {
-        this._request((lv || RuntimeMgr.ins.getMatch3Level()) + 1);
+        const curLv = lv || RuntimeMgr.ins.getMatch3Level();
+        if (curLv >= RuntimeMgr.ins.maxMatch3Level) {
+            return;
+        }
+        this._request(curLv + 1);
     }
 
     /**

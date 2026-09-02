@@ -7,6 +7,7 @@ import Paths from "../../Base/Utils/Paths";
 import DailyTaskInfo from "../../Base/Tabls/DailyTaskInfo";
 import { BaseTable } from "../../Base/Manager/Table/BaseTable";
 import { GameTableMgr } from "../../Base/Manager/GameTableMgr";
+import Apps from "../../Base/Apps";
 
 const { ccclass, property } = cc._decorator;
 
@@ -94,6 +95,7 @@ export default class LoadingScene extends cc.Component {
 
     //进入游戏直接加载三消主玩法
     private _preLoadMatch3() {
+        const testLevel = Apps.isDebug ? 9999 : null;
         const preloadArr = [
             "prefab/ui/GameLoading",
             "prefab/ui/GameShowTarget",
@@ -116,11 +118,11 @@ export default class LoadingScene extends cc.Component {
                     console.error('预加载三消场景出错!', error);
                     return;
                 }
-                //预加载当前关卡
-                Level.ins.getLvCfgData(null);
+                // 预加载测试关卡或当前关卡
+                Level.ins.getLvCfgData(testLevel);
                 this._updateProgress(100);
                 this.scheduleOnce(() => {
-                    M.runtime.SelectLevel = 0;
+                    M.runtime.SelectLevel = testLevel || 0;
                     Common.jumpScene(Scene.Match);
                 }, 0.2);
             });

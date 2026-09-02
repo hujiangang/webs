@@ -5,6 +5,7 @@ import EventMgr from "../../Base/Manager/EventMgr";
 import { Event } from "./Const/Event";
 import { PropType, GameState, NativeKey, PowerConfig, MaxPowerCount, WaringTips, ConditionType } from "./Const/Constant";
 import M from "../../Base/Manager/M";
+import Apps from "../../Base/Apps";
 import { StorageMgr } from "../../Base/Manager/StorageMgr";
 import { IServerConfig } from "../../Base/Manager/NetMgr";
 import ReportMgr from "../../Base/Manager/ReportMgr";
@@ -180,7 +181,7 @@ export default class RuntimeMgr {
     }
 
     public get maxMatch3Level(): number {
-        return 500;
+        return Apps.isDebug ? 9999 : 500;
     }
 
     public get currentScore(): number {

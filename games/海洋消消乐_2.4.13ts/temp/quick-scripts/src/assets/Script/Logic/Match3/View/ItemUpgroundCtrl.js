@@ -30,6 +30,7 @@ var Common_1 = require("../../Common/Common");
 var TimeConfig_1 = require("../../Data/Const/TimeConfig");
 var Constant_1 = require("../../Data/Const/Constant");
 var ResCtrl_1 = require("../ResCtrl");
+var Match3Skin_1 = require("../Skin/Match3Skin");
 var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
 var ItemUpgroundCtrl = /** @class */ (function (_super) {
     __extends(ItemUpgroundCtrl, _super);
@@ -38,9 +39,6 @@ var ItemUpgroundCtrl = /** @class */ (function (_super) {
         _this.ice = null;
         _this.lock = null;
         _this.box = null;
-        _this.portal = null;
-        _this.portalPrefab = null;
-        _this.novicePrefab = [];
         _this.n_conchItem = null;
         _this.n_grassItem = null;
         _this.curShowType = -1;
@@ -125,7 +123,7 @@ var ItemUpgroundCtrl = /** @class */ (function (_super) {
                 this.setStone(lv);
                 break;
             case Constant_1.UpGroundType.Nov_grass:
-                this.showCloseGrass(type);
+                this.showCloseGrass();
                 break;
             case Constant_1.UpGroundType.Nov_conch:
                 this.showConchNov(type);
@@ -141,12 +139,14 @@ var ItemUpgroundCtrl = /** @class */ (function (_super) {
         this.box.node.destroyAllChildren();
         this.box.spriteFrame = null;
     };
-    ItemUpgroundCtrl.prototype.showCloseGrass = function (type) {
-        this.n_grassItem = Common_1.default.createSpineNode(this.box.node, this.novicePrefab[type - 100]);
+    ItemUpgroundCtrl.prototype.showCloseGrass = function () {
+        var novicePrefab = Match3Skin_1.default.getPrefabList("novice")[0];
+        if (novicePrefab) {
+            this.n_grassItem = Common_1.default.createSpineNode(this.box.node, novicePrefab);
+        }
     };
     ItemUpgroundCtrl.prototype.showConchNov = function (type) {
         // if (this.model.getLv() > 0) {
-        //     this.n_conchItem = Common.createSpineNode(this.box.node, this.novicePrefab[type - 100]);
         //     this.box.node.scale = 1.85;
         //     this.box.node.setAnchorPoint(cc.v2(0, 0));
         //     this.box.node.setPosition(this.box.node.position.add(cc.v3(Common.GRID_W / 2, Common.GRID_H / 2)));
@@ -257,15 +257,6 @@ var ItemUpgroundCtrl = /** @class */ (function (_super) {
     __decorate([
         property(cc.Sprite)
     ], ItemUpgroundCtrl.prototype, "box", void 0);
-    __decorate([
-        property(cc.Node)
-    ], ItemUpgroundCtrl.prototype, "portal", void 0);
-    __decorate([
-        property(cc.Prefab)
-    ], ItemUpgroundCtrl.prototype, "portalPrefab", void 0);
-    __decorate([
-        property([cc.Prefab])
-    ], ItemUpgroundCtrl.prototype, "novicePrefab", void 0);
     ItemUpgroundCtrl = __decorate([
         ccclass
     ], ItemUpgroundCtrl);

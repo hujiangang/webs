@@ -70,6 +70,7 @@ var Constant_1 = require("../Logic/Data/Const/Constant");
 var StorageMgr_1 = require("../Base/Manager/StorageMgr");
 var NetMgr_1 = require("../Base/Manager/NetMgr");
 var Event_1 = require("../Logic/Data/Const/Event");
+var Apps_1 = require("../Base/Apps");
 var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
 var GMView = /** @class */ (function (_super) {
     __extends(GMView, _super);
@@ -85,7 +86,7 @@ var GMView = /** @class */ (function (_super) {
         _super.prototype.onLoad.call(this);
     };
     GMView.prototype.start = function () {
-        this.editLevel.string = M_1.default.runtime.CurLevel.toString();
+        this.editLevel.string = Apps_1.default.isDebug ? "9999" : M_1.default.runtime.CurLevel.toString();
         this.editUserId.string = StorageMgr_1.StorageMgr.Storage.getString("__userId");
     };
     //增加金币
@@ -102,7 +103,7 @@ var GMView = /** @class */ (function (_super) {
     };
     GMView.prototype.onJumpLevel = function () {
         M_1.default.runtime.SelectLevel = 0;
-        var nextLv = Number(this.editLevel.string) || 1;
+        var nextLv = Number(this.editLevel.string) || (Apps_1.default.isDebug ? 9999 : 1);
         M_1.default.runtime.setMatch3Level(nextLv, true);
         Common_1.default.jumpScene(Constant_1.Scene.Match);
         UIMgr_1.default.ins.closeUI(UIData_1.UIHudDef.GMView);

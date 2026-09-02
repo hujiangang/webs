@@ -34,6 +34,7 @@ var GameModel_1 = require("../Model/GameModel");
 var SpinePlayerCtrl_1 = require("../../../Base/CustomComponent/SpinePlayerCtrl");
 var TimeConfig_1 = require("../../Data/Const/TimeConfig");
 var ActionCtrl_1 = require("../../Common/ActionCtrl");
+var Match3Skin_1 = require("../Skin/Match3Skin");
 var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
 /**托盘基于中心的偏移量 */
 var TrayOffset = cc.v2(12, 45);
@@ -41,25 +42,12 @@ var GroundViewCtrl = /** @class */ (function (_super) {
     __extends(GroundViewCtrl, _super);
     function GroundViewCtrl() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
-        _this.borderFrames = [];
-        _this.middleFrames = [];
-        _this.waterFrames = [];
         _this.borderParent = null;
         //地板之上树叶等之下(河道等..)
         _this.waterParent = null;
         //地板上遮住收集物的物品(树叶...等)
         _this.multFuncParent = null;
         _this.gnomeParent = null;
-        _this.gnomePrefab = null;
-        _this.turtlesPrefab = null;
-        _this.crabPrefab = null;
-        _this.monkeyTreePrefab = null;
-        _this.groundBasePrefab = null;
-        //用来做收集时动画使用!
-        _this.gemPrefab = null;
-        //萤火虫用来做收集时动画使用!
-        _this.firefly = null;
-        _this.baseFrames = [];
         _this._cfg = null;
         _this._complexItemMap = null;
         /**当前地图类型 water grass */
@@ -75,24 +63,39 @@ var GroundViewCtrl = /** @class */ (function (_super) {
         _super.prototype.initView.call(this, models);
         this.type = groundType;
         this._cfg = cfg;
-        M_1.default.nodePool.create(Constant_1.NodePoolKey.GroundCell, this.groundBasePrefab, 150);
-        if (GameModel_1.default.ins.isHaveGem) {
-            M_1.default.nodePool.create(Constant_1.NodePoolKey.GemNode, this.gemPrefab, 20);
+        var groundBasePrefab = Match3Skin_1.default.requirePrefab("groundBase");
+        var groundItemPrefab = Match3Skin_1.default.requirePrefab("groundItem");
+        var gnomePrefab = Match3Skin_1.default.requirePrefab("gnome");
+        var turtlesPrefab = Match3Skin_1.default.requirePrefab("turtles");
+        var crabPrefab = Match3Skin_1.default.requirePrefab("crab");
+        var monkeyTreePrefab = Match3Skin_1.default.requirePrefab("monkeyTree");
+        var gemPrefab = Match3Skin_1.default.requirePrefab("gem");
+        if (groundBasePrefab) {
+            M_1.default.nodePool.create(Constant_1.NodePoolKey.GroundCell, groundBasePrefab, 150);
         }
-        // M.nodePool.create(NodePoolKey.GroundMulti, this.ItemPrefab, 130);
+        if (GameModel_1.default.ins.isHaveGem && gemPrefab) {
+            M_1.default.nodePool.create(Constant_1.NodePoolKey.GemNode, gemPrefab, 20);
+        }
+        if (groundItemPrefab) {
+            M_1.default.nodePool.create(Constant_1.NodePoolKey.GroundMulti, groundItemPrefab, 130);
+        }
         this.initBaseView(models);
-        this.initGnome(data.mgModel.getConfig(CollectModel_1.CollectType.gnome));
-        this.initTurtles(data.mgModel.getConfig(CollectModel_1.CollectType.turtles));
-        this.initCrab(data.mgModel.getConfig(CollectModel_1.CollectType.crab));
-        this.initMonkeyTree(cfg.monkeyTree);
+        this.initGnome(data.mgModel.getConfig(CollectModel_1.CollectType.gnome), gnomePrefab);
+        this.initTurtles(data.mgModel.getConfig(CollectModel_1.CollectType.turtles), turtlesPrefab);
+        this.initCrab(data.mgModel.getConfig(CollectModel_1.CollectType.crab), crabPrefab);
+        this.initMonkeyTree(cfg.monkeyTree, monkeyTreePrefab);
         this.initLawnmower(cfg.lawnmower);
     };
-    GroundViewCtrl.prototype.initCrab = function (crabCfg) {
+    GroundViewCtrl.prototype.initCrab = function (crabCfg, crabPrefab) {
         if (!crabCfg)
             return;
+        if (!crabPrefab) {
+            console.error("[Match3Skin] missing crab prefab");
+            return;
+        }
         for (var i = 0; i < crabCfg.length; i++) {
             var cfg = crabCfg[i];
-            var node = M_1.default.nodePool.createItem(this.crabPrefab);
+            var node = M_1.default.nodePool.createItem(crabPrefab);
             var topPos = Common_1.default.getPos(cfg.x, cfg.y, cfg.index);
             var tmpScaleHeight = 20;
             node['cfg'] = cfg;
@@ -115,13 +118,17 @@ var GroundViewCtrl = /** @class */ (function (_super) {
             this.crabAry[i] = node;
         }
     };
-    GroundViewCtrl.prototype.initMonkeyTree = function (monkeyTreeCfg) {
+    GroundViewCtrl.prototype.initMonkeyTree = function (monkeyTreeCfg, monkeyTreePrefab) {
         if (!monkeyTreeCfg)
             return;
+        if (!monkeyTreePrefab) {
+            console.error("[Match3Skin] missing monkeyTree prefab");
+            return;
+        }
         for (var i = 0; i < monkeyTreeCfg.length; i++) {
             var cfg = monkeyTreeCfg[i];
             var pos = cc.v2(cfg.x, cfg.y);
-            var data = this.createMonkeyTree(Common_1.default.getPos(pos.x, pos.y, cfg.index));
+            var data = this.createMonkeyTree(Common_1.default.getPos(pos.x, pos.y, cfg.index), monkeyTreePrefab);
             data.pos = pos;
             data.exp = 0;
             data.remainLabel = cc.find('qipao/count', data.tree.node).getComponent(cc.Label);
@@ -143,22 +150,30 @@ var GroundViewCtrl = /** @class */ (function (_super) {
             GameModel_1.default.ins.CollectModel.collectPowerCells[cfg.type] = groundCell;
         }
     };
-    GroundViewCtrl.prototype.initTurtles = function (turtlesCfg) {
+    GroundViewCtrl.prototype.initTurtles = function (turtlesCfg, turtlesPrefab) {
         if (!turtlesCfg)
             return;
+        if (!turtlesPrefab) {
+            console.error("[Match3Skin] missing turtles prefab");
+            return;
+        }
         for (var i = 0; i < turtlesCfg.length; i++) {
             var cfg = turtlesCfg[i];
             var pos = Common_1.default.getPos(cfg.x, cfg.y, cfg.index);
-            var result = Common_1.default.createSpineNode(this.gnomeParent, this.turtlesPrefab, null, pos.add(cc.v2(Common_1.default.GRID_W / 2, -Common_1.default.GRID_H / 2)));
+            var result = Common_1.default.createSpineNode(this.gnomeParent, turtlesPrefab, null, pos.add(cc.v2(Common_1.default.GRID_W / 2, -Common_1.default.GRID_H / 2)));
             this.turtlesAry[i] = { ctrl: result.ctrl, pos: cc.v2(cfg.x, cfg.y) };
         }
     };
-    GroundViewCtrl.prototype.initGnome = function (gnomeCfg) {
+    GroundViewCtrl.prototype.initGnome = function (gnomeCfg, gnomePrefab) {
         if (!gnomeCfg)
             return;
+        if (!gnomePrefab) {
+            console.error("[Match3Skin] missing gnome prefab");
+            return;
+        }
         for (var i = 0; i < gnomeCfg.length; i++) {
             var cfg = gnomeCfg[i];
-            var node = M_1.default.nodePool.createItem(this.gnomePrefab);
+            var node = M_1.default.nodePool.createItem(gnomePrefab);
             var topPos = Common_1.default.getPos(cfg.x, cfg.y, cfg.index);
             var tmpScaleHeight = 20;
             node.parent = this.gnomeParent;
@@ -224,7 +239,11 @@ var GroundViewCtrl = /** @class */ (function (_super) {
         }
     };
     GroundViewCtrl.prototype.playFireflyAni = function (parent, selfPos, targetPos) {
-        var node = M_1.default.nodePool.getItem(Constant_1.NodePoolKey.Firefly, this.firefly);
+        var prefab = Match3Skin_1.default.requirePrefab("firefly");
+        if (!prefab) {
+            return;
+        }
+        var node = M_1.default.nodePool.getItem(Constant_1.NodePoolKey.Firefly, prefab);
         node.parent = parent;
         node.setPosition(parent.convertToNodeSpaceAR(this.waterParent.convertToWorldSpaceAR(selfPos)));
         ActionCtrl_1.default.ins.runCollectGem(node, targetPos, parent).then(function () {
@@ -233,7 +252,11 @@ var GroundViewCtrl = /** @class */ (function (_super) {
         });
     };
     GroundViewCtrl.prototype.playGemAni = function (parent, selfPos, targetPos) {
-        var node = M_1.default.nodePool.getItem(Constant_1.NodePoolKey.GemNode, this.gemPrefab);
+        var prefab = Match3Skin_1.default.requirePrefab("gem");
+        if (!prefab) {
+            return;
+        }
+        var node = M_1.default.nodePool.getItem(Constant_1.NodePoolKey.GemNode, prefab);
         node.parent = parent;
         node.setPosition(parent.convertToNodeSpaceAR(this.waterParent.convertToWorldSpaceAR(selfPos)));
         ActionCtrl_1.default.ins.runCollectGem(node, targetPos, parent).then(function () {
@@ -294,17 +317,35 @@ var GroundViewCtrl = /** @class */ (function (_super) {
                     }
                     var baseSprite = null;
                     if (gItem.getType() != null) {
-                        var groundBase = M_1.default.nodePool.getItem(Constant_1.NodePoolKey.GroundCell, this.groundBasePrefab);
-                        groundBase.setPosition(gItem.getPosition());
-                        baseSprite = groundBase.getComponent(cc.Sprite);
-                        this.setGroundSprite(baseSprite, x, y);
-                        groundBase.parent = this.borderParent;
-                        groundBase.zIndex = 2;
+                        var groundBasePrefab = Match3Skin_1.default.requirePrefab("groundBase");
+                        if (groundBasePrefab) {
+                            var groundBase = M_1.default.nodePool.getItem(Constant_1.NodePoolKey.GroundCell, groundBasePrefab);
+                            groundBase.setPosition(gItem.getPosition());
+                            baseSprite = groundBase.getComponent(cc.Sprite);
+                            this.setGroundSprite(baseSprite, x, y);
+                            groundBase.parent = this.borderParent;
+                            groundBase.zIndex = 2;
+                        }
                     }
-                    var node = M_1.default.nodePool.getItem(Constant_1.NodePoolKey.GroundMulti, this.ItemPrefab);
+                    var groundItemPrefab = Match3Skin_1.default.requirePrefab("groundItem");
+                    if (!groundItemPrefab) {
+                        continue;
+                    }
+                    var node = M_1.default.nodePool.getItem(Constant_1.NodePoolKey.GroundMulti, groundItemPrefab);
+                    if (!node) {
+                        console.error("[Match3Skin] create groundItem node failed");
+                        continue;
+                    }
                     node['baseSprite'] = baseSprite;
                     node.parent = this.multFuncParent;
                     cmp = node.getComponent(ItemGroundCtrl_1.default);
+                    if (!cmp) {
+                        var skinConfig = Match3Skin_1.default.getConfig();
+                        var prefabPath = skinConfig && skinConfig.prefabs ? skinConfig.prefabs.groundItem : null;
+                        console.error("[Match3Skin] groundItem prefab missing ItemGroundCtrl:", node.name, prefabPath);
+                        node.destroy();
+                        continue;
+                    }
                     cmp.init(gItem, this.borderParent);
                     gItem.extData = node;
                     gItem.extCtrl = cmp;
@@ -346,32 +387,11 @@ var GroundViewCtrl = /** @class */ (function (_super) {
     };
     /**设置地面的格子颜色! */
     GroundViewCtrl.prototype.setGroundSprite = function (sprite, x, y) {
-        var startIndex = 0;
-        switch (this.type) {
-            case 'water':
-                startIndex = 0;
-                break;
-            case 'grass':
-                startIndex = 2;
-                break;
-            case 'sand':
-                startIndex = 4;
-                break;
+        var frame = Match3Skin_1.default.getCellBaseFrame(this.type, (x + y) % 2);
+        if (!frame) {
+            console.error('[Match3Skin] missing cell base frame:', this.type, (x + y) % 2);
         }
-        sprite.spriteFrame = this.baseFrames[startIndex];
-        // if (y % 2 == 0) {
-        //     if (x % 2 == 0) {
-        //         sprite.spriteFrame = this.baseFrames[startIndex];
-        //     } else {
-        //         sprite.spriteFrame = this.baseFrames[startIndex + 1];
-        //     }
-        // } else {
-        //     if (x % 2 == 1) {
-        //         sprite.spriteFrame = this.baseFrames[startIndex];
-        //     } else {
-        //         sprite.spriteFrame = this.baseFrames[startIndex + 1];
-        //     }
-        // }
+        sprite.spriteFrame = frame;
     };
     GroundViewCtrl.prototype.getBorderSpriteName = function (x, y) {
         var coff = "";
@@ -426,9 +446,12 @@ var GroundViewCtrl = /** @class */ (function (_super) {
         }
     }
     */
-    GroundViewCtrl.prototype.createMonkeyTree = function (pos) {
+    GroundViewCtrl.prototype.createMonkeyTree = function (pos, monkeyTreePrefab) {
         var ctrls = {};
-        var result = Common_1.default.createSpineNode(this.gnomeParent, this.monkeyTreePrefab, null, pos.add(cc.v2(Common_1.default.GRID_W / 2, -Common_1.default.GRID_H / 2)));
+        if (!monkeyTreePrefab) {
+            return ctrls;
+        }
+        var result = Common_1.default.createSpineNode(this.gnomeParent, monkeyTreePrefab, null, pos.add(cc.v2(Common_1.default.GRID_W / 2, -Common_1.default.GRID_H / 2)));
         ctrls.tree = result.ctrl;
         result.ctrl._setMix('yezishu_yaoshu', 'yezishu_xiuxian');
         return ctrls;
@@ -480,7 +503,7 @@ var GroundViewCtrl = /** @class */ (function (_super) {
         if (name == '1101' || name == '1110' || name == '0110' || name == '1001') {
             name = '1100';
         }
-        var frame = this.getBorderFrame(this.middleFrames, "m" + name, 3);
+        var frame = Match3Skin_1.default.getMiddleBorderFrame(this.type, name);
         if (frame) {
             var borderNode = new cc.Node();
             var sprite = borderNode.addComponent(cc.Sprite);
@@ -505,6 +528,9 @@ var GroundViewCtrl = /** @class */ (function (_super) {
             }
             borderNode.setPosition(pos.add(offset));
         }
+        else {
+            console.error('[Match3Skin] missing middle border frame:', this.type, name);
+        }
     };
     GroundViewCtrl.prototype.createUpBorder = function (pos, cfg, name) {
         var borderNode = new cc.Node();
@@ -514,33 +540,14 @@ var GroundViewCtrl = /** @class */ (function (_super) {
         borderNode.parent = this.borderParent;
         borderNode.name = name + "_" + cfg[0];
         borderNode.zIndex = 2;
-        sprite.spriteFrame = this.getBorderFrame(this.borderFrames, cfg[0], 5);
+        var frame = Match3Skin_1.default.getUpBorderFrame(this.type, cfg[0]);
+        if (!frame) {
+            console.error('[Match3Skin] missing up border frame:', this.type, cfg[0]);
+        }
+        sprite.spriteFrame = frame;
         borderNode.setPosition(pos);
         borderNode.setScale(cfg[1]);
         borderNode.setContentSize(Common_1.default.GRID_W, Common_1.default.GRID_H);
-    };
-    GroundViewCtrl.prototype.getBorderFrame = function (container, sid, gapIndex) {
-        var startIdx = 0;
-        switch (this.type) {
-            case 'water':
-                startIdx = 0;
-                break;
-            case 'grass':
-                startIdx = gapIndex;
-                break;
-            case 'sand':
-                startIdx = gapIndex * 2;
-                break;
-        }
-        var frame = null;
-        for (var i = 5; i--;) {
-            var f = container[startIdx + i];
-            if (f && f.name == this.type + "_" + sid) {
-                frame = f;
-                break;
-            }
-        }
-        return frame;
     };
     /**
      * 初始化水的显示!
@@ -577,19 +584,12 @@ var GroundViewCtrl = /** @class */ (function (_super) {
         this._complexItemMap[y][x] = node;
     };
     GroundViewCtrl.prototype.getFrameByType = function (coff, type) {
-        var result = null;
-        var frames = type == Constant_1.GroundType.Water ? this.waterFrames : [];
-        for (var i = frames.length; i--;) {
-            var water = frames[i];
-            if (water.name.indexOf(coff) != -1) {
-                result = water;
-                break;
-            }
+        var skinFrame = type == Constant_1.GroundType.Water ? Match3Skin_1.default.getComplexGroundFrame(this.type, coff) : null;
+        if (skinFrame) {
+            return skinFrame;
         }
-        if (!result) {
-            console.error('没找到资源:----->', coff);
-        }
-        return result;
+        console.error('[Match3Skin] missing complex ground frame:', this.type, coff);
+        return null;
     };
     GroundViewCtrl.prototype.getCellEmptyStatus = function (x, y) {
         var result = 1;
@@ -607,15 +607,6 @@ var GroundViewCtrl = /** @class */ (function (_super) {
     GroundViewCtrl.prototype.update = function (dt) {
     };
     __decorate([
-        property([cc.SpriteFrame])
-    ], GroundViewCtrl.prototype, "borderFrames", void 0);
-    __decorate([
-        property([cc.SpriteFrame])
-    ], GroundViewCtrl.prototype, "middleFrames", void 0);
-    __decorate([
-        property([cc.SpriteFrame])
-    ], GroundViewCtrl.prototype, "waterFrames", void 0);
-    __decorate([
         property(cc.Node)
     ], GroundViewCtrl.prototype, "borderParent", void 0);
     __decorate([
@@ -627,30 +618,6 @@ var GroundViewCtrl = /** @class */ (function (_super) {
     __decorate([
         property(cc.Node)
     ], GroundViewCtrl.prototype, "gnomeParent", void 0);
-    __decorate([
-        property(cc.Prefab)
-    ], GroundViewCtrl.prototype, "gnomePrefab", void 0);
-    __decorate([
-        property(cc.Prefab)
-    ], GroundViewCtrl.prototype, "turtlesPrefab", void 0);
-    __decorate([
-        property(cc.Prefab)
-    ], GroundViewCtrl.prototype, "crabPrefab", void 0);
-    __decorate([
-        property(cc.Prefab)
-    ], GroundViewCtrl.prototype, "monkeyTreePrefab", void 0);
-    __decorate([
-        property(cc.Prefab)
-    ], GroundViewCtrl.prototype, "groundBasePrefab", void 0);
-    __decorate([
-        property(cc.Prefab)
-    ], GroundViewCtrl.prototype, "gemPrefab", void 0);
-    __decorate([
-        property(cc.Prefab)
-    ], GroundViewCtrl.prototype, "firefly", void 0);
-    __decorate([
-        property([cc.SpriteFrame])
-    ], GroundViewCtrl.prototype, "baseFrames", void 0);
     GroundViewCtrl = __decorate([
         ccclass
     ], GroundViewCtrl);

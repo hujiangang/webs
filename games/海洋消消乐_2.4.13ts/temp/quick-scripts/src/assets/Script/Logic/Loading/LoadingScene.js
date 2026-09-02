@@ -67,6 +67,7 @@ var Paths_1 = require("../../Base/Utils/Paths");
 var DailyTaskInfo_1 = require("../../Base/Tabls/DailyTaskInfo");
 var BaseTable_1 = require("../../Base/Manager/Table/BaseTable");
 var GameTableMgr_1 = require("../../Base/Manager/GameTableMgr");
+var Apps_1 = require("../../Base/Apps");
 var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
 var LoadingScene = /** @class */ (function (_super) {
     __extends(LoadingScene, _super);
@@ -152,6 +153,7 @@ var LoadingScene = /** @class */ (function (_super) {
     //进入游戏直接加载三消主玩法
     LoadingScene.prototype._preLoadMatch3 = function () {
         var _this = this;
+        var testLevel = Apps_1.default.isDebug ? 9999 : null;
         var preloadArr = [
             "prefab/ui/GameLoading",
             "prefab/ui/GameShowTarget",
@@ -174,11 +176,11 @@ var LoadingScene = /** @class */ (function (_super) {
                     console.error('预加载三消场景出错!', error);
                     return;
                 }
-                //预加载当前关卡
-                Level_1.default.ins.getLvCfgData(null);
+                // 预加载测试关卡或当前关卡
+                Level_1.default.ins.getLvCfgData(testLevel);
                 _this._updateProgress(100);
                 _this.scheduleOnce(function () {
-                    M_1.default.runtime.SelectLevel = 0;
+                    M_1.default.runtime.SelectLevel = testLevel || 0;
                     Common_1.default.jumpScene(Constant_1.Scene.Match);
                 }, 0.2);
             });

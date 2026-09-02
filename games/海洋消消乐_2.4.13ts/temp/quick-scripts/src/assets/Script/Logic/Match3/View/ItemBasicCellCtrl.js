@@ -365,7 +365,7 @@ var ItemBasicCellCtrl = /** @class */ (function (_super) {
                 }
             }
             this.ground.sizeMode = cc.Sprite.SizeMode.CUSTOM;
-            this.ground.spriteFrame = ResCtrl_1.default.ins.groundCenter;
+            this.ground.spriteFrame = ResCtrl_1.default.ins.getGroundCenter();
             this.ground.node.setContentSize(cc.size(Common_1.default.GRID_W, Common_1.default.GRID_H));
         }
     };

@@ -342,7 +342,7 @@ export default class ItemBasicCellCtrl extends BaseItemView<CellModel> {
                 }
             }
             this.ground.sizeMode = cc.Sprite.SizeMode.CUSTOM;
-            this.ground.spriteFrame = ResCtrl.ins.groundCenter;
+            this.ground.spriteFrame = ResCtrl.ins.getGroundCenter();
             this.ground.node.setContentSize(cc.size(Common.GRID_W, Common.GRID_H));
         }
     }

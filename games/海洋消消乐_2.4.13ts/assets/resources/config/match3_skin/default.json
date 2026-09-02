@@ -1,0 +1,110 @@
+{
+  "_bases": {
+    "prefab": "prefab/match3",
+    "texture": "texture/match3/skin/current/ground/border"
+  },
+  "prefabs": {
+    "_base": "prefab/match3",
+    "gridBoard": "gridBoard.prefab",
+    "groundBase": "ground.prefab",
+    "groundItem": "groundUp.prefab",
+    "cellItem": "cellBase.prefab",
+    "upGroundItem": "upGround.prefab",
+    "gnome": "gnome.prefab",
+    "turtles": "turtles.prefab",
+    "crab": "crab.prefab",
+    "monkeyTree": "monkeyTree.prefab",
+    "gem": "Cells/Gem.prefab",
+    "firefly": "Cells/Firefly.prefab",
+    "wall": "Cells/Wall.prefab",
+    "tuituji": "Cells/ground/o2box.prefab",
+    "ivy": "Cells/Shuicao.prefab",
+    "exit": "Cells/Exit.prefab",
+    "shanhuAni": "Cells/shanhuFX.prefab",
+    "portal": "Cells/Portal.prefab",
+    "novice": [
+      "Cells/Nov_grass.prefab",
+      "Cells/Bomb.prefab"
+    ]
+  },
+  "themes": {
+    "water": {
+      "_base": "texture/match3/skin/current/ground/border",
+      "cellBase": [
+        "water_bg_1.png"
+      ],
+      "upBorders": {
+        "0001": "water_0001.png",
+        "0011": "water_0011.png",
+        "0101": "water_0101.png",
+        "0110": "water_0110.png",
+        "0111": "water_0111.png"
+      },
+      "middleBorders": {
+        "0100": "water_m0100.png",
+        "1000": "water_m1000.png",
+        "1100": "water_m1100.png"
+      },
+      "complexGround": {
+        "0001": "water/w_0001.png",
+        "0010": "water/w_0010.png",
+        "0011": "water/w_0011.png",
+        "0100": "water/w_0100.png",
+        "0101": "water/w_0101.png",
+        "0110": "water/w_0110.png",
+        "0111": "water/w_0111.png",
+        "1000": "water/w_1000.png",
+        "1001": "water/w_1001.png",
+        "1010": "water/w_1010.png",
+        "1011": "water/w_1011.png",
+        "1100": "water/w_1100.png",
+        "1101": "water/w_1101.png",
+        "1110": "water/w_1110.png",
+        "1111": "water/w_1111.png"
+      }
+    },
+    "grass": {
+      "_base": "texture/match3/skin/current/ground/border",
+      "cellBase": [
+        "grass_bg_1.png"
+      ],
+      "upBorders": {
+        "0001": "grass_0001.png",
+        "0011": "grass_0011.png",
+        "0101": "grass_0101.png",
+        "0110": "grass_0110.png",
+        "0111": "grass_0111.png"
+      },
+      "middleBorders": {
+        "0100": "grass_m0100.png",
+        "1000": "grass_m1000.png",
+        "1100": "grass_m1100.png"
+      },
+      "complexGround": {}
+    },
+    "sand": {
+      "_base": "texture/match3/skin/current/ground/border",
+      "cellBase": [
+        "sand_bg_1.png"
+      ],
+      "upBorders": {
+        "0001": "sand_0001.png",
+        "0011": "sand_0011.png",
+        "0101": "sand_0101.png",
+        "0110": "sand_0110.png",
+        "0111": "sand_0111.png"
+      },
+      "middleBorders": {
+        "0100": "sand_m0100.png",
+        "1000": "sand_m1000.png",
+        "1100": "sand_m1100.png"
+      },
+      "complexGround": {}
+    }
+  },
+  "ground": {
+    "_base": "texture/match3/skin/current/ground/border",
+    "lotusleaf": "lotusleaf.png",
+    "girlRoad": "girlRoad.png"
+  }
+}

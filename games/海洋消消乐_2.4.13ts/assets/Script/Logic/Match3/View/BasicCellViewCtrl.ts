@@ -8,14 +8,16 @@ import ActionCtrl from "../../Common/ActionCtrl";
 import GameModel, { CreateType } from "../Model/GameModel";
 import MainUiCtrl from "./UI/MainUiCtrl";
 import { CellBase } from "../Model/CellBase";
-const { ccclass, property } = cc._decorator;
+import Match3Skin from "../Skin/Match3Skin";
+const { ccclass } = cc._decorator;
 
 @ccclass
 export default class BasicCellViewCtrl extends BaseView<CellModel[][]> {
 
     public initView(models: CellModel[][]) {
         super.initView(models);
-        M.nodePool.create(NodePoolKey.Cell, this.ItemPrefab, 150);
+        const itemPrefab = Match3Skin.requirePrefab("cellItem");
+        M.nodePool.create(NodePoolKey.Cell, itemPrefab, 150);
         for (let y = models.length; y--;) {
             const yItem = models[y];
             for (let x = yItem.length; x--;) {
@@ -28,14 +30,14 @@ export default class BasicCellViewCtrl extends BaseView<CellModel[][]> {
     }
 
     public createNewCell(model: CellModel, createType: CreateType) {
-        const node = M.nodePool.getItem(NodePoolKey.Cell, this.ItemPrefab);
+        const node = M.nodePool.getItem(NodePoolKey.Cell, Match3Skin.requirePrefab("cellItem"));
         node.getComponent(ItemCellBaseCtrl).init(model, createType);
         model.extData = node;
         node.parent = this.node;
     }
 
     public playCollectPower(parent: cc.Node, startCell: CellBase<any, any>, endCell: CellBase<any, any>) {
-        const node = M.nodePool.getItem(NodePoolKey.Cell, this.ItemPrefab);
+        const node = M.nodePool.getItem(NodePoolKey.Cell, Match3Skin.requirePrefab("cellItem"));
         node.parent = parent;
         const pos = parent.convertToNodeSpaceAR(this.node.convertToWorldSpaceAR(startCell.getPosition()));
         node.setPosition(pos);
@@ -47,7 +49,7 @@ export default class BasicCellViewCtrl extends BaseView<CellModel[][]> {
     }
 
     public playCollectAni(parent: cc.Node, type: CellType, pos: cc.Vec2, targetPos: cc.Vec2, elimateType?: ElimateType, callback?: Function) {
-        const node = M.nodePool.getItem(NodePoolKey.Cell, this.ItemPrefab);
+        const node = M.nodePool.getItem(NodePoolKey.Cell, Match3Skin.requirePrefab("cellItem"));
         node.parent = parent;
         const wpos = this.node.convertToWorldSpaceAR(pos);
         node.setPosition(parent.convertToNodeSpaceAR(wpos));
