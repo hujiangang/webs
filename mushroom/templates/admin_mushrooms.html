@@ -11,7 +11,8 @@
         <aside class="admin-sidebar">
             <div class="admin-brand">
                 <h1>菌子管理</h1>
-                <p>{{ mushroom_list.items|length }} 条记录</p>
+                <p>{{ mushroom_list.items|length }} 条记录 · 菌野图鉴</p>
+                <a class="admin-content-link" href="/admin/content">← 返回内容工作台</a>
             </div>
             <form class="admin-search" action="/admin/mushrooms" method="get">
                 <input type="search" name="keyword" value="{{ mushroom_list.keyword }}" placeholder="搜索名称或拉丁名">

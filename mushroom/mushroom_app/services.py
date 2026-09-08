@@ -65,12 +65,14 @@ def get_mushroom_detail(mushroom_id: str) -> MushroomItem | None:
     return None
 
 
-def get_home_picks(count: int = 6) -> list[MushroomItem]:
+def get_home_picks(count: int = 4) -> list[MushroomItem]:
     # 首页雨季推荐：随机抽取若干菌子展示
     mushrooms = [build_mushroom_item(row) for row in read_mushroom_rows()]
     if len(mushrooms) <= count:
         return mushrooms
-    return random.sample(mushrooms, count)
+    names = ['奶浆菌', '羊肚菌', '鸡油菌', '毒蝇鹅膏菌']
+    preferred = [item for name in names for item in mushrooms if item.name == name]
+    return (preferred + [item for item in mushrooms if item not in preferred])[:count]
 
 
 def get_game_items() -> list[GameItem]:
@@ -91,17 +93,23 @@ def is_edible_mushroom(mushroom: MushroomItem) -> bool:
 
 
 def build_mushroom_item(row: dict[str, str]) -> MushroomItem:
-    headers = read_mushroom_headers()
+    headers = list(row)
     id_key = headers[0] if headers else "编号"
     name_key = headers[1] if len(headers) > 1 else "名称"
     name = row.get(name_key, "").strip()
-    image_name = find_mushroom_image_name(name) or f"{name}.png"
+    image_name = find_mushroom_image_name(name)
+    toxicity = get_row_value(row, ("是否有毒性", "毒性", "毒性说明"))
+    edible = get_row_value(row, ("是否可食用", "可食用性", "食用性"))
+    risk_class, risk_label = classify_risk(toxicity, edible)
     return MushroomItem(
         id=row.get(id_key, "").strip(),
         name=name,
         toxicity=get_row_value(row, ("是否有毒性", "毒性", "毒性说明")),
         edible=get_row_value(row, ("是否可食用", "可食用性", "食用性")),
-        image_url=f"/image/{image_name}",
+        image_url=f"/image/{image_name}" if image_name else '/static/images/image-fallback.svg',
+        latin_name=row.get('拉丁名', ''),
+        risk_label=risk_label,
+        risk_class=risk_class,
         # 拼接为 /image、/image_ex 静态路由的访问 URL，第一张为主图
         gallery_images=[f"/{item}" for item in find_mushroom_gallery_names(name)],
         detail_fields=[
@@ -115,11 +123,11 @@ def build_mushroom_item(row: dict[str, str]) -> MushroomItem:
 def match_category(item: MushroomItem, category: str) -> bool:
     # 分类按钮对应草图中的三类展示入口。
     if category == "edible":
-        return is_edible_mushroom(item)
+        return is_edible_mushroom(item) and item.risk_class == 'record'
     if category == "inedible":
         return "不可食用" in item.edible
     if category == "toxic":
-        return bool(item.toxicity and "无毒" not in item.toxicity)
+        return item.risk_class == 'danger'
     return True
 
 
@@ -127,7 +135,15 @@ def match_keyword(item: MushroomItem, keyword: str) -> bool:
     word = keyword.strip()
     if not word:
         return True
-    return word in item.name
+    return word.casefold() in item.name.casefold() or word.casefold() in item.latin_name.casefold()
+
+
+def classify_risk(toxicity: str, edible: str) -> tuple[str, str]:
+    if toxicity == '无毒' and '可食用' in edible and '不可食用' not in edible:
+        return 'record', '食用记载'
+    if any(word in toxicity for word in ('有毒', '剧毒', '有小毒', '中毒', '致命')):
+        return 'danger', '有毒 / 风险'
+    return 'unknown', '资料待核实'
 
 
 def get_row_value(row: dict[str, str], aliases: tuple[str, ...]) -> str:

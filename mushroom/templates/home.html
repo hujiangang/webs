@@ -1,78 +1,28 @@
-{% extends "base.html" %}
-
-{% block title %}首页 - 云南菌子网{% endblock %}
+{% extends 'base.html' %}
+{% from 'components.html' import icon, mushroom_card, game_card, ads %}
 {% block main_class %}home-main{% endblock %}
-
 {% block content %}
-    <section class="banner-shell" aria-label="首页轮播">
-        <button class="carousel-btn carousel-btn-prev is-hidden" type="button" data-carousel-prev aria-label="上一张"></button>
-        <div class="banner-track" data-carousel>
-            {% for banner in banners %}
-                <div class="banner-slide {% if loop.first %}active{% endif %}" data-carousel-slide>
-                    {% if banner.media_type == 'video' %}
-                        <video class="banner-media" src="{{ banner.url }}" controls controlsList="nodownload noremoteplayback" disablePictureInPicture muted playsinline oncontextmenu="return false"></video>
-                    {% else %}
-                        <img class="banner-media" src="{{ banner.url }}" alt="{{ banner.name }}" draggable="false">
-                    {% endif %}
-                </div>
-            {% endfor %}
-            {% if not banners %}
-                <div class="empty-media"></div>
-            {% endif %}
-        </div>
-        <button class="carousel-btn carousel-btn-next {% if banners|length <= 1 %}is-hidden{% endif %}" type="button" data-carousel-next aria-label="下一张"></button>
-    </section>
-
-    <section class="home-shell">
-        <section class="home-intro" id="intro">
-            <h1 class="home-slogan">🍄 雨季到了，菌子冒头了！</h1>
-            <p class="home-sub">收录 {{ mushroom_count }} 种云南野生菌：认菌子、玩游戏、学安全，一样都不耽误。</p>
-        </section>
-
-        <section class="home-entries" aria-label="栏目入口">
-            <a class="entry-card" href="/mushrooms">
-                <span class="entry-icon" aria-hidden="true">🧺</span>
-                <span class="entry-title">菌子图鉴</span>
-                <span class="entry-desc">{{ mushroom_count }} 种菌子的识别特征、生长环境与食用价值</span>
-            </a>
-            <a class="entry-card" href="/games">
-                <span class="entry-icon" aria-hidden="true">🎮</span>
-                <span class="entry-title">菌子小游戏</span>
-                <span class="entry-desc">毒菌挑战赛：看图判断能不能吃，练出火眼金睛</span>
-            </a>
-            <a class="entry-card" href="#safety-tip">
-                <span class="entry-icon" aria-hidden="true">⚠️</span>
-                <span class="entry-title">安全科普</span>
-                <span class="entry-desc">野生菌采食安全须知，先学会保命再谈美味</span>
-            </a>
-        </section>
-
-        <section class="home-picks" aria-label="雨季推荐">
-            <h2 class="home-section-title">🌧️ 雨季随机菌讯</h2>
-            <div class="picks-grid">
-                {% for pick in picks %}
-                    <a class="mushroom-card" href="/mushrooms/{{ pick.id }}" title="{{ pick.name }}">
-                        <div class="mushroom-image-panel">
-                            <img class="mushroom-image" src="{{ pick.image_url }}" alt="{{ pick.name }}">
-                        </div>
-                        <div class="mushroom-info">
-                            <h3 class="mushroom-name">{{ pick.name }}</h3>
-                            <span class="mushroom-badge {{ 'is-danger' if '有毒' in pick.toxicity else 'is-safe' }}">{{ pick.toxicity }}</span>
-                        </div>
-                    </a>
-                {% endfor %}
-            </div>
-        </section>
-
-        <section class="home-safety" id="safety-tip">
-            <h2 class="home-section-title">⚠️ 野生菌安全须知</h2>
-            <ul class="safety-list">
-                <li>不认识、不熟悉的菌子一律不采、不吃、不送人。</li>
-                <li>颜色鲜艳、有菌环菌托的菌子风险更高，见到绕着走。</li>
-                <li>民间"辨毒土方"（变色、银针、虫咬）全都不可靠。</li>
-                <li>食用野生菌务必充分加热熟透，切勿混食多种菌子。</li>
-                <li>出现恶心、呕吐、幻觉等症状，立即就医并保留样本。</li>
-            </ul>
-        </section>
-    </section>
+<section class="hero" aria-label="菌野影像轮播" data-hero>
+    {% for slide in content.slides %}
+    <article class="hero-slide {{ 'active' if loop.first }}" data-hero-slide {% if not loop.first %}inert{% endif %}>
+        <div class="hero-visual">{% if slide.media_type == 'video' %}<video src="{{ slide.url }}" {% if slide.poster %}poster="{{ slide.poster }}"{% endif %} muted loop playsinline preload="none"></video>{% else %}<img src="{{ slide.url }}" alt="林间野生菌影像" {% if loop.first %}fetchpriority="high"{% else %}loading="lazy"{% endif %}>{% endif %}</div>
+        <div class="hero-shade"></div><div class="hero-content"><p class="eyebrow"><span class="live-dot"></span>{{ slide.eyebrow }}</p><h1>{{ slide.title }}</h1><p class="hero-description">{{ slide.subtitle }}</p><div class="hero-actions"><a class="button button-lime" href="{{ slide.link }}">{{ slide.button }} {{ icon('arrow') }}</a><a class="hero-secondary" href="/safety">探索前，先读安全指南 {{ icon('diagonal') }}</a></div></div>
+        <div class="hero-caption"><span>{{ '%02d'|format(loop.index) }} / 野生菌观察档案</span><strong>{{ '林间影像' if slide.media_type == 'video' else '雨后的森林，有自己的语言。' }}</strong></div>
+    </article>
+    {% else %}<div class="hero-content hero-empty"><p class="eyebrow">MUSHROOM FIELD</p><h1>走进菌子的世界。</h1><a class="button button-lime" href="/mushrooms">探索图鉴 {{ icon('arrow') }}</a></div>{% endfor %}
+    <div class="hero-bottom"><span class="hero-scroll">向下探索 <span>↓</span></span><div class="hero-controls"><span class="hero-page" data-hero-page>01 / {{ '%02d'|format(content.slides|length) }}</span><button type="button" aria-label="上一张" data-hero-prev>←</button><button type="button" aria-label="下一张" data-hero-next>→</button><button type="button" aria-label="暂停自动轮播" aria-pressed="false" data-hero-pause>Ⅱ</button></div></div>
+</section>
+<div class="field-strip"><div><span class="live-dot"></span>从好奇出发，向自然靠近。</div><span><b>{{ mushroom_count }}</b> 份菌子档案</span><span>中国野生菌 · 观察 / 认识 / 保护</span><a href="/safety">{{ icon('shield') }} 科学识菌，安全先行</a></div>
+<div class="home-shell">
+    <section class="section-block"><div class="section-heading"><div><p class="eyebrow">01 / EXPLORE THE FIELD</p><h2>你的林间探索，从这里开始<span>。</span></h2></div><p>打开图鉴，走进游戏，读懂自然。<br>每一种好奇，都有自己的入口。</p></div>
+    <div class="portal-grid">
+        <a class="portal" href="/mushrooms"><div class="portal-top">{{ icon('book') }}<span>01</span></div><h3>认识一朵菌</h3><p>从菌盖到生境，读懂林间的细节。</p><span class="portal-bottom">菌子图鉴 {{ icon('arrow') }}</span></a>
+        <a class="portal portal-dark" href="/games"><div class="portal-top">{{ icon('game') }}<span>02</span></div><h3>玩进菌子世界</h3><p>把观察力和好奇心，交给一场游戏。</p><span class="portal-bottom">菌子游乐场 {{ icon('arrow') }}</span></a>
+        <a class="portal portal-sage" href="/safety"><div class="portal-top">{{ icon('shield') }}<span>03</span></div><h3>带着敬畏出发</h3><p>打破辨毒误区，让探索更有分寸。</p><span class="portal-bottom">安全科普 {{ icon('arrow') }}</span></a>
+    </div></section>
+    <section class="section-block"><div class="section-heading"><div><p class="eyebrow">02 / THE FIELD GUIDE</p><h2>在林间，遇见它们<span>。</span></h2></div><a class="text-link" href="/mushrooms">探索全部 {{ mushroom_count }} 份图鉴 {{ icon('arrow') }}</a></div><div class="picks-grid">{% for pick in picks %}{{ mushroom_card(pick) }}{% endfor %}</div><p class="collection-note">图鉴中的「食用记载」仅表示现有资料记录，不能据此判断采集的野生菌可食用。</p></section>
+    {{ ads(content, 'home') }}
+    <section class="play-feature section-block"><div class="play-copy"><p class="eyebrow">03 / A LITTLE WILD PLAY</p><h2>好奇心，<br>也可以很好玩<span>。</span></h2><p>翻开一张卡，发现一朵菌。<br>在轻松的小挑战里，重新爱上自然。</p><a class="button button-dark" href="/games">走进游乐场 {{ icon('arrow') }}</a></div><div class="feature-games">{% for game in content.games[:2] %}{{ game_card(game) }}{% endfor %}</div></section>
+    <section class="safety-feature" id="safety-tip"><span class="safety-symbol">{{ icon('shield') }}</span><div><p class="eyebrow">BEFORE YOU GO / 出发之前</p><h2>可以大胆好奇，<br>不能轻率入口。</h2><p>不采、不买、不吃不认识的野生菌。<br>颜色、气味、虫咬痕迹，都不是可靠的辨毒依据。</p></div><a class="button button-outline" href="/safety">读一读安全指南 {{ icon('arrow') }}</a></section>
+</div>
 {% endblock %}

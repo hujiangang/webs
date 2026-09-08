@@ -1,0 +1,18 @@
+{
+  "settings": {"name":"菌野","tagline":"中国野生菌探索指南","description":"走进森林，认识中国野生菌。探索菌子图鉴、自然小游戏与野生菌安全知识。","contact":"","icp":"","public_url":"http://127.0.0.1:8000","footer_note":"保持好奇，也保持敬畏。图鉴信息仅供科普，不作为采食依据。"},
+  "slides": [
+    {"id":"forest","title":"一场雨后，\n另一个世界醒来。","subtitle":"沿着森林的气息，发现脚下的微小宇宙。\n从一朵菌子开始，重新认识自然。","eyebrow":"INTO THE FUNGI WORLD / 探索中国野生菌","media_type":"image","url":"/static/images/forest-hero.jpg","poster":"","link":"/mushrooms","button":"开启探索","enabled":true},
+    {"id":"field-film","title":"把目光放低，\n让好奇生长。","subtitle":"在影像里走进菌子的生境，观察菌盖、菌褶与森林之间的联系。","eyebrow":"FIELD FILM / 林间观察","media_type":"video","url":"/banner/奶浆菌.mp4","poster":"/static/images/forest-hero.jpg","link":"/mushrooms?keyword=奶浆菌","button":"认识奶浆菌","enabled":true},
+    {"id":"safety","title":"探索的第一课，\n是保持敬畏。","subtitle":"好奇可以靠近，采食必须谨慎。\n认识野生菌，也认识那些需要打破的误区。","eyebrow":"STAY CURIOUS. STAY SAFE. / 安全先行","media_type":"image","url":"/image/毒蝇鹅膏菌.jpg","poster":"","link":"/safety","button":"阅读安全指南","enabled":true}
+  ],
+  "games": [
+    {"id":"memory","title":"林间寻菌","description":"翻开落叶下的菌子，找到相同的伙伴。考验观察力与记忆力的小小挑战。","cover":"/static/images/game-memory.svg","entry_url":"/play/memory/index.html","engine":"HTML5","category":"记忆","mode":"embed","enabled":true},
+    {"id":"safety-quiz","title":"菌野知识挑战","description":"颜色鲜艳就一定有毒？虫吃过就安全吗？用八道题解锁野生菌安全常识。","cover":"/static/images/game-quiz.svg","entry_url":"/play/safety-quiz/index.html","engine":"HTML5","category":"科普","mode":"embed","enabled":true}
+  ],
+  "articles": [
+    {"id":"three-donts","title":"不采、不买、不吃不认识的野生菌","category":"基本常识","summary":"对野生菌最可靠的保护，是不把不确定的识别变成一次采食决定。","body":"不采摘、不购买、不食用不认识或来源不明的野生菌。仅凭照片、地方俗名或网络图鉴，无法可靠确认一份野生菌可以安全食用。\n\n同一种菌在不同生长阶段、拍摄光线与环境下，外观会有变化；外形近似的物种也可能具有完全不同的毒性。不要凭单一特征下结论。\n\n本网站展示现有资料中的识别特征，帮助观察与学习，不提供食用许可。需要物种鉴定时，应咨询当地疾控、真菌研究机构或具有专业资质的人员。","cover":"/image/奶浆菌.jpg","source_name":"","source_url":"","enabled":true},
+    {"id":"myths","title":"这些流传很广的辨毒方法，都不可靠","category":"辨毒误区","summary":"鲜艳颜色、银针试毒、虫咬痕迹……都不能替你判断一朵菌子的安全性。","body":"误区一：颜色不鲜艳的菌子就无毒。外观朴素的野生菌同样可能含有致命毒素，颜色不能用作判断标准。\n\n误区二：虫子吃过的菌子，人也能吃。不同生物对毒素的敏感性不同，虫咬与否不能证明对人安全。\n\n误区三：用银器、蒜或大米一起煮，可以试出毒性。这些民间方法没有可靠的科学依据。\n\n误区四：多煮一会儿就没有毒。部分蘑菇毒素耐热，普通烹调无法可靠去除。煮熟不等于安全。","cover":"/image/毒蝇鹅膏菌.jpg","source_name":"","source_url":"","enabled":true},
+    {"id":"emergency","title":"食用后不适，第一时间应该做什么","category":"应急处理","summary":"恶心、呕吐、腹痛、腹泻或精神异常，均应及时就医；不要等待症状自行消失。","body":"食用野生菌后出现不适，应立即停止食用，尽快就医或拨打 120，主动告诉医务人员吃过野生菌及大致时间。\n\n在不耽误就医的前提下，保留剩余菌子、食物或清晰照片，供专业人员辅助判断。共同进食者也应咨询医务人员。\n\n不要自行采用偏方、催吐或灌服其他物质，不要依赖短暂好转判断危险已经解除。部分中毒症状可能延迟出现或经历暂时缓解。\n\n救治方案应由医务人员根据实际情况决定。","cover":"","source_name":"","source_url":"","enabled":true}
+  ],
+  "ads": []
+}

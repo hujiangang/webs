@@ -1,4 +1,5 @@
 from starlette.datastructures import UploadFile
+import re
 
 from mushroom_app.admin.models import (
     AdminExtraImage,
@@ -52,6 +53,11 @@ def update_admin_mushroom(mushroom_id: str, form: AdminMushroomForm) -> None:
         new_name = form.fields.get(name_key, "").strip()
         if not new_name:
             raise ValueError("菌子名称不能为空")
+        if (len(new_name) > 100 or re.search(r'[<>:"/\\|?*\x00-\x1f]', new_name)
+                or new_name.endswith(('.', ' ')) or new_name in {'.', '..'}):
+            raise ValueError("菌子名称包含不能用于图片文件名的字符")
+        if any(other is not row and other.get(name_key, '').strip() == new_name for other in rows):
+            raise ValueError("该菌子名称已存在，请使用不同名称")
 
         rename_mushroom_images(old_name, new_name)
         for key in get_headers():

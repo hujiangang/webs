@@ -1,48 +1,42 @@
+{% from 'components.html' import icon %}
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}菌子网站{% endblock %}</title>
-    {% if site_icon_url %}
-        <link rel="icon" href="{{ site_icon_url }}">
-    {% endif %}
-    <link rel="stylesheet" href="/static/site.css?v=20260817b">
+    <meta name="description" content="{% block description %}{{ content.settings.description }}{% endblock %}">
+    <meta name="theme-color" content="#132b24">
+    <title>{% block title %}{{ content.settings.name }} · {{ content.settings.tagline }}{% endblock %}</title>
+    <link rel="icon" type="image/svg+xml" href="/static/images/mark.svg">
+    <link rel="stylesheet" href="/static/site.css?v=20260908">
+    <link rel="stylesheet" href="/static/editorial.css?v=20260908">
 </head>
 <body>
+    <a class="skip-link" href="#main">跳到主要内容</a>
     <header class="site-header">
-        <a class="logo" href="/" aria-label="首页">
-            {% if site_icon_url %}
-                <img class="logo-image" src="{{ site_icon_url }}" alt="网站头像">
-            {% else %}
-                <span class="logo-icon" aria-hidden="true"></span>
-            {% endif %}
+        <a class="brand" href="/" aria-label="{{ content.settings.name }}首页">
+            <span class="brand-mark">{{ icon('mushroom') }}</span>
+            <span class="brand-name">{{ content.settings.name }}<small>MUSHROOM FIELD</small></span>
         </a>
-        <div class="header-content">
-            <nav class="nav">
-                <a class="nav-link {% if active == 'home' %}active{% endif %}" href="/">首页</a>
-                <a class="nav-link {% if active == 'gallery' %}active{% endif %}" href="/mushrooms">菌子图鉴</a>
-                <a class="nav-link {% if active == 'games' %}active{% endif %}" href="/games">菌子小游戏</a>
-                <a class="nav-link" href="/#safety-tip">野生菌安全科普</a>
-            </nav>
-        </div>
+        <nav class="nav" aria-label="主导航">
+            {% for key, url, label in [('home','/','发现菌野'),('gallery','/mushrooms','菌子图鉴'),('games','/games','菌子游乐场'),('safety','/safety','安全科普')] %}
+            <a class="nav-link {{ 'active' if active == key }}" href="{{ url }}" {% if active == key %}aria-current="page"{% endif %}>{{ label }}</a>
+            {% endfor %}
+        </nav>
+        <a class="header-explore" href="/mushrooms">去探索 {{ icon('arrow') }}</a>
+        <button class="menu-toggle" type="button" aria-label="打开导航" aria-expanded="false" data-menu>{{ icon('menu') }}</button>
     </header>
-
-    <main class="page-main {% block main_class %}{% endblock %}">
+    <main id="main" class="page-main {% block main_class %}{% endblock %}">
         {% block content %}{% endblock %}
     </main>
-
     <footer class="site-footer">
+        <div class="footer-top"><a class="brand" href="/"><span class="brand-mark">{{ icon('mushroom') }}</span><span class="brand-name">{{ content.settings.name }}<small>STAY CURIOUS. STAY WILD.</small></span></a><p>{{ content.settings.footer_note }}</p></div>
         <div class="footer-inner">
-            <p class="footer-record">🍄 云南菌子网 · 收录 {{ mushroom_count or 56 }} 种菌子 · 仅供科普，采食请咨询专业人员</p>
-            <nav class="footer-links" aria-label="底部链接">
-                <a href="/mushrooms">菌子图鉴</a>
-                <a href="/games">菌子小游戏</a>
-                <a href="/#safety-tip">安全提示</a>
-                <a href="/mushrooms?category=toxic&page=1&keyword=">毒菌警示</a>
-            </nav>
+            <p class="footer-record">© {{ content.settings.name }} · {{ content.settings.tagline }}{% if content.settings.icp %} · <a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener">{{ content.settings.icp }}</a>{% endif %}</p>
+            <nav class="footer-links" aria-label="底部链接"><a href="/mushrooms">菌子图鉴</a><a href="/games">游乐场</a><a href="/safety">安全指南</a>{% if content.settings.contact %}<span>合作联系：{{ content.settings.contact }}</span>{% endif %}</nav>
         </div>
     </footer>
-    <script src="/static/site.js?v=20260817a"></script>
+    <script src="/static/site.js?v=20260908"></script>
+    <script src="/static/interactions.js?v=20260908"></script>
 </body>
 </html>

@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+.venv/
+data/.admin-auth.json
+data/*.tmp
+data/uploads/

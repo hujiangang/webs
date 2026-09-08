@@ -3,18 +3,16 @@ import socket
 import sys
 
 from fastapi import FastAPI
-from fastapi.staticfiles import StaticFiles
-
-from mushroom_app.config import BANNER_DIR, IMAGE_DIR, IMAGE_EX_DIR, STATIC_DIR
-from mushroom_app.routers import router
+from starlette.exceptions import HTTPException as StarletteHTTPException
+from mushroom_app.routers import router, public_error_handler
+from mushroom_app.web_assets import mount_assets, value_error_handler
 
 
 def create_app() -> FastAPI:
-    app = FastAPI(title="ultimate-mushroom")
-    app.mount("/static", StaticFiles(directory=str(STATIC_DIR)), name="static")
-    app.mount("/banner", StaticFiles(directory=str(BANNER_DIR)), name="banner")
-    app.mount("/image", StaticFiles(directory=str(IMAGE_DIR)), name="image")
-    app.mount("/image_ex", StaticFiles(directory=str(IMAGE_EX_DIR)), name="image_ex")
+    app = FastAPI(title="菌野 · 中国野生菌探索指南", docs_url=None, redoc_url=None)
+    mount_assets(app)
+    app.add_exception_handler(ValueError, value_error_handler)
+    app.add_exception_handler(StarletteHTTPException, public_error_handler)
     app.include_router(router)
     return app
 
@@ -30,8 +28,8 @@ def is_port_in_use(host: str, port: int) -> bool:
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="启动 funTools")
-    parser.add_argument("--host", default="127.0.0.1", help="监听地址")
+    parser = argparse.ArgumentParser(description="启动菌野网站")
+    parser.add_argument("--host", default="192.168.1.11", help="监听地址")
     parser.add_argument("--port", type=int, default=8000, help="监听端口")
     args = parser.parse_args()
 
@@ -53,7 +51,7 @@ def main() -> None:
             )
             raise SystemExit(1)
 
-    print(f"funTools 已启动：http://{host}:{port}/", flush=True)
+    print(f"菌野网站已启动：http://{host}:{port}/", flush=True)
 
     import uvicorn
 

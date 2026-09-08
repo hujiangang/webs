@@ -1,0 +1,3 @@
+{% extends 'base.html' %}
+{% block title %}{{ status }} · {{ content.settings.name }}{% endblock %}
+{% block content %}<section class="article-page"><p class="eyebrow">{{ status }} / A PATH LESS TRAVELLED</p><h1>这条林间小径，暂时走不通。</h1><p class="article-lead">{{ '你寻找的页面不存在，或内容已经下架。' if status == 404 else message }}</p><a class="button button-dark" href="/">回到首页 →</a><a class="text-link" href="/mushrooms" style="margin-left:25px">继续探索图鉴</a></section>{% endblock %}

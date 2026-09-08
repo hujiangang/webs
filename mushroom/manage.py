@@ -3,18 +3,22 @@ import socket
 import sys
 
 from fastapi import FastAPI
-from fastapi.staticfiles import StaticFiles
 
 from mushroom_app.admin.routers import admin_router
-from mushroom_app.config import IMAGE_DIR, IMAGE_EX_DIR, STATIC_DIR
 from mushroom_app.routers import router
+from mushroom_app.admin.auth import AdminAccessMiddleware
+from mushroom_app.admin.access_routes import access_router
+from mushroom_app.content.admin_routes import content_admin_router
+from mushroom_app.web_assets import mount_assets, value_error_handler
 
 
 def create_admin_app() -> FastAPI:
-    app = FastAPI(title="mushroom-admin")
-    app.mount("/static", StaticFiles(directory=str(STATIC_DIR)), name="static")
-    app.mount("/image", StaticFiles(directory=str(IMAGE_DIR)), name="image")
-    app.mount("/image_ex", StaticFiles(directory=str(IMAGE_EX_DIR)), name="image_ex")
+    app = FastAPI(title="菌野内容管理", docs_url=None, redoc_url=None, openapi_url=None)
+    mount_assets(app)
+    app.add_middleware(AdminAccessMiddleware)
+    app.add_exception_handler(ValueError, value_error_handler)
+    app.include_router(access_router)
+    app.include_router(content_admin_router)
     app.include_router(admin_router)
     app.include_router(router)
     return app
@@ -53,7 +57,7 @@ def main() -> None:
             )
             raise SystemExit(1)
 
-    print(f"菌子管理端已启动：http://{host}:{port}/admin/mushrooms", flush=True)
+    print(f"菌野管理端已启动：http://{host}:{port}/admin/content", flush=True)
 
     import uvicorn
 

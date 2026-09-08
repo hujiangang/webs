@@ -7,6 +7,7 @@
     <section class="detail-shell">
         <a class="back-link" href="/mushrooms">返回图鉴</a>
         <h1 class="detail-title">{{ mushroom.name }}</h1>
+        <p class="detail-latin">{{ mushroom.latin_name }}</p>
         <div class="detail-tags">
             {% if mushroom.edible %}
                 <span class="detail-tag">{{ mushroom.edible }}</span>
@@ -15,6 +16,8 @@
                 <span class="detail-tag">{{ mushroom.toxicity }}</span>
             {% endif %}
         </div>
+
+        <div class="notice"><p>图鉴中的毒性与食用记录来自现有资料，不能据此判断采集的菌子可食用。物种鉴定请咨询专业人员。</p><a href="/safety">安全指南 ↗</a></div>
 
         <nav class="detail-nav" aria-label="详情导航">
             {% for field in mushroom.detail_fields %}
@@ -43,7 +46,7 @@
 
             <section class="detail-section">
                 <h2>安全提示</h2>
-                <p class="detail-description">野生菌食用风险高，采食前需由专业人员确认，页面信息仅作科普展示；不认识、不熟悉、来源不明确的野生菌不要采摘和食用；烹饪时应充分加热，身体不适应及时就医。</p>
+                <p class="detail-description">不采、不买、不吃不认识或来源不明的野生菌。部分毒素耐热，煮熟不能保证安全；不要使用银针、蒜、虫咬痕迹等民间方法辨毒。食用后出现不适，尽快就医或拨打 120，并说明野生菌食用史。</p>
             </section>
         </div>
     </section>

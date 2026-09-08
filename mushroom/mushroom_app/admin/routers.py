@@ -28,12 +28,12 @@ def build_admin_context(request: Request, **kwargs: Any) -> dict[str, Any]:
 
 @admin_router.get("/", response_class=HTMLResponse, summary="管理首页")
 def admin_home() -> RedirectResponse:
-    return RedirectResponse(url="/admin/mushrooms", status_code=303)
+    return RedirectResponse(url="/admin/content", status_code=303)
 
 
 @admin_router.get("/admin", response_class=HTMLResponse, summary="管理入口")
 def admin_entry() -> RedirectResponse:
-    return RedirectResponse(url="/admin/mushrooms", status_code=303)
+    return RedirectResponse(url="/admin/content", status_code=303)
 
 
 @admin_router.get("/admin/mushrooms", response_class=HTMLResponse, summary="菌子管理列表")

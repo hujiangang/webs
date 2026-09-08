@@ -6,9 +6,8 @@ from fastapi.templating import Jinja2Templates
 
 from mushroom_app.config import TEMPLATES_DIR
 from mushroom_app.models import GalleryQuery
+from mushroom_app.content.services import get_published_content
 from mushroom_app.services import (
-    get_banner_items,
-    get_game_items,
     get_home_picks,
     get_mushroom_detail,
     get_mushroom_page,
@@ -28,9 +27,16 @@ def build_template_context(request: Request, active: str, **kwargs: Any) -> dict
         "active": active,
         "site_icon_url": get_site_icon_url(),
         "mushroom_count": get_mushroom_total(),
+        "content": get_published_content(),
     }
     context.update(kwargs)
     return context
+
+
+async def public_error_handler(request: Request, exception: HTTPException):
+    from starlette.concurrency import run_in_threadpool
+    context = await run_in_threadpool(build_template_context, request, '', status=exception.status_code, message=exception.detail)
+    return templates.TemplateResponse('error.html', context, status_code=exception.status_code)
 
 
 @router.get("/site-icon", response_class=FileResponse, summary="网站头像")
@@ -48,7 +54,6 @@ def home_page(request: Request) -> HTMLResponse:
         build_template_context(
             request,
             "home",
-            banners=get_banner_items(),
             picks=get_home_picks(),
         ),
     )
@@ -56,11 +61,31 @@ def home_page(request: Request) -> HTMLResponse:
 
 @router.get("/games", response_class=HTMLResponse, summary="菌子小游戏")
 def games_page(request: Request) -> HTMLResponse:
-    game_items = [item.model_dump() for item in get_game_items()]
     return templates.TemplateResponse(
         "games.html",
-        build_template_context(request, "games", game_items=game_items),
+        build_template_context(request, "games"),
     )
+
+
+@router.get('/games/{game_id}', response_class=HTMLResponse, summary='游戏游玩页面')
+def game_player(request: Request, game_id: str):
+    game = next((item for item in get_published_content().games if item.id == game_id), None)
+    if game is None:
+        raise HTTPException(404, '游戏不存在或已下架')
+    return templates.TemplateResponse('game_player.html', build_template_context(request, 'games', game=game))
+
+
+@router.get('/safety', response_class=HTMLResponse, summary='野生菌安全科普')
+def safety_page(request: Request):
+    return templates.TemplateResponse('safety.html', build_template_context(request, 'safety'))
+
+
+@router.get('/safety/{article_id}', response_class=HTMLResponse, summary='科普文章详情')
+def article_page(request: Request, article_id: str):
+    article = next((item for item in get_published_content().articles if item.id == article_id), None)
+    if article is None:
+        raise HTTPException(404, '文章不存在或已下架')
+    return templates.TemplateResponse('article.html', build_template_context(request, 'safety', article=article))
 
 
 @router.get("/mushrooms", response_class=HTMLResponse, summary="菌子图鉴")

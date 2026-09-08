@@ -1,0 +1,6 @@
+{% extends 'base.html' %}
+{% from 'components.html' import icon %}
+{% block title %}{{ game.title }} · {{ content.settings.name }}{% endblock %}
+{% block main_class %}games-main{% endblock %}
+{% block content %}<section class="gallery-shell"><a class="back-link" href="/games">← 返回游乐场</a><div class="player-heading"><div><p class="eyebrow">{{ game.category }} / PLAY TIME</p><h1>{{ game.title }}</h1></div>{% if game.mode == 'embed' %}<button class="button button-dark" type="button" data-fullscreen>全屏游玩 {{ icon('diagonal') }}</button>{% endif %}</div><p class="player-description">{{ game.description }}</p>
+{% if game.mode == 'embed' %}<div class="game-stage" data-game-stage><iframe src="{{ game.entry_url }}" title="{{ game.title }}" allow="fullscreen; autoplay; gamepad" allowfullscreen referrerpolicy="no-referrer" sandbox="allow-scripts allow-same-origin allow-pointer-lock"></iframe></div><p class="player-help">加载较慢或无法显示？<a href="{{ game.entry_url }}" target="_blank" rel="noopener noreferrer">在新窗口打开游戏 ↗</a></p>{% else %}<div class="external-game"><img src="{{ game.cover or '/static/images/game-memory.svg' }}" alt="游戏封面"><a class="button button-dark" href="{{ game.entry_url }}" target="_blank" rel="noopener noreferrer">打开游戏 {{ icon('diagonal') }}</a></div>{% endif %}<p class="collection-note">游戏仅供科普娱乐，不提供野生菌采食判断。</p></section>{% endblock %}
