@@ -7,3 +7,6 @@ numpy
 opencv-python
 scikit-image
 ImageHash
+python-multipart
+qrcode[pil]>=7.4,<9
+itsdangerous>=2.1,<3

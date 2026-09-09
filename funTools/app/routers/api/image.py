@@ -1,5 +1,10 @@
+import asyncio
+import base64
+import io
+
 from fastapi import APIRouter, HTTPException, Response
-from pydantic import BaseModel
+from PIL import Image, UnidentifiedImageError
+from pydantic import BaseModel, Field
 from starlette.concurrency import run_in_threadpool
 
 from app.services.image_resize import ResizeOptions, batch_resize_images
@@ -8,18 +13,39 @@ from app.services.watermark import normalize_base64, remove_watermark_image
 
 
 router = APIRouter(tags=["image"])
+watermark_slot = asyncio.Semaphore(1)
 
 
 class RemoveWatermarkRequest(BaseModel):
-    image: str
-    mask: str
+    image: str = Field(max_length=12 * 1024 * 1024)
+    mask: str = Field(max_length=12 * 1024 * 1024)
+
+
+def validate_watermark_images(image: str, mask: str):
+    sizes = []
+    try:
+        for content in (image, mask):
+            with Image.open(io.BytesIO(base64.b64decode(content))) as candidate:
+                if candidate.width * candidate.height > 4000000:
+                    raise HTTPException(413, "AI 去水印仅支持 400 万像素以内的图片，请先压缩")
+                sizes.append(candidate.size)
+                candidate.verify()
+    except (UnidentifiedImageError, OSError, ValueError, Image.DecompressionBombError) as exc:
+        raise HTTPException(400, "图片或遮罩无法读取") from exc
+    if sizes[0] != sizes[1]:
+        raise HTTPException(400, "图片和遮罩尺寸不一致")
 
 
 @router.post("/remove-watermark")
 async def remove_watermark(payload: RemoveWatermarkRequest):
-    image = normalize_base64(payload.image)
-    mask = normalize_base64(payload.mask)
-    result, media_type = await run_in_threadpool(remove_watermark_image, image, mask)
+    # 单进程只运行一次模型推理，避免并行任务耗尽内存。
+    if watermark_slot.locked():
+        raise HTTPException(429, "当前正在处理其他图片，请稍后重试")
+    async with watermark_slot:
+        image = normalize_base64(payload.image)
+        mask = normalize_base64(payload.mask)
+        await run_in_threadpool(validate_watermark_images, image, mask)
+        result, media_type = await run_in_threadpool(remove_watermark_image, image, mask)
     return Response(content=result, media_type=media_type)
 
 

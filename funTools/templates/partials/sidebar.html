@@ -1,13 +1,20 @@
-<aside class="sidebar">
-  <div class="sidebar-head">
-    <div class="brand">funTools</div>
+<aside class="sidebar" id="siteSidebar">
+  <a href="/" class="brand-lockup" aria-label="funTools 首页"><span class="brand-symbol">f<span>✦</span></span><span class="wordmark">fun<span>Tools</span><i>®</i></span></a>
+  <div class="sidebar-scroll">
+    <div class="nav-caption">工作空间 <span>WORKSPACE</span></div>
+    <nav class="nav" aria-label="工具分类">
+      <a class="nav-item{% if is_home %} active{% endif %}" href="/" data-nav-category="全部"><span class="nav-icon">▦</span><span class="nav-label">工具总览</span><span class="nav-count">{{ features|length }}</span></a>
+      <a class="nav-item" href="/#favorites"><span class="nav-icon">☆</span><span class="nav-label">我的常用</span><span class="nav-dot"></span></a>
+      <div class="nav-divider"></div>
+      <div class="nav-caption">探索工具</div>
+      {% for category in categories if category != "全部" %}
+      <a class="nav-item{% if not is_home and active_feature.category == category %} active{% endif %}" href="/?category={{ category|urlencode }}#catalog" data-nav-category="{{ category }}"><span class="nav-icon">{{ {"图片工具":"▧","开发工具":"⌘","效率工具":"◷","设计工具":"◈","网络工具":"◎","音视频工具":"▷","文档工具":"▤"}.get(category, "◇") }}</span><span class="nav-label">{{ category }}</span><span class="nav-count">{{ features|selectattr("category", "equalto", category)|list|length }}</span></a>
+      {% endfor %}
+    </nav>
   </div>
-  <nav class="nav">
-    {% for feature in features %}
-    <a class="nav-item{% if feature.path == active_feature.path %} active{% endif %}" href="{{ feature.path }}">
-      <span class="nav-icon">{{ feature.index }}</span>
-      <span class="nav-label">{{ feature.title }}</span>
-    </a>
-    {% endfor %}
-  </nav>
+  <div class="sidebar-bottom">
+    <div class="sidebar-note"><span class="live-dot"></span> 为你的每一天提效<p>少一点重复，多一点创造。</p></div>
+    {% if settings.donation.enabled and settings.donation.image %}<button class="coffee-button" data-donation type="button">☕ <span>{{ settings.donation.title }}</span><span>↗</span></button>{% endif %}
+    <span class="sidebar-version">YOUR EVERYDAY TOOLKIT <span>v2.0</span></span>
+  </div>
 </aside>

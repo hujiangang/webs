@@ -1,21 +1,34 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>funTools</title>
-  <link rel="stylesheet" href="{{ url_for('static', path='css/app.css') }}?v={{ asset_version }}" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="funTools，一站式图片、开发与效率工具箱。收藏常用工具，让每一次工作更轻松。">
+  <meta name="theme-color" content="#0c1015">
+  <title>{% if not is_home %}{{ active_feature.title }} · {% endif %}funTools — 让灵感，少一点阻力</title>
+  <link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/static/css/app.css?v={{ asset_version }}">
 </head>
 <body>
-  <div class="shell">
-    {% include "partials/topbar.html" %}
-
-    <div class="body-area">
-      {% include "partials/sidebar.html" %}
+  <a class="skip-link" href="#main">跳到内容</a>
+  <div class="site-shell">
+    {% include "partials/sidebar.html" %}
+    <div class="site-content">
+      {% include "partials/topbar.html" %}
       {% include "partials/main.html" %}
+      <footer class="site-footer"><a href="/" class="wordmark">fun<span>Tools</span><i>®</i></a><span>小工具，大可能。<span class="footer-extra"> Made for your flow.</span></span><span>简单 · 专注 · 好用</span></footer>
     </div>
   </div>
-
-  <script type="module" src="{{ url_for('static', path='js/app.js') }}?v={{ asset_version }}"></script>
+  {% if settings.donation.enabled and settings.donation.image %}
+  <dialog id="donationDialog" class="donation-dialog">
+    <button class="icon-button dialog-close" data-close-dialog type="button" aria-label="关闭打赏">×</button>
+    <span class="coffee-icon">☕</span><span class="eyebrow">BUY ME A COFFEE</span>
+    <h2>{{ settings.donation.title }}</h2><p>如果这些工具帮到了你，欢迎请我喝杯咖啡。<br>你的支持，让好用的小工具一直在。</p>
+    <img src="{{ settings.donation.image }}" alt="打赏收款二维码"><small>自愿支持，工具仍可免费使用</small>
+  </dialog>
+  {% endif %}
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+  <script type="module" src="/static/js/app.js?v={{ asset_version }}"></script>
+  {% if is_home %}<script type="module" src="/static/js/home.js?v={{ asset_version }}"></script>{% endif %}
 </body>
 </html>

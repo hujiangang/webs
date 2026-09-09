@@ -1,5 +1,36 @@
-<main class="main{% if active_feature.main_class %} {{ active_feature.main_class }}{% endif %}">
-  <section class="workspace{% if active_feature.workspace_class %} {{ active_feature.workspace_class }}{% endif %}">
+{% macro card(feature) -%}
+<article class="tool-card" data-key="{{ feature.key }}" data-category="{{ feature.category }}" data-title="{{ feature.title }} {{ feature.description }}">
+  <a href="{{ feature.path }}" class="card-link" data-use="{{ feature.key }}">
+    <div class="card-top"><span class="tool-icon tone-{{ categories.index(feature.category) }}">{{ feature.icon }}</span><span class="card-category">{{ feature.category }}</span></div>
+    <h3>{{ feature.title }}</h3><p>{{ feature.description }}</p><div class="card-bottom"><span>{% if feature.view == "tool" and feature.key not in ["hash_generator","qr_generator","public_ip"] %}本地处理{% elif feature.key == "remove_watermark" %}AI 处理{% else %}即开即用{% endif %}</span><span class="tool-arrow">↗</span></div>
+  </a>
+  <button class="favorite-button" type="button" data-favorite="{{ feature.key }}" aria-label="收藏{{ feature.title }}" aria-pressed="false">☆</button>
+</article>
+{%- endmacro %}
+<main id="main" class="main {% if is_home %}home-main{% else %}feature-main{% endif %}">
+  {% if is_home %}
+  <section class="hero-panel">
+    <div class="hero-copy"><span class="hero-badge"><span class="live-dot"></span> 小工具，释放大效率 <span>↗</span></span><h1>让灵感，<br>少一点<span class="accent-text">阻力。</span><span class="hero-spark">✳</span></h1><p>把重复交给工具，把时间留给创造。<br>一个顺手的工具箱，装下你的日常所需。</p><a class="primary-button" href="#catalog">探索全部工具 <span>↗</span></a><span class="hero-count"><b>{{ features|length }}</b> 个工具 · 即开即用</span></div>
+    <div class="hero-art" aria-hidden="true"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="orbital-center">f<span>✦</span></div><span class="orbit-tile tile-code">{ }</span><span class="orbit-tile tile-image">▧</span><span class="orbit-tile tile-bolt">ϟ</span><span class="orbit-point"></span><span class="art-caption">LESS FRICTION.<br>MORE CREATION.</span></div>
+  </section>
+  <section class="favorites-section" id="favorites">
+    <div class="section-heading"><div><span class="section-mark">01 / YOUR SPACE</span><h2>你的常用，触手可及 <span>☆</span></h2></div><span class="section-note">收藏与使用记录保存在当前浏览器</span></div>
+    <div class="tool-grid favorites-grid" id="favoritesGrid"></div>
+    <div class="favorite-empty" id="favoritesEmpty"><span>☆</span><div><strong>把顺手的工具留在这里</strong><p>点击卡片右上角的星标收藏；使用过的工具也会按频率出现在这里。</p></div><a href="#catalog">去发现工具 ↗</a></div>
+  </section>
+  {% if settings.ads.enabled and settings.ads.image %}<aside class="advertisement"><a href="{{ settings.ads.link }}" target="_blank" rel="sponsored noopener noreferrer"><img src="{{ settings.ads.image }}" alt="{{ settings.ads.label }}"><div><small>广告 / SPONSORED</small><strong>{{ settings.ads.label }}</strong></div><span>↗</span></a></aside>{% endif %}
+  <section class="tool-browser" id="catalog">
+    <div class="section-heading"><div><span class="section-mark">02 / EXPLORE TOOLS</span><h2>好工具，不必到处找<span class="count-badge">{{ features|length }}</span></h2></div><label class="search-box"><span>⌕</span><input id="toolSearch" type="search" placeholder="搜索工具名称或用途…" aria-label="搜索工具"><kbd>/</kbd></label></div>
+    <div class="catalog-controls"><div class="category-tabs" role="group" aria-label="筛选工具">{% for category in categories %}<button type="button" class="category-tab{% if loop.first %} active{% endif %}" data-category="{{ category }}" aria-pressed="{{ 'true' if loop.first else 'false' }}">{{ category }}</button>{% endfor %}</div><span id="resultCount" class="result-count">共 {{ features|length }} 个工具</span></div>
+    <div class="tool-grid" id="toolGrid">{% for feature in features %}{{ card(feature) }}{% endfor %}</div>
+    <div class="empty-tools" id="emptyTools" hidden><span>⌕</span><h3>暂时没有找到</h3><p>试试更短的关键词，或切换工具分类。</p><button type="button" class="secondary-button" id="resetSearch">重置筛选</button></div>
+  </section>
+  <section class="closing-note"><span>✳</span><div><h3>少一些繁琐，多一些可能。</h3><p>让每一个小工具，成为你工作里的一点小轻松。</p></div><span class="closing-label">BUILT FOR YOUR FLOW</span></section>
+  {% else %}
+  <div class="feature-heading"><a class="back-link" href="/">← 返回工具总览</a><div><span class="section-mark">{{ active_feature.category }}</span><h1>{{ active_feature.title }}</h1><p>{{ active_feature.description }}</p></div></div>
+  <section class="workspace {{ active_feature.workspace_class }}" data-current-tool="{{ feature_key }}">
     {% include active_feature.template %}
   </section>
+  {% if settings.ads.enabled and settings.ads.image %}<aside class="advertisement"><a href="{{ settings.ads.link }}" target="_blank" rel="sponsored noopener noreferrer"><img src="{{ settings.ads.image }}" alt="{{ settings.ads.label }}"><div><small>广告 / SPONSORED</small><strong>{{ settings.ads.label }}</strong></div><span>↗</span></a></aside>{% endif %}
+  {% endif %}
 </main>

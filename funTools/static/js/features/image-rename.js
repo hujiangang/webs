@@ -101,7 +101,7 @@ export function initImageSimilarityRename({ status }) {
     try {
       const response = await fetch('/api/image-rename/preview', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: { 'Content-Type': 'application/json', ...localHeaders },
         body: JSON.stringify({
           source_dir: inputs.sourceDir,
           reference_dir: inputs.referenceDir,
@@ -159,7 +159,7 @@ export function initImageSimilarityRename({ status }) {
     try {
       const response = await fetch('/api/image-rename/apply', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: { 'Content-Type': 'application/json', ...localHeaders },
         body: JSON.stringify({
           source_dir: sourceDirInput.value.trim(),
           operations,
@@ -197,7 +197,7 @@ export function initImageSimilarityRename({ status }) {
     status.set('请在系统窗口中选择文件夹...');
 
     try {
-      const response = await fetch(`/api/filesystem/select-directory?${params.toString()}`);
+      const response = await fetch(`/api/filesystem/select-directory?${params.toString()}`, { headers: localHeaders });
       const data = await readJsonResponse(response);
       if (!data.path) {
         status.set('已取消选择文件夹');
@@ -349,3 +349,4 @@ export function initImageSimilarityRename({ status }) {
   });
 }
 
+const localHeaders = { 'X-Funtools-Local': '1' };

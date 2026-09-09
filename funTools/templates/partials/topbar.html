@@ -1,7 +1,4 @@
 <header class="topbar">
-  <div class="topbar-left">
-    <button class="menu-btn" id="toggleSidebar" type="button" aria-label="隐藏侧栏" aria-expanded="true">☰</button>
-    <div class="title">{{ active_feature.title }}</div>
-  </div>
-  <div class="status" id="appStatus">{{ active_feature.status_text }}</div>
+  <div class="topbar-left"><button class="icon-button menu-btn" id="toggleSidebar" type="button" aria-label="切换侧栏" aria-expanded="true" aria-controls="siteSidebar">☰</button><span class="breadcrumb">工作空间 <span>/</span> <strong>{% if is_home %}工具总览{% else %}{{ active_feature.title }}{% endif %}</strong></span></div>
+  <div class="topbar-right"><span class="status" id="appStatus" role="status">{% if is_home %}<span class="live-dot"></span> 随时就绪{% else %}{{ active_feature.status_text }}{% endif %}</span><a class="shortcut" href="/#catalog" aria-label="搜索工具">⌕ <span>搜索工具</span><kbd>/</kbd></a></div>
 </header>

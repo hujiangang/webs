@@ -1,0 +1,41 @@
+<div class="tool-page" data-tool="{{ feature_key }}">
+  <div class="tool-information"><span class="live-dot"></span>{% if feature_key in ["hash_generator","qr_generator"] %}内容发送至本站服务器即时计算，不写入文件。{% elif feature_key == "public_ip" %}显示当前连接的网络出口；本地访问时由浏览器查询 ipify。{% else %}在当前浏览器内处理，内容无需上传。{% endif %}</div>
+  {% if feature_key.startswith("image_") %}
+  <div class="image-tool-grid">
+    <div><label class="file-drop" for="imageToolFile"><span>↑</span><strong>选择一张图片，开始创作</strong><small>JPG / PNG / WebP · 最大 20 MB</small><input id="imageToolFile" type="file" accept="image/png,image/jpeg,image/webp"></label><p id="imageInfo" class="muted">图片处理后可预览并下载。</p><img id="imageSource" class="image-source" alt="原图预览" hidden></div>
+    <div class="tool-fields">
+      {% if feature_key in ["image_compress","image_convert"] %}<label class="field">输出格式<select id="imageFormat"><option value="image/webp">WebP</option><option value="image/jpeg">JPG</option><option value="image/png">PNG</option></select></label><label class="field">画质 <output id="qualityValue">80%</output><input id="imageQuality" type="range" min="10" max="100" value="80"></label>{% endif %}
+      {% if feature_key == "image_compress" %}<label class="field">最长边（像素，0 表示保持）<input id="imageMaxSize" type="number" min="0" max="12000" value="0"></label><p class="muted">压缩结果与原始编码有关，PNG 为无损格式，质量滑块不影响 PNG。</p>{% endif %}
+      {% if feature_key == "image_crop" %}<div class="field-grid"><label class="field">起点 X<input id="cropX" type="number" min="0" value="0"></label><label class="field">起点 Y<input id="cropY" type="number" min="0" value="0"></label><label class="field">裁剪宽度<input id="cropWidth" type="number" min="1"></label><label class="field">裁剪高度<input id="cropHeight" type="number" min="1"></label></div><p class="muted">以原图左上角为起点，按像素精确裁剪。</p>{% endif %}
+      {% if feature_key == "image_watermark" %}<label class="field">水印文字<input id="watermarkText" maxlength="80" value="© funTools"></label><div class="field-grid"><label class="field">字号（像素）<input id="watermarkFontSize" type="number" min="8" max="300" value="32"></label><label class="field">颜色<input id="watermarkColor" type="color" value="#ffffff"></label></div><label class="field">位置<select id="watermarkPosition"><option value="bottom-right">右下角</option><option value="center">居中</option><option value="top-left">左上角</option></select></label><label class="field">不透明度<input id="watermarkOpacity" type="range" min="10" max="100" value="70"></label>{% endif %}
+      <button id="imageProcess" class="primary-button" type="button" disabled>{% if feature_key == "image_to_base64" %}生成 Base64{% else %}生成图片{% endif %} <span>↗</span></button>
+    </div>
+  </div>
+  <div class="image-result" id="imageResult" hidden><div class="section-heading"><h3>处理结果</h3><a id="imageDownload" class="secondary-button" download>下载图片 ↓</a></div><p id="imageResultInfo" class="muted"></p><img id="imagePreview" alt="处理结果预览"></div>
+  {% elif feature_key == "public_ip" %}
+  <div class="ip-result"><span class="section-mark">YOUR PUBLIC ADDRESS</span><strong id="publicIpValue">正在检测…</strong><span id="ipSource" class="muted"></span><div class="tool-actions"><button id="refreshIp" class="primary-button" type="button">重新检测 ↻</button><button id="copyIp" class="secondary-button" type="button" disabled>复制 IP</button></div><p class="muted">VPN、代理或网络切换可能改变结果。不会查询或展示你的位置。</p></div>
+  {% elif feature_key == "timestamp_converter" %}
+  <div class="field-grid"><label class="field">Unix 时间戳<input id="timestampInput" placeholder="例如 0 或 1788912000" inputmode="numeric"></label><label class="field">单位<select id="timestampUnit"><option value="1000">秒</option><option value="1">毫秒</option></select></label></div><div class="tool-actions"><button id="timestampToDate" class="primary-button" type="button">转换为日期</button><button id="useNow" class="secondary-button" type="button">填入当前时间</button></div><hr><label class="field">本地日期时间<input id="dateInput" type="datetime-local" step="1"></label><button id="dateToTimestamp" class="secondary-button" type="button">转换为时间戳</button><p id="timezoneHint" class="muted"></p>
+  {% elif feature_key == "uuid_generator" %}
+  <div class="field-grid"><label class="field">生成数量<input id="uuidCount" type="number" min="1" max="100" value="10"></label><div class="field"><span>UUID v4</span><p class="muted">使用浏览器密码学随机数生成，每行一个。</p></div></div><button id="toolRun" class="primary-button" type="button">生成 UUID ↗</button>
+  {% elif feature_key == "password_generator" %}
+  <label class="field">密码长度（8–128）<input id="passwordLength" type="number" min="8" max="128" value="20"></label><div class="checkbox-row"><label><input type="checkbox" name="passwordSet" value="upper" checked> 大写字母</label><label><input type="checkbox" name="passwordSet" value="lower" checked> 小写字母</label><label><input type="checkbox" name="passwordSet" value="digits" checked> 数字</label><label><input type="checkbox" name="passwordSet" value="symbols" checked> 符号</label></div><button id="toolRun" class="primary-button" type="button">生成安全密码 ↗</button>
+  {% elif feature_key == "color_picker" %}
+  <div class="color-tool"><div id="colorSwatch" class="color-swatch"></div><div><label class="field">颜色值<input id="toolInput" value="#54e0bd" placeholder="#54e0bd、rgb(84,224,189) 或 hsl(165,69%,60%)"></label><label class="field">选择颜色<input id="colorNative" type="color" value="#54e0bd"></label><button id="toolRun" class="primary-button" type="button">转换颜色 ↗</button></div></div>
+  {% elif feature_key == "text_diff" %}
+  <div class="field-grid"><label class="field">原始文本<textarea id="toolInput" placeholder="粘贴原始文本（最多 500 行）"></textarea></label><label class="field">修改后文本<textarea id="diffInput" placeholder="粘贴修改后的文本（最多 500 行）"></textarea></label></div><button id="toolRun" class="primary-button" type="button">对比差异 ↗</button><div id="diffResult" class="diff-result" aria-live="polite"></div>
+  {% else %}
+  <label class="field">{% if feature_key == "qr_generator" %}二维码内容{% elif feature_key == "json_formatter" %}JSON 数据{% else %}输入内容{% endif %}<textarea id="toolInput" maxlength="{{ 1800 if feature_key == 'qr_generator' else 100000 }}" placeholder="{% if feature_key == 'json_formatter' %}例如：{ &quot;message&quot;: &quot;Hello, funTools&quot; }{% elif feature_key == 'qr_generator' %}输入网址或文本…{% else %}粘贴需要处理的内容…{% endif %}"></textarea></label>
+  <div class="tool-actions">
+    {% if feature_key == "url_encoder" %}<button id="toolEncode" class="primary-button" type="button">编码 encodeURIComponent</button><button id="toolDecode" class="secondary-button" type="button">解码</button>
+    {% else %}<button id="toolRun" class="primary-button" type="button">{% if feature_key == "json_formatter" %}格式化 JSON{% elif feature_key == "qr_generator" %}生成二维码{% else %}计算摘要{% endif %} ↗</button>{% endif %}
+    {% if feature_key == "json_formatter" %}<button id="jsonMinify" class="secondary-button" type="button">压缩 JSON</button>{% endif %}
+    <button id="toolClear" class="text-button" type="button">清空</button>
+  </div>
+  {% if feature_key == "qr_generator" %}<div id="qrResult" class="qr-result" hidden><img id="qrPreview" alt="生成的二维码"><a id="qrDownload" class="secondary-button" download="funtools-qr.png">下载二维码 ↓</a></div>{% endif %}
+  {% endif %}
+  <p class="tool-message" id="toolMessage" role="status" aria-live="polite"></p>
+  {% if feature_key not in ["public_ip","qr_generator","image_compress","image_convert","image_crop","image_watermark"] %}
+  <div class="output-panel"><div class="output-head"><span>处理结果 <small>OUTPUT</small></span><div><button id="copyOutput" class="text-button" type="button" disabled>复制</button><button id="downloadOutput" class="text-button" type="button" disabled>下载 .txt</button></div></div><pre id="toolOutput" class="tool-output" tabindex="0">结果会显示在这里。</pre></div>
+  {% endif %}
+</div>

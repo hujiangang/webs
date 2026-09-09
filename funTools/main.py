@@ -6,11 +6,16 @@ from fastapi import FastAPI
 from fastapi.staticfiles import StaticFiles
 
 from app.routers import api, pages
+from app.services.settings import PROJECT_ROOT, UPLOAD_DIR
+from app.web import SiteGuardMiddleware
 
 
 def create_app() -> FastAPI:
-    app = FastAPI(title="funTools")
-    app.mount("/static", StaticFiles(directory="static"), name="static")
+    app = FastAPI(title="funTools", docs_url=None, redoc_url=None, openapi_url=None)
+    UPLOAD_DIR.mkdir(parents=True, exist_ok=True)
+    app.mount("/static", StaticFiles(directory=PROJECT_ROOT / "static"), name="static")
+    app.mount("/media", StaticFiles(directory=UPLOAD_DIR), name="media")
+    app.add_middleware(SiteGuardMiddleware)
     app.include_router(pages.router)
     app.include_router(api.router)
     return app
@@ -55,7 +60,7 @@ def main() -> None:
     import uvicorn
 
     try:
-        uvicorn.run(app, host=host, port=port, reload=False)
+        uvicorn.run(app, host=host, port=port, reload=False, proxy_headers=False)
     except OSError as exc:
         print(f"启动失败：{exc}", file=sys.stderr, flush=True)
         raise

@@ -80,7 +80,7 @@ export function initImageBatchResize({ status }) {
     status.set('请在系统窗口中选择文件夹...');
 
     try {
-      const response = await fetch(`/api/filesystem/select-directory?${params.toString()}`);
+      const response = await fetch(`/api/filesystem/select-directory?${params.toString()}`, { headers: localHeaders });
       const data = await readJsonResponse(response);
       if (!data.path) {
         status.set('已取消选择文件夹');
@@ -168,7 +168,7 @@ export function initImageBatchResize({ status }) {
     try {
       const response = await fetch('/api/image-resize/batch', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: { 'Content-Type': 'application/json', ...localHeaders },
         body: JSON.stringify(payload),
       });
       const data = await readJsonResponse(response);
@@ -244,3 +244,4 @@ export function initImageBatchResize({ status }) {
   pickOutputButton?.addEventListener('click', () => openSystemDirectoryPicker('output'));
   runButton.addEventListener('click', runResize);
 }
+const localHeaders = { 'X-Funtools-Local': '1' };
