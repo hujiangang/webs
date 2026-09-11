@@ -1,7 +1,7 @@
 import os
 
 
-ASSET_VERSION = "20260909_workspace_v2"
+ASSET_VERSION = "20260911_themes_v1"
 
 
 FEATURES = {

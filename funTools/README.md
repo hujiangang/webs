@@ -4,6 +4,7 @@
 
 - 左侧可伸缩导航栏
 - 右侧功能区
+- 顶栏主题切换：保留默认薄荷深色，提供参考 VS Code 的深色、浅色和高对比度主题；选择保存在当前浏览器，刷新和切换工具后继续生效
 - 路由分层
 - 静态资源分离
 - 启动入口收敛到 `main.py`
@@ -45,6 +46,8 @@
   - `placeholder.html`：暂未接入处理逻辑的占位页面
 - `static/css/app.css`：样式入口，只通过 `@import` 聚合样式模块
 - `static/css/base.css`：全局变量和基础样式
+- `static/css/themes.css`：主题配色和组件适配
+- `static/js/layout/theme.js`：首次绘制前恢复主题和保存用户选择
 - `static/css/layout.css`：顶栏、侧栏、主内容区等通用布局
 - `static/css/placeholder.css`：占位功能页面样式
 - `static/css/features/`：按功能拆分的样式文件，例如 `watermark.css`、`video-frame.css`、`image-rename.css`、`image-resize.css`
@@ -168,6 +171,9 @@ http://127.0.0.1:8001/login              独立管理站登录
 如果你看到端口占用提示，说明 `8000` 正在被别的程序使用。此时可以直接按启动日志里的备用端口访问。
 
 ## 说明
+
+- 更新静态资源时，请同步修改 `app/features.py` 中的 `ASSET_VERSION` 和 `static/css/app.css` 内各个导入地址的版本号，避免浏览器将新页面与旧样式混用。静态资源使用 `no-cache`，允许缓存但要求使用前校验。
+- 主题与资源更新回归检查：`python -m unittest discover -s tests`、`node --test tests/theme.test.cjs`。Python 检查使用 `httpx`（未安装时执行 `pip install httpx`）。
 
 - 图片去水印会在鼠标释放后调用本项目后端接口处理
 - 视频帧截取在浏览器端完成，不需要额外后端接口；上传视频后，停在目标画面点击“截取当前帧”，再点击“下载截图”即可

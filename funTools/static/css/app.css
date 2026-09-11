@@ -1,8 +1,10 @@
-@import url("./base.css");
-@import url("./layout.css");
-@import url("./placeholder.css");
-@import url("./features/watermark.css");
-@import url("./features/video-frame.css");
-@import url("./features/image-rename.css");
-@import url("./features/image-resize.css");
-@import url("./workspace.css");
+/* 与 ASSET_VERSION 同步更新，确保子样式不会沿用改版前的缓存。 */
+@import url("./base.css?v=20260911_themes_v1");
+@import url("./layout.css?v=20260911_themes_v1");
+@import url("./placeholder.css?v=20260911_themes_v1");
+@import url("./features/watermark.css?v=20260911_themes_v1");
+@import url("./features/video-frame.css?v=20260911_themes_v1");
+@import url("./features/image-rename.css?v=20260911_themes_v1");
+@import url("./features/image-resize.css?v=20260911_themes_v1");
+@import url("./workspace.css?v=20260911_themes_v1");
+@import url("./themes.css?v=20260911_themes_v1");

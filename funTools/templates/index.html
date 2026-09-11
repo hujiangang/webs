@@ -7,6 +7,8 @@
   <meta name="theme-color" content="#0c1015">
   <title>{% if not is_home %}{{ active_feature.title }} · {% endif %}funTools — 让灵感，少一点阻力</title>
   <link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+  <!-- 首次绘制前恢复主题，避免刷新时闪回默认配色。 -->
+  <script src="/static/js/layout/theme.js?v={{ asset_version }}"></script>
   <link rel="stylesheet" href="/static/css/app.css?v={{ asset_version }}">
 </head>
 <body>

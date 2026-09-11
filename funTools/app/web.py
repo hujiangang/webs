@@ -81,6 +81,9 @@ class SiteGuardMiddleware:
                 ])
                 if self.admin or not path.startswith(("/static/", "/media/")):
                     response_headers.append((b"cache-control", b"no-store"))
+                elif path.startswith("/static/"):
+                    # 子模块也需校验缓存，防止新页面混用旧版样式和脚本。
+                    response_headers.append((b"cache-control", b"no-cache"))
                 message["headers"] = response_headers
             await send(message)
 

@@ -1,0 +1,141 @@
+/* 主题入口适配窄屏；选择器宽度固定，避免长名称挤压顶栏。 */
+.theme-picker { display: flex; align-items: center; gap: 8px; color: var(--subtle); font-size: 11px; white-space: nowrap; }
+.theme-picker select { width: 154px; padding: 6px 8px; border-radius: 7px; background: var(--panel); color: var(--text); font-size: 11px; }
+.topbar-left { flex: 1; }
+.topbar-right { flex-shrink: 0; }
+.breadcrumb { overflow: hidden; text-overflow: ellipsis; }
+.topbar-right .status { max-width: 220px; }
+@media (max-width: 1250px) { .topbar-right .status { display: none; } }
+@media (max-width: 760px) {
+  .topbar-right { gap: 8px; }
+  .theme-picker > span { display: none; }
+  .theme-picker select { width: 118px; }
+}
+@media (max-width: 380px) { .theme-picker select { width: 100px; } .topbar { gap: 10px; } }
+
+/* 参考 VS Code 的编辑区、侧栏和蓝色焦点配色，默认主题沿用原样式。 */
+:root[data-theme="vscode-dark"] {
+  color-scheme: dark;
+  --bg: #1f1f1f;
+  --panel: #252526;
+  --panel-soft: #2d2d30;
+  --input: #313131;
+  --sidebar: #181818;
+  --line: #454545;
+  --line-strong: #6b6b6b;
+  --text: #cccccc;
+  --subtle: #a6a6a6;
+  --accent: #75beff;
+  --accent-soft: #173b57;
+  --button: #0078d4;
+  --button-hover: #0069b9;
+  --button-text: #ffffff;
+  --error: #f48771;
+  --success-bg: #203d2c;
+  --success-text: #a2e7bd;
+  --error-bg: #482934;
+}
+:root[data-theme="vscode-light"] {
+  color-scheme: light;
+  --bg: #ffffff;
+  --panel: #f8f8f8;
+  --panel-soft: #eeeeee;
+  --input: #ffffff;
+  --sidebar: #f3f3f3;
+  --line: #cecece;
+  --line-strong: #767676;
+  --text: #333333;
+  --subtle: #616161;
+  --accent: #005fb8;
+  --accent-soft: #e5f1fb;
+  --button: #0078d4;
+  --button-hover: #0069b9;
+  --button-text: #ffffff;
+  --error: #b42318;
+  --success-bg: #e5f3e9;
+  --success-text: #205b35;
+  --error-bg: #fce8e8;
+  --shadow: 0 20px 50px #0001;
+}
+:root[data-theme="vscode-contrast"] {
+  color-scheme: dark;
+  --bg: #000000;
+  --panel: #000000;
+  --panel-soft: #141414;
+  --input: #000000;
+  --sidebar: #000000;
+  --line: #ffffff;
+  --line-strong: #ffffff;
+  --text: #ffffff;
+  --subtle: #ffffff;
+  --accent: #f38518;
+  --accent-soft: #271600;
+  --button: #0f4a85;
+  --button-hover: #145ea8;
+  --button-text: #ffffff;
+  --error: #ffb3b3;
+  --success-bg: #002d16;
+  --success-text: #a2ffbd;
+  --error-bg: #400000;
+  --shadow: none;
+}
+html[data-theme] { --watermark-hover: var(--accent); }
+html[data-theme] ::selection { background: var(--accent); color: var(--bg); }
+html[data-theme] ::placeholder { color: var(--subtle); }
+html[data-theme] .is-error { color: var(--error) !important; }
+html[data-theme] :is(input, select, textarea) { background-color: var(--input); border-color: var(--line); }
+html[data-theme] .search-box input { background: transparent; }
+html[data-theme] :is(.sidebar, .topbar) { background: var(--sidebar); border-color: var(--line); }
+html[data-theme] :is(.brand-symbol, .skip-link) { background: var(--button); color: var(--button-text); }
+html[data-theme] :is(.nav-caption, .nav-item, .nav-count, .sidebar-note p, .sidebar-version, .breadcrumb, .status, .shortcut, kbd, .site-footer, .icon-button) { color: var(--subtle); }
+html[data-theme] :is(.breadcrumb strong, .site-footer .wordmark, .sidebar-note) { color: var(--text); }
+html[data-theme] :is(.sidebar-note, .shortcut, kbd, .icon-button, .site-footer) { border-color: var(--line); }
+html[data-theme] .sidebar-note { background: var(--panel); }
+html[data-theme] .nav-item:hover { background: var(--panel-soft); color: var(--text); }
+html[data-theme] .nav-item.active { background: var(--accent-soft); color: var(--accent); border-color: var(--accent); }
+html[data-theme] .nav-item.active .nav-count { color: var(--accent); }
+html[data-theme] .icon-button:hover { border-color: var(--accent); color: var(--accent); }
+html[data-theme] .live-dot { box-shadow: none; }
+html[data-theme] .hero-panel { background: linear-gradient(110deg, var(--panel), var(--accent-soft)); border-color: var(--line); }
+html[data-theme] .hero-panel::after { opacity: .35; }
+html[data-theme] :is(.hero-badge, .tool-information, .file-drop, .coffee-button) { background: var(--accent-soft); border-color: var(--line); color: var(--accent); }
+html[data-theme] :is(.accent-text, .hero-spark, .back-link, .tool-arrow, .ip-result > strong, .tool-message) { color: var(--accent); }
+html[data-theme] :is(.section-mark, .eyebrow, .hero-copy p, .hero-count, .art-caption, .section-note, .card-category, .tool-card p, .card-bottom, .result-count, .category-tab, .favorite-button, .favorite-empty p, .favorite-empty > a, .closing-note p, .closing-label, .advertisement small, .donation-dialog p, .donation-dialog small, .file-drop small, .output-head small, .diff-line) { color: var(--subtle); }
+html[data-theme] :is(.hero-count b, .tool-card h3, .favorite-empty strong, .closing-note h3, .section-heading h2 > span:not(.count-badge), .field, .checkbox-row, .file-drop strong) { color: var(--text); }
+html[data-theme] :is(.primary-button, .video-primary-btn, .image-rename-primary, .image-resize-primary) { background: var(--button); border-color: var(--button); color: var(--button-text); }
+html[data-theme] :is(.primary-button, .video-primary-btn, .image-rename-primary, .image-resize-primary):hover:not(:disabled) { background: var(--button-hover); border-color: var(--accent); }
+html[data-theme] :is(.secondary-button, .video-secondary-btn, .image-rename-secondary, .image-rename-row-action, .image-rename-folder-input button, .image-resize-folder-input button) { background: var(--panel-soft); border-color: var(--line); color: var(--text); }
+html[data-theme] :is(.secondary-button, .video-secondary-btn, .image-rename-secondary, .image-rename-row-action):hover:not(:disabled) { background: var(--accent-soft); color: var(--accent); }
+html[data-theme] .text-button { color: var(--text); }
+html[data-theme] .text-button:hover { background: var(--accent-soft); color: var(--accent); }
+html[data-theme] :is(.tool-card, .workspace, .favorite-empty, .closing-note, .advertisement, .donation-dialog, .placeholder-block) { background: var(--panel); border-color: var(--line); }
+html[data-theme] .tool-card:hover { background: var(--panel-soft); border-color: var(--accent); }
+html[data-theme] :is(.search-box, .count-badge, .output-head, .favorite-empty > span) { background: var(--panel-soft); border-color: var(--line); color: var(--text); }
+html[data-theme] :is(.search-box:focus-within, input:focus, textarea:focus, select:focus) { border-color: var(--accent); }
+html[data-theme] .category-tab:hover { color: var(--accent); }
+html[data-theme] .category-tab.active { background: var(--button); color: var(--button-text); border-color: var(--button); }
+html[data-theme] :is(.favorite-button:hover, .favorite-button.is-favorite) { background: var(--accent-soft); color: var(--accent); }
+html[data-theme] :is(.tool-icon, .closing-note > span:first-child) { color: var(--accent); }
+html[data-theme] .tool-icon { background: var(--accent-soft); border-color: var(--line); }
+html[data-theme] :is(.card-bottom, .output-panel, .image-source) { border-color: var(--line); }
+html[data-theme] .tool-output { background: var(--input); color: var(--text); }
+html[data-theme] .toast { background: var(--panel-soft); color: var(--text); border-color: var(--accent); }
+html[data-theme] .diff-line.added { background: var(--success-bg); color: var(--success-text); }
+html[data-theme] .diff-line.removed { background: var(--error-bg); color: var(--error); }
+
+/* 工具工作区跟随主题；视频画面和上传图片保持原始颜色。 */
+html[data-theme] :is(.watermark-stage, .video-frame-stage, .video-frame-preview, .image-result img) { background-color: var(--bg); }
+html[data-theme] :is(.watermark-toolbar, .watermark-bottombar, .watermark-upload-icon, .upload-panel, .image-size-badge, .video-frame-toolbar, .video-drop-panel, .video-frame-side, .placeholder-row) { background: var(--panel); border-color: var(--line); color: var(--text); }
+html[data-theme] :is(.brush-label, .bottom-icon, .video-drop-subtitle, .video-frame-info) { color: var(--subtle); }
+html[data-theme] :is(.watermark-upload-icon:hover, .bottom-icon:hover) { background: var(--panel-soft); color: var(--accent); }
+html[data-theme] :is(.upload-panel:hover, .upload-panel:active, .upload-panel:focus-within, .upload-panel.drag-over, .video-drop-panel:hover, .video-drop-panel.drag-over) { background: var(--accent-soft); border-color: var(--accent); color: var(--accent); }
+html[data-theme] :is(.image-rename-controls input, .image-resize-controls input, .image-resize-controls select, .image-rename-table-wrap, .image-resize-table-wrap, .image-rename-log, .image-resize-log) { background: var(--input); color: var(--text); }
+html[data-theme] :is(.image-rename-controls, .image-resize-controls, .image-rename-score-card, .image-resize-count-card, .image-rename-summary, .image-resize-summary, .image-rename-table th, .image-resize-table th) { background: var(--panel-soft); color: var(--text); }
+html[data-theme] :is(.image-rename-table code, .image-resize-table code) { color: var(--text); }
+html[data-theme] :is(.image-rename-table tr.is-renamed, .image-rename-confidence.is-high) { background: var(--success-bg); color: var(--success-text); }
+html[data-theme] .image-rename-confidence.is-medium { background: var(--accent-soft); color: var(--accent); }
+html[data-theme] .image-rename-confidence.is-low { background: var(--error-bg); color: var(--error); }
+html[data-theme="vscode-light"] .watermark-stage { background-image: radial-gradient(#bcbcbc 1px, transparent 1px); }
+html[data-theme="vscode-contrast"] :is(.hero-panel, .watermark-stage) { background: var(--bg); }
+html[data-theme="vscode-contrast"] .hero-panel::after { display: none; }
+html[data-theme="vscode-contrast"] :is(.primary-button, .category-tab.active, .video-primary-btn, .image-rename-primary, .image-resize-primary) { border-color: var(--line); }
