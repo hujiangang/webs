@@ -10,18 +10,18 @@
 
 主要代码依据：
 
-- `assets/Script/Logic/Data/Interface/Level/ILevel.ts`
-- `assets/Script/Logic/Data/Interface/Level.ts`
-- `assets/Script/Logic/Match3/Model/GameModel.ts`
-- `assets/Script/Logic/Match3/Model/CellModel.ts`
-- `assets/Script/Logic/Match3/Model/GroundCellModel.ts`
-- `assets/Script/Logic/Match3/Model/UpGroundCellModel.ts`
-- `assets/Script/Logic/Match3/Model/MultipleGridColModel.ts`
-- `assets/Script/Logic/Match3/Model/SpecialPlug/Girl.ts`
-- `assets/Script/Logic/Match3/Model/SpecialPlug/Conveyer.ts`
-- `assets/Script/Logic/Match3/Model/multipleGridCol/GnomeModel.ts`
-- `assets/Script/Logic/Match3/Model/multipleGridCol/TurtlesModel.ts`
-- `assets/Script/Logic/Match3/Model/multipleGridCol/CrabModel.ts`
+- `assets/Script/Game/Data/Interface/Level/ILevel.ts`
+- `assets/Script/Game/Data/Interface/Level.ts`
+- `assets/Script/Game/Match3/Model/GameModel.ts`
+- `assets/Script/Game/Match3/Model/CellModel.ts`
+- `assets/Script/Game/Match3/Model/GroundCellModel.ts`
+- `assets/Script/Game/Match3/Model/UpGroundCellModel.ts`
+- `assets/Script/Game/Match3/Model/MultipleGridColModel.ts`
+- `assets/Script/Game/Match3/Model/SpecialPlug/Girl.ts`
+- `assets/Script/Game/Match3/Model/SpecialPlug/Conveyer.ts`
+- `assets/Script/Game/Match3/Model/multipleGridCol/GnomeModel.ts`
+- `assets/Script/Game/Match3/Model/multipleGridCol/TurtlesModel.ts`
+- `assets/Script/Game/Match3/Model/multipleGridCol/CrabModel.ts`
 
 关卡资源路径：
 

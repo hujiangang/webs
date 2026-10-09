@@ -1,0 +1,621 @@
+{
+  "backup": "temp/retired-special-art.zip",
+  "files": [
+    {
+      "path": "assets/res/animations/cell/teshuLightShaking.anim",
+      "sha256": "c55475cbc1e9d80bf2a708fa6516fe6d49dca307d794278e6f37836495fa479e"
+    },
+    {
+      "path": "assets/res/animations/cell/teshuLightShaking.anim.meta",
+      "sha256": "94c24f919dbbbb91eddebc7b03cdc64822c105d35dcd785bd73782b08c7db531"
+    },
+    {
+      "path": "assets/res/prefab/match3/Eff/Bomb.prefab",
+      "sha256": "7b1168e7d3e6d472c08154b082d34e1bf04aeebd938725eaf812f84ac8711473"
+    },
+    {
+      "path": "assets/res/prefab/match3/Eff/Bomb.prefab.meta",
+      "sha256": "ac17d8170d8bb5fac24bc404e24e7bcf52cfb41e2be557c0df7ef9b3a8345399"
+    },
+    {
+      "path": "assets/res/prefab/match3/Eff/bombAndBomb.prefab",
+      "sha256": "40c7b4c3d46d8c89aa33bf1f35e4bf29c6b8ba6167ac78e1c654867b9958a90a"
+    },
+    {
+      "path": "assets/res/prefab/match3/Eff/bombAndBomb.prefab.meta",
+      "sha256": "b21baaad5a18c941ec3ee3bd777179ac58de1d92c107b34a4bedcc3228c890fe"
+    },
+    {
+      "path": "assets/res/prefab/match3/Eff/bombAndFish.prefab",
+      "sha256": "a863cf459abbc2ace54014de85688f264af8afdb03ddecfca001f8a63848853f"
+    },
+    {
+      "path": "assets/res/prefab/match3/Eff/bombAndFish.prefab.meta",
+      "sha256": "34865ff67b0862b9a36fe84b3b1cfddb5d751ade47826c125749dca9319074c2"
+    },
+    {
+      "path": "assets/res/prefab/match3/Eff/FishBomb.prefab",
+      "sha256": "c33621838af22dc4ec7ae4a4586f107ffdb03c5aa57af237ba1d30d06c60793a"
+    },
+    {
+      "path": "assets/res/prefab/match3/Eff/FishBomb.prefab.meta",
+      "sha256": "1dccccae43d1203f537e74ad7dd0ef1f553c74b886c34a462af92553a86a76c6"
+    },
+    {
+      "path": "assets/res/prefab/match3/Eff/haimaAndHaima.prefab",
+      "sha256": "0c4017f5de9bd1ee96df684360f1005b759037ae8e8866ac8217b932a4da0a7e"
+    },
+    {
+      "path": "assets/res/prefab/match3/Eff/haimaAndHaima.prefab.meta",
+      "sha256": "3c8c5924164d7986cffe20ced076c588368eb83f157a2b71827df96cf3cea9dd"
+    },
+    {
+      "path": "assets/res/prefab/match3/Eff/haimaAndHetun.prefab",
+      "sha256": "2a1a73c644c1031b2b95d5f60d7d48482eb3290201669b8bf98e7d54f79dc122"
+    },
+    {
+      "path": "assets/res/prefab/match3/Eff/haimaAndHetun.prefab.meta",
+      "sha256": "3d0a49a525af01bdec0c5535d6dfe19f1fd1f09a4d560ba25c12b1a00720f760"
+    },
+    {
+      "path": "assets/res/prefab/match3/Eff/haimaAndZhangyu.prefab",
+      "sha256": "1f66c45637bf766880ce8f3989db94f8e9e00413e7d783fee7c269d2646953b7"
+    },
+    {
+      "path": "assets/res/prefab/match3/Eff/haimaAndZhangyu.prefab.meta",
+      "sha256": "e50eec8b31f0667b05c180110e7737889f16320894b3324f69f713215c598b8e"
+    },
+    {
+      "path": "assets/res/prefab/match3/Eff/HaimaOver.prefab",
+      "sha256": "ba2453c3a58a89ecef2fad39981b2ff65426511b0900637f7035b034c6da3505"
+    },
+    {
+      "path": "assets/res/prefab/match3/Eff/HaimaOver.prefab.meta",
+      "sha256": "5cfac3432e44349ee3b05f89e866e015d0072dd9a8d7935c63b29ec523c50dfb"
+    },
+    {
+      "path": "assets/res/prefab/match3/Eff/LittleBomb.prefab",
+      "sha256": "9eced00c738c20f1ead13e6de29cab17dc30c38ee05fb9e511e99baa95868e7c"
+    },
+    {
+      "path": "assets/res/prefab/match3/Eff/LittleBomb.prefab.meta",
+      "sha256": "360cca431b96a888b460ab654c88ca7af4c4a2a5b0f01cd3d32905047f8c30d1"
+    },
+    {
+      "path": "assets/res/prefab/match3/Eff/OctopusJumpE.prefab",
+      "sha256": "9a2813c01baf244de2339ad6f7c8f429a30acd1d7dde53c776db1371b1d352b6"
+    },
+    {
+      "path": "assets/res/prefab/match3/Eff/OctopusJumpE.prefab.meta",
+      "sha256": "27dc215c593e8d8d06b9e39971846ade9041fc63e4974bdc1d8afa483f582c1c"
+    },
+    {
+      "path": "assets/res/prefab/match3/Eff/OctopusJumpOverBomb.prefab",
+      "sha256": "d533067868f3a298dbb2da87367bb5a1bb4d6fb6e258f1626ae52c0235c44a87"
+    },
+    {
+      "path": "assets/res/prefab/match3/Eff/OctopusJumpOverBomb.prefab.meta",
+      "sha256": "0124298cd7f1f1aae36eccf7c8fd29f2b06425856d7acdf41e5cf2b4f17c8ad7"
+    },
+    {
+      "path": "assets/res/prefab/match3/Eff/OverShoot.prefab",
+      "sha256": "9c83f5e2b136e61274bbefcf5063e5319e1f0246efc5a6c20561ba555e006c50"
+    },
+    {
+      "path": "assets/res/prefab/match3/Eff/OverShoot.prefab.meta",
+      "sha256": "07b07e0fe9cfa51625b5c81b3af1ec02252e0cc1df5f07c8e04d23d89a68e5d6"
+    },
+    {
+      "path": "assets/res/prefab/match3/Eff/RainbowBomb.prefab",
+      "sha256": "6c453329c486b13d26976ad04344b5a3af752c203226d3a042f0b7e0fe140ccc"
+    },
+    {
+      "path": "assets/res/prefab/match3/Eff/RainbowBomb.prefab.meta",
+      "sha256": "80510ed9cff23ab1c8da712c374e5dc2d7d755f8a478fdad2904713d91e27a39"
+    },
+    {
+      "path": "assets/res/prefab/match3/Eff/RowColBomb.prefab",
+      "sha256": "c8cd0dba589dcd878c888fffacd37933944a0d5ffe1fd3a04124f5adf7d56460"
+    },
+    {
+      "path": "assets/res/prefab/match3/Eff/RowColBomb.prefab.meta",
+      "sha256": "585766214349fd0852b3884ea4ae10cedccbe1d20632df5e8f9751a451d51a65"
+    },
+    {
+      "path": "assets/res/prefab/match3/Eff/TeshuLight.prefab",
+      "sha256": "0f0d378cf28df0205afd8b68e65aebd3b387ac65122340ba8799032102912720"
+    },
+    {
+      "path": "assets/res/prefab/match3/Eff/TeshuLight.prefab.meta",
+      "sha256": "74b0e0e58e321831d2fb371b2a77f9bc76a04ad57a19939fe1c6740c1533403d"
+    },
+    {
+      "path": "assets/res/prefab/match3/Eff/Xingxing.prefab",
+      "sha256": "c733241c62853f7d19bd1d56c4cced0499126d70bc5f5e2a2b7e75274c040e66"
+    },
+    {
+      "path": "assets/res/prefab/match3/Eff/Xingxing.prefab.meta",
+      "sha256": "e59b84c41e11ad6cf52952686d9e0a7c018dfdd155e45cbff1cf3fa8ca3714b1"
+    },
+    {
+      "path": "assets/res/prefab/match3/Eff/zhangyuAndJianyu.prefab",
+      "sha256": "a8d9d19d6a93761ead69f3bb1bf68b071485a7645abefeb9fa38c54b702c68af"
+    },
+    {
+      "path": "assets/res/prefab/match3/Eff/zhangyuAndJianyu.prefab.meta",
+      "sha256": "4480598278cdaec0dbdf6bc8b2059abee0bf301415dbbf6034e29dfe72785c8b"
+    },
+    {
+      "path": "assets/res/texture/match3/eff/teshuLight/teshu.png",
+      "sha256": "795a52d371a84c2f6c2096133ee3f052f4029d720274452e43b3c09a4cca80ff"
+    },
+    {
+      "path": "assets/res/texture/match3/eff/teshuLight/teshu.png.meta",
+      "sha256": "64256323425fa53dfc9fbe704d372a4b610ac00db9c3db648fd1695a3387691b"
+    },
+    {
+      "path": "assets/res/texture/match3/objects/cells/obj10.png",
+      "sha256": "d9ecb0da20e0fd0a339f0c28fee4c82fd52e2841cb8085c9b8357afba9d25067"
+    },
+    {
+      "path": "assets/res/texture/match3/objects/cells/obj10.png.meta",
+      "sha256": "ed03e41685304d984866e28cc1c68cfe7266da3dd5cf991b9aab3360a235a99b"
+    },
+    {
+      "path": "assets/res/texture/match3/objects/cells/obj100.png",
+      "sha256": "03dad82122802d72b1c9b65ede7d443471e65807f5de1327410452f3d8b67744"
+    },
+    {
+      "path": "assets/res/texture/match3/objects/cells/obj100.png.meta",
+      "sha256": "22e65f378761ea4407d658a4432e6a8e858e1d77ebee35321402bf72d8166b4e"
+    },
+    {
+      "path": "assets/res/texture/match3/objects/cells/obj101.png",
+      "sha256": "01f4645b5dd6b9c7630332d5dc10df108d6321085cf571f9b0a5514d0f691473"
+    },
+    {
+      "path": "assets/res/texture/match3/objects/cells/obj101.png.meta",
+      "sha256": "745ab786090b14a788a2f62ced07a411abe7cc64120b895266b2c8a00c456d48"
+    },
+    {
+      "path": "assets/res/texture/match3/objects/cells/obj103.png",
+      "sha256": "b019ff5dabfa861c9d063349d9de43f7260b2e11e3ce41a454ced81fddfd5559"
+    },
+    {
+      "path": "assets/res/texture/match3/objects/cells/obj103.png.meta",
+      "sha256": "d25cf731b429dde0e4eef6ac41d834f8e24f2a5d4e8f639f8a6e1c75c99b1321"
+    },
+    {
+      "path": "assets/res/texture/match3/objects/cells/obj104.png",
+      "sha256": "8139842207de6d25f4a6300e004d669e0fb6d494a5d8a15fc0de5255e73b5b1d"
+    },
+    {
+      "path": "assets/res/texture/match3/objects/cells/obj104.png.meta",
+      "sha256": "abe914b32f6a95cc1b4d86f0a77b1d9edfbaefdee93a5003966f934e315b7f0d"
+    },
+    {
+      "path": "assets/resources/prefab/match3/Cells/Caihong.prefab",
+      "sha256": "bccd766ad44d3d69c2244901709906a8d4483114a9d96b0119ac681072498dd6"
+    },
+    {
+      "path": "assets/resources/prefab/match3/Cells/Caihong.prefab.meta",
+      "sha256": "119f554b18f41b5203016f74c57ebafb962ad6227d37ec0c66e9202e82b6d66a"
+    },
+    {
+      "path": "assets/resources/prefab/match3/Cells/FishBomb.prefab",
+      "sha256": "92ebe8f75d260590733b4d5b32cecf52dbe85fd3b359b5347f27427b179dd68c"
+    },
+    {
+      "path": "assets/resources/prefab/match3/Cells/FishBomb.prefab.meta",
+      "sha256": "864c7745c83a4b5226bc8b288243b9c866e17791e080f9b2a26bec59d001637e"
+    },
+    {
+      "path": "assets/resources/prefab/match3/Cells/Hengshu.prefab",
+      "sha256": "99a512e6c23bcbf75bcc9c775135cb2dfef37bfb89e1d241e80a318b1bd74f09"
+    },
+    {
+      "path": "assets/resources/prefab/match3/Cells/Hengshu.prefab.meta",
+      "sha256": "76c2ad6620df50eee8f65c7c7c5f1cdd1e66b0110dd71f9ef79d57fb8f998587"
+    },
+    {
+      "path": "assets/resources/prefab/match3/Cells/Octopus.prefab",
+      "sha256": "37148f8db599423f54bc4d5ee10ba6dbab0fc2e3ff35777de992a68c24188cd0"
+    },
+    {
+      "path": "assets/resources/prefab/match3/Cells/Octopus.prefab.meta",
+      "sha256": "bb7c1a28192df7d9cf9516e7d2d4ad02e86f328fc97d68a1d677b53938b05f76"
+    },
+    {
+      "path": "assets/resources/prefab/match3/Eff/TeshuLight.prefab",
+      "sha256": "439d673a7c1f7f1bbe297f9b6058cec50fd70a2e65dfb39c011c3cf4a5259426"
+    },
+    {
+      "path": "assets/resources/prefab/match3/Eff/TeshuLight.prefab.meta",
+      "sha256": "6998a8b4582cbc95da93b94f447ea440048ad743d15779287f46f41ba432bf6c"
+    },
+    {
+      "path": "assets/resources/texture/match3/objects/cells/obj10.png",
+      "sha256": "d9ecb0da20e0fd0a339f0c28fee4c82fd52e2841cb8085c9b8357afba9d25067"
+    },
+    {
+      "path": "assets/resources/texture/match3/objects/cells/obj10.png.meta",
+      "sha256": "5f6ba1cc5c517379cc47e55bfc666b37ff6834c60d137ee5a94d16ed8384da34"
+    },
+    {
+      "path": "assets/resources/texture/match3/objects/cells/obj100.png",
+      "sha256": "03dad82122802d72b1c9b65ede7d443471e65807f5de1327410452f3d8b67744"
+    },
+    {
+      "path": "assets/resources/texture/match3/objects/cells/obj100.png.meta",
+      "sha256": "ea12604175d968594e0bf305269e63eaa6d9bcd5866f8fca77609e42cb8ac60f"
+    },
+    {
+      "path": "assets/resources/texture/match3/objects/cells/obj101.png",
+      "sha256": "01f4645b5dd6b9c7630332d5dc10df108d6321085cf571f9b0a5514d0f691473"
+    },
+    {
+      "path": "assets/resources/texture/match3/objects/cells/obj101.png.meta",
+      "sha256": "062f28408648f505f907714d0c52a5afa37a4aad8a7607fb79fcece07467e54a"
+    },
+    {
+      "path": "assets/resources/texture/match3/objects/cells/obj103.png",
+      "sha256": "b019ff5dabfa861c9d063349d9de43f7260b2e11e3ce41a454ced81fddfd5559"
+    },
+    {
+      "path": "assets/resources/texture/match3/objects/cells/obj103.png.meta",
+      "sha256": "605d6525cf380bc7db5285b2856e628db4aabd655da8672fcc21809e8d422ed8"
+    },
+    {
+      "path": "assets/resources/texture/match3/objects/cells/obj104.png",
+      "sha256": "8139842207de6d25f4a6300e004d669e0fb6d494a5d8a15fc0de5255e73b5b1d"
+    },
+    {
+      "path": "assets/resources/texture/match3/objects/cells/obj104.png.meta",
+      "sha256": "92e20f09247f1107f6f892bde5e971d52a58a2b10b224adb31330043c5d2c126"
+    },
+    {
+      "path": "assets/res/prefab/match3/Cells/FishBomb.prefab",
+      "sha256": "b6a36d54db9905c0c613b91201cc69f897247c71ecd4543ec264b4d410b5f3cf"
+    },
+    {
+      "path": "assets/res/prefab/match3/Cells/FishBomb.prefab.meta",
+      "sha256": "93aaed405f51c7b4f61595e7ae7969132cd9f99486a61f4e584bf06a39b58276"
+    },
+    {
+      "path": "assets/res/prefab/match3/Cells/Octopus.prefab",
+      "sha256": "b16ea49680f01f78e8a6d49c95a8e7ae457054114a7c9ec927b735c93322c6c3"
+    },
+    {
+      "path": "assets/res/prefab/match3/Cells/Octopus.prefab.meta",
+      "sha256": "eaf98818a933491e53aac75bfd6890d0c3243a9359bdf04ade7bcce4d181e533"
+    },
+    {
+      "path": "assets/res/prefab/match3/plane.prefab",
+      "sha256": "f529053076ff4f69446a61c7b520c571d9b669e9bc384a81fe3948abb1a6517e"
+    },
+    {
+      "path": "assets/res/prefab/match3/plane.prefab.meta",
+      "sha256": "1dd7a1c1a29318a341330f6709617ab63d8b9132431be577f4ab0f21ff59979d"
+    },
+    {
+      "path": "assets/res/texture/match3/objects/fishBomb/baozhayu.atlas",
+      "sha256": "08d2c3c5a4a71b063fa5707445fbc069b6fd186f744bf29fd30bc05527d1403d"
+    },
+    {
+      "path": "assets/res/texture/match3/objects/fishBomb/baozhayu.atlas.meta",
+      "sha256": "3e27d02144713c81a62cb6fcf192053fbab6fde53439848503605163db588a09"
+    },
+    {
+      "path": "assets/res/texture/match3/objects/fishBomb/baozhayu.json",
+      "sha256": "0f6f006d0fb6367d90237c3f51fef53204d8f7cdd0839ef421a20b1d2d45f1f9"
+    },
+    {
+      "path": "assets/res/texture/match3/objects/fishBomb/baozhayu.json.meta",
+      "sha256": "10024a6bfb718077dffd9ae8385c2b8fce09220af02bf76e192a53503e90bcbb"
+    },
+    {
+      "path": "assets/res/texture/match3/objects/fishBomb/baozhayu.png",
+      "sha256": "d4b287ee7c353f1ee0feec96f84e8819bf19937f5367491741c0dae58ee12238"
+    },
+    {
+      "path": "assets/res/texture/match3/objects/fishBomb/baozhayu.png.meta",
+      "sha256": "ad0536bdc9541e3e123718d6fe03e52ad4ee8bcce2ac0a6832a4971d9672c9ff"
+    },
+    {
+      "path": "assets/res/texture/match3/objects/fishBomb.meta",
+      "sha256": "12be2f22036438dfd7b5a5b6dced2c61016dbc0817aaafefe095a587b65a272e"
+    },
+    {
+      "path": "assets/res/texture/match3/objects/octopus/zhangyu.atlas",
+      "sha256": "566e7686a29d589ac70c6279ba6e0e837b2d2b0d920ea3ee8fe47c94ef848f46"
+    },
+    {
+      "path": "assets/res/texture/match3/objects/octopus/zhangyu.atlas.meta",
+      "sha256": "accbd224ccb66b5d853ecc841672a1d4342ee0b5eadb631df640c5e1a80ad12f"
+    },
+    {
+      "path": "assets/res/texture/match3/objects/octopus/zhangyu.json",
+      "sha256": "72c45c9be616b2917ad0af64ab8c55a39e96914f8ac901137e3fa97ff566056a"
+    },
+    {
+      "path": "assets/res/texture/match3/objects/octopus/zhangyu.json.meta",
+      "sha256": "05c658457b81c2701bed3c2a34e8c672c6496164505289cc83d102fb0c16991f"
+    },
+    {
+      "path": "assets/res/texture/match3/objects/octopus/zhangyu.png",
+      "sha256": "523df59596d4840c6d829d35a262092821b81696e2737a1b07aefa9ee145b81b"
+    },
+    {
+      "path": "assets/res/texture/match3/objects/octopus/zhangyu.png.meta",
+      "sha256": "69701fb7b3505c26ccb8add992b966ac1f7f837488d65f2652fc893da5b4a1db"
+    },
+    {
+      "path": "assets/res/texture/match3/objects/octopus.meta",
+      "sha256": "6c411fe5a829e13dc01641a58666f57e7ef8799cd1264ffb74301790073100a2"
+    },
+    {
+      "path": "assets/resources/prefab/match3/plane.prefab",
+      "sha256": "f07014384b68ed875a0fc494c3c6ab7fed36b88993782bd0214e4918f7cb65e9"
+    },
+    {
+      "path": "assets/resources/prefab/match3/plane.prefab.meta",
+      "sha256": "c8ea8d056468aa1df72db6994dd0b1e4f14c99844a8dba3f62a100e1d5b0c040"
+    },
+    {
+      "path": "assets/resources/texture/match3/objects/fishBomb/baozhayu.atlas",
+      "sha256": "08d2c3c5a4a71b063fa5707445fbc069b6fd186f744bf29fd30bc05527d1403d"
+    },
+    {
+      "path": "assets/resources/texture/match3/objects/fishBomb/baozhayu.atlas.meta",
+      "sha256": "c51d3738b2325f832cf479f23560e0f2d472af86263f38af8f527b48102f8a94"
+    },
+    {
+      "path": "assets/resources/texture/match3/objects/fishBomb/baozhayu.json",
+      "sha256": "0f6f006d0fb6367d90237c3f51fef53204d8f7cdd0839ef421a20b1d2d45f1f9"
+    },
+    {
+      "path": "assets/resources/texture/match3/objects/fishBomb/baozhayu.json.meta",
+      "sha256": "f0d8435339eb313a63639c0fde25b08ed6a79110d139a7cb9eaf1b1e160468a6"
+    },
+    {
+      "path": "assets/resources/texture/match3/objects/fishBomb/baozhayu.png",
+      "sha256": "d4b287ee7c353f1ee0feec96f84e8819bf19937f5367491741c0dae58ee12238"
+    },
+    {
+      "path": "assets/resources/texture/match3/objects/fishBomb/baozhayu.png.meta",
+      "sha256": "8716f4157e492ab8f581ac074c5a87f92b738222e1ab73fef05bf8e7b3a18e07"
+    },
+    {
+      "path": "assets/resources/texture/match3/objects/fishBomb.meta",
+      "sha256": "66663b3fefcdd17424a096544fd14cc356fa196fa8d781d86e6f89017966eb97"
+    },
+    {
+      "path": "assets/resources/texture/match3/objects/octopus/zhangyu.atlas",
+      "sha256": "566e7686a29d589ac70c6279ba6e0e837b2d2b0d920ea3ee8fe47c94ef848f46"
+    },
+    {
+      "path": "assets/resources/texture/match3/objects/octopus/zhangyu.atlas.meta",
+      "sha256": "71f1b918981060975bd410267dcef5082899868d5e3969337d1429004861a681"
+    },
+    {
+      "path": "assets/resources/texture/match3/objects/octopus/zhangyu.json",
+      "sha256": "72c45c9be616b2917ad0af64ab8c55a39e96914f8ac901137e3fa97ff566056a"
+    },
+    {
+      "path": "assets/resources/texture/match3/objects/octopus/zhangyu.json.meta",
+      "sha256": "34ac9b86a844223908fd5ec380baa952076af487cfe4940b85995721e59e7a58"
+    },
+    {
+      "path": "assets/resources/texture/match3/objects/octopus/zhangyu.png",
+      "sha256": "523df59596d4840c6d829d35a262092821b81696e2737a1b07aefa9ee145b81b"
+    },
+    {
+      "path": "assets/resources/texture/match3/objects/octopus/zhangyu.png.meta",
+      "sha256": "6b9565d34a066e9d46b8fcbc03b1352d546c233196e9363b6280b988714ad95a"
+    },
+    {
+      "path": "assets/resources/texture/match3/objects/octopus.meta",
+      "sha256": "f9538a82eb2173a336451b175c648981b17705487300bb581659b9a109671c48"
+    },
+    {
+      "path": "assets/resources/texture/match3/special/special-10.png",
+      "sha256": "37b8c7eec3ee6af555785e69079fe33f770d25bfc6b7df2d01d3467249c5e1a8"
+    },
+    {
+      "path": "assets/resources/texture/match3/special/special-10.png.meta",
+      "sha256": "37669850bb7b6a24eb8204785936dc877e6010c94223301c0b50bf0a0ac9697c"
+    },
+    {
+      "path": "assets/resources/texture/match3/special/special-100.png",
+      "sha256": "84011f5f154864196ff5f99e5b0c993dfab56f021553a28d3401d57407c7791d"
+    },
+    {
+      "path": "assets/resources/texture/match3/special/special-100.png.meta",
+      "sha256": "97e310899abc34a9b6907cce98a1394c33c51716bf46b75db024d36275eae425"
+    },
+    {
+      "path": "assets/resources/texture/match3/special/special-101.png",
+      "sha256": "ba092fcd51b78f98619fc3c6c87abe6624da8c726112432424f138ee8ab58a07"
+    },
+    {
+      "path": "assets/resources/texture/match3/special/special-101.png.meta",
+      "sha256": "739b58b71c94a79443940ff85d16a5f3ddca374916616a4c05705e4935bcdeb8"
+    },
+    {
+      "path": "assets/resources/texture/match3/special/special-102.png",
+      "sha256": "b32ce784da7aab6ce0cb0a171dcc73c96f921d2e05c3685d7ba196c8ea41ae28"
+    },
+    {
+      "path": "assets/resources/texture/match3/special/special-102.png.meta",
+      "sha256": "24f0627a6afe9cd3040377c5ad94be01d0234a12f6bfe0d00bdd6be71282f8b8"
+    },
+    {
+      "path": "assets/resources/texture/match3/special/special-103.png",
+      "sha256": "348f6b1208dacbcea4c1c35d5685860d20169eb0ab72259551712a893c05844f"
+    },
+    {
+      "path": "assets/resources/texture/match3/special/special-103.png.meta",
+      "sha256": "642f228ea40d077709e8a88b24c20cc671ee0ae451daa1aa9eef6156d005e857"
+    },
+    {
+      "path": "assets/resources/texture/match3/special/special-104.png",
+      "sha256": "63773eeafe62aafbf3931123889743e841f0f2d7de75bb0ebb23cb9e21651b2b"
+    },
+    {
+      "path": "assets/resources/texture/match3/special/special-104.png.meta",
+      "sha256": "e1dc9adc8170fea9d3c4de377840520710f5a361cba893e5447d6bd3e3e230c9"
+    },
+    {
+      "path": "assets/resources/texture/match3/special.meta",
+      "sha256": "66a8c91c1d77a4c4325df1e6544b79d686f988d4538459171999e32f22873b96"
+    },
+    {
+      "path": "assets/Script/Game/Match3/View/Comp/PlaneCtrl.ts",
+      "sha256": "5ea8a86ec39d8f9519bddda392e89b3a48109cca60e0ff14ec12c79ce856b781",
+      "uuid": "17282acc-e6fd-4b8a-aaa0-8454944e1a2f"
+    },
+    {
+      "path": "assets/Script/Game/Match3/View/Comp/PlaneCtrl.ts.meta",
+      "sha256": "f902f43374fa0b0c0a72add13979b1c6579eb1a9cc26656161c5d91e4e39e8f6"
+    },
+    {
+      "path": "tools/generate-special-art.cjs",
+      "sha256": "31fc4a81c388ed1eb07b51c08dbd4c17bd9e2a0a772446f05f344bc9bc710bb6"
+    }
+  ],
+  "retainedShared": [
+    "assets/res/prefab/match3/Cells/Bomb.prefab",
+    "assets/res/prefab/match3/Cells/Caihong.prefab",
+    "assets/res/prefab/match3/Cells/FishBomb.prefab",
+    "assets/res/prefab/match3/Cells/Hengshu.prefab",
+    "assets/res/prefab/match3/Cells/Octopus.prefab",
+    "assets/res/texture/match3/eff/baozha/beiek_baozha.json",
+    "assets/res/texture/match3/eff/baozha/beiek_baozha.png",
+    "assets/res/texture/match3/eff/baozhafish/baozhayu_bom.json",
+    "assets/res/texture/match3/eff/baozhafish/baozhayu_bom.png",
+    "assets/res/texture/match3/eff/bombAndBomb/hetunHeti.json",
+    "assets/res/texture/match3/eff/bombAndBomb/hetunHeti.png",
+    "assets/res/texture/match3/eff/bombAndFish/hetiji.json",
+    "assets/res/texture/match3/eff/bombAndFish/hetiji.png",
+    "assets/res/texture/match3/eff/caihong/caihong3.json",
+    "assets/res/texture/match3/eff/caihong/caihong3.png",
+    "assets/res/texture/match3/eff/caihong/skeleton.json",
+    "assets/res/texture/match3/eff/caihong/skeleton.png",
+    "assets/res/texture/match3/eff/haimaAndHetun/haimaHaima.json",
+    "assets/res/texture/match3/eff/haimaAndHetun/haimaHaima.png",
+    "assets/res/texture/match3/eff/haimaAndHetun/hetiji2.json",
+    "assets/res/texture/match3/eff/haimaAndHetun/hetiji2.png",
+    "assets/res/texture/match3/eff/haimaAndZhangyu/zhangyuHaima.json",
+    "assets/res/texture/match3/eff/haimaAndZhangyu/zhangyuHaima.png",
+    "assets/res/texture/match3/eff/hengshu/hengsudan_fashe.json",
+    "assets/res/texture/match3/eff/hengshu/hengsudan_fashe.png",
+    "assets/res/texture/match3/eff/octopusJump/zhangyu_tiaoFX.json",
+    "assets/res/texture/match3/eff/octopusJump/zhangyu_tiaoFX.png",
+    "assets/res/texture/match3/eff/octopusJump/zhangyu_xiaochu.json",
+    "assets/res/texture/match3/eff/octopusJump/zhangyu_xiaochu.png",
+    "assets/res/texture/match3/eff/xiaochu/xiaochu01.json",
+    "assets/res/texture/match3/eff/xiaochu/xiaochu01.png",
+    "assets/res/texture/match3/eff/zhangyuAndJianyu/zhangyu.json",
+    "assets/res/texture/match3/eff/zhangyuAndJianyu/zhangyu.png",
+    "assets/res/texture/match3/objects/bomb/beike_xiuxian.json",
+    "assets/res/texture/match3/objects/bomb/beike_xiuxian.png",
+    "assets/res/texture/match3/objects/caihong/anim_haima.json",
+    "assets/res/texture/match3/objects/caihong/anim_haima.png",
+    "assets/res/texture/match3/objects/cells/overtw.png",
+    "assets/res/texture/match3/objects/fishBomb/baozhayu.json",
+    "assets/res/texture/match3/objects/fishBomb/baozhayu.png",
+    "assets/res/texture/match3/objects/hengshu/hengsudan_xiuxian.json",
+    "assets/res/texture/match3/objects/hengshu/hengsudan_xiuxian.png",
+    "assets/res/texture/match3/objects/octopus/zhangyu.json",
+    "assets/res/texture/match3/objects/octopus/zhangyu.png",
+    "assets/resources/prefab/match3/Cells/Bomb.prefab"
+  ],
+  "retiredUuids": [
+    "0195eab4-7c42-4854-a463-4f5e648ac81b",
+    "03a768cb-ccdd-452b-9f1a-c651d7569296",
+    "12123d60-8d40-4a9f-8d6b-3313f3563cfc",
+    "17282acc-e6fd-4b8a-aaa0-8454944e1a2f",
+    "17d716cc-fdbd-4b17-8952-3c0e927631b6",
+    "1aaa15fd-cdf3-42e9-a819-7e4eda68a316",
+    "1bc3459a-715a-423a-a2a4-23b49f7816bf",
+    "247ea63c-a832-443d-8402-110dff12ecd2",
+    "27d6ec70-9694-446c-9fc2-625cd8878039",
+    "2875deb0-0a4a-4aa9-8af7-a26e8aedb746",
+    "31ac2bff-ec32-4416-bba4-9d254c545c3a",
+    "372f59e8-4947-452b-9ca7-20e61dbcdc7c",
+    "37b1204e-9c60-455b-a287-dc96e2d3271b",
+    "3944a5e5-2db6-4b90-9dd8-6e4366059672",
+    "3ae250c6-ae2d-4d39-bbbf-c09b0597a57f",
+    "4101f90c-6ec2-49f2-87f9-e4ade3d38e8c",
+    "4128c6ba-a888-423d-8f62-447b0d12fdd1",
+    "4330d32e-bffb-467f-9da9-a4f0e756a7bb",
+    "4c550a45-d16d-427a-b4c5-19078c7659a4",
+    "4c78f62a-e6f8-4015-a99f-ef6cd7f3bc56",
+    "4de3ada4-cf99-41eb-9787-0860b489bf7f",
+    "52091504-a837-4a1d-853b-89efb8bb0e9b",
+    "5aa0816b-6786-4074-bc05-1623125b2a28",
+    "5bc7926d-28fa-4b48-9efc-c7bfb9fffc38",
+    "5ccd1f18-cb71-4823-bd37-a130928f96e5",
+    "61eb2842-010d-482a-9c41-ccb0e343d16f",
+    "62ddf9e2-a11b-4db2-9756-33c06bc8773b",
+    "664cbf55-e048-4e34-8f28-9926088003e5",
+    "675fa9cf-4dc9-417e-bcab-f600d1b37107",
+    "6db7e238-44c9-4ca5-9bfe-fc43b90d60ed",
+    "7059ce79-6eb4-41c3-8263-f3b7d981ada2",
+    "799c1a12-9da5-4339-bf3c-76e2aeb552dd",
+    "7a0feabd-a0e0-4703-8913-9b724529dbdd",
+    "7a7055ca-ccc1-4301-bf29-82851d78181b",
+    "7ca3dfc8-daff-4c80-af4f-303b110619b2",
+    "7f880cb1-6451-45ee-be3a-b53a0f715491",
+    "807832dd-6120-4cfd-8696-663bd4dd7e9f",
+    "81c2b40f-aa9b-4f08-81c1-8011efa39f39",
+    "85c6bf7b-11ab-4a00-b744-8a194da0989f",
+    "870b79a6-9b81-4ffe-9f4e-ee252d05c189",
+    "890617ab-1270-41da-9005-e12d7bd002c7",
+    "8cd672a6-0967-4e84-9139-dcf55e1ff2f6",
+    "8dc9679f-ebfb-473b-835b-9650d434e83e",
+    "91dcd12b-20ff-4b1d-8672-f7549075a08b",
+    "9502a4b9-334a-424b-aff3-f8a693fc83b4",
+    "96ad7bd0-63e0-4cf5-837a-a58a36966ac1",
+    "9f791704-8616-4e74-ae1e-9ffe4725b4d1",
+    "a9460f4a-3625-4dc4-808b-01c95eb5082e",
+    "ac03316f-43dc-4d7d-9768-2045fdd42128",
+    "b435e183-291d-4eea-a963-1fa98e3bbbe5",
+    "b6d8eb18-4753-4e78-83dd-f6c55a904b80",
+    "b8353488-b103-4ead-8a38-3844bd28b91a",
+    "b9352874-b50e-4dcc-8071-3629685f58f1",
+    "bd243c81-96d7-4380-b7a1-4ebfbcfd4484",
+    "c0013214-efa9-4723-949b-659ad155509c",
+    "c18f6aff-e09d-4213-b75f-14ef274f100d",
+    "c3138c5a-96da-498e-a4c3-92e51c20ba55",
+    "c4c71f76-e8eb-4034-a0f2-c0e29bc023a3",
+    "c5eb4559-a487-4bcc-a355-8e03c329a278",
+    "c7c58a86-44ea-4082-9788-8a51bc029540",
+    "c90ec889-073e-453c-9558-27bc6b37af2e",
+    "cbe533d1-7bf3-49dd-af36-217837aea254",
+    "ccd797af-fdc7-4464-8739-e9a308f89a07",
+    "cd0a8d80-8340-4f2b-a1aa-6a1598622b57",
+    "d009c88e-721f-4d4a-9b1f-02633611e8a6",
+    "d38ab595-0c66-4717-9ddf-76f55bd948bb",
+    "d4dd9c4d-b64c-4e2c-b6f8-dc6d7cb17aeb",
+    "d9f10aee-c645-4e04-afbe-e63cb9935f0c",
+    "dc2edb1b-9b11-4fca-9f79-8615905b7b54",
+    "de1a258c-d229-4964-9195-bc0283b588cf",
+    "de9da4da-12e7-4427-93a6-d457c8c32ae3",
+    "e6f76b1f-d230-484b-82f6-358e5fe475e5",
+    "e9b42cab-f248-4caa-91fd-04e29023b76c",
+    "ea790e78-f3e9-4c91-906b-5c90d307b6e0",
+    "eba391bc-0d14-437c-b9cc-62d40cd1570d",
+    "ee0f48b1-8384-49e7-935a-aa41665fe086",
+    "eea5c860-3c8f-45a0-9ce9-b6455d3ba69d",
+    "f3a1dfa0-48a4-4954-b5bc-59b13937c01e",
+    "f49e25d8-48b5-49de-815b-26cf48af2b09",
+    "f5522965-bc88-4522-93a0-33762586e91d",
+    "f72dd434-6f01-4e3f-b908-d04372068646",
+    "fbc67ce1-2127-4093-b2a8-cf8dcb1e0482",
+    "fcfc0fa3-b754-458d-ad79-cc2e779d0408"
+  ],
+  "additionalBackups": [
+    "temp/retired-special-art-polish-20261008.zip"
+  ]
+}

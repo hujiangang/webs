@@ -1,0 +1,171 @@
+model = "gpt-6-astra"
+model_reasoning_effort = "xhigh"
+network_access = "enabled"
+disable_response_storage = true
+sandbox_mode = "workspace-write"
+windows_wsl_setup_acknowledged = true
+model_verbosity = "high"
+personality = "pragmatic"
+
+notify = [
+    "C:\\Users\\Administrator\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\b474a88d5d105afa\\bin\\node_modules\\@oai\\sky\\bin\\windows\\codex-computer-use.exe",
+    "turn-ended"
+]
+
+
+[mcp_servers.desktop-commander]
+type = "stdio"
+command = "cmd"
+args = ["/c", "npx", "-y", "@wonderwhy-er/desktop-commander@latest", "--no-onboarding"]
+
+[mcp_servers.desktop-commander.env]
+SystemRoot = 'C:\Windows'
+
+
+[mcp_servers.Serena]
+type = "http"
+url = "http://127.0.0.1:9121/mcp"
+
+
+[mcp_servers.unityMCP]
+url = "http://127.0.0.1:8080/mcp"
+
+
+[mcp_servers.node_repl]
+args = []
+command = 'C:\Users\Administrator\AppData\Local\OpenAI\Codex\runtimes\cua_node\b474a88d5d105afa\bin\node_repl.exe'
+startup_timeout_sec = 120
+
+[mcp_servers.node_repl.env]
+NODE_REPL_NATIVE_PIPE_CONNECT_TIMEOUT_MS = "1000"
+NODE_REPL_NODE_MODULE_DIRS = 'C:\Users\Administrator\AppData\Local\OpenAI\Codex\runtimes\cua_node\b474a88d5d105afa\bin\node_modules'
+NODE_REPL_NODE_PATH = 'C:\Users\Administrator\AppData\Local\OpenAI\Codex\runtimes\cua_node\b474a88d5d105afa\bin\node.exe'
+NODE_REPL_TRUSTED_CODE_PATHS = 'C:\Users\Administrator\.codex;C:\Users\Administrator\AppData\Local\OpenAI\Codex\runtimes\cua_node\b474a88d5d105afa\bin\node_modules'
+CODEX_HOME = 'C:\Users\Administrator\.codex'
+BROWSER_USE_AVAILABLE_BACKENDS = "chrome,iab"
+BROWSER_USE_TINYSKY_ENABLED = "1"
+NODE_REPL_NODE_PATH = 'C:\Users\Administrator\AppData\Local\OpenAI\Codex\runtimes\cua_node\b474a88d5d105afa\bin\node.exe'
+NODE_REPL_INSTRUCTIONS_USE_CASE_BROWSER = ""
+NODE_REPL_INSTRUCTIONS_USE_CASE_CHROME = ""
+BROWSER_USE_CODEX_APP_BUILD_FLAVOR = "prod"
+BROWSER_USE_CODEX_APP_VERSION = "26.901.51231"
+NODE_REPL_TRUSTED_SERVICES = '{"browser":"C:/Users/Administrator/.codex/plugins/cache/openai-bundled/browser/26.901.51231/scripts/browser-service.mjs","sky":"@oai/sky/service"}'
+SKY_CUA_NATIVE_PIPE = "1"
+SKY_CUA_NATIVE_PIPE_DIRECTORY = '\\.\pipe\codex-computer-use-b8ada74c-536d-49ea-a051-0d191c02e933'
+CODEX_CLI_PATH = 'C:\Users\Administrator\AppData\Local\OpenAI\Codex\bin\8e5b6932251c2c1c\codex.exe'
+
+
+[windows]
+sandbox = "elevated"
+
+
+[projects."D:\\work\\UnityProject\\ModelAction"]
+trust_level = "trusted"
+
+[projects."D:\\work\\PythonTools"]
+trust_level = "trusted"
+
+[projects."d:\\work\\client\\branch\\kiba-app"]
+trust_level = "trusted"
+
+[projects."d:\\work\\client\\kiba-app"]
+trust_level = "trusted"
+
+[projects."d:\\work\\unityproject\\stagecombat"]
+trust_level = "trusted"
+
+[projects."d:\\work\\unityproject\\definitely-not-clash-royale"]
+trust_level = "trusted"
+
+[projects."d:\\work\\unityproject\\rlash-coyale"]
+trust_level = "trusted"
+
+[projects."d:\\work\\unityproject\\games"]
+trust_level = "trusted"
+
+[projects."d:\\work\\unityproject\\2048ai"]
+trust_level = "trusted"
+
+[projects.'d:\work\ai\pythontools']
+trust_level = "trusted"
+
+[projects.'d:\work\ai\funtools']
+trust_level = "trusted"
+
+[projects.'d:\work\ai\webs']
+trust_level = "trusted"
+
+[projects.'d:\codex_workspace\2026-09-07\zen']
+trust_level = "trusted"
+
+[projects.'d:\codex_workspace\2026-09-07\computer-use-plugin-computer-use-openai']
+trust_level = "trusted"
+
+[projects.'d:\codex_workspace\2026-09-07\ni']
+trust_level = "trusted"
+
+[projects.'d:\codex_workspace\2026-09-08\ni']
+trust_level = "trusted"
+
+[projects.'d:\codex_workspace\2026-09-08\chatgpt']
+trust_level = "trusted"
+
+[projects.'d:\codex_workspace\2026-09-09\mushroom-x20']
+trust_level = "trusted"
+
+
+[features]
+rmcp_client = true
+
+
+[desktop]
+followUpQueueMode = "steer"
+conversationDetailMode = "STEPS_COMMANDS"
+ambient-suggestions-enabled = true
+projectlessWorkspaceRoot = 'D:\codex_workspace'
+git-worktree-root = 'D:\codex_worktrees'
+
+
+[desktop.open-in-target-preferences]
+global = "systemDefault"
+
+
+[marketplaces.openai-bundled]
+source_type = "local"
+source = '\\?\C:\Users\Administrator\.codex\.tmp\bundled-marketplaces\openai-bundled'
+
+
+[marketplaces.openai-primary-runtime]
+source_type = "local"
+source = '\\?\C:\Users\Administrator\.cache\codex-runtimes\codex-primary-runtime\plugins\openai-primary-runtime'
+
+
+[plugins."codex-app-tools@openai-bundled"]
+enabled = true
+
+[plugins."browser@openai-bundled"]
+enabled = true
+
+[plugins."unified-computer-use@openai-bundled"]
+enabled = true
+
+[plugins."visualize@openai-bundled"]
+enabled = true
+
+[plugins."computer-use@openai-bundled"]
+enabled = true
+
+[plugins."documents@openai-primary-runtime"]
+enabled = true
+
+[plugins."pdf@openai-primary-runtime"]
+enabled = true
+
+[plugins."spreadsheets@openai-primary-runtime"]
+enabled = true
+
+[plugins."presentations@openai-primary-runtime"]
+enabled = true
+
+[plugins."template-creator@openai-primary-runtime"]
+enabled = true

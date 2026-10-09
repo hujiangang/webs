@@ -638,9 +638,6 @@
     "gridBoard": {
       "__uuid__": "88033d1a-d739-49d2-a352-7f05ce534b17"
     },
-    "planePrefab": {
-      "__uuid__": "5aa0816b-6786-4074-bc05-1623125b2a28"
-    },
     "maskNode": {
       "__id__": 13
     },
@@ -6799,37 +6796,11 @@
       "__id__": 179
     },
     "_enabled": true,
-    "bombEffPrefab": {
-      "__uuid__": "03a768cb-ccdd-452b-9f1a-c651d7569296"
-    },
-    "littleBombPrefab": {
-      "__uuid__": "3ae250c6-ae2d-4d39-bbbf-c09b0597a57f"
-    },
     "mergeBombPrefab": {
       "__uuid__": "44e5ece1-9ffd-4445-8c1f-8e4519df61f4"
     },
     "comboPrefab": {
       "__uuid__": "fbe54501-8c30-4cab-bd22-e66ab7e73215"
-    },
-    "rowColBombPrefab": {
-      "__uuid__": "f5522965-bc88-4522-93a0-33762586e91d"
-    },
-    "fishBombPrefab": {
-      "__uuid__": "17d716cc-fdbd-4b17-8952-3c0e927631b6"
-    },
-    "rainbowBombPrefab": {
-      "__uuid__": "7a0feabd-a0e0-4703-8913-9b724529dbdd"
-    },
-    "shootStarPrefab": {
-      "__uuid__": "b435e183-291d-4eea-a963-1fa98e3bbbe5"
-    },
-    "haimaShootOverEff": null,
-    "zyJumpPrefab": null,
-    "zyJumpOverPrefab": {
-      "__uuid__": "27d6ec70-9694-446c-9fc2-625cd8878039"
-    },
-    "zyJumpElimatePrefab": {
-      "__uuid__": "ea790e78-f3e9-4c91-906b-5c90d307b6e0"
     },
     "brokenPrefab": {
       "__uuid__": "798c1498-aefb-43dd-98b4-b0110013f88e"
@@ -6838,9 +6809,6 @@
       "__uuid__": "a391fb45-be1f-47ee-82d5-fc0bb9d2ff3c"
     },
     "boxBrokenPrefab": null,
-    "overShootPrefab": {
-      "__uuid__": "c0013214-efa9-4723-949b-659ad155509c"
-    },
     "addScorePrefab": {
       "__uuid__": "08214829-1f10-46a4-97f3-1755e3fdb899"
     },
@@ -6848,14 +6816,7 @@
       "__uuid__": "7968253d-8dd0-4c58-a1eb-bc83ecafd426"
     },
     "dotPrefab": null,
-    "bombAndBombPrefab": null,
-    "haimaAndHetuanPrefab": null,
-    "haimaAndHaimaPrefab": null,
-    "zhangyuAndJianyu": null,
-    "hetuanAndJianyu": null,
     "chuizi": null,
-    "bombAndFishPrefab": null,
-    "haimaAndZhangyuPrefab": null,
     "_id": ""
   },
   {

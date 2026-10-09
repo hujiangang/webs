@@ -1,0 +1,961 @@
+{
+  "reason": "2026-10-03: remove hotel, island operation and their old lobby guidance; keep match3 tutorial",
+  "backup": "temp/mushroom-scope-before.zip",
+  "files": [
+    {
+      "path": "assets/GodGuide.meta",
+      "sha256": "13c8a9531a1c70b172504a1f6c2a35cffd3d2b8b85fda40a6d068d936b65301a"
+    },
+    {
+      "path": "assets/GodGuide/GodFinger.prefab",
+      "sha256": "c76f5158fb3cc644f3971ef3e7af8fd8a4a7a1e5183ea9c24852fa44d00988a6"
+    },
+    {
+      "path": "assets/GodGuide/GodFinger.prefab.meta",
+      "sha256": "ad4fea437f2d20c29867be2eaa15f49901ee100475cae14acc5fb430743957f6"
+    },
+    {
+      "path": "assets/GodGuide/GodGuide.prefab",
+      "sha256": "ca5e9c87cf653ed7209ea09f601d06d42996b21f13b4c8514173f83447bae5a0"
+    },
+    {
+      "path": "assets/GodGuide/GodGuide.prefab.meta",
+      "sha256": "05b2c6b88bef2f2bd96a5018c2a43677839e5bd1881905f3ce099bdb798a48ab"
+    },
+    {
+      "path": "assets/GodGuide/GodText.prefab",
+      "sha256": "ccaa240ac7306acc368eb6879f85a494584ee2da5b62841fa2087123408ee1ed"
+    },
+    {
+      "path": "assets/GodGuide/GodText.prefab.meta",
+      "sha256": "33450aa75e0cc79a00d000f07d16fff7468abead056b8de23e508560f8502e8f"
+    },
+    {
+      "path": "assets/GodGuide/finger.png",
+      "sha256": "02b38ec0b84a75c43979c3170cfd6efe887440a0dfff9553f3dfbb17dae50bc9"
+    },
+    {
+      "path": "assets/GodGuide/finger.png.meta",
+      "sha256": "cda77f1fabdce50097f9218b3b013e80c9919bbe015974a315ffb7e3023e60c5"
+    },
+    {
+      "path": "assets/GodGuide/lib.meta",
+      "sha256": "37a5c37f10d12044c91538bf925679b11b021bc4d7e40fb4fc277779df10ae06"
+    },
+    {
+      "path": "assets/GodGuide/lib/async.js",
+      "sha256": "8bc670c9ce74b0f74f8cb8255106f484dae9b546bad102846311837d947411f8",
+      "uuid": "6d82d807-2c77-48b7-a199-4e8c5619a853"
+    },
+    {
+      "path": "assets/GodGuide/lib/async.js.meta",
+      "sha256": "c5cdb9668f934af9c037d9bfc3a908ada287c17879a91c6d132a95f7ea78f89b"
+    },
+    {
+      "path": "assets/Scene/HotelScene.fire",
+      "sha256": "47cf22e752db143669b5afe2dc88d1cf5719189d36ffc48930a230d97c60731b"
+    },
+    {
+      "path": "assets/Scene/HotelScene.fire.meta",
+      "sha256": "8f235fa2735539fec19bd8e096cbd559f922f14f0e613d0666d3f3216cc41088"
+    },
+    {
+      "path": "assets/Scene/LevelScene.fire",
+      "sha256": "f027e1e2ad2906f452e5e1d7b4f7b8f66a5335b20a66a7c09edc3ee9754a42dc"
+    },
+    {
+      "path": "assets/Scene/LevelScene.fire.meta",
+      "sha256": "c8c9bf51e6da2bfa7afc600dc84d69a2418ab84fc777fbd0d635d7f496d7f9f0"
+    },
+    {
+      "path": "assets/Scene/testScene.fire",
+      "sha256": "94856e66ad1a5ec18c6169a2b0bfefc51c6cb44f8980b0a538f430471011d8cf"
+    },
+    {
+      "path": "assets/Scene/testScene.fire.meta",
+      "sha256": "e8e78c878c3fa3235092ebda6f8b3e2ef5867f9ae8cd7b383e98ce62b17219dd"
+    },
+    {
+      "path": "assets/Script/Game/Common/UI/MenuPanel.ts",
+      "sha256": "d53160c966ad043d3fb3dc86bc317ff810d1e2f748883f4d42b1ea80fe29c6b2",
+      "uuid": "9b5ddb18-e79a-4444-94f0-a9f657ebb1cd"
+    },
+    {
+      "path": "assets/Script/Game/Common/UI/MenuPanel.ts.meta",
+      "sha256": "a5ffbbed3a19771f693d77f409b9a62d826853da9e24855d535d28f788f03183"
+    },
+    {
+      "path": "assets/Script/Game/Config/Tables/HotelCfg.ts",
+      "sha256": "4840043f567b0bf6c508e62bce189b59d2dd801892835c0334612e0d1433d204",
+      "uuid": "f1907507-232a-43a0-802d-7eee0d6e0651"
+    },
+    {
+      "path": "assets/Script/Game/Config/Tables/HotelCfg.ts.meta",
+      "sha256": "cef35e29ecbe50ae8f094f3a5f17c0ed878d9f23b9a9080fa68a2cd78b550fee"
+    },
+    {
+      "path": "assets/Script/Game/Config/Tables/HotelRoomCfg.ts",
+      "sha256": "9bdcc64806521b4ee08e404e00bfc24a102c230d2e5e73a5d881675ba1609bdf",
+      "uuid": "508ba53c-cf25-4424-a79f-af7d23d7f35f"
+    },
+    {
+      "path": "assets/Script/Game/Config/Tables/HotelRoomCfg.ts.meta",
+      "sha256": "d34a38a1b4b02472cc3573b48b4e66d8abff50a05b59ab380d581635fb472496"
+    },
+    {
+      "path": "assets/Script/Game/Config/Tables/IslandUnlockCfg.ts",
+      "sha256": "95a7fc8d2885c0c3ce02c3d63bf87d11f8cc5688f103cdabcc961ca5dacec94d",
+      "uuid": "e57d7700-c12c-48e1-8e68-ae6500093650"
+    },
+    {
+      "path": "assets/Script/Game/Config/Tables/IslandUnlockCfg.ts.meta",
+      "sha256": "5a860617a8e3a90352877dd52b09e106bdc9b38e26912e43e3cb28a9fdc159d7"
+    },
+    {
+      "path": "assets/Script/Game/Config/Tables/SlotBonusCfg.ts",
+      "sha256": "fc9fa5a39c177d68dc6df13fa0736adbcd664203d67a9f3367c58c944c2d5e35",
+      "uuid": "09883f75-2966-402c-bb0d-8b89962e6a24"
+    },
+    {
+      "path": "assets/Script/Game/Config/Tables/SlotBonusCfg.ts.meta",
+      "sha256": "e518c0ee733327ed6ce8c0a2f4c4702888b03885684ef517a6d5384c1b3f0c6b"
+    },
+    {
+      "path": "assets/Script/Game/Data/Const/DLogId.ts",
+      "sha256": "3a9140b1391a607b45d08f7ade4e6a7d6cd385754fcf31f3d8ea0ca739b731b6",
+      "uuid": "9aa66d1e-4522-4ff2-aecb-c6b257790270"
+    },
+    {
+      "path": "assets/Script/Game/Data/Const/DLogId.ts.meta",
+      "sha256": "2e07b63297e53d4261ea9197a045116b09f0f812f2fae48c49baf291561a356d"
+    },
+    {
+      "path": "assets/Script/Game/Guide.meta",
+      "sha256": "9cbc244a782954c91fd5720716d78062f516f1cee5e732c4a351d234ea21e9a6"
+    },
+    {
+      "path": "assets/Script/Game/Guide/GodCommand.ts",
+      "sha256": "43f7c541c09918a253f3842244d8c53a0fdf42f462da20797ad80106e9cf10f8",
+      "uuid": "c83af880-9661-4912-bbcf-2921b1e4896a"
+    },
+    {
+      "path": "assets/Script/Game/Guide/GodCommand.ts.meta",
+      "sha256": "b7c210f14944ca8832cadcea4fabed6c2481dcb9d30d02edfc210c03488889d6"
+    },
+    {
+      "path": "assets/Script/Game/Guide/GodFinger.ts",
+      "sha256": "fc742c15ae76c88b7b00076f4bbf9cf4fd7a5d8edc5bc2a3e6447c85d5a029cd",
+      "uuid": "fb7ad254-ea35-4cc0-ba6a-d07863d7b76a"
+    },
+    {
+      "path": "assets/Script/Game/Guide/GodFinger.ts.meta",
+      "sha256": "7f9615ce95e77732aa57baf89744dc39760cc2ee78f7d9c0b53171a104e76f26"
+    },
+    {
+      "path": "assets/Script/Game/Guide/GodGuide.ts",
+      "sha256": "f6b38cb238394aa9e92339270bb1c97fd5fb5ebfef0d8302afb825d1501d9533",
+      "uuid": "fc7d0ab0-a204-44b2-a32c-7de8fbb977d6"
+    },
+    {
+      "path": "assets/Script/Game/Guide/GodGuide.ts.meta",
+      "sha256": "8b02fdf568c5fff1338453f2de64611886852744fccd3da3769f19dcfc7ac182"
+    },
+    {
+      "path": "assets/Script/Game/Guide/GodText.ts",
+      "sha256": "3f39353ba568e290fbad313b537f13b45bf0df8c371f0cd0391cf3b504404e18",
+      "uuid": "83aa059d-74f7-4e6b-a2e7-678f6cb42679"
+    },
+    {
+      "path": "assets/Script/Game/Guide/GodText.ts.meta",
+      "sha256": "ab04d87fb301322780aeb754b1864978962a9431f95d24441cf564b55ff3144b"
+    },
+    {
+      "path": "assets/Script/Game/Guide/GuideCondition.ts",
+      "sha256": "36752b88a022f615185127268d99fed2cd0e2def8237ae0c1efdfa26213aa0f0",
+      "uuid": "9bed47c4-c260-42d7-81a2-3a496cf8db69"
+    },
+    {
+      "path": "assets/Script/Game/Guide/GuideCondition.ts.meta",
+      "sha256": "7896aa50b7ba144a49509b0e2017fca16f47aa86415c10b64c3ccaa3212c84b9"
+    },
+    {
+      "path": "assets/Script/Game/Guide/GuideData.ts",
+      "sha256": "3c3900c97d5bb42878dafc7a6e520e1fb2597bcfd3e27d07cd353ed5e4f948c9",
+      "uuid": "21f8d617-c074-4299-b06b-df997751e86c"
+    },
+    {
+      "path": "assets/Script/Game/Guide/GuideData.ts.meta",
+      "sha256": "bf59d699e9453df3e61d1412a0bd133ea025bdef462cc79ad39e07150b307b0a"
+    },
+    {
+      "path": "assets/Script/Game/Guide/GuideUtils.ts",
+      "sha256": "738a479042cf574c533533ab3948c5c3d931e615a4905fa7e922e927efe553fd",
+      "uuid": "478d2e25-4452-440a-9c70-d885340d81c0"
+    },
+    {
+      "path": "assets/Script/Game/Guide/GuideUtils.ts.meta",
+      "sha256": "fc32fc6a1457b7908a4c8b1cdeaeebc97414dece6a529c7dd67af6dce046bb5f"
+    },
+    {
+      "path": "assets/Script/Game/Guide/LoadGuide.ts",
+      "sha256": "4cd261b02f423aee3014628b05be9bfb10766ebd3659c4cfd451539945338482",
+      "uuid": "ea46c959-459e-4257-99b8-f538601a6091"
+    },
+    {
+      "path": "assets/Script/Game/Guide/LoadGuide.ts.meta",
+      "sha256": "8708f76d0cd5bca42dfe6e1677dfc9e33b00711927217077203897fe644e7f1b"
+    },
+    {
+      "path": "assets/Script/Game/Guide/Locator.ts",
+      "sha256": "93bad947ae65986783eaa7ec405e3e1de7fe42f3303fdaf6beb95d467dd44d31",
+      "uuid": "71c1027b-7f3a-49b2-9006-a773a8c3a1ea"
+    },
+    {
+      "path": "assets/Script/Game/Guide/Locator.ts.meta",
+      "sha256": "ce90eb5205abf3a8556cc279b4025d9f94f61fc47425eaa8081a7b4b7d44c151"
+    },
+    {
+      "path": "assets/Script/Game/Guide/_Guide_level1.ts",
+      "sha256": "c21f1ac0483dcc9dbc0c989532418720d091a1d941aa6b650a7e9fd60e5eb309",
+      "uuid": "84b9b8aa-e64b-4cca-b9b1-1ce28cc2d845"
+    },
+    {
+      "path": "assets/Script/Game/Guide/_Guide_level1.ts.meta",
+      "sha256": "f9b1c82b23429810c297688df95f84aa77818cb7383e0b07e9606d4c2fe65a0c"
+    },
+    {
+      "path": "assets/Script/Game/Guide/_Guide_level10.ts",
+      "sha256": "94d9539e115a4bfe4d5a92bc83d82b3d87c6522962b2646008297f001907f9c7",
+      "uuid": "970f758c-6b26-45eb-90d9-dbcf77fdbbec"
+    },
+    {
+      "path": "assets/Script/Game/Guide/_Guide_level10.ts.meta",
+      "sha256": "78f4da086fdd898db48dc9e182d801a7ac6d84e8c3be9188bd23a1fab7b3695b"
+    },
+    {
+      "path": "assets/Script/Game/Guide/_Guide_level11.ts",
+      "sha256": "a19500efec73938c6627187220256bc8aafecfd42a6a2e7c8ccb8ae6b736e808",
+      "uuid": "d074669b-c060-450d-93c8-d1ae5b30997c"
+    },
+    {
+      "path": "assets/Script/Game/Guide/_Guide_level11.ts.meta",
+      "sha256": "2f370f95a21a511f5a4c572e6a943e0f047f4f683e26cd7eed3bd85955f9b428"
+    },
+    {
+      "path": "assets/Script/Game/Guide/_Guide_level11_1.ts",
+      "sha256": "292f453a5e677bf4706a28c749dee2da4e1721bcc8548923a2e646cd7db9d681",
+      "uuid": "e1292374-35b1-48e5-9e77-e918c19833eb"
+    },
+    {
+      "path": "assets/Script/Game/Guide/_Guide_level11_1.ts.meta",
+      "sha256": "de29fb3e02901005ce8b24df0572ed7d887ff9ee0a85f03d541bd60d9a030149"
+    },
+    {
+      "path": "assets/Script/Game/Guide/_Guide_level15_rank.ts",
+      "sha256": "0364a0bed620ab636ce7cd703503a125671f0a1bbfc05ec892921e7226cea7a8",
+      "uuid": "29d8bbc4-e264-41f8-b7e0-568c437f55b9"
+    },
+    {
+      "path": "assets/Script/Game/Guide/_Guide_level15_rank.ts.meta",
+      "sha256": "e5b239858393d7dabefbd73906d192e27a96bba639620672cf03659068b89ab0"
+    },
+    {
+      "path": "assets/Script/Game/Guide/_Guide_level21.ts",
+      "sha256": "228b212547d90ded03aa407e7a5be85ee9ba558a24d789458ce8646bcece3f1a",
+      "uuid": "96ee639e-846c-41d3-ae93-fa1590e5e92c"
+    },
+    {
+      "path": "assets/Script/Game/Guide/_Guide_level21.ts.meta",
+      "sha256": "414ae07d094d6021a6d7e09221bd407cfee7e59af2b4454a75aec5bd59039417"
+    },
+    {
+      "path": "assets/Script/Game/Guide/_Guide_level3.ts",
+      "sha256": "69926ef3a02bf6acb6618360d101ed5692fcd760825899acd6561b555cf8ef79",
+      "uuid": "f19404f9-9672-4409-989e-aa3350e0a5b5"
+    },
+    {
+      "path": "assets/Script/Game/Guide/_Guide_level3.ts.meta",
+      "sha256": "87b0296784eaf841eca087d44391797707673443bad101473df856e543e0c729"
+    },
+    {
+      "path": "assets/Script/Game/Guide/_Guide_level30.ts",
+      "sha256": "4013843ef1b400535a88995090122899da73fe5e2f83b9d485622bab5219f4ae",
+      "uuid": "39fc7818-2ca0-421b-a9b6-de3ec84e0580"
+    },
+    {
+      "path": "assets/Script/Game/Guide/_Guide_level30.ts.meta",
+      "sha256": "fb37168a4f2ce16967258828795838b943b4b4dbf6dcdf29aa542d051c445771"
+    },
+    {
+      "path": "assets/Script/Game/Guide/_Guide_level3_1.ts",
+      "sha256": "c11799c3102226bc2654d8307caa9dca780b98580bdb3d8224472f0d819f97cd",
+      "uuid": "781ac81e-1aaf-43ba-91b2-5fb0354d5524"
+    },
+    {
+      "path": "assets/Script/Game/Guide/_Guide_level3_1.ts.meta",
+      "sha256": "9db2baa2691412a799e3538229a405252ed3215c8aace242027f2b25f97b66f6"
+    },
+    {
+      "path": "assets/Script/Game/Guide/_Guide_level3_2.ts",
+      "sha256": "3a1dfaeb0b707b5bd1f364ac531e5d4074fb6859c780bc2519c2ea42e916be22",
+      "uuid": "96ff4742-d39f-4dfc-a0c0-eafafa66faf2"
+    },
+    {
+      "path": "assets/Script/Game/Guide/_Guide_level3_2.ts.meta",
+      "sha256": "8e30b0a3be6c592856f6dd42d8e1b7075a74eac873bc305d2b3d460e4614a566"
+    },
+    {
+      "path": "assets/Script/Game/Guide/_Guide_level4.ts",
+      "sha256": "0aedc0b55fce42e18619a8fccd964dd4559e4d327b0ec1952c4f2f3b81573594",
+      "uuid": "12ae30c1-3120-44c1-b06a-c5d74ae4a647"
+    },
+    {
+      "path": "assets/Script/Game/Guide/_Guide_level4.ts.meta",
+      "sha256": "cf4c7bbea124995c31ef6544057af09dc0f112af8974f307a073d1f514f9d873"
+    },
+    {
+      "path": "assets/Script/Game/Guide/_Guide_test.ts",
+      "sha256": "d91163f9c9a74777f4cc01098d34a67cb7a6316e6e66f9e035fcd6e6ab561a18",
+      "uuid": "c2494cbb-972e-4d4d-9095-4a345866b7a1"
+    },
+    {
+      "path": "assets/Script/Game/Guide/_Guide_test.ts.meta",
+      "sha256": "0acb767f37a8f1c2aa52a64c5590b3bb74ea4e348773f3938b316994a58a4de8"
+    },
+    {
+      "path": "assets/Script/Game/Hotel.meta",
+      "sha256": "dcc27e9c97b6d6052d1d53d51051b6074a2378439cbdf8d91c7ef2cb23738844"
+    },
+    {
+      "path": "assets/Script/Game/Hotel/Access.meta",
+      "sha256": "52a5359b12663606fb02de49fc53e7420f9b78f97bbd880aae9ed0f3867fce0b"
+    },
+    {
+      "path": "assets/Script/Game/Hotel/Access/FriendRankCtrl.ts",
+      "sha256": "5c4af4af57a0185140f1cd907db48aaa1a2c2b7434458d6f04246c61a82959f8",
+      "uuid": "776a1742-3f9c-495f-a2ae-149a10ccc6f2"
+    },
+    {
+      "path": "assets/Script/Game/Hotel/Access/FriendRankCtrl.ts.meta",
+      "sha256": "921870dcbc5d3d20478ad19cbceab13f724d18f3e4698d9f7b53b58a7083d85d"
+    },
+    {
+      "path": "assets/Script/Game/Hotel/Access/FriendRankItemCtrl.ts",
+      "sha256": "6b49deb490b612f31b415090bdb66da40997aefa7da700e5cd6b11ba71e70124",
+      "uuid": "3aab151f-58d8-4409-b14a-c6713090f6ca"
+    },
+    {
+      "path": "assets/Script/Game/Hotel/Access/FriendRankItemCtrl.ts.meta",
+      "sha256": "31b751de082efcb635a4af6d53e86044728ae5bcae213d8b98aa0a563a1aec2c"
+    },
+    {
+      "path": "assets/Script/Game/Hotel/Access/GuestPanelCtrl.ts",
+      "sha256": "06578e5bb8fc3a6f48f5a6987f87c628ef921dbb864f86409e0d844e108b3c9a",
+      "uuid": "f2fb8ca4-2cb9-46bf-b6bc-f3803a229db9"
+    },
+    {
+      "path": "assets/Script/Game/Hotel/Access/GuestPanelCtrl.ts.meta",
+      "sha256": "04b01e58291d7f6c3f3fda42d352609e47f3543d707ea9b00992e19316bd8f67"
+    },
+    {
+      "path": "assets/Script/Game/Hotel/Access/OnLineGuestCtrl.ts",
+      "sha256": "8f4cd58d26418a0f65fcad6507cfb1cd9b39bf5290d8b89d24d873ce11b82102",
+      "uuid": "db1568ad-e52c-41ab-b3e4-19981c26c4e5"
+    },
+    {
+      "path": "assets/Script/Game/Hotel/Access/OnLineGuestCtrl.ts.meta",
+      "sha256": "c4cbcd02d65dd8a949c139993f090c280c0d0091c404808a4514fa419a1f27e5"
+    },
+    {
+      "path": "assets/Script/Game/Hotel/Access/VistItemCtrl.ts",
+      "sha256": "b5569eba5ead0b36818482f74a7a2cdefcf23af8e1cbeb03638c78cbd49fedad",
+      "uuid": "7a70ff29-7f85-4d1f-8d59-58b083c812f0"
+    },
+    {
+      "path": "assets/Script/Game/Hotel/Access/VistItemCtrl.ts.meta",
+      "sha256": "aea37b426fc7d0b07e61923b38e95f17d0ed34b0865bb3befeeb121977083f72"
+    },
+    {
+      "path": "assets/Script/Game/Hotel/HotelData.ts",
+      "sha256": "71bdb59c1cf8f0fbef5023e569d80bc5722edfd4c2cb14285eeac909c90c28b2",
+      "uuid": "f05c94af-888a-4881-b4a0-c1d9f1284c9a"
+    },
+    {
+      "path": "assets/Script/Game/Hotel/HotelData.ts.meta",
+      "sha256": "5c4c59baf3b769f9a0f9256b0538fb5f09dc3167097736854301486b94d2e8d0"
+    },
+    {
+      "path": "assets/Script/Game/Hotel/HotelManager.ts",
+      "sha256": "b0b2484d1871dff08592c55be0b52f19bc5e25a7a0744bda33e198ede574f492",
+      "uuid": "9ee382a5-ff89-4f20-bbfc-4dfba652d526"
+    },
+    {
+      "path": "assets/Script/Game/Hotel/HotelManager.ts.meta",
+      "sha256": "230943cd56e547f9b62c68dbb1eda151e8be8958dec67206f4657948149aa1c2"
+    },
+    {
+      "path": "assets/Script/Game/Hotel/HotelMapCtrl.ts",
+      "sha256": "5bb5363ccf716ebe9eb486b0dec2a125c1623c40aa37e4d35867a5d8caecf9ad",
+      "uuid": "095c2fb5-47c6-465a-9627-b6cffddf52ff"
+    },
+    {
+      "path": "assets/Script/Game/Hotel/HotelMapCtrl.ts.meta",
+      "sha256": "44ee8b03197a3f3440066ffb31bbd6236cc7299fbc12cdf6c8d4865b8969b6bc"
+    },
+    {
+      "path": "assets/Script/Game/Hotel/HotelRoomCtrl.ts",
+      "sha256": "44f074539ce8d91ae67d906133e552c51b396c2284723ac4c81b1722c78d05fd",
+      "uuid": "18fc4a4d-5647-42e7-b71b-5c79847efcda"
+    },
+    {
+      "path": "assets/Script/Game/Hotel/HotelRoomCtrl.ts.meta",
+      "sha256": "938aec6ee45518830f94527c910b9480baf14d93ee001e538c4082ea23433647"
+    },
+    {
+      "path": "assets/Script/Game/Hotel/HotelUiCtrl.ts",
+      "sha256": "fb3536d5dcb9b152dd379625e911d644009960ad29246676d62d631faa5a69a7",
+      "uuid": "ae5da9d0-c57c-4f57-82e8-acff8c218407"
+    },
+    {
+      "path": "assets/Script/Game/Hotel/HotelUiCtrl.ts.meta",
+      "sha256": "e03799276a5bce8ebc860e4d8ed5edbefc58d9c8758607ad0bd3e9f650282d04"
+    },
+    {
+      "path": "assets/Script/Game/Hotel/HotelViewCtrl.ts",
+      "sha256": "2b91853fc0999766f3bd594a2412b72ad32e5199385732ca0ba4a898a891bf80",
+      "uuid": "becb3651-c113-47c5-b5b1-39b9b05266ba"
+    },
+    {
+      "path": "assets/Script/Game/Hotel/HotelViewCtrl.ts.meta",
+      "sha256": "ba023e8ec0c9ff05f89e47dc2dd2d4368b9824b6cead62b75c7527bc9d89a4c7"
+    },
+    {
+      "path": "assets/Script/Game/Hotel/ItemZIndex.ts",
+      "sha256": "99d43cc2c1186e5cc137bb453262bbb7de1c24855f8930bf4911e422330251d0",
+      "uuid": "b3722a20-9caf-4830-91ea-a070dbe4c06c"
+    },
+    {
+      "path": "assets/Script/Game/Hotel/ItemZIndex.ts.meta",
+      "sha256": "db56d914f85d6cfd3a9b95dd3581bfe9551b9ff35b9205221195056cc3f2feb7"
+    },
+    {
+      "path": "assets/Script/Game/Hotel/RoomBuyCtrl.ts",
+      "sha256": "4242c909b06fc4f0319d8d16a6354b8fb2cc9fe726f3432cb3f83817653fbf22",
+      "uuid": "32ca8c27-143b-40f5-b587-8d10b4e0ade6"
+    },
+    {
+      "path": "assets/Script/Game/Hotel/RoomBuyCtrl.ts.meta",
+      "sha256": "8bdc7a9c813a1e298659bec6055441f67149b094db51bd636f9b495105094e83"
+    },
+    {
+      "path": "assets/Script/Game/Hotel/RoomDetailCtrl.ts",
+      "sha256": "ca782292aca6a0149cd0d15ea4ccffadddf1f763240fec5702dc8109644701f4",
+      "uuid": "37f676b4-6b38-47f9-ad2d-a577d7762e10"
+    },
+    {
+      "path": "assets/Script/Game/Hotel/RoomDetailCtrl.ts.meta",
+      "sha256": "21fd0046c45d25e74d635688d6385114bfc801f2fc789d2f8ef9ff44d23b6553"
+    },
+    {
+      "path": "assets/Script/Game/Hotel/RoomDetailItemCtrl.ts",
+      "sha256": "1181550265a3e85cb44f927ccb44b90e08e070c639a91a27fc5cf0d58f40c43b",
+      "uuid": "9295fac8-9246-4a4a-935b-29629c9965e1"
+    },
+    {
+      "path": "assets/Script/Game/Hotel/RoomDetailItemCtrl.ts.meta",
+      "sha256": "aa5c88b91c582fa83c030d69caba7459d9ceae3d91b7b1632e3b467216a5ffae"
+    },
+    {
+      "path": "assets/Script/Game/Hotel/RoomSlotCtrl.ts",
+      "sha256": "9b6961bbdd78c3940c13fa9a8ef525c8d290678681f845aac92d57fa04d0e0b8",
+      "uuid": "73e7810d-c46d-4dce-b03b-cb3b4f3ea551"
+    },
+    {
+      "path": "assets/Script/Game/Hotel/RoomSlotCtrl.ts.meta",
+      "sha256": "ca4e1c14ba584c5e847e913d9b2ba97d1cd8a8309910b684a2c9084af2738fc3"
+    },
+    {
+      "path": "assets/Script/Game/Hotel/RoomSlotDetailItemCtrl.ts",
+      "sha256": "fe09d35d63e380b31b06208dc6d4cbab0214f69d5571a6d065746148d80b5f89",
+      "uuid": "e52fc5bc-c49d-4355-aedf-8c32df98b5c7"
+    },
+    {
+      "path": "assets/Script/Game/Hotel/RoomSlotDetailItemCtrl.ts.meta",
+      "sha256": "bbef5aabc083fff48e3fddbbf94f4e605bd951f5e7036702e3aebe1a21af25bd"
+    },
+    {
+      "path": "assets/Script/Game/Hotel/View.meta",
+      "sha256": "692e6007fabe482146688005e1aa3152dca31b9076733f97c16f8ab7771d2ab7"
+    },
+    {
+      "path": "assets/Script/Game/Hotel/View/RoomFinishView.ts",
+      "sha256": "958751ab7b2c544cc1a62673423c673c415299252eed795ce8b50c03bdf17bb1",
+      "uuid": "cef84067-cbe6-49c3-b6ec-2a1f43dc13eb"
+    },
+    {
+      "path": "assets/Script/Game/Hotel/View/RoomFinishView.ts.meta",
+      "sha256": "1121fd012f97935361402b978d8ea8557a753845583cbfd04a6fe4af5b395c5c"
+    },
+    {
+      "path": "assets/Script/Game/SimulationOperation.meta",
+      "sha256": "c97a8a3a58ead1e8cd5a9fbf101e621615b43d9927560ceffe817973402854bf"
+    },
+    {
+      "path": "assets/Script/Game/SimulationOperation/Model.meta",
+      "sha256": "7bf9f00ef7148420a7cbd38182e5152b6b33c48d091a9dc920fd3f9b5119a665"
+    },
+    {
+      "path": "assets/Script/Game/SimulationOperation/Model/Map.meta",
+      "sha256": "41d729f3ac35be46d92a0f8de0b96def2b5b83188bf8df5fa599d839b21d7955"
+    },
+    {
+      "path": "assets/Script/Game/SimulationOperation/Model/Map/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "assets/Script/Game/SimulationOperation/View.meta",
+      "sha256": "abe82cd373f0b9e487b5e37b0f4d9880b02ff348fdba278d6dddc0f1d45fc4b0"
+    },
+    {
+      "path": "assets/Script/Game/SimulationOperation/View/JumpUtils.ts",
+      "sha256": "c8234c3954dd232a94ad456364cf0979c2f3537cb4d129a5f8645a72301371c4",
+      "uuid": "a4de55e4-9cf5-4ae1-9d9d-bee267448f2b"
+    },
+    {
+      "path": "assets/Script/Game/SimulationOperation/View/JumpUtils.ts.meta",
+      "sha256": "63d2c3bad2c2a68fc85f6ef036a644f657b7ede1a6171ccf63803b130e0a7669"
+    },
+    {
+      "path": "assets/Script/Game/SimulationOperation/View/Map.meta",
+      "sha256": "9aa88044bf795863425198fee0c52e95b0f04cd6aa8b0210ab5b655967f112db"
+    },
+    {
+      "path": "assets/Script/Game/SimulationOperation/View/Map/BuildSuccess.ts",
+      "sha256": "3db3cfe425cffc07cbac9214b052411dc8a3bcedb49f3ba61a29690440960408",
+      "uuid": "e56c0845-f6fa-4cbf-ac69-2d49e01e4f4c"
+    },
+    {
+      "path": "assets/Script/Game/SimulationOperation/View/Map/BuildSuccess.ts.meta",
+      "sha256": "f4a7bf3bda776f0f0012a97efe724955f64481c4cb0944bd370894d43fe89df0"
+    },
+    {
+      "path": "assets/Script/Game/SimulationOperation/View/Map/BuildTool.ts",
+      "sha256": "0f39dd48be6b4988e64c5c5b91f42c156056c320107e02a82afd84ad804340e0",
+      "uuid": "55c8afae-a8ef-4887-8161-6ad64e502ea2"
+    },
+    {
+      "path": "assets/Script/Game/SimulationOperation/View/Map/BuildTool.ts.meta",
+      "sha256": "cebeaaf9aa2fd4fa17e0ebe15c05e10c2f712e30e0c9218f70ffda8d0a7c82d2"
+    },
+    {
+      "path": "assets/Script/Game/SimulationOperation/View/Map/CloudView.ts",
+      "sha256": "828b0d5bd0431da8ac8cf41c02d95082f9cd93c1f5adb0870cbbaa25692e5840",
+      "uuid": "120935af-32a6-4d16-bb3c-3c8d03844971"
+    },
+    {
+      "path": "assets/Script/Game/SimulationOperation/View/Map/CloudView.ts.meta",
+      "sha256": "4f0ff35c82c23a46c99a7a070ad22c040b07bbabf4a06d95d6b37c1c52c82cc3"
+    },
+    {
+      "path": "assets/Script/Game/SimulationOperation/View/Map/Component.meta",
+      "sha256": "bf0be613776c61facd3cc53816ad0ffbb8101b6b3b2ad160da5bf318b1f7e051"
+    },
+    {
+      "path": "assets/Script/Game/SimulationOperation/View/Map/Component/BuildCloud.ts",
+      "sha256": "8b1524d63bc26e5ef0c51f8a7d41426045f56d8bb49d2d511f5fad7d612f73d4",
+      "uuid": "664b32e8-4878-46d9-9955-06a24dbce2df"
+    },
+    {
+      "path": "assets/Script/Game/SimulationOperation/View/Map/Component/BuildCloud.ts.meta",
+      "sha256": "8ea66f0012682485c73543b27938f8135f50b0a74dc66b46f80e510553635171"
+    },
+    {
+      "path": "assets/Script/Game/SimulationOperation/View/Map/Component/BuildingLock.ts",
+      "sha256": "e6afe41c8bc22a72707c70454bea2e59b2d283665e477bf561c824da9ff84976",
+      "uuid": "daf24e29-4b63-419f-a879-7fac8ffddfba"
+    },
+    {
+      "path": "assets/Script/Game/SimulationOperation/View/Map/Component/BuildingLock.ts.meta",
+      "sha256": "6e81da2333aa337730b2e77fa4632b4873e34ef2c1a21cd200e7427be46d231f"
+    },
+    {
+      "path": "assets/Script/Game/SimulationOperation/View/Map/Component/MapBgScript.ts",
+      "sha256": "636613c360f2b504e21c1c5dba10a1fe9fd83617e9f6985b159647ce39c6e03a",
+      "uuid": "de0012ca-c5a5-4ffd-8cc0-d9600bfc55b0"
+    },
+    {
+      "path": "assets/Script/Game/SimulationOperation/View/Map/Component/MapBgScript.ts.meta",
+      "sha256": "b584957a6f4c21595ec38b3e7fc6ec9ba88d0d34b4cadafdca538ef276c8abf8"
+    },
+    {
+      "path": "assets/Script/Game/SimulationOperation/View/Map/DiningHall.ts",
+      "sha256": "5840222f85d0501d5e914b0725d44f8c2905459398af50f7ada8bfe8be9f4113",
+      "uuid": "9cf9958f-34a4-484c-a9fa-df1e3d837913"
+    },
+    {
+      "path": "assets/Script/Game/SimulationOperation/View/Map/DiningHall.ts.meta",
+      "sha256": "a70a92c1e0c411666a1bdd86fde3db83c2e1cf04306626b249717829d93798f0"
+    },
+    {
+      "path": "assets/Script/Game/SimulationOperation/View/Map/Exchange.ts",
+      "sha256": "8b8a13c7c06f991d78396b5b2e04bd7c3d741dbe34d6a7731590d9c7c463c815",
+      "uuid": "07a909cc-b3d9-4764-bb48-076a2bec59f7"
+    },
+    {
+      "path": "assets/Script/Game/SimulationOperation/View/Map/Exchange.ts.meta",
+      "sha256": "a1e228f2a7a47ff4a72829e9d04f1141055ab7701efb5d9abf78d66db73b3e0e"
+    },
+    {
+      "path": "assets/Script/Game/SimulationOperation/View/Map/MapCamera.ts",
+      "sha256": "70af41e53996972b5b0462255632d7aaebfed778a38ead1e29aa19722f39340c",
+      "uuid": "3ea9be6b-5622-4433-9bb5-5bc7952ba412"
+    },
+    {
+      "path": "assets/Script/Game/SimulationOperation/View/Map/MapCamera.ts.meta",
+      "sha256": "22407e5e247e1917acec508edea3e910969ac65f27b4fa2914654542b7d06aad"
+    },
+    {
+      "path": "assets/Script/Game/SimulationOperation/View/Map/MapIslandManager.ts",
+      "sha256": "d3f7c40cf9e69ba586b123b90254f5369d6bf9293e43fa42357e7ab3ce39ae8e",
+      "uuid": "e49dc73f-91cd-4e0e-add2-8d50d3e325b3"
+    },
+    {
+      "path": "assets/Script/Game/SimulationOperation/View/Map/MapIslandManager.ts.meta",
+      "sha256": "e389e59564e3801b5153e771f7f3c265b6d9ba757c4d6932e8c3cf13a2b8e87a"
+    },
+    {
+      "path": "assets/Script/Game/SimulationOperation/View/Map/MapIslandUtils.ts",
+      "sha256": "2a64620d1a2a1f00b3d7fcfef724bacc192ef1ddcab67616b7d113bc6b689b19",
+      "uuid": "2c02b601-ad21-4132-a784-883b8129664f"
+    },
+    {
+      "path": "assets/Script/Game/SimulationOperation/View/Map/MapIslandUtils.ts.meta",
+      "sha256": "aac4fddc4e1db24f50cf1b9af3627e95d3b07771acbad9cd8cfb672985e87f62"
+    },
+    {
+      "path": "assets/Script/Game/SimulationOperation/View/Map/MapScene.ts",
+      "sha256": "8f869386694f8ead354f65ff9099c9346529f39aabd94df5ecc3632d78679dee",
+      "uuid": "c18ed2d6-4468-4028-89e2-84f668734d95"
+    },
+    {
+      "path": "assets/Script/Game/SimulationOperation/View/Map/MapScene.ts.meta",
+      "sha256": "9ae8209d73422ec7462b81157cf7fec45b09e5021e751721c2dae4f9cb54f799"
+    },
+    {
+      "path": "assets/Script/Game/SimulationOperation/View/Map/ShowBuildTool.ts",
+      "sha256": "d76700eab0038b7ac9dd0f2a21527d4cfa7438aa90382e83aa3ccb3766847e88",
+      "uuid": "93a8e0a6-c308-442f-a034-6d0fd2b33282"
+    },
+    {
+      "path": "assets/Script/Game/SimulationOperation/View/Map/ShowBuildTool.ts.meta",
+      "sha256": "e66687edcdfdf786d9be087d9556f0c6ab8d3accc60eac915d7aa34c9f5ad8b4"
+    },
+    {
+      "path": "assets/Script/Game/SimulationOperation/View/Map/TrafficSystem.meta",
+      "sha256": "2845fda5f4fca5c0cd1711fce4043dca06e4b3c2cf4231d506f02cd0c1cc1411"
+    },
+    {
+      "path": "assets/Script/Game/SimulationOperation/View/Map/TrafficSystem/TrafficSystem.ts",
+      "sha256": "57a28787e98147434edc72e4a87cc213118a1f8cb1123bf984e2bd602f73c079",
+      "uuid": "93810cd1-607b-4cf5-9c07-8e0e18b6608f"
+    },
+    {
+      "path": "assets/Script/Game/SimulationOperation/View/Map/TrafficSystem/TrafficSystem.ts.meta",
+      "sha256": "1e096caf2ecc99a07d0474ec797a477a19b9aae1010d5be236ad20a137d919b3"
+    },
+    {
+      "path": "assets/Script/Game/SimulationOperation/View/Map/TrafficSystem/Walk.ts",
+      "sha256": "e0bb97429dd015c45f4867b77277c385629a5ea33ee78886aa3a1cace7629f40",
+      "uuid": "2e4e850c-f4d7-4839-8c33-047542a670ec"
+    },
+    {
+      "path": "assets/Script/Game/SimulationOperation/View/Map/TrafficSystem/Walk.ts.meta",
+      "sha256": "4b370e0718150eecd5a6c677ea7eac154d4533f911defc9be9f759b62cc431b4"
+    },
+    {
+      "path": "assets/Script/Game/SimulationOperation/View/Talk.meta",
+      "sha256": "1512bc04af2efb6fee37e109718a767f2d3d02119ad8e45b5583fb3ecc52b206"
+    },
+    {
+      "path": "assets/Script/Game/SimulationOperation/View/Talk/TalkPanel.ts",
+      "sha256": "38e6a6c65d76e2bf31c4a050456226f4fdc36b534b10104efe540dbf4cc8f769",
+      "uuid": "ae3fff3f-545f-4822-a878-53d1dcf31ea9"
+    },
+    {
+      "path": "assets/Script/Game/SimulationOperation/View/Talk/TalkPanel.ts.meta",
+      "sha256": "7cc0802014a63f33bf3f240607d9af5f0743aca3fa8dad93f01c3213b2e2bda2"
+    },
+    {
+      "path": "assets/Script/Game/Views/LevelMap.meta",
+      "sha256": "068e6a51404444e35c6e75656e13d90b1d01f3fbf841c8ce0d9aeeccc81ea450"
+    },
+    {
+      "path": "assets/Script/Game/Views/LevelMap/ChapterItemCtrl.ts",
+      "sha256": "5377dddc2229d853c0e556609d3da7c86c27ea9c4d11115d9e08df640f8e2d79",
+      "uuid": "e5d46173-749a-4aba-8649-298a650fb407"
+    },
+    {
+      "path": "assets/Script/Game/Views/LevelMap/ChapterItemCtrl.ts.meta",
+      "sha256": "182724aceb19ec2f9c74f7ae7eae17e62e210577afe86f0ea6299076245f3bdf"
+    },
+    {
+      "path": "assets/Script/Game/Views/LevelMap/LevelMapCtrl.ts",
+      "sha256": "e12ef88d5e14de6fe6a378dc0a9b384ee8fbd919f725215a8ce329d7c5955757",
+      "uuid": "6b61c1b7-67f0-435f-9b24-5d3f8db30d99"
+    },
+    {
+      "path": "assets/Script/Game/Views/LevelMap/LevelMapCtrl.ts.meta",
+      "sha256": "e7152e35dcc6a32ae37730bc062e9d9cfe0ad6ab6f7dd659738a14b94b7bb5b1"
+    },
+    {
+      "path": "assets/Script/Game/Views/LevelMap/LevelMarkItem.ts",
+      "sha256": "e07400d62d5ed3632d71e559c1c22cbac276da3088418245acf6349dea13c6c8",
+      "uuid": "99d1393f-6596-46be-b52a-824c608d0b4e"
+    },
+    {
+      "path": "assets/Script/Game/Views/LevelMap/LevelMarkItem.ts.meta",
+      "sha256": "9b774c62a4a0e1c665decce8ef438e06dffb5ae967b00031351fef30fa0cc695"
+    },
+    {
+      "path": "assets/Script/Game/Views/LevelMap/RankItemCtrl.ts",
+      "sha256": "edd96dfd9968d7c7658a361a4c1406f4f2ec3191e5adc41d00e058947e9701cb",
+      "uuid": "5d8e75cc-0e6a-4ec8-aaa8-a756745e9d4e"
+    },
+    {
+      "path": "assets/Script/Game/Views/LevelMap/RankItemCtrl.ts.meta",
+      "sha256": "be6c3686280f617f6dac314a9414621f2c3e2d0a47b3dee0506b3a066f5391a8"
+    },
+    {
+      "path": "assets/Script/Game/Views/LevelMap/RankPanelCtrl.ts",
+      "sha256": "9b57cac5a6b82e266bbe86ac18aec7c46a58f534ad8e98375f0015eb4d79d1f1",
+      "uuid": "e6116124-ea98-4aab-86da-dded90e97f36"
+    },
+    {
+      "path": "assets/Script/Game/Views/LevelMap/RankPanelCtrl.ts.meta",
+      "sha256": "d6510d9b9db46a8df0cef39197a62d39ceb23fd5abf34b3742261d82925cf438"
+    },
+    {
+      "path": "assets/Script/Game/Views/LevelMap/SelectChapterCtrl.ts",
+      "sha256": "5152106cc11a5a9f4d8ac413ea1476fb0ecbaeeee8b96d8ee29b58b6f12edf6d",
+      "uuid": "89787342-5a71-4bce-bdb9-7efe28c18bb6"
+    },
+    {
+      "path": "assets/Script/Game/Views/LevelMap/SelectChapterCtrl.ts.meta",
+      "sha256": "9a0735527e4cf28442b3d028c9b58f831b63f3a5239f06d77edeb6c75112e8b2"
+    },
+    {
+      "path": "assets/Script/Game/Views/LevelMap/component.meta",
+      "sha256": "c1e60e3adbe3846ff27a243771bbf2dfd8e5fb72b8a405e4237dc0bb211a3037"
+    },
+    {
+      "path": "assets/Script/Game/Views/LevelMap/component/LevelGoMapBtn.ts",
+      "sha256": "65ee91470d20c834ea6ac2336f079029473bdb454599dc8124f006c98bdf6ebd",
+      "uuid": "f540c669-787b-4a77-a3b2-28ed13903c6f"
+    },
+    {
+      "path": "assets/Script/Game/Views/LevelMap/component/LevelGoMapBtn.ts.meta",
+      "sha256": "37d587502ef36e9952138c21994ac674ec13039c58753ddd86eddf2085b47adf"
+    },
+    {
+      "path": "assets/res/prefab/level/LevelMarkItem.prefab",
+      "sha256": "9afa3443d72cd7ac986b538462d287407bc1baefb7d73b5f3ffcf649271e5e85"
+    },
+    {
+      "path": "assets/res/prefab/level/LevelMarkItem.prefab.meta",
+      "sha256": "08cb3034ebb365d673e979fc7bc847d4aa245d966984764a6a99902024617571"
+    },
+    {
+      "path": "assets/res/prefab/level/RankItem.prefab",
+      "sha256": "460ef547064e917607e17737ac3d911a73e4d2aea71cef0690316bffd7ad9e34"
+    },
+    {
+      "path": "assets/res/prefab/level/RankItem.prefab.meta",
+      "sha256": "b396549016cd808b757f546f88d5147f86dcaa619527595c22af1c6f0f586540"
+    },
+    {
+      "path": "assets/res/prefab/level/chapterItem.prefab",
+      "sha256": "aee7ef1d6d47f2d64367e87ed110aae685a5017afb5af74aa86dae7c6f95a267"
+    },
+    {
+      "path": "assets/res/prefab/level/chapterItem.prefab.meta",
+      "sha256": "c708bf310734801e46f9f7fce966f3299b81fb6f96dbc69abcb2f83711f4dd15"
+    },
+    {
+      "path": "assets/resources/prefab/hotel.meta",
+      "sha256": "143832691051c1159a0b4cf39e72182ee630a2a71380a0624c72ef809d418d2e"
+    },
+    {
+      "path": "assets/resources/prefab/hotel/DetailRoomSlotItem.prefab",
+      "sha256": "fa5bb9d24fba8d753fe8b8ea3f245715925c7cb0b03b7f8161313a5f6fa2d7ac"
+    },
+    {
+      "path": "assets/resources/prefab/hotel/DetailRoomSlotItem.prefab.meta",
+      "sha256": "f31c984ae023e3372bbb22bad92f94fd0fdce7144015e879879f92dff9fde574"
+    },
+    {
+      "path": "assets/resources/prefab/hotel/RoomBotItem.prefab",
+      "sha256": "5839fb65c94a6eb7bba2482b863c47e6d516bde588637c304d0b1114c04f3bb1"
+    },
+    {
+      "path": "assets/resources/prefab/hotel/RoomBotItem.prefab.meta",
+      "sha256": "29dbe1cda9356a6cb7061152e4414f7006b522d4b72e02afa41ef9ccd1c58132"
+    },
+    {
+      "path": "assets/resources/prefab/hotel/RoomSlotLock.prefab",
+      "sha256": "9e5d8fc353e7d42bd23cc5894dd2c53a1c8e7c3a3b5418a912a280537d471a29"
+    },
+    {
+      "path": "assets/resources/prefab/hotel/RoomSlotLock.prefab.meta",
+      "sha256": "2f2a7a929f53c6f576bafb076c75af86fd66eacb67b04e1250eb06545e843dc2"
+    },
+    {
+      "path": "assets/resources/prefab/hotel/RoomTopItem.prefab",
+      "sha256": "aedd36f4bd2921a61d4a83604e6887b1562f0b2ea6036ed070c46fa90802e95a"
+    },
+    {
+      "path": "assets/resources/prefab/hotel/RoomTopItem.prefab.meta",
+      "sha256": "2efd966bdd8e8a1b0411e6742108828b5da3d79bc9c7f444ea8768040d8231ec"
+    },
+    {
+      "path": "assets/resources/prefab/hotel/SubSlotItem.prefab",
+      "sha256": "db4f686eba14e14f86be6333ec33cf34f114d6c8f1a6e194360cf07b22343128"
+    },
+    {
+      "path": "assets/resources/prefab/hotel/SubSlotItem.prefab.meta",
+      "sha256": "4b4b01aa446646ca079e74bcf868d87bd6b1d03428edadec48a1fbe398b5f3fd"
+    },
+    {
+      "path": "assets/resources/prefab/hotel/access.meta",
+      "sha256": "7b50179e6d58a24098eb5621eeddfe9c2a28152a23acc7ae2e3956d2d04b2129"
+    },
+    {
+      "path": "assets/resources/prefab/hotel/access/friendItem.prefab",
+      "sha256": "de678e1a309edd9d9f063e63c4b5d1916b2b17822b62eee95c7703ee59cbdae0"
+    },
+    {
+      "path": "assets/resources/prefab/hotel/access/friendItem.prefab.meta",
+      "sha256": "084be8d4e6e7c56759fe7f726924ebdaab23a8c1216ecd720a99977254499f19"
+    },
+    {
+      "path": "assets/resources/prefab/hotel/access/onlineGuestItem.prefab",
+      "sha256": "6b308da2e419f98967aa434fe7e464672f5079536db2e37b88ae00af655935b5"
+    },
+    {
+      "path": "assets/resources/prefab/hotel/access/onlineGuestItem.prefab.meta",
+      "sha256": "a99cd300a00e74d2786f7924ab49a6c5a482229e713dab0a1cf4507289311a1d"
+    },
+    {
+      "path": "assets/resources/prefab/hotel/access/visitItem.prefab",
+      "sha256": "0e537aed252c525e2103ca67b75b31d6802f2f68299bc62499f36dfe05148ef5"
+    },
+    {
+      "path": "assets/resources/prefab/hotel/access/visitItem.prefab.meta",
+      "sha256": "10987745c93c193e0cf871daf7896d16710141c108f9040263a46bd974cccc25"
+    },
+    {
+      "path": "assets/resources/prefab/hotel/room.meta",
+      "sha256": "812a77d8a0aa44ac6329fdb6b1a7b725200b3212333820c20879120464baada6"
+    },
+    {
+      "path": "assets/resources/prefab/hotel/room/Lark20200805-151219.jpeg",
+      "sha256": "3e7a8ffc48ae357eb0e2fa9c9ca4d7c45ef84508d0d218c51db6a49a65a12cef"
+    },
+    {
+      "path": "assets/resources/prefab/hotel/room/Lark20200805-151219.jpeg.meta",
+      "sha256": "721d8b60d12051fd97e669d0efcc08745e15689a3f1da228e8849b2f5b16eaa7"
+    },
+    {
+      "path": "assets/resources/prefab/hotel/room/RoomItem_1.prefab",
+      "sha256": "e70239380de7b94a9cefa85c3156e52aa63072e5a4678dd2aeee9ff28f2c7b6d"
+    },
+    {
+      "path": "assets/resources/prefab/hotel/room/RoomItem_1.prefab.meta",
+      "sha256": "87f6496098531b19425103ef359900da5d55bde390e1f5d483494ad5497ccc49"
+    },
+    {
+      "path": "assets/resources/prefab/hotel/slot.meta",
+      "sha256": "cfe4c955b47e676c05820ef38fc05bb5bb786341d98dfd2df3cafbe89520b76a"
+    },
+    {
+      "path": "assets/resources/prefab/hotel/slot/bed.prefab",
+      "sha256": "45e8de224ab6aa66be05e5b0dfbd7654ecebf90226407d3a71bbb3c5ab6c9ce0"
+    },
+    {
+      "path": "assets/resources/prefab/hotel/slot/bed.prefab.meta",
+      "sha256": "e0dcbc878a6415f659001e55ab91031165ebf760a941308a97718bb6eec1e32d"
+    },
+    {
+      "path": "assets/resources/prefab/hotel/slot/blanket.prefab",
+      "sha256": "89973525c5d7173791af7615d6a02befa5aea098e432643aaa495e2c1361d366"
+    },
+    {
+      "path": "assets/resources/prefab/hotel/slot/blanket.prefab.meta",
+      "sha256": "cd1417d0a10102bb74b0e777e6306a5c3a7418ac1749346e4a593d1f5b2e26c0"
+    },
+    {
+      "path": "assets/resources/prefab/hotel/slot/window.prefab",
+      "sha256": "c78807a3be34b9bf6fb128ddc128d6a0e23e323a0750b1bf6ad257b10d7eea75"
+    },
+    {
+      "path": "assets/resources/prefab/hotel/slot/window.prefab.meta",
+      "sha256": "b3af52b6258f7aa1ef4b794662dd97294122d31ef66037f064dde54a1dc6d8c2"
+    },
+    {
+      "path": "assets/resources/prefab/ui/BuildSuccess.prefab",
+      "sha256": "c6e190b5d6ab660d9eb31ab8708b22b31cfa6e7e8d295e8e9c278b124bacfb43"
+    },
+    {
+      "path": "assets/resources/prefab/ui/BuildSuccess.prefab.meta",
+      "sha256": "5e69ac7adf1fc33080f2d3b01af6d0792cc8d93d26b005e710bd2cfe9e959952"
+    },
+    {
+      "path": "assets/resources/prefab/ui/CloudView.prefab",
+      "sha256": "21b3380cca4b1f2bd7d80b321c57f765a4f267ab5e92dfa0e3bc0a227c0e4eda"
+    },
+    {
+      "path": "assets/resources/prefab/ui/CloudView.prefab.meta",
+      "sha256": "cb3133e68114755da3364447513f57f0fdf4831848fb219f81aa3595ddb41190"
+    },
+    {
+      "path": "assets/resources/prefab/ui/FriendRank.prefab",
+      "sha256": "6032efdc3ba910cce0fea624e7c59ea99ed163ab0f89b3ffffae1720c03bd515"
+    },
+    {
+      "path": "assets/resources/prefab/ui/FriendRank.prefab.meta",
+      "sha256": "21ac41151ccc2117ccd2bc38d4ad3bfb7926c27b7bb71d3ea6c86ad0df621ef7"
+    },
+    {
+      "path": "assets/resources/prefab/ui/MenuPanel.prefab",
+      "sha256": "1f5652b28184ff3269558057cac76a60fb1f9940fd68dd431e0cabe0190b50f3"
+    },
+    {
+      "path": "assets/resources/prefab/ui/MenuPanel.prefab.meta",
+      "sha256": "35bebbed705b6960447b58f520d60219eae2ad4d6bb8660f8ec0eec70c64c344"
+    },
+    {
+      "path": "assets/resources/prefab/ui/RoomFinishView.prefab",
+      "sha256": "913f446232a5a25362529deaa2c21e31680af4d37a932a39e1a2f9983700e5c2"
+    },
+    {
+      "path": "assets/resources/prefab/ui/RoomFinishView.prefab.meta",
+      "sha256": "b20b946bd4633a78b12958f9d9ea83cb3b43a7114708b7cd78cfd81467d9607a"
+    },
+    {
+      "path": "assets/resources/prefab/ui/TalkPanel.prefab",
+      "sha256": "f671adce1d36bb8369b625ac00faaa0cb4609a1fb30bb183faf1f579f5af300c"
+    },
+    {
+      "path": "assets/resources/prefab/ui/TalkPanel.prefab.meta",
+      "sha256": "b06d0903352d0af22fdb24bf575fc9f456eeb9b16917d3fef9806e959ba65c7a"
+    },
+    {
+      "path": "assets/Script/Game/Common/UI/SelectLevelCtrl.ts",
+      "sha256": "6a1985821d10010460ac9d900416ab251faf859f329e4dd5035334cc8cc9cd2a",
+      "uuid": "d9332cf6-afc5-45b9-8ba2-13bcec485282"
+    },
+    {
+      "path": "assets/Script/Game/Common/UI/SelectLevelCtrl.ts.meta",
+      "sha256": "9824cfde4f22e9dcb83668226443e89f9e3ce0acdfc6776f47083693bba94136"
+    }
+  ]
+}

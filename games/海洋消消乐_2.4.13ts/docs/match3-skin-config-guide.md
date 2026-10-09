@@ -17,7 +17,7 @@ assets/resources/config/match3_skin/default.json
 
 对应代码入口：
 
-- `assets/Script/Logic/Match3/Skin/Match3Skin.ts`
+- `assets/Script/Game/Match3/Skin/Match3Skin.ts`
 
 ## 1. 资源放置规则
 

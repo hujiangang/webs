@@ -9,16 +9,16 @@
 
 主要代码来源：
 
-- `assets/Script/Logic/Data/Const/Constant.ts`
-- `assets/Script/Logic/Match3/ResCtrl.ts`
-- `assets/Script/Logic/Match3/Model/CellModel.ts`
-- `assets/Script/Logic/Match3/Model/BombModel.ts`
-- `assets/Script/Logic/Match3/Model/GroundCellModel.ts`
-- `assets/Script/Logic/Match3/Model/UpGroundCellModel.ts`
-- `assets/Script/Logic/Match3/View/ItemBasicCellCtrl.ts`
-- `assets/Script/Logic/Match3/View/ItemGroundCtrl.ts`
-- `assets/Script/Logic/Match3/View/ItemUpgroundCtrl.ts`
-- `assets/Script/Logic/Match3/Model/PropModel.ts`
+- `assets/Script/Game/Data/Const/Constant.ts`
+- `assets/Script/Game/Match3/ResCtrl.ts`
+- `assets/Script/Game/Match3/Model/CellModel.ts`
+- `assets/Script/Game/Match3/Model/BombModel.ts`
+- `assets/Script/Game/Match3/Model/GroundCellModel.ts`
+- `assets/Script/Game/Match3/Model/UpGroundCellModel.ts`
+- `assets/Script/Game/Match3/View/ItemBasicCellCtrl.ts`
+- `assets/Script/Game/Match3/View/ItemGroundCtrl.ts`
+- `assets/Script/Game/Match3/View/ItemUpgroundCtrl.ts`
+- `assets/Script/Game/Match3/Model/PropModel.ts`
 
 关卡配置文件路径：
 

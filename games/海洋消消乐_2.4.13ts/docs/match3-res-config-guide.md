@@ -17,7 +17,7 @@ assets/resources/config/match3_res/default.json
 对应代码入口：
 
 ```text
-assets/Script/Logic/Match3/ResCtrl.ts
+assets/Script/Game/Match3/ResCtrl.ts
 ```
 
 旧位置：

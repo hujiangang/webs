@@ -310,23 +310,7 @@
     "icon": {
       "__id__": 3
     },
-    "BombStaticFrame": [
-      {
-        "__uuid__": "c3138c5a-96da-498e-a4c3-92e51c20ba55"
-      },
-      {
-        "__uuid__": "de1a258c-d229-4964-9195-bc0283b588cf"
-      },
-      {
-        "__uuid__": "de1a258c-d229-4964-9195-bc0283b588cf"
-      },
-      {
-        "__uuid__": "4128c6ba-a888-423d-8f62-447b0d12fdd1"
-      },
-      {
-        "__uuid__": "8cd672a6-0967-4e84-9139-dcf55e1ff2f6"
-      }
-    ],
+    "BombStaticFrame": [],
     "NormalCellFrame": [
       {
         "__uuid__": "941f9331-a915-4ae7-b3f5-2b80177dca5c"
@@ -358,9 +342,7 @@
       {
         "__uuid__": "1e9c1a4f-27c6-4cfe-801a-d85e5bab6c85"
       },
-      {
-        "__uuid__": "de9da4da-12e7-4427-93a6-d457c8c32ae3"
-      },
+      null,
       {
         "__uuid__": "5eabe983-4dd1-415b-90d5-56dbcdd5473b"
       },

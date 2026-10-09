@@ -1,5 +1,9 @@
 # 菌子元素消消乐改造项目梳理
 
+> 后续范围更新：酒店、海岛和旧经营引导已退役，主流程改为 LoadingScene → HomeScene → Match3。当前目录与职责以 [项目架构](project-architecture.md) 和 [菌子主题方向](mushroom-direction.md) 为准。
+
+> 2026-10-03：源码已按框架、应用启动、业务重新分层。当前目录和验收结论以 [项目架构](project-architecture.md) 与 [整理与验收记录](reorganization-validation.md) 为准；本文保留此前换皮工作的说明。
+
 本文档用于梳理当前 Cocos Creator 三消项目结构，并标出后续改成“菌子元素消消乐”时需要关注的代码、资源、配置和文案入口。
 
 ## 1. 项目基本信息
@@ -39,7 +43,7 @@ tools/                    表/资源处理脚本
 - `HotelScene.fire`：岛屿/酒店经营相关场景。
 - `testScene.fire`：测试场景。
 
-场景名常量在 `assets/Script/Logic/Data/Const/Constant.ts`：
+场景名常量在 `assets/Script/Game/Data/Const/Constant.ts`：
 
 ```ts
 export const Scene = {
@@ -55,19 +59,21 @@ export const Scene = {
 
 源码根目录是 `assets/Script`，按职责大致分为：
 
-- `Base/`：基础框架、管理器、网络、工具、表结构。
-- `Logic/Common/`：通用 UI、音频、动作、通用枚举和接口。
-- `Logic/Data/`：运行时数据、玩家数据、常量、关卡接口。
-- `Logic/Match3/`：三消核心逻辑。
-- `Logic/Hotel/`：酒店/经营相关逻辑。
-- `Logic/SimulationOperation/`：岛屿地图/建造/对话等。
-- `Views/`：关卡地图、GM、奖励、道具掉落等视图控制。
+- `Framework/`：通用事件、对象池、网络传输、缓存监测和工具。
+- `Application/`：启动流程与管理器组装。
+- `Game/Config/`、`Game/Services/`、`Game/Platform/`：配置表、业务服务和平台适配。
+- `Game/Common/`：通用 UI、音频、动作、通用枚举和接口。
+- `Game/Data/`：运行时数据、玩家数据、常量、关卡接口。
+- `Game/Match3/`：三消核心逻辑。
+- `Game/Hotel/`：酒店/经营相关逻辑。
+- `Game/SimulationOperation/`：岛屿地图/建造/对话等。
+- `Game/Views/`：关卡地图、GM、奖励、道具掉落等视图控制。
 
-后续“菌子元素消消乐”最核心的代码入口是 `assets/Script/Logic/Match3` 和 `assets/Script/Logic/Data/Const/Constant.ts`。
+后续“菌子元素消消乐”最核心的代码入口是 `assets/Script/Game/Match3` 和 `assets/Script/Game/Data/Const/Constant.ts`。
 
 ## 5. 三消核心链路
 
-三消核心模块在 `assets/Script/Logic/Match3`：
+三消核心模块在 `assets/Script/Game/Match3`：
 
 ```text
 Control/
@@ -103,7 +109,7 @@ ResCtrl.ts                三消资源控制器
 
 ## 6. 关卡数据
 
-关卡接口在 `assets/Script/Logic/Data/Interface/Level/ILevel.ts`。
+关卡接口在 `assets/Script/Game/Data/Interface/Level/ILevel.ts`。
 
 关卡 JSON 位于：
 
@@ -161,7 +167,7 @@ export interface Grid {
 
 ## 7. 棋子和障碍类型
 
-核心枚举在 `assets/Script/Logic/Data/Const/Constant.ts`。
+核心枚举在 `assets/Script/Game/Data/Const/Constant.ts`。
 
 ### 7.1 普通棋子
 
@@ -234,9 +240,9 @@ export enum GroundType {
 
 相关逻辑：
 
-- `assets/Script/Logic/Match3/Model/GroundCellModel.ts`
-- `assets/Script/Logic/Match3/Model/SpecialPlug/Mushroom.ts`
-- `assets/Script/Logic/Match3/View/ItemGroundCtrl.ts`
+- `assets/Script/Game/Match3/Model/GroundCellModel.ts`
+- `assets/Script/Game/Match3/Model/SpecialPlug/Mushroom.ts`
+- `assets/Script/Game/Match3/View/ItemGroundCtrl.ts`
 
 ## 8. 资源绑定方式
 
@@ -245,7 +251,7 @@ export enum GroundType {
 `ResCtrl` 位于：
 
 ```text
-assets/Script/Logic/Match3/ResCtrl.ts
+assets/Script/Game/Match3/ResCtrl.ts
 ```
 
 重要属性：
@@ -364,7 +370,7 @@ assets/resources/texture/match3/bg/2/
 assets/resources/texture/match3/bg/3/
 ```
 
-背景加载路径常量在 `assets/Script/Base/Utils/Paths.ts`：
+背景加载路径常量在 `assets/Script/Game/Config/Paths.ts`：
 
 ```ts
 public static readonly Match3Bg: string = 'texture/match3/bg/';
@@ -377,7 +383,7 @@ public static readonly Match3Bg: string = 'texture/match3/bg/';
 目标 UI 控制在：
 
 ```text
-assets/Script/Logic/Match3/View/UI/CollectItemCtrl.ts
+assets/Script/Game/Match3/View/UI/CollectItemCtrl.ts
 ```
 
 逻辑要点：
@@ -402,7 +408,7 @@ assets/resources/prefab/ui/SelectShowTarget.prefab
 需要改主题文案的重点文件：
 
 ```text
-assets/Script/Logic/Data/Const/Constant.ts
+assets/Script/Game/Data/Const/Constant.ts
 assets/resources/csv/ChapterInfo.json
 assets/resources/csv/PropInfo.json
 assets/resources/csv/ShareCfg.json

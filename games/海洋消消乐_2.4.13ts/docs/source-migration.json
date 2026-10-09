@@ -1,0 +1,1092 @@
+[
+  {
+    "before": "assets/GodGuide/_Guide_level1.ts",
+    "after": "assets/Script/Game/Guide/_Guide_level1.ts",
+    "uuid": "84b9b8aa-e64b-4cca-b9b1-1ce28cc2d845"
+  },
+  {
+    "before": "assets/GodGuide/_Guide_level10.ts",
+    "after": "assets/Script/Game/Guide/_Guide_level10.ts",
+    "uuid": "970f758c-6b26-45eb-90d9-dbcf77fdbbec"
+  },
+  {
+    "before": "assets/GodGuide/_Guide_level11.ts",
+    "after": "assets/Script/Game/Guide/_Guide_level11.ts",
+    "uuid": "d074669b-c060-450d-93c8-d1ae5b30997c"
+  },
+  {
+    "before": "assets/GodGuide/_Guide_level11_1.ts",
+    "after": "assets/Script/Game/Guide/_Guide_level11_1.ts",
+    "uuid": "e1292374-35b1-48e5-9e77-e918c19833eb"
+  },
+  {
+    "before": "assets/GodGuide/_Guide_level15_rank.ts",
+    "after": "assets/Script/Game/Guide/_Guide_level15_rank.ts",
+    "uuid": "29d8bbc4-e264-41f8-b7e0-568c437f55b9"
+  },
+  {
+    "before": "assets/GodGuide/_Guide_level21.ts",
+    "after": "assets/Script/Game/Guide/_Guide_level21.ts",
+    "uuid": "96ee639e-846c-41d3-ae93-fa1590e5e92c"
+  },
+  {
+    "before": "assets/GodGuide/_Guide_level3.ts",
+    "after": "assets/Script/Game/Guide/_Guide_level3.ts",
+    "uuid": "f19404f9-9672-4409-989e-aa3350e0a5b5"
+  },
+  {
+    "before": "assets/GodGuide/_Guide_level30.ts",
+    "after": "assets/Script/Game/Guide/_Guide_level30.ts",
+    "uuid": "39fc7818-2ca0-421b-a9b6-de3ec84e0580"
+  },
+  {
+    "before": "assets/GodGuide/_Guide_level3_1.ts",
+    "after": "assets/Script/Game/Guide/_Guide_level3_1.ts",
+    "uuid": "781ac81e-1aaf-43ba-91b2-5fb0354d5524"
+  },
+  {
+    "before": "assets/GodGuide/_Guide_level3_2.ts",
+    "after": "assets/Script/Game/Guide/_Guide_level3_2.ts",
+    "uuid": "96ff4742-d39f-4dfc-a0c0-eafafa66faf2"
+  },
+  {
+    "before": "assets/GodGuide/_Guide_level4.ts",
+    "after": "assets/Script/Game/Guide/_Guide_level4.ts",
+    "uuid": "12ae30c1-3120-44c1-b06a-c5d74ae4a647"
+  },
+  {
+    "before": "assets/GodGuide/_Guide_test.ts",
+    "after": "assets/Script/Game/Guide/_Guide_test.ts",
+    "uuid": "c2494cbb-972e-4d4d-9095-4a345866b7a1"
+  },
+  {
+    "before": "assets/GodGuide/GodCommand.ts",
+    "after": "assets/Script/Game/Guide/GodCommand.ts",
+    "uuid": "c83af880-9661-4912-bbcf-2921b1e4896a"
+  },
+  {
+    "before": "assets/GodGuide/GodFinger.ts",
+    "after": "assets/Script/Game/Guide/GodFinger.ts",
+    "uuid": "fb7ad254-ea35-4cc0-ba6a-d07863d7b76a"
+  },
+  {
+    "before": "assets/GodGuide/GodGuide.ts",
+    "after": "assets/Script/Game/Guide/GodGuide.ts",
+    "uuid": "fc7d0ab0-a204-44b2-a32c-7de8fbb977d6"
+  },
+  {
+    "before": "assets/GodGuide/GodText.ts",
+    "after": "assets/Script/Game/Guide/GodText.ts",
+    "uuid": "83aa059d-74f7-4e6b-a2e7-678f6cb42679"
+  },
+  {
+    "before": "assets/GodGuide/GuideCondition.ts",
+    "after": "assets/Script/Game/Guide/GuideCondition.ts",
+    "uuid": "9bed47c4-c260-42d7-81a2-3a496cf8db69"
+  },
+  {
+    "before": "assets/GodGuide/GuideData.ts",
+    "after": "assets/Script/Game/Guide/GuideData.ts",
+    "uuid": "21f8d617-c074-4299-b06b-df997751e86c"
+  },
+  {
+    "before": "assets/GodGuide/GuideUtils.ts",
+    "after": "assets/Script/Game/Guide/GuideUtils.ts",
+    "uuid": "478d2e25-4452-440a-9c70-d885340d81c0"
+  },
+  {
+    "before": "assets/GodGuide/lib/async.js",
+    "after": "assets/GodGuide/lib/async.js",
+    "uuid": "6d82d807-2c77-48b7-a199-4e8c5619a853"
+  },
+  {
+    "before": "assets/GodGuide/LoadGuide.ts",
+    "after": "assets/Script/Game/Guide/LoadGuide.ts",
+    "uuid": "ea46c959-459e-4257-99b8-f538601a6091"
+  },
+  {
+    "before": "assets/GodGuide/Locator.ts",
+    "after": "assets/Script/Game/Guide/Locator.ts",
+    "uuid": "71c1027b-7f3a-49b2-9006-a773a8c3a1ea"
+  },
+  {
+    "before": "assets/Script/Base/Apps.ts",
+    "after": "assets/Script/Application/Apps.ts",
+    "uuid": "b8271444-0130-43ae-a622-544bf8071134"
+  },
+  {
+    "before": "assets/Script/Base/BaseConst.ts",
+    "after": "assets/Script/Game/Data/Const/BaseConst.ts",
+    "uuid": "df9e46c8-9500-4e18-b37b-83a6d57e5953"
+  },
+  {
+    "before": "assets/Script/Base/CustomComponent/Button.ts",
+    "after": "assets/Script/Game/Common/Components/Button.ts",
+    "uuid": "112c0b2c-ab17-485d-a73f-f51d794080a4"
+  },
+  {
+    "before": "assets/Script/Base/CustomComponent/SlideButton.ts",
+    "after": "assets/Script/Framework/Components/SlideButton.ts",
+    "uuid": "fb31649f-7b77-4a39-8980-2777e21288cf"
+  },
+  {
+    "before": "assets/Script/Base/CustomComponent/SpinePlayerCtrl.ts",
+    "after": "assets/Script/Framework/Components/SpinePlayerCtrl.ts",
+    "uuid": "6a701eee-bd42-44a0-a1a0-5c44fd978122"
+  },
+  {
+    "before": "assets/Script/Base/CustomComponent/TTMask.ts",
+    "after": "assets/Script/Framework/Components/TTMask.ts",
+    "uuid": "7f0b7cea-c131-4f2d-b502-53dd6442c115"
+  },
+  {
+    "before": "assets/Script/Base/DataPool.ts",
+    "after": "assets/Script/Framework/Pool/DataPool.ts",
+    "uuid": "b5479a83-7901-49d4-bdad-217b54518165"
+  },
+  {
+    "before": "assets/Script/Base/Manager/CacheMgr.ts",
+    "after": "assets/Script/Framework/Resources/CacheMgr.ts",
+    "uuid": "636037eb-3810-43c4-b1dc-4266480fc05b"
+  },
+  {
+    "before": "assets/Script/Base/Manager/DailyTaskMgr.ts",
+    "after": "assets/Script/Game/Services/DailyTaskMgr.ts",
+    "uuid": "3d8b4a06-fe32-4162-97db-189d7536acc2"
+  },
+  {
+    "before": "assets/Script/Base/Manager/DeviceMgr.ts",
+    "after": "assets/Script/Game/Platform/DeviceMgr.ts",
+    "uuid": "b13b031a-6a2c-4bbb-aaf2-07f762f09b1e"
+  },
+  {
+    "before": "assets/Script/Base/Manager/EventMgr.ts",
+    "after": "assets/Script/Framework/Events/EventMgr.ts",
+    "uuid": "e4b70e7b-3123-41c1-9cba-57e919d10b09"
+  },
+  {
+    "before": "assets/Script/Base/Manager/GameTableMgr.ts",
+    "after": "assets/Script/Game/Config/GameTableMgr.ts",
+    "uuid": "3b65f6c2-d2b1-4285-8335-72fc599af6fa"
+  },
+  {
+    "before": "assets/Script/Base/Manager/M.ts",
+    "after": "assets/Script/Application/M.ts",
+    "uuid": "78cb38b5-6d6f-4012-b0f5-e18bdb558bd7"
+  },
+  {
+    "before": "assets/Script/Base/Manager/NetMgr.ts",
+    "after": "assets/Script/Game/Services/NetMgr.ts",
+    "uuid": "30473f4f-b77f-4914-8839-0a1db78a21f9"
+  },
+  {
+    "before": "assets/Script/Base/Manager/NodePoolMgr.ts",
+    "after": "assets/Script/Framework/Pool/NodePoolMgr.ts",
+    "uuid": "7262198b-f48f-4172-bf37-5db2a4b7db7f"
+  },
+  {
+    "before": "assets/Script/Base/Manager/Plaform/IPlatform.ts",
+    "after": "assets/Script/Game/Platform/Adapters/IPlatform.ts",
+    "uuid": "5ba8c20b-01ae-413e-a0a5-9d5991e643d2"
+  },
+  {
+    "before": "assets/Script/Base/Manager/Plaform/Webapp.ts",
+    "after": "assets/Script/Game/Platform/Adapters/Webapp.ts",
+    "uuid": "d9c84666-f0dd-4a65-8a0e-b93d9e405298"
+  },
+  {
+    "before": "assets/Script/Base/Manager/Plaform/Wechat.ts",
+    "after": "assets/Script/Game/Platform/Adapters/Wechat.ts",
+    "uuid": "eea1da2a-3468-4a01-a5e0-ced6f0c73092"
+  },
+  {
+    "before": "assets/Script/Base/Manager/PlatformMgr.ts",
+    "after": "assets/Script/Game/Platform/PlatformMgr.ts",
+    "uuid": "e2010d98-a672-4fe7-a7ed-795bc8288793"
+  },
+  {
+    "before": "assets/Script/Base/Manager/ReportMgr.ts",
+    "after": "assets/Script/Game/Services/ReportMgr.ts",
+    "uuid": "3c3bb337-ea90-4aa1-bc52-fe6d1d0cfef9"
+  },
+  {
+    "before": "assets/Script/Base/Manager/ShareMgr.ts",
+    "after": "assets/Script/Game/Services/ShareMgr.ts",
+    "uuid": "8c89ac3a-3e5d-42f6-9706-d4b2895507d2"
+  },
+  {
+    "before": "assets/Script/Base/Manager/StorageMgr.ts",
+    "after": "assets/Script/Game/Data/StorageMgr.ts",
+    "uuid": "5b1af9d8-5331-4abe-a054-d1fa48321e04"
+  },
+  {
+    "before": "assets/Script/Base/Manager/Table/BaseTable.ts",
+    "after": "assets/Script/Game/Config/Loader/BaseTable.ts",
+    "uuid": "b04192f0-4a98-4e21-b4f2-6a7bddd91c85"
+  },
+  {
+    "before": "assets/Script/Base/Manager/Table/BytesTable.ts",
+    "after": "assets/Script/Game/Config/Loader/BytesTable.ts",
+    "uuid": "db9405dd-7f0f-4434-8e7f-7b45d192afc5"
+  },
+  {
+    "before": "assets/Script/Base/Manager/UIMgr.ts",
+    "after": "assets/Script/Game/Common/UI/UIMgr.ts",
+    "uuid": "dda06e95-1487-4bb7-9d7c-002ea813aaea"
+  },
+  {
+    "before": "assets/Script/Base/Manager/View/Tips.ts",
+    "after": "assets/Script/Game/Common/Views/Tips.ts",
+    "uuid": "384446a5-c515-41d1-8127-91f63cade6cd"
+  },
+  {
+    "before": "assets/Script/Base/Manager/View/View.ts",
+    "after": "assets/Script/Game/Common/Views/View.ts",
+    "uuid": "6efe3c29-bad3-4824-93ea-ab1dd0d06f09"
+  },
+  {
+    "before": "assets/Script/Base/Network/HttpRequest.ts",
+    "after": "assets/Script/Framework/Network/HttpRequest.ts",
+    "uuid": "dc9f6505-6ae0-4588-9bb3-3c2d5bdafb70"
+  },
+  {
+    "before": "assets/Script/Base/Network/NetBase.ts",
+    "after": "assets/Script/Framework/Network/NetBase.ts",
+    "uuid": "83e83ce8-1707-4a7e-bf59-14b8e150bd02"
+  },
+  {
+    "before": "assets/Script/Base/Network/Sequence.ts",
+    "after": "assets/Script/Framework/Network/Sequence.ts",
+    "uuid": "23081111-5b7c-45f2-aa90-01b21badce18"
+  },
+  {
+    "before": "assets/Script/Base/Network/Socket.ts",
+    "after": "assets/Script/Framework/Network/Socket.ts",
+    "uuid": "005ad997-6558-4c42-b7ad-b086c3297ea7"
+  },
+  {
+    "before": "assets/Script/Base/Shader/ShaderHelper.ts",
+    "after": "assets/Script/Framework/Shader/ShaderHelper.ts",
+    "uuid": "9d7f3ec7-d7cc-48e2-a419-2ded86b57d3c"
+  },
+  {
+    "before": "assets/Script/Base/Shader/ShaderTime.ts",
+    "after": "assets/Script/Framework/Shader/ShaderTime.ts",
+    "uuid": "4b0c96fa-1eda-4ca3-8683-7814e696f50f"
+  },
+  {
+    "before": "assets/Script/Base/Tabls/BoxRewardInfo.ts",
+    "after": "assets/Script/Game/Config/Tables/BoxRewardInfo.ts",
+    "uuid": "6cd13d0d-5ea1-4b53-8840-31cf780218a4"
+  },
+  {
+    "before": "assets/Script/Base/Tabls/ChapterInfo.ts",
+    "after": "assets/Script/Game/Config/Tables/ChapterInfo.ts",
+    "uuid": "a0232f0a-ed46-4adf-b7ff-a2e2906ab3d0"
+  },
+  {
+    "before": "assets/Script/Base/Tabls/ChapterStory.ts",
+    "after": "assets/Script/Game/Config/Tables/ChapterStory.ts",
+    "uuid": "8cb9dde7-c7d8-403e-a22c-b667a8b46e96"
+  },
+  {
+    "before": "assets/Script/Base/Tabls/DailyTaskInfo.ts",
+    "after": "assets/Script/Game/Config/Tables/DailyTaskInfo.ts",
+    "uuid": "875d2650-884f-4e65-8766-3e627444fb6a"
+  },
+  {
+    "before": "assets/Script/Base/Tabls/HotelCfg.ts",
+    "after": "assets/Script/Game/Config/Tables/HotelCfg.ts",
+    "uuid": "f1907507-232a-43a0-802d-7eee0d6e0651"
+  },
+  {
+    "before": "assets/Script/Base/Tabls/HotelRoomCfg.ts",
+    "after": "assets/Script/Game/Config/Tables/HotelRoomCfg.ts",
+    "uuid": "508ba53c-cf25-4424-a79f-af7d23d7f35f"
+  },
+  {
+    "before": "assets/Script/Base/Tabls/IslandUnlockCfg.ts",
+    "after": "assets/Script/Game/Config/Tables/IslandUnlockCfg.ts",
+    "uuid": "e57d7700-c12c-48e1-8e68-ae6500093650"
+  },
+  {
+    "before": "assets/Script/Base/Tabls/LevelUpReward.ts",
+    "after": "assets/Script/Game/Config/Tables/LevelUpReward.ts",
+    "uuid": "70ead0ed-6f48-49b0-92d5-6b87c9facfdd"
+  },
+  {
+    "before": "assets/Script/Base/Tabls/PropInfo.ts",
+    "after": "assets/Script/Game/Config/Tables/PropInfo.ts",
+    "uuid": "42417420-d87d-4f32-b011-e9f8fdb938ff"
+  },
+  {
+    "before": "assets/Script/Base/Tabls/ShareCfg.ts",
+    "after": "assets/Script/Game/Config/Tables/ShareCfg.ts",
+    "uuid": "69ffc708-be33-49a1-9a94-e6d3dc6e8b44"
+  },
+  {
+    "before": "assets/Script/Base/Tabls/ShopInfo.ts",
+    "after": "assets/Script/Game/Config/Tables/ShopInfo.ts",
+    "uuid": "52d388e9-114b-4ac0-9af7-06ff609ce93a"
+  },
+  {
+    "before": "assets/Script/Base/Tabls/SlotBonusCfg.ts",
+    "after": "assets/Script/Game/Config/Tables/SlotBonusCfg.ts",
+    "uuid": "09883f75-2966-402c-bb0d-8b89962e6a24"
+  },
+  {
+    "before": "assets/Script/Base/Tabls/Titles.ts",
+    "after": "assets/Script/Game/Config/Tables/Titles.ts",
+    "uuid": "927ff46b-ed94-4e97-b63a-23eddfe14354"
+  },
+  {
+    "before": "assets/Script/Base/UI/UIBase.ts",
+    "after": "assets/Script/Game/Common/UI/UIBase.ts",
+    "uuid": "9e6d08cd-7053-4cc0-b25c-b0523da6d3a0"
+  },
+  {
+    "before": "assets/Script/Base/Utils/DLogId.ts",
+    "after": "assets/Script/Game/Data/Const/DLogId.ts",
+    "uuid": "9aa66d1e-4522-4ff2-aecb-c6b257790270"
+  },
+  {
+    "before": "assets/Script/Base/Utils/Log.ts",
+    "after": "assets/Script/Framework/Utils/Log.ts",
+    "uuid": "9e0b0869-d9dd-4fe9-acc5-1ec213f5c2cc"
+  },
+  {
+    "before": "assets/Script/Base/Utils/LRUCache.ts",
+    "after": "assets/Script/Framework/Utils/LRUCache.ts",
+    "uuid": "5d0971f8-2d09-49d1-8612-6bff68230482"
+  },
+  {
+    "before": "assets/Script/Base/Utils/MemoryDetector.ts",
+    "after": "assets/Script/Framework/Utils/MemoryDetector.ts",
+    "uuid": "6529cb38-49b3-4d5b-ba1a-6e513ca4b633"
+  },
+  {
+    "before": "assets/Script/Base/Utils/NumberUtils.ts",
+    "after": "assets/Script/Framework/Utils/NumberUtils.ts",
+    "uuid": "218f2bae-4a15-4f9e-a7d7-65407e3f774d"
+  },
+  {
+    "before": "assets/Script/Base/Utils/Paths.ts",
+    "after": "assets/Script/Game/Config/Paths.ts",
+    "uuid": "f74b03a0-0dfc-4a94-9451-6a8c2dd33530"
+  },
+  {
+    "before": "assets/Script/Base/Utils/RoadUtil.ts",
+    "after": "assets/Script/Framework/Utils/RoadUtil.ts",
+    "uuid": "22558043-2dda-4f17-861b-660cd21f3266"
+  },
+  {
+    "before": "assets/Script/Base/Utils/SingletonFactory.ts",
+    "after": "assets/Script/Framework/Utils/SingletonFactory.ts",
+    "uuid": "f2ab12d2-4159-4f29-9b15-4b4243f019fa"
+  },
+  {
+    "before": "assets/Script/Base/Utils/Util.ts",
+    "after": "assets/Script/Framework/Utils/Util.ts",
+    "uuid": "2df7fa4f-abc7-4521-9d06-15b9ef14919f"
+  },
+  {
+    "before": "assets/Script/Libs/console.save.js",
+    "after": "assets/Script/ThirdParty/console.save.js",
+    "uuid": "04392f7a-8f30-417b-8644-b9fc1603145e"
+  },
+  {
+    "before": "assets/Script/Libs/TweenMax/TweenMax.d.ts",
+    "after": "assets/Script/ThirdParty/TweenMax/TweenMax.d.ts",
+    "uuid": "0ba00fcf-1d64-407a-8aff-f4d5e7f2230a"
+  },
+  {
+    "before": "assets/Script/Libs/TweenMax/TweenMax.js",
+    "after": "assets/Script/ThirdParty/TweenMax/TweenMax.js",
+    "uuid": "82c74573-39ff-4ef5-a09e-bb2fe1b1929b"
+  },
+  {
+    "before": "assets/Script/Logic/Common/ActionCtrl.ts",
+    "after": "assets/Script/Game/Common/ActionCtrl.ts",
+    "uuid": "ee0abdd3-eb11-41c8-ad46-1f5063c2ab36"
+  },
+  {
+    "before": "assets/Script/Logic/Common/AudioCtrl.ts",
+    "after": "assets/Script/Game/Common/AudioCtrl.ts",
+    "uuid": "4ec03935-d98c-406d-9147-de48e50f5668"
+  },
+  {
+    "before": "assets/Script/Logic/Common/Common.ts",
+    "after": "assets/Script/Game/Common/Common.ts",
+    "uuid": "1db8a099-fadc-486d-a897-edc396aa9ff1"
+  },
+  {
+    "before": "assets/Script/Logic/Common/CommonEnums.ts",
+    "after": "assets/Script/Game/Common/CommonEnums.ts",
+    "uuid": "a6411dd0-683c-4189-94ff-cbcc3d1f90f0"
+  },
+  {
+    "before": "assets/Script/Logic/Common/CommonInterfaces.ts",
+    "after": "assets/Script/Game/Common/CommonInterfaces.ts",
+    "uuid": "3b040d37-a4ac-45bd-b788-32f3cf89f37c"
+  },
+  {
+    "before": "assets/Script/Logic/Common/GroupAnimatCtrl.ts",
+    "after": "assets/Script/Game/Common/GroupAnimatCtrl.ts",
+    "uuid": "46c3d148-3a84-4e7f-9999-e539c1b46bfc"
+  },
+  {
+    "before": "assets/Script/Logic/Common/UI/BagCtrl.ts",
+    "after": "assets/Script/Game/Common/UI/BagCtrl.ts",
+    "uuid": "60dfcfe4-2666-48b8-8de3-2a709dbdb65c"
+  },
+  {
+    "before": "assets/Script/Logic/Common/UI/BagGridItemCtrl.ts",
+    "after": "assets/Script/Game/Common/UI/BagGridItemCtrl.ts",
+    "uuid": "ad0e8926-6d21-4add-aace-f90b35ee058a"
+  },
+  {
+    "before": "assets/Script/Logic/Common/UI/BoxGiftCtrl.ts",
+    "after": "assets/Script/Game/Common/UI/BoxGiftCtrl.ts",
+    "uuid": "13ddade4-8b7a-4a0e-9afa-73f28763a6bf"
+  },
+  {
+    "before": "assets/Script/Logic/Common/UI/BoxOpenCtrl.ts",
+    "after": "assets/Script/Game/Common/UI/BoxOpenCtrl.ts",
+    "uuid": "7fd5e312-1715-44d7-a9d2-40aecf9e7b6c"
+  },
+  {
+    "before": "assets/Script/Logic/Common/UI/BoxTipsCtrl.ts",
+    "after": "assets/Script/Game/Common/UI/BoxTipsCtrl.ts",
+    "uuid": "e169f8ea-26b2-45a0-9731-76c62814f142"
+  },
+  {
+    "before": "assets/Script/Logic/Common/UI/BuyPowerCtrl.ts",
+    "after": "assets/Script/Game/Common/UI/BuyPowerCtrl.ts",
+    "uuid": "3870eb25-6d13-4390-b1db-7c7c87669884"
+  },
+  {
+    "before": "assets/Script/Logic/Common/UI/BuyPropPanel.ts",
+    "after": "assets/Script/Game/Common/UI/BuyPropPanel.ts",
+    "uuid": "8cabaad0-fac8-48cb-a94b-dc29c68c1c37"
+  },
+  {
+    "before": "assets/Script/Logic/Common/UI/dailyTask/CustomTaskItem.ts",
+    "after": "assets/Script/Game/Common/UI/dailyTask/CustomTaskItem.ts",
+    "uuid": "c58b984c-2eab-4e37-96de-9e53aa5adaf8"
+  },
+  {
+    "before": "assets/Script/Logic/Common/UI/dailyTask/DailyItem.ts",
+    "after": "assets/Script/Game/Common/UI/dailyTask/DailyItem.ts",
+    "uuid": "beeae0f4-588e-4864-b5e0-f3096432545c"
+  },
+  {
+    "before": "assets/Script/Logic/Common/UI/dailyTask/DailyTaskPanel.ts",
+    "after": "assets/Script/Game/Common/UI/dailyTask/DailyTaskPanel.ts",
+    "uuid": "e37f1528-1854-4003-be63-dfa046c8f30a"
+  },
+  {
+    "before": "assets/Script/Logic/Common/UI/dailyTask/TimerTaskItem.ts",
+    "after": "assets/Script/Game/Common/UI/dailyTask/TimerTaskItem.ts",
+    "uuid": "53d715cd-6f90-438b-b95b-b90c76fa491b"
+  },
+  {
+    "before": "assets/Script/Logic/Common/UI/DialogPanel.ts",
+    "after": "assets/Script/Game/Common/UI/DialogPanel.ts",
+    "uuid": "58903dcb-6a38-4f08-8415-bf12fe6da136"
+  },
+  {
+    "before": "assets/Script/Logic/Common/UI/GameFailEncouragePanel.ts",
+    "after": "assets/Script/Game/Common/UI/GameFailEncouragePanel.ts",
+    "uuid": "a7981aa6-0dfc-48a1-8e29-aaad724434a3"
+  },
+  {
+    "before": "assets/Script/Logic/Common/UI/MenuPanel.ts",
+    "after": "assets/Script/Game/Common/UI/MenuPanel.ts",
+    "uuid": "9b5ddb18-e79a-4444-94f0-a9f657ebb1cd"
+  },
+  {
+    "before": "assets/Script/Logic/Common/UI/MoreCoin.ts",
+    "after": "assets/Script/Game/Common/UI/MoreCoin.ts",
+    "uuid": "7d8f3d33-2418-44a2-be95-590897dc6278"
+  },
+  {
+    "before": "assets/Script/Logic/Common/UI/notify/NotifyPanel.ts",
+    "after": "assets/Script/Game/Common/UI/notify/NotifyPanel.ts",
+    "uuid": "e2b48796-664e-4ee3-9cc6-e869e38afffc"
+  },
+  {
+    "before": "assets/Script/Logic/Common/UI/notify/NotifyRewardItemCtrl.ts",
+    "after": "assets/Script/Game/Common/UI/notify/NotifyRewardItemCtrl.ts",
+    "uuid": "603f31f2-3efb-4149-86de-3f0f0d9f7223"
+  },
+  {
+    "before": "assets/Script/Logic/Common/UI/OverHightLightCtrl.ts",
+    "after": "assets/Script/Game/Common/UI/OverHightLightCtrl.ts",
+    "uuid": "fce55816-5e49-42f7-81ed-2403e7fef8ae"
+  },
+  {
+    "before": "assets/Script/Logic/Common/UI/SelectLevelCtrl.ts",
+    "after": "assets/Script/Game/Common/UI/SelectLevelCtrl.ts",
+    "uuid": "d9332cf6-afc5-45b9-8ba2-13bcec485282"
+  },
+  {
+    "before": "assets/Script/Logic/Common/UI/SettingViewCtrl.ts",
+    "after": "assets/Script/Game/Common/UI/SettingViewCtrl.ts",
+    "uuid": "506dbe88-86ba-45f3-8af3-1245943db2c2"
+  },
+  {
+    "before": "assets/Script/Logic/Common/UI/shop/ShopPanel.ts",
+    "after": "assets/Script/Game/Common/UI/shop/ShopPanel.ts",
+    "uuid": "f9acc837-4acd-4a37-b86f-6af32e75b26d"
+  },
+  {
+    "before": "assets/Script/Logic/Common/UI/shop/ShopToolsItemCtrl.ts",
+    "after": "assets/Script/Game/Common/UI/shop/ShopToolsItemCtrl.ts",
+    "uuid": "915cb878-4a68-4b8b-b302-7a77ca2c0978"
+  },
+  {
+    "before": "assets/Script/Logic/Common/UI/StoryTalkPanel.ts",
+    "after": "assets/Script/Game/Common/UI/StoryTalkPanel.ts",
+    "uuid": "58d92952-31e3-460e-a20a-086e7a8d6b74"
+  },
+  {
+    "before": "assets/Script/Logic/Common/UI/TempLoadingPanel.ts",
+    "after": "assets/Script/Game/Common/UI/TempLoadingPanel.ts",
+    "uuid": "749f822e-5151-4ffd-a4a2-3d5f20506221"
+  },
+  {
+    "before": "assets/Script/Logic/Data/Const/Constant.ts",
+    "after": "assets/Script/Game/Data/Const/Constant.ts",
+    "uuid": "60e9e2ee-a61c-4387-be46-51951c5a4ec3"
+  },
+  {
+    "before": "assets/Script/Logic/Data/Const/Event.ts",
+    "after": "assets/Script/Game/Data/Const/Event.ts",
+    "uuid": "18f8a9c0-dc12-48b0-b9ed-750791c2f108"
+  },
+  {
+    "before": "assets/Script/Logic/Data/Const/TimeConfig.ts",
+    "after": "assets/Script/Game/Data/Const/TimeConfig.ts",
+    "uuid": "46e7aaea-1d96-44eb-8505-edd04d3b25f2"
+  },
+  {
+    "before": "assets/Script/Logic/Data/Interface/Level/ILevel.ts",
+    "after": "assets/Script/Game/Data/Interface/Level/ILevel.ts",
+    "uuid": "230ce849-6b77-487f-92f9-c9950b33918d"
+  },
+  {
+    "before": "assets/Script/Logic/Data/Interface/Level/ITutorial.ts",
+    "after": "assets/Script/Game/Data/Interface/Level/ITutorial.ts",
+    "uuid": "46d3a86d-81ba-4101-8c97-521bba27f8b9"
+  },
+  {
+    "before": "assets/Script/Logic/Data/Interface/Level.ts",
+    "after": "assets/Script/Game/Data/Interface/Level.ts",
+    "uuid": "14628187-15e0-4da0-8e5f-1a90c6a6374c"
+  },
+  {
+    "before": "assets/Script/Logic/Data/Interface/Tutorial.ts",
+    "after": "assets/Script/Game/Data/Interface/Tutorial.ts",
+    "uuid": "adc645af-19bd-4c64-bf70-cb7170466122"
+  },
+  {
+    "before": "assets/Script/Logic/Data/Interface/UIData.ts",
+    "after": "assets/Script/Game/Data/Interface/UIData.ts",
+    "uuid": "1d212f10-0f75-4c7f-9c45-9b0857dc6cde"
+  },
+  {
+    "before": "assets/Script/Logic/Data/MoneyManager.ts",
+    "after": "assets/Script/Game/Data/MoneyManager.ts",
+    "uuid": "239bb37b-1218-4b1c-a991-99e2815a9ce7"
+  },
+  {
+    "before": "assets/Script/Logic/Data/Player/PlayerInfo.ts",
+    "after": "assets/Script/Game/Data/Player/PlayerInfo.ts",
+    "uuid": "2be4b40e-9b9c-4037-b0fb-792240a1be68"
+  },
+  {
+    "before": "assets/Script/Logic/Data/RuntimeMgr.ts",
+    "after": "assets/Script/Game/Data/RuntimeMgr.ts",
+    "uuid": "f6cc01f3-052c-469b-978f-56ada0dd7009"
+  },
+  {
+    "before": "assets/Script/Logic/Hotel/Access/FriendRankCtrl.ts",
+    "after": "assets/Script/Game/Hotel/Access/FriendRankCtrl.ts",
+    "uuid": "776a1742-3f9c-495f-a2ae-149a10ccc6f2"
+  },
+  {
+    "before": "assets/Script/Logic/Hotel/Access/FriendRankItemCtrl.ts",
+    "after": "assets/Script/Game/Hotel/Access/FriendRankItemCtrl.ts",
+    "uuid": "3aab151f-58d8-4409-b14a-c6713090f6ca"
+  },
+  {
+    "before": "assets/Script/Logic/Hotel/Access/GuestPanelCtrl.ts",
+    "after": "assets/Script/Game/Hotel/Access/GuestPanelCtrl.ts",
+    "uuid": "f2fb8ca4-2cb9-46bf-b6bc-f3803a229db9"
+  },
+  {
+    "before": "assets/Script/Logic/Hotel/Access/OnLineGuestCtrl.ts",
+    "after": "assets/Script/Game/Hotel/Access/OnLineGuestCtrl.ts",
+    "uuid": "db1568ad-e52c-41ab-b3e4-19981c26c4e5"
+  },
+  {
+    "before": "assets/Script/Logic/Hotel/Access/VistItemCtrl.ts",
+    "after": "assets/Script/Game/Hotel/Access/VistItemCtrl.ts",
+    "uuid": "7a70ff29-7f85-4d1f-8d59-58b083c812f0"
+  },
+  {
+    "before": "assets/Script/Logic/Hotel/HotelData.ts",
+    "after": "assets/Script/Game/Hotel/HotelData.ts",
+    "uuid": "f05c94af-888a-4881-b4a0-c1d9f1284c9a"
+  },
+  {
+    "before": "assets/Script/Logic/Hotel/HotelManager.ts",
+    "after": "assets/Script/Game/Hotel/HotelManager.ts",
+    "uuid": "9ee382a5-ff89-4f20-bbfc-4dfba652d526"
+  },
+  {
+    "before": "assets/Script/Logic/Hotel/HotelMapCtrl.ts",
+    "after": "assets/Script/Game/Hotel/HotelMapCtrl.ts",
+    "uuid": "095c2fb5-47c6-465a-9627-b6cffddf52ff"
+  },
+  {
+    "before": "assets/Script/Logic/Hotel/HotelRoomCtrl.ts",
+    "after": "assets/Script/Game/Hotel/HotelRoomCtrl.ts",
+    "uuid": "18fc4a4d-5647-42e7-b71b-5c79847efcda"
+  },
+  {
+    "before": "assets/Script/Logic/Hotel/HotelUiCtrl.ts",
+    "after": "assets/Script/Game/Hotel/HotelUiCtrl.ts",
+    "uuid": "ae5da9d0-c57c-4f57-82e8-acff8c218407"
+  },
+  {
+    "before": "assets/Script/Logic/Hotel/HotelViewCtrl.ts",
+    "after": "assets/Script/Game/Hotel/HotelViewCtrl.ts",
+    "uuid": "becb3651-c113-47c5-b5b1-39b9b05266ba"
+  },
+  {
+    "before": "assets/Script/Logic/Hotel/ItemZIndex.ts",
+    "after": "assets/Script/Game/Hotel/ItemZIndex.ts",
+    "uuid": "b3722a20-9caf-4830-91ea-a070dbe4c06c"
+  },
+  {
+    "before": "assets/Script/Logic/Hotel/RoomBuyCtrl.ts",
+    "after": "assets/Script/Game/Hotel/RoomBuyCtrl.ts",
+    "uuid": "32ca8c27-143b-40f5-b587-8d10b4e0ade6"
+  },
+  {
+    "before": "assets/Script/Logic/Hotel/RoomDetailCtrl.ts",
+    "after": "assets/Script/Game/Hotel/RoomDetailCtrl.ts",
+    "uuid": "37f676b4-6b38-47f9-ad2d-a577d7762e10"
+  },
+  {
+    "before": "assets/Script/Logic/Hotel/RoomDetailItemCtrl.ts",
+    "after": "assets/Script/Game/Hotel/RoomDetailItemCtrl.ts",
+    "uuid": "9295fac8-9246-4a4a-935b-29629c9965e1"
+  },
+  {
+    "before": "assets/Script/Logic/Hotel/RoomSlotCtrl.ts",
+    "after": "assets/Script/Game/Hotel/RoomSlotCtrl.ts",
+    "uuid": "73e7810d-c46d-4dce-b03b-cb3b4f3ea551"
+  },
+  {
+    "before": "assets/Script/Logic/Hotel/RoomSlotDetailItemCtrl.ts",
+    "after": "assets/Script/Game/Hotel/RoomSlotDetailItemCtrl.ts",
+    "uuid": "e52fc5bc-c49d-4355-aedf-8c32df98b5c7"
+  },
+  {
+    "before": "assets/Script/Logic/Hotel/View/RoomFinishView.ts",
+    "after": "assets/Script/Game/Hotel/View/RoomFinishView.ts",
+    "uuid": "cef84067-cbe6-49c3-b6ec-2a1f43dc13eb"
+  },
+  {
+    "before": "assets/Script/Logic/Loading/LoadingScene.ts",
+    "after": "assets/Script/Application/Loading/LoadingScene.ts",
+    "uuid": "2e934426-85c4-49ac-9016-d4f625bee622"
+  },
+  {
+    "before": "assets/Script/Logic/Match3/Config/ResourcePath.ts",
+    "after": "assets/Script/Game/Match3/Config/ResourcePath.ts",
+    "uuid": "bf239dae-c80e-4893-acac-01a01fc139eb"
+  },
+  {
+    "before": "assets/Script/Logic/Match3/Control/LockCtrl.ts",
+    "after": "assets/Script/Game/Match3/Control/LockCtrl.ts",
+    "uuid": "06add394-dcf1-418f-9de6-16ab1dc2878f"
+  },
+  {
+    "before": "assets/Script/Logic/Match3/Control/RotatingCtrl.ts",
+    "after": "assets/Script/Game/Match3/Control/RotatingCtrl.ts",
+    "uuid": "5fe6219c-1d19-45b3-ae65-9ab937cc13b5"
+  },
+  {
+    "before": "assets/Script/Logic/Match3/Control/TaskCtrl.ts",
+    "after": "assets/Script/Game/Match3/Control/TaskCtrl.ts",
+    "uuid": "60bfdcdf-ff56-477f-8a23-e5f83a938d2f"
+  },
+  {
+    "before": "assets/Script/Logic/Match3/MainCtrl.ts",
+    "after": "assets/Script/Game/Match3/MainCtrl.ts",
+    "uuid": "9517da41-d05b-45df-ad20-b161cb7efec7"
+  },
+  {
+    "before": "assets/Script/Logic/Match3/Model/BombModel.ts",
+    "after": "assets/Script/Game/Match3/Model/BombModel.ts",
+    "uuid": "b24ef89e-0f54-4490-ba87-0c408994c0f0"
+  },
+  {
+    "before": "assets/Script/Logic/Match3/Model/CellBase.ts",
+    "after": "assets/Script/Game/Match3/Model/CellBase.ts",
+    "uuid": "79f6c580-fdb6-4d90-b26b-b459ca6cbd53"
+  },
+  {
+    "before": "assets/Script/Logic/Match3/Model/CellModel.ts",
+    "after": "assets/Script/Game/Match3/Model/CellModel.ts",
+    "uuid": "1bbd2802-1d29-426c-b023-a16ba7ad5d3c"
+  },
+  {
+    "before": "assets/Script/Logic/Match3/Model/CollectModel.ts",
+    "after": "assets/Script/Game/Match3/Model/CollectModel.ts",
+    "uuid": "e7448542-c8d6-49bb-8daa-a84df769d46e"
+  },
+  {
+    "before": "assets/Script/Logic/Match3/Model/EnergyModel.ts",
+    "after": "assets/Script/Game/Match3/Model/EnergyModel.ts",
+    "uuid": "84248b1c-0f2f-4f1c-852f-9c8a5a5b5841"
+  },
+  {
+    "before": "assets/Script/Logic/Match3/Model/GameModel.ts",
+    "after": "assets/Script/Game/Match3/Model/GameModel.ts",
+    "uuid": "7f678d9d-209a-48af-874c-8e7debf10200"
+  },
+  {
+    "before": "assets/Script/Logic/Match3/Model/GameTaskModel.ts",
+    "after": "assets/Script/Game/Match3/Model/GameTaskModel.ts",
+    "uuid": "33e5303c-268e-441f-a407-d18d4aa02058"
+  },
+  {
+    "before": "assets/Script/Logic/Match3/Model/GroundCellModel.ts",
+    "after": "assets/Script/Game/Match3/Model/GroundCellModel.ts",
+    "uuid": "3cda9164-92d8-42f1-b154-d07395de9e13"
+  },
+  {
+    "before": "assets/Script/Logic/Match3/Model/GroundModel.ts",
+    "after": "assets/Script/Game/Match3/Model/GroundModel.ts",
+    "uuid": "d7fd65ac-56bf-4ab1-942d-e56ab640d83b"
+  },
+  {
+    "before": "assets/Script/Logic/Match3/Model/multipleGridCol/CrabModel.ts",
+    "after": "assets/Script/Game/Match3/Model/multipleGridCol/CrabModel.ts",
+    "uuid": "a7059d9c-5170-4c97-921b-0a127c72724b"
+  },
+  {
+    "before": "assets/Script/Logic/Match3/Model/multipleGridCol/GnomeModel.ts",
+    "after": "assets/Script/Game/Match3/Model/multipleGridCol/GnomeModel.ts",
+    "uuid": "a8a3d2db-332a-4c37-8625-d31a1622eae9"
+  },
+  {
+    "before": "assets/Script/Logic/Match3/Model/multipleGridCol/MultipleGridColBase.ts",
+    "after": "assets/Script/Game/Match3/Model/multipleGridCol/MultipleGridColBase.ts",
+    "uuid": "c6bbf60b-46f6-4fe7-b22e-abfdd18ec55c"
+  },
+  {
+    "before": "assets/Script/Logic/Match3/Model/multipleGridCol/TurtlesModel.ts",
+    "after": "assets/Script/Game/Match3/Model/multipleGridCol/TurtlesModel.ts",
+    "uuid": "aa2fbc83-10fd-45aa-a4eb-92121012e9f8"
+  },
+  {
+    "before": "assets/Script/Logic/Match3/Model/MultipleGridColModel.ts",
+    "after": "assets/Script/Game/Match3/Model/MultipleGridColModel.ts",
+    "uuid": "fd2d4198-48e6-40c2-b561-e96fb4aa7095"
+  },
+  {
+    "before": "assets/Script/Logic/Match3/Model/PropModel.ts",
+    "after": "assets/Script/Game/Match3/Model/PropModel.ts",
+    "uuid": "88154f3c-76d9-4981-a480-88d8ee94ea51"
+  },
+  {
+    "before": "assets/Script/Logic/Match3/Model/SpecialCell.ts",
+    "after": "assets/Script/Game/Match3/Model/SpecialCell.ts",
+    "uuid": "404617a4-8c98-4bab-822c-7986ba2b8279"
+  },
+  {
+    "before": "assets/Script/Logic/Match3/Model/SpecialPlug/Conveyer.ts",
+    "after": "assets/Script/Game/Match3/Model/SpecialPlug/Conveyer.ts",
+    "uuid": "51044698-7ef7-4fe1-bb17-ad326b2dd30f"
+  },
+  {
+    "before": "assets/Script/Logic/Match3/Model/SpecialPlug/Girl.ts",
+    "after": "assets/Script/Game/Match3/Model/SpecialPlug/Girl.ts",
+    "uuid": "ee577ad4-e8de-40cc-b912-be72c536d855"
+  },
+  {
+    "before": "assets/Script/Logic/Match3/Model/SpecialPlug/Mushroom.ts",
+    "after": "assets/Script/Game/Match3/Model/SpecialPlug/Mushroom.ts",
+    "uuid": "df4e8457-2a8d-4288-a0e2-118baf5fa319"
+  },
+  {
+    "before": "assets/Script/Logic/Match3/Model/UpGroundCellModel.ts",
+    "after": "assets/Script/Game/Match3/Model/UpGroundCellModel.ts",
+    "uuid": "9e9baf88-4892-456c-882f-375b583aae6e"
+  },
+  {
+    "before": "assets/Script/Logic/Match3/Model/UpGroundModel.ts",
+    "after": "assets/Script/Game/Match3/Model/UpGroundModel.ts",
+    "uuid": "2543d8e5-53f2-44f3-b553-67771846f1c2"
+  },
+  {
+    "before": "assets/Script/Logic/Match3/ResCtrl.ts",
+    "after": "assets/Script/Game/Match3/ResCtrl.ts",
+    "uuid": "b7437a59-bd2f-4410-9df9-058a1708e032"
+  },
+  {
+    "before": "assets/Script/Logic/Match3/Skin/Match3Skin.ts",
+    "after": "assets/Script/Game/Match3/Skin/Match3Skin.ts",
+    "uuid": "119148c6-c41e-46b8-bf5d-89c3515de2ef"
+  },
+  {
+    "before": "assets/Script/Logic/Match3/View/BaseItemView.ts",
+    "after": "assets/Script/Game/Match3/View/BaseItemView.ts",
+    "uuid": "34a4c2c5-d54a-4f94-a393-509e167e62e0"
+  },
+  {
+    "before": "assets/Script/Logic/Match3/View/BaseView.ts",
+    "after": "assets/Script/Game/Match3/View/BaseView.ts",
+    "uuid": "cf311f10-59e9-4e74-b6d7-f6de6e2fd765"
+  },
+  {
+    "before": "assets/Script/Logic/Match3/View/BasicCellViewCtrl.ts",
+    "after": "assets/Script/Game/Match3/View/BasicCellViewCtrl.ts",
+    "uuid": "b94923bb-9aea-4b6f-9f58-41c0bfbca276"
+  },
+  {
+    "before": "assets/Script/Logic/Match3/View/Comp/PlaneCtrl.ts",
+    "after": "assets/Script/Game/Match3/View/Comp/PlaneCtrl.ts",
+    "uuid": "17282acc-e6fd-4b8a-aaa0-8454944e1a2f"
+  },
+  {
+    "before": "assets/Script/Logic/Match3/View/Comp/Tuituji.ts",
+    "after": "assets/Script/Game/Match3/View/Comp/Tuituji.ts",
+    "uuid": "fe2d6685-4c4c-4ac8-ab0f-209909bcb5a9"
+  },
+  {
+    "before": "assets/Script/Logic/Match3/View/EffLayerCtrl.ts",
+    "after": "assets/Script/Game/Match3/View/EffLayerCtrl.ts",
+    "uuid": "98a33aae-990b-4991-9bc4-97b7eb388d1a"
+  },
+  {
+    "before": "assets/Script/Logic/Match3/View/GroundViewCtrl.ts",
+    "after": "assets/Script/Game/Match3/View/GroundViewCtrl.ts",
+    "uuid": "837e7045-b294-49d9-bc26-b61f28d87126"
+  },
+  {
+    "before": "assets/Script/Logic/Match3/View/ItemBasicCellCtrl.ts",
+    "after": "assets/Script/Game/Match3/View/ItemBasicCellCtrl.ts",
+    "uuid": "889284cf-53b5-4303-a0bd-288e9269eda0"
+  },
+  {
+    "before": "assets/Script/Logic/Match3/View/ItemGroundCtrl.ts",
+    "after": "assets/Script/Game/Match3/View/ItemGroundCtrl.ts",
+    "uuid": "edc5974b-bbb3-42f6-bb82-a2cdc5072061"
+  },
+  {
+    "before": "assets/Script/Logic/Match3/View/ItemUpgroundCtrl.ts",
+    "after": "assets/Script/Game/Match3/View/ItemUpgroundCtrl.ts",
+    "uuid": "67adb88c-7916-4c15-95a3-b089c531057c"
+  },
+  {
+    "before": "assets/Script/Logic/Match3/View/Match3TutorialCtrl.ts",
+    "after": "assets/Script/Game/Match3/View/Match3TutorialCtrl.ts",
+    "uuid": "d6ec3d8b-d80d-40d8-b351-c3bcbe58e467"
+  },
+  {
+    "before": "assets/Script/Logic/Match3/View/TouchHintCtrl.ts",
+    "after": "assets/Script/Game/Match3/View/TouchHintCtrl.ts",
+    "uuid": "26067bfd-3ea7-4243-ad19-1cbd5a5df080"
+  },
+  {
+    "before": "assets/Script/Logic/Match3/View/TutorialBorderCtrl.ts",
+    "after": "assets/Script/Game/Match3/View/TutorialBorderCtrl.ts",
+    "uuid": "d28ec646-e8e0-4700-90b9-27ac49297cfa"
+  },
+  {
+    "before": "assets/Script/Logic/Match3/View/TutorialBubbleCtrl.ts",
+    "after": "assets/Script/Game/Match3/View/TutorialBubbleCtrl.ts",
+    "uuid": "84ef0976-09ca-430d-815f-221ae0a3919b"
+  },
+  {
+    "before": "assets/Script/Logic/Match3/View/UI/CollectItemCtrl.ts",
+    "after": "assets/Script/Game/Match3/View/UI/CollectItemCtrl.ts",
+    "uuid": "d795d3ef-4253-490f-8eee-88680f9bc903"
+  },
+  {
+    "before": "assets/Script/Logic/Match3/View/UI/InfoPanelCtrl.ts",
+    "after": "assets/Script/Game/Match3/View/UI/InfoPanelCtrl.ts",
+    "uuid": "66365148-e646-444c-b7bf-a70cfd977203"
+  },
+  {
+    "before": "assets/Script/Logic/Match3/View/UI/MainUiCtrl.ts",
+    "after": "assets/Script/Game/Match3/View/UI/MainUiCtrl.ts",
+    "uuid": "6c69b2c6-1cba-43d1-97ac-20295870f2cd"
+  },
+  {
+    "before": "assets/Script/Logic/Match3/View/UI/PropCtrl.ts",
+    "after": "assets/Script/Game/Match3/View/UI/PropCtrl.ts",
+    "uuid": "ec6deeeb-2578-4aee-92d6-4cc79b9a75a8"
+  },
+  {
+    "before": "assets/Script/Logic/Match3/View/UI/PropItemCtrl.ts",
+    "after": "assets/Script/Game/Match3/View/UI/PropItemCtrl.ts",
+    "uuid": "351b47cc-6b66-4c61-a8d0-214bc367dd09"
+  },
+  {
+    "before": "assets/Script/Logic/Match3/View/UI/SelectPropCtrl.ts",
+    "after": "assets/Script/Game/Match3/View/UI/SelectPropCtrl.ts",
+    "uuid": "284fc755-81ae-4af2-a598-a02d94402501"
+  },
+  {
+    "before": "assets/Script/Logic/Match3/View/UpGroundViewCtrl.ts",
+    "after": "assets/Script/Game/Match3/View/UpGroundViewCtrl.ts",
+    "uuid": "49bed86c-3101-4de5-b374-bd985a6f610c"
+  },
+  {
+    "before": "assets/Script/Logic/SimulationOperation/View/JumpUtils.ts",
+    "after": "assets/Script/Game/SimulationOperation/View/JumpUtils.ts",
+    "uuid": "a4de55e4-9cf5-4ae1-9d9d-bee267448f2b"
+  },
+  {
+    "before": "assets/Script/Logic/SimulationOperation/View/Map/BuildSuccess.ts",
+    "after": "assets/Script/Game/SimulationOperation/View/Map/BuildSuccess.ts",
+    "uuid": "e56c0845-f6fa-4cbf-ac69-2d49e01e4f4c"
+  },
+  {
+    "before": "assets/Script/Logic/SimulationOperation/View/Map/BuildTool.ts",
+    "after": "assets/Script/Game/SimulationOperation/View/Map/BuildTool.ts",
+    "uuid": "55c8afae-a8ef-4887-8161-6ad64e502ea2"
+  },
+  {
+    "before": "assets/Script/Logic/SimulationOperation/View/Map/CloudView.ts",
+    "after": "assets/Script/Game/SimulationOperation/View/Map/CloudView.ts",
+    "uuid": "120935af-32a6-4d16-bb3c-3c8d03844971"
+  },
+  {
+    "before": "assets/Script/Logic/SimulationOperation/View/Map/Component/BuildCloud.ts",
+    "after": "assets/Script/Game/SimulationOperation/View/Map/Component/BuildCloud.ts",
+    "uuid": "664b32e8-4878-46d9-9955-06a24dbce2df"
+  },
+  {
+    "before": "assets/Script/Logic/SimulationOperation/View/Map/Component/BuildingLock.ts",
+    "after": "assets/Script/Game/SimulationOperation/View/Map/Component/BuildingLock.ts",
+    "uuid": "daf24e29-4b63-419f-a879-7fac8ffddfba"
+  },
+  {
+    "before": "assets/Script/Logic/SimulationOperation/View/Map/Component/MapBgScript.ts",
+    "after": "assets/Script/Game/SimulationOperation/View/Map/Component/MapBgScript.ts",
+    "uuid": "de0012ca-c5a5-4ffd-8cc0-d9600bfc55b0"
+  },
+  {
+    "before": "assets/Script/Logic/SimulationOperation/View/Map/DiningHall.ts",
+    "after": "assets/Script/Game/SimulationOperation/View/Map/DiningHall.ts",
+    "uuid": "9cf9958f-34a4-484c-a9fa-df1e3d837913"
+  },
+  {
+    "before": "assets/Script/Logic/SimulationOperation/View/Map/Exchange.ts",
+    "after": "assets/Script/Game/SimulationOperation/View/Map/Exchange.ts",
+    "uuid": "07a909cc-b3d9-4764-bb48-076a2bec59f7"
+  },
+  {
+    "before": "assets/Script/Logic/SimulationOperation/View/Map/MapCamera.ts",
+    "after": "assets/Script/Game/SimulationOperation/View/Map/MapCamera.ts",
+    "uuid": "3ea9be6b-5622-4433-9bb5-5bc7952ba412"
+  },
+  {
+    "before": "assets/Script/Logic/SimulationOperation/View/Map/MapIslandManager.ts",
+    "after": "assets/Script/Game/SimulationOperation/View/Map/MapIslandManager.ts",
+    "uuid": "e49dc73f-91cd-4e0e-add2-8d50d3e325b3"
+  },
+  {
+    "before": "assets/Script/Logic/SimulationOperation/View/Map/MapIslandUtils.ts",
+    "after": "assets/Script/Game/SimulationOperation/View/Map/MapIslandUtils.ts",
+    "uuid": "2c02b601-ad21-4132-a784-883b8129664f"
+  },
+  {
+    "before": "assets/Script/Logic/SimulationOperation/View/Map/MapScene.ts",
+    "after": "assets/Script/Game/SimulationOperation/View/Map/MapScene.ts",
+    "uuid": "c18ed2d6-4468-4028-89e2-84f668734d95"
+  },
+  {
+    "before": "assets/Script/Logic/SimulationOperation/View/Map/ShowBuildTool.ts",
+    "after": "assets/Script/Game/SimulationOperation/View/Map/ShowBuildTool.ts",
+    "uuid": "93a8e0a6-c308-442f-a034-6d0fd2b33282"
+  },
+  {
+    "before": "assets/Script/Logic/SimulationOperation/View/Map/TrafficSystem/TrafficSystem.ts",
+    "after": "assets/Script/Game/SimulationOperation/View/Map/TrafficSystem/TrafficSystem.ts",
+    "uuid": "93810cd1-607b-4cf5-9c07-8e0e18b6608f"
+  },
+  {
+    "before": "assets/Script/Logic/SimulationOperation/View/Map/TrafficSystem/Walk.ts",
+    "after": "assets/Script/Game/SimulationOperation/View/Map/TrafficSystem/Walk.ts",
+    "uuid": "2e4e850c-f4d7-4839-8c33-047542a670ec"
+  },
+  {
+    "before": "assets/Script/Logic/SimulationOperation/View/Talk/TalkPanel.ts",
+    "after": "assets/Script/Game/SimulationOperation/View/Talk/TalkPanel.ts",
+    "uuid": "ae3fff3f-545f-4822-a878-53d1dcf31ea9"
+  },
+  {
+    "before": "assets/Script/test.ts",
+    "after": "assets/Script/Debug/test.ts",
+    "uuid": "4900d709-49fe-4ad1-802f-646338896eea"
+  },
+  {
+    "before": "assets/Script/Views/CommonRewardView.ts",
+    "after": "assets/Script/Game/Views/CommonRewardView.ts",
+    "uuid": "fdb7f733-391d-4c5a-8575-31aaa9ea5355"
+  },
+  {
+    "before": "assets/Script/Views/GMView.ts",
+    "after": "assets/Script/Game/Views/GMView.ts",
+    "uuid": "514fd44f-9024-4a46-a521-6b9c5495123d"
+  },
+  {
+    "before": "assets/Script/Views/LevelMap/ChapterItemCtrl.ts",
+    "after": "assets/Script/Game/Views/LevelMap/ChapterItemCtrl.ts",
+    "uuid": "e5d46173-749a-4aba-8649-298a650fb407"
+  },
+  {
+    "before": "assets/Script/Views/LevelMap/component/LevelGoMapBtn.ts",
+    "after": "assets/Script/Game/Views/LevelMap/component/LevelGoMapBtn.ts",
+    "uuid": "f540c669-787b-4a77-a3b2-28ed13903c6f"
+  },
+  {
+    "before": "assets/Script/Views/LevelMap/LevelMapCtrl.ts",
+    "after": "assets/Script/Game/Views/LevelMap/LevelMapCtrl.ts",
+    "uuid": "6b61c1b7-67f0-435f-9b24-5d3f8db30d99"
+  },
+  {
+    "before": "assets/Script/Views/LevelMap/LevelMarkItem.ts",
+    "after": "assets/Script/Game/Views/LevelMap/LevelMarkItem.ts",
+    "uuid": "99d1393f-6596-46be-b52a-824c608d0b4e"
+  },
+  {
+    "before": "assets/Script/Views/LevelMap/RankItemCtrl.ts",
+    "after": "assets/Script/Game/Views/LevelMap/RankItemCtrl.ts",
+    "uuid": "5d8e75cc-0e6a-4ec8-aaa8-a756745e9d4e"
+  },
+  {
+    "before": "assets/Script/Views/LevelMap/RankPanelCtrl.ts",
+    "after": "assets/Script/Game/Views/LevelMap/RankPanelCtrl.ts",
+    "uuid": "e6116124-ea98-4aab-86da-dded90e97f36"
+  },
+  {
+    "before": "assets/Script/Views/LevelMap/SelectChapterCtrl.ts",
+    "after": "assets/Script/Game/Views/LevelMap/SelectChapterCtrl.ts",
+    "uuid": "89787342-5a71-4bce-bdb9-7efe28c18bb6"
+  },
+  {
+    "before": "assets/Script/Views/PropDropView.ts",
+    "after": "assets/Script/Game/Views/PropDropView.ts",
+    "uuid": "c280c79d-c865-431b-bbfe-f17a394ecfad"
+  }
+]

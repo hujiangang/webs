@@ -1,5 +1,9 @@
 # Match3 项目代码结构梳理
 
+> 后续范围更新：酒店、海岛和旧经营引导已退役，主流程改为 LoadingScene → HomeScene → Match3。当前目录与职责以 [项目架构](project-architecture.md) 和 [菌子主题方向](mushroom-direction.md) 为准。
+
+> 2026-10-03：源码已按框架、应用启动、业务重新分层。当前目录和验收结论以 [项目架构](project-architecture.md) 与 [整理与验收记录](reorganization-validation.md) 为准；本文保留此前换皮工作的说明。
+
 本文档从后续维护角度说明当前 Match3 主玩法代码怎么分层，以及后续“全部由代码开发、配置人员只改 JSON 和资源”的推荐推进方式。
 
 ## 1. 当前主流程
@@ -26,10 +30,10 @@
 
 | 文件 | 职责 |
 | --- | --- |
-| `assets/Script/Logic/Loading/LoadingScene.ts` | Loading 场景流程 |
-| `assets/Script/Logic/Match3/MainCtrl.ts` | Match3 主控制器 |
-| `assets/Script/Logic/Match3/Skin/Match3Skin.ts` | 棋盘皮肤和棋盘 prefab 配置加载 |
-| `assets/Script/Logic/Match3/ResCtrl.ts` | 元素、障碍、目标图标资源配置加载 |
+| `assets/Script/Application/Loading/LoadingScene.ts` | Loading 场景流程 |
+| `assets/Script/Game/Match3/MainCtrl.ts` | Match3 主控制器 |
+| `assets/Script/Game/Match3/Skin/Match3Skin.ts` | 棋盘皮肤和棋盘 prefab 配置加载 |
+| `assets/Script/Game/Match3/ResCtrl.ts` | 元素、障碍、目标图标资源配置加载 |
 | `assets/resources/config/match3_skin/default.json` | 棋盘皮肤配置 |
 | `assets/resources/config/match3_res/default.json` | 元素和障碍资源配置 |
 
@@ -40,7 +44,7 @@
 路径：
 
 ```text
-assets/Script/Logic/Data/
+assets/Script/Game/Data/
 ```
 
 主要职责：
@@ -64,7 +68,7 @@ assets/Script/Logic/Data/
 路径：
 
 ```text
-assets/Script/Logic/Match3/Model/
+assets/Script/Game/Match3/Model/
 ```
 
 主要职责：
@@ -89,7 +93,7 @@ assets/Script/Logic/Match3/Model/
 路径：
 
 ```text
-assets/Script/Logic/Match3/View/
+assets/Script/Game/Match3/View/
 ```
 
 主要职责：
@@ -115,7 +119,7 @@ assets/Script/Logic/Match3/View/
 路径：
 
 ```text
-assets/Script/Logic/Match3/View/UI/
+assets/Script/Game/Match3/View/UI/
 ```
 
 主要职责：
@@ -138,8 +142,8 @@ assets/Script/Logic/Match3/View/UI/
 路径：
 
 ```text
-assets/Script/Logic/Match3/Skin/
-assets/Script/Logic/Match3/ResCtrl.ts
+assets/Script/Game/Match3/Skin/
+assets/Script/Game/Match3/ResCtrl.ts
 ```
 
 当前已经拆成两类：
@@ -180,7 +184,7 @@ Match3EffectRes
 
 ```text
 assets/resources/config/match3_skin/default.json
-assets/Script/Logic/Match3/Skin/Match3Skin.ts
+assets/Script/Game/Match3/Skin/Match3Skin.ts
 ```
 
 当前覆盖：
@@ -253,7 +257,7 @@ assets/resources/config/match3_res/default.json.meta
 
 ```text
 assets/resources/config/match3_effect/default.json
-assets/Script/Logic/Match3/Skin/Match3EffectRes.ts
+assets/Script/Game/Match3/Skin/Match3EffectRes.ts
 ```
 
 迁移：
@@ -271,7 +275,7 @@ assets/Script/Logic/Match3/Skin/Match3EffectRes.ts
 
 ```text
 assets/resources/config/match3_ui/default.json
-assets/Script/Logic/Match3/Skin/Match3UiRes.ts
+assets/Script/Game/Match3/Skin/Match3UiRes.ts
 ```
 
 迁移：

@@ -6,26 +6,14 @@
     "cellPrefabs": "prefab/match3/Cells",
     "moveGround": "prefab/match3/Cells/ground"
   },
-  "BombFlashingBg": {
-    "_base": "cells",
-    "items": [
-      "ts2.png",
-      "ts1.png",
-      "ts1.png",
-      "ts4.png",
-      "ts3.png"
-    ]
-  },
-  "BombStaticFrame": {
-    "_base": "cells",
-    "items": [
-      "obj100.png",
-      "obj101.png",
-      "obj101.png",
-      "obj103.png",
-      "obj104.png"
-    ]
-  },
+  "BombFlashingBg": [
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "BombStaticFrame": [],
   "NormalCellFrame": {
     "_base": "cells",
     "items": [
@@ -39,7 +27,7 @@
       "obj7.png",
       "obj8.png",
       "obj9.png",
-      "obj10.png",
+      null,
       "obj11.png",
       "obj12.png",
       "obj13.png",
@@ -57,12 +45,12 @@
   "CellPrefab": {
     "_base": "cellPrefabs",
     "items": [
-      "Bomb.prefab",
-      "Hengshu.prefab",
-      "Hengshu.prefab",
-      "Octopus.prefab",
-      "Caihong.prefab",
-      "FishBomb.prefab",
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
       "Gril.prefab",
       "Conch.prefab",
       "banana.prefab",

@@ -1,0 +1,36 @@
+{
+  "entries": [
+    {
+      "id": "mushroom-01",
+      "name": "菌子 01 · 待命名",
+      "image": "texture/match3/objects/cells/obj0",
+      "description": "",
+      "habitat": "",
+      "note": ""
+    },
+    {
+      "id": "mushroom-02",
+      "name": "菌子 02 · 待命名",
+      "image": "texture/match3/objects/cells/obj1",
+      "description": "",
+      "habitat": "",
+      "note": ""
+    },
+    {
+      "id": "mushroom-03",
+      "name": "菌子 03 · 待命名",
+      "image": "texture/match3/objects/cells/obj2",
+      "description": "",
+      "habitat": "",
+      "note": ""
+    },
+    {
+      "id": "mushroom-04",
+      "name": "菌子 04 · 待命名",
+      "image": "texture/match3/objects/cells/obj3",
+      "description": "",
+      "habitat": "",
+      "note": ""
+    }
+  ]
+}

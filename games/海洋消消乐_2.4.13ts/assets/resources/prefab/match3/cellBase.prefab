@@ -1,4 +1,4 @@
-﻿[
+[
   {
     "__type__": "cc.Prefab",
     "_name": "",
@@ -720,9 +720,6 @@
     "shadowNode": {
       "__id__": 4
     },
-    "teshuLight": {
-      "__uuid__": "870b79a6-9b81-4ffe-9f4e-ee252d05c189"
-    },
     "_id": ""
   },
   {
@@ -787,4 +784,3 @@
     "sync": false
   }
 ]
-
