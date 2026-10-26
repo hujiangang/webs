@@ -4,7 +4,7 @@ import Paths from "../Config/Paths";
 import { NativeKey } from '../Data/Const/Constant';
 import { StorageMgr } from "../Data/StorageMgr";
 
-const { ccclass, property } = cc._decorator;
+const { ccclass } = cc._decorator;
 export enum AudioID {
     BGM1 = 100,
     Click1,
@@ -24,7 +24,12 @@ export enum AudioID {
     /** 开始游戏按钮 */StartGame,
     /** partyTime发射音效 */partytime_shoot,
     /** partyTime转换音效 */partytime_change,
-    /** 合成爆炸cell */merge_boom
+    /** 合成爆炸cell */merge_boom,
+    /** 旧连消提示音，保留资源和枚举兼容 */ComboPraise,
+    ComboGreat,
+    ComboAwesome,
+    ComboFantastic,
+    ComboBlossom
 }
 
 @ccclass
@@ -40,7 +45,15 @@ export default class AudioCtrl {
     }
 
     private _isPauseMusic: boolean = false;
-    private _playingId: AudioID = 0;
+    private _playingId: AudioID = null;
+    private _loadedMusicId: AudioID = null;
+    private _musicAudioId: number = null;
+    private _pendingMusicId: AudioID = null;
+    private _musicRequest = 0;
+    private _effectRequest = 0;
+    private _praiseRequest = 0;
+    private _praiseAudioId: number = null;
+    private _active = true;
 
     private opt: { eff: boolean, bgm: boolean } = null;
 
@@ -64,6 +77,10 @@ export default class AudioCtrl {
         EventMgr.ins.unRegister(Event.Sound.PlayBGM, this.onPlayBGM, this);
         EventMgr.ins.unRegister(Event.Sound.StopBGM, this.onStopBGM, this);
         EventMgr.ins.unRegister(Event.Sound.UpdateOpt, this.onUpdateOpt, this);
+        this._active = false;
+        this._effectRequest++;
+        this.stopPraise();
+        this.onStopBGM();
     }
 
     private syncOpt2Native() {
@@ -71,49 +88,115 @@ export default class AudioCtrl {
     }
 
     private onUpdateOpt(type, opt: boolean) {
+        if (type !== 'bgm' && type !== 'eff') return;
         this.opt[type] = opt;
-        if (type == 'bgm' && !cc.audioEngine.isMusicPlaying() && this._playingId) {
-            this.onPlayBGM();
+        if (type === 'bgm') {
+            if (!opt) this.onPauseBGM();
+            else if (this._playingId != null) this.onPlayBGM(this._playingId);
+        } else if (!opt) {
+            // A load requested before mute must not become audible after re-enabling effects.
+            this._effectRequest++;
+            this.stopPraise();
+            cc.audioEngine.stopAllEffects();
         }
         this.syncOpt2Native();
     }
 
     private onPlayEff(id: AudioID) {
-        this.opt.eff && this.play(id);
+        if (!this._active || !this.opt.eff) return;
+        const audioPath = this.getAudioPathById(id);
+        if (!audioPath || id === AudioID.BGM1 || id === AudioID.BGM2) return;
+        if (id === AudioID.ComboGreat || id === AudioID.ComboAwesome || id === AudioID.ComboFantastic || id === AudioID.ComboBlossom) {
+            this.playPraise(audioPath);
+            return;
+        }
+        const request = this._effectRequest;
+        cc.loader.loadRes(audioPath, cc.AudioClip, (err, clip) => {
+            if (err || !clip || !this._active || !this.opt.eff || request !== this._effectRequest) return;
+            cc.audioEngine.setEffectsVolume(0.5);
+            cc.audioEngine.playEffect(clip, false);
+        });
+    }
+
+    /** Voice praise has one channel: the latest word replaces any playing or loading word. */
+    private playPraise(audioPath:string) {
+        this.stopPraise();
+        const request=this._praiseRequest,effectRequest=this._effectRequest;
+        cc.loader.loadRes(audioPath,cc.AudioClip,(err,clip)=>{
+            if(err||!clip||!this._active||!this.opt.eff||request!==this._praiseRequest||effectRequest!==this._effectRequest)return;
+            cc.audioEngine.setEffectsVolume(0.5);
+            const audioId=cc.audioEngine.playEffect(clip,false);
+            this._praiseAudioId=audioId!=null&&audioId>=0?audioId:null;
+            if(this._praiseAudioId!=null)cc.audioEngine.setFinishCallback(audioId,()=>{
+                if(request===this._praiseRequest&&this._praiseAudioId===audioId)this._praiseAudioId=null;
+            });
+        });
+    }
+
+    private stopPraise() {
+        this._praiseRequest++;
+        const audioId=this._praiseAudioId;
+        this._praiseAudioId=null;
+        if(audioId!=null)cc.audioEngine.stopEffect(audioId);
     }
 
     private onPlayBGM(id: AudioID = null) {
-        if (this.opt.bgm) {
-            if (this._isPauseMusic && (id == null || this._playingId == id)) {
-                this.onResumeMusic();
-            } else if (!cc.audioEngine.isMusicPlaying() || this._playingId != id) {
-                if (this._playingId != id) {
-                    this.onStopBGM();
-                }
-                this.play(id || AudioID.BGM1, true);
-                this._playingId = id;
+        if (!this._active) return;
+        const next = id == null ? (this._playingId == null ? AudioID.BGM1 : this._playingId) : id;
+        if (next !== AudioID.BGM1 && next !== AudioID.BGM2) return;
+        if (this._playingId !== next) {
+            this.stopMusicPlayback();
+            this._playingId = next;
+            this._effectRequest++;
+            this.stopPraise();
+        }
+        // Remember the destination while muted so re-enabling plays the current scene's track.
+        if (!this.opt.bgm) { this.onPauseBGM(); return; }
+        if (this._pendingMusicId === next) return;
+        if (this._loadedMusicId === next && this._musicAudioId != null) {
+            if (this._isPauseMusic) {
+                this._isPauseMusic = false;
+                cc.audioEngine.resumeMusic();
+                return;
             }
-        } else {
-            this.onPauseBGM();
+            if (cc.audioEngine.isMusicPlaying()) return;
         }
-    }
-
-    private onResumeMusic() {
-        if (this._playingId) {
-            this._isPauseMusic = false;
-            cc.audioEngine.resumeMusic();
-        }
+        const request = ++this._musicRequest;
+        this._pendingMusicId = next;
+        this._isPauseMusic = false;
+        cc.loader.loadRes(this.getAudioPathById(next), cc.AudioClip, (err, clip) => {
+            if (request !== this._musicRequest || !this._active || !this.opt.bgm || this._playingId !== next) return;
+            this._pendingMusicId = null;
+            if (err || !clip) return;
+            cc.audioEngine.setMusicVolume(0.32);
+            const audioId = cc.audioEngine.playMusic(clip, true);
+            // The first engine playback may have ID 0; only null/negative means unavailable.
+            this._musicAudioId = audioId != null && audioId >= 0 ? audioId : null;
+            this._loadedMusicId = this._musicAudioId == null ? null : next;
+        });
     }
 
     private onPauseBGM() {
-        if (!this._isPauseMusic) {
-            this._isPauseMusic = true;
+        this._musicRequest++;
+        this._pendingMusicId = null;
+        this._isPauseMusic = this._musicAudioId != null;
+        if (this._isPauseMusic) {
             cc.audioEngine.pauseMusic();
         }
     }
 
     private onStopBGM() {
-        cc.audioEngine.stopAll();
+        this._playingId = null;
+        this.stopMusicPlayback();
+    }
+
+    private stopMusicPlayback() {
+        this._musicRequest++;
+        this._pendingMusicId = null;
+        this._loadedMusicId = null;
+        this._musicAudioId = null;
+        this._isPauseMusic = false;
+        cc.audioEngine.stopMusic();
     }
 
     private getAudioPathById(id: AudioID): string {
@@ -176,28 +259,23 @@ export default class AudioCtrl {
             case AudioID.merge_boom:
                 name = "merge_boom";
                 break;
+            case AudioID.ComboPraise:
+                name = "combo_praise";
+                break;
+            case AudioID.ComboGreat:
+                name = "combo_great";
+                break;
+            case AudioID.ComboAwesome:
+                name = "combo_awesome";
+                break;
+            case AudioID.ComboFantastic:
+                name = "combo_fantastic";
+                break;
+            case AudioID.ComboBlossom:
+                name = "combo_blossom";
+                break;
         }
         return name ? `${Paths.SoundPath}${name}` : null;
     }
 
-    private play(id: AudioID, isloop: boolean = false, volume: number = 0.5) {
-        const audioPath = this.getAudioPathById(id);
-        if (!audioPath) {
-            return;
-        }
-        cc.loader.loadRes(audioPath, cc.AudioClip, (err, res) => {
-            if (err) { return; }
-            if (id == AudioID.BGM1 || id == AudioID.BGM2) {
-                if (cc.audioEngine.getMusicVolume() != volume) {
-                    cc.audioEngine.setMusicVolume(volume);
-                }
-                cc.audioEngine.playMusic(res, isloop);
-            } else {
-                if (cc.audioEngine.getEffectsVolume() != volume) {
-                    cc.audioEngine.setEffectsVolume(volume);
-                }
-                cc.audioEngine.playEffect(res, isloop);
-            }
-        });
-    }
 }

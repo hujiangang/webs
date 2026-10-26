@@ -34,16 +34,27 @@ export default class PropItemCtrl extends cc.Component {
         this.node.children.forEach(child=>child.active=false);
         const oldButton=this.node.getComponent(cc.Button);if(oldButton)oldButton.enabled=false;
         const old=this.node.getChildByName('ModernProp');if(old){old.removeFromParent();old.destroy();}
-        const root=UI.node(this.node,'ModernProp');root.setContentSize(112,128);
-        const badge=UI.propIcon(root,type,96);badge.y=12;
-        UI.text(root,PropPresentation[type].name,20,0,-49,'#FFFFFF',120,34);
-        this.addBtn=UI.box(root,'Add',33,33,38,-19,Palette.green,12);UI.text(this.addBtn,'+',28,0,0,'#FFFFFF',30,30);
-        const counter=UI.box(root,'Count',40,33,38,-19,Palette.blue,12);this.countLab=UI.text(counter,String(count),21,0,0,'#FFFFFF',36,30);
+        const root=UI.node(this.node,'ModernProp');root.setContentSize(156,178);
+        this.surface(root,'Socket',140,124,0,18,'#F0E7D1',21);
+        const badge=UI.propIcon(root,type,112);badge.y=15;
+        UI.text(root,PropPresentation[type].name,27,-23,-64,'#FFF3D7',110,40);
+        // Keep stock and purchase indicators below the artwork instead of covering it.
+        this.addBtn=this.surface(root,'Add',42,40,56,-63,'#E5BA57',11);UI.text(this.addBtn,'+',32,0,1,'#31412C',38,38);
+        const counter=this.surface(root,'Count',42,40,56,-63,'#E5BA57',11);this.countLab=UI.text(counter,String(count),25,0,1,'#31412C',38,38);
         UI.tap(root,()=>this.onClick());
-        this.node.setContentSize(112,128);this._showCount(count);
+        this.node.setContentSize(156,178);this._showCount(count);
         M.event.register(Event.UI.PropCount,this.onPropCountChanged,this);
     }
     public initOnlyType(type: PropType,count:number){this.init(type,null,count);}
+
+    private surface(parent:cc.Node,name:string,width:number,height:number,x:number,y:number,color:string,radius:number):cc.Node {
+        const node=UI.node(parent,name,x,y);node.setContentSize(width,height);
+        const g=node.addComponent(cc.Graphics),face=cc.color().fromHEX(color);
+        g.fillColor=cc.color(face.r*.59,face.g*.59,face.b*.56);g.roundRect(-width/2,-height/2-4,width,height,radius);g.fill();
+        g.fillColor=face;g.roundRect(-width/2,-height/2,width,height,radius);g.fill();
+        g.lineWidth=2;g.strokeColor=cc.color().fromHEX('#FFF9E6');g.roundRect(-width/2+1,-height/2+1,width-2,height-2,radius-1);g.stroke();
+        return node;
+    }
 
     public onClick() {
         const propInfo = M.runtime.getPropData(this._type);

@@ -308,6 +308,7 @@ export default class GroundViewCtrl extends BaseView<GroundCellModel[][]> {
     }
 
     private initBaseView(models: Array<Array<GroundCellModel>>) {
+        this.drawBoardContour(models);
         const yLength = models.length;
         const xLength = models[0].length;
         let index = null;
@@ -401,11 +402,30 @@ export default class GroundViewCtrl extends BaseView<GroundCellModel[][]> {
         if(!tile){tile=new cc.Node('ForestTile');tile.parent=sprite.node;}
         tile.active=true;
         const g=tile.getComponent(cc.Graphics)||tile.addComponent(cc.Graphics);
-        g.clear();g.fillColor=cc.color().fromHEX('#35466C');g.roundRect(-47,-49,94,96,13);g.fill();
-        g.fillColor=cc.color().fromHEX('#586B94');g.roundRect(-45,-44,90,90,12);g.fill();
-        g.fillColor=cc.color().fromHEX((x+y)%2?'#5E739E':'#657CA7');g.roundRect(-42,-42,84,84,9);g.fill();
-        g.fillColor=cc.color(36,52,91,90);g.roundRect(-39,-40,78,78,8);g.fill();
+        const w=Common.GRID_W-5,h=Common.GRID_H-5;
+        g.clear();g.fillColor=cc.color().fromHEX('#263C33');g.roundRect(-w/2,-h/2-2,w,h,10);g.fill();
+        g.fillColor=cc.color().fromHEX((x+y)%2?'#4C6051':'#526653');g.roundRect(-w/2,-h/2+1,w,h-2,9);g.fill();
+        g.strokeColor=cc.color(178,193,144,35);g.lineWidth=1;
+        g.roundRect(-w/2+1,-h/2+2,w-2,h-4,8);g.stroke();
+    }
 
+    /** Draw the real cell contour so irregular levels and interior holes stay visible. */
+    private drawBoardContour(models: Array<Array<GroundCellModel>>) {
+        let contour=this.borderParent.getChildByName('MountainBoardContour');
+        if(!contour){contour=new cc.Node('MountainBoardContour');contour.parent=this.borderParent;}
+        contour.zIndex=-2;
+        const g=contour.getComponent(cc.Graphics)||contour.addComponent(cc.Graphics);g.clear();
+        const cells:GroundCellModel[]=[];
+        models.forEach(row=>row&&row.forEach(cell=>{if(cell&&cell.getType()!=null)cells.push(cell);}));
+        const pass=(color:cc.Color,expand:number,offset:number,radius:number)=>{
+            g.fillColor=color;
+            cells.forEach(cell=>{const p=cell.getPosition(),w=Common.GRID_W+expand,h=Common.GRID_H+expand;
+                g.roundRect(p.x-w/2,p.y-h/2+offset,w,h,radius);g.fill();});
+        };
+        pass(cc.color(20,35,26,105),21,-10,15);
+        pass(cc.color().fromHEX('#74694A'),15,-4,13);
+        pass(cc.color().fromHEX('#B1B48A'),11,0,11);
+        pass(cc.color().fromHEX('#334B3D'),3,0,8);
     }
 
     private getBorderSpriteName(x: number, y: number): string {

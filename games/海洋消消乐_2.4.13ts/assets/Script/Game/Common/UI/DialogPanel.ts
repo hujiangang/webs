@@ -81,6 +81,10 @@ export default class DialogPanel extends UIBase {
                 EventMgr.ins.send(Event.Sound.PlaySoundEff,win?AudioID.GameWin:AudioID.GameFail);
                 this.drawForestResult(win);return;
             }
+            if(params.type===UIHudDef.GameShowTarget){
+                EventMgr.ins.send(Event.Sound.PlaySoundEff,AudioID.GameShowTarget);
+                this.drawMountainTargets(params.data.collect);return;
+            }
             switch (params.type) {
                 case UIHudDef.GameOverWin:
                     EventMgr.ins.send(Event.Sound.PlaySoundEff, AudioID.GameWin);
@@ -122,6 +126,10 @@ export default class DialogPanel extends UIBase {
         if(this.curData && (this.curData.type===UIHudDef.GameOverWin || this.curData.type===UIHudDef.GameOverFail)) {
             this.node.opacity=255;this.node.scale=1;return;
         }
+        if(this.curData && this.curData.type===UIHudDef.GameShowTarget){
+            this.node.opacity=255;this.node.scale=1;
+            this.unscheduleAllCallbacks();this.scheduleOnce(()=>this.hide(),2);return;
+        }
         this.initAnimation();
         this.playAnimation();
     }
@@ -129,18 +137,49 @@ export default class DialogPanel extends UIBase {
     private drawForestResult(win:boolean) {
         this.node.children.forEach(n=>n.active=false);
         const old=this.node.getChildByName('ForestResult');if(old){old.removeFromParent();old.destroy();}
-        const m=ForestUI.modal(this.node,win?'挑战成功':'再试一次',710);m.root.name='ForestResult';
+        const m=ForestUI.modal(this.node,win?'闯关成功':'再试一次',710);m.root.name='ForestResult';
         const p=m.panel;
-        [-1,0,1].forEach((x,i)=>ForestUI.icon(p,'star',x*105,205+(i===1?20:0),i===1?103:79,win&&i<Number(this.curData.data)?Palette.gold:'#C2CADA'));
-        ForestUI.text(p,'第 '+M.runtime.CurLevel+' 关'+(win?' · 挑战成功':''),30,0,100);
-        ForestUI.text(p,win?'本关目标已完成':'目标尚未完成',24,0,48,Palette.muted,510);
-        const stats=ForestUI.box(p,'Stats',470,122,0,-50,'#EAEDFA',24);
-        ForestUI.text(stats,'本关得分',22,-115,27,Palette.muted,210);ForestUI.text(stats,String(M.runtime.currentScore),32,-115,-20,Palette.ink,210);
-        ForestUI.text(stats,'本关金币',22,115,27,Palette.muted,210);ForestUI.text(stats,String(this.curData.rewardCoins||0),32,115,-20,Palette.ink,210);
-        ForestUI.button(p,win?'继续下一关':'重新挑战',440,83,0,-173,()=>win?this.onGameOverNext():this.onGameOverRestart(),Palette.green);
+        [-1,0,1].forEach((x,i)=>{
+            const star=ForestUI.icon(p,'star',x*111,201+(i===1?24:0),i===1?117:91,win&&i<Number(this.curData.data)?Palette.gold:'#8E9B86');
+            if(!win||i>=Number(this.curData.data)){star.color=cc.color(135,149,128);star.opacity=135;}
+            const finalScale=star.scale;star.setScale(finalScale*.3);
+            star.runAction(cc.sequence(cc.delayTime(i*.09),cc.scaleTo(.22,finalScale*1.12),cc.scaleTo(.1,finalScale)));
+        });
+        ForestUI.text(p,'第 '+M.runtime.CurLevel+' 关',34,0,102);
+        ForestUI.text(p,win?'本关目标全部完成':'还差一点，再来一次',24,0,52,Palette.muted,510);
+        const stats=ForestUI.panel(p,'Stats',470,119,0,-43,'#E2DABF',24);
+        ForestUI.text(stats,'本关得分',22,-115,29,Palette.muted,210);ForestUI.text(stats,String(M.runtime.currentScore),34,-115,-20,Palette.ink,210);
+        ForestUI.icon(stats,'coin',67,28,30,Palette.gold);
+        ForestUI.text(stats,'金币',22,136,29,Palette.muted,110);ForestUI.text(stats,'+'+String(this.curData.rewardCoins||0),34,115,-20,'#8A5A25',210);
+        ForestUI.button(p,win?'下一关':'重新挑战',440,90,0,-173,()=>win?this.onGameOverNext():this.onGameOverRestart(),Palette.green);
         const home=()=>{M.ui.closeAllUI();M.runtime.SelectLevel=0;Common.jumpScene(Scene.Home);};
-        ForestUI.button(p,'返回关卡',440,72,0,-270,home,Palette.purple);
+        ForestUI.button(p,'返回关卡',340,64,0,-270,home,'#60735A');
         const close=p.getChildByName('Button-');close.off(cc.Node.EventType.TOUCH_END);ForestUI.tap(close,home);
+    }
+
+    private drawMountainTargets(data:Collect[]) {
+        this.node.children.forEach(n=>n.active=false);
+        const old=this.node.getChildByName('MountainTargets');if(old){old.removeFromParent();old.destroy();}
+        const root=ForestUI.node(this.node,'MountainTargets');
+        root.setContentSize(cc.winSize);root.addComponent(cc.BlockInputEvents);
+        const shade=root.addComponent(cc.Graphics);shade.fillColor=cc.color(15,34,23,145);
+        shade.rect(-cc.winSize.width/2,-cc.winSize.height/2,cc.winSize.width,cc.winSize.height);shade.fill();
+        const width=Math.min(cc.winSize.width-76,620);
+        const panel=ForestUI.box(root,'TargetPanel',width,326,0,65,'#F0E5C8',36,true);
+        const head=ForestUI.box(panel,'Heading',width-100,65,0,149,'#476548',25,true);
+        ForestUI.text(head,'第 '+M.runtime.CurLevel+' 关',34,0,0,'#FFFFFF',width-150);
+        ForestUI.text(panel,'完成这些目标',25,0,88,Palette.muted,width-30,40);
+        const targets=ForestUI.node(panel,'Targets',0,6),count=data?data.length:0;
+        const spacing=Math.min(126,(width-50)/Math.max(1,count));
+        (data||[]).forEach((entry,i)=>{
+            const item=M.nodePool.createItem(this.collectPrefab);item.parent=targets;item.setPosition((i-(count-1)/2)*spacing,0);
+            const ctrl=item.getComponent(CollectItemCtrl);ctrl.init(entry.type,entry.count);
+            ctrl.icon.node.setPosition(0,5);ctrl.icon.node.setScale(86/Math.max(1,ctrl.icon.node.height));
+            ctrl.count.node.active=false;
+            ctrl.count=ForestUI.text(item,String(entry.count),32,0,-62,Palette.ink,108,43);
+        });
+        ForestUI.text(panel,'准备开始',23,0,-123,Palette.muted,width-30,35);
+        ForestUI.tap(root,()=>this.hide());
     }
 
     public onUILoad() {

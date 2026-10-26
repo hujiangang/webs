@@ -69,21 +69,22 @@ export default class InfoPanelCtrl extends cc.Component {
         const cs = GameModel.ins.getCollect();
         this.colletctPool = new Map();
         if (cs) {
-            this.collectContent.width = cs.size*105+30;
+            this.collectContent.width = cs.size*112;
+            this.collectContent.setAnchorPoint(.5,.5);
             const layout=this.collectContent.getComponent(cc.Layout);
-            if(layout){layout.paddingLeft=15;layout.paddingRight=15;layout.spacingX=15;layout.resizeMode=cc.Layout.ResizeMode.CONTAINER;}
-            if (cs.size > 1) {
-                // this.collectContent.x += 25 * (cs.size - 1);
-            }
+            if(layout)layout.enabled=false;
             this.collectContent.destroyAllChildren();
+            let index=0;
             cs.forEach((collect, key) => {
                 const item = M.nodePool.createItem(this.collectItemPrefab);
                 const itemCtrl = item.getComponent(CollectItemCtrl);
                 itemCtrl.init(key, collect);
-                item.setContentSize(90,100);
-                itemCtrl.icon.node.setPosition(0,-5);
+                item.setContentSize(104,110);
+                item.setPosition((index++-(cs.size-1)/2)*112,0);
+                itemCtrl.icon.node.setPosition(0,15);
+                itemCtrl.icon.node.setScale(76/Math.max(1,itemCtrl.icon.node.height));
                 itemCtrl.count.node.active=false;
-                itemCtrl.count=ForestUI.text(item,String(collect),26,0,-44,Palette.ink,90,38);
+                itemCtrl.count=ForestUI.text(item,String(collect),30,0,-41,Palette.ink,100,42);
                 item.parent = this.collectContent;
                 this.colletctPool.set(key, item);
             })

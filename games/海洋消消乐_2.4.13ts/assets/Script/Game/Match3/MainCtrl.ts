@@ -1,5 +1,5 @@
 import ToyArt from '../Common/UI/ToyArt';
-import ForestUI from '../Common/UI/ForestUI';
+import MountainArt from '../Common/UI/MountainArt';
 import Common from '../Common/Common';
 import M from "../../Application/M";
 import Level from "../Data/Interface/Level";
@@ -105,6 +105,7 @@ export default class MainCtrl extends cc.Component {
     // private overTuoweiNode: cc.Node = null;
 
     onLoad() {
+        MountainArt.prepareCanvas();
 
         cc.game.setFrameRate(RunTimeGate);
 
@@ -271,9 +272,10 @@ export default class MainCtrl extends cc.Component {
         this.bg.node.active=false;
         const canvas=this.bg.node.parent;
         const old=canvas.getChildByName('bbg');if(old)old.active=false;
-        if(!canvas.getChildByName('ForestBackground')){
-            const backdrop=ForestUI.background(canvas,cc.winSize.width,cc.winSize.height,true);backdrop.zIndex=-20;
-        }
+        const previous=canvas.getChildByName('ForestBackground');
+        if(previous){previous.removeFromParent();previous.destroy();}
+        const backdrop=MountainArt.background(canvas,cc.winSize.width,cc.winSize.height,MountainArt.gameTheme(M.runtime.CurLevel));
+        backdrop.name='ForestBackground';backdrop.zIndex=-20;
         const role=cc.find('top/Auto_record/collectNode/role',this.uiNode);if(role)role.active=false;
         this.sendUpdateLoadingEvent(100);
         this.scheduleOnce(()=>this.startGame(),0);

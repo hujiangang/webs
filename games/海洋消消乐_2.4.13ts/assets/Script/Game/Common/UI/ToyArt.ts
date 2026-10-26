@@ -2,7 +2,6 @@
 export default class ToyArt {
     private static frames:{[key:string]:cc.SpriteFrame}={};
     private static pending:Promise<void>=null;
-    private static surfaces:cc.SpriteFrame[]=[];
     static load():Promise<void>{
         if(this.pending)return this.pending;
         this.pending=new Promise<void>((resolve,reject)=>{
@@ -15,25 +14,33 @@ export default class ToyArt {
                     // Untrimmed board sprites use originalSize; it must describe this cell, not the atlas.
                     this.frames[key]=new cc.SpriteFrame(texture,cc.rect(x,y,right-x,bottom-y),false,cc.v2(0,0),cc.size(right-x,bottom-y));
                 });
-                cc.loader.loadRes('texture/toy-ui/surfaces',cc.Texture2D,(surfaceError,atlas:cc.Texture2D)=>{
-                    if(surfaceError){this.pending=null;reject(surfaceError);return;}
-                    for(let i=0;i<8;i++){
-                        const cw=atlas.width/4,ch=atlas.height/2;
-                        const rect=cc.rect(Math.round(i%4*cw+cw*.075),Math.round(Math.floor(i/4)*ch+ch*.07),Math.round(cw*.87),Math.round(ch*.89));
-                        const frame=new cc.SpriteFrame(atlas,rect,false,cc.v2(0,0),cc.size(rect.width,rect.height));
-                        frame.insetLeft=frame.insetRight=112;frame.insetTop=frame.insetBottom=112;
-                        this.surfaces.push(frame);
-                    }
-                    resolve();
-                });
+                this.loadMountainIcons().then(resolve);
             });
         });
         return this.pending;
     }
     static frame(key:string|number):cc.SpriteFrame{return this.frames[String(key)]||null;}
-    static surface(color:cc.Color):cc.SpriteFrame {
-        const {r,g,b}=color;
-        const index=r>210&&g>200?4:g>r*1.25&&g>b*1.2?0:r>g*1.3&&r>b*1.3?6:r>g*1.12&&b>g*1.2?3:r>105&&Math.max(r,g,b)-Math.min(r,g,b)<100?2:g>150&&b>180?5:1;
-        return this.surfaces[index]||null;
+    /** Keep original special pieces; replace UI-only sprites with the natural material set. */
+    private static loadMountainIcons():Promise<void>{
+        return new Promise<void>(resolve=>{
+            cc.loader.loadRes('texture/mountain-ui/icons',cc.Texture2D,(error,texture:cc.Texture2D)=>{
+                if(!error&&texture){
+                    // Explicit source bounds avoid neighbouring art and retain the mallet handle.
+                    const areas:{[key:string]:number[]}={
+                        hammer:[.025,.015,.325,.34],shuffle:[.37,.02,.29,.325],cross:[.69,.035,.29,.30],
+                        coin:[.025,.365,.31,.29],heart:[.37,.375,.295,.27],star:[.70,.37,.28,.28],
+                        shop:[.025,.66,.325,.30],book:[.375,.675,.32,.275],lock:[.715,.65,.25,.315]
+                    };
+                    Object.keys(areas).forEach(key=>{
+                        const a=areas[key],rect=cc.rect(Math.floor(a[0]*texture.width),Math.floor(a[1]*texture.height),Math.floor(a[2]*texture.width),Math.floor(a[3]*texture.height));
+                        this.frames[key]=new cc.SpriteFrame(texture,rect,false,cc.v2(0,0),cc.size(rect.width,rect.height));
+                    });
+                }else console.warn('自然风格图标加载失败，保留现有图标');
+                cc.loader.loadRes('texture/match3/objects/cells/obj0',cc.SpriteFrame,(mushroomError,frame:cc.SpriteFrame)=>{
+                    if(!mushroomError&&frame)this.frames.mushroom=frame;
+                    resolve();
+                });
+            });
+        });
     }
 }

@@ -57,10 +57,10 @@ export default class SpecialEffects extends cc.Component {
         const p=this.local(world), color=this.color(type), size=Common.GRID_W;
         return this.run(duration,(v,t)=>{
             v.node.setPosition(p);v.node.opacity=255*(1-t);
-            const g=v.graphics;g.strokeColor=color;g.lineWidth=5*(1-t)+1;
+            const g=v.graphics;g.strokeColor=color;g.lineWidth=12*(1-t)+2;
             g.circle(0,0,size*(.15+t*.75)*radius);g.stroke();
             g.fillColor=color;
-            for(let i=0;i<8;i++){const a=i*Math.PI/4,r=size*(.15+t*.8)*radius;g.circle(Math.cos(a)*r,Math.sin(a)*r,3*(1-t)+1);g.fill();}
+            for(let i=0;i<8;i++){const a=i*Math.PI/4,r=size*(.15+t*.8)*radius;g.circle(Math.cos(a)*r,Math.sin(a)*r,7*(1-t)+1);g.fill();}
         });
     }
     public charge(world: cc.Vec2, type: number, duration=.4): Promise<boolean> {
@@ -68,6 +68,8 @@ export default class SpecialEffects extends cc.Component {
         return this.run(duration,(v,t)=>{
             v.node.setPosition(p);v.icon.node.active=true;v.icon.spriteFrame=SpecialPieceArt.frame(type);
             v.node.scale=1+Math.sin(t*Math.PI)*.22;v.node.opacity=255*(1-Math.max(0,t-.65)/.35);
+            const g=v.graphics;g.fillColor=cc.color(255,226,151,75+Math.sin(t*Math.PI)*80);
+            g.circle(0,0,Common.GRID_W*(.48+Math.sin(t*Math.PI)*.1));g.fill();
             if(type===104)v.icon.node.angle=t*50;
         });
     }
@@ -102,15 +104,15 @@ export default class SpecialEffects extends cc.Component {
         return this.run(duration,(v,t)=>{
             const p=Math.max(0,(t-.12)/.88),head=point(p);
             v.node.setPosition(0,0);v.icon.node.active=true;v.icon.spriteFrame=SpecialPieceArt.frame(103);
-            v.icon.node.setPosition(head);v.icon.node.setContentSize(102,102);
+            v.icon.node.setPosition(head);v.icon.node.setContentSize(110,110);
             const dx=b.x-a.x,dy=b.y-a.y+Math.cos(p*Math.PI)*Math.PI*bend;
             // Atlas comet tail points up-right, so its head travels toward the lower-left diagonal.
             v.icon.node.angle=Math.atan2(dy,dx)*180/Math.PI+135;
             const g=v.graphics,points=[];
             for(let i=0;i<=10;i++)points.push(point(Math.max(0,p-.24+i*.024)));
-            this.ribbon(g,points,cc.color(37,184,232,65),42);
-            this.ribbon(g,points,cc.color(65,227,189,175),25);
-            this.ribbon(g,points,cc.color(220,255,220,235),10);
+            this.ribbon(g,points,cc.color(37,184,232,85),51);
+            this.ribbon(g,points,cc.color(65,227,189,215),32);
+            this.ribbon(g,points,cc.color(238,255,213,245),14);
             for(let i=0;i<4;i++){
                 const q=point(Math.max(0,p-.06-i*.045));
                 this.spark(g,q.x+Math.sin(i*2+t*12)*12,q.y+Math.cos(i*3+t*10)*12,7-i,cc.color(245,255,200,210-i*35));
@@ -120,6 +122,7 @@ export default class SpecialEffects extends cc.Component {
     }
     public link(start: cc.Vec2, end: cc.Vec2, duration=.48): Promise<boolean> {
         const a=this.local(start),b=this.local(end),delta=b.sub(a);
+        const distance=Math.max(1,delta.mag()),normal=cc.v2(-delta.y/distance,delta.x/distance);
         const bend=Math.min(50,Math.sqrt(delta.x*delta.x+delta.y*delta.y)*.08);
         const point=(p:number)=>cc.v2(delta.x*p,delta.y*p+Math.sin(p*Math.PI)*bend);
         const colors=[cc.color(255,113,142,190),cc.color(255,216,79,215),cc.color(79,225,235,210)];
@@ -127,11 +130,13 @@ export default class SpecialEffects extends cc.Component {
             v.node.setPosition(a);const g=v.graphics,progress=Math.min(1,t/.72),head=point(progress);
             v.node.opacity=t<.72?255:255*(1-(t-.72)/.28);
             const points=[];for(let i=0;i<=8;i++)points.push(point(Math.max(0,progress-.38+i*.0475)));
-            this.ribbon(g,points,cc.color(174,118,255,70),38);
-            colors.forEach((color,i)=>this.ribbon(g,points.map(p=>cc.v2(p.x,p.y+(i-1)*6)),color,9));
-            g.fillColor=cc.color(255,255,230);g.circle(head.x,head.y,10);g.fill();
-            this.spark(g,head.x,head.y,17,cc.color(255,255,240,220));
-            if(t>.68){const hit=(t-.68)/.32;g.strokeColor=cc.color(255,229,115,240);g.lineWidth=7*(1-hit)+2;g.circle(delta.x,delta.y,16+hit*22);g.stroke();
+            this.ribbon(g,points,cc.color(174,118,255,85),55);
+            colors.forEach((color,i)=>this.ribbon(g,points.map(p=>cc.v2(p.x+normal.x*(i-1)*10,p.y+normal.y*(i-1)*10)),color,14));
+            g.fillColor=cc.color(255,255,230);g.circle(head.x,head.y,15);g.fill();
+            this.spark(g,head.x,head.y,24,cc.color(255,255,240,230));
+            if(t>.68){const hit=(t-.68)/.32;
+                g.fillColor=cc.color(255,242,171,190*(1-hit));g.circle(delta.x,delta.y,21+hit*22);g.fill();
+                g.strokeColor=cc.color(255,229,115,240);g.lineWidth=12*(1-hit)+2;g.circle(delta.x,delta.y,19+hit*28);g.stroke();
                 for(let i=0;i<5;i++){const angle=i*Math.PI*2/5,r=16+hit*30;this.spark(g,delta.x+Math.cos(angle)*r,delta.y+Math.sin(angle)*r,7*(1-hit)+2,colors[i%3]);}}
         });
     }

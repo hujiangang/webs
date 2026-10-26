@@ -1,4 +1,5 @@
 import SpecialEffects from "./SpecialEffects";
+import ComboFeedback from "./ComboFeedback";
 import SpinePlayerCtrl from "../../../Framework/Components/SpinePlayerCtrl";
 import M from "../../../Application/M";
 import { NodePoolKey, CellType, ComboLevel, GroundType, ScoreConfig, UpGroundType } from '../../Data/Const/Constant';
@@ -6,7 +7,6 @@ import { Event } from "../../Data/Const/Event";
 import { GapTime } from "../../Data/Const/TimeConfig";
 import Common from "../../Common/Common";
 import { CellModel } from "../Model/CellModel";
-import { AudioID } from "../../Common/AudioCtrl";
 
 const { ccclass, property } = cc._decorator;
 
@@ -43,26 +43,34 @@ export default class EffLayerCtrl extends cc.Component {
     chuizi: cc.Prefab = null;
 
     private special: SpecialEffects = null;
+    private comboFeedback: ComboFeedback = null;
 
     public static ins: EffLayerCtrl = null;
 
     onLoad() {
         EffLayerCtrl.ins = this;
         this.special = this.node.addComponent(SpecialEffects);
+        this.comboFeedback = new ComboFeedback(this.node, this.comboPrefab);
+        ComboFeedback.preload();
         this.registerEvent();
         this._preLoadNodePool();
         this.node.zIndex = 100;
     }
 
-    public cancelSpecialEffects(): void { if (this.special) this.special.cancel(); }
+    public cancelSpecialEffects(): void {
+        if (this.special) this.special.cancel();
+        if (this.comboFeedback) this.comboFeedback.cancel();
+    }
 
     onDestroy() {
         this.cancelSpecialEffects();
+        if (this.comboFeedback) this.comboFeedback.dispose();
         if (EffLayerCtrl.ins === this) EffLayerCtrl.ins = null;
         this.removeEvent();
         M.nodePool.destory();
     }
     private _preLoadNodePool() {
+        M.nodePool.create(NodePoolKey.ComboEff, this.comboPrefab, 2);
         M.nodePool.create(NodePoolKey.MergeBomb, this.mergeBombPrefab, 8);
         M.nodePool.create(NodePoolKey.Broken, this.brokenPrefab, 12);
         M.nodePool.create(NodePoolKey.LeafBroken, this.LeavesBrokenPrefab, 8);
@@ -96,13 +104,7 @@ export default class EffLayerCtrl extends cc.Component {
 
     public playComboEff(level: number) {
         const name = ComboLevel[level];
-        if (name) {
-            const comboNode = M.nodePool.getItem(NodePoolKey.ComboEff, this.comboPrefab);
-            comboNode.parent = this.node;
-            const animation = comboNode.getComponent(cc.Animation);
-            animation.play(name);
-            animation.on('finished', this.effCompleted.bind(this, NodePoolKey.ComboEff, animation, comboNode), this);
-        }
+        if (name && this.comboFeedback) this.comboFeedback.play(name, () => M.event.send(Event.Sound.PlaySoundEff, ComboFeedback.voiceFor(name)));
     }
 
     // private onShowDot(type: ElimateType, startPoint: cc.Vec2) {
@@ -128,11 +130,6 @@ export default class EffLayerCtrl extends cc.Component {
     //     }
     // }
 
-    private effCompleted(key, anim, comboNode) {
-        anim.off('finished', this.effCompleted, this);
-        M.nodePool.freeItem(key, comboNode);
-    }
-
     private playAddScoreEff(score: number, pos: cc.Vec2, isOver: boolean = false) {
         let node: cc.Node = null;
         if (isOver) {
@@ -151,7 +148,6 @@ export default class EffLayerCtrl extends cc.Component {
             node.getChildByName('score').getComponent(cc.Label).string = score.toString();
             const animation = node.getComponent(cc.Animation);
             animation.play();
-            // animation.on('finished', this.effCompleted.bind(this, NodePoolKey.AddScoreEffOver, animation, node), this);
             const a1 = cc.delayTime(0.5);
             const a2 = cc.fadeOut(0.5);
             const a3 = cc.callFunc(() => {

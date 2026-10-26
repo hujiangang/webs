@@ -118,7 +118,8 @@ export default class GameFailEncouragePanel extends UIBase {
         const old=this.node.getChildByName('ForestFailure');if(old){old.removeFromParent();old.destroy();}
         const m=ForestUI.modal(this.node,'挑战未完成',740);m.root.name='ForestFailure';const p=m.panel;
         ForestUI.text(p,'第 '+M.runtime.CurLevel+' 关',32,0,235);
-        ForestUI.text(p,'剩余目标',25,0,181,Palette.muted);
+        ForestUI.text(p,'还差这些目标',25,0,181,Palette.muted);
+        ForestUI.panel(p,'RemainingTargets',470,164,0,92,'#E3DCC4',26);
         const remaining=Array.from(GameModel.ins.getCollect()).filter(entry=>entry[1]>0).slice(0,4);
         const collectIcons={box:0,gnome:1,turtles:2,tree:3,crab:4,stone:5,gem:6,firefly:7,colorbox:8};
         remaining.forEach(([type,count],i)=>{
@@ -126,16 +127,16 @@ export default class GameFailEncouragePanel extends UIBase {
             const icon=ForestUI.node(p,'RemainingTarget',x,111);
             const sprite=icon.addComponent(cc.Sprite);sprite.sizeMode=cc.Sprite.SizeMode.CUSTOM;
             sprite.spriteFrame=collectIcons[type]!==undefined?ResCtrl.ins.getCollectFrame(collectIcons[type]):ResCtrl.ins.getCellFrame(Number(type),Number(type));
-            icon.setContentSize(78,78);ForestUI.text(p,String(count),27,x,53,Palette.ink,100);
+            icon.setContentSize(82,82);ForestUI.text(p,String(count),30,x,47,Palette.ink,100);
         });
-        const msg=ForestUI.text(p,'继续游戏或重新挑战',24,0,7,Palette.ink,510);
-        ForestUI.button(p,'重新挑战',440,80,0,-83,()=>this.onLevelBtnClick(),Palette.green);
+        const msg=ForestUI.text(p,'再试一次，换个消除顺序',23,0,-18,Palette.muted,510);
+        ForestUI.button(p,'重新挑战',440,86,0,-92,()=>this.onLevelBtnClick(),Palette.green);
         ForestUI.button(p,'继续 +5 步 · '+this.buyNeedDiamond+' 钻石',440,72,0,-179,()=>{
             if(M.runtime.getCurrency(CurrencyId.Diamond)<this.buyNeedDiamond){msg.string='钻石不足，可以重新挑战';return;}
             this.onBtnClickDiamond();
-        },Palette.blue);
+        },'#9D7548');
         const home=()=>{M.ui.closeAllUI();M.runtime.SelectLevel=0;Common.jumpScene(Scene.Home);};
-        ForestUI.button(p,'返回关卡',440,72,0,-275,home,Palette.purple);
+        ForestUI.button(p,'返回关卡',340,64,0,-275,home,'#60735A');
         const close=p.getChildByName('Button-');close.off(cc.Node.EventType.TOUCH_END);ForestUI.tap(close,home);
     }
 

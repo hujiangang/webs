@@ -54,23 +54,93 @@ test('HUD restores missing preview bindings before initializing subcontrollers',
   hud.onLoad();assert.equal(initialized,true);assert.equal(hud.topBar,boundTop);
 });
 
-test('toy atlas shares its load and slices all 16 odd-sized texture regions without overlap', async()=>{
+test('art atlases share one load, keep special frames and slice both old and mountain icons inside their textures', async()=>{
   const requests=[],frames=[];
   const {default:Art}=load('assets/Script/Game/Common/UI/ToyArt.ts',{}, {cc:{
     loader:{loadRes:(...args)=>requests.push(args)},Texture2D:class{},
     v2:(x,y)=>({x,y}),size:(width,height)=>({width,height}),
-    rect:(x,y,width,height)=>({x,y,width,height}),SpriteFrame:class{constructor(texture,rect,rotated,offset,originalSize){this.rect=rect;this.originalSize=originalSize;frames.push(rect);assert.deepEqual(originalSize,{width:rect.width,height:rect.height});}}
+    rect:(x,y,width,height)=>({x,y,width,height}),SpriteFrame:class{constructor(texture,rect,rotated,offset,originalSize){this.texture=texture;this.rect=rect;this.originalSize=originalSize;frames.push(this);assert.deepEqual(originalSize,{width:rect.width,height:rect.height});}}
   }});
   assert.equal(Art.frame(100),null);
   const pending=Art.load();assert.equal(pending,Art.load());assert.equal(requests.length,1);
-  requests[0][2](null,{width:1254,height:1254});requests[1][2](null,{width:1774,height:887});await pending;
-  assert.equal(frames.length,24);assert.equal(Art.frame('mushroom').rect.x,941);
+  requests[0][2](null,{width:1254,height:1254});
+  const specialTypes=[100,101,102,103,104,10],specialFrames=specialTypes.map(type=>Art.frame(type));
+  assert.equal(frames.length,16);assert.equal(Art.frame('mushroom').rect.x,941);
   for(let row=0;row<4;row++)for(let col=0;col<4;col++){
-    const r=frames[row*4+col];assert.ok(Number.isInteger(r.x)&&Number.isInteger(r.y));
+    const r=frames[row*4+col].rect;assert.ok(Number.isInteger(r.x)&&Number.isInteger(r.y));
     assert.ok(r.x+r.width<=1254&&r.y+r.height<=1254);
-    if(col<3)assert.equal(r.x+r.width,frames[row*4+col+1].x);
+    if(col<3)assert.equal(r.x+r.width,frames[row*4+col+1].rect.x);
   }
-  await Art.load();assert.equal(requests.length,2);
+  const mountainTexture={width:1254,height:1254};requests[1][2](null,mountainTexture);
+  assert.equal(frames.length,25);
+  for(const key of ['hammer','shuffle','cross','coin','heart','star','shop','book','lock']){
+    const frame=Art.frame(key),r=frame.rect;
+    assert.equal(frame.texture,mountainTexture,key+' must use the new UI atlas');
+    assert.ok([r.x,r.y,r.width,r.height].every(Number.isInteger));
+    assert.ok(r.x>=0&&r.y>=0&&r.width>0&&r.height>0);
+    assert.ok(r.x+r.width<=mountainTexture.width&&r.y+r.height<=mountainTexture.height,key+' must stay inside its texture');
+  }
+  const mushroomFrame={name:'unchanged mushroom sprite'};requests[2][2](null,mushroomFrame);await pending;
+  assert.equal(Art.frame('mushroom'),mushroomFrame);
+  specialTypes.forEach((type,i)=>assert.equal(Art.frame(type),specialFrames[i],type+' must retain its special-piece frame'));
+  assert.deepEqual(requests.map(args=>args[0]),['texture/toy-ui/toy-atlas','texture/mountain-ui/icons','texture/match3/objects/cells/obj0']);
+  await Art.load();assert.equal(requests.length,3);
+});
+
+test('mountain art shares pending requests, resolves failed resources to null and permits retry',async()=>{
+  const requests=[];
+  const {default:Art}=load('assets/Script/Game/Common/UI/MountainArt.ts',{}, {cc:{loader:{loadRes:(...args)=>requests.push(args)},SpriteFrame:class{}}});
+  const first=Art.frame('game-rain');assert.equal(first,Art.frame('game-rain'));assert.equal(requests.length,1);
+  assert.equal(requests[0][0],'texture/mountain-ui/game-rain');
+  requests[0][2](new Error('offline'),null);assert.equal(await first,null);
+  const retry=Art.frame('game-rain');assert.notEqual(retry,first);assert.equal(requests.length,2);
+  const frame={name:'rain'};requests[1][2](null,frame);assert.equal(await retry,frame);
+  assert.equal(Art.frame('game-rain'),retry);assert.equal(requests.length,2);
+});
+
+test('mountain background ignores a late resource after destruction and covers the viewport for a live root',async()=>{
+  const requests=[],created=[];
+  class Node {
+    constructor(name){this.name=name;this.children=[];this.components=[];this.valid=true;created.push(this);}
+    set parent(parent){this.owner=parent;parent.children.push(this);}
+    setContentSize(width,height){this.width=width;this.height=height;}
+    addComponent(Type){const component=new Type();this.components.push(component);return component;}
+    destroy(){this.valid=false;}
+  }
+  class Graphics {rect(){}fill(){}}
+  class Sprite {} Sprite.SizeMode={CUSTOM:'custom'};
+  const {default:Art}=load('assets/Script/Game/Common/UI/MountainArt.ts',{}, {cc:{Node,Graphics,Sprite,SpriteFrame:class{},
+    loader:{loadRes:(...args)=>requests.push(args)},color:()=>({fromHEX:value=>value}),isValid:node=>node.valid}});
+  const parent=new Node('Canvas'),removed=Art.background(parent,750,1334,'pine');
+  assert.equal(removed.children.length,0);removed.destroy();
+  requests[0][2](null,{getOriginalSize:()=>({width:941,height:1672})});await Promise.resolve();
+  assert.equal(removed.children.length,0);assert.equal(created.filter(node=>node.name==='Artwork').length,0);
+  const live=Art.background(parent,750,1624,'pine');await Promise.resolve();
+  assert.equal(requests.length,1,'successful frame should be reused');assert.equal(live.children.length,1);
+  const artwork=live.children[0];assert.ok(artwork.width>=750&&artwork.height>=1624);
+  assert.ok(Math.abs(artwork.width/artwork.height-941/1672)<1e-10,'background must preserve its aspect ratio');
+  const fallback=Art.background(parent,750,1334,'red-earth');requests[1][2](new Error('missing'),null);await Promise.resolve();
+  assert.equal(fallback.valid,true);assert.equal(fallback.children.length,0);assert.ok(fallback.components[0] instanceof Graphics);
+});
+
+test('mountain theme cycles by level while match startup preserves the configured ground mapping',async()=>{
+  const {default:Art}=load('assets/Script/Game/Common/UI/MountainArt.ts');
+  for(const [level,theme] of [[0,'pine'],[1,'pine'],[20,'pine'],[21,'rain'],[40,'rain'],[41,'red-earth'],[60,'red-earth'],[61,'pine']])assert.equal(Art.gameTheme(level),theme);
+  const stubImports=file=>Object.fromEntries([...fs.readFileSync(path.join(root,file),'utf8').matchAll(/from\s+["']([^"']+)["']/g)].map(m=>[m[1],{}]));
+  const commonFile='assets/Script/Game/Common/Common.ts';
+  const {default:Common}=load(commonFile,stubImports(commonFile),{window:{},cc:{v2:(x,y)=>({x,y})}});
+  const file='assets/Script/Game/Match3/MainCtrl.ts',deps=stubImports(file),runtime={CurLevel:21},themes=[],jobs=[];
+  deps['../Common/Common']={default:Common};deps['../../Application/M']={default:{runtime}};
+  deps['../Common/UI/MountainArt']={default:{gameTheme:level=>Art.gameTheme(level),background:(parent,w,h,theme)=>{themes.push(theme);return {};}}};
+  const {default:Main}=load(file,deps,{window:{},cc:{Component:class{},Sprite:class{},Node:class{},_decorator:{ccclass:T=>T,property:()=>()=>{}},winSize:{width:750,height:1334},find:()=>null}});
+  const main=Object.create(Main.prototype),canvas={getChildByName:()=>null};main.bg={node:{parent:canvas,active:true}};
+  let background=1,started=0;main.gameModel={getLvData:()=>({levelInfo:{background}})};
+  main.sendUpdateLoadingEvent=value=>assert.equal(value,100);main.scheduleOnce=callback=>jobs.push(callback);main.startGame=()=>started++;
+  for(const [groundId,level,ground,theme] of [[1,21,'water','rain'],[2,21,'grass','rain'],[3,21,'sand','rain'],[3,41,'sand','red-earth']]){
+    background=groundId;runtime.CurLevel=level;await main.initBg();
+    assert.equal(main.currentBgIndex,groundId);assert.equal(runtime.CurBgIndex,groundId);assert.equal(main.groundType,ground);assert.equal(themes[themes.length-1],theme);
+  }
+  assert.equal(started,0);jobs.forEach(job=>job());assert.equal(started,4,'visual background must not hold up the scheduled game start');
 });
 
 test('last-move settlement waits for queued tasks, exchange and delayed bomb activation', () => {
@@ -161,7 +231,7 @@ test('line effects stop at board edges, including an off-centre origin', async (
 });
 
 test('comet flight reaches its target, resets pooled icon geometry and rainbow cancellation settles',async()=>{
-  const h=effectsHarness(),a={x:0,y:0,sub(b){return {mag:()=>Math.hypot(b.x,b.y)};}},b={x:252,y:168,sub(a){return {x:this.x-a.x,y:this.y-a.y};}};
+  const h=effectsHarness(),a={x:0,y:0,sub(b){return {mag:()=>Math.hypot(b.x,b.y)};}},b={x:252,y:168,sub(a){return {x:this.x-a.x,y:this.y-a.y,mag(){return Math.hypot(this.x,this.y);}};}};
   const flight=h.effects.flight(a,b,1,100);h.effects.update(.45);h.effects.update(.6);assert.equal(await flight,true);
   const icon=h.effects.pool[0].icon.node;assert.equal(icon.position.x,252);assert.ok(Math.abs(icon.position.y-168)<.001);
   const charge=h.effects.charge(a,104,.4);h.effects.update(.1);assert.deepEqual(icon.position,{x:0,y:0});assert.equal(icon.width,84);
