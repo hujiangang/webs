@@ -1,0 +1,18 @@
+[
+  {
+    "name": "victory",
+    "taskId": "0866eb22-86f8-47cc-8bfc-f8ec75a62048",
+    "prompt": "A short cozy puzzle game victory jingle: warm wooden marimba plays a rising D major pentatonic phrase, soft nylon guitar chord, two tiny airy bell sparkles, one gentle leafy swoosh. Happy, rounded, rewarding, intimate woodland mood. Resolve with a soft tail by 3 seconds. Isolated clean musical UI cue, no voice, no drums, no big orchestral fanfare.",
+    "meta": {
+      "durationSeconds": 3
+    }
+  },
+  {
+    "name": "failure",
+    "taskId": "6333f9ef-4c10-49dd-96a1-2661699a50cb",
+    "prompt": "A gentle puzzle game try-again sound, three softly descending wooden marimba notes with a warm nylon guitar pluck, thoughtful and encouraging rather than sad, restrained ending. Small room, soft transients, clean isolated cue lasting under 2 seconds. No voice, no buzzer, no comedy trombone, no background music.",
+    "meta": {
+      "durationSeconds": 2
+    }
+  }
+]

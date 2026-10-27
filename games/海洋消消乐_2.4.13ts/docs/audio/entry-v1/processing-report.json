@@ -1,0 +1,89 @@
+{
+  "generatedAt": "2026-10-26T05:38:57.930970+00:00",
+  "script": "tools/prepare-entry-audio.py",
+  "manualListeningReview": false,
+  "backups": [
+    {
+      "path": "temp/entry-audio-before-20261026/dlg_gamestart.mp3",
+      "sha256": "13f19bd029de77a2af851b96ec35cc7063b707d3299e0b866bc40c2cb601920e"
+    },
+    {
+      "path": "temp/entry-audio-before-20261026/dlg_gamestart.mp3.meta",
+      "sha256": "72e72cbce489b4fef1b404a1a7bf3b410738ec31b36bbfcf65d770c01f0f0c04"
+    },
+    {
+      "path": "temp/entry-audio-before-20261026/start_game.mp3",
+      "sha256": "7f8cdfeeeef35f5c96bf41d09ee41368105dd612babe72daa5df95c0de944e9b"
+    },
+    {
+      "path": "temp/entry-audio-before-20261026/start_game.mp3.meta",
+      "sha256": "a687df710ccd922ff1b4a1ef8949c78d2a20e892aeedac1fb18bc7afb1133cfb"
+    }
+  ],
+  "clips": [
+    {
+      "key": "dlg_gamestart",
+      "source": "docs/audio/entry-v1/originals/dlg_gamestart.mp3",
+      "sourceSha256": "9f3c28509085fe183da02d93df2aef63e2e61c31a2896ac364d7e3915017da68",
+      "output": "assets/resources/sound/dlg_gamestart.mp3",
+      "outputSha256": "aaaafc971a79548b45479de68df90e4689fe557beee137f34e99c9f98da62b91",
+      "outputBytes": 49581,
+      "preservedUuid": "89a04151-1508-4f57-9800-c39e5d8d5d04",
+      "edits": {
+        "method": "silence bounds with 30ms head / 80ms tail margin; 3ms / 10ms edge fades",
+        "sourceStartSeconds": 0.0,
+        "sourceEndSeconds": 2.0
+      },
+      "targetIntegratedLufs": -18,
+      "gainDb": -8.67,
+      "loudnessTargetLimitedByPeak": false,
+      "outputLoudness": {
+        "integratedLufs": -18.27,
+        "truePeakDbtp": -9.04,
+        "loudnessRangeLu": 0.0
+      },
+      "outputMetrics": {
+        "sampleRate": 48000,
+        "channels": 2,
+        "decodedSamplesPerChannel": 96000,
+        "decodedDurationSeconds": 2.0,
+        "samplePeakDbfs": -9.035388622114818,
+        "rmsDbfs": -24.13487591989744,
+        "clippedSampleCount": 0,
+        "finiteSamples": true
+      }
+    },
+    {
+      "key": "start_game",
+      "source": "docs/audio/entry-v1/originals/start_game.mp3",
+      "sourceSha256": "854d554403221bbf7ace8699144ed9df0f8a66fb18423d721da98a66423489b0",
+      "output": "assets/resources/sound/start_game.mp3",
+      "outputSha256": "9507ead3a81f213ca416f741609f0c70a7e2b97d091af4824ef9729a5e4b0cb2",
+      "outputBytes": 29997,
+      "preservedUuid": "286bd1bf-f336-4742-9109-168a4c176e3f",
+      "edits": {
+        "method": "silence bounds with 30ms head / 80ms tail margin; 3ms / 10ms edge fades",
+        "sourceStartSeconds": 0.0,
+        "sourceEndSeconds": 1.2
+      },
+      "targetIntegratedLufs": -18,
+      "gainDb": 3.3599999999999994,
+      "loudnessTargetLimitedByPeak": false,
+      "outputLoudness": {
+        "integratedLufs": -18.29,
+        "truePeakDbtp": -4.82,
+        "loudnessRangeLu": 0.0
+      },
+      "outputMetrics": {
+        "sampleRate": 48000,
+        "channels": 2,
+        "decodedSamplesPerChannel": 57600,
+        "decodedDurationSeconds": 1.2,
+        "samplePeakDbfs": -4.839506275346429,
+        "rmsDbfs": -21.10808224242343,
+        "clippedSampleCount": 0,
+        "finiteSamples": true
+      }
+    }
+  ]
+}

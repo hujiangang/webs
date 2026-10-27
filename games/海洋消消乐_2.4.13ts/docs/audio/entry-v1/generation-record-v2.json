@@ -1,0 +1,24 @@
+[
+  {
+    "key": "start_game",
+    "revision": 2,
+    "taskId": "eede6269-69cb-430f-b31d-228e963a3134",
+    "duration": 1.2,
+    "loop": false,
+    "name": "菌子消消乐 · 开始按钮修订",
+    "promptText": "Two clear rounded wooden xylophone notes rising in pitch, played briskly as one cheerful confirmation chime. Full audible notes with a compact natural decay. Clean isolated game interface sound, consistent volume, no voice or background noise.",
+    "source": "docs/audio/entry-v1/originals/start_game.mp3",
+    "runtime": "assets/resources/sound/start_game.mp3"
+  },
+  {
+    "key": "dlg_gamestart",
+    "revision": 2,
+    "taskId": "2f4bec4f-b095-4658-ae5a-218b6b784822",
+    "duration": 2,
+    "loop": false,
+    "name": "菌子消消乐 · 进入关卡修订",
+    "promptText": "Wooden marimba notification chime: three distinct ascending mellow notes, evenly spaced, bright and clearly audible, ending in a warm resonant chord with a short gentle decay. A cheerful ready-to-play game UI cue. Clean close recording, balanced levels, no background noise, no voice.",
+    "source": "docs/audio/entry-v1/originals/dlg_gamestart.mp3",
+    "runtime": "assets/resources/sound/dlg_gamestart.mp3"
+  }
+]

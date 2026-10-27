@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-26",
+  "status": "runtime-assets",
+  "generator": "built-in image_gen",
+  "scope": "Home scene only; original mushroom and Match3 artwork unchanged",
+  "referenceConcept": "docs/art-preview/home-v4/home-concept.png",
+  "pngPolicy": "Original selected PNGs copied unchanged; texture rectangles selected in HomeArt.ts; no bitmap post-processing",
+  "assets": [
+    {
+      "key": "background",
+      "path": "assets/resources/texture/home-v4/background.png",
+      "original": "C:/Users/Administrator/.codex/generated_images/01a1000e-b032-75a3-8e53-847a27ea5d8c/exec-2d1c207a-cc3a-40b7-bd65-7fac8d5be3eb.png",
+      "prompt": "Production asset for a portrait mobile match-3 game. Reference image role: the approved home-screen concept, use only its environment, composition, lighting and material art direction. Create a CLEAN ENVIRONMENT BACKGROUND with absolutely NO interface, NO title, NO words, NO numbers, NO counters, NO level markers, NO platforms shaped like buttons, NO stone sign, NO book, NO shop. Portrait 9:16 full bleed. Keep the inviting sunlit pine forest and distant cool blue-green mountains of the reference. The upper 32 percent is calm spacious hazy distant scenery and soft sky; middle and lower screen is a grounded near forest clearing, red-brown earth and flat mossy rock patches. Camera sees the ground at a modest downward angle. Reserve the CENTRAL 65 percent width from 35 to 78 percent height for separately overlaid game objects: this region must be a coherent low-detail warm earthy clearing with subtle texture and gentle lighting, no big rocks, no strongly contrasting plants, no path drawn across it. Pine trees and ferns frame the left and right edges, small realistic pine cones and brown mushrooms near bottom edges only. Bottom 13 percent slightly darker calm forest floor for navigation overlay. Crisp beautiful game illustration based on real woodland materials, slight selective focus; no excessive grass clutter, no white haze covering center, no photographic noise. Same warm sunlight upper left and cool emerald forest shadows as reference, saturated enough to feel fresh but restrained. Deliver background artwork only.",
+      "width": 941,
+      "height": 1672,
+      "mode": "RGB",
+      "sha256": "4972065212403248b37ce283087bcf7a3ff06a9b64db1c7a559f3ad0bbe89c55",
+      "sourceMatches": true
+    },
+    {
+      "key": "hero",
+      "path": "assets/resources/texture/home-v4/hero.png",
+      "original": "C:/Users/Administrator/.codex/generated_images/01a1000e-b032-75a3-8e53-847a27ea5d8c/exec-48e49df6-aada-427b-be77-0ef0959afb5c.png",
+      "prompt": "A single isolated compact game-interface plaque, PNG with a transparent background. Two stacked blank faces on one mossy stone footing: a tall soft-cornered warm ivory limestone face above, and a chunky amber-gold rounded button below. The complete visible object has a width to height ratio of 1.65:1, nearly square. The ivory face is tall, occupies half the object height, and has simple rounded corners, not ornate corners. The amber face is about one third of the object height. Very low dark natural stone base. Tiny realistic brown mushrooms near the lower left, one tiny golden mushroom near lower right, small soft moss edging only. Bright upper-left light, tactile realistic materials, simplified premium casual-game rendering. Both faces entirely blank for later text. Clean smooth ivory and gold faces, restrained bevels, no letters or symbols. The whole compact object fills the canvas with 5 percent transparent padding. The background is completely transparent.",
+      "width": 1611,
+      "height": 976,
+      "mode": "RGBA",
+      "sha256": "123213581a6b1c7a6f1bb3ba301badecf18ba45f345328fcb48eab93b0779a87",
+      "sourceMatches": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "fullyTransparentPixels": 490908
+    },
+    {
+      "key": "marker",
+      "path": "assets/resources/texture/home-v4/marker.png",
+      "original": "C:/Users/Administrator/.codex/generated_images/01a1000e-b032-75a3-8e53-847a27ea5d8c/exec-5b95b3dc-5025-4a7e-908c-69320f7a38b4.png",
+      "prompt": "Create a transparent PNG cutout sprite for the mobile game shown in the attached style reference. Exactly ONE small upright rounded-square stone level marker, grey sage-green limestone with a thin warm ivory beveled rim, soft upper-left lighting and a little moss near the bottom corners, low dark stone footing with narrow contact shadow. Front face is smooth, plain and COMPLETELY BLANK for code to draw a level number and lock later. No text, no number, no lock, no symbol. Physical object width about equal to height. Premium compact casual game object, realistic material with simplified clean readable form, quiet texture, not a neon plastic disk or a carved gravestone. Center the complete silhouette inside a square canvas with only 5 percent padding. Actual transparent alpha=0 everywhere outside the sprite. Do not draw a checkerboard or any solid background; real RGBA transparent cutout is required.",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "sha256": "c606e28a104d66af42aa2efa0603e5a7fa193abe9d1a8e45820a9075b0d2abf3",
+      "sourceMatches": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "fullyTransparentPixels": 787459
+    },
+    {
+      "key": "navigation",
+      "path": "assets/resources/texture/home-v4/navigation.png",
+      "original": "C:/Users/Administrator/.codex/generated_images/01a1000e-b032-75a3-8e53-847a27ea5d8c/exec-4b683b29-b0b9-4a17-96f0-af0587522233.png",
+      "prompt": "Transparent PNG sprite atlas for a realistic woodland casual match-3 game's bottom navigation. Exactly THREE isolated solid objects in a single evenly spaced horizontal row, wide 3:1 canvas, each centered in its own equal square cell with 12 percent transparent margin. All have a consistent frontal 3/4 angle, warm upper-left light, rich natural material, compact readable silhouette. LEFT: a tiny charming wooden shop stall with sage-green and warm ivory striped awning, no sign or text, amber goods subtly visible. CENTER: an attractive realistic cluster of three mushrooms, one substantial chestnut-brown porcini cap, one small pale beige cap, one golden chanterelle, leafy base extremely minimal. RIGHT: an open field guide book with thick ivory pages, evergreen cover, beautifully painted realistic brown and gold mushroom specimens on the pages, without any printed words. Crisp premium game icons to be shown at 40-60px; distinguish each by silhouette and warm materials, no giant landscape, no character. No text, no numerals, no UI labels, no circular background or badge. Actual transparent alpha background and clear blank gaps between all three cells, no object crosses into another cell.",
+      "width": 2172,
+      "height": 724,
+      "mode": "RGBA",
+      "sha256": "18983c1c9957f275663bb949db747e81df0532188738d37ebb6fa33e48a5b798",
+      "sourceMatches": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "fullyTransparentPixels": 762312
+    }
+  ],
+  "rejectedDrafts": [
+    {
+      "original": "exec-f2c9a9bc-b1b7-4863-97f6-3ac87a39d456.png",
+      "reason": "Opaque checkerboard background, not used"
+    },
+    {
+      "original": "exec-9a8459a8-dbfa-413d-9361-80a8072111ee.png",
+      "reason": "Opaque checkerboard background, not used"
+    },
+    {
+      "original": "exec-3c2d0545-0b25-460c-9c8d-197e40c3b17a.png",
+      "reason": "Transparent but proportions too wide and ornate, not used"
+    },
+    {
+      "original": "exec-c15493a3-106a-4391-88e1-fb3852371bde.png",
+      "reason": "Checkerboard background visible, not used"
+    }
+  ]
+}

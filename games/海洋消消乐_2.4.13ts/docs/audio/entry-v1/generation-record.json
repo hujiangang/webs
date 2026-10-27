@@ -1,0 +1,24 @@
+[
+  {
+    "key": "start_game",
+    "taskId": "cfaf164a-b8ee-419b-990d-68f7df09b0c6",
+    "name": "菌子消消乐 · 开始按钮",
+    "duration": 0.8,
+    "promptText": "A single compact start-button sound for a cozy woodland puzzle game. One soft rounded wooden click immediately followed by two warm ascending marimba notes, subtle leaf flick texture. Confident and inviting, tactile, gentle attack, dry close sound. Finish within 0.8 seconds. Clean isolated game UI sound, no speech, no background ambience, no metallic clang, no bass boom.",
+    "status": "rejected",
+    "rejectionReason": "Near silence: source RMS -76.62 dBFS",
+    "source": "docs/audio/entry-v1/rejected-first-pass/start_game.mp3",
+    "runtime": "assets/resources/sound/start_game.mp3"
+  },
+  {
+    "key": "dlg_gamestart",
+    "taskId": "a66da4c8-e3c5-4ff8-94bd-df1893d9307b",
+    "name": "菌子消消乐 · 进入关卡",
+    "duration": 1.6,
+    "promptText": "A welcoming level-start cue for a cozy woodland match-three game: soft leafy whoosh opens into three clear ascending wooden marimba notes D F-sharp A, a delicate nylon guitar D-major chord and one tiny warm bell sparkle. Playful, fresh, ready to begin, gentle and organic. Short natural decay, fully finished by 1.6 seconds. Isolated UI cue, no voice, no sustained music, no fanfare or harsh high frequencies.",
+    "status": "rejected",
+    "rejectionReason": "Excessive transient peak relative to average energy",
+    "source": "docs/audio/entry-v1/rejected-first-pass/dlg_gamestart.mp3",
+    "runtime": "assets/resources/sound/dlg_gamestart.mp3"
+  }
+]

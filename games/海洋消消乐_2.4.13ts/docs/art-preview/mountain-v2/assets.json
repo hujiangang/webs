@@ -1,0 +1,37 @@
+[
+  {
+    "file": "game-pine.png",
+    "width": 941,
+    "height": 1672,
+    "bytes": 2042064,
+    "sha256": "4e4d7d155c202cfcf1fabbd03b5e87c0bf14ce0499a1ccb3204cf7210b75b682"
+  },
+  {
+    "file": "game-rain.png",
+    "width": 941,
+    "height": 1672,
+    "bytes": 1980846,
+    "sha256": "70422d8564ca9983bdb7437b441b361bac5bfbf931a18a79c368a68f123741f1"
+  },
+  {
+    "file": "game-red-earth.png",
+    "width": 940,
+    "height": 1672,
+    "bytes": 2220600,
+    "sha256": "55b2f6b013ab255fbf44e1cc961c799df65f272b68c25f6e52f6e6c17f7d1b70"
+  },
+  {
+    "file": "home-mountain.png",
+    "width": 941,
+    "height": 1672,
+    "bytes": 2052306,
+    "sha256": "da0d39eeb645cb7846c2ca0011f66de88ac8f80e3ba3ffe6f9c77c7ebfe038a0"
+  },
+  {
+    "file": "loading-mountain.png",
+    "width": 941,
+    "height": 1672,
+    "bytes": 2641049,
+    "sha256": "a76973aeb6d5638d8f640822071ac360783ce799d8324c4296ff51164c5226a7"
+  }
+]

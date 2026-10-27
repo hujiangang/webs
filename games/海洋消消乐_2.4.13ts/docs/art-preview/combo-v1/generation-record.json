@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-26",
+  "generator": "built-in image_gen",
+  "purpose": "Four woodland combo wordmarks sharing one transparent atlas",
+  "source": "C:/Users/Administrator/.codex/generated_images/01a1000e-b032-75a3-8e53-847a27ea5d8c/exec-f4e6ee35-9744-44f1-96ba-7a2f94dabe30.png",
+  "runtime": "assets/resources/texture/mountain-ui/combo-praise.png",
+  "size": [
+    1536,
+    1024
+  ],
+  "mode": "RGBA",
+  "transparentPixels": 1007392,
+  "prompt": "Create a single production sprite sheet for a woodland match-three mobile game: four isolated wordmark stickers on a genuinely transparent PNG background. Landscape canvas 1536 by 1024. Four separate horizontal rows, equal row height 256; each wordmark centered on its row, all graphics inside that row with generous transparent gutters. Row 1 exact text 'Great!'; row 2 exact text 'Awesome!'; row 3 exact text 'Fantastic!'; row 4 exact text 'Blossom!'. Same family of thick friendly rounded hand-lettered 3D game lettering. Warm ivory and light honey gold faces, very bold forest green outer silhouette, restrained bronze underside for shallow depth, tiny white highlights. Superb readable broad letter strokes, very thick outline for visibility over a puzzle board. Not script. Natural satin painted finish, not metallic chrome. Each word with only two small understated sage leaves beside it and one or two round light flecks; progressively slightly brighter gold from first to fourth row. Keep letters straight and readable, modest upward arc, no perspective tilt, no mushroom characters, no rainbow, no neon, no panels or frames, no landscape, no extra text. The visual content must float on actual transparent alpha, no colored background, no checkerboard painted into image."
+}

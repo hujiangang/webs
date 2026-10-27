@@ -1,0 +1,563 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-26T04:32:44.562747+00:00",
+  "ffmpegVersion": "ffmpeg version N-123955-g6c114bd6fa-20260414 Copyright (c) 2000-2026 the FFmpeg developers",
+  "script": "tools/prepare-woodland-audio.py",
+  "listeningReviewPerformed": false,
+  "engineLoopPlaybackVerified": false,
+  "preReplacementBackups": [
+    {
+      "path": "temp/palette-audio-before-20261026/bgm1.mp3",
+      "sha256": "17499a44dfd1c82d826b6b083ca8bb2e392683e0d2db28f91ede4ed1ad865d54"
+    },
+    {
+      "path": "temp/palette-audio-before-20261026/bgm2.mp3",
+      "sha256": "01048a824fd18735e7bdf01d3d72ba1f023074fc109a5a6b7498b939c4ca04f6"
+    },
+    {
+      "path": "temp/palette-audio-before-20261026/game_win.mp3",
+      "sha256": "fec308aa966458ee230923561bdf6cefc596193910e686d64aff5251d73bd3a4"
+    },
+    {
+      "path": "temp/palette-audio-before-20261026/game_fail.mp3",
+      "sha256": "3e598a783f0bb5ffb750a9ebff43810ed9747365b1d1865f3707b7a89b5f39f6"
+    }
+  ],
+  "tracks": [
+    {
+      "key": "home",
+      "source": "docs/audio/woodland-v1/originals/home.mp3",
+      "sourceSha256": "487ee8b639b9cf17e5fe13c913e4602b04983d6ce0957b3a4afd3da2f7f105c5",
+      "sourceMetrics": {
+        "sampleRate": 48000,
+        "channels": 2,
+        "decodedSamplesPerChannel": 1477068,
+        "decodedDurationSeconds": 30.77225,
+        "samplePeakDbfs": -0.10780202569758131,
+        "rmsDbfs": -14.290385901742953,
+        "clippedSampleCount": 0,
+        "finiteSamples": true
+      },
+      "output": "assets/resources/sound/bgm1.mp3",
+      "outputSha256": "801dc83ad6e34cffbf3cb9fd08f6debb784b01e89d9d678d91ad1cd2fa39141c",
+      "outputBytes": 585261,
+      "edits": {
+        "method": "near-hint whole-bar candidates ranked by spectrum/envelope similarity",
+        "tempoIsMeasured": false,
+        "generationBpmHint": 84,
+        "assumedBeatsPerBar": 4,
+        "bpmSearchRangePercent": [
+          94,
+          106
+        ],
+        "fourBarGroupPreferencePenalty": 0.08,
+        "candidateCount": 3317,
+        "selected": {
+          "score": 0.1584387871509364,
+          "sourceStartSeconds": 3.8599999999999994,
+          "sourceEndSeconds": 28.526109422492404,
+          "outputPeriodSeconds": 24.316109422492403,
+          "candidateBpm": 78.96,
+          "assumedBars": 8,
+          "spectralDistance": 0.06680441486899777,
+          "envelopeDistance": 0.24122251229077865
+        },
+        "candidatesRejectedForSeamEnergy": 0,
+        "alternativeCandidates": [
+          {
+            "score": 0.16301254511742638,
+            "sourceStartSeconds": 1.2199999999999998,
+            "sourceEndSeconds": 25.886109422492403,
+            "outputPeriodSeconds": 24.316109422492403,
+            "candidateBpm": 78.96,
+            "assumedBars": 8,
+            "spectralDistance": 0.07763633229793862,
+            "envelopeDistance": 0.19950144920777285
+          },
+          {
+            "score": 0.16418040997201366,
+            "sourceStartSeconds": 1.2999999999999998,
+            "sourceEndSeconds": 25.966109422492405,
+            "outputPeriodSeconds": 24.316109422492403,
+            "candidateBpm": 78.96,
+            "assumedBars": 8,
+            "spectralDistance": 0.07013526838744373,
+            "envelopeDistance": 0.25729430764165384
+          },
+          {
+            "score": 0.16582015149079607,
+            "sourceStartSeconds": 3.9399999999999995,
+            "sourceEndSeconds": 28.453100931286187,
+            "outputPeriodSeconds": 24.163100931286184,
+            "candidateBpm": 79.46,
+            "assumedBars": 8,
+            "spectralDistance": 0.061939970484809787,
+            "envelopeDistance": 0.3165582173378294
+          },
+          {
+            "score": 0.16650086729372587,
+            "sourceStartSeconds": 3.8199999999999994,
+            "sourceEndSeconds": 28.486109422492405,
+            "outputPeriodSeconds": 24.316109422492403,
+            "candidateBpm": 78.96,
+            "assumedBars": 8,
+            "spectralDistance": 0.06762816815681859,
+            "envelopeDistance": 0.2894780246572362
+          }
+        ],
+        "crossfadeSeconds": 0.35,
+        "crossfadeCurve": "equal power cosine/sine",
+        "edgeMicroFadeSeconds": 0.002,
+        "phraseBoundaryAuditedByListening": false,
+        "prepared": {
+          "sampleRate": 48000,
+          "channels": 2,
+          "decodedSamplesPerChannel": 1167173,
+          "decodedDurationSeconds": 24.316104166666666,
+          "samplePeakDbfs": -0.10780202569758131,
+          "rmsDbfs": -14.381700239875723,
+          "clippedSampleCount": 0,
+          "finiteSamples": true,
+          "loopSeam": {
+            "boundaryJumpAmplitude": 0.0,
+            "boundaryJumpDbfs": -240.0,
+            "interiorDerivativeP99": 0.040515439882874545,
+            "jumpOverInteriorP99": 0.0,
+            "last100msRmsDbfs": -19.24203709304612,
+            "first100msRmsDbfs": -16.63349113338448,
+            "energyDifferenceDb": 2.6085459596616403,
+            "limits": {
+              "jumpAmplitudeMax": 0.01,
+              "energyDifferenceDbMax": 6
+            },
+            "numericCheckPassed": true
+          }
+        }
+      },
+      "normalization": {
+        "method": "constant gain, no dynamic limiter",
+        "targetIntegratedLufs": -20.0,
+        "truePeakLimitDbtp": -2.0,
+        "appliedGainDb": -7.530000000000001,
+        "preparedLoudness": {
+          "integratedLufs": -12.2,
+          "truePeakDbtp": -0.1,
+          "loudnessRangeLu": 2.8
+        }
+      },
+      "loudnessTargetLimitedByPeak": false,
+      "outputLoudness": {
+        "integratedLufs": -20.0,
+        "truePeakDbtp": -7.86,
+        "loudnessRangeLu": 2.8
+      },
+      "outputMetrics": {
+        "sampleRate": 48000,
+        "channels": 2,
+        "decodedSamplesPerChannel": 1167173,
+        "decodedDurationSeconds": 24.316104166666666,
+        "samplePeakDbfs": -7.864120358847924,
+        "rmsDbfs": -22.176075118805446,
+        "clippedSampleCount": 0,
+        "finiteSamples": true,
+        "loopSeam": {
+          "boundaryJumpAmplitude": 0.00019713887013494968,
+          "boundaryJumpDbfs": -74.10455473706187,
+          "interiorDerivativeP99": 0.016525415852665905,
+          "jumpOverInteriorP99": 0.0119294347502394,
+          "last100msRmsDbfs": -27.039836318255364,
+          "first100msRmsDbfs": -24.431683307278217,
+          "energyDifferenceDb": 2.608153010977148,
+          "limits": {
+            "jumpAmplitudeMax": 0.01,
+            "energyDifferenceDbMax": 6
+          },
+          "numericCheckPassed": true
+        }
+      },
+      "ffprobe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "mp3",
+            "sample_rate": "48000",
+            "channels": 2
+          }
+        ],
+        "format": {
+          "duration": "24.316104",
+          "size": "585261"
+        }
+      }
+    },
+    {
+      "key": "game",
+      "source": "docs/audio/woodland-v1/originals/game.mp3",
+      "sourceSha256": "358ce586bc78aeddcdeb6add01406428e20f376c34317f085e98c34cc0f5bb5d",
+      "sourceMetrics": {
+        "sampleRate": 48000,
+        "channels": 2,
+        "decodedSamplesPerChannel": 1477068,
+        "decodedDurationSeconds": 30.77225,
+        "samplePeakDbfs": 0.13875594111037304,
+        "rmsDbfs": -14.296364999093088,
+        "clippedSampleCount": 19,
+        "finiteSamples": true
+      },
+      "output": "assets/resources/sound/bgm2.mp3",
+      "outputSha256": "3a906b4b29aaea9f8fbd5afdb749dab8464470782013e17a767b6c2e59e0abcf",
+      "outputBytes": 642861,
+      "edits": {
+        "method": "near-hint whole-bar candidates ranked by spectrum/envelope similarity",
+        "tempoIsMeasured": false,
+        "generationBpmHint": 104,
+        "assumedBeatsPerBar": 4,
+        "bpmSearchRangePercent": [
+          94,
+          106
+        ],
+        "fourBarGroupPreferencePenalty": 0.08,
+        "candidateCount": 4987,
+        "selected": {
+          "score": 0.18358738085957274,
+          "sourceStartSeconds": 1.9799999999999998,
+          "sourceEndSeconds": 29.0560579064588,
+          "outputPeriodSeconds": 26.7260579064588,
+          "candidateBpm": 107.75999999999999,
+          "assumedBars": 12,
+          "spectralDistance": 0.09035138655338996,
+          "envelopeDistance": 0.3903747787455146
+        },
+        "candidatesRejectedForSeamEnergy": 1,
+        "alternativeCandidates": [
+          {
+            "score": 0.17776760373103273,
+            "sourceStartSeconds": 0.06,
+            "sourceEndSeconds": 27.01262331424349,
+            "outputPeriodSeconds": 26.60262331424349,
+            "candidateBpm": 108.25999999999999,
+            "assumedBars": 12,
+            "spectralDistance": 0.11503319966612713,
+            "envelopeDistance": 0.1787428952927852
+          },
+          {
+            "score": 0.18420149702500924,
+            "sourceStartSeconds": 0.02,
+            "sourceEndSeconds": 26.972623314243492,
+            "outputPeriodSeconds": 26.60262331424349,
+            "candidateBpm": 108.25999999999999,
+            "assumedBars": 12,
+            "spectralDistance": 0.1121007897607627,
+            "envelopeDistance": 0.24118491662172475
+          },
+          {
+            "score": 0.19304125177843837,
+            "sourceStartSeconds": 1.9399999999999997,
+            "sourceEndSeconds": 29.0160579064588,
+            "outputPeriodSeconds": 26.7260579064588,
+            "candidateBpm": 107.75999999999999,
+            "assumedBars": 12,
+            "spectralDistance": 0.08296465381325141,
+            "envelopeDistance": 0.5026454698055425
+          },
+          {
+            "score": 0.19393346974935013,
+            "sourceStartSeconds": 0.09999999999999999,
+            "sourceEndSeconds": 26.93032364840015,
+            "outputPeriodSeconds": 26.480323648400148,
+            "candidateBpm": 108.75999999999999,
+            "assumedBars": 12,
+            "spectralDistance": 0.10728854536599398,
+            "envelopeDistance": 0.32991988471839506
+          }
+        ],
+        "crossfadeSeconds": 0.35,
+        "crossfadeCurve": "equal power cosine/sine",
+        "edgeMicroFadeSeconds": 0.002,
+        "phraseBoundaryAuditedByListening": false,
+        "prepared": {
+          "sampleRate": 48000,
+          "channels": 2,
+          "decodedSamplesPerChannel": 1282851,
+          "decodedDurationSeconds": 26.7260625,
+          "samplePeakDbfs": -0.1379624616219988,
+          "rmsDbfs": -14.551596501282066,
+          "clippedSampleCount": 0,
+          "finiteSamples": true,
+          "loopSeam": {
+            "boundaryJumpAmplitude": 0.0,
+            "boundaryJumpDbfs": -240.0,
+            "interiorDerivativeP99": 0.050973554551601415,
+            "jumpOverInteriorP99": 0.0,
+            "last100msRmsDbfs": -18.476798327498237,
+            "first100msRmsDbfs": -14.177223230600058,
+            "energyDifferenceDb": 4.299575096898179,
+            "limits": {
+              "jumpAmplitudeMax": 0.01,
+              "energyDifferenceDbMax": 6
+            },
+            "numericCheckPassed": true
+          }
+        }
+      },
+      "normalization": {
+        "method": "constant gain, no dynamic limiter",
+        "targetIntegratedLufs": -20.0,
+        "truePeakLimitDbtp": -2.0,
+        "appliedGainDb": -7.140000000000001,
+        "preparedLoudness": {
+          "integratedLufs": -12.61,
+          "truePeakDbtp": -0.14,
+          "loudnessRangeLu": 2.3
+        }
+      },
+      "loudnessTargetLimitedByPeak": false,
+      "outputLoudness": {
+        "integratedLufs": -20.01,
+        "truePeakDbtp": -7.49,
+        "loudnessRangeLu": 2.3
+      },
+      "outputMetrics": {
+        "sampleRate": 48000,
+        "channels": 2,
+        "decodedSamplesPerChannel": 1282851,
+        "decodedDurationSeconds": 26.7260625,
+        "samplePeakDbfs": -7.492762404049332,
+        "rmsDbfs": -21.956420879723822,
+        "clippedSampleCount": 0,
+        "finiteSamples": true,
+        "loopSeam": {
+          "boundaryJumpAmplitude": 0.001495520118623972,
+          "boundaryJumpDbfs": -56.504154804126294,
+          "interiorDerivativeP99": 0.021884573958814144,
+          "jumpOverInteriorP99": 0.06833672528596986,
+          "last100msRmsDbfs": -25.871231933181885,
+          "first100msRmsDbfs": -21.577277369009774,
+          "energyDifferenceDb": 4.293954564172111,
+          "limits": {
+            "jumpAmplitudeMax": 0.01,
+            "energyDifferenceDbMax": 6
+          },
+          "numericCheckPassed": true
+        }
+      },
+      "ffprobe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "mp3",
+            "sample_rate": "48000",
+            "channels": 2
+          }
+        ],
+        "format": {
+          "duration": "26.726063",
+          "size": "642861"
+        }
+      }
+    },
+    {
+      "key": "combo",
+      "source": "docs/audio/woodland-v1/originals/combo.mp3",
+      "sourceSha256": "9f0d3e6ed87fac80e91f9c8bebc4010ea669affa3b4885d3a73fba4ce9a32f1c",
+      "sourceMetrics": {
+        "sampleRate": 48000,
+        "channels": 2,
+        "decodedSamplesPerChannel": 71040,
+        "decodedDurationSeconds": 1.48,
+        "samplePeakDbfs": -10.7779640156437,
+        "rmsDbfs": -34.99209669166024,
+        "clippedSampleCount": 0,
+        "finiteSamples": true
+      },
+      "output": "assets/resources/sound/combo_praise.mp3",
+      "outputSha256": "13c0c8be1f984f7b69386bba9a1d00cb5523de1184116d90cf81c968a64e37fe",
+      "outputBytes": 29997,
+      "edits": {
+        "method": "silence bounds with 30ms head / 80ms tail margin; 3ms / 10ms edge fades",
+        "sourceStartSeconds": 0.0,
+        "sourceEndSeconds": 1.1976875
+      },
+      "normalization": {
+        "method": "constant gain, no dynamic limiter",
+        "targetIntegratedLufs": -18.0,
+        "truePeakLimitDbtp": -2.0,
+        "appliedGainDb": 8.76,
+        "preparedLoudness": {
+          "integratedLufs": -30.68,
+          "truePeakDbtp": -10.76,
+          "loudnessRangeLu": 0.0
+        }
+      },
+      "loudnessTargetLimitedByPeak": true,
+      "outputLoudness": {
+        "integratedLufs": -22.18,
+        "truePeakDbtp": -2.23,
+        "loudnessRangeLu": 0.0
+      },
+      "outputMetrics": {
+        "sampleRate": 48000,
+        "channels": 2,
+        "decodedSamplesPerChannel": 57489,
+        "decodedDurationSeconds": 1.1976875,
+        "samplePeakDbfs": -2.2485411037760037,
+        "rmsDbfs": -25.608204631679076,
+        "clippedSampleCount": 0,
+        "finiteSamples": true
+      },
+      "ffprobe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "mp3",
+            "sample_rate": "48000",
+            "channels": 2
+          }
+        ],
+        "format": {
+          "duration": "1.197688",
+          "size": "29997"
+        }
+      }
+    },
+    {
+      "key": "victory",
+      "source": "docs/audio/woodland-v1/originals/victory.mp3",
+      "sourceSha256": "2606a6704da7e7907e93c4f51facb8a60453b8fee9c3713675feb40e2388fe84",
+      "sourceMetrics": {
+        "sampleRate": 48000,
+        "channels": 2,
+        "decodedSamplesPerChannel": 144000,
+        "decodedDurationSeconds": 3.0,
+        "samplePeakDbfs": 0.04453890814634372,
+        "rmsDbfs": -17.213537873818506,
+        "clippedSampleCount": 5,
+        "finiteSamples": true
+      },
+      "output": "assets/resources/sound/game_win.mp3",
+      "outputSha256": "59f92b683df08ed80336e503f3f51ce97ba2b8313fe09e7f9d9a1b2bb7a91a03",
+      "outputBytes": 73197,
+      "edits": {
+        "method": "silence bounds with 30ms head / 80ms tail margin; 3ms / 10ms edge fades",
+        "sourceStartSeconds": 0.0,
+        "sourceEndSeconds": 3.0
+      },
+      "normalization": {
+        "method": "constant gain, no dynamic limiter",
+        "targetIntegratedLufs": -18.0,
+        "truePeakLimitDbtp": -2.0,
+        "appliedGainDb": -6.52,
+        "preparedLoudness": {
+          "integratedLufs": -11.2,
+          "truePeakDbtp": 0.04,
+          "loudnessRangeLu": 1.3
+        }
+      },
+      "loudnessTargetLimitedByPeak": false,
+      "outputLoudness": {
+        "integratedLufs": -17.99,
+        "truePeakDbtp": -6.68,
+        "loudnessRangeLu": 1.3
+      },
+      "outputMetrics": {
+        "sampleRate": 48000,
+        "channels": 2,
+        "decodedSamplesPerChannel": 144000,
+        "decodedDurationSeconds": 3.0,
+        "samplePeakDbfs": -6.6809742570903685,
+        "rmsDbfs": -24.015255863171983,
+        "clippedSampleCount": 0,
+        "finiteSamples": true
+      },
+      "ffprobe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "mp3",
+            "sample_rate": "48000",
+            "channels": 2
+          }
+        ],
+        "format": {
+          "duration": "3.000000",
+          "size": "73197"
+        }
+      }
+    },
+    {
+      "key": "failure",
+      "source": "docs/audio/woodland-v1/originals/failure.mp3",
+      "sourceSha256": "cc616e0b9f9368e552efdf0a1d109b6bd860ee8f43e8fe1cbe63ad0ee6bd2c03",
+      "sourceMetrics": {
+        "sampleRate": 48000,
+        "channels": 2,
+        "decodedSamplesPerChannel": 96000,
+        "decodedDurationSeconds": 2.0,
+        "samplePeakDbfs": -2.553254682898933,
+        "rmsDbfs": -20.77825913468104,
+        "clippedSampleCount": 0,
+        "finiteSamples": true
+      },
+      "output": "assets/resources/sound/game_fail.mp3",
+      "outputSha256": "5fad35da43b7f080e122ded0d33b18c3fa816aeca57545ae33b53f26ea8735a9",
+      "outputBytes": 49581,
+      "edits": {
+        "method": "silence bounds with 30ms head / 80ms tail margin; 3ms / 10ms edge fades",
+        "sourceStartSeconds": 0.0,
+        "sourceEndSeconds": 2.0
+      },
+      "normalization": {
+        "method": "constant gain, no dynamic limiter",
+        "targetIntegratedLufs": -18.0,
+        "truePeakLimitDbtp": -2.0,
+        "appliedGainDb": -1.9399999999999995,
+        "preparedLoudness": {
+          "integratedLufs": -15.83,
+          "truePeakDbtp": -2.55,
+          "loudnessRangeLu": 0.0
+        }
+      },
+      "loudnessTargetLimitedByPeak": false,
+      "outputLoudness": {
+        "integratedLufs": -18.03,
+        "truePeakDbtp": -4.75,
+        "loudnessRangeLu": 0.0
+      },
+      "outputMetrics": {
+        "sampleRate": 48000,
+        "channels": 2,
+        "decodedSamplesPerChannel": 96000,
+        "decodedDurationSeconds": 2.0,
+        "samplePeakDbfs": -4.752402045002673,
+        "rmsDbfs": -22.99484566699036,
+        "clippedSampleCount": 0,
+        "finiteSamples": true
+      },
+      "ffprobe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "mp3",
+            "sample_rate": "48000",
+            "channels": 2
+          }
+        ],
+        "format": {
+          "duration": "2.000000",
+          "size": "49581"
+        }
+      }
+    }
+  ],
+  "preservedAudioMetaSha256": {
+    "bgm1.mp3.meta": "a51f166a820af99b338c790a84333288fb71037334220cf9257f1c5d038a0359",
+    "bgm2.mp3.meta": "9995d2ac729cf561f8410f90db816f54c4bc0400d5fc9603285c569855d8aa57",
+    "game_win.mp3.meta": "92b33386ec1eccb75c6666b8168be70e0750c021b16419f13ed1308534bee6f2",
+    "game_fail.mp3.meta": "a2187eb27805142a1bd08e2075da395787833235556c9e7825904498a30e9966"
+  }
+}

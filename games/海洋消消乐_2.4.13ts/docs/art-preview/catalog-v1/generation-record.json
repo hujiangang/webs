@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-26",
+  "generator": "built-in image_gen",
+  "status": "runtime-assets",
+  "pngPolicy": "Selected original RGBA PNGs copied unchanged. Layout and text rendered by Cocos.",
+  "assets": [
+    {
+      "key": "shop-display",
+      "source": "C:/Users/Administrator/.codex/generated_images/01a1000e-b032-75a3-8e53-847a27ea5d8c/exec-4a335af9-3a43-44a1-836e-3c0d7f1a9e0d.png",
+      "path": "docs/art-preview/catalog-v1/retired-assets/shop-display.png",
+      "prompt": "An isolated small wooden display cabinet, transparent background PNG. Front view, four equal empty compartments in a 2 by 2 grid. The cabinet is portrait shaped, width 0.82 times its height. Narrow warm honey-brown wooden outer frame and slim dividers, pale warm ivory interior backboards with subtle natural texture. Quiet realistic wood, soft upper-left light, premium woodland mobile game prop. Completely empty compartments. No words, no objects, no buttons, no roof. Entire cabinet visible and almost fills the canvas. Transparent background.",
+      "width": 1136,
+      "height": 1385,
+      "mode": "RGBA",
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "c01b5e5568eecda639e6eb91f142329f0c04fcde488817198f79100758ff4be7",
+      "sourceMatches": true,
+      "previousRuntimePath": "assets/resources/texture/mountain-ui/shop-display.png",
+      "status": "retired-from-runtime",
+      "reason": "User requested removal of the wooden cabinet; retained only as a historical source asset."
+    },
+    {
+      "key": "journal-book",
+      "source": "C:/Users/Administrator/.codex/generated_images/01a1000e-b032-75a3-8e53-847a27ea5d8c/exec-f0d52635-afca-41bd-8512-30289e4a7e10.png",
+      "path": "assets/resources/texture/mountain-ui/journal-book.png",
+      "prompt": "An isolated open blank field-guide book, transparent background PNG. Front view from directly above. Two tall ivory pages, dark forest-green cover, visible layered page edges and subtle middle binding. The whole open book is portrait shaped, width 0.88 times its height. Warm natural materials with restrained realistic detail, premium mobile game prop. Flat blank cream paper, no writing or illustrations. Entire book visible and almost fills the canvas. Transparent background.",
+      "width": 1176,
+      "height": 1337,
+      "mode": "RGBA",
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "917090a0edb48083900f09eaadb0b951f5e24306f2624a537bd6c22b9ab1a3e6",
+      "sourceMatches": true
+    }
+  ]
+}

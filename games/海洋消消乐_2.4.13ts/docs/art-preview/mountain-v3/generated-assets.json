@@ -1,0 +1,232 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-26",
+  "purpose": "Cocos runtime mountain UI asset provenance and limited original mushroom preservation audit",
+  "hashAlgorithm": "SHA-256",
+  "scope": {
+    "runtimeImages": 7,
+    "preservedMushroomPngs": 4,
+    "excluded": "Other game assets, metadata, species information, gameplay behavior, browser validation and device acceptance"
+  },
+  "assets": [
+    {
+      "key": "loading-mountain",
+      "path": "assets/resources/texture/mountain-ui/loading-mountain.png",
+      "width": 941,
+      "height": 1672,
+      "bytes": 2641049,
+      "sha256": "a76973aeb6d5638d8f640822071ac360783ce799d8324c4296ff51164c5226a7",
+      "source": {
+        "kind": "built-in image_gen",
+        "originalFile": "C:/Users/Administrator/.codex/generated_images/01a1000e-b032-75a3-8e53-847a27ea5d8c/exec-58c26f39-549f-40bd-bde0-96c81913e50b.png",
+        "originalSha256": "a76973aeb6d5638d8f640822071ac360783ce799d8324c4296ff51164c5226a7",
+        "unchangedFromOriginal": true,
+        "designCopy": "docs/art-preview/mountain-v2/loading-mountain.png",
+        "designCopySha256": "a76973aeb6d5638d8f640822071ac360783ce799d8324c4296ff51164c5226a7",
+        "unchangedFromDesignCopy": true
+      },
+      "generation": {
+        "date": "2026-10-24",
+        "prompt": "Use case: photorealistic-natural. Create a high-quality original portrait 9:16 background image for a mobile mushroom match-three game, designed for actual interface compositing. Art direction: believable Chinese subtropical mountain woodland, finely observed natural surfaces, photographic realism softened with atmospheric depth and intentional art direction, sophisticated and welcoming. Restrained natural palette, soft upper-left daylight, no neon, no glossy plastic, no fantasy glow. No interface, no text, no logos, no border, no phone device, no human figures, no buildings, no collectibles arranged in a grid. Full bleed portrait image. This is the LOADING hero background. A still intimate forest scene after dawn: softly layered slender pine trunks recede into luminous warm ivory mist in the upper half; fern fronds and a mossy fallen wood edge frame the bottom two corners. In the lower-middle foreground, a small naturally growing group of realistic chestnut-brown and ochre mushrooms, believable cap shapes and stalks, modest in number, with scattered pine needles and one small pine cone on damp reddish-brown earth. Mushrooms are environmental illustration only, not designed game pieces. The focal nature vignette sits from 60% to 79% image height. Leave the upper central 22%-50% calm, light sage and warm mist with very low detail for later title placement. Leave the bottom 12% dark and quiet for a loading bar. Fine leaf texture only near outer edges. Natural exposure, gentle highlights, no harsh sun disk, no strong path or road, no giant magical mushrooms. Beautiful coherent art, not stock photography collage.",
+        "promptSource": "docs/art-preview/mountain-v2/generation-prompts.json",
+        "promptStatus": "recorded"
+      }
+    },
+    {
+      "key": "home-mountain",
+      "path": "assets/resources/texture/mountain-ui/home-mountain.png",
+      "width": 941,
+      "height": 1672,
+      "bytes": 2052306,
+      "sha256": "da0d39eeb645cb7846c2ca0011f66de88ac8f80e3ba3ffe6f9c77c7ebfe038a0",
+      "source": {
+        "kind": "built-in image_gen",
+        "originalFile": "C:/Users/Administrator/.codex/generated_images/01a1000e-b032-75a3-8e53-847a27ea5d8c/exec-fa618890-c4bc-4569-be7e-0ae8dd1d6a98.png",
+        "originalSha256": "da0d39eeb645cb7846c2ca0011f66de88ac8f80e3ba3ffe6f9c77c7ebfe038a0",
+        "unchangedFromOriginal": true,
+        "designCopy": "docs/art-preview/mountain-v2/home-mountain.png",
+        "designCopySha256": "da0d39eeb645cb7846c2ca0011f66de88ac8f80e3ba3ffe6f9c77c7ebfe038a0",
+        "unchangedFromDesignCopy": true
+      },
+      "generation": {
+        "date": "2026-10-24",
+        "prompt": "Use case: photorealistic-natural. Create a high-quality original portrait 9:16 background image for a mobile mushroom match-three game, designed for actual interface compositing. Art direction: believable Chinese subtropical mountain woodland, finely observed natural surfaces, photographic realism softened with atmospheric depth and intentional art direction, sophisticated and welcoming. Restrained natural palette, soft upper-left daylight, no neon, no glossy plastic, no fantasy glow. No interface, no text, no logos, no border, no phone device, no human figures, no buildings, no collectibles arranged in a grid. Full bleed portrait image. This is the HOME LEVEL LIST background, matching the same dawn mountain forest art family. Design it as an unusually calm backdrop with a spacious vertical central field, not a busy scenic painting. Softly blurred pine trunks and pale warm sage atmospheric haze; a barely visible distant mountain forest depth in the upper third. A fern and a few pine needles appear only in the extreme lower-left margin, a small moss-covered red earth bank with one pine cone only at extreme lower-right. Center 80% of width from 15% to 86% of height must be remarkably quiet, medium-light warm sage and fogged stone tones, with no sharp branch, no large flower, no mushroom cluster, no trail, no river, no bright sun. This calm uninterrupted vertical field will receive a scrolling level list. Top 13% and bottom 12% are subdued for permanent status and navigation bars. The edges can retain realistic botanical material but must not form a thick frame. The image should feel softly luminous, fresh and elegant, not dark gloomy wilderness.",
+        "promptSource": "docs/art-preview/mountain-v2/generation-prompts.json",
+        "promptStatus": "recorded"
+      }
+    },
+    {
+      "key": "game-pine",
+      "path": "assets/resources/texture/mountain-ui/game-pine.png",
+      "width": 941,
+      "height": 1672,
+      "bytes": 2042064,
+      "sha256": "4e4d7d155c202cfcf1fabbd03b5e87c0bf14ce0499a1ccb3204cf7210b75b682",
+      "source": {
+        "kind": "built-in image_gen",
+        "originalFile": "C:/Users/Administrator/.codex/generated_images/01a1000e-b032-75a3-8e53-847a27ea5d8c/exec-db303adb-69f9-4dfc-a189-5c3989556c3f.png",
+        "originalSha256": "4e4d7d155c202cfcf1fabbd03b5e87c0bf14ce0499a1ccb3204cf7210b75b682",
+        "unchangedFromOriginal": true,
+        "designCopy": "docs/art-preview/mountain-v2/game-pine.png",
+        "designCopySha256": "4e4d7d155c202cfcf1fabbd03b5e87c0bf14ce0499a1ccb3204cf7210b75b682",
+        "unchangedFromDesignCopy": true
+      },
+      "generation": {
+        "date": "2026-10-24",
+        "prompt": "Use case: photorealistic-natural. Create a high-quality original portrait 9:16 background image for a mobile mushroom match-three game, designed for actual interface compositing. Art direction: believable Chinese subtropical mountain woodland, finely observed natural surfaces, photographic realism softened with atmospheric depth and intentional art direction, sophisticated and welcoming. Restrained natural palette, soft upper-left daylight, no neon, no glossy plastic, no fantasy glow. No interface, no text, no logos, no border, no phone device, no human figures, no buildings, no collectibles arranged in a grid. Full bleed portrait image. This is a GAMEPLAY background variant called pine woodland morning. Photographic forest-floor viewpoint with soft distant pine trunks at the top edges, muted sage-green atmospheric depth. Realistic small pine needles, a single pine cone, a fern frond and velvety moss at the very bottom corners and outermost side strips; warm wet stone and natural loam glimpsed at the edges. The central rectangle spanning x=8%-92%, y=20%-82% must be visually quiet: gently blurred, low-contrast medium sage-gray with no sharp trunks, objects, stones, branches or bright light patches. It will sit BEHIND an opaque match-three board, so composition must reserve the middle rather than place the main subject there. Top 18% similarly has soft even tones for HUD. Bottom 14% calm darker moss tones for tools. Natural macro surface detail at edge only, elegant lightness. Absolutely no game board, no grid, no UI, no placeholder panel.",
+        "promptSource": "docs/art-preview/mountain-v2/generation-prompts.json",
+        "promptStatus": "recorded"
+      }
+    },
+    {
+      "key": "game-rain",
+      "path": "assets/resources/texture/mountain-ui/game-rain.png",
+      "width": 941,
+      "height": 1672,
+      "bytes": 1980846,
+      "sha256": "70422d8564ca9983bdb7437b441b361bac5bfbf931a18a79c368a68f123741f1",
+      "source": {
+        "kind": "built-in image_gen",
+        "originalFile": "C:/Users/Administrator/.codex/generated_images/01a1000e-b032-75a3-8e53-847a27ea5d8c/exec-10b8bf4e-3d96-49bd-834c-9f91bc4b8e9e.png",
+        "originalSha256": "70422d8564ca9983bdb7437b441b361bac5bfbf931a18a79c368a68f123741f1",
+        "unchangedFromOriginal": true,
+        "designCopy": "docs/art-preview/mountain-v2/game-rain.png",
+        "designCopySha256": "70422d8564ca9983bdb7437b441b361bac5bfbf931a18a79c368a68f123741f1",
+        "unchangedFromDesignCopy": true
+      },
+      "generation": {
+        "date": "2026-10-24",
+        "prompt": "Use case: photorealistic-natural. Create a high-quality original portrait 9:16 background image for a mobile mushroom match-three game, designed for actual interface compositing. Art direction: believable Chinese subtropical mountain woodland, finely observed natural surfaces, photographic realism softened with atmospheric depth and intentional art direction, sophisticated and welcoming. Restrained natural palette, soft upper-left daylight, no neon, no glossy plastic, no fantasy glow. No interface, no text, no logos, no border, no phone device, no human figures, no buildings, no collectibles arranged in a grid. Full bleed portrait image. This is a GAMEPLAY background variant called woodland after rain. Cool damp mountain forest atmosphere, soft overcast light, silvery sage and eucalyptus gray-green. Realistic wet moss on smooth slate stones and delicate fern tips only on the outermost margins; tiny water droplets near bottom corners. A very subtle distant soft canopy in upper corners, faint atmospheric haze; no falling rain streaks. Center x=8%-92%, y=20%-82% is continuous soft low-contrast cool gray-green bokeh and mist, with no sharp object, no large branch, no waterfall, no bright reflection. The central 84% width needs to support an opaque match-three board. Top 18% even tones for a HUD, bottom 14% subdued for tool controls. A single small amber fallen leaf at a lower edge provides gentle warm contrast, otherwise calm and natural. No blue fantasy palette, no bioluminescence, no crystals. Absolutely no game board, no grid, no UI, no placeholder panel.",
+        "promptSource": "docs/art-preview/mountain-v2/generation-prompts.json",
+        "promptStatus": "recorded"
+      }
+    },
+    {
+      "key": "game-red-earth",
+      "path": "assets/resources/texture/mountain-ui/game-red-earth.png",
+      "width": 940,
+      "height": 1672,
+      "bytes": 2220600,
+      "sha256": "55b2f6b013ab255fbf44e1cc961c799df65f272b68c25f6e52f6e6c17f7d1b70",
+      "source": {
+        "kind": "built-in image_gen",
+        "originalFile": "C:/Users/Administrator/.codex/generated_images/01a1000e-b032-75a3-8e53-847a27ea5d8c/exec-4275b89b-2253-4ad2-893f-a224405d5ee9.png",
+        "originalSha256": "55b2f6b013ab255fbf44e1cc961c799df65f272b68c25f6e52f6e6c17f7d1b70",
+        "unchangedFromOriginal": true,
+        "designCopy": "docs/art-preview/mountain-v2/game-red-earth.png",
+        "designCopySha256": "55b2f6b013ab255fbf44e1cc961c799df65f272b68c25f6e52f6e6c17f7d1b70",
+        "unchangedFromDesignCopy": true
+      },
+      "generation": {
+        "date": "2026-10-24",
+        "prompt": "Use case: photorealistic-natural. Create a high-quality original portrait 9:16 background image for a mobile mushroom match-three game, designed for actual interface compositing. Art direction: believable Chinese subtropical mountain woodland, finely observed natural surfaces, photographic realism softened with atmospheric depth and intentional art direction, sophisticated and welcoming. Restrained natural palette, soft upper-left daylight, no neon, no glossy plastic, no fantasy glow. No interface, no text, no logos, no border, no phone device, no human figures, no buildings, no collectibles arranged in a grid. Full bleed portrait image. This is a GAMEPLAY background variant called warm red-earth hillside. Believable mountain pine woodland at soft late afternoon, muted cinnamon-red clay and weathered warm stone along lower outer edges, dry tan pine needles, two small pine cone shapes at the extreme lower-right corner, sparse soft olive ferns at the opposite edge. The atmosphere is inviting and earthy, not a desert, not a sunset postcard. Restrained terracotta, warm taupe, soft olive. Central x=8%-92%, y=20%-82% must remain extremely quiet, smooth low-contrast warm gray-taupe atmospheric blur with no sharp needles or cones, no dramatic sunbeams or horizon. Top 18% softly misted pale warm gray forest depth to leave room for HUD, bottom 14% quiet muted reddish-brown. Keep all crisp natural material in outermost edge strips. Absolutely no game board, no grid, no UI, no placeholder panel.",
+        "promptSource": "docs/art-preview/mountain-v2/generation-prompts.json",
+        "promptStatus": "recorded"
+      }
+    },
+    {
+      "key": "title",
+      "path": "assets/resources/texture/mountain-ui/title.png",
+      "width": 2172,
+      "height": 724,
+      "bytes": 1539021,
+      "sha256": "25f62dd2c9ab1ee2156314850122411dd96881c5c09c2a90880dc07e6c1bfda6",
+      "source": {
+        "kind": "built-in image_gen",
+        "originalFile": "C:/Users/Administrator/.codex/generated_images/01a1000e-b032-75a3-8e53-847a27ea5d8c/exec-3036cab3-9c3d-4462-ba06-8e2c5959772c.png",
+        "originalSha256": "25f62dd2c9ab1ee2156314850122411dd96881c5c09c2a90880dc07e6c1bfda6",
+        "unchangedFromOriginal": true
+      },
+      "generation": {
+        "date": "2026-10-26",
+        "prompt": "Create a production-ready transparent PNG game title logo for a portrait casual match-3 game with realistic woodland mushrooms. Exact Chinese title text only: 菌子消消乐. All five characters must be correct, beautifully readable, grouped into one compact horizontal playful hand-lettered logotype with gently varied baseline, chunky warm ivory face, deep forest-green thick dimensional edges, restrained warm antique gold lip, soft contact shadows. A couple of small realistic chestnut-brown mushrooms and pine-green leaves tucked beneath the first/last character, no giant toadstools, no mascot, no tagline, no label, no frame, no UI card. This must feel like a polished charming mobile puzzle game title, tactile semi-realistic illustration, not a website font, not a corporate logo. Forest-green and amber and cream palette, tasteful subtle organic texture, no glossy electric blue plastic, no twigs through text. Wide logo centered with transparent padding, approximately 3:1 content ratio, true fully transparent background outside the logo. No checkerboard drawn. No extra text.",
+        "promptSource": "Exact image_gen prompt supplied by parent task from this session",
+        "promptStatus": "recorded"
+      }
+    },
+    {
+      "key": "icons",
+      "path": "assets/resources/texture/mountain-ui/icons.png",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 1661909,
+      "sha256": "2e6aab58cf3ce4ed063f4e1292205b32d0bf7d177aaddebb388e5f086882c62f",
+      "source": {
+        "kind": "built-in image_gen",
+        "originalFile": "C:/Users/Administrator/.codex/generated_images/01a1000e-b032-75a3-8e53-847a27ea5d8c/exec-46152e8e-71de-43e8-99da-22d607986647.png",
+        "originalSha256": "2e6aab58cf3ce4ed063f4e1292205b32d0bf7d177aaddebb388e5f086882c62f",
+        "unchangedFromOriginal": true
+      },
+      "generation": {
+        "date": "2026-10-26",
+        "prompt": "Create one production game UI sprite atlas on a genuinely transparent background. Square canvas, exactly NINE isolated full-color solid objects, precisely arranged in an evenly spaced 3 columns by 3 rows grid. Each object centered in its equal square cell, generous 15 percent empty padding inside every cell; nothing crosses a cell boundary. No lines dividing the grid, no text or numbers, no card or circular app icon background. Semi-realistic tactile casual puzzle-game illustrations, rounded readable silhouettes, warm ivory, antique gold, pine green and warm coral accents, soft upper-left highlights, compact contact shadow. TOP ROW LEFT: chunky wooden mallet with dark green metal band, diagonal. TOP ROW CENTER: two thick curved arrows one amber and one teal revolving around three colored smooth pebbles (shuffle). TOP ROW RIGHT: bold solid teal four-direction cross-shaped clearing tool, ivory center with modest gold edge. MIDDLE ROW LEFT: thick gold coin with embossed simple star. MIDDLE ROW CENTER: dimensional warm coral heart, soft satin finish. MIDDLE ROW RIGHT: dimensional amber five-point achievement star. BOTTOM ROW LEFT: charming compact little shop stall with sage-green and cream striped awning, warm wood, closed shape. BOTTOM ROW CENTER: open thick field-guide book ivory pages, forest-green cover and one realistic brown mushroom illustration on page. BOTTOM ROW RIGHT: antique brass padlock with deep keyhole. Clear generous shape, no thin wire outlines, no electric-blue plastic, no full-scene backdrop. These are game sprites to display at 40 to 70px, prioritize recognizable visual mass. Actual transparent alpha.",
+        "promptSource": "Exact image_gen prompt supplied by parent task from this session",
+        "promptStatus": "recorded"
+      }
+    }
+  ],
+  "preservedMushrooms": [
+    {
+      "path": "assets/resources/texture/match3/objects/cells/obj0.png",
+      "width": 169,
+      "height": 173,
+      "bytes": 44391,
+      "sha256": "47e9680a72cb22cc5719c9fdf5f9d70767b2234a0a8998bf2b93df6f519a3f2c",
+      "baseline": {
+        "type": "git",
+        "revision": "f3fcaa44ebe04e405eeeff4afe94350bad09fcc6",
+        "path": "games/海洋消消乐_2.4.13ts/assets/resources/texture/match3/objects/cells/obj0.png",
+        "sha256": "47e9680a72cb22cc5719c9fdf5f9d70767b2234a0a8998bf2b93df6f519a3f2c"
+      },
+      "unchangedFromHead": true
+    },
+    {
+      "path": "assets/resources/texture/match3/objects/cells/obj1.png",
+      "width": 169,
+      "height": 192,
+      "bytes": 49172,
+      "sha256": "3d0404f9cd05e54f78615fb1b3ba438cc0d21da54ed0e0919ae2e71e259f9467",
+      "baseline": {
+        "type": "git",
+        "revision": "f3fcaa44ebe04e405eeeff4afe94350bad09fcc6",
+        "path": "games/海洋消消乐_2.4.13ts/assets/resources/texture/match3/objects/cells/obj1.png",
+        "sha256": "3d0404f9cd05e54f78615fb1b3ba438cc0d21da54ed0e0919ae2e71e259f9467"
+      },
+      "unchangedFromHead": true
+    },
+    {
+      "path": "assets/resources/texture/match3/objects/cells/obj2.png",
+      "width": 169,
+      "height": 231,
+      "bytes": 71000,
+      "sha256": "069b79ef3de0bf7a0b0575370eae33b590a34115a7bb6eae3fb075dcf6c07a1c",
+      "baseline": {
+        "type": "git",
+        "revision": "f3fcaa44ebe04e405eeeff4afe94350bad09fcc6",
+        "path": "games/海洋消消乐_2.4.13ts/assets/resources/texture/match3/objects/cells/obj2.png",
+        "sha256": "069b79ef3de0bf7a0b0575370eae33b590a34115a7bb6eae3fb075dcf6c07a1c"
+      },
+      "unchangedFromHead": true
+    },
+    {
+      "path": "assets/resources/texture/match3/objects/cells/obj3.png",
+      "width": 169,
+      "height": 221,
+      "bytes": 61631,
+      "sha256": "0a2d025ca78f7194085f72a0c4c193279b726140c0ba4d81d4c0a46bc9d814da",
+      "baseline": {
+        "type": "git",
+        "revision": "f3fcaa44ebe04e405eeeff4afe94350bad09fcc6",
+        "path": "games/海洋消消乐_2.4.13ts/assets/resources/texture/match3/objects/cells/obj3.png",
+        "sha256": "0a2d025ca78f7194085f72a0c4c193279b726140c0ba4d81d4c0a46bc9d814da"
+      },
+      "unchangedFromHead": true
+    }
+  ],
+  "verification": {
+    "originalImageMatches": 7,
+    "designBackgroundMatches": 5,
+    "mushroomHeadMatches": 4,
+    "exactPromptsRecorded": 7
+  }
+}

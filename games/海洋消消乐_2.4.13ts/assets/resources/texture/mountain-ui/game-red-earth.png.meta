@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "585c6d85-1dc1-4715-8541-51fe7680b914",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": false,
+  "width": 940,
+  "height": 1672,
+  "platformSettings": {},
+  "subMetas": {
+    "game-red-earth": {
+      "ver": "1.0.6",
+      "uuid": "854656ee-f6d2-40a1-b1ac-e3fc8f936fec",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "585c6d85-1dc1-4715-8541-51fe7680b914",
+      "trimType": "none",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 940,
+      "height": 1672,
+      "rawWidth": 940,
+      "rawHeight": 1672,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

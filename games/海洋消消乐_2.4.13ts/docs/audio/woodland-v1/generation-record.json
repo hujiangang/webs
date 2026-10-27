@@ -1,0 +1,26 @@
+[
+  {
+    "name": "home",
+    "taskId": "a6699bc8-9227-41fe-8b34-7835746eff84",
+    "prompt": "Instrumental background music for a cozy woodland mushroom match-three mobile game home screen. Warm intimate acoustic chamber folk, 84 BPM, D major with gentle pentatonic melody, soft nylon guitar arpeggios, rounded wooden marimba, airy bamboo flute phrases, subtle pizzicato strings, very light brushed shaker. Calm welcoming playful but not childish. Clear sparse arrangement leaving room for UI sounds; no vocals, no speech, no drum kit, no loud impacts, no epic build. A short consistent 8-bar repeating loop, stable dynamics, start and finish on the same chord with no intro or final flourish. Natural small-room sound, gentle stereo, soft transients.",
+    "meta": {
+      "durationSeconds": 30.772167
+    }
+  },
+  {
+    "name": "game",
+    "taskId": "a7ac6c79-f4ed-468c-a230-cf07b7d92d02",
+    "prompt": "Instrumental looping gameplay music for a realistic mushroom woodland match-three mobile puzzle. Gentle bright acoustic puzzle-game groove, 104 BPM D major pentatonic. Rounded wooden marimba and kalimba alternating a short memorable motif, light pizzicato strings, muted nylon guitar pulse, soft shakers and brushed woodblocks, very occasional breathy bamboo flute. Optimistic, nimble, focused, a little magical. Sparse midrange so match sound effects remain clear. No vocals or speech, no EDM, no orchestral climax or dramatic intro. Stable volume and tempo, repeating 8-bar sections, identical harmonic beginning and ending suitable for looping with no finale. Warm organic timbre, restrained bass, small room reverb.",
+    "meta": {
+      "durationSeconds": 30.772167
+    }
+  },
+  {
+    "name": "combo",
+    "taskId": "bf53ea1d-cf94-40b9-a0c9-cbf3965512d4",
+    "prompt": "A short satisfying match-three combo reward UI sound: three rounded wooden marimba notes ascending D F-sharp A, with one tiny warm bell sparkle and a soft leafy swish. Organic, gentle, precise, bright but not sharp, quick attack, decay within 1.3 seconds. Isolated clean sound, no voice, no background music, no ambience.",
+    "meta": {
+      "durationSeconds": 1.48
+    }
+  }
+]

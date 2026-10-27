@@ -1,0 +1,54 @@
+[
+  {
+    "key": "great",
+    "taskId": "beee06b3-5906-49cb-b7dc-3b983641aa13",
+    "original": "docs/audio/combo-voice-v1/originals/great.mp3",
+    "output": "assets/resources/sound/combo_great.mp3",
+    "model": "eleven_v3",
+    "voice": "Pip",
+    "speed": 1.08,
+    "languageCode": "en",
+    "text": "[cheerful] Great!",
+    "name": "菌子消消乐 · great 人声",
+    "rationale": "用户明确反馈 Great 等连消提示缺少人声，生成对应的四档英语称赞配音，使用统一活泼女声。"
+  },
+  {
+    "key": "awesome",
+    "taskId": "624f71f2-cc4c-4f0c-a993-d5650b864da1",
+    "original": "docs/audio/combo-voice-v1/originals/awesome.mp3",
+    "output": "assets/resources/sound/combo_awesome.mp3",
+    "model": "eleven_v3",
+    "voice": "Pip",
+    "speed": 1.08,
+    "languageCode": "en",
+    "text": "[excited] Awesome!",
+    "name": "菌子消消乐 · awesome 人声",
+    "rationale": "用户明确反馈 Great 等连消提示缺少人声，生成对应的四档英语称赞配音，使用统一活泼女声。"
+  },
+  {
+    "key": "fantastic",
+    "taskId": "0efadb6f-378a-4f5a-8f5a-41d29eb31d35",
+    "original": "docs/audio/combo-voice-v1/originals/fantastic.mp3",
+    "output": "assets/resources/sound/combo_fantastic.mp3",
+    "model": "eleven_v3",
+    "voice": "Pip",
+    "speed": 1.08,
+    "languageCode": "en",
+    "text": "[excited] Fantastic!",
+    "name": "菌子消消乐 · fantastic 人声",
+    "rationale": "用户明确反馈 Great 等连消提示缺少人声，生成对应的四档英语称赞配音，使用统一活泼女声。"
+  },
+  {
+    "key": "blossom",
+    "taskId": "41edc499-426a-469b-805d-3a901e069d5a",
+    "original": "docs/audio/combo-voice-v1/originals/blossom.mp3",
+    "output": "assets/resources/sound/combo_blossom.mp3",
+    "model": "eleven_v3",
+    "voice": "Pip",
+    "speed": 1.08,
+    "languageCode": "en",
+    "text": "[excited] Blossom!",
+    "name": "菌子消消乐 · blossom 人声",
+    "rationale": "用户明确反馈 Great 等连消提示缺少人声，生成对应的四档英语称赞配音，使用统一活泼女声。"
+  }
+]

@@ -1,0 +1,124 @@
+{
+  "voice": "Pip",
+  "spokenLanguage": "en",
+  "manualListeningReview": false,
+  "script": "tools/prepare-combo-voices.py",
+  "clips": [
+    {
+      "word": "great",
+      "spokenText": "Great!",
+      "source": "docs/audio/combo-voice-v1/originals/great.mp3",
+      "sourceSha256": "05e164698e9c600674c52e659761f2aa3d525ab4ecaf5ad989746fefd466bc87",
+      "output": "assets/resources/sound/combo_great.mp3",
+      "outputSha256": "4671a34cb4f9006fc9249c1d44ef836f5e2167b9e2360d76d9b79d80ad958ce4",
+      "edits": {
+        "method": "silence bounds with 30ms head / 80ms tail margin; 3ms / 10ms edge fades",
+        "sourceStartSeconds": 0.0,
+        "sourceEndSeconds": 1.12
+      },
+      "gainDb": 0.4200000000000017,
+      "outputLoudness": {
+        "integratedLufs": -16.32,
+        "truePeakDbtp": -3.54,
+        "loudnessRangeLu": 0.0
+      },
+      "outputMetrics": {
+        "sampleRate": 48000,
+        "channels": 2,
+        "decodedSamplesPerChannel": 53760,
+        "decodedDurationSeconds": 1.12,
+        "samplePeakDbfs": -3.5374816561180817,
+        "rmsDbfs": -23.4722719833926,
+        "clippedSampleCount": 0,
+        "finiteSamples": true
+      }
+    },
+    {
+      "word": "awesome",
+      "spokenText": "Awesome!",
+      "source": "docs/audio/combo-voice-v1/originals/awesome.mp3",
+      "sourceSha256": "972c4d043573133ebd227f5ad46a355e84929d3c58a78a3a98d79e22c65403d3",
+      "output": "assets/resources/sound/combo_awesome.mp3",
+      "outputSha256": "5531378bb4458c81c35517eb05efac41f5d8fa0485e74bb475a0ba754f0ed2b1",
+      "edits": {
+        "method": "silence bounds with 30ms head / 80ms tail margin; 3ms / 10ms edge fades",
+        "sourceStartSeconds": 0.0,
+        "sourceEndSeconds": 1.92
+      },
+      "gainDb": -2.34,
+      "outputLoudness": {
+        "integratedLufs": -16.26,
+        "truePeakDbtp": -6.93,
+        "loudnessRangeLu": 0.0
+      },
+      "outputMetrics": {
+        "sampleRate": 48000,
+        "channels": 2,
+        "decodedSamplesPerChannel": 92160,
+        "decodedDurationSeconds": 1.92,
+        "samplePeakDbfs": -6.955972010319296,
+        "rmsDbfs": -22.48348140652222,
+        "clippedSampleCount": 0,
+        "finiteSamples": true
+      }
+    },
+    {
+      "word": "fantastic",
+      "spokenText": "Fantastic!",
+      "source": "docs/audio/combo-voice-v1/originals/fantastic.mp3",
+      "sourceSha256": "a585e943f727b22db0e8492fa97f5440a71ba52fb96ed9346feb108f9212bb7d",
+      "output": "assets/resources/sound/combo_fantastic.mp3",
+      "outputSha256": "6f6f1fa9861cb23b500433ded7ec33312ec1de41172056a738df226bd3e7d745",
+      "edits": {
+        "method": "silence bounds with 30ms head / 80ms tail margin; 3ms / 10ms edge fades",
+        "sourceStartSeconds": 0.09635416666666667,
+        "sourceEndSeconds": 1.84
+      },
+      "gainDb": -1.7899999999999991,
+      "outputLoudness": {
+        "integratedLufs": -16.29,
+        "truePeakDbtp": -5.77,
+        "loudnessRangeLu": 0.0
+      },
+      "outputMetrics": {
+        "sampleRate": 48000,
+        "channels": 2,
+        "decodedSamplesPerChannel": 83695,
+        "decodedDurationSeconds": 1.7436458333333333,
+        "samplePeakDbfs": -5.7657990847616505,
+        "rmsDbfs": -22.202244215319556,
+        "clippedSampleCount": 0,
+        "finiteSamples": true
+      }
+    },
+    {
+      "word": "blossom",
+      "spokenText": "Blossom!",
+      "source": "docs/audio/combo-voice-v1/originals/blossom.mp3",
+      "sourceSha256": "d7309bbf85b7b7bcde08cfe156addcf73b0f4e7302c91439cc02b4e10ff32453",
+      "output": "assets/resources/sound/combo_blossom.mp3",
+      "outputSha256": "099426f947101e6b1a86a05533352d5ab77f6e934e15f55d159cbc8e218c3d06",
+      "edits": {
+        "method": "silence bounds with 30ms head / 80ms tail margin; 3ms / 10ms edge fades",
+        "sourceStartSeconds": 0.0,
+        "sourceEndSeconds": 1.1637291666666667
+      },
+      "gainDb": -1.08,
+      "outputLoudness": {
+        "integratedLufs": -16.26,
+        "truePeakDbtp": -7.44,
+        "loudnessRangeLu": 0.0
+      },
+      "outputMetrics": {
+        "sampleRate": 48000,
+        "channels": 2,
+        "decodedSamplesPerChannel": 55859,
+        "decodedDurationSeconds": 1.1637291666666667,
+        "samplePeakDbfs": -7.4509364539505185,
+        "rmsDbfs": -21.602995586661933,
+        "clippedSampleCount": 0,
+        "finiteSamples": true
+      }
+    }
+  ]
+}

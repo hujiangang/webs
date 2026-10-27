@@ -126,6 +126,7 @@ require('./assets/Script/Game/Match3/Skin/Match3Skin');
 require('./assets/Script/Game/Match3/View/BaseItemView');
 require('./assets/Script/Game/Match3/View/BaseView');
 require('./assets/Script/Game/Match3/View/BasicCellViewCtrl');
+require('./assets/Script/Game/Match3/View/ComboFeedback');
 require('./assets/Script/Game/Match3/View/Comp/Tuituji');
 require('./assets/Script/Game/Match3/View/EffLayerCtrl');
 require('./assets/Script/Game/Match3/View/EffectTimeline');
