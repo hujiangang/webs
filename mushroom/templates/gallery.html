@@ -1,13 +1,42 @@
 {% extends 'base.html' %}
 {% from 'components.html' import icon, mushroom_card, ads %}
-{% block title %}菌子图鉴 · {{ content.settings.name }}{% endblock %}
+{% block title %}中国野生菌图鉴 · {{ content.settings.name }}{% endblock %}
 {% block main_class %}gallery-main{% endblock %}
 {% block content %}
-<section class="gallery-shell"><div class="section-heading page-heading"><div><p class="eyebrow">THE FIELD GUIDE / 中国野生菌图鉴</p><h1>读懂一朵菌，<br>看见一片森林<span>。</span></h1></div><p>记录形态、生境与识别特征。<br>让每一次观察，都多一点了解。</p></div>
-<div class="notice">{{ icon('shield') }}<p>仅供科普观察，不能作为采食依据。照片与单一外观特征无法可靠判断野生菌是否可食用。</p><a href="/safety">安全指南 ↗</a></div>
-<div class="filter-bar"><div class="filter-tabs" aria-label="图鉴分类">{% for key, label in [('all','全部菌子'),('edible','食用记载'),('inedible','不可食用'),('toxic','毒性风险')] %}<a class="filter-btn {{ 'active' if mushroom_page.category == key }}" href="/mushrooms?category={{ key }}&keyword={{ mushroom_page.keyword|urlencode }}" {% if mushroom_page.category == key %}aria-current="page"{% endif %}>{{ label }}</a>{% endfor %}</div><form class="site-search" action="/mushrooms" method="get" role="search"><input type="hidden" name="category" value="{{ mushroom_page.category }}"><span class="search-icon" aria-hidden="true"></span><input class="search-input" type="search" name="keyword" value="{{ mushroom_page.keyword }}" placeholder="搜索菌子名称 / 拉丁名" aria-label="搜索菌子名称或拉丁名"><button type="submit" class="search-submit" aria-label="搜索">↵</button></form></div>
-<div class="collection-meta"><span>找到 <b>{{ mushroom_page.total_count }}</b> 份菌子档案</span><span>FIELD COLLECTION · {{ '%02d'|format(mushroom_page.page) }}</span></div>
-<div class="mushroom-grid">{% for mushroom in mushroom_page.items %}{{ mushroom_card(mushroom) }}{% else %}<div class="empty-state"><h2>还没有找到这朵菌</h2><p>试试更短的名称，或浏览全部图鉴。</p><a class="button button-dark" href="/mushrooms">查看全部</a></div>{% endfor %}</div>
-<nav class="pagination" aria-label="图鉴分页">{% if mushroom_page.page > 1 %}<a class="page-btn" href="/mushrooms?category={{ mushroom_page.category }}&page={{ mushroom_page.page - 1 }}&keyword={{ mushroom_page.keyword|urlencode }}">← 上一页</a>{% else %}<span class="page-btn disabled" aria-disabled="true">← 上一页</span>{% endif %}<span class="page-state">{{ mushroom_page.page }} / {{ mushroom_page.total_pages }}</span>{% if mushroom_page.page < mushroom_page.total_pages %}<a class="page-btn" href="/mushrooms?category={{ mushroom_page.category }}&page={{ mushroom_page.page + 1 }}&keyword={{ mushroom_page.keyword|urlencode }}">下一页 →</a>{% else %}<span class="page-btn disabled" aria-disabled="true">下一页 →</span>{% endif %}</nav>
-{{ ads(content, 'gallery') }}</section>
+<section class="gallery-shell">
+    <header class="catalog-heading">
+        <p class="eyebrow">中国大型真菌 · 物种档案</p>
+        <h1>中国野生菌图鉴</h1>
+        <p class="catalog-intro">收录中国有记录的大型真菌，查阅生长环境、识别特征、毒性与资料来源。</p>
+    </header>
+    <form class="catalog-search-form" action="/mushrooms" method="get" role="search">
+        <input type="hidden" name="category" value="{{ mushroom_page.category }}">
+        <div class="site-search">
+            <label class="catalog-sr-only" for="catalog-keyword">搜索菌子名称或拉丁名</label>
+            <span class="search-icon" aria-hidden="true"></span>
+            <input id="catalog-keyword" class="search-input" type="search" name="keyword" value="{{ mushroom_page.keyword }}" placeholder="搜索菌子名称 / 拉丁名">
+            <button type="submit" class="search-submit">搜索</button>
+        </div>
+        <div class="filter-bar">
+            <nav class="filter-tabs" aria-label="图鉴分类">
+                {% for key, label in [('all','全部菌子'),('edible','食用记载'),('inedible','不可食用'),('toxic','毒性风险')] %}
+                <a class="filter-btn {{ 'active' if mushroom_page.category == key }}" href="/mushrooms?category={{ key }}&keyword={{ mushroom_page.keyword|urlencode }}{% if mushroom_page.with_photo %}&with_photo=true{% endif %}" {% if mushroom_page.category == key %}aria-current="page"{% endif %}>{{ label }}</a>
+                {% endfor %}
+            </nav>
+            <label class="photo-filter"><input type="checkbox" name="with_photo" value="true" data-photo-filter {% if mushroom_page.with_photo %}checked{% endif %}><span>仅看有来源照片</span></label>
+        </div>
+    </form>
+    <div class="notice">{{ icon('shield') }}<p>仅供科普观察，不能作为采食依据。照片与单一外观特征无法可靠判断野生菌是否可食用。</p><a href="/safety">安全指南 ↗</a></div>
+    <div class="collection-meta"><span>找到 <b>{{ mushroom_page.total_count }}</b> 份菌子档案{% if mushroom_page.with_photo %}<span class="collection-filter-note"> · 有来源照片</span>{% endif %}</span><span>第 {{ mushroom_page.page }} / {{ mushroom_page.total_pages }} 页</span></div>
+    <div class="mushroom-grid">
+        {% for mushroom in mushroom_page.items %}{{ mushroom_card(mushroom, catalog=true) }}
+        {% else %}<div class="empty-state"><h2>没有找到符合条件的菌子</h2><p>试试更短的名称，或清除关键词与分类继续浏览。</p><a class="button button-dark" href="/mushrooms{% if mushroom_page.with_photo %}?with_photo=true{% endif %}">清除关键词与分类</a></div>{% endfor %}
+    </div>
+    <nav class="pagination" aria-label="图鉴分页">
+        {% if mushroom_page.page > 1 %}<a class="page-btn" href="/mushrooms?category={{ mushroom_page.category }}&page={{ mushroom_page.page - 1 }}&keyword={{ mushroom_page.keyword|urlencode }}{% if mushroom_page.with_photo %}&with_photo=true{% endif %}">← 上一页</a>{% else %}<span class="page-btn disabled" aria-disabled="true">← 上一页</span>{% endif %}
+        <span class="page-state">{{ mushroom_page.page }} / {{ mushroom_page.total_pages }}</span>
+        {% if mushroom_page.page < mushroom_page.total_pages %}<a class="page-btn" href="/mushrooms?category={{ mushroom_page.category }}&page={{ mushroom_page.page + 1 }}&keyword={{ mushroom_page.keyword|urlencode }}{% if mushroom_page.with_photo %}&with_photo=true{% endif %}">下一页 →</a>{% else %}<span class="page-btn disabled" aria-disabled="true">下一页 →</span>{% endif %}
+    </nav>
+    {{ ads(content, 'gallery') }}
+</section>
 {% endblock %}

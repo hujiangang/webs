@@ -1,64 +1,78 @@
 {% extends "base.html" %}
-
-{% block title %}{{ mushroom.name }} - 菌子图鉴{% endblock %}
+{% from 'components.html' import icon %}
+{% block title %}{{ mushroom.name }} - 中国野生菌图鉴{% endblock %}
 {% block main_class %}detail-main{% endblock %}
-
 {% block content %}
-    <section class="detail-shell">
-        <a class="back-link" href="/mushrooms">返回图鉴</a>
-        <h1 class="detail-title">{{ mushroom.name }}</h1>
-        <p class="detail-latin">{{ mushroom.latin_name }}</p>
-        <div class="detail-tags">
-            {% if mushroom.edible %}
-                <span class="detail-tag">{{ mushroom.edible }}</span>
-            {% endif %}
-            {% if mushroom.toxicity %}
-                <span class="detail-tag">{{ mushroom.toxicity }}</span>
-            {% endif %}
-        </div>
-
-        <div class="notice"><p>图鉴中的毒性与食用记录来自现有资料，不能据此判断采集的菌子可食用。物种鉴定请咨询专业人员。</p><a href="/safety">安全指南 ↗</a></div>
-
-        <nav class="detail-nav" aria-label="详情导航">
-            {% for field in mushroom.detail_fields %}
-                <a class="detail-nav-link" href="#section-field-{{ loop.index }}">
-                    <span class="detail-nav-dot" aria-hidden="true"></span>
-                    {{ field.label }}
-                </a>
-            {% endfor %}
-        </nav>
-
-        <div class="detail-gallery">
-            {% for gallery_image in mushroom.gallery_images %}
-                <button type="button" class="detail-gallery-card" data-viewer-open aria-label="查看{{ mushroom.name }}图片{{ loop.index }}原图">
-                    <img class="detail-gallery-image" src="{{ gallery_image }}" alt="{{ mushroom.name }}图片{{ loop.index }}">
-                </button>
-            {% endfor %}
-        </div>
-
-        <div class="detail-content">
-            {% for field in mushroom.detail_fields %}
-                <section class="detail-section detail-anchor" id="section-field-{{ loop.index }}">
-                    <h2>{{ field.label }}</h2>
-                    <p class="detail-description">{{ field.value or '暂无数据' }}</p>
-                </section>
-            {% endfor %}
-
-            <section class="detail-section">
-                <h2>安全提示</h2>
-                <p class="detail-description">不采、不买、不吃不认识或来源不明的野生菌。部分毒素耐热，煮熟不能保证安全；不要使用银针、蒜、虫咬痕迹等民间方法辨毒。食用后出现不适，尽快就医或拨打 120，并说明野生菌食用史。</p>
-            </section>
-        </div>
-    </section>
-
-    {# 原图预览弹层：点击图片后在当前页全屏展示，双图交替实现滑动切换 #}
-    <div class="image-viewer" data-viewer hidden aria-modal="true" role="dialog">
-        <button type="button" class="image-viewer-close" data-viewer-close aria-label="关闭预览">×</button>
-        <button type="button" class="image-viewer-btn image-viewer-prev" data-viewer-prev aria-label="上一张"></button>
-        <div class="image-viewer-stage">
-            <img class="image-viewer-image" data-viewer-image alt="">
-            <img class="image-viewer-image image-viewer-back" data-viewer-back alt="" aria-hidden="true">
-        </div>
-        <button type="button" class="image-viewer-btn image-viewer-next" data-viewer-next aria-label="下一张"></button>
+<section class="detail-shell">
+    <a class="back-link" href="/mushrooms">← 返回图鉴</a>
+    <header class="detail-heading">
+        <div><h1 class="detail-title">{{ mushroom.name }}</h1><p class="detail-latin">{{ mushroom.latin_name }}</p></div>
+        <span class="risk-badge {{ mushroom.risk_class }}">{{ mushroom.risk_label }}</span>
+    </header>
+    <div class="notice">{{ icon('shield') }}<p>毒性与食用记录不能作为采食依据，照片不能代替物种鉴定。</p><a href="/safety">安全指南 ↗</a></div>
+    {% set legacy_images = mushroom.gallery_images | reject('in', mushroom.image_credits) | list %}
+    <div class="detail-gallery" aria-label="有来源的物种照片">
+        {% for gallery_image in mushroom.gallery_images if gallery_image in mushroom.image_credits %}
+        <figure class="detail-gallery-figure">
+            <button type="button" class="detail-gallery-card" data-viewer-open aria-label="放大查看{{ mushroom.name }}图片{{ loop.index }}">
+                <img class="detail-gallery-image" src="{{ gallery_image }}" alt="{{ mushroom.name }}图片{{ loop.index }}" {% if loop.first %}fetchpriority="high"{% else %}loading="lazy"{% endif %}>
+                <span class="detail-photo-zoom">{{ icon('search') }} 放大查看</span>
+            </button>
+            {% set credit = mushroom.image_credits.get(gallery_image) %}
+            {% if credit %}
+            <figcaption class="detail-image-credit">
+                <div class="credit-primary"><span>作者：{{ credit.author }}</span><span><a href="{{ credit.source_url }}" target="_blank" rel="noopener noreferrer">查看来源 ↗</a> · <a href="{{ credit.license_url }}" target="_blank" rel="noopener noreferrer">{{ credit.license }}</a></span></div>
+                {% if credit.reference_only %}<p class="credit-usage-note">辅助照片{% if credit.usage_note %}：{{ credit.usage_note }}{% endif %}</p>{% endif %}
+                <details class="credit-details"><summary>拍摄地点与图片核查说明</summary><div>
+                    <p>来源：{{ credit.source_title }}</p><p>{{ credit.location_label }}</p>
+                    {% if credit.usage_note and not credit.reference_only %}<p>照片用途：{{ credit.usage_note }}</p>{% endif %}
+                    <p>{{ credit.identification_status }}</p>{% if credit.changes %}<p>{{ credit.changes }}</p>{% endif %}
+                </div></details>
+            </figcaption>
+            {% else %}<figcaption class="detail-image-credit credit-pending">现有图片 · 来源与许可待核查</figcaption>{% endif %}
+        </figure>
+        {% else %}<div class="detail-image-empty">{{ icon('mushroom') }}<h2>图片待补</h2><p>该档案暂无有来源的照片，可继续查阅下方文字资料。{% if legacy_images %}<br>历史图片尚未核对来源与物种，不作为识别依据。{% endif %}</p></div>{% endfor %}
     </div>
+    {% if legacy_images %}
+    <details class="detail-legacy-images">
+        <summary>历史图片（来源与物种待核） <span>{{ legacy_images|length }} 张</span></summary>
+        <p>以下图片来自原有图库，来源、许可及物种对应关系尚未核实，不作为该物种的识别依据。</p>
+        <div class="detail-gallery" aria-label="来源与物种待核的历史图片">
+            {% for gallery_image in legacy_images %}
+            <figure class="detail-gallery-figure">
+                <a class="detail-gallery-card" href="{{ gallery_image }}" target="_blank" rel="noopener noreferrer" aria-label="在新窗口打开历史图片{{ loop.index }}，来源与物种待核">
+                    <img class="detail-gallery-image" src="{{ gallery_image }}" alt="历史图片{{ loop.index }}，来源与物种待核，不作为识别依据" loading="lazy">
+                    <span class="detail-photo-zoom">打开历史图片 ↗</span>
+                </a>
+                <figcaption class="detail-image-credit credit-pending">历史图片 · 来源与物种待核 · 不作为识别依据</figcaption>
+            </figure>
+            {% endfor %}
+        </div>
+    </details>
+    {% endif %}
+    <nav class="detail-nav" aria-label="详情导航">
+        {% for group in mushroom.detail_sections %}<a class="detail-nav-link" href="#section-{{ group.id }}" data-detail-section><span class="detail-nav-dot" aria-hidden="true"></span>{{ group.title }}</a>{% endfor %}
+    </nav>
+    <div class="detail-content">
+        {% for group in mushroom.detail_sections %}
+        <details class="detail-section detail-anchor detail-group" id="section-{{ group.id }}" {% if group.expanded %}open{% endif %}>
+            <summary><h2>{{ group.title }}</h2><span class="detail-group-toggle" aria-hidden="true"></span></summary>
+            <dl class="detail-fields">
+                {% for field in group.fields %}<div class="detail-field"><dt>{{ field.label }}</dt><dd>{% if field.label in ['资料来源', '价格来源'] %}{{ (field.value or '暂无数据') | replace('；', '\n') | urlize(target='_blank', rel='noopener noreferrer') }}{% else %}{{ field.value or '暂无数据' }}{% endif %}</dd></div>{% endfor %}
+            </dl>
+        </details>
+        {% else %}
+        {# 分组资料未生成时仍保留原有字段，避免文字档案为空。 #}
+        <section class="detail-section"><h2>物种资料</h2><dl class="detail-fields">{% for field in mushroom.detail_fields %}<div class="detail-field"><dt>{{ field.label }}</dt><dd>{{ field.value or '暂无数据' }}</dd></div>{% endfor %}</dl></section>
+        {% endfor %}
+        <section class="detail-section detail-safety"><h2>安全提示</h2><p class="detail-description">不采、不买、不吃不认识或来源不明的野生菌。部分毒素耐热，煮熟不能保证安全；不要使用银针、蒜、虫咬痕迹等民间方法辨毒。食用后出现不适，尽快就医或拨打 120，并说明野生菌食用史。</p></section>
+    </div>
+</section>
+{# 原图预览弹层：保留既有双图切换与关闭操作。 #}
+<div class="image-viewer" data-viewer hidden aria-modal="true" role="dialog" aria-label="{{ mushroom.name }}图片预览">
+    <button type="button" class="image-viewer-close" data-viewer-close aria-label="关闭预览">×</button>
+    <button type="button" class="image-viewer-btn image-viewer-prev" data-viewer-prev aria-label="上一张"></button>
+    <div class="image-viewer-stage"><img class="image-viewer-image" data-viewer-image alt=""><img class="image-viewer-image image-viewer-back" data-viewer-back alt="" aria-hidden="true"></div>
+    <button type="button" class="image-viewer-btn image-viewer-next" data-viewer-next aria-label="下一张"></button>
+</div>
 {% endblock %}

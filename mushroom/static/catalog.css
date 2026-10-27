@@ -1,0 +1,169 @@
+/* 图鉴与详情专用：提高检索和资料阅读密度，不改变首页或小游戏。 */
+.gallery-main,
+.detail-main { padding:26px 0 54px; }
+.gallery-main .gallery-shell,
+.detail-main .detail-shell { width:min(1280px,calc(100% - 64px)); }
+.gallery-main .catalog-heading { margin-bottom:20px; }
+.gallery-main .catalog-heading .eyebrow { margin:0 0 7px; color:#526b50; font-size:12px; letter-spacing:1px; }
+.gallery-main .catalog-heading h1 { margin:0; color:var(--forest); font-size:34px; font-weight:650; line-height:1.3; letter-spacing:-.7px; }
+.gallery-main .catalog-intro { margin:9px 0 0; color:#536657; font-size:14px; line-height:1.7; }
+.gallery-main .catalog-search-form { margin:0; }
+.gallery-main .site-search { display:block; width:100%; max-width:760px; margin:0; }
+.gallery-main .search-input { height:48px; border-color:#9eafa0; border-radius:7px; padding:0 90px 0 44px; background:#fff; font-size:16px; }
+.gallery-main .search-input::placeholder { color:#69786a; }
+.gallery-main .search-icon { top:16px; left:17px; }
+.gallery-main .search-submit { top:5px; right:5px; height:38px; padding:0 22px; border-radius:4px; background:var(--forest); color:#fff; font-size:14px; }
+.gallery-main .filter-bar { justify-content:space-between; flex-wrap:wrap; gap:12px; margin:14px 0; padding:0; border:0; }
+.gallery-main .filter-tabs { width:auto; gap:7px; flex-wrap:wrap; justify-content:flex-start; }
+.gallery-main .filter-btn { min-height:38px; padding:9px 15px; background:#edf0e6; color:#3b5540; font-size:13px; line-height:20px; font-weight:600; }
+.gallery-main .filter-btn.active,
+.gallery-main .filter-btn:hover { background:var(--forest); color:#fff; }
+.gallery-main .photo-filter { display:inline-flex; align-items:center; gap:8px; min-height:38px; color:#314f3c; font-size:14px; cursor:pointer; }
+.gallery-main .photo-filter input { width:18px; height:18px; margin:0; accent-color:var(--forest); cursor:pointer; }
+.gallery-main .catalog-sr-only { position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip-path:inset(50%); white-space:nowrap; }
+.gallery-main .notice,
+.detail-main .notice { padding:11px 14px; gap:10px; font-size:13px; }
+.gallery-main .notice p,
+.detail-main .notice p { color:#4d5e46; font-size:13px; line-height:1.65; }
+.gallery-main .notice a,
+.detail-main .notice a { display:inline; font-size:12px; color:#35583c; }
+.gallery-main .collection-meta { gap:12px; padding:16px 0 13px; color:#5a6b59; font-size:13px; }
+.gallery-main .collection-meta b { color:var(--forest); }
+.gallery-main .collection-meta>span:last-child { flex-shrink:0; font-size:12px; letter-spacing:0; }
+.gallery-main .mushroom-grid { grid-template-columns:repeat(4,minmax(0,1fr)); gap:18px; margin:0; }
+.gallery-main .mushroom-card { min-width:0; border-color:#d2ddce; border-radius:8px; }
+.gallery-main .mushroom-image-panel { height:auto; aspect-ratio:1.35; background:#e9ede3; }
+.gallery-main .mushroom-image { object-fit:contain; filter:none; }
+.gallery-main .mushroom-card:hover .mushroom-image { transform:none; }
+.gallery-main .mushroom-info { display:flex; flex-direction:column; align-items:flex-start; gap:11px; min-height:124px; padding:15px 16px; }
+.gallery-main .mushroom-info>div { min-width:0; width:100%; }
+.gallery-main .mushroom-name { color:#173f2e; font-size:18px; line-height:1.4; font-weight:650; overflow-wrap:anywhere; }
+.gallery-main .latin-name { margin:6px 0 0; color:#52624f; font-size:13px; line-height:1.45; white-space:normal; overflow-wrap:anywhere; }
+.gallery-main .risk-badge,
+.detail-main .risk-badge { margin-top:auto; font-size:12px; color:#385833; line-height:1.6; }
+.gallery-main .risk-badge.danger,
+.detail-main .risk-badge.danger { color:#993d24; }
+.gallery-main .risk-badge.unknown,
+.detail-main .risk-badge.unknown { color:#715d32; }
+.gallery-main .card-image-credit { right:42px; bottom:9px; left:9px; width:max-content; max-width:calc(100% - 51px); padding:4px 6px; border-radius:3px; background:#1c382cde; color:#fff; font-size:11px; line-height:1.4; white-space:normal; overflow:visible; text-overflow:clip; }
+.gallery-main .specimen-id { top:9px; left:9px; font-size:10px; }
+.gallery-main .catalog-image-empty { display:flex; height:100%; flex-direction:column; justify-content:center; align-items:center; gap:7px; color:#5d7259; background:#edf0e6; }
+.gallery-main .catalog-image-empty .icon { width:36px; height:36px; margin-bottom:2px; color:#849578; }
+.gallery-main .catalog-image-empty span { font-size:15px; }
+.gallery-main .catalog-image-empty small { font-size:12px; color:#687763; }
+.gallery-main .pagination { margin-top:28px; gap:18px; }
+.gallery-main .page-btn,
+.gallery-main .page-state { font-size:13px; }
+.gallery-main .page-btn { min-height:42px; padding:11px 16px; }
+.gallery-main .empty-state { padding:40px 20px; }
+
+/* 照片先于正文，完整展示菌体；展开的资料不限制行数。 */
+.detail-main .detail-shell>.back-link { margin-bottom:14px; font-size:13px; }
+.detail-main .detail-heading { display:flex; align-items:flex-start; justify-content:space-between; gap:18px; }
+.detail-main .detail-heading>div { min-width:0; }
+.detail-main .detail-title { font-size:36px; line-height:1.3; font-weight:650; letter-spacing:-.7px; overflow-wrap:anywhere; }
+.detail-main .detail-latin { margin:8px 0 0; font-size:17px; line-height:1.5; color:#52654f; overflow-wrap:anywhere; }
+.detail-main .detail-heading>.risk-badge { flex-shrink:0; margin:6px 0 0; padding:6px 11px; border:1px solid #d8dfce; border-radius:5px; background:#eef1e6; }
+.detail-main .detail-shell>.notice { margin:16px 0 18px; }
+.detail-main .detail-gallery { grid-template-columns:repeat(2,minmax(0,1fr)); gap:20px; align-items:start; }
+.detail-main .detail-gallery-figure:only-child { grid-column:1/-1; width:min(850px,100%); margin:0 auto; }
+.detail-main .detail-gallery-card { position:relative; display:block; width:100%; height:360px; aspect-ratio:auto; border:1px solid #d8e0d1; border-radius:8px; background:#e9ede4; }
+.detail-main .detail-gallery-image { display:block; width:100%; height:100%; object-fit:contain; }
+.detail-main .detail-photo-zoom { position:absolute; right:10px; bottom:10px; display:inline-flex; align-items:center; gap:5px; padding:6px 9px; border:1px solid #d3ddcd; border-radius:5px; background:#fffef3e8; color:#2a4936; font-size:12px; }
+.detail-main .detail-photo-zoom .icon { width:15px; height:15px; }
+.detail-main .detail-image-credit { padding:10px 1px 0; color:#4b604a; font-size:12px; line-height:1.7; }
+.detail-main .credit-primary { display:flex; flex-wrap:wrap; gap:4px 15px; justify-content:space-between; }
+.detail-main .detail-image-credit span { display:inline; margin:0; }
+.detail-main .detail-image-credit a { color:#2e5a3c; }
+.detail-main .credit-details { margin-top:5px; }
+.detail-main .credit-details summary { width:fit-content; cursor:pointer; color:#4b6147; }
+.detail-main .credit-details>div { margin-top:8px; padding:10px 12px; background:#edf0e6; border-radius:5px; }
+.detail-main .credit-details p { margin:0 0 7px; white-space:pre-line; overflow-wrap:anywhere; }
+.detail-main .credit-details p:last-child { margin:0; }
+.detail-main .credit-usage-note { margin:6px 0 0; color:#70572e; white-space:pre-line; }
+.detail-main .credit-pending { color:#715d32; }
+.detail-main .detail-legacy-images { margin:20px 0 0; padding:14px 16px; border:1px solid #dcd5c1; border-radius:7px; background:#f3f0e6; color:#665836; }
+.detail-main .detail-legacy-images>summary { cursor:pointer; font-size:14px; line-height:1.6; font-weight:600; }
+.detail-main .detail-legacy-images>summary span { margin-left:8px; font-size:12px; font-weight:400; }
+.detail-main .detail-legacy-images>p { margin:12px 0 16px; font-size:13px; line-height:1.8; }
+.detail-main .detail-legacy-images .detail-gallery-card { height:240px; }
+.detail-main .detail-image-empty { grid-column:1/-1; display:flex; min-height:220px; flex-direction:column; align-items:center; justify-content:center; padding:24px; border:1px dashed #bfcdb7; border-radius:8px; background:#edf0e6; color:#53684c; text-align:center; }
+.detail-main .detail-image-empty .icon { width:42px; height:42px; color:#849578; }
+.detail-main .detail-image-empty h2 { margin:12px 0 8px; font-size:20px; }
+.detail-main .detail-image-empty p { margin:0; font-size:14px; line-height:1.7; }
+.detail-main .detail-nav { flex-wrap:wrap; gap:8px; margin:24px 0 16px; overflow:visible; }
+.detail-main .detail-nav-link { padding:10px 14px; color:#3e5b3c; background:#eef1e7; font-size:13px; }
+.detail-main .detail-nav-link:hover { color:#fff; background:var(--forest); }
+.detail-main .detail-content { display:block; margin-top:0; }
+.detail-main .detail-section { margin-bottom:14px; padding:0; border:1px solid #d8e0d2; border-radius:8px; background:#fff; }
+.detail-main .detail-anchor { scroll-margin-top:110px; }
+.detail-main .detail-group>summary { display:flex; align-items:center; justify-content:space-between; gap:16px; padding:18px 22px; list-style:none; cursor:pointer; }
+.detail-main .detail-group>summary::-webkit-details-marker { display:none; }
+.detail-main .detail-section h2 { margin:0; color:#244934; font-size:19px; line-height:1.5; font-weight:650; }
+.detail-main .detail-group-toggle { flex-shrink:0; width:9px; height:9px; margin-right:4px; border-right:1.5px solid #486242; border-bottom:1.5px solid #486242; transform:rotate(45deg); }
+.detail-main .detail-group[open] .detail-group-toggle { transform:rotate(225deg); }
+.detail-main .detail-fields { margin:0; padding:0 22px 7px; }
+.detail-main .detail-field { display:grid; grid-template-columns:150px minmax(0,1fr); gap:20px; padding:15px 0; border-top:1px solid #e7ebe2; }
+.detail-main .detail-field dt { color:#3e5d40; font-size:14px; font-weight:600; line-height:1.9; }
+.detail-main .detail-field dd { margin:0; color:#354b3b; font-size:15px; line-height:1.9; white-space:pre-line; overflow-wrap:anywhere; }
+.detail-main .detail-field dd a { color:#2e5a3c; text-decoration:underline; text-underline-offset:3px; }
+.detail-main .detail-section:not(.detail-group) { padding:20px 22px; }
+.detail-main .detail-section:not(.detail-group) .detail-fields { padding:10px 0 0; }
+.detail-main .detail-section.detail-safety { background:#f3efe2; }
+.detail-main .detail-description { margin-top:10px; color:#5a583e; font-size:14px; line-height:1.9; }
+.detail-main summary:focus-visible { outline:3px solid #6a9853; outline-offset:3px; border-radius:5px; }
+
+@media (max-width:1050px) {
+    .gallery-main .gallery-shell,
+    .detail-main .detail-shell { width:calc(100% - 48px); }
+    .gallery-main .mushroom-grid { grid-template-columns:repeat(3,minmax(0,1fr)); }
+    .detail-main .detail-gallery-card { height:320px; }
+}
+@media (max-width:760px) {
+    .gallery-main,
+    .detail-main { padding-top:20px; }
+    .gallery-main .gallery-shell,
+    .detail-main .detail-shell { width:calc(100% - 32px); }
+    .gallery-main .catalog-heading { margin-bottom:17px; }
+    .gallery-main .catalog-heading h1 { font-size:29px; }
+    .gallery-main .catalog-intro { font-size:13px; line-height:1.65; }
+    .gallery-main .filter-bar { gap:7px; margin:12px 0; }
+    .gallery-main .filter-tabs { gap:5px; }
+    .gallery-main .filter-btn { padding:9px 12px; }
+    .gallery-main .photo-filter { min-height:33px; }
+    .gallery-main .notice,
+    .detail-main .notice { flex-wrap:wrap; gap:6px 9px; padding:10px 12px; }
+    .gallery-main .notice p,
+    .detail-main .notice p { flex-basis:calc(100% - 30px); font-size:12px; }
+    .gallery-main .notice a,
+    .detail-main .notice a { margin-left:28px; }
+    .gallery-main .collection-meta { padding:14px 0 11px; font-size:12px; }
+    .gallery-main .collection-filter-note { display:none; }
+    .gallery-main .mushroom-grid { grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px; }
+    .gallery-main .mushroom-image-panel { height:auto; aspect-ratio:1.08; }
+    .gallery-main .mushroom-info { padding:12px; min-height:128px; gap:10px; }
+    .gallery-main .mushroom-name { font-size:18px; }
+    .gallery-main .latin-name { font-size:12px; }
+    .gallery-main .card-image-credit { font-size:10px; padding:3px 5px; right:8px; max-width:calc(100% - 16px); }
+    .gallery-main .card-open { display:none; }
+    .gallery-main .specimen-id { font-size:9px; padding:4px 5px; }
+    .detail-main .detail-heading { flex-direction:column; gap:10px; }
+    .detail-main .detail-title { font-size:30px; }
+    .detail-main .detail-latin { margin-top:6px; font-size:16px; }
+    .detail-main .detail-heading>.risk-badge { margin:0; padding:4px 9px; }
+    .detail-main .detail-shell>.notice { margin:14px 0; }
+    .detail-main .detail-gallery { grid-template-columns:minmax(0,1fr); gap:20px; }
+    .detail-main .detail-gallery-card { height:310px; }
+    .detail-main .detail-nav { gap:7px; margin-top:20px; }
+    .detail-main .detail-nav-link { padding:9px 11px; font-size:13px; }
+    .detail-main .detail-group>summary { padding:16px; }
+    .detail-main .detail-fields { padding:0 16px 4px; }
+    .detail-main .detail-field { grid-template-columns:minmax(0,1fr); gap:5px; padding:13px 0; }
+    .detail-main .detail-field dd { font-size:14px; line-height:1.85; }
+    .detail-main .detail-section:not(.detail-group) { padding:16px; }
+    .detail-main .detail-anchor { scroll-margin-top:92px; }
+}
+@media (prefers-reduced-motion:reduce) {
+    .gallery-main .mushroom-card { transition:none; }
+    .gallery-main .mushroom-card:hover { transform:none; }
+}

@@ -13,9 +13,16 @@
 {% endif %}</svg>
 {%- endmacro %}
 
-{% macro mushroom_card(mushroom) %}
+{% macro mushroom_card(mushroom, catalog=false) %}
 <a class="mushroom-card" href="/mushrooms/{{ mushroom.id }}">
-    <div class="mushroom-image-panel"><img class="mushroom-image" src="{{ mushroom.image_url }}" alt="{{ mushroom.name }}" loading="lazy"><span class="specimen-id">NO. {{ '%03d'|format(mushroom.id|int) }}</span><span class="card-open">{{ icon('diagonal') }}</span></div>
+    <div class="mushroom-image-panel">
+        {% if catalog and (not mushroom.image_url or mushroom.image_url == '/static/images/image-fallback.svg') %}
+        <div class="catalog-image-empty">{{ icon('mushroom') }}<span>图片待补</span><small>可先查阅文字资料</small></div>
+        {% elif catalog and mushroom.image_url not in mushroom.image_credits %}
+        <div class="catalog-image-empty catalog-image-pending">{{ icon('mushroom') }}<span>照片待核</span><small>原图尚未核对来源</small></div>
+        {% else %}<img class="mushroom-image{% if mushroom.image_url in mushroom.image_credits %} source-image{% endif %}" src="{{ mushroom.image_url }}" alt="{{ mushroom.name }}" loading="lazy">{% endif %}
+        <span class="specimen-id">NO. {{ '%03d'|format(mushroom.id|int) }}</span>{% if mushroom.image_url in mushroom.image_credits %}<span class="card-image-credit">{% if mushroom.image_credits[mushroom.image_url].reference_only %}辅助照片 · {% endif %}图片来源见详情</span>{% endif %}<span class="card-open">{{ icon('diagonal') }}</span>
+    </div>
     <div class="mushroom-info"><div><h3 class="mushroom-name">{{ mushroom.name }}</h3><p class="latin-name">{{ mushroom.latin_name or '物种资料' }}</p></div><span class="risk-badge {{ mushroom.risk_class }}">{{ mushroom.risk_label }}</span></div>
 </a>
 {% endmacro %}
