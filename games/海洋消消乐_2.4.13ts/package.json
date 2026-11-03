@@ -6,8 +6,10 @@
   "scripts": {
     "typecheck": "tsc --noEmit --pretty false",
     "check:architecture": "node tools/check-architecture.cjs",
+    "check:scenes": "node tools/check-scenes.cjs",
+    "check:entry-assets": "node tools/check-entry-assets.cjs",
     "test": "node --test tools/tests/*.test.cjs",
-    "check": "npm run typecheck && npm run check:architecture && npm test",
+    "check": "npm run typecheck && npm run check:architecture && npm run check:scenes && npm run check:entry-assets && npm test",
     "build:preview": "powershell -NoProfile -ExecutionPolicy Bypass -File tools/build-preview.ps1"
   },
   "devDependencies": {

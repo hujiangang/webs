@@ -1,0 +1,265 @@
+{
+  "date": "2026-11-02",
+  "scene": "assets/Scene/Match3.fire",
+  "backup": "temp/match3-hud-scene-before-20261102.zip",
+  "backupVerified": true,
+  "uuid": "8b23ff7a-18c9-4a25-b0eb-0729cddfd494",
+  "beforeBytes": 178821,
+  "afterBytes": 98228,
+  "beforeRecords": 216,
+  "afterRecords": 119,
+  "removedRecords": 97,
+  "removedNodes": [
+    {
+      "path": "Scene/Canvas/bbg",
+      "nodeId": "966sZohhlCGrsJUb9Otyrt"
+    },
+    {
+      "path": "Scene/Canvas/bg",
+      "nodeId": "235QTmZWpNTpKcD7EoM0X0"
+    },
+    {
+      "path": "Scene/Canvas/main/overHightLightNode/step",
+      "nodeId": "be2F4IVYdCVLySFxd6o/yB"
+    },
+    {
+      "path": "Scene/Canvas/main/overHightLightNode/step/stepLimtTitle",
+      "nodeId": "80mf6CrXpCgp4QwcMeIxpi"
+    },
+    {
+      "path": "Scene/Canvas/main/overHightLightNode/step/stepLimtLable",
+      "nodeId": "656X9nPPZMdpmSldHfKdgW"
+    },
+    {
+      "path": "Scene/Canvas/ui/top/bg",
+      "nodeId": "17OvS9qfJHV6HLZzVtvGYh"
+    },
+    {
+      "path": "Scene/Canvas/ui/top/Auto_record",
+      "nodeId": "f16/odUyxGrJ3+sOCvNGoH"
+    },
+    {
+      "path": "Scene/Canvas/ui/top/Auto_record/collectNode",
+      "nodeId": "6b76k07S5O5KZfD2RStPO9"
+    },
+    {
+      "path": "Scene/Canvas/ui/top/Auto_record/collectNode/role",
+      "nodeId": "7deszzVUxOEaQZ2maGnWrE"
+    },
+    {
+      "path": "Scene/Canvas/ui/top/Auto_record/collectNode/content",
+      "nodeId": "31GlH/1UlL6Ky4sBIHXBgQ"
+    },
+    {
+      "path": "Scene/Canvas/ui/top/Auto_record/ScoreProgressBar",
+      "nodeId": "4eC7h6vYpFzbFSnLrtd+87"
+    },
+    {
+      "path": "Scene/Canvas/ui/top/Auto_record/ScoreProgressBar/mask",
+      "nodeId": "b58S6Qh7pKsq+uS563NEJr"
+    },
+    {
+      "path": "Scene/Canvas/ui/top/Auto_record/ScoreProgressBar/mask/bar",
+      "nodeId": "0eky+20UdAAKl7b0GQi4NA"
+    },
+    {
+      "path": "Scene/Canvas/ui/top/Auto_record/ScoreProgressBar/star0",
+      "nodeId": "4fdt0y/1VDn5tDl9ewHwMP"
+    },
+    {
+      "path": "Scene/Canvas/ui/top/Auto_record/ScoreProgressBar/star0/progress_arrow",
+      "nodeId": "83BXUxr2NHDqVQc4YmzoaH"
+    },
+    {
+      "path": "Scene/Canvas/ui/top/Auto_record/ScoreProgressBar/star1",
+      "nodeId": "15DR1Pl7lMxZigQNwxhdq1"
+    },
+    {
+      "path": "Scene/Canvas/ui/top/Auto_record/ScoreProgressBar/star1/progress_arrow",
+      "nodeId": "c1/Ln1byJOya5uHDQkfxsb"
+    },
+    {
+      "path": "Scene/Canvas/ui/top/Auto_record/ScoreProgressBar/star2",
+      "nodeId": "b8c95IUz1CvIsR58WFhRzk"
+    },
+    {
+      "path": "Scene/Canvas/ui/top/Auto_record/ScoreProgressBar/star2/progress_arrow",
+      "nodeId": "24g+xO1L9NYZIZmFyyFCgZ"
+    },
+    {
+      "path": "Scene/Canvas/ui/top/Auto_record/ScoreProgressBar/label",
+      "nodeId": "afWOjwdS1HWafUmd8+I8vA"
+    },
+    {
+      "path": "Scene/Canvas/ui/top/Auto_record/levelLab",
+      "nodeId": "305/5yEUVCnb2d6j4ybKC0"
+    },
+    {
+      "path": "Scene/Canvas/ui/top/ScoreProgressBar",
+      "nodeId": "a9xy9HYtFCqpC6JkU90/wf"
+    },
+    {
+      "path": "Scene/Canvas/ui/top/ScoreProgressBar/star0",
+      "nodeId": "2cEWka5gJN0p/+ZvmYxjJw"
+    },
+    {
+      "path": "Scene/Canvas/ui/top/ScoreProgressBar/star1",
+      "nodeId": "30YMK0i7lJ9JxHrHdQ7q/M"
+    },
+    {
+      "path": "Scene/Canvas/ui/top/ScoreProgressBar/star2",
+      "nodeId": "f6NyXpcD1Isp2dMsMpJaPl"
+    },
+    {
+      "path": "Scene/Canvas/ui/top/ScoreProgressBar/trajectory",
+      "nodeId": "a9KMvFXbxDDYGMUUZbHsJT"
+    },
+    {
+      "path": "Scene/Canvas/ui/top/ScoreProgressBar/trajectory/1",
+      "nodeId": "edYYC6ox1A1owKfgx3Tm3Q"
+    },
+    {
+      "path": "Scene/Canvas/ui/top/ScoreProgressBar/trajectory/2",
+      "nodeId": "c0IoCcOKdMPbZ+zTrHkzsI"
+    },
+    {
+      "path": "Scene/Canvas/ui/top/ScoreProgressBar/trajectory/3",
+      "nodeId": "91LOmz4idFo6H0YM4NiMOh"
+    },
+    {
+      "path": "Scene/Canvas/ui/top/ScoreProgressBar/trajectory/4",
+      "nodeId": "63yg7SC6ZErIM9uJ7NbDoX"
+    },
+    {
+      "path": "Scene/Canvas/ui/top/ScoreProgressBar/trajectory/5",
+      "nodeId": "21/urXDyZE/JuPGKszNPGj"
+    },
+    {
+      "path": "Scene/Canvas/ui/top/ScoreProgressBar/trajectory/6",
+      "nodeId": "cbHaa3FxpMK6U+0GTW5JrC"
+    },
+    {
+      "path": "Scene/Canvas/ui/top/ScoreProgressBar/trajectory/7",
+      "nodeId": "32qOG0df5HBJed1323pyym"
+    },
+    {
+      "path": "Scene/Canvas/ui/top/ScoreProgressBar/trajectory/8",
+      "nodeId": "0dNOtilulDVKcw9wAE4LBP"
+    },
+    {
+      "path": "Scene/Canvas/ui/top/ScoreProgressBar/trajectory/9",
+      "nodeId": "558tD7i/dCyLO9YVpf7yQi"
+    },
+    {
+      "path": "Scene/Canvas/ui/top/ScoreProgressBar/trajectory/10",
+      "nodeId": "c2vock+/VOhKMW1soz3kRQ"
+    },
+    {
+      "path": "Scene/Canvas/ui/socre",
+      "nodeId": "54rb2vIz1Pw6B33WFzNHjB"
+    },
+    {
+      "path": "Scene/Canvas/ui/socre/bg",
+      "nodeId": "f4Qcv3t4RHAb1nt1OTbA8y"
+    },
+    {
+      "path": "Scene/Canvas/ui/tmpTestLabel",
+      "nodeId": "87hxRwbP1G0JthfRiDOeOr"
+    },
+    {
+      "path": "Scene/Canvas/main/overHightLightNode/overCountDown",
+      "nodeId": "4cMcdaLz1G5rPkUm0sTie6"
+    },
+    {
+      "path": "Scene/Canvas/main/overHightLightNode/overCountDown/dog",
+      "nodeId": "67sHgG5b1FF71FvSfDJICH"
+    },
+    {
+      "path": "Scene/Canvas/main/overHightLightNode/overCountDown/count",
+      "nodeId": "1cnHCBOYBIgZ4a3FhTrB9u"
+    },
+    {
+      "path": "Scene/Canvas/version",
+      "nodeId": "c6HxxovipKhI8R/C3e8RUw"
+    }
+  ],
+  "removedSubtreeRoots": [
+    "Scene/Canvas/bbg",
+    "Scene/Canvas/bg",
+    "Scene/Canvas/ui/socre",
+    "Scene/Canvas/ui/tmpTestLabel",
+    "Scene/Canvas/version",
+    "Scene/Canvas/main/overHightLightNode/step",
+    "Scene/Canvas/main/overHightLightNode/overCountDown",
+    "Scene/Canvas/ui/top/bg",
+    "Scene/Canvas/ui/top/Auto_record",
+    "Scene/Canvas/ui/top/ScoreProgressBar"
+  ],
+  "removedSerializedFields": [
+    {
+      "componentType": "6c69bLGHLpD0ZesIClYcPLN",
+      "fields": [
+        "bottomBar",
+        "centerBar",
+        "dotPrefab",
+        "scoreBar",
+        "scoreNode",
+        "tmpTestPropShowLable",
+        "version"
+      ]
+    },
+    {
+      "componentType": "66365FI5kZETLe/pwz9l3ID",
+      "fields": [
+        "stepLable",
+        "currentLvLable",
+        "scoreLable",
+        "collectContent",
+        "energyProgress"
+      ]
+    },
+    {
+      "componentType": "fce55gWXklC94HtJAPn/viu",
+      "fields": [
+        "countDownNode",
+        "stepNode",
+        "stepLabel",
+        "countDownLabel"
+      ]
+    },
+    {
+      "componentType": "9517dpB0FtF360gsWHLfv7H",
+      "fields": [
+        "bg"
+      ]
+    }
+  ],
+  "runtimeBindings": [
+    {
+      "componentType": "d6ec32L2A1A2LNRw7y+WORn",
+      "field": "goal",
+      "sceneValue": null,
+      "runtimeSource": "MainUiCtrl modern target container"
+    }
+  ],
+  "retainedControllers": [
+    "MainCtrl",
+    "MainUiCtrl",
+    "InfoPanelCtrl",
+    "PropCtrl",
+    "OverHightLightCtrl",
+    "EffLayerCtrl",
+    "Match3TutorialCtrl"
+  ],
+  "retainedGameplayNodes": [
+    "Canvas/main/mask",
+    "Canvas/main/overMask",
+    "Canvas/effLayer",
+    "Canvas/Match3Tutorial"
+  ],
+  "sharedAssetsDeleted": [],
+  "beforeSha256": "d6765d2c2dd525ad70191248597ebe06089d05255e497b82e4595ef6926a4c5d",
+  "afterSha256": "d56e72a3f06e392bd0cd4c6343a91a27e37e841e424e92e0c27800fe94ae0324",
+  "metaSha256": "21391443eb551ff4905ab91b02a84118e770cd02b6d5545b55ac69ea7777e5fa",
+  "metaBytesUnchanged": true
+}

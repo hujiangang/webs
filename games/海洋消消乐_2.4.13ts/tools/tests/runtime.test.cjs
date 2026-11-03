@@ -19,39 +19,77 @@ function load(file, dependencies = {}, globals = {}) {
 }
 const { withTimeout } = load('assets/Script/Framework/Async/withTimeout.ts');
 
-test('Match3 scene keeps required HUD bindings and the prop/info controllers', () => {
+test('Match3 scene retains only controller hosts and prefab resources for the runtime HUD', () => {
   const scene=JSON.parse(fs.readFileSync(path.join(root,'assets/Scene/Match3.fire'),'utf8'));
-  const hud=scene.find(item=>item.__type__==='6c69bLGHLpD0ZesIClYcPLN');
+  const component=type=>scene.find(item=>item.__type__===type);
+  const bound=(owner,key,type)=>{
+    assert.ok(owner[key] && Number.isInteger(owner[key].__id__),key+' binding is required');
+    const target=scene[owner[key].__id__];
+    assert.ok(target,key+' must reference an existing scene record');
+    assert.equal(target.__type__,type,key+' must reference the correct component type');
+    return target;
+  };
+  const hud=component('6c69bLGHLpD0ZesIClYcPLN');
   assert.ok(hud,'MainUiCtrl must be attached');
-  for(const [key,type] of Object.entries({topBar:'cc.Node',bottomBar:'cc.Node',propBar:'cc.Node',centerBar:'cc.Node',scoreBar:'cc.ProgressBar',scoreNode:'cc.Node',tmpTestPropShowLable:'cc.Node',version:'cc.Label'})) {
-    assert.ok(hud[key] && Number.isInteger(hud[key].__id__),key+' binding is required');
-    assert.equal(scene[hud[key].__id__].__type__,type,key+' must reference the correct component type');
-  }
   for(const [key,name] of [['topBar','top'],['propBar','propsBar']]) {
-    const node=scene[hud[key].__id__];
+    const node=bound(hud,key,'cc.Node');
     assert.equal(node._name,name);
     assert.ok(node._components.some(ref=>!scene[ref.__id__].__type__.startsWith('cc.')),key+' requires its game controller');
+    assert.equal(node._children.length,0,key+' must not carry a hidden legacy picture hierarchy');
+    assert.ok(node._components.every(ref=>scene[ref.__id__].__type__!=='cc.Sprite'),key+' must not carry an unused sprite');
   }
-  assert.ok(hud.dotPrefab && hud.dotPrefab.__uuid__);
+  for(const key of ['bottomBar','centerBar','dotPrefab','scoreBar','scoreNode','tmpTestPropShowLable','version'])
+    assert.equal(Object.hasOwn(hud,key),false,'legacy HUD binding '+key+' must be removed');
+  const info=component('66365FI5kZETLe/pwz9l3ID');
+  assert.ok(info,'InfoPanelCtrl must remain attached');
+  assert.equal(info.node.__id__,hud.topBar.__id__);
+  assert.ok(info.collectItemPrefab && info.collectItemPrefab.__uuid__,'target prefab resource is still required');
+  for(const key of ['energyProgress','stepLable','currentLvLable','scoreLable','collectContent'])
+    assert.equal(Object.hasOwn(info,key),false,'runtime binding '+key+' must not reference deleted artwork');
+  const main=component('9517dpB0FtF360gsWHLfv7H');
+  assert.ok(main,'MainCtrl must be attached');
+  assert.equal(Object.hasOwn(main,'bg'),false,'background must not require an obsolete scene sprite');
+  const highlightNode=bound(main,'overHightLightNode','cc.Node');
+  const highlight=highlightNode._components.map(ref=>scene[ref.__id__]).find(item=>item.__type__==='fce55gWXklC94HtJAPn/viu');
+  assert.ok(highlight,'OverHightLightCtrl must remain attached');
+  assert.equal(highlightNode._children.length,0,'countdown controller must not carry old picture nodes');
+  for(const key of ['countDownNode','stepNode','stepLabel','countDownLabel'])
+    assert.equal(Object.hasOwn(highlight,key),false,'countdown view '+key+' must be bound at runtime');
+
+  const oldPictures=new Set([
+    'a377ab27-eee8-4fcd-9f15-e444289601e1', // old moves plaque
+    '01684c5b-279e-4542-8677-044141856f52', // old top decoration
+    '6d2ae00d-d6e7-4240-a676-6927ea5f7855', // old target panel
+    '1348b56c-bc03-4fd8-b9d4-c12c41545ed6', // old score fill
+    'cabe3dd8-4e2e-4ab8-afb1-5b3d58699677', // score arrows
+    '822b9b63-289f-4eb2-8a99-87ce677691d9', // old stars
+    'a4077ac5-48a3-45a5-92d4-1ab9b7f7a225', // score track
+    '65ce9ccc-bb4e-434b-8778-023bf0d61f5b', // alternate stars
+    '3ed07d6c-1be8-4db9-bc75-9386ece2d555', // unused energy track
+    '56b1291d-b8c6-4294-baf2-cf7fa8fa11d5', // old score background
+    'edb6fafa-5ea0-40d2-8973-32cc3fc3cdad'  // old countdown image
+  ]);
+  for(const item of scene) {
+    assert.equal(oldPictures.has(item._spriteFrame?.__uuid__),false,'removed HUD pictures must not survive as inactive scene sprites');
+    assert.ok(!['ScoreProgressBar','progress_arrow','Auto_record','tmpTestLabel','overCountDown','socre','stepLimtTitle','stepLimtLable'].includes(item._name),'removed node survived: '+item._name);
+  }
 });
 
-test('HUD restores missing preview bindings before initializing subcontrollers', () => {
+test('HUD restores only required controller hosts before initializing subcontrollers', () => {
   const file='assets/Script/Game/Match3/View/UI/MainUiCtrl.ts';
   const deps={};
   for(const m of fs.readFileSync(path.join(root,file),'utf8').matchAll(/from\s+["']([^"']+)["']/g))deps[m[1]]={};
-  const nodes={};
-  for(const name of ['top','bottom','bottom/propsBar','top/Auto_record','socre','tmpTestLabel'])nodes[name]={name};
-  const progress={},version={};
-  nodes['top/Auto_record/ScoreProgressBar']={getComponent:()=>progress};
-  nodes.version={getComponent:()=>version};
+  const nodes={top:{name:'top'},propsBar:{name:'propsBar'},'bottom/propsBar':{name:'propsBar'}};
+  const lookups=[];
   const {default:HUD}=load(file,deps,{cc:{Component:class{},Node:class{},Prefab:class{},ProgressBar:class{},Label:class{},
-    _decorator:{ccclass:T=>T,property:()=>()=>{}},find:(name)=>nodes[name]}});
-  const hud=new HUD();hud.node={parent:{}};
+    _decorator:{ccclass:T=>T,property:()=>()=>{}},find:name=>{lookups.push(name);return nodes[name];}}});
+  const hud=new HUD();hud.node={parent:{},getChildByName:name=>nodes[name]};
   const boundTop={};hud.topBar=boundTop;
   let initialized=false;
   hud.initEvent=()=>{};hud.initView=()=>{};
-  hud.initSubCtrl=()=>{assert.equal(hud.propBar,nodes['bottom/propsBar']);assert.equal(hud.scoreBar,progress);assert.equal(hud.version,version);initialized=true;};
+  hud.initSubCtrl=()=>{assert.equal(hud.propBar.name,'propsBar');initialized=true;};
   hud.onLoad();assert.equal(initialized,true);assert.equal(hud.topBar,boundTop);
+  assert.ok(lookups.every(name=>['top','propsBar','bottom/propsBar'].includes(name)),'preview recovery must not look for deleted artwork');
 });
 
 test('art atlases share one load, keep special frames and slice both old and mountain icons inside their textures', async()=>{
@@ -133,7 +171,7 @@ test('mountain theme cycles by level while match startup preserves the configure
   deps['../Common/Common']={default:Common};deps['../../Application/M']={default:{runtime}};
   deps['../Common/UI/MountainArt']={default:{gameTheme:level=>Art.gameTheme(level),background:(parent,w,h,theme)=>{themes.push(theme);return {};}}};
   const {default:Main}=load(file,deps,{window:{},cc:{Component:class{},Sprite:class{},Node:class{},_decorator:{ccclass:T=>T,property:()=>()=>{}},winSize:{width:750,height:1334},find:()=>null}});
-  const main=Object.create(Main.prototype),canvas={getChildByName:()=>null};main.bg={node:{parent:canvas,active:true}};
+  const main=Object.create(Main.prototype),canvas={getChildByName:()=>null};main.node={parent:canvas};
   let background=1,started=0;main.gameModel={getLvData:()=>({levelInfo:{background}})};
   main.sendUpdateLoadingEvent=value=>assert.equal(value,100);main.scheduleOnce=callback=>jobs.push(callback);main.startGame=()=>started++;
   for(const [groundId,level,ground,theme] of [[1,21,'water','rain'],[2,21,'grass','rain'],[3,21,'sand','rain'],[3,41,'sand','red-earth']]){
@@ -171,7 +209,7 @@ test('win countdown starts at zero moves, never goes negative and is cancelled o
     '../../../Application/M':{default:{event:{send:event=>events.push(event)}}},
     '../../Data/Const/Event':{Event:{GameCMD:{GameOverFall:'fall',ShowGameResult:'result'}}}
   },{cc:{_decorator:{ccclass:T=>T,property:()=>()=>{}},Component,Node:class{},Label:class{}}});
-  const c=new Countdown();c.stepLabel={string:'0'};c.stepNode={};c.countDownNode={};c.countDownLabel={};
+  const c=new Countdown();c.bindView({stepLabel:{string:'0'},stepNode:{},countDownNode:{},countDownLabel:{}});
   c.showCountDown();assert.deepEqual(events,['fall']);assert.equal(c.countDownLabel.string,'5');
   c.showStepNode();assert.equal(c.jobs.size,0);assert.equal(c.countDownNode.active,false);
   events.length=0;c.stepLabel.string='2';c.showCountDown();const reduce=[...c.jobs][0];

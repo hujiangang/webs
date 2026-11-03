@@ -7,25 +7,13 @@ import MountainArt from '../../Game/Common/UI/MountainArt';
 import ToyArt from '../../Game/Common/UI/ToyArt';
 import LoadingProgress from '../../Game/Common/UI/LoadingProgress';
 
-const { ccclass, property } = cc._decorator;
+const { ccclass } = cc._decorator;
 
 @ccclass
 export default class LoadingScene extends cc.Component {
 
-    @property(cc.Label)
-    loadingLabel: cc.Label = null;
-
-    @property(cc.Label)
-    versionLabel: cc.Label = null;
-
-    @property(cc.Node)
-    loding: cc.Node = null;
-
-    @property(cc.Node)
-    progress: cc.Node = null;
-
-    @property(cc.Node)
-    startButton: cc.Node = null;
+    private loadingLabel: cc.Label = null;
+    private versionLabel: cc.Label = null;
 
     private progressView: LoadingProgress = null;
     private displayedProgress = 0;
@@ -33,7 +21,6 @@ export default class LoadingScene extends cc.Component {
     async onLoad() {
         MountainArt.prepareCanvas();
         this.createLoadingView();
-        if (this.startButton) this.startButton.active = false;
         if (this.versionLabel) this.versionLabel.string = Apps.Version;
         try {
             await Promise.all([GameBootstrap.run(), ToyArt.load()]);
@@ -49,10 +36,7 @@ export default class LoadingScene extends cc.Component {
 
     private createLoadingView() {
         cc.debug.setDisplayStats(false);
-        // Keep Canvas, camera and serialized component alive; only replace old art.
-        ['background','loading','version','buttons','New Button','New Label'].forEach(name=>{
-            const old=this.node.getChildByName(name);if(old)old.active=false;
-        });
+        // The scene contains Canvas and camera; the loading view is created here.
         const w=cc.winSize.width,h=cc.winSize.height;
         const root=UI.node(this.node,'MountainLoading');root.setContentSize(w,h);
         UI.background(root,w,h,'loading');

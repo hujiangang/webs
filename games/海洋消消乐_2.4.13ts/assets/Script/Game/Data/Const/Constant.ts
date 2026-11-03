@@ -65,9 +65,7 @@ export const ConditionType = {
 
 export const Scene = {
     Loading: 'LoadingScene',
-    Map: 'MapScene',
     Match: 'Match3',
-    Level: 'LevelScene',
     Home: 'HomeScene'
 }
 

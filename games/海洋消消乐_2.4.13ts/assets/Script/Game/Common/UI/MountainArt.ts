@@ -1,4 +1,4 @@
-export type MountainTheme = 'loading' | 'home' | 'pine' | 'rain' | 'red-earth';
+export type MountainTheme = 'loading' | 'pine' | 'rain' | 'red-earth';
 
 /** Presentation-only backgrounds. Never changes level background IDs or ground rules. */
 export default class MountainArt {
@@ -27,13 +27,13 @@ export default class MountainArt {
         }
         return this.frames[path];
     }
-    static background(parent: cc.Node, width: number, height: number, kind: MountainTheme = 'home'): cc.Node {
+    static background(parent: cc.Node, width: number, height: number, kind: MountainTheme): cc.Node {
         const root = new cc.Node('MountainBackground-' + kind);
         root.parent = parent; root.setContentSize(width, height);
         const g = root.addComponent(cc.Graphics);
         g.fillColor = cc.color().fromHEX(kind === 'loading' ? '#7B9476' : '#405C4E');
         g.rect(-width / 2, -height / 2, width, height); g.fill();
-        const name = kind === 'home' || kind === 'loading' ? kind + '-mountain' : 'game-' + kind;
+        const name = kind === 'loading' ? 'loading-mountain' : 'game-' + kind;
         this.frame(name).then(frame => {
             if (!frame || !cc.isValid(root)) return;
             const art = new cc.Node('Artwork'); art.parent = root;

@@ -1,0 +1,3294 @@
+{
+  "date": "2026-11-02",
+  "reason": "Remove replaced loading and legacy lobby resources after static UUID and dynamic path audit",
+  "backup": "temp/loading-lobby-assets-before-20261102.zip",
+  "backupVerified": true,
+  "files": [
+    {
+      "path": "assets/res/animations/fishcrowed.plist",
+      "sha256": "79c802ae0801192b34d25c0288181e49f8fdba9178238e407e452fd2d1fc3f0c",
+      "bytes": 3453
+    },
+    {
+      "path": "assets/res/animations/fishcrowed.plist.meta",
+      "sha256": "b099c1a3c339f090b2a42203e6b6477a6003bc317a3bef8c77bd9586cf115b0d",
+      "bytes": 114
+    },
+    {
+      "path": "assets/res/animations/ui/hotelUiWater.anim",
+      "sha256": "7445f15c30dcd4d8820cbfe5ddda5f53bcd2b59b6eba96fdc804ff3e9665a211",
+      "bytes": 1217
+    },
+    {
+      "path": "assets/res/animations/ui/hotelUiWater.anim.meta",
+      "sha256": "4263b82e3399b22c07bedfc844da5128343818062d7887d00205ebf49a1b7094",
+      "bytes": 120
+    },
+    {
+      "path": "assets/res/texture/common/hotel_icon_pick.png",
+      "sha256": "50fb979ae4180fb98ac58cef5eaa3b5c0990ee1ad64375b32f59081bfd5a47ba",
+      "bytes": 3777
+    },
+    {
+      "path": "assets/res/texture/common/hotel_icon_pick.png.meta",
+      "sha256": "e736aca3d83c12a0bd372da27c6c61860537f03ec3e4148b6e65fdc0917da806",
+      "bytes": 872
+    },
+    {
+      "path": "assets/res/texture/hotel.meta",
+      "sha256": "5f4984658ee8141e60f3c914046ba16d420c78d25effd2827c08e41e1a2ce19d",
+      "bytes": 274
+    },
+    {
+      "path": "assets/res/texture/hotel/bigViewbg.png",
+      "sha256": "25473a63d30d29418688b04bf0a8b775fe96a55a2ab0a1c9582d83f93db1bbc1",
+      "bytes": 720912
+    },
+    {
+      "path": "assets/res/texture/hotel/bigViewbg.png.meta",
+      "sha256": "9fc04ab544e23d48bb8db075be890cec819c012a30d24e077729a7da14e4806c",
+      "bytes": 875
+    },
+    {
+      "path": "assets/res/texture/hotel/framework.meta",
+      "sha256": "f97d563e3f9adc63f5f8afa3761eb56d60bd86e93d954614fded4e211e94b40f",
+      "bytes": 274
+    },
+    {
+      "path": "assets/res/texture/hotel/framework/frame.png",
+      "sha256": "3acfcbe0797612337d1284cd64cb69606108d2154f0b88ee96fb2ef1c7edf4d4",
+      "bytes": 89101
+    },
+    {
+      "path": "assets/res/texture/hotel/framework/frame.png.meta",
+      "sha256": "d27656b3e650867b6583f79dda3e450c04e3384fa236f5c44e791b4dee4601c7",
+      "bytes": 870
+    },
+    {
+      "path": "assets/res/texture/hotel/framework/wall.png",
+      "sha256": "bec82b77ebe5fbc280496b0ad06b551519e032f81142d5bff1e9efb0aece8d34",
+      "bytes": 378994
+    },
+    {
+      "path": "assets/res/texture/hotel/framework/wall.png.meta",
+      "sha256": "47c34d0fee9c8979e8e0873d7f7ba948fd83c595761a65a39830ed54ac87b188",
+      "bytes": 867
+    },
+    {
+      "path": "assets/res/texture/hotel/hotel_bg.jpg",
+      "sha256": "619d7b1bbe6bd159c4f7a800feb6bd30f22907bc3f9306718885bba6d858bbf5",
+      "bytes": 220553
+    },
+    {
+      "path": "assets/res/texture/hotel/hotel_bg.jpg.meta",
+      "sha256": "346da539712dd3ded79e44a5433bf3766e4b4c6c144a68476dabfe356269fad1",
+      "bytes": 879
+    },
+    {
+      "path": "assets/res/texture/hotel/hotel_bg.png",
+      "sha256": "1d3adec8753d0e23194bac732c2685e082af462433c7ee9b31b80694e46825ca",
+      "bytes": 886424
+    },
+    {
+      "path": "assets/res/texture/hotel/hotel_bg.png.meta",
+      "sha256": "7d656e673ab1798fe507a5d733137a41b55ac48e2ce020d2e95206619462e2b5",
+      "bytes": 878
+    },
+    {
+      "path": "assets/res/texture/hotel/hotel_room_bottom.png",
+      "sha256": "09d95a23dc8876fb292b91c1d730a4222719b5a53306295bedee00d3fff9ccfa",
+      "bytes": 351917
+    },
+    {
+      "path": "assets/res/texture/hotel/hotel_room_bottom.png.meta",
+      "sha256": "54ea302b997590bb154294203359893e917dbd852d25fce3d957c8681dfd7b3e",
+      "bytes": 884
+    },
+    {
+      "path": "assets/res/texture/hotel/hotel_room_buy.png",
+      "sha256": "6a9e41dd0c4e5c626dbc85a9d547b83d42f51849307138930c7416d2f31bcadc",
+      "bytes": 11130
+    },
+    {
+      "path": "assets/res/texture/hotel/hotel_room_buy.png.meta",
+      "sha256": "87287380cf8b54c2d21378156e5da7a2be177a8b8d97e6702f2399900ce1b4af",
+      "bytes": 877
+    },
+    {
+      "path": "assets/res/texture/hotel/hotel_room_top.png",
+      "sha256": "895659281c4d435ead932d75220001039267a86903e3c7bc5180d6bc974c10c4",
+      "bytes": 577111
+    },
+    {
+      "path": "assets/res/texture/hotel/hotel_room_top.png.meta",
+      "sha256": "ad765a2566e474e68b6d3cc235b818d9a31a0294e396e415da00b53523fffddd",
+      "bytes": 878
+    },
+    {
+      "path": "assets/res/texture/hotel/main_bg.jpg",
+      "sha256": "a2b3de903da35dcee956047662ea2476aee75a27084edb6a585852dd7d7a4189",
+      "bytes": 657715
+    },
+    {
+      "path": "assets/res/texture/hotel/main_bg.jpg.meta",
+      "sha256": "5e729a48fbb810c96f2e2988b3a8e3c31232cd03735ba9a7565f7a6ad40c996f",
+      "bytes": 881
+    },
+    {
+      "path": "assets/res/texture/hotel/room1.meta",
+      "sha256": "69e9d8e41450f7d4973cbb6fe4db208a6590e9cff677debb83ed17f6b3a99526",
+      "bytes": 274
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/1.meta",
+      "sha256": "01fd92857155f79332343dc0ac22aeaa6f598df1cdb640162289d6731bdc6e0e",
+      "bytes": 274
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/1/AutoAtlas.pac",
+      "sha256": "2aaf8682231fbb00299d92acb0b3745c5737e799ff8ca548f636d792022c92a3",
+      "bytes": 36
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/1/AutoAtlas.pac.meta",
+      "sha256": "4a744e7202b87b6602cce417dc218e80ef08f2bdd97fd5e5dfe4f24eacbcff01",
+      "bytes": 510
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/1/slot_1.png",
+      "sha256": "91929618f9e8bf34d3ed8855c92c611099714efd16930a9908b514b15ad18939",
+      "bytes": 109480
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/1/slot_1.png.meta",
+      "sha256": "dff72b3fda06fc9aeeecfe73a354aa7c7bfa887359e15e76c3ccad25d7a10be3",
+      "bytes": 874
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/1/slot_10.png",
+      "sha256": "294cff7466e0f8d43f78abd8a3ee7b3e7b9c6b6e9373cad174bd54f25189a9ba",
+      "bytes": 56052
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/1/slot_10.png.meta",
+      "sha256": "230990d0cec3d1cda90637ee5b1f78ab6df3b1a071d64b7ca2103bc2572c2097",
+      "bytes": 873
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/1/slot_11.png",
+      "sha256": "f1252cd3a4e2f08f23fa60f948db7f90b66b813dba26e2398167e473622de624",
+      "bytes": 46629
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/1/slot_11.png.meta",
+      "sha256": "2a3a522ea25ed3185e1535a726e27a3dfad94909fb1d7ba5de39fdb0304c30d6",
+      "bytes": 877
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/1/slot_12.png",
+      "sha256": "963d64df3c5283b94d517895b7a087988e1ac2c79f04bbde640e6295dfe5c4ed",
+      "bytes": 64793
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/1/slot_12.png.meta",
+      "sha256": "b7529a9a4c9714f4ae2c7f167e3286eefbc41d9fdd061493618ee6d7b76bf40a",
+      "bytes": 875
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/1/slot_13.png",
+      "sha256": "552fb6f10d2a8313c2dcba4d7b60cf7e2382045815ac45deddfe912c5a9c8c1b",
+      "bytes": 83702
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/1/slot_13.png.meta",
+      "sha256": "8083d83908aca44bae366526bf14de25fc9e655be3bd5b90d13714ecf31cc84a",
+      "bytes": 875
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/1/slot_14.png",
+      "sha256": "1b70954593323415fa3e63aceca64828037d9df0066da66ab1e7ea4eed4555f2",
+      "bytes": 100161
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/1/slot_14.png.meta",
+      "sha256": "4d1bcbd02f389dc092ac514a068e9713bc49640d5766d838fb1479327f1656ce",
+      "bytes": 874
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/1/slot_15.png",
+      "sha256": "5c4a1935f3f4584c0fb1b627d694394291eadc7b8d88e0eaa985c42d4ab66536",
+      "bytes": 30112
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/1/slot_15.png.meta",
+      "sha256": "40d79073abb5bfed22d540c988eaff67c1d75274997ec804d19053c685df3b4b",
+      "bytes": 873
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/1/slot_16.png",
+      "sha256": "02d4b9fef7721424a945842bfad4c15da557be7898884ccdc092349458d2bc8b",
+      "bytes": 8739
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/1/slot_16.png.meta",
+      "sha256": "5b02c5a3dbc5fdbb9654ee2a77b0988579f3ed3d0b6196c03a75d92818252130",
+      "bytes": 874
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/1/slot_2.png",
+      "sha256": "1daeea6a46c2cea2577e01536ff22e7aca22fa771e66895b7ddb3faf29a39a3e",
+      "bytes": 71226
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/1/slot_2.png.meta",
+      "sha256": "69b4514288410c1bc4070a46a473a238d79dd1c5bc860b41d0dafac21598760e",
+      "bytes": 878
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/1/slot_3.png",
+      "sha256": "a3ce35a5f9d5f8215b3ce56e65cacc23982dbb1dee3a8f24b20e37561b04a628",
+      "bytes": 276030
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/1/slot_3.png.meta",
+      "sha256": "f02dc57c9a087fe33557d5cbba4bffbceb0873b15e54740cbfe1b968d88503da",
+      "bytes": 872
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/1/slot_4.png",
+      "sha256": "1537ae374ddd4d10b7b6f6d6c8e947d107bdd93671337b99956dac379ec81902",
+      "bytes": 63343
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/1/slot_4.png.meta",
+      "sha256": "572739f799f7fd1036c2e52934714ef60af14fc9da769d06688772298c4ec809",
+      "bytes": 876
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/1/slot_5.png",
+      "sha256": "a698dfa62a6904ee1df57969a2dee540f0904d45ac02c82c178600fbc8810cf5",
+      "bytes": 46060
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/1/slot_5.png.meta",
+      "sha256": "42cb2d0fc97252c037331855e3ed765b09a77c9f2ae3296a7fd1e452c24c5f0b",
+      "bytes": 870
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/1/slot_6.png",
+      "sha256": "83194af661731fbf9e84298be34044d8f6d8b0811ea0dfe0d4b15c3817ce0d21",
+      "bytes": 143110
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/1/slot_6.png.meta",
+      "sha256": "2f953ccdce51bf6fba2f4c4da8bdd5ed18ef424356d089fff85e0fb72e779276",
+      "bytes": 872
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/1/slot_7.png",
+      "sha256": "2b554e98d2fe7fd9ff1877657adaaf3b93e034129c1da7ae6e14fd6f14f97a3f",
+      "bytes": 70031
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/1/slot_7.png.meta",
+      "sha256": "d8b7c2394fc244122daed6dbef09d86687b4577e5ad04c6480369768532c4a3c",
+      "bytes": 876
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/1/slot_8.png",
+      "sha256": "1d9523ad3a33e510efe391e2b11a11b68e0bf82a955099fed76310abe41081a0",
+      "bytes": 102618
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/1/slot_8.png.meta",
+      "sha256": "9c003691dd21af79fcee4afa39ea8db00219105162771c483a517eb7a91ade5f",
+      "bytes": 878
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/1/slot_9.png",
+      "sha256": "fc0408b7fea2486cf4cc487d52d4287b9f0f869fde36809e5a627bbee05ab8e9",
+      "bytes": 100521
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/1/slot_9.png.meta",
+      "sha256": "7488f7d0d28d00523bfc8bc2d8fe37073f8afba2ceb99c3f5fcad2cd723ccd52",
+      "bytes": 875
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/2.meta",
+      "sha256": "f8f82f400ecf87e6074be39c228bdbb2913cae2260faa64514b105dbcc4f2df4",
+      "bytes": 274
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/2/AutoAtlas.pac",
+      "sha256": "2aaf8682231fbb00299d92acb0b3745c5737e799ff8ca548f636d792022c92a3",
+      "bytes": 36
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/2/AutoAtlas.pac.meta",
+      "sha256": "091b9f86f116e94cc4bfe12879ee457e786efc55580d3213771de0e96dec879b",
+      "bytes": 510
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/2/slot_1.png",
+      "sha256": "28c9ddd7f525ebd0d7faad7f797406efcafb752a1630295a3a9310ff4cf444fc",
+      "bytes": 861583
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/2/slot_1.png.meta",
+      "sha256": "4ae764cc93b2208dea0ae7bf59fa6c2f11b947224446e9122c936c4a21420bc8",
+      "bytes": 874
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/2/slot_10.png",
+      "sha256": "a3331af9704f484eef7637cb5f83e94b6001fbee3962a6170270afda33a4fe42",
+      "bytes": 59673
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/2/slot_10.png.meta",
+      "sha256": "80d070b554ded63dad074b629262f04f75cd3f8bb7fbc206d7d4f3bcbb36058f",
+      "bytes": 873
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/2/slot_11.png",
+      "sha256": "95b25ade3f6176c8a71399760874aab483867fa2d4e0227c7cc9f4c46e935ab8",
+      "bytes": 48928
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/2/slot_11.png.meta",
+      "sha256": "f4997e3d3659c5bfd3ab1da13983a2d2f5161618e33730c0c442d01a226d1369",
+      "bytes": 873
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/2/slot_12.png",
+      "sha256": "e1200822bc650158307ea4f07738b878d884b8b49bffea4df6a484242ae80c7a",
+      "bytes": 71905
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/2/slot_12.png.meta",
+      "sha256": "95312bfb9e7321bce7770630a7a1d38e3aaf152e5754c007935223258025e02a",
+      "bytes": 876
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/2/slot_13.png",
+      "sha256": "fc263da294ddba3a8e3500aa154a9eae6afba72b0a310f638114bad5fc27cab1",
+      "bytes": 103999
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/2/slot_13.png.meta",
+      "sha256": "14408508353ea90c51d9acc52c997772921d2f074cb3ab1d59f7d236b88e6b28",
+      "bytes": 875
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/2/slot_14.png",
+      "sha256": "45dda775b8d4a554d4e859f99aecb93392f90fcc719ca49565291d14e68b7bca",
+      "bytes": 102924
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/2/slot_14.png.meta",
+      "sha256": "90d7831a24a9cdbd5cd2a89df24ba2e0e3e8b768336b6ffb4b15138f3c62f69c",
+      "bytes": 874
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/2/slot_15_1.png",
+      "sha256": "584e8ef2d7499a9a6b55f9b25708ed5b55cd62fac4b1d0b81e4e90ed46c7454a",
+      "bytes": 58665
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/2/slot_15_1.png.meta",
+      "sha256": "819e886b20b39840160607f3e0c2204d21cd08b753620aff3137136ad32264cd",
+      "bytes": 875
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/2/slot_15_2.png",
+      "sha256": "dc778de773f104d184ff22df4b3ac395c6dfe12500d69219022292575465c1e9",
+      "bytes": 87127
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/2/slot_15_2.png.meta",
+      "sha256": "03d6caed02a906789e213fdd6d3296a362e945189cc45efb7b5d2598f02ff988",
+      "bytes": 874
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/2/slot_16.png",
+      "sha256": "0bc35080a08fab9900b6fab828cc5048e9e68374078e1275f7c97e84192d16a1",
+      "bytes": 21395
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/2/slot_16.png.meta",
+      "sha256": "cc67eea92e3cbdf101b1acf8563a339da249395376e38739fc518667c3e674e6",
+      "bytes": 870
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/2/slot_2.png",
+      "sha256": "585d35b1c0162a6df23b993ba7c872e705b2adc383b28772934b5e4bb0f8a009",
+      "bytes": 167433
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/2/slot_2.png.meta",
+      "sha256": "299b43532c9ff1b37544ee8ecaeeb99527f2476b7d59b514870a4dc0409f01ca",
+      "bytes": 870
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/2/slot_3.png",
+      "sha256": "bf22d27243e5f692b537f3ebce350e1c780c65e0847947588eba73c94a050416",
+      "bytes": 872796
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/2/slot_3.png.meta",
+      "sha256": "0588826c37af2e520d28da5f13faf90cad393ac916d60e8debf6e8be9f79132d",
+      "bytes": 872
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/2/slot_4.png",
+      "sha256": "838197c66880361358a2ec36b6b46fb9a106de6f19ae6aa32fe77eec79fca7bc",
+      "bytes": 71184
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/2/slot_4.png.meta",
+      "sha256": "04872ad8738a2840a4edbe9556f5a6f67f91aa39be5afb5e47b7233358410b27",
+      "bytes": 878
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/2/slot_5.png",
+      "sha256": "fc9fad176f9ec9bd85a86f2ea54799ac6cf97fc96de1a4df3263152ddb13ac3c",
+      "bytes": 85599
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/2/slot_5.png.meta",
+      "sha256": "640c3f9b0fcac807eaff5520cf7a95636ce09200e6211810b349d5e442b2707f",
+      "bytes": 873
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/2/slot_6.png",
+      "sha256": "23f73be15582107906f4bf00cd355dc926a0919b9169964aacf1f72d9bdb7546",
+      "bytes": 152264
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/2/slot_6.png.meta",
+      "sha256": "c0380196166ed137c4f1494533393f0ffde40b59bd9b69918857e4365e4a7e3f",
+      "bytes": 874
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/2/slot_7.png",
+      "sha256": "a2f34be5228747392d5c245deb38418907b395e1443ada1a33c5ce2763c750cd",
+      "bytes": 73032
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/2/slot_7.png.meta",
+      "sha256": "f62c7e9ebfcfc8a76291d3ff2ee3fabb9d198daa3dcfc8e9aa70f93deeeb4f25",
+      "bytes": 874
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/2/slot_8.png",
+      "sha256": "cc593dc030b8c17052196da095f6358c7278e05a8e35f29e2bd73a376584c14d",
+      "bytes": 120956
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/2/slot_8.png.meta",
+      "sha256": "4045d283648180df9d065b3c4444b178ea637ac0af0f62bd681f156b7d29ad76",
+      "bytes": 878
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/2/slot_9.png",
+      "sha256": "d36e21a17095b7e6205cbd6d4d920b34828e45bad58b10bc5bf2ce06d5124c75",
+      "bytes": 115474
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/2/slot_9.png.meta",
+      "sha256": "ebe3125b9366b94e525e24f20ab58759951e0b6203a157eb080338e0bc18eb4f",
+      "bytes": 875
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/3.meta",
+      "sha256": "04efb5532d12ffd496abf52301f40497086f16aa2e93449e9443e0248f96c15a",
+      "bytes": 274
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/3/AutoAtlas.pac",
+      "sha256": "2aaf8682231fbb00299d92acb0b3745c5737e799ff8ca548f636d792022c92a3",
+      "bytes": 36
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/3/AutoAtlas.pac.meta",
+      "sha256": "18c6a71f1a1d2c197ee27bdc00a329ef5b1e5e55e194aec48620ac8ee778954e",
+      "bytes": 510
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/3/slot_1.png",
+      "sha256": "057a76b48d8a2ba938660bb0573a39e0b1a7bd4f86a2ee076426ef88869ae314",
+      "bytes": 934910
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/3/slot_1.png.meta",
+      "sha256": "236d4f126f00b2e0ffe24fc841019b1f8700caae6bf60a2e7783bebca4938a2f",
+      "bytes": 872
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/3/slot_10.png",
+      "sha256": "1f26d3d26198509d001ed500db6ecb003b27c478eb209332c6cf3a14e31004a6",
+      "bytes": 75249
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/3/slot_10.png.meta",
+      "sha256": "87e4e5002c371a4a69db538a8ea9194efc4f847ba3ccbb23b6c0b9d63a439ce8",
+      "bytes": 874
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/3/slot_11.png",
+      "sha256": "88ed48dd757234cfb078793e77edf1fa1024b944f7be09399b838817646ccf93",
+      "bytes": 51596
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/3/slot_11.png.meta",
+      "sha256": "ff07cea9a204078fa8da50587ae6a833078d29588475f2718c13f05b0abb195d",
+      "bytes": 872
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/3/slot_12.png",
+      "sha256": "0e208a17988178d17e6538a22340e80b6a345184f7b26210f4b6d9ce6466afa5",
+      "bytes": 81406
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/3/slot_12.png.meta",
+      "sha256": "0c44eec9a1b29d3fd845cc50f8b27ec7008158e2f99747e4a37c13e4b1388ed9",
+      "bytes": 870
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/3/slot_13.png",
+      "sha256": "d86dd6bb08465afc7ceb413f39924fbea505e52bddaeef2047794fcc7fe02f2f",
+      "bytes": 123487
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/3/slot_13.png.meta",
+      "sha256": "f59df063b158daf9f1988c307b2fa8217a3e1d45557e89f39015e995c6c0f2f9",
+      "bytes": 870
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/3/slot_14.png",
+      "sha256": "c55e79f982faf8b9f8f627e18c6ab851086354bf87f33746e51c0a6ebd972201",
+      "bytes": 147031
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/3/slot_14.png.meta",
+      "sha256": "8e69845e7e80e9d962280beda0905939fa4857a1670d13266cabb3961493d7df",
+      "bytes": 870
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/3/slot_15_1.png",
+      "sha256": "9cd55633d5eec3e440a33ad1d34a88b4a43e54da81f7b0b8db77ceeb5e4bc4fd",
+      "bytes": 61723
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/3/slot_15_1.png.meta",
+      "sha256": "5f479939b018b886e72e839c5a8b0dd4fb35cde628fb7734b3ec14b9e459b87b",
+      "bytes": 876
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/3/slot_15_2.png",
+      "sha256": "5d74c86c1e08e1985bae79f744176db3ab81da89d9558494fe5e28c76aa9ad90",
+      "bytes": 41743
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/3/slot_15_2.png.meta",
+      "sha256": "1dc33665f539b74dbbd69045cbead7e94035f7187c0c5a2f72adde67f90a8a42",
+      "bytes": 878
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/3/slot_16.png",
+      "sha256": "1325c0e3154997188695a5214d49fb114f65e5257bfa1a5952179d4c8c3d8938",
+      "bytes": 22694
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/3/slot_16.png.meta",
+      "sha256": "8776f2ee30d6f565795e9948f212f24176ca4fe557f53f10ae0038b5de520009",
+      "bytes": 871
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/3/slot_2.png",
+      "sha256": "672123c503c88d14c8f79c23ffaa63a3890972944c3d2b84002afd49b1ee2271",
+      "bytes": 162309
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/3/slot_2.png.meta",
+      "sha256": "692df4ec21d5c9dec0fb7b4c63688773f62e13d7b358b8135cfc083ee6af8be5",
+      "bytes": 875
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/3/slot_3.png",
+      "sha256": "879387d9efbafcc7ee60dece27382227d6c4139a13e85a773bac4cc714cabfd5",
+      "bytes": 248501
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/3/slot_3.png.meta",
+      "sha256": "ce86306d1b3afd54ab2f52846f588b9ed5ea13c8518e0adffda95858bfd235bd",
+      "bytes": 876
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/3/slot_4.png",
+      "sha256": "c0f14466c5720e5e565de6c7ea19d567ef481c423e1c4e5b3e2259455835e185",
+      "bytes": 89892
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/3/slot_4.png.meta",
+      "sha256": "8f993829bcdc29f3fee8e28829f86b59dd7a404e9c231fb7ddfc12942c829e37",
+      "bytes": 869
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/3/slot_5.png",
+      "sha256": "5ba44be82028958b4d4e725e191ddfb3f9dfc8e6f79bfb41c4c1db97c71b3b9a",
+      "bytes": 130443
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/3/slot_5.png.meta",
+      "sha256": "fbb2a063c57f4a42738546cbf96b5039e59ef6bc96903c42432ff7e1a2ee2796",
+      "bytes": 870
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/3/slot_6.png",
+      "sha256": "dc45a08bfdd94f179d529437f5f2099d48d80146d4ee1c44dc88c583e3ca8b4e",
+      "bytes": 202402
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/3/slot_6.png.meta",
+      "sha256": "c17cbb01f5faf67e93094bd9300331d359d9ccef1e21cbe59ec079a583795a4e",
+      "bytes": 872
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/3/slot_7.png",
+      "sha256": "a0ed075928be8d43f8b947c8502f27f6abfed96657d6cf066654b0543031f881",
+      "bytes": 101658
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/3/slot_7.png.meta",
+      "sha256": "77c16382b641f283cd52712643a62750c1cd8fa85d238e885bbdc35cd8008900",
+      "bytes": 869
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/3/slot_8.png",
+      "sha256": "65945e502268d29f31b2c1ca96761d93211550f788c96af50d6c2726481598ef",
+      "bytes": 112904
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/3/slot_8.png.meta",
+      "sha256": "bff78a0a0f1665dce12e39eb1c92b21f746b9b3190e247601d023cc6b866dd94",
+      "bytes": 873
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/3/slot_9.png",
+      "sha256": "9fb33be7a3d06fea114d2c18c87edc162487185b93784829460d59d2bf6f2ede",
+      "bytes": 109257
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/3/slot_9.png.meta",
+      "sha256": "4c5aa620d3fc22f7ce9e1344285f5288c940ed1cf8d5c59585e800a4f0259db5",
+      "bytes": 870
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/thumbnail.meta",
+      "sha256": "db548f77ca528442b317ebf6c3809cc4616e33772ad48f6d399a2073b0c5ad72",
+      "bytes": 274
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/thumbnail/1_1_1.png",
+      "sha256": "0c68af05e910128975500b198b1fc1f71f3257307e20e2d63c4e29a62e406136",
+      "bytes": 2064
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/thumbnail/1_1_1.png.meta",
+      "sha256": "99c7e1d6a27b9ddfd7ca685fb45f94553ef497fb7e4e9082214947e257ee8f64",
+      "bytes": 869
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/thumbnail/1_1_10.png",
+      "sha256": "7c13cb45ee2cc27d0d21b5242f3ddb52c66376bf104323ff4ff7882d538c0e03",
+      "bytes": 20339
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/thumbnail/1_1_10.png.meta",
+      "sha256": "825072a8a70c61a5fca17d67aea98bc573a21fca6cff3e8d23e015f1f5917bf2",
+      "bytes": 870
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/thumbnail/1_1_11.png",
+      "sha256": "3a54a7b48f6d608c7f5dd69cf3730dd4a17c81221bb903446750b981b68bb0dc",
+      "bytes": 22577
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/thumbnail/1_1_11.png.meta",
+      "sha256": "dd9affe92bc926fa2d00d451245d260beb71b2c4ffd73bcd2dc3ce01678b7c06",
+      "bytes": 872
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/thumbnail/1_1_12.png",
+      "sha256": "53328f1aac463fd94c30e7a20454a712b35ae951b1f83acfef1ad38b6a47883c",
+      "bytes": 18737
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/thumbnail/1_1_12.png.meta",
+      "sha256": "f5dde5a1ad8fde1afcf4f8aeae576b670565cabd09034ea6e99e49e30b914316",
+      "bytes": 872
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/thumbnail/1_1_13.png",
+      "sha256": "03209ad1a6e161a4a5a8c154ab698ed8e8bfb5f494d247a36e898deb5d482b79",
+      "bytes": 20787
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/thumbnail/1_1_13.png.meta",
+      "sha256": "f948af1886de72dd623e6126a09f25cebfae30b4157516555f2c559e23abfe46",
+      "bytes": 876
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/thumbnail/1_1_14.png",
+      "sha256": "af1601b8efa2f64439e38d73b783cf515e769fd846a230a3f4e4bd9d66ccd1f1",
+      "bytes": 20343
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/thumbnail/1_1_14.png.meta",
+      "sha256": "c49b33ca8df963722f3a66b8fd9cfe2e885bd501fa8c5e495aaeb2144c38492e",
+      "bytes": 875
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/thumbnail/1_1_15.png",
+      "sha256": "e5e4b6694d75ec265ca950bf17e36363ef496d9afecb32e83e5bfcfdbb4fdcb6",
+      "bytes": 11508
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/thumbnail/1_1_15.png.meta",
+      "sha256": "ab0146559235ad2b58faa72527f157b41586d0abe74e23c10d0db38491e12f8b",
+      "bytes": 874
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/thumbnail/1_1_16.png",
+      "sha256": "ca7683a12ff3144ece752904e1535bdbeb2304a57a9c66451ffef16a5889982f",
+      "bytes": 4925
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/thumbnail/1_1_16.png.meta",
+      "sha256": "d41a4c21b8b31a28ac4485cc345b1f16baa29124a0d9e2962a314d49d59d5a46",
+      "bytes": 873
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/thumbnail/1_1_2.png",
+      "sha256": "b4d74f61495b01c69c79c0015aaf2c908955e678a093cc1298906e116e8180d1",
+      "bytes": 13601
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/thumbnail/1_1_2.png.meta",
+      "sha256": "181722d09caa37a6e352f73eebb897a9f0418a6601218d2c99c4a1655279aebd",
+      "bytes": 870
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/thumbnail/1_1_3.png",
+      "sha256": "b42db93ebfc897f45ad5860a66937fce40b5f984007bee393ad01b024e9d55d1",
+      "bytes": 8935
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/thumbnail/1_1_3.png.meta",
+      "sha256": "cd7db17dd70bae6f72c452ce208482a6fdb88896cef7083514cd0e7861f8289d",
+      "bytes": 871
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/thumbnail/1_1_4.png",
+      "sha256": "80f25121460f99ee277c99e403d1c6643c179d8c4cea059b25220d5d0a0a539e",
+      "bytes": 20843
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/thumbnail/1_1_4.png.meta",
+      "sha256": "3904986c9cb33a6064c320d8a9710947e25bfa92a37b04f02d2ce82d9221165b",
+      "bytes": 872
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/thumbnail/1_1_5.png",
+      "sha256": "34006da5a3f9895652c6a6d962cc373346636dd090c1de3c61febbab2791d7c7",
+      "bytes": 8248
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/thumbnail/1_1_5.png.meta",
+      "sha256": "6b76b8c535f053ff2dbc1fa3661c54825d1606cc98d0b7423d9709d518170bfd",
+      "bytes": 871
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/thumbnail/1_1_6.png",
+      "sha256": "93bac90065dfe63fe5d9a785135ac6f912dd6f7d5aed47a57f05da13e0f27f1c",
+      "bytes": 27979
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/thumbnail/1_1_6.png.meta",
+      "sha256": "925d0e0cc64d57f854a5ac84a8d36cbc78fbb4e18826ac383b1776fd72ab6ae6",
+      "bytes": 872
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/thumbnail/1_1_7.png",
+      "sha256": "209dd718bdbb89a513801df2bfdfc11c35f4dab34606a96894cbc4f56d496a93",
+      "bytes": 18773
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/thumbnail/1_1_7.png.meta",
+      "sha256": "631f1b0fd122863809b2570069ca5bcf6fc278446263b6151cbc77b29ea31f05",
+      "bytes": 872
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/thumbnail/1_1_8.png",
+      "sha256": "290299344e5029b3d6fc86809ffbe0a748d2e29eb3fd5de6554a26e5bc6ca09e",
+      "bytes": 30134
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/thumbnail/1_1_8.png.meta",
+      "sha256": "831619e970e8accef7224d4e951355980e6ac5bd3af485ce2c746c1b61f0e604",
+      "bytes": 870
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/thumbnail/1_1_9.png",
+      "sha256": "b688f65a8838b5d11dcf05965ceb31a0b873d8ab93db58cc5a9fba7f91925434",
+      "bytes": 22266
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/thumbnail/1_1_9.png.meta",
+      "sha256": "d1520e126a84351d2fb378c3d001d7de3063f79bb8707cf37ad4a00186ac2b46",
+      "bytes": 871
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/thumbnail/1_2_1.png",
+      "sha256": "6d9c486258c4d3cf0011959de62464d8ec513eee392ac1dcb47efa8a9b09c43e",
+      "bytes": 14091
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/thumbnail/1_2_1.png.meta",
+      "sha256": "3a9957b7026e3fc92b15109006894fb05232db28ff1c02bfa084743adca14188",
+      "bytes": 869
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/thumbnail/1_2_10.png",
+      "sha256": "e61cb72e6374def59e2c550064d1af1f4c520b5d1d1eec01b884810f2c3e7c08",
+      "bytes": 21670
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/thumbnail/1_2_10.png.meta",
+      "sha256": "23f306890be7312dc51cfd0919f5ac01b41ff7e1ad8a1d1adb987103bfda0fdc",
+      "bytes": 872
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/thumbnail/1_2_11.png",
+      "sha256": "b96f4363c355a1042ef1f3a21674b4186546b1c5143be9e4b13a27766b2de857",
+      "bytes": 22864
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/thumbnail/1_2_11.png.meta",
+      "sha256": "220d12626ba8be2cc6ed182a571e417000e7a15b2ec2cd9c4a5003339773814a",
+      "bytes": 874
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/thumbnail/1_2_12.png",
+      "sha256": "f5d8cc8a0f23e313836b827f330f0ee7f40d861926bd587ad001e33c19d8eff5",
+      "bytes": 20867
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/thumbnail/1_2_12.png.meta",
+      "sha256": "ba92759043f13c57ad05659b42c790d041f22834509cdeaba79bebeec6fdbad3",
+      "bytes": 870
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/thumbnail/1_2_13.png",
+      "sha256": "81e2a0785356b734a0fb7da1dfb19213faf8b6fbd720e9454310388a0bd35952",
+      "bytes": 24221
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/thumbnail/1_2_13.png.meta",
+      "sha256": "fb354a8b6c0689e58f2b4db631afd5c8578e13f807edacad510803966b3cd7fa",
+      "bytes": 874
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/thumbnail/1_2_14.png",
+      "sha256": "2877d14d7cb1eeb5c42f64b384e83859bbeba4a78365e4557d3f9710994456bf",
+      "bytes": 21457
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/thumbnail/1_2_14.png.meta",
+      "sha256": "e1e0bda1d236244689c0f932d73733b2cda3b410f7e3bbbdbf955853ca8a7edc",
+      "bytes": 875
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/thumbnail/1_2_15.png",
+      "sha256": "148eb21a5f23c7b919aa3aee379570135aa83d7fda840206aa6e84866b3721dd",
+      "bytes": 15702
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/thumbnail/1_2_15.png.meta",
+      "sha256": "f6d9be5163683a0481940b7e3dd08ee585a61e678304f68f1195e60829f01978",
+      "bytes": 877
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/thumbnail/1_2_16.png",
+      "sha256": "1648aa1f2d49c6ccd9caa93f248524d6d91f18b6c7a473a0b5bf2807e371b7c5",
+      "bytes": 12043
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/thumbnail/1_2_16.png.meta",
+      "sha256": "0148d56fcb11ab0f3d931d8ef92febdee94092c273ea19bd57d9b951173f69a1",
+      "bytes": 875
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/thumbnail/1_2_2.png",
+      "sha256": "27d0aa0473f1bc09251f1ea8742107f303cc35e2a36b13203e401cc9029fa37d",
+      "bytes": 25134
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/thumbnail/1_2_2.png.meta",
+      "sha256": "c54791752a94e50ed4fd55df8fc0d52a787ce235a8935fadccf95ee777df9aa2",
+      "bytes": 869
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/thumbnail/1_2_3.png",
+      "sha256": "4c1fc025d92edf05f3db1baa775ac206d8cb8cd5ee881554eb81a085ec9106e5",
+      "bytes": 16770
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/thumbnail/1_2_3.png.meta",
+      "sha256": "5b7fb3f415932b29971787318c81c49fd54e7fbadd89103f0c94a7d9fedcddf1",
+      "bytes": 871
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/thumbnail/1_2_4.png",
+      "sha256": "c90622f82a3aec99ada070ee2aa6d33704e85e869854138498bbedc0cd4dcba0",
+      "bytes": 23381
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/thumbnail/1_2_4.png.meta",
+      "sha256": "203d3887ea5372464161ddd9b9c6c837d8d2b8650ff45468fa8be90c59d4b28b",
+      "bytes": 870
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/thumbnail/1_2_5.png",
+      "sha256": "9a7131b1234d6a1f7f5d5e9bafae4119a84d19c62cb99abae239a21a6916d162",
+      "bytes": 14048
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/thumbnail/1_2_5.png.meta",
+      "sha256": "8840473ce6ce5266e595c203c355cc7df8b64b9d0547bfc6d94913d130692d22",
+      "bytes": 868
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/thumbnail/1_2_6.png",
+      "sha256": "0259426a38f3cb399e7dc9751a67e5d8d23b1d8408a2a748a6409b53d82c46ec",
+      "bytes": 29078
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/thumbnail/1_2_6.png.meta",
+      "sha256": "052cc2a765ec59a90c45921972e16e0ee02b7801dd0006c81b7176c68bf389ba",
+      "bytes": 872
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/thumbnail/1_2_7.png",
+      "sha256": "d8712ff1fdcb5a4bea45f81286779e75342b495033947ac4a6b6c5131da14a8b",
+      "bytes": 19397
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/thumbnail/1_2_7.png.meta",
+      "sha256": "55ee94e23cfc6a8e1f39667c9045fbe579278bb4f5601d9a2935e544cf9634e9",
+      "bytes": 876
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/thumbnail/1_2_8.png",
+      "sha256": "a1e21b6f6042f84a682f067f3449b063dd2d2042a6886d93a97162bc2c43a34d",
+      "bytes": 34592
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/thumbnail/1_2_8.png.meta",
+      "sha256": "4f404222238844da531cec86199bcc8a99f5eed73bbb740647addb34724b9a0b",
+      "bytes": 872
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/thumbnail/1_2_9.png",
+      "sha256": "98a963a42144f72f8a30a01d15746776a139927abe6ed6291a96cc6f6c98c1a1",
+      "bytes": 23801
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/thumbnail/1_2_9.png.meta",
+      "sha256": "6c174b629c9992d5cf9e1dd3d1861d7342d6427d4bea6b7b3857df5c46ad2213",
+      "bytes": 873
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/thumbnail/1_3_1.png",
+      "sha256": "b0eb98554581a5de2b77073092724da87bf9f9d300f84c88d74107f6d5d6f164",
+      "bytes": 8379
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/thumbnail/1_3_1.png.meta",
+      "sha256": "53d9b2fd5106a62eb1998b111edc7dfea96aa294acd893b9acd599a7baa77ef5",
+      "bytes": 869
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/thumbnail/1_3_10.png",
+      "sha256": "b00ba4292b2a74f7f1ab3cc7531fd1eae84ba5ce0be1881f69858bf5ecb9c705",
+      "bytes": 25137
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/thumbnail/1_3_10.png.meta",
+      "sha256": "a4510a53c09a568ba4b4e33b5e59f30f7b3b726de639930082609d8e5a19b2cb",
+      "bytes": 874
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/thumbnail/1_3_11.png",
+      "sha256": "3be02bd418ffe33c435e0c3edfd9c9927c21b003deb0d3cdeb99146bf843fde5",
+      "bytes": 24476
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/thumbnail/1_3_11.png.meta",
+      "sha256": "91d360133c2d4bedef1b8f38062a78b6c0114f6a869c000b3be19be217098bd0",
+      "bytes": 874
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/thumbnail/1_3_12.png",
+      "sha256": "60c6af883e46303e432558b7bb82609749aadaa5990bd10a09784a43ac78d0eb",
+      "bytes": 25938
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/thumbnail/1_3_12.png.meta",
+      "sha256": "b40f6c9e3daedb3cf1bd915797ead6f71d1074f1a39d38646fdd3539b84f6774",
+      "bytes": 873
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/thumbnail/1_3_13.png",
+      "sha256": "458ea86563c82f5706f0426307a57b80d7c05cdc6ae34a1879ed783a9f570455",
+      "bytes": 27755
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/thumbnail/1_3_13.png.meta",
+      "sha256": "7cc5750987b363914f59f69562229479a33afede61f715134c9f81ea893332be",
+      "bytes": 873
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/thumbnail/1_3_14.png",
+      "sha256": "d827902fb8e90fa6b08ffaa4770657e0faf9ba7fb16e83649a4869604e17cefa",
+      "bytes": 27897
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/thumbnail/1_3_14.png.meta",
+      "sha256": "49107ef7fa8482c4fb407722d9c48cb370b79a8d3a2cbdce1901bbceb1aff165",
+      "bytes": 873
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/thumbnail/1_3_15.png",
+      "sha256": "0527747195e766adad28a89b00a45d546b43a43f8fdc10f2ff4bd33c8edb2ecd",
+      "bytes": 20705
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/thumbnail/1_3_15.png.meta",
+      "sha256": "d2c2b3c50c7e5f8c5006a6662992d906b1e3dd5d0314b66e4cafef2607de3d8d",
+      "bytes": 875
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/thumbnail/1_3_16.png",
+      "sha256": "0b4d13693112f4ddd080736a13293a9fc72ae3a571300f5ab0f2f59c76b18604",
+      "bytes": 11988
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/thumbnail/1_3_16.png.meta",
+      "sha256": "8a0463b8f25220f200e787462beefe44dfcfe2f5bd55193ff5200b86b53b8a56",
+      "bytes": 871
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/thumbnail/1_3_2.png",
+      "sha256": "8f94176263b181b1e7af531626aa7d82b91ea1bc101bf8a1c8bdbf1e4dbee789",
+      "bytes": 25477
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/thumbnail/1_3_2.png.meta",
+      "sha256": "62feaba70ba5991322ff7570c0f0b11ba3e0ac78e15d8a1824e78df93eba7df4",
+      "bytes": 875
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/thumbnail/1_3_3.png",
+      "sha256": "9943156ba2f9d751dd037cdfb2ba53bf20cd720abd702d2959150ed9ae00003e",
+      "bytes": 6275
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/thumbnail/1_3_3.png.meta",
+      "sha256": "87d8c45079977b486beed64e95aea6cba48a2762fedbf6dc80e8a87bfaa9fdaa",
+      "bytes": 871
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/thumbnail/1_3_4.png",
+      "sha256": "9b098cf5b7f51905de9b79e17b4bf96517c886c49d040ccf694df55909f6ab39",
+      "bytes": 24012
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/thumbnail/1_3_4.png.meta",
+      "sha256": "ab369ab951d26d198ae03882496e59cb946455d74bcdf14e10c68393c26de37c",
+      "bytes": 875
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/thumbnail/1_3_5.png",
+      "sha256": "b074f25f9b1f416623b4bd48c030f589398c491b47a6820fedd16ae79668305c",
+      "bytes": 17714
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/thumbnail/1_3_5.png.meta",
+      "sha256": "84b8e3fcdee0a58cb026fbce92481377d8f47e714c520579c708c7fe85bf2a85",
+      "bytes": 868
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/thumbnail/1_3_6.png",
+      "sha256": "e72bacf7c7775fbd47b9bb90acc74b1e58eb9bb9c782e64867f40a7e386b9fbd",
+      "bytes": 34777
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/thumbnail/1_3_6.png.meta",
+      "sha256": "f93a5d765ca7523b1ed1c269ddac0af737e964ea357f4d6a222a56ade9686cbc",
+      "bytes": 872
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/thumbnail/1_3_7.png",
+      "sha256": "635dfde76718a328bb965766ee51bf8651114e64f3764dacc4b0eb4811f19aad",
+      "bytes": 25310
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/thumbnail/1_3_7.png.meta",
+      "sha256": "6d2e74a9e7bef04c89b12688e81ef4bd564e98a0520199a660e66a4776a238c1",
+      "bytes": 874
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/thumbnail/1_3_8.png",
+      "sha256": "182e5aafa170be3826feaa1eef3992211397d965f6b1f0c2ab939cc5172a5f5c",
+      "bytes": 33210
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/thumbnail/1_3_8.png.meta",
+      "sha256": "fe8316b5efa277599f2fb3d539c5e18f47baead51fe9745c9cfe4579883294d2",
+      "bytes": 872
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/thumbnail/1_3_9.png",
+      "sha256": "f320f679a6f8b23c38bd5f99e42f0f7a4cd96f190448f7fa110cf139390046d4",
+      "bytes": 22770
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/thumbnail/1_3_9.png.meta",
+      "sha256": "81b863abe331056ebfc79f0dad24727b75ebc5731b4d7c2b08b1adc4b673dfd8",
+      "bytes": 875
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/thumbnail/AutoAtlas.pac",
+      "sha256": "2aaf8682231fbb00299d92acb0b3745c5737e799ff8ca548f636d792022c92a3",
+      "bytes": 36
+    },
+    {
+      "path": "assets/res/texture/hotel/room1/thumbnail/AutoAtlas.pac.meta",
+      "sha256": "51092f03ccd98f36086d0716d487049bbbaae3ae99c4a56e559cabee2d6e5146",
+      "bytes": 509
+    },
+    {
+      "path": "assets/res/texture/hotel/roomui.meta",
+      "sha256": "8b8ac9e7caf17162e41a176cab7c39a83894b9cdcb4168ac3022ac77340c3eb2",
+      "bytes": 274
+    },
+    {
+      "path": "assets/res/texture/hotel/roomui/AutoAtlas.pac",
+      "sha256": "2aaf8682231fbb00299d92acb0b3745c5737e799ff8ca548f636d792022c92a3",
+      "bytes": 36
+    },
+    {
+      "path": "assets/res/texture/hotel/roomui/AutoAtlas.pac.meta",
+      "sha256": "bd240e13c95ed264fe96d46fa763fc4504fe18e26ce0075dea8e5c733f2b59db",
+      "bytes": 509
+    },
+    {
+      "path": "assets/res/texture/hotel/roomui/avatar_frame_2.png",
+      "sha256": "3374131e6e1a6162061fb4862110d4b62a2998aefa71ab0b15eddb5d4e21a23a",
+      "bytes": 3287
+    },
+    {
+      "path": "assets/res/texture/hotel/roomui/avatar_frame_2.png.meta",
+      "sha256": "bf9e27c98fd2bcae4c97f1d0a858fc38432ceeba4a3db07a7a29a7201150bbdb",
+      "bytes": 875
+    },
+    {
+      "path": "assets/res/texture/hotel/roomui/bg_thing.png",
+      "sha256": "310ccc3e818b164fc1e77d426bc55ed469a5fd53fb6ef886be5dc110a7d21521",
+      "bytes": 2148
+    },
+    {
+      "path": "assets/res/texture/hotel/roomui/bg_thing.png.meta",
+      "sha256": "e1ddf04314eb54090d22a3f91b34277046d5e87682e3df20585c6eb7fe46a252",
+      "bytes": 875
+    },
+    {
+      "path": "assets/res/texture/hotel/roomui/bg_wave1.png",
+      "sha256": "95ca33a33c023ed0d8517fce500f4cec696dddd8411296476e8d7978c7bdf207",
+      "bytes": 36385
+    },
+    {
+      "path": "assets/res/texture/hotel/roomui/bg_wave1.png.meta",
+      "sha256": "7781950811321a640aa5f150e3f5b1dda87b7bc2ad1f67eb005624349950702c",
+      "bytes": 873
+    },
+    {
+      "path": "assets/res/texture/hotel/roomui/bg_wave2.png",
+      "sha256": "7371a03fd6559aa90da8c1ef6386b8109fb2cf71032158e18ea58b226fc31c88",
+      "bytes": 35125
+    },
+    {
+      "path": "assets/res/texture/hotel/roomui/bg_wave2.png.meta",
+      "sha256": "43aa673e9e1af053a45c6bbe9da3cd88d3803b624e439757c2888b84a297e6a1",
+      "bytes": 873
+    },
+    {
+      "path": "assets/res/texture/hotel/roomui/btn_cancel.png",
+      "sha256": "2399bc21af03be3f15187bb15595ca118a692385a18504f7b651dcaa558bb39d",
+      "bytes": 7608
+    },
+    {
+      "path": "assets/res/texture/hotel/roomui/btn_cancel.png.meta",
+      "sha256": "49cd6788d3bba15b6d44d1553ee6c49fa4d6c0d2d19bfffb82cd002d6777163d",
+      "bytes": 867
+    },
+    {
+      "path": "assets/res/texture/hotel/roomui/btn_confirm.png",
+      "sha256": "1a835baf9cc40e5bbccc021b0e98151155ccac945234046ebcccbb01021cec88",
+      "bytes": 7708
+    },
+    {
+      "path": "assets/res/texture/hotel/roomui/btn_confirm.png.meta",
+      "sha256": "0c9913c8fb8dffd6879c84ae78fd33920dc11f6ee2c0603cdb1c76ac8407f0d6",
+      "bytes": 868
+    },
+    {
+      "path": "assets/res/texture/hotel/roomui/btn_tab_selected.png",
+      "sha256": "573c94371d361443dd32c0ef2026da07453e3b13a253b1bc393ca8a583c8437a",
+      "bytes": 6424
+    },
+    {
+      "path": "assets/res/texture/hotel/roomui/btn_tab_selected.png.meta",
+      "sha256": "7a808e4ee4fe60e2d99b073337ac07aa885dff48551e0ae2eda5aede28be0109",
+      "bytes": 879
+    },
+    {
+      "path": "assets/res/texture/hotel/roomui/btn_tab_unselected.png",
+      "sha256": "5ccd13712ffe589a0e7ea62d8ec217c3f9f754f044e078e816be542ac59cc7f0",
+      "bytes": 6096
+    },
+    {
+      "path": "assets/res/texture/hotel/roomui/btn_tab_unselected.png.meta",
+      "sha256": "b7500017458f82a8eb8b60ff23b8df813e7c865705b240d996424450ae3203aa",
+      "bytes": 881
+    },
+    {
+      "path": "assets/res/texture/hotel/roomui/hotel_score.png",
+      "sha256": "e25bf1aafbd1ceb8ded135ce9b0f467df84ebf540bcb6129705472d4db9daca0",
+      "bytes": 9467
+    },
+    {
+      "path": "assets/res/texture/hotel/roomui/hotel_score.png.meta",
+      "sha256": "da0be352ba8a63b765abb753928f9c2e31508d59584d8043769c92a3e47e0546",
+      "bytes": 871
+    },
+    {
+      "path": "assets/res/texture/hotel/roomui/icon_arrow.png",
+      "sha256": "f119aeeb2a213b618164b74e90b095ba0fe1e22fb781d2f8e09ca4636627ba02",
+      "bytes": 637
+    },
+    {
+      "path": "assets/res/texture/hotel/roomui/icon_arrow.png.meta",
+      "sha256": "d06189fa5c4ccf566b201d835375bc3573aaf95330b4f8e0218ed73adf47cba9",
+      "bytes": 867
+    },
+    {
+      "path": "assets/res/texture/hotel/roomui/img_selected.png",
+      "sha256": "d4f03f24acca6966235676870f22b1e304b0cbdd01643e4177ab922b9eb1a18f",
+      "bytes": 13320
+    },
+    {
+      "path": "assets/res/texture/hotel/roomui/img_selected.png.meta",
+      "sha256": "a8fcd7d9c3ed8ea3e9804cbf329acf4bb06940b5701ccb1b0b8791eed22b3278",
+      "bytes": 875
+    },
+    {
+      "path": "assets/res/texture/hotel/roomui/img_unselected.png",
+      "sha256": "520bdea5e688582da2e37f67fe36bfd020d47f7f4ca7b986f3c32faf855b4089",
+      "bytes": 10463
+    },
+    {
+      "path": "assets/res/texture/hotel/roomui/img_unselected.png.meta",
+      "sha256": "423c592d20affd0a3945d1d8e693c1a9e1a0d6e733f6ef3bb390a72b367009e8",
+      "bytes": 877
+    },
+    {
+      "path": "assets/res/texture/hotel/roomui/lock.png",
+      "sha256": "2ab8a2a78a421a5f35600731009af0e8538f89ea8cd0d868ae4bd1b4638588cf",
+      "bytes": 8903
+    },
+    {
+      "path": "assets/res/texture/hotel/roomui/lock.png.meta",
+      "sha256": "d893b015ce4f0b00926016007458efbf5db3c61e7338a88a97c41537dfd7b34f",
+      "bytes": 863
+    },
+    {
+      "path": "assets/res/texture/hotel/roomui/main_icon_phb.png",
+      "sha256": "a5a95120942bf715ea14803e44a907c198d906f9128f2683ab2913c019cc02e8",
+      "bytes": 16414
+    },
+    {
+      "path": "assets/res/texture/hotel/roomui/main_icon_phb.png.meta",
+      "sha256": "c66a5fefda9aa4697b3ed12b6f84bb432d1c5e35afe53a15b211c0df618006eb",
+      "bytes": 873
+    },
+    {
+      "path": "assets/res/texture/hotel/roomui/main_icon_rw.png",
+      "sha256": "0b8523a0a7178ea47685f00f9aae0f3c5d81815759770b9c4e9d66d29936cde3",
+      "bytes": 13765
+    },
+    {
+      "path": "assets/res/texture/hotel/roomui/main_icon_rw.png.meta",
+      "sha256": "22ddaef37bb5370d76c755f725e869760c025eb8d1ce400062c0e0441a9250f2",
+      "bytes": 872
+    },
+    {
+      "path": "assets/res/texture/hotel/roomui/main_icon_sd.png",
+      "sha256": "3940cdb6ee242184382cc5416b201fa10bd2b60d223276a3bb2a76b398f2826a",
+      "bytes": 11376
+    },
+    {
+      "path": "assets/res/texture/hotel/roomui/main_icon_sd.png.meta",
+      "sha256": "34b846b01604ae15fe1cc959492922c7361d291e68ad97686b469e8496d5ba02",
+      "bytes": 872
+    },
+    {
+      "path": "assets/res/texture/hotel/roomui/normalcon.png",
+      "sha256": "a54964818ec801431093b3499f3519b5da56eec1c190694d6cf107a48b3096bc",
+      "bytes": 18851
+    },
+    {
+      "path": "assets/res/texture/hotel/roomui/normalcon.png.meta",
+      "sha256": "16a989450cb405f00daf5a24f40d6e19b1271ef46ee3a78bb2eca1fd22a59676",
+      "bytes": 866
+    },
+    {
+      "path": "assets/res/texture/hotel/shareIcon.meta",
+      "sha256": "9eb584d40b503c5aa52d07d4f171d44b473e310bd2fec0e7278ac40d53a8b958",
+      "bytes": 274
+    },
+    {
+      "path": "assets/res/texture/hotel/shareIcon/room_share_1.png",
+      "sha256": "e374332f9bc1afa5380308d61b5251a85960b47ce95aad51d8ffd658e40be711",
+      "bytes": 145173
+    },
+    {
+      "path": "assets/res/texture/hotel/shareIcon/room_share_1.png.meta",
+      "sha256": "947137e70743fefd13d3ccdf21d20750721d3525293bba5961a7ee7f14b3fe63",
+      "bytes": 875
+    },
+    {
+      "path": "assets/res/texture/hotel/shareIcon/room_share_2.png",
+      "sha256": "ff34ccea4298b6c23e149784e50ad8763c7d99ba8e7196f1b455f1d2cced1ccf",
+      "bytes": 165205
+    },
+    {
+      "path": "assets/res/texture/hotel/shareIcon/room_share_2.png.meta",
+      "sha256": "6c78d05e71b80f80bb228a81fd76886577d66260d47cb9595d895e21a6062c55",
+      "bytes": 875
+    },
+    {
+      "path": "assets/res/texture/hotel/slotIcon.meta",
+      "sha256": "7799f84b5748c90403ae764500328d65c3c7d528463d079454c1c9f5ca2acb1e",
+      "bytes": 274
+    },
+    {
+      "path": "assets/res/texture/hotel/slotIcon/slot_icon_1.png",
+      "sha256": "9e9eb1d9116f5f236630bd8cc1eb03da5b0ec7227d3f03666b018c9f09734110",
+      "bytes": 4383
+    },
+    {
+      "path": "assets/res/texture/hotel/slotIcon/slot_icon_1.png.meta",
+      "sha256": "a1907cf2ee7a9306f250a7e1a4166551087c96830911744e27ffa0552acf6416",
+      "bytes": 868
+    },
+    {
+      "path": "assets/res/texture/hotel/slotIcon/slot_icon_10.png",
+      "sha256": "08e7fff2f4da59c1d2e1ed0d31381089979d684defe25e04fe9958c71777f9d9",
+      "bytes": 3433
+    },
+    {
+      "path": "assets/res/texture/hotel/slotIcon/slot_icon_10.png.meta",
+      "sha256": "ab1d9722a1db9d593e1fc0c8f4c2d4a56a8327bd4fadff2f1ff9fbe71686702a",
+      "bytes": 869
+    },
+    {
+      "path": "assets/res/texture/hotel/slotIcon/slot_icon_2.png",
+      "sha256": "56dce6b687427e98e22bbea62efa6c79124d978fee38032bf3945ff291386e61",
+      "bytes": 4243
+    },
+    {
+      "path": "assets/res/texture/hotel/slotIcon/slot_icon_2.png.meta",
+      "sha256": "b314b39562f29b4056b7d2d446fc37cbbc65c8cfd1edd8504c5408ff4e777e00",
+      "bytes": 868
+    },
+    {
+      "path": "assets/res/texture/hotel/slotIcon/slot_icon_3.png",
+      "sha256": "87940be900a9baeefda20b5d7a8adcef69de4e7555cc63166017e01c750437ce",
+      "bytes": 2779
+    },
+    {
+      "path": "assets/res/texture/hotel/slotIcon/slot_icon_3.png.meta",
+      "sha256": "c7fdc81280fd1731738cba3d295d988518e92bd8eb567e1aa72ef4e9f67c824a",
+      "bytes": 868
+    },
+    {
+      "path": "assets/res/texture/hotel/slotIcon/slot_icon_4.png",
+      "sha256": "87c7634e3981d491167255552affec850b6eec3228c3c8a9decf33832c9d12d0",
+      "bytes": 2598
+    },
+    {
+      "path": "assets/res/texture/hotel/slotIcon/slot_icon_4.png.meta",
+      "sha256": "7eaf527d676af27cc272e8a4a7078d8e1eb582141e8894468cdb177c1e28166d",
+      "bytes": 868
+    },
+    {
+      "path": "assets/res/texture/hotel/slotIcon/slot_icon_5.png",
+      "sha256": "d4f7a822bc45aee0e195f436a9e8bb91b4e62bd6459e8ed496eb2ed08f89140f",
+      "bytes": 2309
+    },
+    {
+      "path": "assets/res/texture/hotel/slotIcon/slot_icon_5.png.meta",
+      "sha256": "f9bbec41fe4c69281a76d8aa883314c844593269d5eeeaa104c20b8578b09d8c",
+      "bytes": 868
+    },
+    {
+      "path": "assets/res/texture/hotel/slotIcon/slot_icon_6.png",
+      "sha256": "1632fcc43c9558761a842fc5b7c0cad2ae921ea3466a2b9715bf11ff0dd9806e",
+      "bytes": 3826
+    },
+    {
+      "path": "assets/res/texture/hotel/slotIcon/slot_icon_6.png.meta",
+      "sha256": "7f4546e1ea56c71a67ff44720c04f36426d196ef0600a9a55d1c19207ccd24fb",
+      "bytes": 868
+    },
+    {
+      "path": "assets/res/texture/hotel/slotIcon/slot_icon_7.png",
+      "sha256": "089ebd9f4ac6ddede33df92cd35a98f8f1395268e746cb8e0242f3d5eed910ea",
+      "bytes": 3821
+    },
+    {
+      "path": "assets/res/texture/hotel/slotIcon/slot_icon_7.png.meta",
+      "sha256": "c58c63875c365dff6a7807e4f279bce3ad8fdeac157681df6bc8e678d223f40c",
+      "bytes": 868
+    },
+    {
+      "path": "assets/res/texture/hotel/slotIcon/slot_icon_8.png",
+      "sha256": "79d09e406579c5b4ad50cfb038c6c75cf9c0558cb1b814d775c47e3db45d789d",
+      "bytes": 3542
+    },
+    {
+      "path": "assets/res/texture/hotel/slotIcon/slot_icon_8.png.meta",
+      "sha256": "357a6fea06ab690217241d4e9f3920d0484ed9282fb7779b91ca612104c45c77",
+      "bytes": 868
+    },
+    {
+      "path": "assets/res/texture/hotel/slotIcon/slot_icon_9.png",
+      "sha256": "c7b24400726c907ae8d3225e89cfa8509c56ead6031cc3a45e833bc381edc88e",
+      "bytes": 2622
+    },
+    {
+      "path": "assets/res/texture/hotel/slotIcon/slot_icon_9.png.meta",
+      "sha256": "fba2496c1e995e6bbcf952160ee628e01910836c725b55d6c5ed1f8b63481ab7",
+      "bytes": 868
+    },
+    {
+      "path": "assets/res/texture/hotel/spine.meta",
+      "sha256": "aa398726b083a3cccd2e40c83ceb7e64196ad63f83cf090a99883ddcf7e2999f",
+      "bytes": 274
+    },
+    {
+      "path": "assets/res/texture/hotel/spine/bed1-6.meta",
+      "sha256": "7b40ddf01a3678ee435400db074b16bca8cd94717943147d04f76022ee72bd30",
+      "bytes": 274
+    },
+    {
+      "path": "assets/res/texture/hotel/spine/bed1-6/bedFX.atlas",
+      "sha256": "4789b07e17a0d51a39bf458ac2346ee897e959f58b42d1eb922f9f0a91980f33",
+      "bytes": 3896
+    },
+    {
+      "path": "assets/res/texture/hotel/spine/bed1-6/bedFX.atlas.meta",
+      "sha256": "084c2e51b9f8af04366ca3a099ceb48612b591122f0a3362782adac971278d89",
+      "bytes": 111
+    },
+    {
+      "path": "assets/res/texture/hotel/spine/bed1-6/bedFX.json",
+      "sha256": "230f01d58f616f6baea8a1911274a5b4c961536184e8045fe7a593e3768d32b7",
+      "bytes": 14407
+    },
+    {
+      "path": "assets/res/texture/hotel/spine/bed1-6/bedFX.json.meta",
+      "sha256": "461e53b6455888ada07b4af95dd9b04ace1b2a4b7b79f7b27d9a28fe2f8d8f4f",
+      "bytes": 189
+    },
+    {
+      "path": "assets/res/texture/hotel/spine/bed1-6/bedFX.png",
+      "sha256": "394e2e4c769795ff379750a5f88e01357ebae36f19492f64b07906a6aea57bbf",
+      "bytes": 149531
+    },
+    {
+      "path": "assets/res/texture/hotel/spine/bed1-6/bedFX.png.meta",
+      "sha256": "c96f95daed3809694eb20ab170f09e4d135823f00afc0903b7f20d29f74983b9",
+      "bytes": 870
+    },
+    {
+      "path": "assets/res/texture/hotel/spine/blanket1-5.meta",
+      "sha256": "ee9b035f0120a0b3c8e45e3fbff13e6cf17da46a5c1ec634e304e3ca26b69a95",
+      "bytes": 274
+    },
+    {
+      "path": "assets/res/texture/hotel/spine/blanket1-5/carpetFX.atlas",
+      "sha256": "b730bf5ca839aeef0cef3248579c81390549f916bfd4b079b64a1ea2a72f2580",
+      "bytes": 361
+    },
+    {
+      "path": "assets/res/texture/hotel/spine/blanket1-5/carpetFX.atlas.meta",
+      "sha256": "0104021740a8fb5d4d25aa5bbcfc60bbe3a26b6fe320c6b54e30d237ea093bbd",
+      "bytes": 111
+    },
+    {
+      "path": "assets/res/texture/hotel/spine/blanket1-5/carpetFX.json",
+      "sha256": "e329842953439e79a07754d84364d288d70ba30c57b340114ae9fc81bb26ca96",
+      "bytes": 6485
+    },
+    {
+      "path": "assets/res/texture/hotel/spine/blanket1-5/carpetFX.json.meta",
+      "sha256": "107577917b78314bc6ca2d14cd95eae9421cd64fcda0ffe8c1bb878ffa3d851d",
+      "bytes": 189
+    },
+    {
+      "path": "assets/res/texture/hotel/spine/blanket1-5/carpetFX.png",
+      "sha256": "a3535634788c3ff93db0b59870725cdfc54491fbe6e3682cddcce2925a801f59",
+      "bytes": 15286
+    },
+    {
+      "path": "assets/res/texture/hotel/spine/blanket1-5/carpetFX.png.meta",
+      "sha256": "b6ceefbc5053425075e5fda1f53a240ac1f92d6f6e3b5ed2b36f6b1ed2bd9096",
+      "bytes": 872
+    },
+    {
+      "path": "assets/res/texture/levelMap/LevelMap_level_complete.png",
+      "sha256": "e7686073285e9e5042157c572d19896b9482c0f3c4673faf01ffd0c8ccb177fa",
+      "bytes": 9252
+    },
+    {
+      "path": "assets/res/texture/levelMap/LevelMap_level_complete.png.meta",
+      "sha256": "0b17a171f79067fc8257fb2652fd2c5dc362eb009b2058f8da993a0d2a286069",
+      "bytes": 883
+    },
+    {
+      "path": "assets/res/texture/levelMap/LevelMap_level_disable.png",
+      "sha256": "92d54bd91f90f370f95690e0d71991dc7da2bed9f1bc47d555d4979e5f20605c",
+      "bytes": 8938
+    },
+    {
+      "path": "assets/res/texture/levelMap/LevelMap_level_disable.png.meta",
+      "sha256": "93236351f652a8bbaa206dc7fa28891b170e173692fc70746cc577a360be51a9",
+      "bytes": 882
+    },
+    {
+      "path": "assets/res/texture/levelMap/LevelMap_level_open.png",
+      "sha256": "b95bb117cf0e179f0b74571c3911bad37d8b09e519efbb924349e6ffb0113909",
+      "bytes": 9256
+    },
+    {
+      "path": "assets/res/texture/levelMap/LevelMap_level_open.png.meta",
+      "sha256": "f44e2e0f32c75afa66019958a89d94c212761a059f1d908a5963ad4dac0362fb",
+      "bytes": 879
+    },
+    {
+      "path": "assets/res/texture/levelMap/LevelMap_star1.png",
+      "sha256": "009aaf5d979fa6d29cb1bd5b9af93a56c029e0e767698a618fcee8e83c526517",
+      "bytes": 3625
+    },
+    {
+      "path": "assets/res/texture/levelMap/LevelMap_star1.png.meta",
+      "sha256": "34bc3b244f04597b49d564bf0ff749efe7ce28cf27d6d9c73d5021c2686e8d2d",
+      "bytes": 871
+    },
+    {
+      "path": "assets/res/texture/levelMap/LevelMap_starBg.png",
+      "sha256": "7dc3f9adf66bc9abd190a4dab93feb0e22e338f643bad49a952e39f83287049c",
+      "bytes": 10159
+    },
+    {
+      "path": "assets/res/texture/levelMap/LevelMap_starBg.png.meta",
+      "sha256": "4210140cb4c022faa448408c4399bf602cde66265a2191f8599396c6db5e8f2f",
+      "bytes": 875
+    },
+    {
+      "path": "assets/res/texture/levelMap/box/arrow.png",
+      "sha256": "42799cfef56d6371d23335480d541915eb321301b3de449e4c329fce975d17d1",
+      "bytes": 2698
+    },
+    {
+      "path": "assets/res/texture/levelMap/box/arrow.png.meta",
+      "sha256": "2c6885065bdf4f1d0f4a710949aac7500332efdde0353f699e371d3a06e13ba0",
+      "bytes": 862
+    },
+    {
+      "path": "assets/res/texture/levelMap/box/arrow_lv.png",
+      "sha256": "2b8ce074f977a869aabc9166f44bc55770e44995aff02e9ee22c8e472e0a3f91",
+      "bytes": 2825
+    },
+    {
+      "path": "assets/res/texture/levelMap/box/arrow_lv.png.meta",
+      "sha256": "f56228729f5e007e2ce12cbbb9c59785e3da99458c22603fe26b500b725cc5df",
+      "bytes": 865
+    },
+    {
+      "path": "assets/res/texture/levelMap/box/box_role_2.png",
+      "sha256": "f41aae8f67843aaf52af5c63a15fc09889f5250ab96c3024c31a892ff0ededca",
+      "bytes": 4277
+    },
+    {
+      "path": "assets/res/texture/levelMap/box/box_role_2.png.meta",
+      "sha256": "b6eb488d38da6a532e1652d69be6410ffc89e9aed21fecc7ff54d020eb75ebca",
+      "bytes": 867
+    },
+    {
+      "path": "assets/res/texture/levelMap/box/sea_box_01.png",
+      "sha256": "b33ad3a02aca74fd0955e4ce24a5f5c9cc43cded1aadfa3e5ba5102e09d3f7b0",
+      "bytes": 32025
+    },
+    {
+      "path": "assets/res/texture/levelMap/box/sea_box_01.png.meta",
+      "sha256": "a8a583fd8d0676f744ecc453d869a53d226c11b02e4aea5a6d96385aeece5997",
+      "bytes": 877
+    },
+    {
+      "path": "assets/res/texture/levelMap/box/sea_box_02.png",
+      "sha256": "0c11434832f9557038aba300ddc40f4643723a2af7a7794eddd92d4a88a26de3",
+      "bytes": 50638
+    },
+    {
+      "path": "assets/res/texture/levelMap/box/sea_box_02.png.meta",
+      "sha256": "83bdecd64f237fcee2ac858aeadc33f15ed95d657e952247048fc26ad04f50e5",
+      "bytes": 878
+    },
+    {
+      "path": "assets/res/texture/levelMap/btn_city.png",
+      "sha256": "04554486ab2bd93751eea37c0235666d3c60213416f7a98cb92e863e3877cf63",
+      "bytes": 24523
+    },
+    {
+      "path": "assets/res/texture/levelMap/btn_city.png.meta",
+      "sha256": "f98fc00380ed516b2330771a1b4f2f0bb3a4dc4e869759bff92bb58459355d7b",
+      "bytes": 871
+    },
+    {
+      "path": "assets/res/texture/levelMap/img_cloud_1.png",
+      "sha256": "50e382ce450047218bbd869ce626ccc4c6f1545d5350dda73581a17b60226fdd",
+      "bytes": 32240
+    },
+    {
+      "path": "assets/res/texture/levelMap/img_cloud_1.png.meta",
+      "sha256": "a0265f185552c389dfbb192fca2423a6f1bc306be593bd950e6ea528ecf1d421",
+      "bytes": 874
+    },
+    {
+      "path": "assets/res/texture/levelMap/img_cloud_2.png",
+      "sha256": "b11ff470dbca76187094419ec8579157f7f449718dcc27bb297acd0800fa4e26",
+      "bytes": 56874
+    },
+    {
+      "path": "assets/res/texture/levelMap/img_cloud_2.png.meta",
+      "sha256": "6ccca641e0cc5d668277a43b794d36f0d0d0c9dfe03882d0847431f890929e7b",
+      "bytes": 874
+    },
+    {
+      "path": "assets/res/texture/levelMap/img_level_bg.png",
+      "sha256": "98278a5c2a004ed8f5bcc3566b8f4393bdb15529ae5713b683fddcdce64b6f42",
+      "bytes": 250
+    },
+    {
+      "path": "assets/res/texture/levelMap/img_level_bg.png.meta",
+      "sha256": "162f3357435f582c1de9a071482ac61e917f7beb6d6a7f5a4098998954d0d2ea",
+      "bytes": 872
+    },
+    {
+      "path": "assets/res/texture/levelMap/island_1.png",
+      "sha256": "5d46a34e5ad2e9dfca3e5d4265c73dc2f66f218909ebc16e4c4d2ab8e6c5fa27",
+      "bytes": 252422
+    },
+    {
+      "path": "assets/res/texture/levelMap/island_1.png.meta",
+      "sha256": "f7f6e9bca426f1fba8faa4b4369b81da2692423a09c30b986fd589fd012ff569",
+      "bytes": 881
+    },
+    {
+      "path": "assets/res/texture/levelMap/island_2.png",
+      "sha256": "f1b2896c622e8ff27733b2831f248292dd2bf928b5c43c744aa7fc9eefc8b876",
+      "bytes": 269061
+    },
+    {
+      "path": "assets/res/texture/levelMap/island_2.png.meta",
+      "sha256": "8532336d8871a25b4b5dae84a925470f45436d8119b1bec365150f8b8aad5b91",
+      "bytes": 876
+    },
+    {
+      "path": "assets/res/texture/levelMap/island_3.png",
+      "sha256": "141d41a414689156b5613eb618cfe43978ae8bd6289d4cd94c21616608a0e4af",
+      "bytes": 269864
+    },
+    {
+      "path": "assets/res/texture/levelMap/island_3.png.meta",
+      "sha256": "80e44277ed8b8f0dbb659d9b26e76a7158b39179f90383c5e7bcff9b709b1317",
+      "bytes": 877
+    },
+    {
+      "path": "assets/res/texture/levelMap/main_bg_04.png",
+      "sha256": "15a4cbec8b507842c19767d832cd7085a8a425c04355d62db9ecc84c28e8cc23",
+      "bytes": 1297
+    },
+    {
+      "path": "assets/res/texture/levelMap/main_bg_04.png.meta",
+      "sha256": "c46d1db4943af4d8ab7cecd263b4231c4c43a26985c3c576bcf64dc31142fb0a",
+      "bytes": 867
+    },
+    {
+      "path": "assets/res/texture/levelMap/main_bg_05.png",
+      "sha256": "e52cf0470b389ae3fac2fcdcdd99c0c394b36f9d9cf52ee9bf901cddc8765da1",
+      "bytes": 56904
+    },
+    {
+      "path": "assets/res/texture/levelMap/main_bg_05.png.meta",
+      "sha256": "ecefa04dae58492f77a64a07d4a5a28a80803a9f19e1f9bfcdd135cfca6dd311",
+      "bytes": 877
+    },
+    {
+      "path": "assets/res/texture/levelMap/main_icon_gg.png",
+      "sha256": "35b69ea3b64d9df726d5aff890a26e42b1713055e9587ffb05843d401aab0d9d",
+      "bytes": 13061
+    },
+    {
+      "path": "assets/res/texture/levelMap/main_icon_gg.png.meta",
+      "sha256": "79bb6304059cfa2b0bdb441d5d4d98f26c4aebd321ad960a5f67b433bd44ffbe",
+      "bytes": 872
+    },
+    {
+      "path": "assets/res/texture/levelMap/main_icon_xx.png",
+      "sha256": "4dc77d5a62d168b3b236c07515ee243a1e10c76e9e907373579976ac5e61606f",
+      "bytes": 11284
+    },
+    {
+      "path": "assets/res/texture/levelMap/main_icon_xx.png.meta",
+      "sha256": "5fb3e95f45915d1b6d2cab3c39b904422b40e431f59c2706923ce060f9ecf351",
+      "bytes": 872
+    },
+    {
+      "path": "assets/res/texture/levelMap/rank/dark_avatar.png",
+      "sha256": "08e7da05ee1193c13af1cb0dba7b9f57ba20868663dfd41b88c74af6e633de37",
+      "bytes": 2058
+    },
+    {
+      "path": "assets/res/texture/levelMap/rank/dark_avatar.png.meta",
+      "sha256": "2a60d35ec00e147ec97fe92e90bfa617c5e5334009d5590ec81b59a4389d8aa4",
+      "bytes": 868
+    },
+    {
+      "path": "assets/res/texture/levelMap/rank/dark_item_input.png",
+      "sha256": "d361a48708c7090bc7d77690c753d1e638a5be1c57fa210b92df71966ba34bff",
+      "bytes": 817
+    },
+    {
+      "path": "assets/res/texture/levelMap/rank/dark_item_input.png.meta",
+      "sha256": "945939afe01e922e6750ef7619f2fe78e2f301520f7286853292b8e347549968",
+      "bytes": 876
+    },
+    {
+      "path": "assets/res/texture/levelMap/rank/img_ad_1.png",
+      "sha256": "37e44a73e0268a4a599ffbef1f9d540113db8e825a64e5fb0d7d58df6285538c",
+      "bytes": 160468
+    },
+    {
+      "path": "assets/res/texture/levelMap/rank/img_ad_1.png.meta",
+      "sha256": "832234a8162fbe80aa2268e1e4f2f0057881b1faa4c6a508aec4e2e64945baee",
+      "bytes": 871
+    },
+    {
+      "path": "assets/res/texture/levelMap/rank/img_xz1.png",
+      "sha256": "8f9eafb0dbc5a86e209880732b2f292c0cfec546f40507ce73bcb8f7908acd4f",
+      "bytes": 10046
+    },
+    {
+      "path": "assets/res/texture/levelMap/rank/img_xz1.png.meta",
+      "sha256": "6058bb4455a17bdc9744ca5b7c204f9735c1ca4a774e1d57ea8a88172288e9f0",
+      "bytes": 864
+    },
+    {
+      "path": "assets/res/texture/levelMap/rank/img_xz2.png",
+      "sha256": "dbf8efcf2837141228f7b4f1df3149589fa285ffda0068b9037abbfd1c1f09c6",
+      "bytes": 10561
+    },
+    {
+      "path": "assets/res/texture/levelMap/rank/img_xz2.png.meta",
+      "sha256": "abb3a11e4227e9b263cabb755b839b11d2787195f723cb1416a5f7455115bee2",
+      "bytes": 864
+    },
+    {
+      "path": "assets/res/texture/levelMap/rank/img_xz3.png",
+      "sha256": "a493b07c2aa42683cca2669fe19a84b5b6735585641b61a350a84af60989d031",
+      "bytes": 10334
+    },
+    {
+      "path": "assets/res/texture/levelMap/rank/img_xz3.png.meta",
+      "sha256": "d8e9f916bcb3b268a8d7f7e65b2b348850ffdfae21914180021c82ed34e1d8cb",
+      "bytes": 864
+    },
+    {
+      "path": "assets/res/texture/levelMap/rank/panel_dark.png",
+      "sha256": "86c13f56d25a75731e548c34fd613677104f35b16bc834b81b27ee887c0258e7",
+      "bytes": 19905
+    },
+    {
+      "path": "assets/res/texture/levelMap/rank/panel_dark.png.meta",
+      "sha256": "72690f2e5f3c432c9ce7312960107d065040d0b9ac63563364fe5c2aac9c2d9d",
+      "bytes": 881
+    },
+    {
+      "path": "assets/res/texture/levelMap/rank/panel_dark_di.png",
+      "sha256": "7b6eb009e10f851b6ad18b1a041ab737d097e6f99446daa597198ebdc71487ca",
+      "bytes": 4049
+    },
+    {
+      "path": "assets/res/texture/levelMap/rank/panel_dark_di.png.meta",
+      "sha256": "5edd85a0727a71b9ff871f86848c3c541ed524a2b574b1387e10769f6ed86db8",
+      "bytes": 883
+    },
+    {
+      "path": "assets/res/texture/levelMap/rank/white_avatar.png",
+      "sha256": "9b951925e4573cf27afda32113f35991837f12b27557396859b96634b66d9a2d",
+      "bytes": 2020
+    },
+    {
+      "path": "assets/res/texture/levelMap/rank/white_avatar.png.meta",
+      "sha256": "ef5bb585efc93690cdce690750655f18fa2c4a3c59033b820529fe3b91f06f8c",
+      "bytes": 869
+    },
+    {
+      "path": "assets/res/texture/levelMap/rank/white_item_bg.png",
+      "sha256": "1e0d62b74dc518240a243e59a839460b911a1fee959da394d77527ba1a146732",
+      "bytes": 1921
+    },
+    {
+      "path": "assets/res/texture/levelMap/rank/white_item_bg.png.meta",
+      "sha256": "1a21b1132b83c2a79d7d747defdcd8db098d23c83885dfc5ea30cf61cde29cac",
+      "bytes": 874
+    },
+    {
+      "path": "assets/res/texture/levelMap/rank/white_item_bg_2.png",
+      "sha256": "27a8ee36a28814577eb2654005549c7a41bd57ffc36be6546ee2e840d2168740",
+      "bytes": 650
+    },
+    {
+      "path": "assets/res/texture/levelMap/rank/white_item_bg_2.png.meta",
+      "sha256": "106db02e15baefce3c5f61a52676d4a32e4f9db934ab46d2156eab7dd84915eb",
+      "bytes": 875
+    },
+    {
+      "path": "assets/res/texture/levelMap/rank/排行榜.png",
+      "sha256": "2b27500cfa5644c59a8ba7cb9def4e6159c65373cebad3dc802b860bff0b7d9b",
+      "bytes": 424140
+    },
+    {
+      "path": "assets/res/texture/levelMap/rank/排行榜.png.meta",
+      "sha256": "b7a229d86ab3598ceaa91eb84bcea5b1e0ed611bc54a1c125fa1545adf7a27fd",
+      "bytes": 875
+    },
+    {
+      "path": "assets/res/texture/levelMap/yugao_bg.png",
+      "sha256": "d41c3db31e92d64d9672138dabfd205c89478047daf404d590cd1ef221e9e17e",
+      "bytes": 3992
+    },
+    {
+      "path": "assets/res/texture/levelMap/yugao_bg.png.meta",
+      "sha256": "6b1c7f197676b6b59e6f566a60c37fe980e0c485c53599931aab8166672bb4a1",
+      "bytes": 868
+    },
+    {
+      "path": "assets/res/texture/loading.meta",
+      "sha256": "3ed686eaef6b0ae362b1aa995b66583d3424737d1f56a89f5a45e86a319e7646",
+      "bytes": 274
+    },
+    {
+      "path": "assets/res/texture/loading/loading_bg.png",
+      "sha256": "7597429ba25c71c26963760ee56943f1d0d0a69fef66f75c90b493529ffbef91",
+      "bytes": 172632
+    },
+    {
+      "path": "assets/res/texture/loading/loading_bg.png.meta",
+      "sha256": "8cb4e3b57ce2c97612455d322eaaff2494c9bcf128e023bcb5543069058b7c7d",
+      "bytes": 876
+    },
+    {
+      "path": "assets/res/texture/loading/logo.png",
+      "sha256": "d9c9273de2ec08a24ce8d8fb590cb6df6571d3ecf975444af186505bfc89447d",
+      "bytes": 152740
+    },
+    {
+      "path": "assets/res/texture/loading/logo.png.meta",
+      "sha256": "b1d38b631a34518e777b6b7f8f8badf7ca6bacf7291a30124460142c084cd393",
+      "bytes": 872
+    },
+    {
+      "path": "assets/res/texture/loading/pb_background.png",
+      "sha256": "3a7d5f5b9820c464a9a9cfa92d6263f86e25f815bd40d829316a30c67fd0feb6",
+      "bytes": 1395
+    },
+    {
+      "path": "assets/res/texture/loading/pb_background.png.meta",
+      "sha256": "0884cbd50935e58d748bfb4e8eb269e1dba0b7c470e1542e778c7e108a921ba9",
+      "bytes": 877
+    },
+    {
+      "path": "assets/res/texture/loading/pb_cover.png",
+      "sha256": "ca8581ad0d8d2e40af307ed0a6397b9f8baf07321d686a968564e89aa4a55d08",
+      "bytes": 1380
+    },
+    {
+      "path": "assets/res/texture/loading/pb_cover.png.meta",
+      "sha256": "094ac4222b04c8da7688b135958f559e589b883458f9ce558595bab75291362c",
+      "bytes": 872
+    },
+    {
+      "path": "assets/res/texture/loading/pb_fill.png",
+      "sha256": "753977aeb4f0e66a055d4802463f67ac74cadf7f27bc525e3f9168f2e0ce019d",
+      "bytes": 1524
+    },
+    {
+      "path": "assets/res/texture/loading/pb_fill.png.meta",
+      "sha256": "e1ae9bb4399a610ea658e3b9ed81668b54e5ff6c154ed8ce34e83b9a1f728f1f",
+      "bytes": 869
+    },
+    {
+      "path": "assets/res/texture/map.meta",
+      "sha256": "1705839c483e400ddd3036567132d4e6871fdd541e91f9f7eea7767b10370a6f",
+      "bytes": 274
+    },
+    {
+      "path": "assets/res/texture/map/Effect.meta",
+      "sha256": "4264437f0320b8175e026881512e8ee47943f53bce722da273e6b0376db03c2d",
+      "bytes": 274
+    },
+    {
+      "path": "assets/res/texture/map/Effect/cloud.meta",
+      "sha256": "03bb098c6ba0c3f02ebfb92d71767f5adff1949f9dd2fa773927d7b8c64e7e28",
+      "bytes": 274
+    },
+    {
+      "path": "assets/res/texture/map/Effect/cloud/cloud.atlas",
+      "sha256": "cd4f90714fdb7171297577ba9895e50db10dc22cd2704d79333aaffb44ad16c3",
+      "bytes": 308
+    },
+    {
+      "path": "assets/res/texture/map/Effect/cloud/cloud.atlas.meta",
+      "sha256": "e69b503f34428f852cbe23d4cceef39d4a44defdeedd14c98eaeb85e844ef440",
+      "bytes": 111
+    },
+    {
+      "path": "assets/res/texture/map/Effect/cloud/cloud.json",
+      "sha256": "3acbc5bae26535ec1f24a025e38f82f47dda6b497ce4a51e73aecbf7e8b6c0f6",
+      "bytes": 6313
+    },
+    {
+      "path": "assets/res/texture/map/Effect/cloud/cloud.json.meta",
+      "sha256": "bd786364198a49c3ac98f12237836a9d2c33b415d4aafa1704e63371145f6360",
+      "bytes": 189
+    },
+    {
+      "path": "assets/res/texture/map/Effect/cloud/cloud.png",
+      "sha256": "0f5dbceeb3f2027f27b2263cff43dc92580ab3070828b3a2fe09777a0390924f",
+      "bytes": 119242
+    },
+    {
+      "path": "assets/res/texture/map/Effect/cloud/cloud.png.meta",
+      "sha256": "00a8f79972b7f23c1d4fd5f36c336778cbed0e94ca102b7f0fd067018243922f",
+      "bytes": 871
+    },
+    {
+      "path": "assets/res/texture/map/ui.meta",
+      "sha256": "9888c8e9f34f54725ff635354e220da4a646b5dcd3accc6e14b1aeea3aed96a0",
+      "bytes": 274
+    },
+    {
+      "path": "assets/res/texture/map/ui/arrow.png",
+      "sha256": "42799cfef56d6371d23335480d541915eb321301b3de449e4c329fce975d17d1",
+      "bytes": 2698
+    },
+    {
+      "path": "assets/res/texture/map/ui/arrow.png.meta",
+      "sha256": "cb25cf690bfbb914856f35d1846a255afa5562e3524cab8c24d922aa1277af6b",
+      "bytes": 862
+    },
+    {
+      "path": "assets/res/texture/map/ui/arrow_lv.png",
+      "sha256": "2b8ce074f977a869aabc9166f44bc55770e44995aff02e9ee22c8e472e0a3f91",
+      "bytes": 2825
+    },
+    {
+      "path": "assets/res/texture/map/ui/arrow_lv.png.meta",
+      "sha256": "6621c8881917cf0ad521b02397127b80ff0e00994f5f4cb191b9d09252da3923",
+      "bytes": 865
+    },
+    {
+      "path": "assets/res/texture/map/ui/arrow_up.png",
+      "sha256": "67723476bc0ff3adf7327a9d103283f76f18e09c04b38d553a9c5765656ae517",
+      "bytes": 4332
+    },
+    {
+      "path": "assets/res/texture/map/ui/arrow_up.png.meta",
+      "sha256": "68873a28f7fca2e1258e1420eeaa413d9c1c995631a98744d30e7d8d7e5efc0d",
+      "bytes": 865
+    },
+    {
+      "path": "assets/res/texture/map/ui/btn_build_bg.png",
+      "sha256": "c0b655a74cbd3998246a393f6fe389e224b555e6f767b334366901849bde0abe",
+      "bytes": 14101
+    },
+    {
+      "path": "assets/res/texture/map/ui/btn_build_bg.png.meta",
+      "sha256": "670982319a31f5a50315be5adf56b6a51d0378f4a221fad06e70fe23c3dff7a8",
+      "bytes": 875
+    },
+    {
+      "path": "assets/res/texture/map/ui/btn_confirm.png",
+      "sha256": "eca3b61caea7e225a4cc63ad78bed5c1c977d3f65e61514846d2cbdb0392d170",
+      "bytes": 11427
+    },
+    {
+      "path": "assets/res/texture/map/ui/btn_confirm.png.meta",
+      "sha256": "6aa0a208401ebb3bcd5aebaaf7b6befcd6014ab0fefee81f9d3283dc7b548b22",
+      "bytes": 874
+    },
+    {
+      "path": "assets/res/texture/map/ui/btn_start.png",
+      "sha256": "ce948249cbde93bd95713b323905d6ba466f0fa3e3b896f2a0da2da36b737fc1",
+      "bytes": 28732
+    },
+    {
+      "path": "assets/res/texture/map/ui/btn_start.png.meta",
+      "sha256": "206a78e432d667543cdd50b990ae33d993c093092fe6eac17aae31ea92e480b4",
+      "bytes": 872
+    },
+    {
+      "path": "assets/res/texture/map/ui/build1_bg.png",
+      "sha256": "16ffd1e21b960b2b30aa38ef5dde9869f05321acad6bf7b65ba204c62abf8b44",
+      "bytes": 3347
+    },
+    {
+      "path": "assets/res/texture/map/ui/build1_bg.png.meta",
+      "sha256": "f998af7b8824153fcbd0127dd5b87a5d10102337a45156b23443f4494c9682a9",
+      "bytes": 872
+    },
+    {
+      "path": "assets/res/texture/map/ui/build1_frame.png",
+      "sha256": "2a6e33d5c15dac218d4db4d6c6ef611f69e1b08d42a3712be4ecc00948055c7b",
+      "bytes": 3360
+    },
+    {
+      "path": "assets/res/texture/map/ui/build1_frame.png.meta",
+      "sha256": "be0445cde12386ea68a20e9585b0745effccc1dba8f4e87bb553704dbe3dadb5",
+      "bytes": 873
+    },
+    {
+      "path": "assets/res/texture/map/ui/build1_select.png",
+      "sha256": "9af66ca8a26b4e8349de591f633487d9895cc15dc94a3348d82128583e1ef1ee",
+      "bytes": 6112
+    },
+    {
+      "path": "assets/res/texture/map/ui/build1_select.png.meta",
+      "sha256": "46887189c8dedda1d57b00ffd30b20554b1c8e025de626e37562261ae118eb1a",
+      "bytes": 880
+    },
+    {
+      "path": "assets/res/texture/map/ui/build2_bg.png",
+      "sha256": "1ea87ed7dffbd2d24d97f1ff3c47bf27366e7b01d9fa7357bd78eb08435203cb",
+      "bytes": 3680
+    },
+    {
+      "path": "assets/res/texture/map/ui/build2_bg.png.meta",
+      "sha256": "12132478e8610bfcee052af086386274b27e75043c003b3dad5e6a85e4672142",
+      "bytes": 872
+    },
+    {
+      "path": "assets/res/texture/map/ui/buildTitle.png",
+      "sha256": "4eba393d5233fd1194fc5c01c463d47e115195d75dae93d25b7ba88175f97d29",
+      "bytes": 39857
+    },
+    {
+      "path": "assets/res/texture/map/ui/buildTitle.png.meta",
+      "sha256": "e8ef4abc2ac136dcf6757b81a95716d6a2c66b8d5e5e5aca48b37f230f227bcb",
+      "bytes": 873
+    },
+    {
+      "path": "assets/res/texture/map/ui/coin.png",
+      "sha256": "776c4199d6a9ea957cee2273f6c90a849658f5856eedca8161467166a76853f9",
+      "bytes": 10036
+    },
+    {
+      "path": "assets/res/texture/map/ui/coin.png.meta",
+      "sha256": "e48eb8d23287049458f2d377e4fef9fe1c19f72f92f8b9721d81daf686fa4e87",
+      "bytes": 861
+    },
+    {
+      "path": "assets/res/texture/map/ui/map_share_bg.png",
+      "sha256": "feb7751ef04d68d1524e7bceb262f2a9f6d73ad1883ae70730e1c37f15330a07",
+      "bytes": 122763
+    },
+    {
+      "path": "assets/res/texture/map/ui/map_share_bg.png.meta",
+      "sha256": "19d10788afe1afc2c9c7b74182ae1cba35ee9209a02a0443ba5eebe209ffe1ed",
+      "bytes": 875
+    },
+    {
+      "path": "assets/res/texture/map/ui/panel1_bg.png",
+      "sha256": "9038364e00e0c016d392c9ec62abe69fed2a011f853f108d7b8078b8ff8ef4d1",
+      "bytes": 7978
+    },
+    {
+      "path": "assets/res/texture/map/ui/panel1_bg.png.meta",
+      "sha256": "6151e70f44e1aa984a792155c0619ccecdac74726c64bf5af30fea30b071c474",
+      "bytes": 874
+    },
+    {
+      "path": "assets/res/texture/map/ui/panel2_1_bg.png",
+      "sha256": "d5cd1a52831ab65ae3d3102993100b9dce363827eca156369e42559e926a6b58",
+      "bytes": 14861
+    },
+    {
+      "path": "assets/res/texture/map/ui/panel2_1_bg.png.meta",
+      "sha256": "496e783d27c0fca3c9d520d01133979e652bcf7ad1f1e33fd52ab0c2606e0462",
+      "bytes": 877
+    },
+    {
+      "path": "assets/res/texture/map/ui/panel2_2_bg.png",
+      "sha256": "730b42994d8fa08d55df2351165cc88cde7bc1ba82dcee9f2f9cd5bd42635307",
+      "bytes": 14148
+    },
+    {
+      "path": "assets/res/texture/map/ui/panel2_2_bg.png.meta",
+      "sha256": "bfecd280d60a31d983fbdc16227ddb58026fc6ebacf3afd277a33abe2fff8998",
+      "bytes": 877
+    },
+    {
+      "path": "assets/res/texture/map/ui/panel2_3_bg.png",
+      "sha256": "71b2fb979b4ba92f7e2b89ce81d2e28c99a8b9632ecccf129467938e7d971b27",
+      "bytes": 16868
+    },
+    {
+      "path": "assets/res/texture/map/ui/panel2_3_bg.png.meta",
+      "sha256": "aede18e08e89a36b3fec891664f4b913ebccd64637184ad0af7dee1048afce08",
+      "bytes": 877
+    },
+    {
+      "path": "assets/res/texture/map/ui/star.png",
+      "sha256": "70664de18e5253fa69df15b3acd47d593f6d99ac9c5b044f3315b22b88712e9c",
+      "bytes": 10064
+    },
+    {
+      "path": "assets/res/texture/map/ui/star.png.meta",
+      "sha256": "8207b03a1d548787570554f6f10f01b8a1ab9adc415c1da2270be59fd771fc62",
+      "bytes": 861
+    },
+    {
+      "path": "assets/res/texture/map/ui/starFont.fnt",
+      "sha256": "45b91215bd3aed208562783023294ec28eca1679ac0af420b6a805f5cdd84b80",
+      "bytes": 1430
+    },
+    {
+      "path": "assets/res/texture/map/ui/starFont.fnt.meta",
+      "sha256": "981a1090092376540d525ac06de3fc4c712e40abb826107f954623e41c2d686c",
+      "bytes": 192
+    },
+    {
+      "path": "assets/res/texture/map/ui/starFont.png",
+      "sha256": "3b59b2ef712a057f2575e4443420ddc2dd8c1befd289dd28b5dbecba326cd4c9",
+      "bytes": 26544
+    },
+    {
+      "path": "assets/res/texture/map/ui/starFont.png.meta",
+      "sha256": "97e7b01e62a6da27b7370c9a3becd6c75d403dfde5e51b767a668edd3e027f95",
+      "bytes": 874
+    },
+    {
+      "path": "assets/res/texture/map/ui/startFont.fnt",
+      "sha256": "cb3d6e9de3983495ac5bf70235d890ce45fef3ce323e84e237e74f79dc7440df",
+      "bytes": 1431
+    },
+    {
+      "path": "assets/res/texture/map/ui/startFont.fnt.meta",
+      "sha256": "02aa802c03a93aaf0ad7e51356a1f889e5b4eff35fa825ba047fb7a6131c2c48",
+      "bytes": 192
+    },
+    {
+      "path": "assets/res/texture/map/ui/startFont.png",
+      "sha256": "a2fd997ba53e7989326e3c953f187b3ec2ff0098dded86a4e28d01a45001f3ab",
+      "bytes": 25128
+    },
+    {
+      "path": "assets/res/texture/map/ui/startFont.png.meta",
+      "sha256": "152589f4fa5efab80579cc354451b635974e029550c63a72d26d5288942abb75",
+      "bytes": 872
+    },
+    {
+      "path": "assets/res/texture/match3/ui/hall/remainCollect.fnt",
+      "sha256": "6a0a390725ce258781933942c8019f9d436b540f4508fa331ab1678bdf398947",
+      "bytes": 2260
+    },
+    {
+      "path": "assets/res/texture/match3/ui/hall/remainCollect.fnt.meta",
+      "sha256": "ea6cc11d4626ba34b1ea56c31993cdbe435aeb47733b4ef41bfa6254d2311d5f",
+      "bytes": 192
+    },
+    {
+      "path": "assets/res/texture/match3/ui/hall/remainCollect.png",
+      "sha256": "715e7d97d0a154df7d17a8ddbb378fc82682bdfbd48268d176ee24dbe8c1dddc",
+      "bytes": 17266
+    },
+    {
+      "path": "assets/res/texture/match3/ui/hall/remainCollect.png.meta",
+      "sha256": "8bcf5d55781ef85ef180d659a457ee63b7153ea66072affba12b4dbc05c9a278",
+      "bytes": 881
+    },
+    {
+      "path": "assets/res/texture/match3/ui/img/gameOver/loading_bar_1-1.png",
+      "sha256": "922f8b281adf5ce59c59a24c56ba3e0d3f5cd45e20976054243e7264a56ca6f8",
+      "bytes": 602
+    },
+    {
+      "path": "assets/res/texture/match3/ui/img/gameOver/loading_bar_1-1.png.meta",
+      "sha256": "d895648edb3306fa53fce21beb95af5d0dcf63246298dfdd0fe1e724a34e47e3",
+      "bytes": 872
+    },
+    {
+      "path": "assets/res/texture/match3/ui/img/gameOver/loading_bar_1.png",
+      "sha256": "ed0f64cf181a206f19e21c53549a946718f9cc78f048f0a1152262ed20ec9b36",
+      "bytes": 336
+    },
+    {
+      "path": "assets/res/texture/match3/ui/img/gameOver/loading_bar_1.png.meta",
+      "sha256": "fb6f80dbb8b2e34f5d620e6b5fcd307283349c5d29bfeeda8581a3af911fa9a7",
+      "bytes": 870
+    },
+    {
+      "path": "assets/res/texture/match3/ui/img/gameOver/loading_img1_1.png",
+      "sha256": "6678cbee5fdf62d20d3dfac48948a0505145d6b68ba41cf21504465eae6501ce",
+      "bytes": 69750
+    },
+    {
+      "path": "assets/res/texture/match3/ui/img/gameOver/loading_img1_1.png.meta",
+      "sha256": "3e04d9d760be40fa7fa9a06884f9168630d3be53003c505f167e4857ad30403a",
+      "bytes": 877
+    },
+    {
+      "path": "assets/res/texture/match3/ui/img/gameOver/loading_img1_2.png",
+      "sha256": "0fc4b946c02b470aaa6364b29df5401d94494a0c70ebfa42e482a7b55d150637",
+      "bytes": 69549
+    },
+    {
+      "path": "assets/res/texture/match3/ui/img/gameOver/loading_img1_2.png.meta",
+      "sha256": "712c7f731ac1a6afa665f1c967c40fbdf82c0bbe9ae2fc0ec460e8e08c15bf52",
+      "bytes": 877
+    },
+    {
+      "path": "assets/res/texture/match3/ui/img/gameOver/loading_img_1.png",
+      "sha256": "6678cbee5fdf62d20d3dfac48948a0505145d6b68ba41cf21504465eae6501ce",
+      "bytes": 69750
+    },
+    {
+      "path": "assets/res/texture/match3/ui/img/gameOver/loading_img_1.png.meta",
+      "sha256": "5db12b9053d84fc8369585b47259fd2f2d6cffb4856dd80f610f6832f9ac6cba",
+      "bytes": 876
+    },
+    {
+      "path": "assets/res/texture/match3/ui/img/gameOver/loading_img_2.png",
+      "sha256": "0fc4b946c02b470aaa6364b29df5401d94494a0c70ebfa42e482a7b55d150637",
+      "bytes": 69549
+    },
+    {
+      "path": "assets/res/texture/match3/ui/img/gameOver/loading_img_2.png.meta",
+      "sha256": "c7bd60dd5ddf96bdf60c710d6fba746c22709ecb0d6d0dfbc78aadfb908f76bb",
+      "bytes": 876
+    },
+    {
+      "path": "assets/res/texture/match3/ui/img/gameOver/panel_photo1.png",
+      "sha256": "b999740f243cfe885827938d6b47ffb84122fa00e36d50f9da4f774c4ceb27ac",
+      "bytes": 79961
+    },
+    {
+      "path": "assets/res/texture/match3/ui/img/gameOver/panel_photo1.png.meta",
+      "sha256": "af476c9ac2e93e4a1f3861fa582882cddb128c1231ed275e49a80a6c1e006d4b",
+      "bytes": 875
+    },
+    {
+      "path": "assets/res/texture/visit.meta",
+      "sha256": "4a3ef6ec311e26da5f52713b27345af2f440ee52df49846ade6f1c8ecb3496fd",
+      "bytes": 274
+    },
+    {
+      "path": "assets/res/texture/visit/btn_share.png",
+      "sha256": "558cd1818bfffeac905cb5c5bbbf89525f8284cf74e415fb108d6af18561a488",
+      "bytes": 7071
+    },
+    {
+      "path": "assets/res/texture/visit/btn_share.png.meta",
+      "sha256": "1a3be7b6722836b935cd3fb775e3dc5135e77bc088d75c35d8285453e4a7200a",
+      "bytes": 866
+    },
+    {
+      "path": "assets/res/texture/visit/btn_visit.png",
+      "sha256": "fe8bf2d283ebb1ea20f39b7c8662a0356939b9d1c00a5614cd670b54d535e231",
+      "bytes": 6267
+    },
+    {
+      "path": "assets/res/texture/visit/btn_visit.png.meta",
+      "sha256": "94247b23b11c0a09f7e217f84f6b9e403a3f6b3000e7315c8111a41d9f9f243d",
+      "bytes": 866
+    },
+    {
+      "path": "assets/res/texture/visit/btn_visit_bg.png",
+      "sha256": "2d4d5a82c6634a12aa4818d3798a93f5d2ca442892b6aa9ab46c47f3da20085c",
+      "bytes": 7350
+    },
+    {
+      "path": "assets/res/texture/visit/btn_visit_bg.png.meta",
+      "sha256": "af53f4d767ff0c600c396be3d81b381a4fb76705baabed6a9b80f5fdd1fb2399",
+      "bytes": 875
+    },
+    {
+      "path": "assets/res/texture/visit/btn_visit_l.png",
+      "sha256": "cd40ea8b3c39f8578530ed771294e99e0994815ae099aaf3db78a3d6b6711501",
+      "bytes": 9967
+    },
+    {
+      "path": "assets/res/texture/visit/btn_visit_l.png.meta",
+      "sha256": "5a24340684facc83e879176d973de93923748b1b7614f75fe8ba92ad5385f3af",
+      "bytes": 868
+    },
+    {
+      "path": "assets/res/texture/visit/btn_visit_s.png",
+      "sha256": "b37438e52fe74da4f879ab4a7f52ac40ccb8bf0830edd7809e805d612b74c14c",
+      "bytes": 5566
+    },
+    {
+      "path": "assets/res/texture/visit/btn_visit_s.png.meta",
+      "sha256": "a73aa06fb32e6fa31594dadccd8a72533cba47ddade4317a9ef6f0d30cb557dc",
+      "bytes": 868
+    },
+    {
+      "path": "assets/res/texture/visit/btn_visit_s_bg.png",
+      "sha256": "19dcaa33ae17143d52e44f3498a8274e18307a52fd1de9181843f93a0850b057",
+      "bytes": 475
+    },
+    {
+      "path": "assets/res/texture/visit/btn_visit_s_bg.png.meta",
+      "sha256": "8d45e234449ec3e0b56bb1440e59efc4b0ed0a8a9bc03fea1d6a80f612abb13f",
+      "bytes": 875
+    },
+    {
+      "path": "assets/res/texture/visit/img_heart.png",
+      "sha256": "e9c31a145a07feaf67ca0a4dbf5809b9839d1706936c83bb6461646876f8c454",
+      "bytes": 2756
+    },
+    {
+      "path": "assets/res/texture/visit/img_heart.png.meta",
+      "sha256": "291c2e551f84e11e40bf8c0e5090e86349591e05657a19ac510c0c31071cfe7c",
+      "bytes": 866
+    },
+    {
+      "path": "assets/res/texture/visit/img_heart_empty.png",
+      "sha256": "0f09398d987c22000ab8aae084794fc14eab8de7143efd845b1088e3a1f2801a",
+      "bytes": 838
+    },
+    {
+      "path": "assets/res/texture/visit/img_heart_empty.png.meta",
+      "sha256": "195c73b70532649826f615383dbc52633abbaa9370d23e28d6c2f54514c4c410",
+      "bytes": 872
+    },
+    {
+      "path": "assets/res/texture/visit/img_share_2.png",
+      "sha256": "549ef981a1c712c5c2e7ee4dcc624f7cce2876cab1ca2f28becf28ddb0d2a4df",
+      "bytes": 4159
+    },
+    {
+      "path": "assets/res/texture/visit/img_share_2.png.meta",
+      "sha256": "29cca74ad7f1027f4e28974fe4f372e81a0ed1f36608f9168122f400ed27787f",
+      "bytes": 868
+    },
+    {
+      "path": "assets/res/texture/visit/panel_visit.png",
+      "sha256": "bfc2634a8044f0713a4030011a62d26342d6da32db926f4f8c326cd0e9dd8340",
+      "bytes": 6604
+    },
+    {
+      "path": "assets/res/texture/visit/panel_visit.png.meta",
+      "sha256": "e1e8d4e1ebe6c450d943c293944b9a8b901d4e4813a06e7fd7cb7f2ddeffa195",
+      "bytes": 879
+    },
+    {
+      "path": "assets/res/texture/visit/visit_avatar_l.png",
+      "sha256": "e9605a5c4d2644099bdad9073a62aaf40536a82ccb113eabdea4b1787419bf34",
+      "bytes": 2529
+    },
+    {
+      "path": "assets/res/texture/visit/visit_avatar_l.png.meta",
+      "sha256": "9810935759171497b309cd4d162cffdc874fe3cc7111b873708e1a64677f4356",
+      "bytes": 871
+    },
+    {
+      "path": "assets/resources/config/map.meta",
+      "sha256": "a1a985da31e35019dc22793a7c7a7ca57bdd98b36df1939f2f53a35f29ea4334",
+      "bytes": 274
+    },
+    {
+      "path": "assets/resources/config/map/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "assets/resources/csv/HotelCfg.json",
+      "sha256": "c17b4792618c671372bcf572dc0cb4dd24577c7378b76a81e133298a9628d311",
+      "bytes": 177
+    },
+    {
+      "path": "assets/resources/csv/HotelCfg.json.meta",
+      "sha256": "53009fef3fcc286da46ba9611f10c13c5d274c8f3e0a17c3cc28d72e9d26d7a5",
+      "bytes": 110
+    },
+    {
+      "path": "assets/resources/csv/HotelRoomCfg.json",
+      "sha256": "9ec48ad1caf904021bd4e73968af254385e511b527843345455f15486e30c9ef",
+      "bytes": 2501
+    },
+    {
+      "path": "assets/resources/csv/HotelRoomCfg.json.meta",
+      "sha256": "82720405590bc48c00be6740a1672f1d826be2dea4400ba6fb7348deb36f23e0",
+      "bytes": 110
+    },
+    {
+      "path": "assets/resources/csv/IslandUnlockCfg.json",
+      "sha256": "e0cd3a77bc817512775598a56670be0ae127384317b0fad5a072e208961984bf",
+      "bytes": 6544
+    },
+    {
+      "path": "assets/resources/csv/IslandUnlockCfg.json.meta",
+      "sha256": "a1305d18ace7ee7491f86dc96b790e24bbf38589665fe1dd3b8fcfd37743a779",
+      "bytes": 110
+    },
+    {
+      "path": "assets/resources/csv/SlotBonus.json",
+      "sha256": "23826af75b7e9aa20822bd8d852298d070e94bcdafd07bcdd60569293419b10d",
+      "bytes": 1304
+    },
+    {
+      "path": "assets/resources/csv/SlotBonus.json.meta",
+      "sha256": "60862bd2ebf119f71280cbfc8cffab9f77f19fa4c850261b40a00de0b4889c6a",
+      "bytes": 110
+    },
+    {
+      "path": "assets/resources/prefab/LevelMap/island_1.prefab",
+      "sha256": "792cacd83d67eb3c84c11a8eb8052b6c77dc56cd32b3bb9ad3ded3c8870270ff",
+      "bytes": 3538
+    },
+    {
+      "path": "assets/resources/prefab/LevelMap/island_1.prefab.meta",
+      "sha256": "41f09e34af5f7046e2234d291cc76a03af8f448479b6a76cdcbc15389b4c9e36",
+      "bytes": 193
+    },
+    {
+      "path": "assets/resources/prefab/LevelMap/island_2.prefab",
+      "sha256": "24982f19971e08f7aef8fd91a1f9650646b5fa79694ec37b8489e4a04d16b08e",
+      "bytes": 3538
+    },
+    {
+      "path": "assets/resources/prefab/LevelMap/island_2.prefab.meta",
+      "sha256": "4678727e205140a3066a58b797651c59cbd392490daca21f3e1c75d5b060d124",
+      "bytes": 193
+    },
+    {
+      "path": "assets/resources/prefab/LevelMap/island_3.prefab",
+      "sha256": "dd4a08ccb3febdf129d405d3f226ef14952c0a2e805d3e3ebf8e6f0c3d7ab1c9",
+      "bytes": 3538
+    },
+    {
+      "path": "assets/resources/prefab/LevelMap/island_3.prefab.meta",
+      "sha256": "d30345a153e5677949819b0a3e9770346e28d167b22efa5e4b3b79ad6bae57d2",
+      "bytes": 193
+    },
+    {
+      "path": "assets/resources/texture/hotel.meta",
+      "sha256": "9966c0b97254d426fa2d996171a69d7ca3c0cd997811e8eab17868b41534ab5b",
+      "bytes": 274
+    },
+    {
+      "path": "assets/resources/texture/hotel/window.meta",
+      "sha256": "db61978cbd35c1a02eb39a9000ed131b641140293abeaeb0d3562fb2ec6ee964",
+      "bytes": 274
+    },
+    {
+      "path": "assets/resources/texture/hotel/window/FISHgroup1.png",
+      "sha256": "f51f619e7f43595394146d85d9d0d0f089a191ee72f29f778ec7110ec51d344e",
+      "bytes": 16288
+    },
+    {
+      "path": "assets/resources/texture/hotel/window/FISHgroup1.png.meta",
+      "sha256": "3c3930b55ecbb0680c0a41195127162ad601d52454b9b78e4945849b6c3c8985",
+      "bytes": 873
+    },
+    {
+      "path": "assets/resources/texture/hotel/window/FISHgroup2.png",
+      "sha256": "566bbd0440f4f9f1c50440ca84fdc05dd8f6ce4c7463ac31d469281d611d00df",
+      "bytes": 17230
+    },
+    {
+      "path": "assets/resources/texture/hotel/window/FISHgroup2.png.meta",
+      "sha256": "2046d2fdcb285fe284f7c5a1d5ec75ed5f9d10a6ac60be5b4fc25211cf740625",
+      "bytes": 873
+    },
+    {
+      "path": "assets/resources/texture/hotel/window/FISHgroup3.png",
+      "sha256": "23c287d4dd7c444f217ed3a250430e3c387b32dc571d215aeadfc0e088af720d",
+      "bytes": 14585
+    },
+    {
+      "path": "assets/resources/texture/hotel/window/FISHgroup3.png.meta",
+      "sha256": "13bfbf73cc76c35e0513734eefe4da4769c45a1be203bd349916904469517d8a",
+      "bytes": 870
+    },
+    {
+      "path": "assets/resources/texture/hotel/window/bubble.plist",
+      "sha256": "f63d882e2f91c8cb53377dfca6e1c3dbc9ba7cadc197dda10a3f0f2a15507cbe",
+      "bytes": 3578
+    },
+    {
+      "path": "assets/resources/texture/hotel/window/bubble.plist.meta",
+      "sha256": "9d257c117880b8f3c25ab26e6c94c094008ccc1dc2585c54ba0bcff69d273272",
+      "bytes": 114
+    },
+    {
+      "path": "assets/resources/texture/hotel/window/bubble.png",
+      "sha256": "5ab4332704d9604199db12a566639717e1dd4743a7e691ba457a2dabde04b3a9",
+      "bytes": 5289
+    },
+    {
+      "path": "assets/resources/texture/hotel/window/bubble.png.meta",
+      "sha256": "50272e5007f72322281dcb723f99c71dbebcdfe8ed1eb94434f54e4aa3d33295",
+      "bytes": 863
+    },
+    {
+      "path": "assets/resources/texture/hotel/window/fish1.png",
+      "sha256": "9db4e4a94440aab00568917e492c3465bac6d2cffb6f36ca1b9c87500fa2394e",
+      "bytes": 3591
+    },
+    {
+      "path": "assets/resources/texture/hotel/window/fish1.png.meta",
+      "sha256": "dd4f078adc99bcb21c0c51e33cee286b047813461f9e0fffc6f37affc8e0e5c0",
+      "bytes": 862
+    },
+    {
+      "path": "assets/resources/texture/hotel/window/fish2.png",
+      "sha256": "89fbdd07bd13e75c33281b54c2aaa88e63830b49ac24d071b5e4c21890acd31d",
+      "bytes": 4284
+    },
+    {
+      "path": "assets/resources/texture/hotel/window/fish2.png.meta",
+      "sha256": "bbd1c3212d80e03eb914c4a6d0ee867d60719240556e13657854411495e222d4",
+      "bytes": 862
+    },
+    {
+      "path": "assets/resources/texture/hotel/window/fish3.png",
+      "sha256": "f317950fd66930eed5f6643f90bb61805888a43b1d8c1242b606bc20e3f8e6cf",
+      "bytes": 4243
+    },
+    {
+      "path": "assets/resources/texture/hotel/window/fish3.png.meta",
+      "sha256": "6f654a9e5502e81c3313bcf31e13ee46d5f299988b3d699565e7739d1b767275",
+      "bytes": 862
+    },
+    {
+      "path": "assets/resources/texture/hotel/window/frame.png",
+      "sha256": "fe33b44232e3bb6c00de04b8e77ad81a5faa5c0434ac9046fb4dd0e1462e8d0d",
+      "bytes": 107773
+    },
+    {
+      "path": "assets/resources/texture/hotel/window/frame.png.meta",
+      "sha256": "1b61aa7c8d34cf4ceb0fd545ca525e6b59122cc81a49a21438b6dcea196ca488",
+      "bytes": 868
+    },
+    {
+      "path": "assets/resources/texture/hotel/window/highlight.png",
+      "sha256": "82fd8e3372d5530864675ee2e14c769bb1f477f9c1426f0abef0969eceac330b",
+      "bytes": 229028
+    },
+    {
+      "path": "assets/resources/texture/hotel/window/highlight.png.meta",
+      "sha256": "4d6d5e187dfe4b1cfec85dc0b1933ebd92c9a7af0a7ca75838fabc1c9c461738",
+      "bytes": 872
+    },
+    {
+      "path": "assets/resources/texture/hotel/window/mask.png",
+      "sha256": "a4d6fe09e3c8c4ef47b200eb14f62cb3beaeb93d66f6dedba3a6b89e4acb6a09",
+      "bytes": 10018
+    },
+    {
+      "path": "assets/resources/texture/hotel/window/mask.png.meta",
+      "sha256": "9539f5df685039a2d9fc19a476751ffa48042027b1ff1c91bf2a53eb36f15d38",
+      "bytes": 867
+    },
+    {
+      "path": "assets/resources/texture/hotel/window/seaGrass1.png",
+      "sha256": "5e0557b9846efd66e2666361ac085c1358a2ca74a051b5f234b7845df76b2230",
+      "bytes": 11610
+    },
+    {
+      "path": "assets/resources/texture/hotel/window/seaGrass1.png.meta",
+      "sha256": "9544eb35433dd399e82ab5612fe1a792975375947179e2b6d1047ea29d9886a5",
+      "bytes": 869
+    },
+    {
+      "path": "assets/resources/texture/hotel/window/seaGrass2.png",
+      "sha256": "dc83a15d58fb8d026b6c9cb5a261e748bdee80935e50f862181e052c33b414e7",
+      "bytes": 11882
+    },
+    {
+      "path": "assets/resources/texture/hotel/window/seaGrass2.png.meta",
+      "sha256": "74c98257544714214115cb2b960ff07e25a363752f8eecb888db6fa183cbbc28",
+      "bytes": 869
+    },
+    {
+      "path": "assets/resources/texture/hotel/window/whale.png",
+      "sha256": "155c5fb9c5d9f764eac55ad31aeaa393c9c0938b68a8210beb5be2ac6b9eed58",
+      "bytes": 94977
+    },
+    {
+      "path": "assets/resources/texture/hotel/window/whale.png.meta",
+      "sha256": "30da492e1d5a767c15ff9b05fe4cdb780c57fb7eb067a12e39605ff4d9882fa1",
+      "bytes": 868
+    },
+    {
+      "path": "assets/resources/texture/hotel/window/whale1.png",
+      "sha256": "3333e4dd854027fdc383f91eba8a80a7666daaa38ab58ff768cbe8c664f22500",
+      "bytes": 6684
+    },
+    {
+      "path": "assets/resources/texture/hotel/window/whale1.png.meta",
+      "sha256": "f13af8073a17c3773b62b5492746fccd9e8d12ed026f2702e7711eb4d99dcabe",
+      "bytes": 863
+    },
+    {
+      "path": "assets/resources/texture/mountain-ui/home-mountain.png",
+      "sha256": "da0d39eeb645cb7846c2ca0011f66de88ac8f80e3ba3ffe6f9c77c7ebfe038a0",
+      "bytes": 2052306
+    },
+    {
+      "path": "assets/resources/texture/mountain-ui/home-mountain.png.meta",
+      "sha256": "8c853da54f248c7e3895d4cd661aa039ab7bdd7ae6f64c8ac3468384f0616238",
+      "bytes": 880
+    },
+    {
+      "path": "assets/resources/texture/toy-ui/surfaces.png",
+      "sha256": "69d94fd520d6058a92ac02f04df63403f11f9262b76c91242e02d4819534764b",
+      "bytes": 1304957
+    },
+    {
+      "path": "assets/resources/texture/toy-ui/surfaces.png.meta",
+      "sha256": "2abed99b6532dd74b883d5bbf656b99995844c19896cc0f756aa9a3f22f59cec",
+      "bytes": 879
+    }
+  ],
+  "retiredUuids": [
+    "00cde065-b6be-4cbc-93b4-ceeee2df2b4a",
+    "0153fdf5-3481-4784-8db8-1993dd34092c",
+    "01895987-a4a8-42ed-9c1d-d73bd685406e",
+    "019068bc-d96c-4347-982a-605a1e339516",
+    "01f66cb4-ab48-4d27-977a-22c442dfac08",
+    "026a9fb1-1c8d-467b-9d7b-34d9a3ac0abe",
+    "0321a2c1-9151-478d-b3f5-3b6e6f3927ef",
+    "036a13df-32a4-45c9-a4d0-b72f9c554670",
+    "0542543c-8121-4c1b-a0ab-69ae47ed4e1e",
+    "057a6e40-5915-4de2-939d-4668065f628c",
+    "05a0cc85-63fa-49f7-bc5f-13f8daf5a8fa",
+    "0743a0e4-78ef-4429-b101-5a0399970f54",
+    "07580609-176a-44f9-b5f5-9e21d5c84362",
+    "0788e849-6b9e-4d52-81f2-fe7d0b0fd1f2",
+    "08bfac33-7103-4a91-9c44-960ccf285cab",
+    "09dc4cde-2b9a-4ae8-9748-c5478769a468",
+    "0a90d72b-5592-4104-9108-5f70af650313",
+    "0aa292e7-3de9-48bf-8c38-c3c96e6d2970",
+    "0ae5370c-cbe4-48d7-b8b8-55144e54fafe",
+    "0b63084c-32ce-4e48-9474-301c7865e5c1",
+    "0bbe86ac-2756-433e-bbdd-2b0f4dd58049",
+    "0bcabd7f-3d90-4907-b7e0-32b00a7070cc",
+    "0bf69dd6-7fd3-4ee9-88e8-d99abf46517f",
+    "0bf86d57-a083-4c11-9bf2-7a58bb9495fb",
+    "0c05e463-7825-486e-9de5-0258d7d8dfcd",
+    "0cbd01e7-4051-46ce-9289-49dd5246365a",
+    "0dde5197-d4c5-4cfc-900d-999f9a5c588c",
+    "0df230db-2b80-49ca-90bc-c023820171bd",
+    "0e3d0e21-4f1d-40b2-a158-d1f50afc0230",
+    "0ecb4432-07b4-4b70-bcba-f24cd4ad0b88",
+    "0f189509-d665-428e-a240-2354e53fe6c8",
+    "0f2aba27-42f2-473c-9c36-475cd8e17685",
+    "0fface69-8639-4a09-99ee-cebca58e1b91",
+    "104b0d10-0df9-4c16-8af7-07d6fbbf7077",
+    "1111ed01-8785-4b9a-a513-f0fa29e6e9f1",
+    "11314328-0ae6-427f-8371-ebd1b99c24f6",
+    "11690912-a883-42a0-9934-29c3f9be69fe",
+    "11bef207-fe4d-4135-9365-ca63cd5daa68",
+    "12497eda-fda9-4e9b-9c97-4948e60a38a7",
+    "12aeea24-870f-459f-bb5b-c8445d7eba39",
+    "131aab4a-1ed0-48b3-a9a9-ed83ddfca294",
+    "132a189c-4464-4be9-a317-3f41fe7cf567",
+    "13595ec2-bc20-441f-8e3d-70c5b25dc122",
+    "1381b607-c6a0-41db-af5b-8b940389dd22",
+    "138df641-2553-43d2-b011-db6e027ffbaf",
+    "139da956-afec-40b7-bc22-65bce82bc730",
+    "1441b6cf-6f06-4d99-9cd5-036efb4dddc6",
+    "150c3c47-4e7b-46dc-8b23-3e74a8faa0b0",
+    "1575010e-e77e-47e6-9586-61fc5e8bd205",
+    "165dbe90-261a-4cf0-8b0e-65997335843a",
+    "1804e23c-5cf6-4bda-a509-710bbf21a702",
+    "192b51c1-d145-458c-a944-2a90f74069b3",
+    "1a1c9a17-a7a4-46d9-b0a1-886886877e36",
+    "1a414fcf-74dc-4f57-863b-49df736e9fc3",
+    "1aa39705-0b83-470a-9451-24a946a198f9",
+    "1ad2eb55-53ef-467a-a9f8-48f54379ada7",
+    "1ae8d8b2-df82-44dc-a8de-d301843de73e",
+    "1d670b3f-46b7-4dac-85b1-47aa8e4a38d2",
+    "1d859401-d50f-44a3-80f5-f099ab4bb083",
+    "1e6b6aad-9c5a-4153-a7ab-13b76d10469d",
+    "1eb71f3a-bf4a-4e10-a37d-2c8fffeab996",
+    "1f1402b9-73bc-4ffa-b7ef-625d7331383e",
+    "1f2909d8-6ef8-4981-8002-db1387f96513",
+    "1f2b50e7-6638-4a1e-9048-7bef735c9fc0",
+    "1f3592c8-4c72-4e4e-b743-34b0d9289a81",
+    "20a2d671-c881-4cbd-8e6f-3c984b49461d",
+    "20ad9e07-398f-483d-984f-f07fe4fa0b17",
+    "20e874ed-c58e-4a58-a620-c4678dd0f969",
+    "20f1eea0-cc7e-4af4-9f73-2b1c3fdde761",
+    "2142058f-4312-4fc3-b023-32c399a7934c",
+    "21c4d3e2-7799-49be-a483-1062ae841220",
+    "22c75871-1d49-4a19-92c6-2a3def1af0ca",
+    "23476376-2ecb-4c52-b170-6fb474098a7f",
+    "235a03e9-865a-4143-80ac-63be2fa9cba3",
+    "24c6c2d4-f1ce-4f97-96c5-599b3c319337",
+    "2554f510-9d09-4977-b4b7-8ce3c9e810e3",
+    "25cc3fb4-e0a4-4774-b595-ea16d5415079",
+    "26fd0d94-2b7c-4d09-a99e-54aca31a9993",
+    "2743fc8c-e887-427b-a259-de4952d7cdcc",
+    "27604d4e-0bf9-4bcb-926e-f6e04fd8461b",
+    "276926a3-be05-4e16-a615-58e15c6c75dd",
+    "28500382-141b-4e50-8001-047b0c1e1437",
+    "28acc025-6da0-48fb-8141-c8442572de97",
+    "28f4ccae-8b14-4ab7-b90e-d50322f4cdb8",
+    "291baadc-af30-410a-9ed2-c7de4c80d155",
+    "2956752d-6f80-4a98-be63-89b47863ac17",
+    "29b36a2d-2438-4b3d-9ef0-456d6e8a8e56",
+    "2c120853-3db4-46fc-bca7-7ecffe3b2db5",
+    "2c776b57-7648-41e9-a80e-1e4eb3102836",
+    "2cae1db7-24fe-4f64-a974-03bb47f00fb1",
+    "2cbce3df-bd44-44cb-a846-a7c4acb8511c",
+    "2d3384f3-2f8f-4509-871a-0bbfb9c6fd80",
+    "2e0f1c6e-aca4-4773-8c74-38e09d4b34b1",
+    "2ead70c7-ead8-4f77-9e28-1787b7eb5109",
+    "2ef7dbf8-0e23-4169-ba99-ed695af798c1",
+    "2fa589da-a96a-4703-b73e-8b550fe3817c",
+    "30f8f380-4b02-4e1c-bfe6-5c9eb691e9da",
+    "31390e52-2b32-4fcf-ba79-6b2c9d04fdb0",
+    "3246daab-7b4e-4c49-8462-7ed58c1f2f90",
+    "3269c19a-79e7-4840-bee9-9c90066864b2",
+    "32702b33-bed0-4aee-a3ac-a89e04b84160",
+    "32c50379-203b-468d-ba96-434b6c0f39e2",
+    "333b2001-3418-4a47-a035-5ce37c0e2093",
+    "3355631d-09f3-4fa2-a457-3bdb0f1a213b",
+    "3434a6e1-60d3-4067-b42c-6ab9183c7362",
+    "361fc49b-442e-4ac1-84e3-2f53889e4629",
+    "36cbc9ad-ea02-4231-92f2-08d49f3e9c81",
+    "36df6005-fdbe-4566-afed-a0ef59df3aae",
+    "36f67b3d-e3c4-4be8-93bb-07832171f5fc",
+    "37cecf85-780b-4f00-bc8f-cfc8ef40136b",
+    "380ad776-2c61-48ae-9ee4-cd98c0b89f9e",
+    "381ed157-da17-467b-8306-a5dad19945c0",
+    "386de02e-163d-40bb-b736-a131a8902415",
+    "3a5a080a-a69d-4659-a3f8-bda07f617d09",
+    "3a91120d-b3b0-45bf-a15b-d42482453b45",
+    "3b48734d-53da-4dd1-b67e-80c789e9f3a3",
+    "3ba94a80-a0ce-4bd3-97b3-1dce3d378c8f",
+    "3bf6a431-168d-42a2-bf59-3ca7f5e6bd12",
+    "3cb191b7-1c42-4bc3-ae0c-7740a1f2fdc9",
+    "3cc710d4-c068-464b-9ab0-d1f7674bc6b4",
+    "3d14cf9e-b4ac-463e-b30d-2333a5e0bc1e",
+    "3d29705d-94c4-4956-8118-ee70b86d56dc",
+    "3d47930e-d11c-4c9a-af31-646197cc37ec",
+    "3dc50f5a-18ea-4d5a-aed4-9896df9eb720",
+    "3ded4f24-54a4-449c-9c8f-faebf95124f4",
+    "3e22e306-01b5-4e47-80c6-22c5bcc6f93b",
+    "3e920aff-987e-445c-81f6-89fc70ceea1d",
+    "3ed11fe4-9181-4b41-8fb3-d20c6671292e",
+    "3eed2506-7d26-4ce2-8d76-e0f4ea9beac5",
+    "3f145f44-8eeb-4cc6-90f8-fdfa88facf35",
+    "4007c63e-b8e6-4121-97fc-93069a51acd8",
+    "4059e3c5-4438-4e1e-af9f-f3985374c157",
+    "40c3697c-9861-49a6-9dc6-14fe83a00d83",
+    "41f168a6-8dcc-4bc1-82d4-ca02519b0181",
+    "424a6a15-36f6-4607-9ce8-ca4aa0d140a7",
+    "4257729c-a48e-4f10-8011-2c1d5bbbd369",
+    "42604748-7a3d-4114-a728-b458fba64a4e",
+    "42d15293-0f67-4109-9ecb-06bb49f5770f",
+    "431aaf65-122f-4836-b5b5-98ffe5d7e7ec",
+    "43406178-3063-4d32-8ee2-6ffa71c4d8cd",
+    "43613bc6-5c79-4aea-9681-77962de66340",
+    "43952742-d9e5-43bd-9cd7-e260df51fc26",
+    "440f8901-8def-4f18-8690-e36ed4e793c7",
+    "44d47ad5-0fc6-47b4-a652-119adee2ed4f",
+    "45562cbf-5d10-429e-86fb-181572237b33",
+    "45ebe10a-f6a4-44bc-a5e3-4a54d094c3cb",
+    "46546be3-8bec-404c-a9a6-78cfc42239d0",
+    "46706e08-ec0d-4f0a-8419-671ed0760953",
+    "46865138-7a8a-4a11-a921-1efc7b46ff26",
+    "46b07d2b-43b0-4e60-949b-028ab0e355f5",
+    "4704673d-dc79-4333-90cc-6246a6e4688a",
+    "47431c98-f6a3-432f-96cb-45babdff6959",
+    "47601a74-4f17-4488-974d-ba215e7a218b",
+    "4765ba36-3c45-4f90-afb3-e1dc75ceb7de",
+    "483a56c3-af6f-460f-aa45-c589324e8b43",
+    "483fdd3b-7803-4b81-9bb5-867327f1a11b",
+    "48c5ade3-e362-4d59-b159-a6e5da49ba02",
+    "48c6f3ab-fbf8-42b0-9d4c-2204d72e06a9",
+    "497cbf10-642c-4250-b7d0-ae2d59b0791e",
+    "49d2d263-e5c3-4bd8-905c-1ebfb58948b7",
+    "49e9642d-5ae5-4e16-901f-54ef2c25418d",
+    "4a257241-9074-4bb0-be3d-d4d0e776ed01",
+    "4a9817dd-29a7-41c1-a7eb-0c7133b9e14d",
+    "4aeda58d-3de2-44b1-b6a7-d9725daa7888",
+    "4c8c2f3e-3f1b-40ef-9478-5f6714ad7ab1",
+    "4d2881a8-faed-4703-8de5-da52e92fa088",
+    "4e78c614-969f-437c-8fc2-eb231265331b",
+    "4e927ae8-4aa2-47f1-85e6-1b9231fa50e9",
+    "4f17081f-b17a-429a-bcb4-eb8f3ff75482",
+    "52b95d59-2899-4faa-89ff-890a1ac6406b",
+    "52d9096d-95ae-4fac-849f-98dc125ad58f",
+    "52e0ae25-0308-457d-a6e8-8c7b12e0c97e",
+    "52e79a23-7e72-4085-99b7-2e263bf69ea1",
+    "5309e5b0-b13a-42d3-8025-feeb5422ea91",
+    "532e93cf-f5ea-4c3b-8dca-a1d9a1bf2660",
+    "53d8db2c-f111-43f2-937b-e69b073422ee",
+    "53de7eca-df05-4749-b53a-793693085237",
+    "540e1442-04dc-4062-89bc-0c187173ca36",
+    "554df89b-c542-4d88-8ab4-ca1d36b6ad74",
+    "561c152e-d9ff-4b8c-bec6-62388305895c",
+    "56497219-0c64-455f-a624-0bb4712a1e79",
+    "56fdf907-8222-4223-a7fb-efbb6bf45804",
+    "576743bf-c9aa-45cd-8601-73dee7427759",
+    "57a1087f-f77b-478d-8abb-eb06df8c7133",
+    "57a3eca6-860d-4dda-8e20-1410a0c9f945",
+    "58611a15-7d19-494c-987d-1b9b66158e1c",
+    "589eb6cc-7825-4c4a-bc32-622c1677abc7",
+    "58d6c07a-22c5-4a50-a867-5d78f68911b4",
+    "599bbf4b-449b-4002-949a-71d95e580540",
+    "59bd595b-e134-4304-bef5-2568664bfc27",
+    "59caf7d2-3d36-4fae-b2b7-d83f130e0f02",
+    "59e743fa-908d-4e71-b709-74a86a49f77f",
+    "5b482a6c-de27-4603-b0c1-801212d349a9",
+    "5b4a7344-833e-44c4-af9d-9cb032e568fe",
+    "5babcb2b-9ed0-4011-a251-8c011aa35aaf",
+    "5c09276e-919d-4bc3-b6f4-c8e20a352e94",
+    "5dd60612-508e-44e2-899a-b48b52ba0f23",
+    "5dfb3fc2-557b-488d-bc84-b532e0483970",
+    "5e7bee2a-2ace-4f1b-9a87-2c6c7bca3c55",
+    "5efe3211-48e6-4715-aa7d-165e08eac4a1",
+    "5f321b34-5f66-471e-8750-3d38ffa571d7",
+    "5f566c26-49e8-45c1-9c88-15107a9e83df",
+    "5f707ab3-9995-4240-879d-3bf9df006c5a",
+    "601350c0-ff7a-4177-a274-6b5b89bf264b",
+    "607f1a81-ef81-476b-a93d-d95774063642",
+    "60b9f2bf-ecba-47bf-b1fd-8002278c6348",
+    "60c2fb7c-e14f-4331-9104-033632363fb9",
+    "61e88d50-050d-4f01-8c4a-65b401b23a91",
+    "6295429e-e08e-40ba-9345-9169a3e960f6",
+    "63b1a832-7336-4da7-8320-8e0fb23141a2",
+    "63c15300-a3d7-4222-bae3-8777b4765841",
+    "6504ce3c-dce4-4991-8fee-6d80156c02fb",
+    "658ffb45-8737-482e-8ac4-000b4b17f1b4",
+    "65dd3a5b-9410-4c52-b336-fe6591cda2d4",
+    "65fa9332-97c1-487d-aa20-b2cb705a7b1d",
+    "6620c7d2-9b87-4f2a-89b3-9d06ee7e913b",
+    "662b85fa-cc78-4dbc-b0e7-3e4df22632ad",
+    "67835421-f27c-4864-aa24-0cf3942c136a",
+    "681478b7-1d73-463d-8017-f58ec0a4801d",
+    "6859567c-2fc1-497a-9e91-165c7dbbe666",
+    "6912e32b-beba-43aa-80d1-93e543f18e2d",
+    "69e1697f-ebca-49f3-aced-69612131153d",
+    "6a2b9b4c-664b-40bd-97c7-dc498a8fd1d8",
+    "6a40b028-4f4b-458c-b1ea-e57a9aae1a79",
+    "6a434b5d-c0b4-4732-956e-9ebc189730e4",
+    "6a747518-90c9-421c-9b9e-d816b75c9f39",
+    "6cac6857-969c-4c7d-8796-08ec1236d0ca",
+    "6d5799af-d4ac-45ae-97e4-87edf7d522b0",
+    "6d93b2ff-be29-41ec-880c-2daa0c8d05ec",
+    "6da52a0e-2106-4996-8f40-a0a739928f1b",
+    "6dca3030-bfea-4f71-ae62-d7824dba236a",
+    "6dd5845b-046d-4aa9-baa3-e1d3a1b288c3",
+    "6e7c8173-3cd8-4236-8953-0de636b611a1",
+    "6e85150e-aba0-4222-b2f2-b3200cff5579",
+    "6f58dc74-988d-40db-9f9f-789fbb3050a0",
+    "6fb308c9-c748-4060-be27-c3d9cfc56915",
+    "709b0ba6-1708-4392-9beb-cbf6d5bb57ed",
+    "70a952b4-b6f7-4d7c-b99d-9a848f2d08af",
+    "71a18b09-65f3-4195-8657-3c704dd7a234",
+    "7244351e-3bc1-4b47-9df0-8540ce1fbc06",
+    "7310dc5a-21a9-46b3-929c-433572868968",
+    "7355bd9c-e5f1-4958-85bb-8b2e2d775be3",
+    "735ec0fd-c87b-460a-bb73-1c6db9fb8dfa",
+    "7398edae-f78d-4172-86b0-a4b0dedf3b67",
+    "73af182b-77e3-4a4e-af4e-97a09aca406b",
+    "74edd86d-fa90-4f00-866a-513f4d5ed9f7",
+    "76552453-228b-41c6-8fcb-2e086167cfa4",
+    "76656d87-d21e-4676-b687-b93974b0e055",
+    "76d038a1-6aee-4f5e-9f07-e6ee23ea27cd",
+    "7700f73c-a8c9-48ec-b67e-efea660e379c",
+    "7795ac10-fdc5-4ee9-b0d5-ef0686915fbb",
+    "7869daec-4604-48f8-a85c-7addb2502b8c",
+    "787a8752-ae13-45c5-b0e5-7eedeecd2d8d",
+    "788450b1-768c-4087-b211-17892c2e3bd1",
+    "78912f7c-f19d-490c-8ccf-2779b85941eb",
+    "78cdfab3-e89b-45c6-85ac-91b8753babdb",
+    "79012876-a987-47ad-8312-2afd618871ee",
+    "79e630e0-d828-4a8a-828b-d26fd4c28384",
+    "7b2085b2-b2a3-4d30-9571-006a97ac1485",
+    "7b513c8c-560e-4f84-a382-38b265aceb1f",
+    "7b5b06c3-0614-47c6-b6b7-7bc0a3f487d4",
+    "7bd60012-cf61-4da2-ba7f-72288492fd28",
+    "7c07dc7d-a615-4c96-b958-deb1f84cfb77",
+    "7c221b6b-79e1-4c13-a8fa-15f850790a18",
+    "7cf56c0e-9659-49f0-bae7-8a112057c6e0",
+    "7d92da94-fa13-434e-ab70-5c3dd96d33d8",
+    "7f096340-79cb-48cf-abb3-d8c112ab7b12",
+    "7f1d9e36-6208-4cad-80ec-40000494b114",
+    "7f5ff620-813e-4143-ab25-cf47b1b6024b",
+    "7f833678-e87c-4015-b5e1-960f7ff470ce",
+    "7fbe4a63-0c72-48d1-b551-041f6c84fbc3",
+    "81bc33da-ea3d-474e-89ca-59333ab8c5f7",
+    "81c94993-5ec2-42bc-82df-6f40e65bb51c",
+    "81e49899-b325-4bdc-821c-6dd8a746d14c",
+    "82e697a1-79ad-4912-841c-160d26384514",
+    "83b12158-dc8e-48cc-a1c5-a49c7116a310",
+    "83d47d2b-ae9a-4790-9313-7da5d2b84073",
+    "86739de2-f88b-4278-836e-b28653bad4d6",
+    "86c20849-53c5-43ad-8968-696790965acd",
+    "87862945-09a1-4b24-b5c2-1370fd4b3ff3",
+    "878d9e3f-7638-4dbf-aefb-c03602eade62",
+    "8791ed19-08f2-4b16-a120-4152a599d77c",
+    "8861e894-157e-4f3f-b957-bd21a146e32a",
+    "88eb2ded-52f0-4b60-abee-0cc6fae329d5",
+    "89b42ca5-0e84-4223-bc97-3c48aea68617",
+    "8cc6b6d7-a3d6-4e02-a236-3989b5d2e090",
+    "8d640531-96d9-4936-bd71-08acf6cec85a",
+    "8debe5ea-d18e-4420-898b-aa9079ce8f4c",
+    "8ee3f3ff-3886-4384-87a2-871c71ddf8f1",
+    "8f2402c3-dddc-4858-b0ac-3c5eb49260a7",
+    "8f2514c1-1bb6-467f-9ded-95b320224441",
+    "8f519cac-e276-4064-987e-8cc8edabfdff",
+    "8f979851-8110-4562-861b-dd5ac4278c73",
+    "9235f168-333c-439a-9555-5485edc9956a",
+    "926691ec-dd29-4dcd-a660-651e0bbd4955",
+    "92da883e-d629-4014-a7db-941d6cfb24b3",
+    "94a12e77-8384-42f5-97eb-f451b35c389a",
+    "971b8cad-d858-4afa-9234-4627b7072410",
+    "974e2728-2373-4e73-8a90-587ecdd0c717",
+    "983dde0f-7347-435f-9599-02e065815679",
+    "988a55d5-eccf-481d-8c6a-41df4ae71f4a",
+    "98a5b9c6-5308-4f2c-b768-2d53a18c5aff",
+    "98cb5492-89d7-4b5a-88f6-2d4b7845b606",
+    "98df2678-1339-4285-9579-1f3a8773444c",
+    "994e6c9b-1c1b-436d-8603-39dc10cf7987",
+    "996b6095-a65d-4171-b983-5a5f38abbd53",
+    "99ff53e8-c347-49ce-ae2d-b959c033694c",
+    "9afbbc18-27a6-4b00-93fa-760d01dcaffb",
+    "9b5c3b4a-b573-4e2a-ba93-28b2481be788",
+    "9b9c9c50-d78e-4e8b-bac8-091049a12689",
+    "9c3085ab-4439-40ba-aef8-34fd2ffe249c",
+    "9d99e253-140f-4893-9c13-86a6d649019d",
+    "9de95147-7ed8-42b5-9d04-acdc4f4627f9",
+    "9f2eded3-ae56-4330-b84f-940c2c4b9bdd",
+    "9f60c87f-a016-41e0-ba6b-dcd76d399812",
+    "9f916c24-2797-47be-be73-10fb97e603f9",
+    "a00fec5c-6fa0-48e8-ba7d-4657f49b075d",
+    "a05c1fc1-7386-4b89-b209-823d7a4571d5",
+    "a09d27f6-1033-4e62-b4d4-41fc29bd9ae7",
+    "a0d21376-5fd4-4ff7-a10d-cfeb50d75111",
+    "a1a9eca9-dda7-49ef-bb2a-ec46272b9c74",
+    "a261a9a9-e861-4c5b-9c6c-37ea01878e16",
+    "a3916993-413b-49e1-a8ca-14d0f7b80049",
+    "a3d1654c-e099-4c72-8f91-123d8fd01108",
+    "a42f18b1-a28d-49e6-8b5d-eed0a694b2d8",
+    "a5702239-805b-4084-adcb-6755701df694",
+    "a5c29d18-8a1b-4d02-9635-5f3c78911972",
+    "a63a04eb-44b8-4a84-a44c-cec2f80fff6d",
+    "a7354a1b-0121-4c61-a64a-b82d5046b664",
+    "a83f29db-8f2d-48c9-b8bf-ff8a91eb47a2",
+    "a8eed7e4-5d09-45a9-8e12-8e588984e026",
+    "a97eb0ff-6ae5-4c15-bf92-08c4217b0115",
+    "a9fbc22d-7908-466f-a936-63e4150fa6bc",
+    "aa37b25a-fa03-4e33-a204-945c360e3cc7",
+    "aa4f9fb4-9acd-4f3e-9c6d-a289ab9825ce",
+    "aa569735-35f8-4293-a141-79706b227cc3",
+    "aca82000-c2d5-4c52-bc30-ce4a1e3075cc",
+    "ace2c414-9c03-4059-9b88-3d506da22b3d",
+    "ad2c1b8d-04f7-4153-8ef8-b2a4e6de1a59",
+    "ad3c4abd-6bb1-46f9-a9ec-2ca7529d7727",
+    "ae0cd790-4bdd-42ad-a253-1b53e45160b2",
+    "ae81e31e-584d-4bd3-b6e9-ab532ed2561b",
+    "af4d64b1-b95c-4dc5-ab39-4c3e611f7653",
+    "b00d9c81-22c8-417f-8b31-8d0086c6006c",
+    "b1a2f1bd-ecd6-4017-85db-10f7f7e7b649",
+    "b1ae84b6-233a-4fa6-ba2a-3b9268954e36",
+    "b1deb28d-7774-444d-b15d-7c34aae2fbea",
+    "b203c858-f72a-4621-a068-d6c77886f813",
+    "b2557c74-fb0c-4f51-8d93-9c560a21e11e",
+    "b35b4528-40d1-4276-b3ee-9fd450613043",
+    "b4270dc1-91cc-41f8-b28e-65cba7d9e703",
+    "b484fdbd-410d-4f6b-a670-56a7aec788a3",
+    "b4dd02ee-0939-4080-a2b9-4487745d13cc",
+    "b5ca08fa-d5c4-40e1-bd74-f610299c6d19",
+    "b5dc6199-94cd-4496-87d0-7eb91224c337",
+    "b605fa1b-ebb1-44e5-b732-fb6fd60eb99d",
+    "b6140db5-7a1d-42c2-9ba2-4da4358d4d49",
+    "b6bee4aa-89c3-4c77-bf5f-f702a90fd4a0",
+    "b6d0ca45-b231-4df4-997d-5cd2412ce5a0",
+    "b728ba93-9e4b-4c6c-b80d-6db25d1fe8dc",
+    "b73ed679-826a-46a8-a0fd-9cda9615b386",
+    "b7f91523-872d-41df-b696-4f27990322ce",
+    "b8cc63f3-37df-4471-b3dd-49ec8b9f18ca",
+    "b98325a6-47f4-486e-bbaa-2c42e0a8da82",
+    "b99fa880-6db8-4cb1-a7df-12cc98513175",
+    "ba90a8c3-d994-48c4-986e-b074d0b9a746",
+    "baa3df9a-c74c-438f-ab62-07157aaafc46",
+    "bc01f409-a823-4f37-a9ac-4e837ae5e356",
+    "bc601543-5cfe-405f-a695-32c9d0afd8f9",
+    "bc6a8bf1-6286-4091-bbb9-f4721c6edf7e",
+    "bc94983b-f7c7-4bab-bb35-9a8559c8047c",
+    "bcac9477-e370-4fa3-9ccf-3bb041204910",
+    "bcdcf414-a09e-4bdf-825d-0ea79d582215",
+    "bd2d3823-70db-468d-aabc-7093da109985",
+    "bd7a76c5-6ddc-4619-92be-fb407633b243",
+    "bd7b269f-9e98-420c-905a-292c6d5db3a7",
+    "be583d57-edd7-4acd-a80c-22cd4e94602e",
+    "be9702d7-c5f6-44fa-a37d-06ff940f8a41",
+    "bf001f56-ce78-45dc-a42f-d34297b60241",
+    "bf1ca9c3-96a7-4c69-8ccf-cbf5640d155b",
+    "bf89923d-3b1a-4307-a9fc-7191fdba6953",
+    "c0c66050-1d3d-48e8-9eec-8e8ec508aff0",
+    "c1dc530a-57b4-4461-a907-f6de0f9a3af0",
+    "c28b8050-f873-433a-bc2d-4f7d46227964",
+    "c2ccdd26-48cb-40ae-b474-fe67fbb4aeff",
+    "c2dac8e0-aa28-4925-9162-3dbce32155ec",
+    "c3656a6c-2457-4055-9331-1431b66295fa",
+    "c4475419-747d-4179-9fdf-4c80c0983211",
+    "c4adc652-6643-420e-a762-876dadc008a1",
+    "c4f8fe94-004d-442e-a8ef-39c5bafa02b9",
+    "c56c460a-aed2-4385-ad14-9975aa4c51d9",
+    "c5f9f10c-7483-418e-9c6c-25b5e2ae356a",
+    "c62460df-4c7c-4caa-85ec-e54da98155cf",
+    "c655d1f5-d714-4994-a6c9-5ca5ae5114d8",
+    "c66090c6-7ca8-4eb6-8cbc-f63cd058c5eb",
+    "c701038b-2d29-40c1-b2dd-fcc066065c1e",
+    "c7cc613a-15e9-4457-93f8-c255f8b86dae",
+    "c83b4d22-8616-4d27-98ea-dcb00cc5d9ea",
+    "c98e214b-c11e-4d6f-b4da-341217b77a06",
+    "c9fdbf08-7bd0-4e72-87f8-f1c87aeda1e0",
+    "ca41a245-2247-456c-b460-e4a96ada4388",
+    "cac39485-0600-494a-b315-862fe7691c06",
+    "cb00a60e-131f-4584-b3e1-49fd9ed9150f",
+    "cb6fa78b-ad36-416b-a697-bb73728baad3",
+    "cbcc6fdf-8c8c-4ec7-8dbd-c4906f1019ae",
+    "cc32ba60-3e4c-49b2-afd7-406d68f51801",
+    "cd341d9d-202f-489c-84db-f2df689f8e6c",
+    "cec5c72f-36d8-4b73-a66d-ab1819c6dedf",
+    "cf387d02-3929-409f-a22b-17875445a640",
+    "d01f5744-187a-4481-9925-42ee1d569d8e",
+    "d0474c71-a295-4f16-a715-6e48f0467d93",
+    "d04b31f6-f6f4-43fa-a8e7-73f9bad6c6b3",
+    "d0f93dcd-8ff4-4b4b-a4d3-100077e911a9",
+    "d1677253-17c9-4de7-aa7c-abd5750ef117",
+    "d16d7db7-4efb-4ce1-9a68-1e3f85f6f3bd",
+    "d1b6887d-5afb-478c-93fc-41a4c577efbc",
+    "d1f32a45-121f-4a0d-84bc-06f3d2f6d39c",
+    "d232597c-9a45-4e8c-8932-a9c02e5ddd65",
+    "d29cfa18-644f-4c87-a7a0-98b8fed9575f",
+    "d402c1ed-cd9a-443a-a974-ab3b9943a366",
+    "d4120cc1-819a-4994-9d69-7e6b33e2f1c7",
+    "d44bd0d8-dad8-44a4-a15f-535c91be1df2",
+    "d49d65dc-a28c-4de5-88de-bbf9678399a7",
+    "d4be0d91-1e56-4e13-b04e-314a0f9d7b2d",
+    "d5498617-b50b-49bb-b68a-66015c511a33",
+    "d55420b7-905a-46c4-94bf-217355cebe22",
+    "d56b2050-7282-4fb8-95e7-7322fccc8e25",
+    "d587d90e-b7c5-43ff-9974-7fc638a126a5",
+    "d5f5681b-64cf-40a2-9740-2c8d4c92ee8b",
+    "d65896a3-1bdc-45aa-ba58-c2cc422aa8df",
+    "d675dfc2-2fc3-4721-93e4-83a2d101727a",
+    "d750dc24-a50b-430d-b9a4-45043a1028e0",
+    "d7b9548e-62ac-4398-a7de-13ebbeec45fc",
+    "d7d64aee-f0a7-41d5-88f6-3165c65ea583",
+    "d846e89c-ab98-4ab7-9813-c9c7719c5093",
+    "d94b76bd-327b-4ed3-9fc3-46235c9a5e87",
+    "dc2789db-e2e1-4610-9eeb-7bdbe836a348",
+    "dd9a2c23-8668-4330-b0b1-f0539d46d699",
+    "dde7be57-ca6b-4937-9f9b-a891ed2b9365",
+    "ded16cfd-360e-4907-8292-9611d4cb94c6",
+    "df56eaab-186d-4740-b047-8a469120279a",
+    "e0b77013-889b-4e9c-ba14-15e3faed8022",
+    "e1066b50-79e6-4d77-bd28-c70ac8d4ebf5",
+    "e18ba49c-6665-424b-9a5b-f0ff35934d85",
+    "e1be5ea4-2cc8-4f2d-9d3a-e3fe4cbfe03b",
+    "e1c1bf74-9581-4ecb-b102-b504dd6bc585",
+    "e1cd5a46-52ac-4f3a-a029-f491f20ab154",
+    "e2079eef-f30a-41ae-94ac-6af434668f82",
+    "e21d44dc-4928-4a24-8ca2-5d203a808253",
+    "e26c1381-3358-47db-9255-10a87cc4befd",
+    "e2df3e54-4323-41e6-a8f5-f32352898ca4",
+    "e3298be0-8279-47a6-a406-76d8d4fa7082",
+    "e329966b-e9d8-4514-bb75-09b42ba2559f",
+    "e39fe54c-bf04-4efe-ac63-8dbb2fe420f1",
+    "e3f54336-b3d1-4be9-8ad2-464059bf7e67",
+    "e444ae47-e2f1-41ab-9e16-649281b9a394",
+    "e44b4db7-42ef-4773-96a5-649e3918d2a8",
+    "e4791561-1bba-4ea5-b81c-6f20c1a144f3",
+    "e4e93aab-dd9e-45da-aa11-4bd9f03f2697",
+    "e4fdafe2-6290-40e7-935f-17849814bc70",
+    "e511df91-7c74-4807-b772-57db0d8c0948",
+    "e557ba02-c49c-4192-8f9a-dec32703f56a",
+    "e57cdd05-2705-4d63-9b44-b42e31a05a9c",
+    "e59c0226-d513-4bea-b483-90a62389ae73",
+    "e5abbd8c-7874-41d7-8f38-e85ee5c75782",
+    "e614521d-f030-41a5-bdc5-ca6cdd2e640a",
+    "e65c8dbf-3f84-4fd4-8f32-67283663e121",
+    "e67acf70-b114-4232-b95f-d1066117fc42",
+    "e774b10f-da59-4c75-b9a7-46c79b1ee1b4",
+    "e788fd41-c8d5-4f66-bbb7-ec10bd0df152",
+    "e7dfc5a7-1a6b-4782-9580-90c5ecb803e2",
+    "e82480d9-7e96-424b-a279-e04eeec591f9",
+    "e87a0016-720a-4470-a2ce-89c6f6a22b0d",
+    "e8ddf5ec-3fc0-430f-a91f-5774d3385814",
+    "e99ddd61-1375-4438-bf97-45b674254e0d",
+    "e9eab217-7f2f-4911-94d8-13717293ca6b",
+    "ea02937e-9de8-47c4-b23b-376137cbf1a1",
+    "ea1508ed-50a0-442a-b2fa-c928547cd68c",
+    "ea874b23-831c-4ed9-9785-806d0407d966",
+    "eaee19fb-6013-4959-9439-9a4d60f54ed0",
+    "eaf76c03-d0e9-4d7f-bda6-5b82c9b3baa5",
+    "eb561f7f-9edb-4bbe-a0f6-a57c42e3ed98",
+    "eb970ea3-c06f-4dfc-bf31-0445bc6009f4",
+    "eba2f437-b7e5-4b1f-a151-a3fc1eae65cd",
+    "ec181751-da04-485d-b55b-02e90e0eea80",
+    "ed692634-b8e9-42b8-9c08-acc412567bba",
+    "eefce650-0696-46ea-8611-87cee880fc00",
+    "f04ee7bc-766d-4cd7-a128-009fa9756d35",
+    "f09504ae-f219-4c6a-a6a7-18a263a46a23",
+    "f0a39b57-97cd-40dc-b39d-d313eb6be891",
+    "f0fa6604-8fa7-4c9e-9112-e93a2afecf10",
+    "f1008a23-4199-443b-8b90-575a03a9d71b",
+    "f1884758-dfdb-4582-b715-f69c7ce30a1f",
+    "f239e5b6-eb1b-4cea-8f79-96f0a424c3a0",
+    "f3858903-e376-4498-9214-061d92948310",
+    "f41ad834-d8d1-44cd-8f80-fb85b22f62e5",
+    "f457fc16-31b5-4084-ab7b-280fc8cd291b",
+    "f4e629b5-4ef8-4bf3-bd48-f9f40e6ffe38",
+    "f5be978b-d187-4c04-b495-070e9bb2393a",
+    "f62e907d-7196-464b-886e-793b2b3d74d6",
+    "f70fa8e6-317a-4b7b-81a2-7aa33b75325b",
+    "f7a6e9ea-e446-4c98-a4e0-9bdde2f3c2a8",
+    "f7a8c582-1ccc-4484-889c-ec1675df5be7",
+    "f8f5658c-a1ef-4e93-8736-a83b7ab944b6",
+    "f9d311f2-3423-4786-8b97-885bcb63ecf3",
+    "fa2b086f-36a2-4012-b363-800b305259ce",
+    "fc59cd06-6fb1-4782-bd5f-32b365df0bab",
+    "fc8e9e37-a4a9-49c5-b07f-7e0a2290fcdb",
+    "fd0c584b-8b22-4878-a1c0-16e5bcb2e2c1",
+    "fe438ac0-9289-4af6-9f4a-a804bfad6f6b",
+    "fe460d9e-8354-4ed0-9081-5c5a8bc1a3c3",
+    "fede817b-6391-493d-9304-ba3dc0f70e02",
+    "ff00e575-24ac-4d0c-9d03-e297351167b8",
+    "ff02b6db-c168-4d15-8a17-a799b9685ac1"
+  ],
+  "dynamicResourcePaths": [
+    "csv/HotelCfg",
+    "csv/HotelRoomCfg",
+    "csv/IslandUnlockCfg",
+    "csv/SlotBonus",
+    "prefab/LevelMap/island_1",
+    "prefab/LevelMap/island_2",
+    "prefab/LevelMap/island_3",
+    "texture/hotel/window/FISHgroup1",
+    "texture/hotel/window/FISHgroup2",
+    "texture/hotel/window/FISHgroup3",
+    "texture/hotel/window/bubble",
+    "texture/hotel/window/fish1",
+    "texture/hotel/window/fish2",
+    "texture/hotel/window/fish3",
+    "texture/hotel/window/frame",
+    "texture/hotel/window/highlight",
+    "texture/hotel/window/mask",
+    "texture/hotel/window/seaGrass1",
+    "texture/hotel/window/seaGrass2",
+    "texture/hotel/window/whale",
+    "texture/hotel/window/whale1",
+    "texture/mountain-ui/home-mountain",
+    "texture/toy-ui/surfaces"
+  ],
+  "removedDirectories": [
+    "assets/res/texture/hotel/room1/1",
+    "assets/res/texture/hotel/room1/2",
+    "assets/res/texture/hotel/room1/3",
+    "assets/res/texture/hotel/room1/thumbnail",
+    "assets/res/texture/hotel/spine/bed1-6",
+    "assets/res/texture/hotel/spine/blanket1-5",
+    "assets/res/texture/map/Effect/cloud",
+    "assets/res/texture/hotel/framework",
+    "assets/res/texture/hotel/room1",
+    "assets/res/texture/hotel/roomui",
+    "assets/res/texture/hotel/shareIcon",
+    "assets/res/texture/hotel/slotIcon",
+    "assets/res/texture/hotel/spine",
+    "assets/res/texture/map/Effect",
+    "assets/res/texture/map/ui",
+    "assets/resources/texture/hotel/window",
+    "assets/res/texture/hotel",
+    "assets/res/texture/loading",
+    "assets/res/texture/map",
+    "assets/res/texture/visit",
+    "assets/resources/config/map",
+    "assets/resources/texture/hotel"
+  ],
+  "summary": {
+    "assetFiles": 259,
+    "filesIncludingMetadata": 539,
+    "bytes": 19929421
+  },
+  "loadingPrefab": {
+    "prefab": "assets/resources/prefab/ui/GameLoading.prefab",
+    "beforeRecords": 21,
+    "afterRecords": 5,
+    "removedNodes": [
+      "bg",
+      "panel_photo",
+      "sprite",
+      "tips",
+      "progress"
+    ],
+    "backup": "temp/loading-transition-before-20261102.zip"
+  },
+  "preserved": [
+    "All remaining asset metadata byte-identical",
+    "home-v4 artwork",
+    "mountain-ui loading/title/icons/journal/game backgrounds",
+    "toy-ui/toy-atlas",
+    "Shared levelMap sprites and rewardPropItem prefab",
+    "common/bg_laoding.png and fzcy.ttf"
+  ]
+}

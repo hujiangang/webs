@@ -37,21 +37,19 @@ tools/                    表/资源处理脚本
 
 主要场景在 `assets/Scene`：
 
-- `LoadingScene.fire`：启动和预加载场景。
-- `LevelScene.fire`：关卡地图/选关场景。
-- `Match3.fire`：三消主玩法场景，挂载了核心资源控制器 `ResCtrl`。
-- `HotelScene.fire`：岛屿/酒店经营相关场景。
-- `testScene.fire`：测试场景。
+- `LoadingScene.fire`：启动和预加载场景，加载界面由 `LoadingScene.ts` 创建。
+- `HomeScene.fire`：主页，商店／关卡／图鉴三个页签共用此场景。
+- `Match3.fire`：三消主玩法场景，保留棋盘、HUD、引导与特效控制器。
+
+2026-11-02 核对：以上三个场景都在使用。旧 `LevelScene.fire`、`HotelScene.fire`、`testScene.fire` 已在此前退役，本轮清理加载场景的旧界面和局内旧暂停菜单／测试按钮，详情见 [项目架构](project-architecture.md)。
 
 场景名常量在 `assets/Script/Game/Data/Const/Constant.ts`：
 
 ```ts
 export const Scene = {
     Loading: 'LoadingScene',
-    Map: 'MapScene',
     Match: 'Match3',
-    Level: 'LevelScene',
-    Hotel: 'HotelScene'
+    Home: 'HomeScene'
 }
 ```
 

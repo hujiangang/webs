@@ -2,36 +2,53 @@ import GameModel from "../../Match3/Model/GameModel";
 import M from "../../../Application/M";
 import { Event } from "../../Data/Const/Event";
 
-const { ccclass, property } = cc._decorator;
+const { ccclass } = cc._decorator;
 
 @ccclass
 export default class OverHightLightCtrl extends cc.Component {
 
-    @property(cc.Node)
     countDownNode: cc.Node = null;
 
-    @property(cc.Node)
     stepNode: cc.Node = null;
 
-    @property(cc.Label)
     stepLabel: cc.Label = null;
 
-    @property(cc.Label)
     countDownLabel: cc.Label = null;
 
+    public bindView(view: {
+        stepNode: cc.Node;
+        stepLabel: cc.Label;
+        countDownNode: cc.Node;
+        countDownLabel: cc.Label;
+    }) {
+        this.unscheduleAllCallbacks();
+        this.stepNode = view.stepNode;
+        this.stepLabel = view.stepLabel;
+        this.countDownNode = view.countDownNode;
+        this.countDownLabel = view.countDownLabel;
+        this.showStepNode();
+    }
 
     onDestroy() {
         this.unscheduleAllCallbacks();
     }
 
+    public cancelCountDown() {
+        this.unscheduleAllCallbacks();
+    }
+
     public showStepNode() {
         this.unscheduleAllCallbacks();
-        this.stepNode.scale = 1;
-        this.countDownNode.active = false;
+        if (this.stepNode) {
+            this.stepNode.active = true;
+            this.stepNode.scale = 1;
+        }
+        if (this.countDownNode) this.countDownNode.active = false;
     }
 
     public showCountDown() {
         this.unscheduleAllCallbacks();
+        if (!this.stepLabel || !this.countDownNode || !this.countDownLabel) return;
         const currentCount = Math.max(0, Number(this.stepLabel.string) || 0);
         const begin=()=>{this.countDownNode.active=true;this._startCountDown();};
         if(currentCount===0){begin();return;}

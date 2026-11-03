@@ -20,12 +20,6 @@ export default class Paths {
 
     public static readonly LevelCfgPath: string = 'config/level/new/';
 
-    public static readonly RoomPrefabPath: string = 'prefab/hotel/room/'
-
-    public static readonly RoomPicPath: string = 'texture/hotel/';
-
-    public static readonly LevelMapPath: string = 'prefab/LevelMap/';
-
     public static readonly LevelRemotPath: string = `${Paths.MainCDNHost}level/`;
 
     public static readonly TurorialCfgPath: string = 'config/level/turorial/';
@@ -33,8 +27,6 @@ export default class Paths {
     public static readonly TurorialRemotPath: string = `${Paths.MainCDNHost}turorial/`;
 
     public static readonly Match3Bg: string = 'texture/match3/bg/';
-
-    public static readonly SoMap: string = 'texture/map/';
 
     public static readonly Match3BgEff: string = 'prefab/eff/';
 

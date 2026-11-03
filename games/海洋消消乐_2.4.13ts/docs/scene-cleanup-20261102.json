@@ -1,0 +1,65 @@
+{
+  "date": "2026-11-02",
+  "backup": "temp/scene-cleanup-before-20261102-165619.zip",
+  "deletedSceneFiles": [],
+  "scenes": [
+    {
+      "path": "assets/Scene/LoadingScene.fire",
+      "uuid": "da61ff7d-c0ee-4449-b7ec-39c1d09b6898",
+      "beforeBytes": 47616,
+      "afterBytes": 4981,
+      "beforeRecords": 57,
+      "afterRecords": 8,
+      "removedNodeNames": [
+        "background",
+        "logo",
+        "loading",
+        "pb_background",
+        "mask",
+        "pb_fill",
+        "pb_cover",
+        "loadingLabel",
+        "version",
+        "buttons",
+        "btn1",
+        "Background",
+        "Label",
+        "btn2",
+        "Background",
+        "Label",
+        "New Button",
+        "Background",
+        "Label",
+        "New Label"
+      ],
+      "removedRecords": 49,
+      "beforeSha256": "e2eb68cf09226080c089ac9c641de9d00c2656e285fc29a89b67af232ed58396",
+      "afterSha256": "dc9fdd7ec3b5d791e36b0ff57daa51479fe5fe40429a2f522992c9b798609820",
+      "metaSha256": "28b801b9d2e29bb093424e3872344c6041c4131e053b3e6a63ebe24245186e1e"
+    },
+    {
+      "path": "assets/Scene/Match3.fire",
+      "uuid": "8b23ff7a-18c9-4a25-b0eb-0729cddfd494",
+      "beforeBytes": 221395,
+      "afterBytes": 178821,
+      "beforeRecords": 253,
+      "afterRecords": 216,
+      "removedNodeNames": [
+        "pauseBtn",
+        "btn_menu_up",
+        "menu_bg",
+        "img_close",
+        "img_yy_off",
+        "img_yx_off",
+        "img_refresh",
+        "testBtn",
+        "Background",
+        "Label"
+      ],
+      "removedRecords": 37,
+      "beforeSha256": "daaea40cbc0e51810dc70e311d5a3a652ad73edaaec577420bbc0aa0ed0d9a4f",
+      "afterSha256": "d6765d2c2dd525ad70191248597ebe06089d05255e497b82e4595ef6926a4c5d",
+      "metaSha256": "21391443eb551ff4905ab91b02a84118e770cd02b6d5545b55ac69ea7777e5fa"
+    }
+  ]
+}

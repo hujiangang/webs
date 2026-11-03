@@ -13,35 +13,41 @@ const { ccclass, property } = cc._decorator;
 @ccclass
 export default class InfoPanelCtrl extends cc.Component {
 
-    @property(cc.Label)
     stepLable: cc.Label = null;
 
-    @property(cc.Label)
     currentLvLable: cc.Label = null;
 
-    @property(cc.Label)
     scoreLable: cc.Label = null;
 
-    @property(cc.Node)
     collectContent: cc.Node = null;
 
     @property(cc.Prefab)
     collectItemPrefab: cc.Prefab = null;
 
-    @property(cc.ProgressBar)
-    energyProgress: cc.ProgressBar = null;
-
     private colletctPool: Map<string, cc.Node> = null;
+    private collectWidth: number = 0;
+
+    public bindView(view: {
+        stepLabel: cc.Label;
+        levelLabel: cc.Label;
+        scoreLabel: cc.Label;
+        collectContent: cc.Node;
+        collectWidth: number;
+    }) {
+        this.stepLable = view.stepLabel;
+        this.currentLvLable = view.levelLabel;
+        this.scoreLable = view.scoreLabel;
+        this.collectContent = view.collectContent;
+        this.collectWidth = Math.max(0, view.collectWidth);
+    }
 
     onLoad() {
         M.event.register(Event.UI.UpdateInfoPanel, this.onUpdateInfo, this);
-        M.event.register(Event.GameCMD.EnergyStorage, this.updataEnergy, this);
 
     }
 
     onDestroy() {
         M.event.unRegister(Event.UI.UpdateInfoPanel, this.onUpdateInfo, this);
-        M.event.unRegister(Event.GameCMD.EnergyStorage, this.updataEnergy, this);
 
     }
 
@@ -58,7 +64,7 @@ export default class InfoPanelCtrl extends cc.Component {
         if (this.stepLable && GameModel.ins) {
             this.stepLable.string = `${GameModel.ins.stepLimit}`;
         }
-        if (this.scoreLable && Number(this.scoreLable.string) != RuntimeMgr.ins.currentScore) {
+        if (this.scoreLable && this.scoreLable.string !== String(RuntimeMgr.ins.currentScore)) {
             this.scoreLable.string = `${RuntimeMgr.ins.currentScore}`;
             const animation = this.scoreLable.getComponent(cc.Animation);
             animation && animation.play('scoreJump');
@@ -66,29 +72,37 @@ export default class InfoPanelCtrl extends cc.Component {
     }
 
     private initCollectTarget() {
-        const cs = GameModel.ins.getCollect();
         this.colletctPool = new Map();
-        if (cs) {
-            this.collectContent.width = cs.size*112;
-            this.collectContent.setAnchorPoint(.5,.5);
-            const layout=this.collectContent.getComponent(cc.Layout);
-            if(layout)layout.enabled=false;
-            this.collectContent.destroyAllChildren();
-            let index=0;
-            cs.forEach((collect, key) => {
-                const item = M.nodePool.createItem(this.collectItemPrefab);
-                const itemCtrl = item.getComponent(CollectItemCtrl);
-                itemCtrl.init(key, collect);
-                item.setContentSize(104,110);
-                item.setPosition((index++-(cs.size-1)/2)*112,0);
-                itemCtrl.icon.node.setPosition(0,15);
-                itemCtrl.icon.node.setScale(76/Math.max(1,itemCtrl.icon.node.height));
-                itemCtrl.count.node.active=false;
-                itemCtrl.count=ForestUI.text(item,String(collect),30,0,-41,Palette.ink,100,42);
-                item.parent = this.collectContent;
-                this.colletctPool.set(key, item);
-            })
-        }
+        if (!this.collectContent) return;
+
+        // 重试关卡时立即移出旧目标，避免本帧新旧目标同时参与布局。
+        this.collectContent.children.slice().forEach(child => {
+            child.removeFromParent();
+            child.destroy();
+        });
+        const cs = GameModel.ins.getCollect();
+        const targetCount = cs ? cs.size : 0;
+        const contentWidth = targetCount * 112;
+        this.collectContent.setContentSize(contentWidth, 110);
+        this.collectContent.setAnchorPoint(.5, .5);
+        this.collectContent.setScale(contentWidth > 0 && this.collectWidth > 0
+            ? Math.min(1, this.collectWidth / contentWidth) : 1);
+        if (!cs) return;
+
+        let index = 0;
+        cs.forEach((collect, key) => {
+            const item = M.nodePool.createItem(this.collectItemPrefab);
+            const itemCtrl = item.getComponent(CollectItemCtrl);
+            itemCtrl.init(key, collect);
+            item.setContentSize(104, 110);
+            item.setPosition((index++ - (targetCount - 1) / 2) * 112, 0);
+            itemCtrl.icon.node.setPosition(0, 15);
+            itemCtrl.icon.node.setScale(76 / Math.max(1, itemCtrl.icon.node.height));
+            itemCtrl.count.node.active = false;
+            itemCtrl.count = ForestUI.text(item, String(collect), 30, 0, -41, Palette.ink, 100, 42);
+            item.parent = this.collectContent;
+            this.colletctPool.set(key, item);
+        });
     }
 
     //获取关卡文字的世界坐标
@@ -113,26 +127,4 @@ export default class InfoPanelCtrl extends cc.Component {
         return pos;
     }
 
-    private progress: number = 0;
-    private max: number = 0;
-    private updataEnergy(progress: number, max: number) {
-        this.progress = progress;
-        this.max = max;
-    }
-
-    public update() {
-        if (this.max) {
-            let progress = Math.floor(this.energyProgress.progress * this.max);
-            if (progress < this.progress) {
-                progress++;
-            } else if (progress == this.progress && progress == this.max) {
-                progress = 0;
-                this.progress = 0;
-            } else if (progress >= this.progress) {
-                progress = this.progress;
-            }
-            this.energyProgress.progress = progress / this.max;
-        }
-
-    }
 }

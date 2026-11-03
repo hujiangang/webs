@@ -71,6 +71,30 @@ flowchart TD
 
 `settings/builder.json` 的启动场景已由 HotelScene 修正为 LoadingScene。此前直接发布会绕过这个启动流程。
 
+### 场景职责与清理（2026-11-02）
+
+| 场景 | 职责 | 保留原因 |
+| --- | --- | --- |
+| `assets/Scene/LoadingScene.fire` | 初始化、资源预加载、进度显示 | 项目和构建的启动场景 |
+| `assets/Scene/HomeScene.fire` | 商店、关卡列表、菌子图鉴 | 加载完成后进入，局内退出后返回 |
+| `assets/Scene/Match3.fire` | 棋盘、目标、道具、结算与新手引导 | 主页开始按钮进入 |
+
+流程为 `LoadingScene → HomeScene ⇄ Match3`；商店和图鉴是主页页签，不需要独立场景。三个场景 UUID 保持不变。`settings/project.json`、`settings/builder.json`、`settings/builder.panel.json` 的启动场景统一为 LoadingScene，构建面板中指向已不存在场景的旧 UUID 已修正。
+
+加载场景删除旧背景／Logo、旧进度条／文字、旧版本文字和测试按钮六个子树，共 20 个节点，保留 Canvas、相机、加载控制器和适配组件；山林背景、Logo 和进度条由加载脚本创建。Match3 删除旧暂停菜单及旧测试按钮，共 10 个节点；暂停与设置入口由 `MainUiCtrl` 创建并调用 `PlayerPanels`。
+
+随后根据编辑器截图继续移除 Match3 的旧步数牌、收集目标底板、星级条、充能条、旧版本文字及背景，共 43 个节点。MainUiCtrl 直接创建现代 HUD，InfoPanelCtrl 和 OverHightLightCtrl 通过 `bindView` 绑定运行时标签／容器；取消先初始化旧图片再隐藏的流程。道具提示也改为运行时创建，教程目标连接到新的收集容器。重试会在等待资源前取消旧倒计时，HUD 建好后再恢复步数。
+
+因此编辑器里的 Match3 只保留玩法容器、必要控制器和教程资源，不再预摆旧 HUD 图片；实际 UI 运行后创建。`effLayer/tmpCountDown` 仍由现有特效方法引用，暂予保留。共享设置脚本与动画仍被其他 prefab 使用，保留。第二轮清单见 [HUD 清理记录](match3-hud-cleanup-20261102.json)。
+
+`npm run check:scenes` 检查场景引用图、父子与组件关系、场景名常量和启动配置，并纳入 `npm run check`。删除清单和哈希见 [清理记录](scene-cleanup-20261102.json)，备份路径也记录在其中。
+
+加载与大厅的旧美术资源已进一步退役：旧启动图／Logo／加载条、旧进关插画、酒店／海岛／来访界面无入口资源、未使用的大厅背景和旧按钮贴图，以及退役酒店配置。共移除 259 个资源本体，含元数据共 539 文件，清单见 [加载与大厅资源清理](retired-loading-lobby-assets.json)。
+
+`GameLoading.prefab` 仅保留根节点、Widget、TempLoadingPanel 和 PrefabInfo；TempLoadingPanel 通过 UIBase 生命周期创建当前界面、注册及注销进度事件。HomeScene 使用 `HomeArt` 加载 `home-v4`，MountainArt 只管理加载／局内背景，旧 `home-mountain` 分支和未使用的酒店／地图路径常量已移除。
+
+保留当前加载美术、home-v4 大厅美术、图鉴、共享图标和所有仍有引用的奖励／商店资源。`npm run check:entry-assets` 已加入总检查，阻断退役文件回流，以及资产 UUID 或完整动态加载路径被重新引用。
+
 每日任务失败不会阻塞主玩法。`GameBootstrap` 初始化抛错时允许下次重试；使用兜底成功进入游戏后，不会自动重新登录。
 
 ## 4. 业务模块

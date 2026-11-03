@@ -71,8 +71,8 @@ export default class ForestUI {
         g.fillColor=cc.color().fromHEX('#C8D5B4');g.roundRect(-w/2+3,-h/2+3,w-6,h-10,radius-3);g.fill();
         this.text(n,text,30,0,0,'#293F32',w-24,h-4);this.tap(n,action);return n;
     }
-    static background(parent:cc.Node,w:number,h:number,game:boolean|MountainTheme=false):cc.Node {
-        const n=MountainArt.background(parent,w,h,typeof game==='string'?game:game?'pine':'home');
+    static background(parent:cc.Node,w:number,h:number,theme:MountainTheme):cc.Node {
+        const n=MountainArt.background(parent,w,h,theme);
         n.name='ForestBackground';
         return n;
     }

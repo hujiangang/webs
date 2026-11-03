@@ -5,7 +5,6 @@ import M from "../../Application/M";
 import Level from "../Data/Interface/Level";
 import Tutorial from "../Data/Interface/Tutorial";
 import GameModel, { IGridData } from "./Model/GameModel";
-import Paths from "../Config/Paths";
 import { Log } from "../../Framework/Utils/Log";
 import { Event } from "../Data/Const/Event";
 import { CellModel } from "./Model/CellModel"
@@ -28,8 +27,6 @@ import { UIHudDef } from "../Data/Interface/UIData";
 import Match3TutorialCtrl from "./View/Match3TutorialCtrl";
 import { ITutorial } from "../Data/Interface/Level/ITutorial";
 import Apps from '../../Application/Apps';
-import ShaderHelper from '../../Framework/Shader/ShaderHelper';
-import ShaderTime from '../../Framework/Shader/ShaderTime';
 import { AudioID } from '../Common/AudioCtrl';
 import OverHightLightCtrl from '../Common/UI/OverHightLightCtrl';
 import Match3Skin from './Skin/Match3Skin';
@@ -39,9 +36,6 @@ const { ccclass, property } = cc._decorator;
 
 @ccclass
 export default class MainCtrl extends cc.Component {
-
-    @property(cc.Sprite)
-    bg: cc.Sprite = null;
 
     @property(cc.Node)
     uiNode: cc.Node = null;
@@ -163,7 +157,8 @@ export default class MainCtrl extends cc.Component {
     private async initGame() {
         M.runtime.addGameCount();
         this.setZorder(0);
-        this.overHightLightNode.getComponent(OverHightLightCtrl).showStepNode();
+        // Cancel the previous round before awaiting level/resources on restart.
+        this.overHightLightNode.getComponent(OverHightLightCtrl).cancelCountDown();
 
         this._useStepCount = M.runtime.MatchGameTime = 0;
 
@@ -193,6 +188,9 @@ export default class MainCtrl extends cc.Component {
         await ResCtrl.load();
 
         this.uiCtrl.init(this, data);
+        this.overHightLightNode.getComponent(OverHightLightCtrl).showStepNode();
+        const tutorial = this.TutorialPanel && this.TutorialPanel.getComponent(Match3TutorialCtrl);
+        if (tutorial) tutorial.goal = this.uiCtrl.getCollectContent();
 
         // Follow Canvas after parent widgets align, including first entry and viewport changes.
         const boardSize=this.maskNode.getContentSize();
@@ -269,93 +267,18 @@ export default class MainCtrl extends cc.Component {
         const bgIndex=this.gameModel.getLvData().levelInfo.background || 1;
         this.currentBgIndex=M.runtime.CurBgIndex=bgIndex;
         this.groundType=Common.getBgInfo(bgIndex).type;
-        this.bg.node.active=false;
-        const canvas=this.bg.node.parent;
-        const old=canvas.getChildByName('bbg');if(old)old.active=false;
+        const canvas=this.node.parent;
         const previous=canvas.getChildByName('ForestBackground');
         if(previous){previous.removeFromParent();previous.destroy();}
         const backdrop=MountainArt.background(canvas,cc.winSize.width,cc.winSize.height,MountainArt.gameTheme(M.runtime.CurLevel));
         backdrop.name='ForestBackground';backdrop.zIndex=-20;
-        const role=cc.find('top/Auto_record/collectNode/role',this.uiNode);if(role)role.active=false;
         this.sendUpdateLoadingEvent(100);
         this.scheduleOnce(()=>this.startGame(),0);
-    }
-
-    private fillItemTexture(textureCfg: { path: string, parent: string }): Promise<any> {
-        if (textureCfg) {
-            const path = `${Paths.Match3Bg}${this.currentBgIndex}/${textureCfg.path}`;
-            return Common.getRes<cc.SpriteFrame>(path, cc.SpriteFrame).then(res => {
-                if (res) {
-                    const node: cc.Node = cc.find(`Canvas/${textureCfg.parent}`);
-                    if (node) {
-                        node.getComponent(cc.Sprite).spriteFrame = res;
-                    }
-                    this.sendUpdateLoadingEvent();
-                }
-            })
-        }
-    }
-
-    private addItem2Bg(itemCfg: { path: string, parent: string, z: number, type: string, anchor?: Array<number>, pos?: Array<number>, top?: number }): Promise<any> {
-        if (itemCfg) {
-            const path = `${Paths.Match3Bg}${this.currentBgIndex}/${itemCfg.path}`;
-            let type = null;
-            switch (itemCfg.type) {
-                case 'sprite': type = cc.SpriteFrame; break;
-                case 'prefab': type = cc.Prefab; break;
-            }
-            return Common.getRes(path, type).then(res => {
-                if (res) {
-                    let node: cc.Node = null;
-                    switch (itemCfg.type) {
-                        case 'sprite':
-                            node = M.nodePool.createItem(null);
-                            const sprite = node.addComponent(cc.Sprite);
-                            sprite.spriteFrame = res as cc.SpriteFrame;
-                            break;
-                        case 'prefab':
-                            node = M.nodePool.createItem(res);
-                            break;
-                    }
-                    if (node) {
-                        node.parent = cc.find(`Canvas/${itemCfg.parent}`);
-                        if (itemCfg.pos) {
-                            node.setPosition(itemCfg.pos[0], itemCfg.pos[1]);
-                        }
-                        const dirs = ['top', 'left', 'right', 'bottom'];
-                        dirs.forEach(d => {
-                            if (itemCfg[d] != null && itemCfg[d] != undefined) {
-                                (Common.setAlignment(node, d, itemCfg[d]))
-                            }
-                        });
-                        const anc = itemCfg.anchor;
-                        if (anc) {
-                            node.setAnchorPoint(anc[0], anc[1]);
-                        }
-                        const z = itemCfg.z;
-                        if (z != null && z != undefined) {
-                            node.zIndex = z;
-                        }
-                    }
-                }
-                this.sendUpdateLoadingEvent();
-            });
-        }
     }
 
     private sendUpdateLoadingEvent(zdtarget: number = null) {
         this._loadingProgre++;
         M.event.send(Event.UI.UpdateTmpLoadingProgress, zdtarget || Math.ceil((60 + (this._loadingProgre / this._loadingCount) * 60)))
-    }
-
-    private updateBgTopAlign(top: number) {
-        const lvLabPos = this.uiCtrl && this.uiCtrl.getLevelLabelPos ? this.uiCtrl.getLevelLabelPos() : null;
-        //根据上部关卡节点来确认偏移量
-        let topGap = 0;
-        if (this.currentBgIndex == 1 && lvLabPos) {
-            topGap = (cc.winSize.height - lvLabPos.y) - 307;
-        }
-        Common.setAlignment(this.bg.node, 'top', top + topGap);
     }
 
     private onSpeCollectComplet(cm: CellModel) {

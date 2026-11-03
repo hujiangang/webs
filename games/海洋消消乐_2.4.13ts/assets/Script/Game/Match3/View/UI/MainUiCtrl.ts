@@ -1,4 +1,4 @@
-import UI, {Palette} from '../../../Common/UI/ForestUI';
+import UI from '../../../Common/UI/ForestUI';
 import PlayerPanels from '../../../Common/UI/PlayerPanels';
 import OverHightLightCtrl from '../../../Common/UI/OverHightLightCtrl';
 import PropCtrl from "./PropCtrl";
@@ -7,13 +7,11 @@ import M from "../../../../Application/M";
 import { Event } from "../../../Data/Const/Event";
 import UIMgr from "../../../Common/UI/UIMgr";
 import { UIHudDef } from "../../../Data/Interface/UIData";
-import { PropType, CellType, ElimateType, Scene, PowerConfig, WaringTips, ConditionType } from "../../../Data/Const/Constant";
-import { Util } from "../../../../Framework/Utils/Util";
+import { PropType, CellType, Scene, WaringTips } from "../../../Data/Const/Constant";
 import Common from "../../../Common/Common";
 import { ILevel } from "../../../Data/Interface/Level/ILevel";
 import MainCtrl from '../../MainCtrl';
 import ReportMgr from "../../../Services/ReportMgr";
-import GameModel from '../../Model/GameModel';
 import Apps from "../../../../Application/Apps";
 
 const { ccclass, property } = cc._decorator;
@@ -25,66 +23,29 @@ export default class MainUiCtrl extends cc.Component {
     topBar: cc.Node = null;
 
     @property(cc.Node)
-    bottomBar: cc.Node = null;
-
-    @property(cc.Node)
     propBar: cc.Node = null;
 
-    @property(cc.Node)
-    centerBar: cc.Node = null;
-
-    @property(cc.Prefab)
-    dotPrefab: cc.Prefab = null;
-
-    @property(cc.ProgressBar)
-    scoreBar: cc.ProgressBar = null;
-
-    @property(cc.Node)
-    scoreNode: cc.Node = null;
-
-    @property(cc.Node)
-    tmpTestPropShowLable: cc.Node = null;
-
-    @property(cc.Label)
-    version: cc.Label = null;
-
     private _cfg: ILevel = null;
-
     private _mainCtrl: MainCtrl = null;
-
-    private _maxScore: number = 0;
-
-    /**直行进度条 */
-    private _nextStarScore: number = null;
-
-    /**弧形进度条 */
-    private _scoreStarLights: Map<number, cc.Node> = null;
-
     private propCtrl: PropCtrl = null;
     private infoPanelCtrl: InfoPanelCtrl = null;
-
-    private isSquareBar: boolean = false;
-
+    private propHint: cc.Node = null;
+    private hudView: {
+        stepNode: cc.Node; stepLabel: cc.Label; levelLabel: cc.Label; scoreLabel: cc.Label;
+        collectContent: cc.Node; collectWidth: number;
+        countDownNode: cc.Node; countDownLabel: cc.Label;
+    } = null;
 
     onLoad() {
         this.restoreSceneBindings();
         this.initEvent();
         this.initSubCtrl();
-        this.initView();
     }
 
     /** Editor preview can retain an older scene instance after script recompilation. */
     private restoreSceneBindings() {
         this.topBar = this.topBar || cc.find('top', this.node);
-        this.bottomBar = this.bottomBar || cc.find('bottom', this.node);
         this.propBar = this.propBar || cc.find('bottom/propsBar', this.node);
-        this.centerBar = this.centerBar || cc.find('top/Auto_record', this.node);
-        this.scoreNode = this.scoreNode || cc.find('socre', this.node);
-        this.tmpTestPropShowLable = this.tmpTestPropShowLable || cc.find('tmpTestLabel', this.node);
-        const progress = this.scoreBar ? null : cc.find('top/Auto_record/ScoreProgressBar', this.node);
-        if (progress) this.scoreBar = progress.getComponent(cc.ProgressBar);
-        const version = this.version ? null : cc.find('version', this.node.parent);
-        if (version) this.version = version.getComponent(cc.Label);
     }
 
     onDestroy() {
@@ -94,128 +55,95 @@ export default class MainUiCtrl extends cc.Component {
     private initEvent() {
         M.event.register(Event.GameCMD.PropClick, this.onUseProp, this);
         M.event.register(Event.GameCMD.PropUsed, this.onPropOver, this)
-        M.event.register(Event.Effect.ShowDot, this.onShowDot, this);
         M.event.register(Event.UI.AddScore, this.updateScore, this);
     }
 
     private destoryEvent() {
         M.event.unRegister(Event.GameCMD.PropClick, this.onUseProp, this);
         M.event.unRegister(Event.GameCMD.PropUsed, this.onPropOver, this)
-        M.event.unRegister(Event.Effect.ShowDot, this.onShowDot, this);
         M.event.unRegister(Event.UI.AddScore, this.updateScore, this);
     }
 
     public init(mc: MainCtrl, cfg: ILevel) {
         this._cfg = cfg;
         this._mainCtrl = mc;
-        this.initStarProgress(cfg.levelInfo.score);
         this.infoPanelCtrl = this.getInfoPanelCtrl();
         if (this.infoPanelCtrl) {
-            this.infoPanelCtrl.init();
             this.applyTheme();
+            this.infoPanelCtrl.init();
+            this.onPropOver();
         } else {
             console.error("[MainUiCtrl] missing InfoPanelCtrl on topBar");
         }
     }
 
     private applyTheme() {
-        if(this.node.getChildByName('ModernHUD'))return;
-        const info=this.infoPanelCtrl,w=Math.min(cc.winSize.width-54,710),h=cc.winSize.height;
-        const hud=UI.node(this.node,'ModernHUD');hud.zIndex=5;
-        this.topBar.children.forEach(n=>n.active=false);this.scoreNode.active=false;this.version.node.active=false;
-        const oldStep=info.stepLable.node.parent;oldStep.opacity=0;
-        const title=UI.box(hud,'LevelTitle',276,64,0,h/2-79,'#355641',26,true);
-        info.currentLvLable=UI.text(title,'第 '+M.runtime.CurLevel+' 关',34,0,0,'#FFFFFF',254,56);
-        const steps=UI.box(hud,'Moves',154,168,-w/2+88,h/2-216,'#A95C3D',45,true);
-        UI.text(steps,'剩余步数',22,0,53,'#FFF1D0',140,32);
-        info.stepLable=UI.text(steps,String(GameModel.ins.stepLimit),72,0,-13,'#FFFFFF',138,100);
-        const targetWidth=w-186;
-        const head=UI.box(hud,'Targets',targetWidth,156,91,h/2-211,'#F0E5C8',32,true);
-        const targetLabel=UI.box(head,'TargetLabel',160,37,0,74,'#46634B',16);
-        UI.text(targetLabel,'本关目标',22,0,0,'#FFFFFF',148,32);
-        const highlight=this._mainCtrl.overHightLightNode.getComponent(OverHightLightCtrl);
-        highlight.stepNode=steps;highlight.stepLabel=info.stepLable;
-        highlight.countDownNode.active=false;
-        const bonus=UI.box(hud,'BonusCountdown',290,62,0,-h/2+235,'#A66B35',22);
-        UI.text(bonus,'奖励倒计时',21,-35,0,'#FFFFFF',180,42);
-        highlight.countDownLabel=UI.text(bonus,'0',27,104,0,'#FFFFFF',65,42);
-        highlight.countDownNode=bonus;bonus.active=false;
-        const collectWidget=info.collectContent.getComponent(cc.Widget);if(collectWidget)collectWidget.enabled=false;
-        const collectBackground=info.collectContent.getComponent(cc.Sprite);if(collectBackground)collectBackground.enabled=false;
-        info.collectContent.parent=head;info.collectContent.active=true;info.collectContent.setPosition(0,-4);
-        info.collectContent.scale=Math.min(1,(targetWidth-30)/Math.max(1,info.collectContent.width));
-        const score=UI.node(hud,'Score',0,h/2-321);
-        UI.text(score,'得分',21,-51,0,'#EDE9D3',72,30);
-        info.scoreLable=UI.text(score,'0',24,39,0,'#FFFFFF',140,32);
-        this.bottomBar.children.forEach(n=>{if(n!==this.propBar)n.active=false;});
-        this.propBar.parent=hud;this.propBar.setPosition(0,-h/2+110);this.propBar.anchorX=.5;
-        const widget=this.propBar.getComponent(cc.Widget);if(widget)widget.enabled=false;
-        const layout=this.propBar.getComponent(cc.Layout);if(layout)layout.enabled=false;
-        const spacing=Math.min(162,(w-28)/4);this.propBar.setContentSize(spacing*4,178);
-        this.propBar.children.slice().sort((a,b)=>a.name.localeCompare(b.name)).forEach((n,i)=>{n.setPosition((i-1.5)*spacing,0);n.active=true;});
-        const tray=UI.node(hud,'BoosterTray',0,-h/2+68);tray.setContentSize(w-8,100);tray.zIndex=-1;
-        const trayArt=tray.addComponent(cc.Graphics),trayWidth=tray.width;
-        trayArt.fillColor=cc.color().fromHEX('#182F25');trayArt.roundRect(-trayWidth/2,-56,trayWidth,100,20);trayArt.fill();
-        trayArt.fillColor=cc.color().fromHEX('#2A4938');trayArt.roundRect(-trayWidth/2,-50,trayWidth,100,20);trayArt.fill();
-        trayArt.lineWidth=2;trayArt.strokeColor=cc.color().fromHEX('#B5AD79');trayArt.moveTo(-trayWidth/2+20,49);trayArt.lineTo(trayWidth/2-20,49);trayArt.stroke();
-        const pause=UI.box(hud,'Pause',70,70,w/2-38,h/2-78,'#E9DDC1',25,true);
-        const pauseMark=UI.node(pause,'PauseMark'),g=pauseMark.addComponent(cc.Graphics);g.fillColor=cc.color().fromHEX('#3D5742');
-        g.roundRect(-18,-19,13,38,4);g.fill();g.roundRect(5,-19,13,38,4);g.fill();
-        UI.tap(pause,()=>PlayerPanels.pause(this.node));
-        const settings=UI.box(hud,'Settings',62,62,-w/2+38,h/2-78,'#E9DDC1',23);
-        UI.icon(settings,'settings',0,0,34,'#3D5742');UI.tap(settings,()=>PlayerPanels.settings(this.node));
-        info.onUpdateInfo();
+        if (!this.hudView) this.createHUD();
+        this.infoPanelCtrl.bindView(this.hudView);
+        this._mainCtrl.overHightLightNode.getComponent(OverHightLightCtrl).bindView(this.hudView);
     }
 
-    private initStarProgress(scoreCfg: Array<number>) {
-        if (scoreCfg) {
-            const starParent = this.scoreBar.node;
-            const trajectory = starParent.getChildByName('trajectory');
-            this._maxScore = scoreCfg[scoreCfg.length - 1];
-            this._maxScore += this._maxScore * 0.15;
-            this.scoreBar.progress = 0;
-            if (trajectory) {
-                this.isSquareBar = true;
-                this._scoreStarLights = new Map();
-                //算出百分比
-                for (let i = 0; i < scoreCfg.length; i++) {
-                    const star = this.scoreBar.node.getChildByName(`star${i}`);
-                    const coefficient = Math.round((scoreCfg[i] / this._maxScore) * 10);
-                    star.setPosition(trajectory.getChildByName(`${coefficient}`).position);
-                    this._scoreStarLights.set(coefficient, star);
-                    Common.switchGray(true, star);
-                }
-            } else {
-                this.isSquareBar = false;
-                this._nextStarScore = scoreCfg[0];
-                this._scoreStarLights = new Map();
-                for (let i = 0; i < scoreCfg.length; i++) {
-                    const star = this.scoreBar.node.getChildByName(`star${i}`);
-                    const coefficient = scoreCfg[i] / this._maxScore;
-                    star.x = (starParent.width * coefficient) - starParent.width / 2;
-                    Common.switchGray(true, star);
-                    this._scoreStarLights.set(i, null);
-                }
-            }
-        }
+    /** Build the current UI directly, without loading or hiding a legacy HUD. */
+    private createHUD() {
+        const w = Math.min(cc.winSize.width - 54, 710), h = cc.winSize.height;
+        const hud = UI.node(this.node, 'ModernHUD');
+        hud.zIndex = 5;
+        const title = UI.box(hud, 'LevelTitle', 276, 64, 0, h / 2 - 79, '#355641', 26, true);
+        const levelLabel = UI.text(title, '', 34, 0, 0, '#FFFFFF', 254, 56);
+        const steps = UI.box(hud, 'Moves', 154, 168, -w / 2 + 88, h / 2 - 216, '#A95C3D', 45, true);
+        UI.text(steps, '剩余步数', 22, 0, 53, '#FFF1D0', 140, 32);
+        const stepLabel = UI.text(steps, '0', 72, 0, -13, '#FFFFFF', 138, 100);
+        const targetWidth = w - 186;
+        const head = UI.box(hud, 'Targets', targetWidth, 156, 91, h / 2 - 211, '#F0E5C8', 32, true);
+        const targetLabel = UI.box(head, 'TargetLabel', 160, 37, 0, 74, '#46634B', 16);
+        UI.text(targetLabel, '本关目标', 22, 0, 0, '#FFFFFF', 148, 32);
+        const collectContent = UI.node(head, 'CollectContent', 0, -4);
+        collectContent.setContentSize(0, 110);
+        const bonus = UI.box(hud, 'BonusCountdown', 290, 62, 0, -h / 2 + 235, '#A66B35', 22);
+        UI.text(bonus, '奖励倒计时', 21, -35, 0, '#FFFFFF', 180, 42);
+        const countDownLabel = UI.text(bonus, '0', 27, 104, 0, '#FFFFFF', 65, 42);
+        bonus.active = false;
+        const score = UI.node(hud, 'Score', 0, h / 2 - 321);
+        UI.text(score, '得分', 21, -51, 0, '#EDE9D3', 72, 30);
+        const scoreLabel = UI.text(score, '0', 24, 39, 0, '#FFFFFF', 140, 32);
+
+        this.propBar.parent = hud;
+        this.propBar.setPosition(0, -h / 2 + 110);
+        this.propBar.anchorX = .5;
+        const spacing = Math.min(162, (w - 28) / 4);
+        this.propBar.setContentSize(spacing * 4, 178);
+        this.propBar.children.slice().sort((a, b) => a.name.localeCompare(b.name)).forEach((node, i) => {
+            node.setPosition((i - 1.5) * spacing, 0);
+            node.active = true;
+        });
+        const tray = UI.node(hud, 'BoosterTray', 0, -h / 2 + 68);
+        tray.setContentSize(w - 8, 100);
+        tray.zIndex = -1;
+        const trayArt = tray.addComponent(cc.Graphics), trayWidth = tray.width;
+        trayArt.fillColor = cc.color().fromHEX('#182F25');
+        trayArt.roundRect(-trayWidth / 2, -56, trayWidth, 100, 20); trayArt.fill();
+        trayArt.fillColor = cc.color().fromHEX('#2A4938');
+        trayArt.roundRect(-trayWidth / 2, -50, trayWidth, 100, 20); trayArt.fill();
+        trayArt.lineWidth = 2; trayArt.strokeColor = cc.color().fromHEX('#B5AD79');
+        trayArt.moveTo(-trayWidth / 2 + 20, 49); trayArt.lineTo(trayWidth / 2 - 20, 49); trayArt.stroke();
+        this.propHint = UI.box(hud, 'PropHint', Math.min(w - 40, 480), 54, 0, -h / 2 + 224, '#355641', 18);
+        UI.text(this.propHint, '请选择道具作用的位置', 24, 0, 0, '#FFF1D0', this.propHint.width - 20, 42);
+        this.propHint.active = false;
+
+        const pause = UI.box(hud, 'Pause', 70, 70, w / 2 - 38, h / 2 - 78, '#E9DDC1', 25, true);
+        const pauseMark = UI.node(pause, 'PauseMark'), g = pauseMark.addComponent(cc.Graphics);
+        g.fillColor = cc.color().fromHEX('#3D5742');
+        g.roundRect(-18, -19, 13, 38, 4); g.fill(); g.roundRect(5, -19, 13, 38, 4); g.fill();
+        UI.tap(pause, () => PlayerPanels.pause(this.node));
+        const settings = UI.box(hud, 'Settings', 62, 62, -w / 2 + 38, h / 2 - 78, '#E9DDC1', 23);
+        UI.icon(settings, 'settings', 0, 0, 34, '#3D5742');
+        UI.tap(settings, () => PlayerPanels.settings(this.node));
+        this.hudView = {stepNode: steps, stepLabel, levelLabel, scoreLabel, collectContent,
+            collectWidth: targetWidth - 30, countDownNode: bonus, countDownLabel};
     }
 
-    private initView() {
-        this.version.string = Apps.Version;
-        this.updateScore(0, null);
-        this.centerBar.y -= M.platform.getTopBangPosition();
-        this.scheduleOnce(() => {
-            //延迟加载,初始状态可能会没读取到胶囊位置!
-            const c: cc.Rect = M.platform.getMenuButtonBoundingClientRect();
-            if (c) {
-                this.scoreNode.setPosition(c.x + c.width / 2, c.y - 10);
-                if (Util.Tool.isIpx()) {
-                    this.scoreNode.setScale(0.8);
-                    this.centerBar.y -= c.height;
-                    this.scoreNode.y += c.height + this.scoreNode.height;
-                }
-            }
-        }, 0.1);
+    public getCollectContent(): cc.Node {
+        return this.hudView ? this.hudView.collectContent : null;
     }
 
     private initSubCtrl() {
@@ -228,40 +156,21 @@ export default class MainUiCtrl extends cc.Component {
             case PropType.BeikeBomb:
             case PropType.Board:
             case PropType.Hammer:
-                this.tmpTestPropShowLable.active = true;
-                this.tmpTestPropShowLable.runAction(cc.repeatForever(cc.sequence(cc.scaleTo(0.2, 1.1), cc.scaleTo(0.2, 1))));
+                if (!this.propHint) return;
+                this.propHint.stopAllActions();
+                this.propHint.scale = 1;
+                this.propHint.active = true;
+                this.propHint.runAction(cc.repeatForever(cc.sequence(cc.scaleTo(0.2, 1.1), cc.scaleTo(0.2, 1))));
                 break;
         }
     }
 
 
-    private onShowDot(type: ElimateType, startPoint: cc.Vec2) {
-        // let count = Util.Tool.rangeInt(2, 5);
-        // for (let i = count; i--;) {
-        //     const dotNode = M.nodePool.getItem(NodePoolKey.Dot, this.dotPrefab);
-        //     dotNode.parent = this.node;
-        //     dotNode.setScale(Util.Tool.rangeInt(3, 7) / 10);
-        //     // dotNode.color = cc.color(Util.Tool.rangeInt(0, 255), Util.Tool.rangeInt(0, 255), Util.Tool.rangeInt(0, 255));
-        //     dotNode.setPosition(this.node.convertToNodeSpaceAR(startPoint));
-        //     const targetPos = this.node.convertToNodeSpaceAR(Common.getWorldPos(this.scoreBar.node)) as cc.Vec2;
-        //     // targetPos.x += this.scoreBar.node.width / 2;
-        //     let moveTime = dotNode.position.sub(targetPos).mag() * (Util.Tool.rangeInt(10, 20) / 10000);
-
-        //     const a0 = cc.moveTo(moveTime, targetPos);
-        //     const a1 = cc.callFunc(() => {
-        //         M.nodePool.freeItem(NodePoolKey.Dot, dotNode);
-        //     })
-        //     dotNode.runAction(cc.sequence(a0, a1));
-
-        //     if (type != ElimateType.Default) {
-        //         this.updateScore(ScoreConfig.SingleElimate[type], startPoint);
-        //     }
-        // }
-    }
-
     private onPropOver() {
-        this.tmpTestPropShowLable.stopAllActions();
-        this.tmpTestPropShowLable.active = false;
+        if (!this.propHint) return;
+        this.propHint.stopAllActions();
+        this.propHint.scale = 1;
+        this.propHint.active = false;
     }
 
     public getLevelLabelPos(): cc.Vec2 {
@@ -304,7 +213,7 @@ export default class MainUiCtrl extends cc.Component {
         ReportMgr.ins.reportMatchOver(M.runtime.CurLevel, result, stepCount, timeCount);
         if (result) {
             M.runtime.SelectLevel = 0;
-            const starCount = 3;//this._scoreStarLights ? 3 - this._scoreStarLights.size : 0;
+            const starCount = 3;
             let rewardCoins=0;
             const isNew = M.runtime.CurLevel < 9000 && M.runtime.savaLvData(starCount);
             if (isNew) {
@@ -340,9 +249,8 @@ export default class MainUiCtrl extends cc.Component {
     public updateScore(as: number, pos: cc.Vec2, isOverEff: boolean = false) {
         if (as) {
             pos && M.event.send(Event.Effect.AddScore, as, pos, isOverEff);
-            const score = M.runtime.addScore(as);
+            M.runtime.addScore(as);
             this.infoPanelCtrl && this.infoPanelCtrl.onUpdateInfo();
-            this.updateScoreProgress(score);
         }
     }
 
@@ -352,28 +260,6 @@ export default class MainUiCtrl extends cc.Component {
         UIMgr.ins.showUI(UIHudDef.GameShowTarget, { type: UIHudDef.GameShowTarget, data }, null, () => {
             dialogOverCallback();
         });
-    }
-
-    private updateScoreProgress(curScore: number) {
-        if (this._cfg) {
-            this.scoreBar.progress = curScore / this._maxScore;
-            if (this.isSquareBar && this._scoreStarLights) {
-                const coefficient = Math.round(this.scoreBar.progress * 10);
-                this._scoreStarLights.forEach((v, k) => {
-                    if (coefficient >= k) {
-                        Common.switchGray(false, v);
-                        this._scoreStarLights.delete(k);
-                    }
-                });
-            } else if (this._nextStarScore && curScore >= this._nextStarScore) {
-                const currentIndex = this._cfg.levelInfo.score.indexOf(this._nextStarScore);
-                const star = this.scoreBar.node.getChildByName(`star${currentIndex}`);
-                this._scoreStarLights.delete(currentIndex);
-                Common.switchGray(false, star);
-                this._nextStarScore = this._cfg.levelInfo.score[currentIndex + 1];
-                this._nextStarScore == -1 && (this._nextStarScore = null);
-            }
-        }
     }
 
     public onOpenGM() {
