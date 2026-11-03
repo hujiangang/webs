@@ -2,6 +2,8 @@ import math
 import random
 from pathlib import Path
 
+from mushroom_app.collections.models import CollectionEntry, MushroomCollection
+from mushroom_app.collections.repositories import read_yunnan_collection
 from mushroom_app.config import PAGE_SIZE
 from mushroom_app.image_repository import find_mushroom_image_credits, get_mushroom_image_keys
 from mushroom_app.detail_sections import build_detail_sections
@@ -44,24 +46,60 @@ def build_banner_item(row: dict[str, str]) -> BannerItem:
 
 def get_mushroom_page(query: GalleryQuery) -> MushroomPage:
     # 先用无图片的筛选摘要匹配，仅为当前页构造完整展示条目。
-    photo_keys = get_mushroom_image_keys() if query.with_photo else None
+    collection = read_yunnan_collection() if query.collection == "yunnan" else None
+    photo_keys = get_mushroom_image_keys() if query.with_photo or collection is not None else set()
+    rows = read_mushroom_rows()
+    entries = {}
+    collection_total = collection_photos = 0
+    if collection is not None:
+        entries = {(entry.id, entry.scientific_name): entry for entry in collection.entries}
+        rows = select_collection_rows(rows, collection)
+        collection_total = len(rows)
+        collection_photos = sum(match_source_photo(row, photo_keys) for row in rows)
+        # 稳定排序在分页前执行；同为有图或无图时保留审核清单顺序。
+        rows = sorted(rows, key=lambda row: not match_source_photo(row, photo_keys))
     filtered = [
-        row for row in read_mushroom_rows()
+        row for row in rows
         if match_mushroom_row(row, query)
-        and (photo_keys is None or match_source_photo(row, photo_keys))
+        and (not query.with_photo or match_source_photo(row, photo_keys))
     ]
     total_pages = max(1, math.ceil(len(filtered) / PAGE_SIZE))
     page = min(query.page, total_pages)
     start = (page - 1) * PAGE_SIZE
+    items = [build_mushroom_item(row) for row in filtered[start : start + PAGE_SIZE]]
+    for item in items:
+        add_selection_details(item, entries.get((item.id, item.latin_name)))
     return MushroomPage(
-        items=[build_mushroom_item(row) for row in filtered[start : start + PAGE_SIZE]],
+        items=items,
         page=page,
         total_pages=total_pages,
         total_count=len(filtered),
         category=query.category,
         keyword=query.keyword.strip(),
         with_photo=query.with_photo,
+        collection=query.collection,
+        collection_title=collection.title if collection is not None else "",
+        collection_description=collection.description if collection is not None else "",
+        collection_total_count=collection_total,
+        collection_photo_count=collection_photos,
     )
+
+
+def select_collection_rows(rows: list[dict[str, str]], collection: MushroomCollection) -> list[dict[str, str]]:
+    """精确关联编号与学名，按精选清单顺序返回原行，不修改输入。"""
+    row_index = {
+        (row.get(next(iter(row), "编号"), "").strip(), row.get("拉丁名", "").strip()): row
+        for row in rows
+    }
+    return [row_index[key] for entry in collection.entries if (key := (entry.id, entry.scientific_name)) in row_index]
+
+
+def add_selection_details(item: MushroomItem, entry: CollectionEntry | None) -> None:
+    """精选说明单独附加，保留原档案字段和风险分类。"""
+    if entry is not None:
+        item.selection_group = entry.group
+        item.selection_note = entry.reason
+        item.selection_sources = list(entry.sources)
 
 
 def get_mushroom_detail(mushroom_id: str) -> MushroomItem | None:
@@ -70,6 +108,9 @@ def get_mushroom_detail(mushroom_id: str) -> MushroomItem | None:
         if row.get(id_key, "").strip() == mushroom_id:
             item = build_mushroom_item(row)
             item.detail_sections = build_detail_sections(item.detail_fields)
+            entry = next((entry for entry in read_yunnan_collection().entries
+                          if entry.id == item.id and entry.scientific_name == item.latin_name), None)
+            add_selection_details(item, entry)
             return item
     return None
 

@@ -1,4 +1,8 @@
+from typing import Literal
+
 from pydantic import BaseModel, Field
+
+from mushroom_app.collections.models import CollectionSource
 
 
 class BannerItem(BaseModel):
@@ -38,9 +42,17 @@ class MushroomItem(BaseModel):
     # 详情页按数据表表头动态展示，避免列名变化后页面缺字段。
     detail_fields: list[dict[str, str]] = []
     detail_sections: list[dict] = Field(default_factory=list)
+    # 精选理由独立展示，不覆盖主表身份、风险与其他原始字段。
+    selection_group: str = ""
+    selection_note: str = ""
+    selection_sources: list[CollectionSource] = Field(default_factory=list)
 
 
-class GalleryQuery(BaseModel):
+class CollectionQuery(BaseModel):
+    collection: Literal["all", "yunnan"] = "all"
+
+
+class GalleryQuery(CollectionQuery):
     category: str = "all"
     page: int = Field(default=1, ge=1)
     keyword: str = ""
@@ -55,6 +67,12 @@ class MushroomPage(BaseModel):
     category: str
     keyword: str
     with_photo: bool = False
+    collection: Literal["all", "yunnan"] = "all"
+    collection_title: str = ""
+    collection_description: str = ""
+    # 精选总量不随搜索、分类和照片筛选变化；全国模式保留为零。
+    collection_total_count: int = 0
+    collection_photo_count: int = 0
 
 
 class GameItem(BaseModel):

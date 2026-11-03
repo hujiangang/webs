@@ -4,7 +4,7 @@
 {% block main_class %}detail-main{% endblock %}
 {% block content %}
 <section class="detail-shell">
-    <a class="back-link" href="/mushrooms">← 返回图鉴</a>
+    <a class="back-link" href="/mushrooms{% if collection == 'yunnan' %}?collection=yunnan{% endif %}">← 返回{{ '云南常见菌' if collection == 'yunnan' else '图鉴' }}</a>
     <header class="detail-heading">
         <div><h1 class="detail-title">{{ mushroom.name }}</h1><p class="detail-latin">{{ mushroom.latin_name }}</p></div>
         <span class="risk-badge {{ mushroom.risk_class }}">{{ mushroom.risk_label }}</span>
@@ -54,6 +54,13 @@
         {% for group in mushroom.detail_sections %}<a class="detail-nav-link" href="#section-{{ group.id }}" data-detail-section><span class="detail-nav-dot" aria-hidden="true"></span>{{ group.title }}</a>{% endfor %}
     </nav>
     <div class="detail-content">
+        {% if mushroom.selection_note %}
+        <section class="detail-section detail-selection">
+            <h2>云南收录依据 · {{ mushroom.selection_group }}</h2>
+            <p>{{ mushroom.selection_note }}</p>
+            <ul>{% for source in mushroom.selection_sources %}<li><a href="{{ source.url }}" target="_blank" rel="noopener noreferrer">{{ source.title }} ↗</a></li>{% endfor %}</ul>
+        </section>
+        {% endif %}
         {% for group in mushroom.detail_sections %}
         <details class="detail-section detail-anchor detail-group" id="section-{{ group.id }}" {% if group.expanded %}open{% endif %}>
             <summary><h2>{{ group.title }}</h2><span class="detail-group-toggle" aria-hidden="true"></span></summary>

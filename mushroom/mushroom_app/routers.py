@@ -5,7 +5,7 @@ from fastapi.responses import FileResponse, HTMLResponse
 from fastapi.templating import Jinja2Templates
 
 from mushroom_app.config import TEMPLATES_DIR
-from mushroom_app.models import GalleryQuery
+from mushroom_app.models import CollectionQuery, GalleryQuery
 from mushroom_app.content.services import get_published_content
 from mushroom_app.services import (
     get_home_picks,
@@ -107,12 +107,16 @@ def mushroom_gallery_page(
 
 
 @router.get("/mushrooms/{mushroom_id}", response_class=HTMLResponse, summary="菌子详情")
-def mushroom_detail_page(request: Request, mushroom_id: str) -> HTMLResponse:
+def mushroom_detail_page(
+    request: Request,
+    mushroom_id: str,
+    query: CollectionQuery = Depends(),
+) -> HTMLResponse:
     mushroom = get_mushroom_detail(mushroom_id)
     if mushroom is None:
         raise HTTPException(status_code=404, detail="菌子不存在")
 
     return templates.TemplateResponse(
         "mushroom_detail.html",
-        build_template_context(request, "gallery", mushroom=mushroom),
+        build_template_context(request, "gallery", mushroom=mushroom, collection=query.collection),
     )
