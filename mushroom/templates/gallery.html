@@ -13,15 +13,15 @@
         {% for key, label in [('yunnan','云南常见菌'),('all','全国图鉴')] %}
         <a class="collection-tab {{ 'active' if mushroom_page.collection == key }}" href="/mushrooms?collection={{ key }}" {% if mushroom_page.collection == key %}aria-current="page"{% endif %}>{{ label }}</a>
         {% endfor %}
-        {% if mushroom_page.collection == 'yunnan' %}<span class="collection-summary">精选 {{ mushroom_page.collection_total_count }} 个条目 · {{ mushroom_page.collection_photo_count }} 个有来源照片 · 有图优先</span>{% endif %}
+        {% if mushroom_page.collection == 'yunnan' %}<span class="collection-summary">精选 {{ mushroom_page.collection_total_count }} 个条目 · {{ mushroom_page.collection_photo_count }} 个已配图 · 有图优先</span>{% endif %}
     </nav>
     <form class="catalog-search-form" action="/mushrooms" method="get" role="search">
         <input type="hidden" name="collection" value="{{ mushroom_page.collection }}">
         <input type="hidden" name="category" value="{{ mushroom_page.category }}">
         <div class="site-search">
-            <label class="catalog-sr-only" for="catalog-keyword">搜索菌子名称或拉丁名</label>
+            <label class="catalog-sr-only" for="catalog-keyword">搜索菌子名称、俗名或拉丁名</label>
             <span class="search-icon" aria-hidden="true"></span>
-            <input id="catalog-keyword" class="search-input" type="search" name="keyword" value="{{ mushroom_page.keyword }}" placeholder="搜索菌子名称 / 拉丁名">
+            <input id="catalog-keyword" class="search-input" type="search" name="keyword" value="{{ mushroom_page.keyword }}" placeholder="{{ '搜索常用名 / 别名 / 学名，如：扫把菌' if mushroom_page.collection == 'yunnan' else '搜索菌子名称 / 拉丁名' }}">
             <button type="submit" class="search-submit">搜索</button>
         </div>
         <div class="filter-bar">
@@ -30,11 +30,11 @@
                 <a class="filter-btn {{ 'active' if mushroom_page.category == key }}" href="/mushrooms?collection={{ mushroom_page.collection }}&category={{ key }}&keyword={{ mushroom_page.keyword|urlencode }}{% if mushroom_page.with_photo %}&with_photo=true{% endif %}" {% if mushroom_page.category == key %}aria-current="page"{% endif %}>{{ label }}</a>
                 {% endfor %}
             </nav>
-            <label class="photo-filter"><input type="checkbox" name="with_photo" value="true" data-photo-filter {% if mushroom_page.with_photo %}checked{% endif %}><span>仅看有来源照片</span></label>
+            <label class="photo-filter"><input type="checkbox" name="with_photo" value="true" data-photo-filter {% if mushroom_page.with_photo %}checked{% endif %}><span>{{ '仅看已配图' if mushroom_page.collection == 'yunnan' else '仅看有来源照片' }}</span></label>
         </div>
     </form>
     <div class="notice">{{ icon('shield') }}<p>仅供科普观察，不能作为采食依据。照片与单一外观特征无法可靠判断野生菌是否可食用。</p><a href="/safety">安全指南 ↗</a></div>
-    <div class="collection-meta"><span>找到 <b>{{ mushroom_page.total_count }}</b> 份菌子档案{% if mushroom_page.with_photo %}<span class="collection-filter-note"> · 有来源照片</span>{% endif %}</span><span>第 {{ mushroom_page.page }} / {{ mushroom_page.total_pages }} 页</span></div>
+    <div class="collection-meta"><span>找到 <b>{{ mushroom_page.total_count }}</b> 份菌子档案{% if mushroom_page.with_photo %}<span class="collection-filter-note"> · {{ '已配图' if mushroom_page.collection == 'yunnan' else '有来源照片' }}</span>{% endif %}</span><span>第 {{ mushroom_page.page }} / {{ mushroom_page.total_pages }} 页</span></div>
     <div class="mushroom-grid">
         {% for mushroom in mushroom_page.items %}{{ mushroom_card(mushroom, catalog=true, collection=mushroom_page.collection) }}
         {% else %}<div class="empty-state"><h2>没有找到符合条件的菌子</h2><p>试试更短的名称，或清除关键词与分类继续浏览。</p><a class="button button-dark" href="/mushrooms?collection={{ mushroom_page.collection }}{% if mushroom_page.with_photo %}&with_photo=true{% endif %}">清除关键词与分类</a></div>{% endfor %}

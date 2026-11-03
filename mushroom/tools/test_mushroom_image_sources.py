@@ -15,6 +15,7 @@ import httpx
 
 from main import app
 from mushroom_app import image_repository, services
+from mushroom_app.collections.models import MushroomCollection
 
 
 class MushroomImageSourceTests(unittest.TestCase):
@@ -38,6 +39,8 @@ class MushroomImageSourceTests(unittest.TestCase):
         patch.object(image_repository, "DATA_DIR", self.data_dir).start()
         patch.object(services, "find_mushroom_image_name", return_value="干巴菌.jpg").start()
         patch.object(services, "find_mushroom_gallery_names", return_value=["image/干巴菌.jpg", "image_ex/干巴菌_1.jpg"]).start()
+        # 本组只核全局来源图库，避免真实精选清单的用户确认照片污染夹具。
+        patch.object(services, "read_yunnan_collection", return_value=MushroomCollection()).start()
         self.addCleanup(patch.stopall)
 
     def create_file(self, relative):
@@ -148,7 +151,7 @@ class MushroomImageSourceTests(unittest.TestCase):
         for text in ("摄影者 &lt;script&gt;测试&lt;/script&gt;", self.photo["license"], self.photo["source_url"], self.photo["license_url"], self.photo["location_label"], self.photo["identification_status"]):
             self.assertIn(text, detail.text)
         self.assertNotIn("<script>测试</script>", detail.text)
-        self.assertIn("图片来源见详情", gallery.text)
+        self.assertIn("来源图片 · 见详情", gallery.text)
 
     def request_page(self, url):
         async def request():

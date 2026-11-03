@@ -1,4 +1,5 @@
 import csv
+import io
 import os
 from pathlib import Path
 
@@ -9,6 +10,11 @@ from mushroom_app.config import DATA_DIR, IMAGE_DIR, IMAGE_EX_DIR
 
 MUSHROOM_CSV = DATA_DIR / "mushroom.csv"
 IMAGE_SUFFIXES = {".jpg", ".jpeg", ".png", ".webp", ".gif"}
+
+
+def read_admin_csv_bytes() -> bytes:
+    """精选单独变化时保留主表的原始字节。"""
+    return MUSHROOM_CSV.read_bytes()
 
 
 def read_admin_rows() -> list[dict[str, str]]:
@@ -33,6 +39,15 @@ def write_admin_rows(rows: list[dict[str, str]]) -> None:
         writer.writeheader()
         writer.writerows(rows)
     os.replace(temp_path, MUSHROOM_CSV)
+
+
+def serialize_admin_rows(rows: list[dict[str, str]], headers: list[str]) -> bytes:
+    """生成待提交的主表字节，实际替换与备份由维护仓储统一处理。"""
+    output = io.StringIO(newline="")
+    writer = csv.DictWriter(output, fieldnames=headers)
+    writer.writeheader()
+    writer.writerows(rows)
+    return output.getvalue().encode("utf-8-sig")
 
 
 def find_main_image_path(mushroom_name: str) -> Path | None:

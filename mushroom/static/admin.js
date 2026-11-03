@@ -1,102 +1,69 @@
 (function () {
     const viewer = document.querySelector("[data-admin-viewer]");
-    if (!viewer) {
-        return;
-    }
-
     const image = viewer.querySelector("[data-admin-viewer-image]");
     const closeButton = viewer.querySelector("[data-admin-viewer-close]");
-    const previewButtons = Array.from(document.querySelectorAll("[data-preview-src]"));
-
-    function openViewer(src) {
-        image.src = src;
-        viewer.hidden = false;
-        document.body.style.overflow = "hidden";
-    }
+    let opener;
 
     function closeViewer() {
         viewer.hidden = true;
-        image.src = "";
+        image.removeAttribute("src");
         document.body.style.overflow = "";
+        if (opener) opener.focus();
     }
-
-    previewButtons.forEach(function (button) {
+    document.querySelectorAll("[data-preview-src]").forEach(function (button) {
         button.addEventListener("click", function () {
-            openViewer(button.dataset.previewSrc);
+            opener = button;
+            image.src = button.dataset.previewSrc;
+            viewer.hidden = false;
+            document.body.style.overflow = "hidden";
+            closeButton.focus();
         });
     });
-
     closeButton.addEventListener("click", closeViewer);
-
     viewer.addEventListener("click", function (event) {
-        if (event.target === viewer) {
-            closeViewer();
-        }
+        if (event.target === viewer) closeViewer();
     });
-
     document.addEventListener("keydown", function (event) {
-        if (!viewer.hidden && event.key === "Escape") {
-            closeViewer();
-        }
+        if (!viewer.hidden && event.key === "Escape") closeViewer();
     });
 })();
 
 (function () {
-    const autoUploadForms = Array.from(document.querySelectorAll("[data-auto-upload-form]"));
+    const form = document.querySelector("[data-edit-form]");
+    if (!form) return;
+    const status = document.querySelector("[data-edit-status]");
+    const uploadError = document.querySelector("[data-upload-error]");
+    let dirty = form.dataset.unsaved === "true";
+    let submitting = false;
 
-    function previewMainImage(input) {
-        const panel = input.closest(".main-image-panel");
-        const file = input.files[0];
-        if (!panel || !file) {
-            return;
-        }
-
-        const url = URL.createObjectURL(file);
-        const previewButton = panel.querySelector(".image-preview-button");
-        const emptyImage = panel.querySelector(".empty-image");
-        if (previewButton) {
-            previewButton.dataset.previewSrc = url;
-            previewButton.querySelector("img").src = url;
-        } else if (emptyImage) {
-            emptyImage.outerHTML = '<button class="image-preview-button" type="button" data-preview-src="' + url + '" aria-label="查看主图大图"><img src="' + url + '" alt="主图预览"></button>';
-        }
-    }
-
-    function previewExtraImage(input) {
-        const grid = document.querySelector(".extra-grid");
-        const file = input.files[0];
-        if (!grid || !file) {
-            return;
-        }
-
-        const url = URL.createObjectURL(file);
-        const emptyExtra = grid.querySelector(".empty-extra");
-        if (emptyExtra) {
-            emptyExtra.remove();
-        }
-        const card = document.createElement("div");
-        card.className = "extra-card-wrap uploading";
-        card.innerHTML = '<button class="extra-card" type="button" data-preview-src="' + url + '" aria-label="查看新扩展图"><img src="' + url + '" alt="扩展图预览"><span>上传中</span></button>';
-        grid.appendChild(card);
-    }
-
-    autoUploadForms.forEach(function (form) {
-        const input = form.querySelector('input[type="file"]');
-        if (!input) {
-            return;
-        }
-
-        input.addEventListener("change", function () {
-            if (!input.files.length) {
+    form.addEventListener("input", function () {
+        dirty = true;
+        status.textContent = "有未保存的修改，请先保存资料再管理图片。";
+    });
+    form.addEventListener("submit", function () {
+        // 仅放行本次表单导航；服务端保存失败后会回显草稿及未保存状态。
+        submitting = true;
+        status.textContent = "正在保存资料…";
+    });
+    document.querySelectorAll("[data-image-form]").forEach(function (imageForm) {
+        imageForm.addEventListener("submit", function (event) {
+            if (dirty) {
+                event.preventDefault();
+                uploadError.textContent = "资料还有未保存的修改，请先点击“保存资料”，再上传或撤销图片。";
+                uploadError.hidden = false;
+                uploadError.scrollIntoView({behavior: "smooth", block: "center"});
                 return;
             }
-            if (input.hasAttribute("data-main-upload")) {
-                previewMainImage(input);
-            }
-            if (input.hasAttribute("data-extra-upload")) {
-                previewExtraImage(input);
-            }
-            form.submit();
+            submitting = true;
+            const button = imageForm.querySelector('button[type="submit"]');
+            if (button) { button.disabled = true; button.textContent = "处理中…"; }
         });
     });
+    window.addEventListener("beforeunload", function (event) {
+        if (dirty && !submitting) {
+            event.preventDefault();
+            event.returnValue = "";
+        }
+    });
+    window.addEventListener("pageshow", function () { submitting = false; });
 })();

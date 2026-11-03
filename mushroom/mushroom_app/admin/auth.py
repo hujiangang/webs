@@ -9,6 +9,7 @@ from fastapi.responses import JSONResponse, RedirectResponse
 from starlette.middleware.base import BaseHTTPMiddleware
 
 from mushroom_app.admin.auth_repository import read_credentials, write_credentials
+from mushroom_app.admin.password_models import AdminPassword, AdminPasswordChange
 
 
 AUTH_LOCK = Lock()
@@ -25,12 +26,32 @@ def password_hash(password: str, salt: str) -> str:
 
 
 def initialize_admin(password: str) -> None:
+    AdminPassword(password=password)
     with AUTH_LOCK:
         if get_auth():
             raise ValueError("管理员已设置，请登录")
         salt = secrets.token_hex(20)
         data = {'salt': salt, 'password': password_hash(password, salt), 'secret': secrets.token_hex(32)}
         write_credentials(data)
+
+
+def reset_admin_password(password: str) -> None:
+    """仅供服务器本机命令调用；轮换会话密钥，使旧登录立即失效。"""
+    AdminPassword(password=password)
+    with AUTH_LOCK:
+        salt = secrets.token_hex(20)
+        write_credentials({'salt': salt, 'password': password_hash(password, salt),
+                           'secret': secrets.token_hex(32)})
+
+
+def change_admin_password(form: AdminPasswordChange) -> None:
+    """登录后的密码修改仍核对当前密码，避免共享电脑上的误操作。"""
+    with AUTH_LOCK:
+        if not verify_password(form.current_password):
+            raise ValueError('当前密码不正确')
+        salt = secrets.token_hex(20)
+        write_credentials({'salt': salt, 'password': password_hash(form.new_password, salt),
+                           'secret': secrets.token_hex(32)})
 
 
 def verify_password(password: str) -> bool:

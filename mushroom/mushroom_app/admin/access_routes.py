@@ -4,8 +4,10 @@ from threading import Lock
 from fastapi import APIRouter, Form, HTTPException, Request
 from fastapi.responses import HTMLResponse, RedirectResponse
 from fastapi.templating import Jinja2Templates
+from pydantic import ValidationError
 
-from mushroom_app.admin.auth import COOKIE_NAME, SESSION_SECONDS, get_auth, initialize_admin, issue_session, verify_password
+from mushroom_app.admin.auth import COOKIE_NAME, SESSION_SECONDS, change_admin_password, get_auth, initialize_admin, issue_session, verify_password
+from mushroom_app.admin.password_models import AdminPasswordChange
 from mushroom_app.config import TEMPLATES_DIR
 
 
@@ -46,10 +48,32 @@ def login(request: Request, password: str = Form(..., max_length=128)):
     return logged_in_response(request)
 
 
-def logged_in_response(request: Request):
-    response = RedirectResponse('/admin/content', status_code=303)
+def logged_in_response(request: Request, destination: str = '/admin/content'):
+    response = RedirectResponse(destination, status_code=303)
     response.set_cookie(COOKIE_NAME, issue_session(), max_age=SESSION_SECONDS, httponly=True, samesite='strict', secure=request.url.scheme == 'https')
     return response
+
+
+@access_router.get('/admin/password', response_class=HTMLResponse, summary='修改管理员密码页面')
+def password_page(request: Request):
+    return templates.TemplateResponse('admin_password.html', {'request': request, 'error': ''})
+
+
+@access_router.post('/admin/password', response_class=HTMLResponse, summary='修改管理员密码并更新会话')
+def password_change(request: Request, current_password: str = Form(''),
+                    new_password: str = Form(''), confirm_password: str = Form('')):
+    try:
+        form = AdminPasswordChange(current_password=current_password, new_password=new_password,
+                                   confirm_password=confirm_password)
+        change_admin_password(form)
+    except ValidationError:
+        error = '新密码须为12至128位，且两次输入一致；请检查当前密码是否填写。'
+    except ValueError as exc:
+        error = str(exc)
+    else:
+        return logged_in_response(request, '/admin/mushrooms?message=管理密码已更新')
+    # 密码不回填，也不将验证器中的输入值写入页面或日志。
+    return templates.TemplateResponse('admin_password.html', {'request': request, 'error': error}, status_code=400)
 
 
 @access_router.post('/logout', summary='退出管理端')

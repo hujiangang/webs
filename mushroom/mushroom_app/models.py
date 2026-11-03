@@ -25,6 +25,10 @@ class ImageCredit(BaseModel):
     changes: str = ""
     usage_note: str = ""
     reference_only: bool = False
+    source_type: Literal["user_confirmed", "open_license", "source_reference", "admin_uploaded"] = "open_license"
+    classification_scope: str = ""
+    # 后台指定的主图优先展示，来源图和用户原始确认图仍保留在相册。
+    is_primary: bool = False
 
 
 class MushroomItem(BaseModel):
@@ -46,6 +50,10 @@ class MushroomItem(BaseModel):
     selection_group: str = ""
     selection_note: str = ""
     selection_sources: list[CollectionSource] = Field(default_factory=list)
+    selection_name: str = ""
+    selection_aliases: list[str] = Field(default_factory=list)
+    selection_scope: str = ""
+    selection_summary: str = ""
 
 
 class CollectionQuery(BaseModel):

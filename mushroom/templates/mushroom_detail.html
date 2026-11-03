@@ -1,32 +1,36 @@
 {% extends "base.html" %}
 {% from 'components.html' import icon %}
-{% block title %}{{ mushroom.name }} - 中国野生菌图鉴{% endblock %}
+{% set display_name = mushroom.selection_name if collection == 'yunnan' and mushroom.selection_name else mushroom.name %}
+{% block title %}{{ display_name }} - 中国野生菌图鉴{% endblock %}
 {% block main_class %}detail-main{% endblock %}
 {% block content %}
 <section class="detail-shell">
     <a class="back-link" href="/mushrooms{% if collection == 'yunnan' %}?collection=yunnan{% endif %}">← 返回{{ '云南常见菌' if collection == 'yunnan' else '图鉴' }}</a>
     <header class="detail-heading">
-        <div><h1 class="detail-title">{{ mushroom.name }}</h1><p class="detail-latin">{{ mushroom.latin_name }}</p></div>
+        <div><h1 class="detail-title">{{ display_name }}</h1>{% if mushroom.selection_aliases %}<p class="detail-aliases">别名 / 地方叫法：{{ mushroom.selection_aliases|join('、') }}</p>{% endif %}<p class="detail-latin">{{ mushroom.latin_name }}</p></div>
         <span class="risk-badge {{ mushroom.risk_class }}">{{ mushroom.risk_label }}</span>
     </header>
+    {% if mushroom.selection_summary %}<div class="detail-name-guide"><span>{{ mushroom.selection_scope }}</span><p>{{ mushroom.selection_summary }}</p>{% if display_name != mushroom.name %}<small>对应档案：{{ mushroom.name }}</small>{% endif %}</div>{% endif %}
     <div class="notice">{{ icon('shield') }}<p>毒性与食用记录不能作为采食依据，照片不能代替物种鉴定。</p><a href="/safety">安全指南 ↗</a></div>
     {% set legacy_images = mushroom.gallery_images | reject('in', mushroom.image_credits) | list %}
-    <div class="detail-gallery" aria-label="有来源的物种照片">
+    <div class="detail-gallery" aria-label="菌子配图与来源">
         {% for gallery_image in mushroom.gallery_images if gallery_image in mushroom.image_credits %}
         <figure class="detail-gallery-figure">
-            <button type="button" class="detail-gallery-card" data-viewer-open aria-label="放大查看{{ mushroom.name }}图片{{ loop.index }}">
-                <img class="detail-gallery-image" src="{{ gallery_image }}" alt="{{ mushroom.name }}图片{{ loop.index }}" {% if loop.first %}fetchpriority="high"{% else %}loading="lazy"{% endif %}>
+            <button type="button" class="detail-gallery-card" data-viewer-open aria-label="放大查看{{ display_name }}图片{{ loop.index }}">
+                <img class="detail-gallery-image" src="{{ gallery_image }}" alt="{{ display_name }}图片{{ loop.index }}" {% if loop.first %}fetchpriority="high"{% else %}loading="lazy"{% endif %}>
                 <span class="detail-photo-zoom">{{ icon('search') }} 放大查看</span>
             </button>
             {% set credit = mushroom.image_credits.get(gallery_image) %}
             {% if credit %}
             <figcaption class="detail-image-credit">
-                <div class="credit-primary"><span>作者：{{ credit.author }}</span><span><a href="{{ credit.source_url }}" target="_blank" rel="noopener noreferrer">查看来源 ↗</a> · <a href="{{ credit.license_url }}" target="_blank" rel="noopener noreferrer">{{ credit.license }}</a></span></div>
-                {% if credit.reference_only %}<p class="credit-usage-note">辅助照片{% if credit.usage_note %}：{{ credit.usage_note }}{% endif %}</p>{% endif %}
-                <details class="credit-details"><summary>拍摄地点与图片核查说明</summary><div>
+                <div class="credit-primary">{% if credit.source_type == 'admin_uploaded' %}<span>管理员上传</span><span>名称由维护者关联；拍摄者、拍摄地与许可未提供</span>{% elif credit.source_type == 'user_confirmed' %}<span>本地图 · 用户确认地方名称对应</span><span>原始拍摄者、拍摄地与许可未提供</span>{% else %}<span>作者：{{ credit.author }}</span><span>{% if credit.source_url %}<a href="{{ credit.source_url }}" target="_blank" rel="noopener noreferrer">查看来源 ↗</a>{% endif %}{% if credit.license_url %} · <a href="{{ credit.license_url }}" target="_blank" rel="noopener noreferrer">{{ credit.license }}</a>{% endif %}</span>{% endif %}</div>
+                {% if credit.reference_only %}<p class="credit-usage-note">参考配图{% if credit.usage_note %}：{{ credit.usage_note }}{% endif %}</p>{% endif %}
+                {% if credit.source_type == 'source_reference' %}<p class="credit-usage-note">{{ credit.license or '来源未声明开放许可' }} · 保留原始出处供本地资料核对。</p>{% endif %}
+                <details class="credit-details"><summary>图片来源与名称对应说明</summary><div>
                     <p>来源：{{ credit.source_title }}</p><p>{{ credit.location_label }}</p>
                     {% if credit.usage_note and not credit.reference_only %}<p>照片用途：{{ credit.usage_note }}</p>{% endif %}
                     <p>{{ credit.identification_status }}</p>{% if credit.changes %}<p>{{ credit.changes }}</p>{% endif %}
+                    {% if credit.classification_scope %}<p>配图对应范围：{{ credit.classification_scope }}</p>{% endif %}
                 </div></details>
             </figcaption>
             {% else %}<figcaption class="detail-image-credit credit-pending">现有图片 · 来源与许可待核查</figcaption>{% endif %}
